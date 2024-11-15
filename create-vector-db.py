@@ -6,7 +6,19 @@ from langchain_chroma import Chroma
 from langchain.schema import Document
 
 # Initialize the OpenAI API Key
-os.environ["OPENAI_API_KEY"] = ""
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the OpenAI API Key from environment variables
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+if not openai_api_key:
+    raise ValueError("OpenAI API Key not found in environment variables.")
+
+os.environ["OPENAI_API_KEY"] = openai_api_key
+
 
 # Step 1: Load Text Files
 def load_text_files(directory="sources/"):
@@ -34,6 +46,7 @@ def create_vector_db(chunks, db_directory="chroma_db"):
     if not chunks:
         print("No chunks to process.")
         return None  # Return None if no chunks
+    print(embeddings) 
     
     # Generate embeddings for chunks
     embeddings_list = embeddings.embed_documents([chunk.page_content for chunk in chunks])  # Extract page_content
@@ -70,8 +83,4 @@ if __name__ == "__main__":
         vector_db.add_documents(document_chunks)    
         print(f"Vector database created and saved in 'chroma_db'.")
 
-query = "What is the FCC Emergency Alert"
-results = vector_db.similarity_search(query, k=3)  # Retrieve the top 3 similar results
-for result in results:
-    print(f"Content: {result.page_content}, Metadata: {result.metadata}")
 
