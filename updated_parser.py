@@ -14,10 +14,20 @@ output_counter = 1
 # Utility function to write output to a numbered file
 def write_to_file(content, prefix="output"):
     global output_counter
+    directory = "text-files"
+    os.makedirs(directory, exist_ok=True)  # Ensure the directory exists
+    filename = os.path.join(directory, f"{prefix}{output_counter}.txt")
+    
+    with open(filename, 'a') as file:
+        file.write(content + "\n")
+    
+    output_counter += 1
+    
+    '''global output_counter
     filename = f"{prefix}{output_counter}.txt"
     with open(filename, 'a') as file:
         file.write(content + "\n")
-    output_counter += 1
+    output_counter += 1'''
 
 # Function to download and parse HTML content
 async def scrape_html(session, url):
@@ -121,7 +131,7 @@ async def scrape_and_parse(urls):
 
 # Example URLs to scrape
 urls_to_scrape = [
-    "https://www.fcc.gov/cybersecurity-and-communications-reliability-division-public-safety-and-homeland-security-bureau",
+ "https://www.fcc.gov/cybersecurity-and-communications-reliability-division-public-safety-and-homeland-security-bureau",
     "https://www.cisa.gov/sites/default/files/2023-03/CISA_CPG_REPORT_v1.0.1_FINAL.pdf"
 ]
 
