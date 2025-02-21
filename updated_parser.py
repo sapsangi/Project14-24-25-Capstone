@@ -131,8 +131,13 @@ async def scrape_and_parse(urls):
 
 # Example URLs to scrape
 urls_to_scrape = [
- "https://www.fcc.gov/cybersecurity-and-communications-reliability-division-public-safety-and-homeland-security-bureau",
-    "https://www.cisa.gov/sites/default/files/2023-03/CISA_CPG_REPORT_v1.0.1_FINAL.pdf"
+     "https://www.cisa.gov/resources-tools/programs/emergency-communications-policy-and-planning",
+    "https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/communications-sector",
+    "https://www.cisa.gov/sites/default/files/publications/nipp-ssp-communications-2015-508.pdf",
+    "https://www.nist.gov/publications/telecommunications-security-guidelines-telecommunications-management-network",
+    "https://www.whitehouse.gov/wp-content/uploads/2023/03/National-Cybersecurity-Strategy-2023.pdf",
+    "https://www.fcc.gov/CSRICReports",
+    "https://www.ntia.gov/sites/default/files/2023-11/2_2021_edition_rev_2023.pdf"
 ]
 
 # Clear previous output files
