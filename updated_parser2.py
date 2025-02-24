@@ -142,7 +142,29 @@ urls_to_scrape = [
     "https://www.nist.gov/publications/telecommunications-security-guidelines-telecommunications-management-network",
     "https://www.whitehouse.gov/wp-content/uploads/2023/03/National-Cybersecurity-Strategy-2023.pdf",
     "https://www.fcc.gov/CSRICReports",
-    "https://www.ntia.gov/sites/default/files/2023-11/2_2021_edition_rev_2023.pdf"
+    "https://www.ntia.gov/sites/default/files/2023-11/2_2021_edition_rev_2023.pdf",
+    "https://www.fcc.gov/CSRICReports",
+    "https://www.fcc.gov/wireless-telecommunications",
+    "https://www.fcc.gov/communications-business-opportunities/cybersecurity-advisories",
+    "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals",
+    "https://www.cisa.gov/sites/default/files/2023-03/CISA_CPG_REPORT_v1.0.1_FINAL.pdf",
+    "https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/information-technology-sector",
+    "https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/communications-sector",
+    "https://cra.exein.io/?gad_source=1&gclid=Cj0KCQjwgrO4BhC2ARIsAKQ7zUkKKo83YImjM2w1wN_2jXG1E9vS55qFS9OS6FkEArdJixN1wpFk98MaAi4SEALw_wcB",
+    "https://bidenwhitehouse.archives.gov/wp-content/uploads/2023/03/National-Cybersecurity-Strategy-2023.pdf",
+    "https://www.nist.gov/cyberframework",
+    "https://www.getastra.com/blog/compliance/nist/nist-best-practices/",
+    "https://ccdcoe.org/uploads/2018/10/NCSS-Guidelines_2013.pdf",
+    "https://www.gartner.com/en/cybersecurity/topics/cybersecurity-strategy",
+    "https://www.un.org/counterterrorism/sites/www.un.org.counterterrorism/files/2021-ncs-guide.pdf",
+    "https://www.uschamber.com/security/cybersecurity#/",
+    "https://www.coursera.org/articles/cyber-security-in-telecom-industry",
+    "https://www.sciencedirect.com/science/article/pii/S0308596121001865",
+    "https://www.state.gov/united-states-international-cyberspace-and-digital-policy-strategy/",
+    "https://issues.org/etzioni-2-cybersecurity-private-sector-businesses/",
+    "https://www.legalitysimplified.com/new-rules-on-telecom-cybersecurity-what-you-need-to-know/",
+    
+    
 ]
 
 # Clear previous output files
