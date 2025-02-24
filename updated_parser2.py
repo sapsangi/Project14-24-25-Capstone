@@ -52,7 +52,7 @@ async def scrape_html(session, url):
                 await scrape_pdf(session, pdf_url, pdf_url.split('/')[-1])
 
             # Process content for keywords
-            process_scraped_content(text_content, url)
+            #process_scraped_content(text_content, url)
     except Exception as err:
         print(f"Error processing HTML ({url}): {err}")
 
@@ -73,7 +73,7 @@ async def scrape_pdf(session, url, pdf_filename):
             os.remove(pdf_path)
 
             # Process content for keywords
-            process_scraped_content(text, url)
+            #process_scraped_content(text, url)
     except Exception as err:
         print(f"Error processing PDF ({url}): {err}")
 
