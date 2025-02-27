@@ -1,0 +1,878 @@
+PDF Content from https://www.fcc.gov/pshs/docs/csric/CSRIC%205A%20Working%20Group.pdf:
+September 2010 WORKING GROUP 5A
+CAP Introduction
+Final ReportThe Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+Table of Contents
+1 Results in Brief.........................................................................................................................3
+1.1 Executive Summary........................................................................................................3
+2 Introduction..............................................................................................................................4
+2.1 CSRIC Structure.............................................................................................................4
+2.2 Working Group 5A Team Members...............................................................................4
+3 Objective, Scope, and Methodology........................................................................................5
+3.1 Objective.........................................................................................................................5
+3.2 Scope...............................................................................................................................5
+3.3 Methodology...................................................................................................................6
+3.3.1 Sub-Group Structure.................................................................................................6
+3.3.2 Collaboration via Portal............................................................................................6
+4 Background..............................................................................................................................7
+4.1 Emergency Alert System (EAS).....................................................................................7
+4.1.1 State and Local CAP-based EAS Programs..............................................................7
+4.1.2 Emerging Advanced EAS Capabilities.....................................................................8
+4.1.3 State and Local EAS Plans.......................................................................................9
+4.1.4 State and Local Emergency Communication Committees.....................................10
+4.1.5 Training...................................................................................................................10
+4.2 IPAWS..........................................................................................................................11
+4.2.1 System Overview and Vision..................................................................................11
+4.2.2 Current Schedule for 2012......................................................................................12
+4.2.3 Common Alerting Protocol (CAP).........................................................................12
+4.2.4 Geo-Targeted Alert System (GTAS)......................................................................13
+4.3 Commercial Mobile Alert System (CMAS).................................................................13
+5 Analysis, Findings, and Recommendations...........................................................................14
+5.1 Revisions to Part 11 Rules............................................................................................15
+5.2 Citizens with Disabilities..............................................................................................18
+5.3 Citizens not Proficient in English.................................................................................20
+5.4 Defining the CAP Standard..........................................................................................22
+5.4.1 IPAWS CAP Profile...............................................................................................22
+5.4.2 EAS-CAP Implementation Guide...........................................................................23
+6 Conclusion..............................................................................................................................24
+2The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+1 Results in Brief
+1.1 Executive Summary
+The Communications Security, Reliability and Interoperability Council (CSRIC) is a federal
+advisory committee established to provide recommendations to the Federal Communications
+Commission (FCC) on how to ensure optimal security, reliability, and interoperability of
+communications systems, including public safety, telecommunications, and media
+communications. This includes, but is not limited to, recommending ways, including best
+practices, to improve the Emergency Alert System (EAS) operations and testing, and to ensure
+that all Americans, including those living in rural areas, the elderly, people with disabilities, and
+people who do not speak English, have access to timely EAS alerts and other emergency
+information. Pursuant to this mandate, Working Group 5A spent over six months researching,
+analyzing, and evaluating a vast array of ideas, concepts, and themes on possible actions the
+FCC could take to improve the EAS.
+First, the working group found that widespread adoption of the Common Alerting Protocol
+(CAP) would not only advance the EAS, but would ensure that all Americans, including those
+with disabilities or non-English speaking individuals would have access to emergency
+information. CAP is an XML-based data format for exchanging public warnings and
+emergencies between alerting technologies. CAP allows a warning message to be consistently
+disseminated simultaneously over many warning systems to many applications, thus simplifying
+the task of activating a warning for responsible officials. To facilitate a seamless adoption of
+CAP by all the EAS participants, this report recommends that the FCC revise its rules governing
+the EAS to accommodate CAP; this includes extending the timeline by which all EAS
+participants are expected to adopt CAP from 180 days to 300 days based on a number of factors
+including FEMA’s adoption announcement.
+Next, the working group determined that more than 14,000 broadcast stations and 10,000 cable
+systems across the nation are required to follow both their state and local EAS plans during an
+emergency. These plans specify the monitoring assignments for all broadcast stations and cable
+systems within their respective state(s). This report recommends that the FCC ensure that state
+and local governments update their EAS plans to accommodate CAP in a timely fashion.
+As more people transition from traditional wireline phone systems and TTY to Internet-based
+technologies as their primary means of communication, this working group believes that it is
+important that these platforms continue to facilitate the delivery of emergency messages to
+disabled citizens. This could be achieved through the development of a national relay center,
+which disabled individuals could contact to learn more about a local event after receiving an
+initial alert through traditional channels. Such a center should be a source of information for the
+deaf and hard of hearing, the blind and visually impaired, caregivers in group homes, and people
+with physical disabilities. The FCC should consider initiating a proceeding or hosting a
+workshop to explore the feasibility of developing such a center.
+Finally, given the growing multilingual population in the United States, this report recommends
+3The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+that the responsibility for message translation from English to another language should like with
+the message originators at this time. U.S. Census data and social science research could be used
+to identify geographic areas with a high density of non-English speaking individuals that require
+translation services. As language translation technology improves, going forward the
+Commission should research methodologies employed by bilingual and multilingual countries
+such as Canada, Israel, Belgium, to name a few.
+2 Introduction
+The FCC held the first meeting of the CSRIC in early December 2009. The CSRIC was
+established as a federal advisory committee designed to provide recommendations to the
+Commission regarding best practices and actions the Commission may take to ensure optimal
+operability, security, reliability, and resiliency of communications systems, including
+telecommunications, media, and public safety communications systems.
+Due to the large scope of the CSRIC mandate, the committee then divided into a set of Working
+Groups, each of which was designed to tackle individual issue areas. In total, 10 different
+Working Groups were created, including Working Group 5A on the CAP Introduction.
+Working Group 5A officially started its work in March 2010 and was given until September
+2010 to produce this Final Report.
+2.1 CSRIC Structure
+2.2 Working Group 5A Team Members
+Working Group 5A is comprised of 22 members, including its two Co-Chairs; Damon Penn of
+the Federal Emergency Management Agency (FEMA) and Pat Roberts, of the Florida
+Association of Broadcasters. Members come from a wide variety of private and public entities,
+many of which possessed an extensive background in broadcasting and emergency messaging.
+The FCC Liaison for Working Group 5A is Eric Ehrenreich.
+4The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+Name Company
+Damon Penn, Co-Chair Federal Emergency Management Agency (FEMA)
+Pat Roberts, Co-Chair Florida Association of Broadcasters
+Sam Asher Asher Group
+Paul Brenner Emmis Communications
+Leonard Charles Morgan Murphy Media, Midwest
+Turner Clayton Jr. Seminole County, FL branch of NAACP
+Edward Czarnecki Monroe Electronics, Inc.
+Brian Daly AT&T
+J. Scott Enright Emmis Communications
+Nneka Ezenwa Verizon
+Robert Gabrielli DirecTV
+Mike Gerber NOAA National Weather Service
+Denis Gusty Department of Homeland Security
+John Lawson Convergence Services
+Marc Pucci Telcordia
+Mary Retka Qwest
+Mark Titus TeleCommunication Systems, Inc.
+Scott Tollefsen USA Mobility (former General Counsel
+Herbert White NOAA National Weather Service
+Kelly Williams National Association of Broadcasters
+Eric Ehrenreich FCC Liaison
+Jean Ann Collins FCC Lead
+3 Objective, Scope, and Methodology
+3.1 Objective
+In its May 2007 EAS Second Report and Order (EB Docket No. 04-296), the Commission
+mandated that all EAS Participants must be capable of receiving a CAP-formatted EAS alert
+within 180 days of an announcement by FEMA adopting CAP. The Commission noted that the
+transformation of the EAS brought about by CAP would necessitate revisions to the
+Commission’s Part 11 Rules governing the EAS. The Working Group was asked to provide the
+proposed recommendations for revisions to the Part 11 Rules. The Working Group specifically
+based its recommendations found in this Final Report on the Oasis-published CAP 1.21, and
+included in their discussion both specific recommendations regarding rule changes and more
+general comment and analysis regarding the appropriate Part 11 regulatory structure for a CAP-
+based EAS. In this Final Report, the Working Group also recommended actions the FCC can
+take to improve EAS access for people with disabilities and non-English speaking communities.
+3.2 Scope
+1 OASIS CAP 1.2 documents: http://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2-os.pdf
+5The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+Per the Working Group 5A description, the group focused primarily on the FCC Part 11 Rules
+governing the EAS.
+3.3 Methodology
+The 5A Working Group used a collaborative, inclusive approach to its work. Given the vast
+array of expertise the 5A members brought to bear on this effort, it was critical to provide a
+multitude of forums and mediums through which participants could express their opinions and
+help shape this Final Report. The following section details the methodology through which 5A
+achieved this objective.
+3.3.1 Sub-Group Structure
+After its initial set of meetings, the Co-Chairs of Working Group 5A decided to the review the
+structure of the Working Group and develop a plan that would allow for 5A to proceed with its
+study in an organized fashion which leveraged the diverse backgrounds of the Group’s
+membership. As such, 5A broke into two Sub-Groups – one focused on Policy issues, while the
+other focused on Technical issues. The two Sub-Groups then moved forward with independent
+conference calls that focused almost exclusively on the portions of the Part 11 Rules most
+applicable to their expertise.
+Over the course of several months, each Sub-Group met via conference call on a weekly basis.
+Each Sub-Group had a Lead who developed an agenda and framed conversation and discussion
+amongst the participants. On some of the more divisive issues the Lead worked to bring
+members closer to consensus and encouraged open dialogue designed to find common ground.
+For each Sub-Group meeting extensive notes were captured and analyzed to determine if there
+was overlap in the issues being discussed. In some instances it became clear that both Sub-
+Groups needed further clarification on certain topics, in which case full Working Group
+meetings were called and Subject Matter Experts were brought in to add clarity to some of the
+issues. In other instances it appeared both Sub-Groups were covering the same topics during
+their independent meetings. In those cases, again, full Working Group meetings were called in
+order to work toward a consensus as a unified body and to avoid further duplication of effort.
+3.3.2 Collaboration via Portal
+In addition to the regular conference calls, an online collaboration portal featuring an array of
+Social Media capabilities was designed and implemented for use by the 5A participants. The
+portal was accessible to all Working Group members throughout the duration of their work on
+behalf the CSRIC. The table below details some of the most prominent capabilities featured on
+the Portal and how they were used by the members of the 5A Working Group.
+Document Repository Collaboration space where members posted, reviewed, and edited
+documents
+Forum Open space where issues were discussed amongst members
+Calendar Central location where all relevant meetings and events were
+documented
+6The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+Links Location where external internet links pertinent to CSRIC were
+posted.
+From its inception, the portal became a useful tool for the Working Group as they shared ideas,
+resources, and collaborated on common documents, including this Final Report. Given the
+disparate locations from which the 5A members originated, having an online collaboration tool
+was instrumental to the successful completion of the Working Group’s final product.
+4 Background
+From the onset of 5A’s work, close attention was paid to the researching relevant topics,
+including the EAS, the Integrated Public Alerts and Warning System (IPAWS), the CAP, and
+the Commercial Mobile Alert System (CMAS) and other alerting methodologies. Several
+members of the 5A Working Group brought specialized expertise in one or more of these areas
+that helped establish a baseline understanding of these related topics and served as a catalyst for
+promoting discussion and the development of the Working Group’s final recommendations.
+4.1 Emergency Alert System (EAS)
+EAS is the primary national warning system that provides the President with the means to
+address the nation during a national crisis. State and local officials also use EAS to issue
+warning messages about imminent or ongoing hazards in specific regions. Three Federal
+agencies are responsible for EAS: the FCC, FEMA, National Oceanic and Atmospheric
+Administration’s (NOAA) National Weather Service (NWS). Functionally, EAS is a
+hierarchical alert message distribution system. Initiating an EAS message, whether at the
+national, state, or local level, requires the message initiator (e.g. FEMA, which initiates EAS
+alerts at the national level on behalf of the President) to deliver specially-encoded messages to a
+broadcast station-based transmission network that, in turn, delivers the messages to individual
+broadcasters, cable operators, and other EAS Participants. EAS Participants maintain special
+encoding and decoding equipment that can receive the message for retransmission to other EAS
+Participants and to end users (broadcast listeners and cable and other service subscribers).
+On May 31, 2007 the FCC adopted a Second Report and Order and Further Notice of Proposed
+Rulemaking (EB Docket 04-296, FCC-07-109A1) (Erratum, DA-07-4002A1) to strengthen the
+EAS and to promote the development of fully digital next generation technologies and delivery
+systems for EAS. The Second Report and Order requires EAS participants to accept messages
+using CAP, the groundwork for next generation EAS delivery systems, no later than 180 days
+after FEMA announces its adoption of standards in each case. CAP is intended to ensure the
+efficient and rapid transmission of EAS alerts to the public in a variety of formats (e.g. text,
+audio and video) and via different channels (e.g. broadcast, cable, satellite, and other networks).
+4.1.1 State and Local CAP-based EAS Programs
+Historically, the EAS has been one of several federally managed warning systems. FEMA
+jointly administers EAS with the FCC, in cooperation with the NWS. The NOAA Weather
+Radio system has been upgraded to an all-hazard warning capability.
+7The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+However, while federally managed, the actual operation and maintenance of the majority of the
+nation’s emergency alert capabilities (except for the PEP system) has been conducted by state,
+local, municipal and territorial governments and broadcasters. Under the current EAS, a
+national system was created whose component parts rapidly came to be used for state and local
+purposes, and operated at a state and local level.
+4.1.2 Emerging Advanced EAS Capabilities
+There are a growing number of existing state/local advanced IP-based EAS networks across the
+United States, many of which already utilize the CAP data format, as well as numerous local
+jurisdictions with their own CAP EAS systems and pilots.
+Via a survey conducted by the Texas Association of Broadcasters and other resources, IP based
+systems are observed in the following 18 states (plus the District of Columbia), of which at least
+10 are already originating and disseminating CAP messages for EAS, and the remainder appear
+to have near-term plans to begin introducing CAP message origination and dissemination within
+their state systems:
+• California **
+• District of Columbia **
+• Delaware **
+• Florida **
+• Georgia
+• Hawaii (pilot) **
+• Idaho (pilot) **
+• Illinois
+• Michigan
+• Maryland **
+• Massachusetts
+• Missouri **
+• New York (pilot)
+• North Carolina
+• Pennsylvania **
+• Rhode Island
+• South Carolina
+• Virginia
+• Washington **
+** denotes respondent indicating currently distributing CAP messages for EAS
+8The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+Note: There are additional states such as Indiana currently evaluating the use of existing state
+data relay networks for CAP EAS distribution.
+State and local CAP-EAS distribution networks are infrastructures intended to efficiently deliver
+alert and warning content to end users, in this case to EAS participants. Where advanced EAS
+capabilities have not yet been deployed, emergency managers continue to utilize EAS in
+traditional manners. Emergency managers, and state police agencies often in the case of
+AMBER Alerts, can originate EAS alerts through their own EAS encoder equipment, via direct
+request to a broadcaster or cable operator, or via the NWS. These legacy systems and
+procedures will need to be upgraded or replaced to accommodate for the origination and delivery
+of CAP based alerts.
+4.1.3 State and Local EAS Plans
+More than 14,000 broadcast stations and 10,000 cable systems across the nation are required to
+follow their state EAS plans, as well as local EAS plans in many cases. Each state’s plans
+specify the monitoring assignments for all broadcast stations and cable systems within that state.
+These plans and monitoring assignments will need to be updated to accommodate CAP EAS
+9The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+systems. Several states are known to be currently updating their State EAS Plans to reflect
+current or planned CAP EAS origination and distribution capabilities. However, in most cases,
+state and local areas have not yet filed updated EAS plans to reflect the usage of these next
+generation CAP-based capabilities.
+As specified in the FCC Part 11 regulations, EAS plans contain guidelines that must be followed
+by broadcast and cable personnel, emergency officials and NWS personnel to activate the EAS.
+This requirement would presumably continue with the adoption of CAP EAS systems. Revised
+state and local CAP EAS plans will contain unique methods of EAS message IP distribution,
+such as satellite, terrestrial wireless, Internet, and/or other means.
+According to FCC regulations, EAS plans must be reviewed and approved by the Chief, Public
+Safety and Homeland Security Bureau, FCC, prior to implementation to ensure they are
+consistent with national plans, FCC regulations, and EAS operation. It is reasonable to assume
+that updated State plans will continue to contain procedures for State emergency management
+and other State officials, the NWS, and broadcast and cable personnel to transmit emergency
+information to the public during a State emergency using the EAS.
+Similarly, updated Local Area plans will contain procedures for local officials or the NWS to
+transmit emergency information to the public during a local emergency using the new CAP EAS
+capabilities. Local plans may be included in the State plan. A Local Area is a geographical area
+of contiguous communities or counties that may include more than one state.
+4.1.4 State and Local Emergency Communication Committees
+State and Local Emergency Communication Committees (SECCs and/or LECCs) are constituted
+by broadcasters, cable operators, emergency managers and others concerned with EAS. These
+entities design a monitoring plan that determines what entities will serve as the EAS sources and
+originators of messages (Emergency Operation Centers, 911 centers, NWR, etc.). These
+monitoring plans will need to be evaluated and potentially reconsidered in light of CAP EAS
+requirements. SECCs and LECCs also decide what communications assets are available, who is
+authorized to issue warnings, how they will do so, which EAS codes will be issued in their
+region, and how and when officials will participate in EAS tests.
+The committee stakeholders will continue to have a critical role designing the most effective
+CAP-based EAS communications network at the state and local level, determining legacy EAS
+and CAP-based EAS monitoring assignments. They also decide who is authorized to issue
+warnings, how they will do so, proper authentication procedures, and which EAS codes will be
+considered essential within their region. Thus, the state and local plans will have a key role in
+mapping out how state and local CAP EAS systems are “wired together.”
+4.1.5 Training
+FEMA is creating an online training program for emergency managers who have never before
+been exposed to IPAWS. FEMA’s Emergency Management Institute is developing a web-based
+independent study course that will be available on FEMA’s Emergency Management Institute’s
+eLearning system and/or the FEMA Employee Knowledge Center. The course goals are to help
+state, local, tribal, and territorial emergency managers draft better alerts and warning messages,
+10The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+to improve skills in using emergency alerting equipment, and to increase the effectiveness and
+participation of emergency managers using the EAS.
+4.2 IPAWS
+Developed by FEMA, IPAWS is the Nation’s next generation public alerting system. It is
+designed to improve public safety through the rapid dissemination of emergency messages to as
+many people as possible over as many communications devices as possible. IPAWS is building
+additional redundancy EAS by establishing diverse dissemination paths including Internet
+Protocol networks. It will provide a digital interface to EAS and CMAS participants (e.g.,
+broadcasters, cable systems, and commercial cellular carriers providing broadcast cellular
+alerts), NWS, as well as Internet Service Providers. In addition, the program is developing
+standards that support interoperability with state and local warning systems.
+4.2.1 System Overview and Vision
+The IPAWS vision is an effective and comprehensive system that enables the proper authorities
+to alert and warn the American people under all conditions through as many means as possible.
+Incident response and public alerts begin at the local level. Thus, IPAWS also is developing the
+protocols to enable existing local and State public alert and warning systems to be interoperable
+with – and leverage – IPAWS architecture. As an example, assume a railroad tanker car is
+leaking chlorine chemical in a particular geographic area. A state, local, tribal, or territorial
+authenticated alerting authority can send a Shelter-in-Place Warning alert through their local
+system and to the IPAWS interface at the same time. IPAWS would validate the message
+format and route the alert message to the appropriate disseminators for distribution in the area
+designated by the emergency manager. Residents in this area would then be warned by any
+combination of these distribution channels.
+In simple terms, IPAWS will accept standards-based alert and warning messages generated by
+emergency managers using existing state, local, tribal, or territorial systems, or an IPAWS web
+interface. These so called CAP formatted messages will then be forwarded to the FEMA
+IPAWS aggregator. The aggregator will disseminate the message through all distribution means
+the emergency manager is authorized to use. For example, the aggregator will have interfaces to
+distribute messages to traditional broadcast media via the EAS, to cellular devices via the
+Commercial Mobile Alert System (CMAS) to NOAA Weather Radio, to Internet services via
+network interfaces, and to unique state and local systems that are IPAWS CAP compliant (such
+as Emergency Telephone Networks, Radio Broadcast Data Systems, siren, and/or signage
+systems).
+IPAWS will:
+• Enhance the resiliency of National-Level EAS through the Primary Entry Point (PEP)
+expansion program; (PEP stations are the entry points for national presidential EAS
+alerts that FEMA is responsible for distributing);
+• Create an alert and warning message interoperability framework by establishing or
+adopting standards, such as CAP, that allow a single warning message to be seamlessly
+transmitted over different systems;
+11The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+• Improve federal, state, local, tribal, and territorial alert and warning message access to
+multiple broadcast and other communications pathways by enabling alert and warning
+messages to reach the public through as many means as possible;
+• Partner with NOAA to enable seamless integration of message transmission through the
+National Weather Service networks;
+• Enable alert and warning to those with disabilities and those without proficiency in the
+English language; and
+• Allow the President of the United States to speak to the American people under
+emergency circumstances.
+4.2.2 Current Schedule for 2012
+FEMA is on schedule to achieve the IPAWS vision in fiscal year 2012.
+1. Interoperable standards and interfaces will be in place;
+2. Redundancy will be built into the dissemination network via PBS and public television
+stations, as directed by the WARN Act; and
+3. Integrated disparate message distribution paths will be complete, meaning that one
+message can travel many paths to reach the American public;
+Standards are needed so that federal, state, local, tribal, and territorial entities can share the same
+common message and interface formats. Inside the IPAWS environment, an aggregator contains
+a suite of standards and services for message dissemination across multiple systems and
+platforms. If everyone uses the same standards, validated emergency managers will be able to
+send their messages over any combination of partner dissemination paths that use those
+standards. FEMA expects to complete interfaces to many of these dissemination paths in the
+next two years.
+4.2.3 Common Alerting Protocol (CAP)
+CAP is an open standard that will benefit emergency managers at all levels by allowing a single
+warning message to be disseminated simultaneously over many different systems. To increase
+interoperability in the national warning system, FEMA modified the requirements for an alert
+profile of the EAS-CAP Industry Group, an industry coalition of emergency alert equipment
+manufacturers. In December 2008, FEMA submitted these requirements to the Organization for
+the Advancement of Structured Information Standards (OASIS), an international standards
+organization. FEMA asked OASIS to develop a product in consultation with its members that
+reflected public comment. FEMA believed OASIS’s open process for development, public
+vetting, and ultimately advancing an open standard is the best way to ensure a state of the art
+product.
+After meeting with the broadcast industry and receiving their feedback, FEMA pledged to
+complete four milestones before adopting the CAP IPAWS profile:
+1. Establish a testing program and publish lists of tested, CAP-compliant products
+broadcasters can purchase;
+2. Oversee development of an Implementation Guide for CAP to EAS Translation;
+12The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+3. Demonstrate delivering a Federal message in the CAP IPAWS Profile format to a
+National Primary Entry Point Station; and
+4. Begin the OASIS process on IPAWS CAP Security Requirements.
+Once these four milestones have been reached, FEMA will formally adopt the CAP profile. By
+federal regulation, broadcasters then have 180 days to make whatever internal changes they
+deem necessary to be able to receive an IPAWS CAP message.
+4.2.4 Geo-Targeted Alert System (GTAS)
+FEMA IPAWS is working with NOAA to develop software for state, local, tribal, and territorial
+emergency managers that will allow real time collaboration with NOAA personnel and weather
+data for generation of alerts and warnings to specific geo-targeted areas. Called the Geo-
+Targeted Alert Systems (GTAS), this software models the forward progress of, for example, a
+chemical cloud or toxic spill, so emergency managers can warn only those people in the
+anticipated path of the plume. In August 2009, FEMA successfully piloted this software at the
+City of Dallas Emergency Operations Center, and the NWS Weather Forecast Office in Ft.
+Worth, Texas. NOAA/NWS and FEMA also conducted live training at the State of Washington
+EOC and the City of Seattle EOC in 2010.
+4.3 Commercial Mobile Alert System (CMAS)
+The Commercial Mobile Alert System (CMAS) is required by the 2006 WARN Act2, under
+2 Title VI of the SAFE Port Act, (PL_109-347) which was signed into law in October 2006, is entitled Commercial
+Mobile Service Alerts. It is also referred to as the Warning Alert and Response Network (WARN) Act, a name
+derived from the legislation (S.1753) from which it was derived (view prior activity). Among other provisions, the
+WARN Act requires the FCC to adopt:
+• System critical protocols and technical requirements for the CMAS;
+• A mechanism under which commercial mobile service (CMS) providers may elect to participate in the
+CMAS and disclose to their subscribers whether or not they will participate;
+• Rules under which licensees and permittees of noncommercial educational (NCE) broadcast stations or
+public broadcast stations install necessary equipment and technologies on, or as part of, any broadcast
+television digital signal transmitter to enable the distribution of geographically targeted alerts by CMS
+providers that have elected to participate in the CMAS; and
+• Technical testing requirements for CMS providers that elect to transmit emergency alerts and for the
+devices and equipment used by such providers for transmitting such alerts.
+The WARN Act also sets out specific benchmarks and deadlines by which the FCC must complete the various
+requirements mandated. The Commercial Mobile Service Alert Advisory Committee (CMSAAC), also mandated
+by the WARN Act, was given responsibility to develop recommendations on technical standards and protocols to
+support the ability of wireless service providers to transmit emergency alerts to their subscribers. The final meeting
+of this advisory committee was held on October 3, 2007.
+13The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+which Commercial Mobile Service (CMS) providers may elect voluntarily to participate. Please
+note that CMS is a term defined in the WARN Act which is equivalent to Commercial Mobile
+Radio Services (CMRS), a term used by the FCC to refer to mobile wireless services.
+The FCC rules establishing the CMAS require an end-to-end architecture, in which a Federal
+Alert Aggregator/Gateway would receive, authenticate, and format alerts received by Federal,
+state, tribal, and local government agencies and then transmit them over a secure interface to
+gateways administered by participating CMS providers. The CMS providers would, in turn,
+process the alerts and transmit them to their subscribers’ mobile devices.
+CMAS is a component of IPAWS systems that will provide the capability to reach cellular
+phone subscribers with public alert and warning messages and falls under FCC Part 10 rules.
+FEMA will be the alert aggregator, receiving CAP messages from authorized users and passing
+alert messages in CMAS format to the cellular phone industry. Adding mobile alerts to the
+range of distribution channels will eventually cover 270 million subscribers, or 87 percent of the
+population, as CMAS handsets are introduced into the marketplace. CMAS will facilitate the
+dissemination of three types of alerts through cell phones: Presidential Alerts; Imminent Threat
+Alerts; and America’s Missing: Broadcast Emergency Response (AMBER) Alerts.
+FEMA and DHS’ Science & Technology Directorate are working with two industry
+organizations, the Alliance for Telecommunications Industry Solutions and the
+Telecommunications Industry Association, and have completed interface specifications between
+the FEMA CMAS gateway and commercial mobile service provider gateways. This interface
+will allow federal systems carrying an alert to seamlessly hand off that alert to the private sector
+commercial mobile carriers in CMAS format for further distribution.
+Final balloting by industry association members on the interface specifications was complete in
+2009. FEMA formally adopted the resulting CMAS interface specification. By federal
+regulation under Part 10 rules, cellular service providers have 28 months to make whatever
+internal changes are necessary to receive an alert and begin to transmit it to their customer base
+according to their election to participate in CMAS; this 28 month interval ends April, 2012.
+FEMA and DHS’ Science & Technology Directorate also are in the process of completing work
+on the infrastructure that will allow us to send CMAS alerts to the cellular providers.
+For the purposes of this report, CAP is used between alert originators and the FEMA alert
+aggregator/gateway and this report on CAP introduction may apply to that interface. The
+interface from the FEMA alert aggregator/gateway is a CMAS-specific protocol format.
+5 Analysis, Findings, and Recommendations
+As the CSRIC 5A Working Group proceeded with its review of the Part 11 Rules governing
+EAS, several different themes and concepts emerged and began to take shape. During the
+Analysis phase, the Working Group members discovered most of their Findings fell into four
+major subject areas, including Revisions to the FCC’s Part 11 Rules, Citizens with Disabilities,
+Citizens not Proficient in English, and Defining the CAP Standard. The following section
+explains the Working Group’s Analysis of the four major areas, reveals their Findings, and
+provides comprehensive Recommendations regarding further exploration or revisions to the Part
+11 Rules.
+14The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+5.1 Revisions to Part 11 Rules
+After extensive research and analysis of the FCC’s Part 11 Rules, Working Group 5A proposes
+the following recommended changes.
+Subsection Recommended Change Explanation/Remarks
+§11.1 Update paragraph to include new CAP Additional originators are tribal, territorial, and
+related alert originators. Gov’t Must Carry.
+§11.2(a) Update PEP definition to be consistent
+with FEMA implementation and future
+plans.
+§11.11 Update paragraph to include reference The EAS system is reliant on the IPAWS for
+for interface requirements to IPAWS EAN originator messages.
+source.
+§11.11 Consider adoption of ECIG Look at what FEMA has adopted and consider
+Implementation Guidelines. whether to adopt the FEMA document or the
+guideline in the original form.
+§11.11(a) Addition the requirement for receiving Current 11.11(a) only has a requirement for
+and decoding CAP originated messages, existing (legacy) EAS equipment, and thus
+also necessitates adding CAP reception needs to be updated in light of 11.56.
+in the definition of minimum
+requirements for EAS Participants. EAS
+Participants will require the ability to
+monitor and receive both CAP and
+legacy EAS protocol messages, and
+further transmit EAS protocol messages
+in formats congruent with other Part 11
+subsections.
+§11.11(a) “EAS Equipment Requirement” tables Current 11.11(a) only has a requirement for
+need to be revised to reflect the range of existing (legacy) EAS equipment, and thus
+new CAP EAS equipment necessary for needs to be updated in light of 11.56.
+the monitoring, reception, decoding, and
+video/audio display of alerts.
+§11.13 Is there a need to update EAN relative Note for CAP compliance writers
+to CAP compliant capability?
+§11.14 Modify PEP paragraph to include
+reference requiring IPAWS
+interconnectivity.
+15The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+§11.20 “State Relay Networks” should be With the amended monitoring requirements in
+updated to accommodate the relay of §11.52, Part 11 rules need to be amended to
+CAP originated messages to EAS reflect CAP EAS monitoring within state relay
+participants via the addition of state networks.
+CAP relay networks.
+Add information technology to paragraph.
+§11.21(a) Include language on EAN distribution IPAWS distribution now augments PEP
+via IPAWS. distribution of EAN.
+§11.21(a) “State and Local Area plans and FCC As above
+Mapbook” should be updated to include
+CAP.
+§11.21(b) “State and Local Area plans and FCC As above
+Mapbook” should be updated to include
+CAP.
+§11.31 Clarify how Governor Must Carry E.g., create GOV originator code
+messages are to be implemented in EAS
+Protocol.
+§11.32(a) Modify EAS encoder minimum EAS encoder must be capable of rendering a
+requirement. fully CAP compliant message.
+§11.32(2) Modify Inputs Include requirement for a single Ethernet input
+with support for multiple IP sources.
+§11.33(a)(1) Add CAP input interface requirements. Device specifications need to be updated for
+CAP monitoring, in accordance with 11.52.
+§11.33(a)(1) Add Ethernet input and multiple IP
+source requirements.
+§11.33(10) Message validity expanded to include Per the ECIG Implementation Guide
+handle duplicate messages and use CAP
+message by default.
+§11.34 Add FCC certification for CAP EAS IPAWS NIMS conformance testing only
+devices. provides verification of a project-specific CAP
+data format, and is therefore necessary for the
+IPAWS project, but not sufficient for the overall
+CAP-EAS endeavor. The proper CAP-to-EAS
+translation function is not included in the
+IPAWS NIMS conformance tests. Therefore, it
+is necessary that the FCC continue and extend
+its statutory role in EAS certification to CAP
+16The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+EAS devices.
+§11.35(a) “Equipment operational readiness” – §11.56 requires EAS Participants to receive
+Need to update to include the CAP CAP messages.
+receiving requirement.
+§11.44(b) Modify EAS Participants priority. Add reference to additional messages from
+Tribal, Territorial and Gov’t Must Carry
+§11.45 Modify Prohibition to reference CAP CAP messages of status “Actual” as stated in
+“Actual” status indicators. ECIG
+§11.51(1) Equipment must be capable of rendering As opposed to simply generating an EAS code
+and (5,i,1) a CAP compliant message to EAS.
+§11.51(m) Add Gubernatorial Must-Carry CAP
+status.
+§11.51(4) Insert “Wireline Video Systems” Carrier is currently excluded from both
+and (5) paragraphs.
+§11.52(a) “EAS code and Attention Signal §11.56 requires EAS Participants to receive
+Monitoring requirements” – Require CAP messages.
+CAP receiving equipment
+§11.52 A new subparagraph is needed to Monitoring multiple CAP sources is necessary
+require EAS participants to monitor to ensure redundance and support the
+multiple IP-based CAP alert sources mandatory Gubernatorial Must-Carry message
+(i.e. CAP servers); in addition to legacy in §11.55(a).
+(audio) EAS alert sources. EAS
+participants should monitor at least one
+state and/or local CAP EAS source (i.e.
+CAP server) in addition to a Federal
+CAP source.
+§11.54(1) Monitor IPAWS In addition to the statement of two EAS sources
+for national alert (EAN).
+§11.54 Consider adding (14) EAS Messages will be broadcast only if the
+scope of CAP alert is “Public”
+§11.55(a) The mandatory Gubernatorial Must- This provision raises a number of questions,
+Carry message requires additional including whether a separate EAS event code
+definition. may be needed for this function.
+§11.56 Consider extending the 180 day clock to The trigger point starting the clock, as well as
+the length of the clock, need to factor in the
+17The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+be no less than one year. following criteria in relation to CAP-based
+national alerts (EAN):
+1. FEMA adoption of CAP.
+2. FEMA initiates IPAWS network for EAN
+dissemination
+3. IPAWS conformance testing of
+devices/systems to be potentially connected to
+the IPAWS network
+4. FCC type certification of any CAP EAS
+devices mandated for EAS participants.
+Other factors the commission must consider are
+how long it will take EAS participants to
+implement the following:
+a. Obtaining IP connectivity to receive the CAP
+EAN
+b. Equipment procurement, installation, and
+testing
+General Recommend commission develop a Current method of changing and adding event
+Comments more streamlined method for changing codes is regulatory based and recommend that
+codes to more swiftly enable EAS commission consider modification of the
+participants' use of new codes requested procedure to an administrative process.
+by authorities.
+Reference <eventCode> element specification
+(4) at line 160 in CAP v1.2 USA IPAWS
+Profile v1.0.
+5.2 Citizens with Disabilities
+CAP provides an XML-based data format for exchanging information concerning public
+warnings and emergencies. CAP provides flexibility for including various text and multimedia
+based resources which may have applicability to citizens with disabilities.
+The National Center for Accessible Media at WGBH3 Access Alerts project identified gaps that
+exist between alert systems which deliver information, the unrealized potential of these systems
+to serve the entire population, and recommended system protocols, technologies and services
+that can bridge this gap. As part of this gap analysis, the Access Alerts project used consumer
+and social science research about effective messaging and warning variables for people with
+sensory disabilities, as well as a national emergency management survey report on existing and
+planned practices for accessible emergency notification.
+The Access Alerts project concluded with a number of recommendations, some of which have
+applicability to this analysis:
+3 See http://ncam.wgbh.org/invent_build/analog/alerts/
+18The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+• Establish relationships with local government’s emergency management offices and first
+responders, and let them know the communications preferences for being notified in an
+emergency. These relationships help identify the type of information that may be
+included in the CAP message to support those citizens with disabilities;
+• Participate in emergency management drills and planning;
+• Participate in voluntary registries for consumer notification, and be sure to understand
+the registry program’s full scope and limitations for what they do – and do not – provide
+consumers;
+• Learn about emergency warning capabilities currently available from existing services
+provided by NWS systems (e.g. NOAA Weather Radio, NOAA Weather Wire Service
+(NWWS), and resources on the NWS Web site)4, and consider the use of Public Alert ™
+devices5 that provide emergency alerting capabilities to people with disabilities;
+• Utilize access to the NWS infrastructure currently offered through the HazCollect
+program6 to implement more timely and increased local emergency access to currently
+available NWS emergency warning capabilities;
+• Conform to the CAP OASIS standard to ensure interoperability with other systems and
+equipment;
+• Research, acquire, and implement accessible communications resources that are
+specifically designed to facilitate communication in an emergency between people with
+sensory disabilities and first responders (e.g., sign language charts, Braille materials,
+speech-to-text and text-to-speech applications, etc.);
+• Produce and maintain a library of fully accessible (text, audio, video) multimedia
+emergency messages that can be delivered via mobile devices, the Web and broadcast
+media, shown in shelters, etc. To maximize efficacy, explore cooperative public/private
+ventures with state agencies and consumer disabilities advocacy organizations that may
+be working on similar products and services;
+• Minimize unnecessary header information in alert messages; and
+• Offer consumers as many granular options for subscription opt-in as possible, to combat
+user fatigue/“cry-wolf” syndrome.
+One additional conclusion from this project is the definition of “emergency”. The Access Alerts
+project defined “emergency” as being an "imminent threat to human life or health" and includes
+AMBER and other missing-person-at-risk alerts7. The definition of “emergency” under EAS is
+broader.
+The National Institute on Disability and Rehabilitation Research (NIDRR) published an
+Emergency Management Research and People with Disabilities Resource Guide8 which
+4 National Weather Service: http://www.nws.noaa.gov/
+5 NOAA Weather Radio consumer information: http://www.nws.noaa.gov/nwr/nwrrcvr.htm
+6 National Weather Service HazCollect program: http://www.nws.noaa.gov/os/hazcollect/
+7 This definition is consistent with the FCC’s Commercial Mobile Service Alert Advisory Committee (CMSAAC)
+definition of “emergency”.
+8 See http://www.naric.com/nidrr/guide-emergency-management-pwd.pdf
+19The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+provides a listing and description of research projects funded by the federal government and
+non-federal entities, research recommendations that have come out of conferences on emergency
+management and disability, and a bibliography of relevant research publications. This is a
+useful source of information for analysis of this issue.
+The Telecommunications for the Deaf and Hard of Hearing, Inc. (TDI) filed comments to the
+FCC’s EB Docket No. 04-296, Review of the Emergency Alert System9. The comments
+specifically point out that “(W)hile the Consumer Groups agree that the utilization of the CAP
+will facilitate the transmission of emergency data, they urge the FCC to not rely solely on that
+new process”.
+Specifically, TDI recommended that both audio and video formats are equally important and
+should contain identical information so that individuals who are deaf, hard of hearing, blind or
+have visual impairment can receive the same information that is available to people with full
+visual and hearing capabilities, and it is essential that both formats (audio and video) be required
+at all times.
+Further, TDI recommend that to ensure those with hearing loss have immediate access to
+accurate and complete information being broadcast in video format in all emergency situations,
+all parties that are subject to the EAS rules should be required to provide open captions of the
+audio message in real-time, which would be available for viewing by everyone, and should be
+required for the display of emergency messages because they can be accessed on a wide variety
+of devices. These recommendations extend to devices where the screen is less than thirteen
+inches. They also expressed concern about individuals being able to access the captioning on
+unfamiliar devices and recommended consumer education.
+Based on these analyses, the working group determined the following recommendations:
+1. As more people transition from traditional wire line phone systems and TTY usage to
+Internet-based technologies as their primary means of communication, it is important
+that these platforms continue to facilitate the delivery of emergency messages to citizens
+with disabilities. This could be achieved through the development of a national relay
+center, which disabled individuals could contact to learn more about a local event after
+receiving an initial alert through traditional channels. Such a center should be a source
+of information for the deaf and hard of hearing, the blind and visually impaired,
+caregivers in group homes, and people with physical disabilities; and
+2. Deployment of the CMAS at the local, state, tribal and Federal level using a CAP
+interface to the Federal Alert Aggregator in the CMAS architecture.
+5.3 Citizens not Proficient in English
+The multilingual population in the United States is growing in size. According to U.S. Census
+data, among the 262.4 million people aged 5 and over, 47 million (18%) speak a language other
+9 In the Matters of Review of Emergency Alert System; Independent Spanish Broadcasters Association, the Office of
+Communication of the United Church of Christ, Inc. and the Minority Media and Telecommunications Council,
+Petition for Immediate Relief, Second Report and Order and Further Notice of Proposed Rulemaking, EB Docket
+No. 04-296 (rel. July 12, 2007) (“FNPRM”).
+20The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+than English at home.10 In addition, the U.S. Census documented over 300 different single
+languages and language categories that are spoken in the United States.11 The Hispanic
+population in the United States more than doubled between 1980 and 2000.12 In 2008,
+Hispanics became the largest minority group in the United States, comprising 15.1% of the
+population.13 Spanish continues to be the non-English language most frequently spoken in U.S.
+homes, with Chinese being second most frequently spoken language.14 However, an
+examination of the census data at the state level reveals that the languages and population
+speaking those languages can vary considerably by locality.15
+CAP is capable of carrying multiple languages. It allows for the use of multiple information
+blocks to specify different languages. Including too many languages, however, in an alert
+message could be problematic because there is a practical limitation to the length of the CAP
+message. In addition, there is nothing inherent in CAP itself that provides for translation
+automatically from English to other languages. Moreover, while there is software (or machine-
+based) language translation technology available, the state of the art is such that the meaning or
+intent of emergency alert messages may be mis-translated or confused.
+Some jurisdictions, such as the State of Florida, have addressed the needs of their multilingual
+communities by originating emergency messages in English and Spanish (as well as Creole)
+from their state emergency operations center.
+After considering this information, the Working Group finds that there are considerable
+challenges to adequately addressing the multilingual emergency messaging needs of the
+changing population. Key among those challenges is the large number of different languages
+that might need to be accommodated, geographical variances in which languages are spoken as
+well as the lack of available technology to support effective automated multi-language
+translation. The Working Group concluded that, at this time, the choice of what language(s) to
+use in a multilingual EAS message is best determined by the entities in a specific community
+because only those in that local community know which languages are spoken there.
+The Working group has developed the following recommendations.
+• Message translation – At this time, the responsibility for message translation should lie
+with originators of the message. As language translation technology improves, going
+forward the Commission should:
+o Research methodologies employed by bilingual and multilingual countries (e.g.
+Canada, Israel);
+10 See Language Use and English-Speaking Ability: 2000, Issued October 2003 at 1, available at
+http://www.census.gov/prod/2003pubs/c2kbr-29.pdf, (last visited August 24, 2010).
+11 Id. at 2.
+12 See Frank Hobbs and Nicole Stoops, U.S. Census Bureau, “Demographic Trends in the 20th Century” (2002) at 1,
+78, available at http://www.census.gov/prod/2002pubs/censr-4.pdf (last visited May 12, 2010).
+13 See American Factfinder, U.S. Census Bureau, ACS Demographic and Housing Estimates: 2006-2008, available
+at http://factfinder.census.gov/servlet/ADPTable?_bm=y&-qr_name=ACS_2008_3YR_G00_DP3YR5&-
+geo_id=01000US&-gc_url=null&-
+ds_name=ACS_2008_3YR_G00_&-_lang=en (last visited August 13, 2010).
+14 Id., note 1 at 3.
+15 See Table 5. Detailed List of Languages Spoken at Home for the Population 5 Years and Over by State: 2000,
+available at http://www.census.gov/population/cen2000/phc-t20/tab05.pdf (last visited August 24, 2010).
+21The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+o Research and determine the accuracy and reliability of machine or software based
+translation technology. Software language translation may not be sufficiently
+reliable to be used for emergency messaging;
+o While CAP does support the capability for multiple languages, in many of the
+alert dissemination methods in use today, the CAP itself is not delivered to an end
+user device. Research is needed to identify how multi-language information
+would be delivered to the end user; and
+o Collaborate with industry to develop translation applications with a goal of
+allowing an end user to select a language translation of choice.
+• Use Census data and social science research to identify threshold for recommending non-
+English language translation services;
+• Use Census data to identify geographic areas with high density of non-English speaking
+population that require translation services; and
+• Consistency in messaging – develop and employ a multi-language look-up table for
+SAME/EAS Event Codes (similar to that developed by NWS and Environment Canada
+16) that would enable automated translation into additional languages directly from the
+EAS Header Code string contained in an alert message.
+5.4 Defining the CAP Standard
+Adherence to the CAP standard alone does not guarantee that connected systems and equipment
+will be conformant with Part 11 Rules for EAS activation and display. This would likely present
+compatibility and interoperability issues for IPAWS, as well as individual State, local and
+territorial CAP EAS systems. Below is a general discussion of underlying issues and responses
+from government and industry.
+CAP is a general data format for emergency messaging (all-hazard alerts and warnings). The
+intent of CAP was to allow a consistent warning message to be disseminated simultaneously
+over many different warning systems, thus increasing warning effectiveness while simplifying
+the warning task. As such, CAP serves as a basic container for alert data. However practitioners
+have increasingly found that additional specificity has been required for the appropriate usage of
+CAP in various systems, including the EAS.
+For this reason, FEMA has issued an IPAWS CAP profile, describing how to use CAP to create
+EAS messages, specifically for the FEMA IPAWS system. Industry, via the EAS CAP Industry
+Group, offers even greater specificity, on how CAP formatted data can be used to construct a
+Part 11-compliant EAS message, with associated audio and text data. In this manner, guidance
+is available from the general (the overall CAP format) to the increasingly specific.
+5.4.1 IPAWS CAP Profile
+16 See NWS Instruction 10-1712, February 12, 2007 at Appendix A, Section A.4, available at
+http://www.weather.gov/directives/sym/pd01017012curr.pdf, (last visited August 31, 2010) See also, e.g Codes
+événement des MSSC (Showing French look-up table for SAME codes) avalable at http://www.ec.gc.ca/meteo-
+weather/default.asp?lang=Fr&n=1C86C296-1(last visited August 31, 2010).
+22The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+The IPAWS CAP Profile is an interpretation of the OASIS CAP v1.2 specification as needed for
+the purposes of FEMA’s IPAWS "system of systems". FEMA is working with the Organization
+for the Advancement of Structured Information Standards (OASIS) to develop a profile to
+constrain the CAP Standard for receipt and translation with and among IPAWS system exchange
+partners. On October 13, 2009, the CAP IPAWS Profile (CAP v1.2 IPAWS Profile v1.0) was
+approved as an OASIS Committee Specification.
+The IPAWS CAP Profile was developed primarily by integrating requirements related to three
+federal warning-delivery systems:
+• The broadcast EAS as recommended by the ECIG;
+• The NOAA Non-Weather Emergency Message (NWEM) "HazCollect" program for
+weather radio and other delivery systems as derived from technical documentation; and,
+• CMAS for cellular telephones as described in the recommendations of the Commercial
+Mobile Service Alert Advisory Committee (CMSAAC).
+FEMA's partners in developing the IPAWS CAP Profile included NOAA, FCC, and DHS
+Science & Technology Directorate.
+5.4.2 EAS-CAP Implementation Guide
+An EAS-CAP Implementation Guide provides specific details on how a receiving device should
+interpret CAP formatted data to construct a 47 CFR Part 11 EAS message, and associated audio
+and text data. In May 2010, the EAS-CAP Industry Group published an Implementation Guide
+intended to further reduce the areas of uncertainty in how an alert will be presented to the public
+via CAP/EAS, so that originators and distributors of alerts can deliver the intended message to
+the public, regardless of the vendors or platforms involved.
+The ECIG is a broad coalition of equipment, software and service providers to EAS. ECIG
+formed in 2008 to present a consolidated voice on key technical, standards and operational
+issues, from industry’s point of view. Current membership represents the vast majority of the
+EAS industry – hardware, software and systems. All ECIG members have products that utilize
+CAP v1.1, and several are already supporting both the CAP v1.2 specification and the ECIG
+Implementation Guide v1.0.
+Public warnings intended for transmission over the EAS can be encoded in CAP messages in
+various ways. As both CAP v1.2 and the CAPv1.2 IPAWS Profile v1.0 make use of several free
+form text elements and several optional elements, there is ample opportunity for a CAP message
+rendered by one CAP-to-EAS device to differ when rendered by another vendor’s device. There
+can also be a difference between what the originator intended for an alert, and what alerts
+contain, when broadcast by CAP/EAS devices.
+This EAS-CAP Implementation Guide was been prepared in light of several points of reference,
+including the FEMA CAP v1.2 IPAWS Profile v1.0 Requirements, the updated CAP 1.2
+specification, and other references. The guide was prepared to facilitate the success of any
+CAP-to-EAS system including existing and planned state, local, territorial and tribal systems,
+the proposed IPAWS system, and emerging NWS systems. To that end, in addition to
+23The Communications Security, Reliability and Interoperability Council Working Group 5A
+Final Report September 2010
+addressing general CAP-to-EAS implementation issues for any advanced EAS system, the
+Implementation Guide also directly addresses constraints and requirements of the IPAWS
+program.
+The ECIG EAS-CAP Implementation Guide provides specific details on how to send data in a
+broadcast environment using existing FCC rules, visual and aural standards. The
+Implementation Guide provides audio standards, text length standards. It also provides hints for
+originators and software used by originators to allow for the realities of the broadcast
+environment and existing FCC rules.
+6 Conclusion
+The CSRIC 5A Working Group spent more than six months researching, analyzing, and
+evaluating a vast array of ideas, concepts, and themes around the FCC’s Part 11 Rules. During
+this time members participated in dozens of conference calls, consistently accessed and utilized
+resources posted to their online collaboration portal, and dedicated countless hours editing and
+revising this Final Report.
+Resolving many of the issues covered in the Part 11 Rules proved to be challenging for the
+diverse membership that made up the 5A Working Group. Certainly a thorough evaluation of
+the Part 11 Rules was a daunting task, but one that most members found educational and
+rewarding.
+In conclusion, members feel confident that through their diligence and willingness to
+compromise, this Final Report is a fair and accurate representation of their collective view-
+points and perspectives. The CSRIC 5A Working Group thanks the FCC for the opportunity to
+provide feedback and recommendations for proposed changes to the Part 11 Rules and hopes the
+findings of this Final Report and have a positive influence on future FCC proceedings.
+24

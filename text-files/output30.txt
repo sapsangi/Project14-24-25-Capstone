@@ -1,0 +1,447 @@
+PDF Content from https://transition.fcc.gov/bureaus/pshs/advisory/csric5/WG4A_Final_091416.pdf:
+AUGUST 2016 WORKING GROUP 4A
+SUBMARINE CABLE
+RESILIENCY
+Final Report – Clustering of Cables and Cable LandingsTable of Contents
+BACKGROUND ON CSRIC V AND WORKING GROUP 4A ...................... 1
+Objectives and Methods .......................................................................................... 1
+Membership ............................................................................................................ 1
+BACKGROUND ................................................................................................... 3
+Significance of Geographic Diversity for Network Protection and Resilience ...... 3
+Key Concepts .......................................................................................................... 3
+FACTORS INFLUENCING ROUTING OF SUBMARINE CABLES AND
+LANDING SITES ................................................................................................. 5
+Economic Opportunities ......................................................................................... 5
+Regulatory Factors .................................................................................................. 6
+Seafloor Topology .................................................................................................. 8
+Proximity to Other Marine Infrastructure ............................................................... 9
+Access to Terrestrial Networks ............................................................................. 10
+RECOMMENDATIONS .................................................................................... 10
+Recommendations ................................................................................................. 10
+iiBACKGROUND ON CSRIC V AND WORKING GROUP 4A
+Objectives and Methods
+The Federal Communication Commission (“FCC” or “Commission”) tasked the
+Submarine Cable Routing and Landing Working Group of CSRIC IV (“WG8”) with the
+responsibility of examining the risks posed to submarine cable infrastructure and how
+proximity to other marine activities, governmental permitting processes, and clustering of
+cable routes and landings can increase the risk of cable damage. This, in turn, has the
+potential to affect U.S. network reliability. In December 2014, WG8 submitted a final
+report on spatial separation. The Submarine Cable Resiliency Working Group of CSRIC
+V (“WG4A”) continued the work begun during CSRIC IV. In June 2016, WG4A
+submitted a final report on intergovernmental and interjurisdictional coordination. This
+report examines the key factors that influence routing of submarine cables and landing
+site locations.
+Membership
+WG4A consists of approximately 22 members. They represent diverse interests
+including submarine cable operators, cable system customers, cable system suppliers,
+marine services consultants, federal energy agencies, and state regulators, all with subject
+matter expertise to accomplish WG4A’s objectives.
+1WG4A MEMBERS AND PARTICIPANTS
+NAME ORGANIZATION
+Kent Bressie, Co-Chair Harris, Wiltshire & Grannis LLP, on behalf of the North
+American Submarine Cable Association
+Catherine Creese, Co-Chair U.S. Naval Seafloor Cable Protection Office
+Denise Coca, FCC Liaison Telecommunications & Analysis Division, International
+Bureau, Federal Communications Commission
+Michael Connelly, FCC Policy and Licensing Division, Public Safety and
+Liaison Homeland Security Bureau, Federal Communications
+Commission
+Jerome Stanshine, FCC Cybersecurity and Communications Reliability
+Liaison Division, Public Safety and Homeland Security Bureau,
+Federal Communications Commission
+Steve Balk Sprint
+Stephen Bowler* Federal Energy Regulatory Commission
+Allan Creamer* Federal Energy Regulatory Commission
+Seth Davis SRD Associates LLC
+Jennifer Golladay Office of Renewable Energy Programs, Bureau of
+Ocean Energy Management, U.S. Department of the
+Interior
+Kurt Johnson Pacific Crossing
+Amy Marks XSite Modular
+Jennifer Miller Office of Renewable Energy Programs, Bureau of
+Ocean Energy Management, U.S. Department of the
+Interior
+Mikal Modisette Verizon
+Wayne Pacine Federal Reserve Board of Governors
+Ronald Rapp TE SubCom
+Neil Rondorf Leidos (also Chairman, International Cable Protection
+Committee)
+Nikki Shone Southern Cross Cables
+Rick Spencer CenturyLink
+Takahiro Sumimoto Pacific Crossing
+Robert Wargo AT&T (also President, North American Submarine
+Cable Association)
+Al Wissman National Oceanic and Atmospheric Administration, U.S.
+Department of Commerce
+* As an independent regulatory agency, FERC and its personnel are not formal
+members of WG4A and participate only in an informal, advisory capacity.
+2BACKGROUND
+Significance of Geographic Diversity for Network Protection and Resilience
+As explored in some detail in the CSRIC IV Report on Spatial Separation,1 submarine
+cable operators and their customers have long sought to maximize geographic diversity of
+submarine cable routes and landings in order to enhance network resilience and reduce
+the risk of damage from a single event, whether a tsunami, a vessel anchor, fishing gear,
+or a terrorist attack. Nevertheless, submarine cable operators do not operate in a vacuum.
+They must account for a variety of factors in deciding where to route and land cables, and
+many of these factors remain entirely beyond their control. Moreover, they operate in a
+dynamic U.S. coastal and marine environment that is increasingly crowded and that lacks
+a single landowner or a single marine spatial planning regulator. Other activities and
+infrastructure are frequently authorized without regard to the potential to foreclose
+particular areas to future submarine cable development, increasing the potential for
+clustering of cables and landings, and the risks inherent in non-diverse infrastructure.
+In this report, WG4A examines the factors that influence routing and landing of
+submarine cables and what the FCC might do within its statutory jurisdiction to enhance
+geographic diversity in order to promote network resilience.
+Key Concepts
+Diversity. Routing diversity is a fundamental concept in cable system construction. In
+fact, route diversity and all of its manifestations should be considered industry “Best
+Practices.” Route diversity is generally defined as the routing between two points over
+more than one geographic or physical path with no common points. While there are cost
+and regulatory considerations to diverse paths as discussed in CSRIC IV Report on
+Spatial Separation, this report will focus on methods of increasing diversity at the landing
+point. End point separation, by adding diversity at the landing point, is ideal to reduce
+vulnerability.
+When discussing diversity in cable system landing points there are several routing
+elements to achieve diversity including:
+ Beach Manhole (BMH)
+ Outside Plant (OSP)
+ Cable Landing Station (CLS)
+1 Communications Security, Reliability and Interoperability Council, Working Group 8 Submarine
+Cable Routing and Landing Final Report—Protection of Submarine Cables Through Spatial
+Separation at 3 (Dec. 2014)
+http://transition.fcc.gov/pshs/advisory/csric4/CSRIC_IV_WG8_Report1_3Dec2014.pdf, (“CSRIC IV
+Report on Spatial Separation”).
+3Redundancy. After all efforts have been made to provide redundancy using physically
+diverse routes, reliability may be further enhanced by including appropriate levels of
+redundancy within the CLS. While there is redundancy built into most systems within
+the CLS, the submarine cable industry has not adopted a standard set of redundancy
+criteria.
+Resiliency. After diversity/redundancy strategies have been implemented, it is up to each
+system component to resist a particular threat. Methods of increasing a component’s
+resiliency are critical to maintaining reliability. Use of the term “resiliency” in this
+context is the ability of the individual submarine cables, shore infrastructure, OSP, or
+CLS to resist damage or failure or else have the ability to be quickly (or quickly enough)
+repaired and returned to an operating status. “Network resiliency” makes uses of
+redundant segments to reroute telecom traffic if one segment has failed.
+Physical Parts of a Submarine Cable System
+Beach Manhole (BMH). The Beach Manhole is a concrete chamber, buried into the
+beach, or road behind the landing point, where the submarine cable is terminated and
+from where the OSP fiber cable and power cable are routed to the CLS. Most manholes
+are designed to take more than one cable, most commonly two. Additionally, landing
+points with clustered cables may see multiple beach manholes in proximity to each other.
+While these two situations are cost effective, it may not reduce the risk of failure as a
+single localized event could disrupt multiple cables such as a beach wash out due to a
+hurricane or due to backhoe damage across two cables at the same time. Risk may be
+mitigated with limiting the number of cables per manhole and requiring minimum
+distances between manholes.
+Cable Landing Station (CLS). The cable landing station is a building that provides the
+enclosure, power and cooling required for the power feeding equipment and submarine
+line terminal equipment (together, dry plant). For enhanced reliability, diverse routing
+could also employ distinct termination equipment as this would mitigate the vulnerability
+of a common single point of failure at either end of the connections.
+The decision to land a new cable into an existing CLS is heavily influenced by available
+station capacity, contracted landing party, and schedule due to permitting processes.
+However, this leads to system vulnerability as a station failure may cause catastrophic
+conditions. Outages may occur due to terrorist acts, natural disasters, power failures, and
+equipment failure within the station.
+There are ways to mitigate risk including dedicated CLSs for each system or isolated
+space, power, and cooling for each system within a shared CLS.
+4The CLS is the primary means of protecting the dry plant from threats, below are the
+areas of the CLS that must be considered:
+ Protection from physical threats (intrusion, ballistic, surveillance)
+ Protection from natural disasters (fire, lightning, wind, flood, seismic)
+ Quality of space within the station(suitability of building for use as a CLS, quality
+of construction)
+Outside Plant (OSP). We define OSP as the conduits, fiber cable, and power cable
+between the BMH and the CLS. Diverse outside plant routes between the BMH(s) and
+the CLS(s) are valuable for reducing vulnerability either by human induced hazards
+(digging), or natural hazards (flooding or wash outs).
+Wet Plant. The wet plant is the term for the submarine cable, along with its repeaters,
+joint boxes, and branching units. Techniques and equipment that make the wet plant
+“resilient” are cable routing to avoid hazards, cable burial and armor to protect it from
+anchoring or fishing gear, and cable awareness and charting efforts or cable awareness
+programs to prevent potentially damaging encounters in the first place.
+Factors Influencing Routing of Submarine Cables and Landing Sites
+Economic Opportunities
+The submarine cable landing site is selected primarily on the basis of access to a carrier,
+content provider, or cloud services provider’s point-of-presence (POP) or data center and
+on capacity demand. Other economic factors may also influence the landing site, such as
+negotiations with other economic stakeholders, including commercial fishermen and
+other government, tribal, and/or private landowners.
+The demand may also result in several competing cables landing in the same metro area.
+Alternatively, private network operators may be driven by owning their own submarine
+cable or fiber pair in order to control costs and security. For these cable owners, access
+to their private data centers, which may be located away from a large metropolitan area,
+is the driving consideration.
+Cost of construction is driven by submarine cable length from landing point to landing
+point, length of the continental shelf where cable must be armored and buried (which is
+more costly than cable and installation in deep water), access to existing terrestrial cable
+infrastructure including outside plant cable, CLS, and backhaul from CLS to POP or
+cloud exchange. A landing site resulting in a short OSP route to CLS or cloud exchange
+will be more economical. Many purchasers may choose sites with existing shore end
+infrastructure and network access. Thus cables are congregated at or near the same
+landing, if not in the same beach manhole, which is often the case.
+If capacity demand is high enough in a region to support the business case, development
+of a new landing site may be undertaken requiring new investment in seabed leases,
+5beach and OSP land leases, and OSP and CLS construction. Income must be sufficient to
+cover construction and operation and maintenance costs within the required payback
+period.
+The business case on the investment is also driven by duration of the project. Projects
+undertaken in areas and states where regulatory and permitting times are long may be less
+attractive than sites that can be permitted more quickly.
+Requirements for route redundancy (to provide network resilience and higher
+availability) drives requirements for multiple diverse routes.
+Operational costs including long term annual lease of seabed, landing site properties,
+security, staffing, and maintenance and repair costs are also factors influencing the
+selection of a landing site and cable route. This is factored into the business case.
+On the U.S. East Coast, existing landing sites are clustered in the Northeast including
+Massachusetts, Rhode Island, New York, New Jersey, and in the Southeast along the
+Florida coast in three primary locations. On the U.S. West Coast, existing landing sites
+are located in Northwest in Washington and Oregon and in the Southwest in Northern,
+Central, and Southern California. Landing sites connect Alaska and Hawaii to the U.S.
+mainland.
+In almost all cases, landing sites are developed to support multiple submarine cables.
+Regulatory Factors
+Laws or regulation may bar the presence of undersea cables in certain areas thus leading
+to clustering in locations away from restricted areas. For example, the State of Florida
+prohibits the landing of cables in the Keys and certain Gulf coast counties. In other areas
+of the state, undersea cables are required to negotiate “reef gaps” to get to the landing
+point, these gaps themselves may serve to create a cluster of cables. In other places, the
+presence of a National Marine Sanctuary may prohibit the presence of an undersea cable
+or make conditions on its presence in a sanctuary so onerous that the cable proponents
+choose to go elsewhere. A more thorough treatment of National Marine Sanctuaries can
+be found in Section 4.6 of the CSRIC V Report on Interagency and Interjurisdictional
+Coordination.
+In areas where there are no regulatory bars to the presence of a cable, the decision to land
+in one spot or another may come down to the ease of permitting (lower cost, shorter
+duration, less uncertainty) in each location. For example, like most other jurisdictions on
+the U.S. West Coast, the State of Oregon requires cable owners to become members of a
+Cable/Fishing Liaison Committee. However, in Oregon, once that step is complete, the
+remainder of the permitting process is relatively easy. California is typically more
+expensive and takes longer, as the permit and easement acquisition processes are not as
+clearly defined. Not only are durations and costs of initial permitting higher in California
+as compared to Oregon, ongoing costs are higher as well. The submerged lands easement
+in Oregon has no yearly fee while in California it is on the order of $5-6/linear foot
+6within the 3 nautical mile state sovereign seabed (depending on the route of the cable on
+the order of $100K/year). Overall, the easier process and lower costs of one state make it
+a preferred landing choice. Finally, states that have not traditionally been landing sites
+for undersea cables may not have a fully developed permitting regime able to deal with
+them. In this case the cable owner may continue to avoid the state with no cable landing,
+preferring a known permitting regime over an uncertain one.
+At the Federal level, the variation in application of regulations between various Army
+Corps’ Districts is another factor that may influence choice of landing sites. As described
+in more detail in the CSRIC V Report on Interagency and Interjurisdictional
+Coordination, the Army Corps determines what form of permit is appropriate: individual,
+through a standard permit or letter of permission; or general, through a regional general
+permit (“RGP”), programmatic general permit (“PGP”) or nationwide permit (“NWP”).2
+Because this determination is conducted at a District level, there are variations in analysis
+of impacts. In addition, one District may place more onerous requirements on the survey
+and installation leading to higher costs and longer project durations. A proponent may
+therefore avoid one District in preference for more predictable or favorable permitting in
+a neighboring District.
+As described in a later section of this report and in detail in CSRIC IV Report on Spatial
+Separation,3 the siting and licensing of ocean energy projects can directly affect existing
+and proposed submarine cables. Similarly, installation of a submarine cable across
+existing energy infrastructure on the outer continental shelf would be detrimental to both
+and those effects would need to be addressed during the siting of the cable. Project
+proponents and agencies are currently working through the siting of proposed submarine
+cables and proposed wind energy infrastructure offshore of Virginia Beach, Virginia.
+Environmental conditions such as the existence of endangered species will lead to
+mitigation measures that may play into the decision to land in one location or another.
+On the West Coast of the United States, it is unlikely that mitigation measures for the
+protection of marine mammals and other marine wildlife can be avoided no matter which
+state a cable owner chooses. Similarly, mitigation to avoid damage to corals, sea grass,
+and mangroves is unlikely to be avoided anywhere in Florida or the Caribbean.
+However, some mitigation measures lead directly to clustering. Off San Luis Obispo,
+California cables are required to avoid hard bottom to the maximum extent and all
+traverse an area which came to be known as the “sand channel” where cables can be
+buried, effectively clustering all the cables there in one small area.
+2 Communications Security, Reliability and Interoperability Council, Working Group 4A Submarine
+Cable Resiliency Final Report—Interagency and Interjurisdictional Coordination at 13 (June 2016)
+https://transition.fcc.gov/bureaus/pshs/advisory/csric5/WG4A_Report-Intergovernmental-
+Interjurisdictional-Coordination_June2016.pdf.
+3 CSRIC IV Report on Spatial Separation at 36-41.
+7Seafloor Topology
+In developing a route design for a new submarine cable, the topology of the seafloor
+plays an integral role in the final path chosen, and many elements known of from regional
+oceanographic charts, or found on the seafloor during the route survey, can lead to the
+clustering of cables into specific areas.
+Cables that are laid in deep-water beyond the reach of bottom-trawling gear and anchors
+(approximately >1,500m) are several times cheaper to manufacture and install than cables
+that are laid on the continental shelf. They also tend to suffer fewer cable breaks over the
+life of the system. Cable routes therefore attempt to minimize their length in areas of
+shallow topology, or avoid it completely. By way of an example the majority of Trans-
+Atlantic cables divert south of the shortest “Great Circle” path to skirt the Flemish Cap
+and Grand Banks off Newfoundland. Such topographic features drive the clustering of
+cables, with separation distances at the minimum allowing them to be maintained.
+Every trans-oceanic cable system must cross the continental shelf margin, an area
+characterized by steep slopes, submerged canyons, rocky ridges, and usually high levels
+of seismic activity. Submarine cables are vulnerable to breakage by abrasion, debris
+flows and rock-falls, so a route is chosen which avoids areas of potential instability.
+These areas can be few and far between, so cables can become clustered together at the
+known optimal locations to transition from the shallow sea to the deep ocean.
+Once the approximate path of the cable has been decided, marine route surveys are
+conducted to create a survey chart that describes the seabed conditions and reveals the
+presence of, among other items, seamounts, steep slopes, rocky outcrops, and near shore,
+the presence of rocks or rock beds, which may hinder the ability to bury the cable.
+Seamounts and steep slopes can create cable suspensions and possible complications
+during installation. Cables against any form of rock whether it be outcrops or simple flat
+rock beds, can lead to abrasion and possible failure over the life of the cable.
+When near shore, in waters generally less than 1,500 meters of depth, there is often the
+need or requirement to bury the cable, either for its own protection or the prevention of
+disrupting the commercial fishing industry, or both. The requirement to bury a cable then
+further complicates the marine route survey to not only avoid geographic seabed reliefs
+and rock beds, but to locate suitable substrate (soft bottom), that will be conducive to
+cable burial.
+The identification of seafloor obstacles and suitable soft bottom substrate, combined with
+what could be the desirability of a chosen landing area by multiple submarine cable
+systems due to other factors discussed within this report, can lead to the clustering of
+cables through the least obstructive paths possible.
+8Proximity to Other Marine Infrastructure
+Generally, new cables are routed to avoid other existing (or planned) marine
+infrastructure that could impact either the initial installation or ability to perform long
+term maintenance on the cable or nearby infrastructure. A safety zone distance is
+normally determined by water depth, normally two or three water depths as a rule of
+thumb. In shallow water an absolute minimum distance of 500 meters is normally used.
+These distances, as discussed in more detail in the CSRIC IV Report on Spatial
+Separation4, are derived by the ability to navigate and maneuver a cable ship when
+installing and maintaining the cables, and the ability to grapnel and recover cables for
+repair. If it is not possible to comply with these keep away distances, an agreement on
+procedures to be used should be reached between the owners prior to commencing
+construction so that each other’s assets are protected from damage.
+In addition to other telecom cables, marine infrastructure includes, among other things:
+power cables, oil and gas pipelines, sewer outfalls, docks, piers, renewable energy
+facilities, oil and gas drill and production facilities, artificial reefs, tidal flow energy
+turbines, wave power devices, deep sea mining leases, oil and gas leases, LNG terminals,
+and navy acoustic ranges.
+It remains to be seen whether other marine infrastructure, such as oil and gas exploration
+or marine renewable energy will have a significant effect on the routing of submarine
+cables or the selection of landing sites for those cables. Elsewhere in the world
+submarine cables and other marine infrastructure coexist quite well in close proximity
+due to a well-established working relationship between industries, as well as the
+application of established industry recommendations and guidelines, such as those of the
+International Cable Protection Committee and the European Subsea Cables Association
+(formerly Subsea Cables UK). For example, in the North Sea submarine cables share the
+seabed with oil rigs, pipelines, electrical cables and—more recently—renewable energy
+facilities. The long working relationship between the multiple industries has led to the
+use of both crossing and proximity agreements which specify the technical and
+commercial details of the interactions of the various infrastructure throughout the life
+cycle of both projects. Unlike crossing agreements between telecom cable owners, which
+are typically by email, other infrastructure (particularly pipelines) require legal
+documents to determine liability if damage occurs. These documents are often lengthy
+and take months to negotiate. In addition, the engineering solution at the crossing point
+between a cable and pipeline—a more involved operation than a cable to cable
+crossing—will often require spacers, bridges, or mattresses.
+In the United States, crossing agreements are only beginning to be used as there has not
+been a great deal of interaction between the various industries. The oil and gas industry
+is primarily located in the Gulf of Mexico, California, and Alaska, and there is little
+presence of submarine telecommunications cables in those locations. The marine
+4 Id. at 9, 48-49, 57-58.
+9renewable industry is in its infancy in the United States and it is just beginning to affect
+the routing of submarine cables and the selection of landing sites. As the marine
+renewable industry grows in the United States, crossing agreements will certainly be
+used; for example, a formal crossing agreement was negotiated relating to the export
+cable for the Block Island Wind Farm.
+Access to Terrestrial Networks
+Access to terrestrial networks is one of the key considerations when planning a
+submarine cable landings site. Significant terrestrial cost can be avoided by landing at an
+existing submarine cable landing site with terrestrial network access already in place,
+provided that there is a market for the additional capacity. Alternatively, private network
+operators may be driven by owning their own submarine cable or fiber pair in order to
+control costs and security.
+Terrestrial network cost includes the construction of OSPs, CLSs, and backhaul from
+CLS to POP or cloud exchange. A landing site resulting in a short OSP route to CLS or
+cloud exchange will be more economical.
+A new terrestrial network access point may be driven by a requirement for route
+redundancy (network resilience) and diverse routes.
+Recommendations
+Recommendations
+As an initial matter, it must be noted that these recommendations are necessarily limited,
+given the statutory jurisdiction of the FCC5. The FCC is not a marine planning agency
+with broad regulatory or policy authority over marine industries and activities. Neither is
+it a single coastal landowner (such as the Crown Estate in the United Kingdom), with the
+ability to enforce a consistent approach in all U.S. marine and coastal areas. Instead, the
+FCC is a communications industry regulator with particular expertise in submarine
+cables. With these limitations in mind, CSRIC V recommends that the FCC use its
+expertise to highlight for other government agencies concerns about, and potential
+measures to promote, geographic diversity of submarine cable routes and landings
+through implementation of the following recommendations.
+1. Encourage Interagency and Interjurisdictional Cooperation:
+The FCC should encourage interagency and interjurisdictional cooperation to
+streamline permitting; adopt more transparent and consistent permitting
+processes, conditions, and timelines; and reduce permitting times. Timeframes
+for environmental permitting at federal, state, and local levels usually last more
+than a year and sometimes more than two years. These timeframes are too long
+for an activity that is essentially environmentally benign. With such lengthy
+5 See 47 U.S.C. § 151; Executive Order 10520.
+10permitting timeframes, any location that offers a slightly shorter permitting
+timeframe—so long as the permitting conditions are not too burdensome—
+becomes a much more attractive option in order to satisfy “time to market”
+concerns that confront new submarine cable developers—even the resulting
+location reduces geographic diversity of submarine cables. Streamlining across
+multiple jurisdictions would serve to reduce regional disparities, while reductions
+in overall permitting timeframes would render less critical any small variations in
+permit timing and burdens. As part of this process, the FCC should consult with
+the Army Corps of Engineers regarding variations in the processes and permit
+conditions employed by its various districts. Although the Army Corps is
+decentralized, it acts pursuant to statutes and regulations with nationwide
+applicability. The FCC should consider adoption of a submarine cable
+permitting shot-clock for state and local permitting for submarine cables as a
+means of highlighting the significant disparities in timing that submarine cable
+operators experience, and as a basis of potential future interjurisdictional
+discussions, including through the regional planning bodies.
+2. Encourage Other Agencies to Consider Impacts On Submarine Cable
+Diversity During Permitting Processes:
+The FCC should encourage other federal, state, and local government agencies to
+consider impacts on cable diversity during permitting for other marine activities.
+As demonstrated in the CSRIC IV Report on Spatial Separation,6 there already
+exists a problem in protecting existing submarine cable infrastructure from
+damage by other marine activities as authorized by other federal, state, and local
+government agencies. Similarly, there is a lack of awareness and/or focus on
+foreclosure of particular submarine cable routes and landings, and on reductions
+in geographic diversity of cables through authorization of other marine activities.
+3. Evaluate the Role of NEPA and CZMA as a Coordination Mechanism:
+The FCC should decline to rely on the National Environmental Policy Act
+(“NEPA”) or the Coastal Zone Management Act (“CZMA”) as the principal
+means of coordinating with other federal, state, and local government agencies.
+NEPA exists to identify and evaluate potential environmental impacts of activities
+authorized by federal agencies. The CZMA exists to coordinate environmental
+protection efforts between the federal governments and the states, permitting the
+adoption of state coastal zone management plans approved by the Secretary of
+Commerce and consistency reviews by states regarding potential effects within
+state territorial seas. Neither of these laws is a marine spatial planning law
+designed to optimize the use of marine and coastal areas for particular activities of
+national importance, whether for telecommunications and Internet connectivity or
+development of renewable energy resources. Neither tasks government agencies
+with assessing the impact of proposed activities on telecommunications network
+resilience. In the absence of congressional action tasking a particular body with
+6 See CSRIC IV Report on Spatial Separation.
+11these responsibilities, the FCC should continue to coordinate with other federal,
+state, and local agencies, particularly in the regional planning body process, to
+address these issues.
+4. Promote Further Industry-to-Industry Cooperation:
+The FCC should promote further direct industry-to-industry coordination to
+enhance diversity of submarine cable routes and landings. The submarine cable
+industry has long engaged in direct consultations with other marine industries,
+particularly the commercial fishing industry and offshore oil and gas industries, to
+mitigate harmful impacts to their respective activities, equipment, and
+infrastructure. While such industry efforts are sometimes insufficient, they should
+not be supplanted entirely by governmental solutions. Consequently, in
+coordinating with other federal, state, and local government agencies, the FCC
+should recommend processes that encourage other marine industries to coordinate
+with submarine cable operators at the earliest stages of project planning, and vice-
+versa.
+5. Encourage Cable Protection Zones:
+The FCC should encourage the development of cable protection zones around
+existing submarine cable infrastructure, which may include clustered facilities.
+These zones would restrict within a defined proximity to existing submarine
+cables certain activities that pose a risk of cable damage. As noted in the CSRIC
+IV Report on Spatial Separation,7 cable protection zones have been used in other
+jurisdictions—particularly Australia and New Zealand—to reduce the risk of
+damage from a variety of marine activities to submarine cables providing vital
+domestic and international telecommunications and Internet connectivity. Unlike
+the recommendations outlined above, the recommendation for cable protection
+zones would address the risks of existing infrastructure that cannot easily or
+cheaply be moved.
+7 Id. at 10.
+12

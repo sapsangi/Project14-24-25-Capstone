@@ -1,0 +1,2024 @@
+PDF Content from https://transition.fcc.gov/pshs/advisory/csric4/CSRIC_WG%209_Backup_Power_Reccomendations%20_11-24-2014.pdf:
+December, 2014
+WORKING GROUP 9
+Infrastructure Sharing During Emergencies
+Backup Power Subcommittee
+Shared ServicesThe Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Table of Contents
+1 Summary ........................................................................................................................................................................................... 6
+2 Introduction and Background .................................................................................................................................................. 6
+2.1 Power Backup Requirements .................................................................................................................................................... 7
+2.2 Types of Backup Power................................................................................................................................................................ 7
+2.3 Batteries ............................................................................................................................................................................................. 7
+2.4 Standby Stationary Generators................................................................................................................................................. 7
+2.4.1 Portable Generators ...................................................................................................................................................... 8
+2.4.2 Fuel Cells ............................................................................................................................................................................ 8
+2.4.3 Types of Fuel .................................................................................................................................................................... 8
+2.5 Research ............................................................................................................................................................................................. 8
+3 Site Selection and Prioritization for Shared Backup Power ........................................................................................ 9
+3.1 Overview ............................................................................................................................................................................................ 9
+3.2 Challenges .......................................................................................................................................................................................... 9
+3.3 Coverage vs Capacity ................................................................................................................................................................. 10
+3.3.1 Critical Services ........................................................................................................................................................... 10
+3.4 Other Co-Located Sites .............................................................................................................................................................. 11
+3.5 Level of Risk ................................................................................................................................................................................... 11
+3.5.1 Commercial Power Failure Frequency and Duration .................................................................................. 11
+3.5.2 Area Level Risk ............................................................................................................................................................. 11
+3.6 Recommendations for Site Priority and Selection ......................................................................................................... 11
+3.7 Contact Matrix .............................................................................................................................................................................. 12
+4 Regulatory Practices for Backup power Sharing ............................................................................................................ 12
+4.1 Overview ......................................................................................................................................................................................... 12
+4.2 Federal, State, and Local Regulations .................................................................................................................................. 12
+4.3 Generators ...................................................................................................................................................................................... 13
+4.3.1 Diesel Generator Regulations ................................................................................................................................ 13
+4.3.2 Propane Generator Regulations ............................................................................................................................ 17
+4.3.3 Natural Gas Generator Regulations ..................................................................................................................... 17
+4.4 Fuel Cells ......................................................................................................................................................................................... 18
+4.4.1 Hydrogen Fuel Cell Regulations ............................................................................................................................ 18
+4.4.2 Methanol Fuel cell Regulations ............................................................................................................................. 18
+2The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+4.5 Recommendations for Regulatory Practices for Backup Power Sharing ............................................................. 18
+5 Technical Requirements for Backup Power Sharing .................................................................................................... 19
+5.1 Scope ................................................................................................................................................................................................. 19
+5.2 Overview ......................................................................................................................................................................................... 19
+20
+5.3 Typical Cell Site Configuration ............................................................................................................................................... 20
+21
+5.4 Stationary Shared Standby Power Systems ...................................................................................................................... 22
+5.4.1 AC vs DC Power in a Shared Generator Scenario ........................................................................................... 22
+5.4.2 Stationary Shared Standby AC Design Options............................................................................................... 23
+5.5 Portable Shared Standby Power Systems ......................................................................................................................... 25
+5.5.1 Proposed Recommendations ................................................................................................................................. 25
+5.5.2 Portable Generator Plug ........................................................................................................................................... 30
+5.6 Generator Sizing........................................................................................................................................................................... 30
+5.6.1 General Considerations ............................................................................................................................................ 30
+5.6.2 Disadvantages to Oversizing a Generator ......................................................................................................... 31
+5.6.3 Fuel Tank Sizing ........................................................................................................................................................... 32
+5.6.4 Managing Carrier Load Growth ............................................................................................................................. 32
+5.7 Site Criteria .................................................................................................................................................................................... 32
+5.7.1 Examples of Site Conditions That May Dictate Standby Generator Design ........................................ 32
+5.7.2 Fuel Alternatives ......................................................................................................................................................... 34
+5.8 Maintenance .................................................................................................................................................................................. 35
+5.8.1 Managing Carrier Maintenance and AC Electrical Work ............................................................................ 36
+6 Portable Generators and Fuel Sharing ................................................................................................................................ 36
+6.1 Scope ................................................................................................................................................................................................. 36
+6.2 Overview ......................................................................................................................................................................................... 37
+6.3 Approach ......................................................................................................................................................................................... 37
+6.4 Shared Resources ........................................................................................................................................................................ 38
+6.4.1 Sharing of Refueling resources .............................................................................................................................. 38
+6.4.2 Staging Facilities .......................................................................................................................................................... 38
+6.4.3 Bulk Fuel Resources ................................................................................................................................................... 39
+6.4.4 Wireless Mutual Assistance Networks ............................................................................................................... 40
+6.4.5 Emergency Power Facility Assessment Tool (EPFAT) ................................................................................ 40
+3The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+6.5 Recommendations for Sharing Resources ........................................................................................................................ 41
+7 Additional Considerations ....................................................................................................................................................... 42
+8 Summary ......................................................................................................................................................................................... 43
+Appendix A- Market Level Disaster and Commercial Reliability Power Analysis ...................................................... 44
+Appendix A- Market Level Disaster and Commercial Reliability Power Analysis, Cont’d ...................................... 45
+Appendix A- Market Level Disaster and Commercial Reliability Power Analysis, Cont’d ...................................... 46
+Appendix B- Contact Matrix .............................................................................................................................................................. 46
+Appendix C- Staging Yard Contact Matrix ................................................................................................................................... 47
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 48
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 49
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 50
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 51
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 52
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 53
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 54
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 55
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 56
+Appendix C- Staging Yard Contact Matrix, Cont’d .................................................................................................................... 57
+Appendix D – Fuel Supplier Contact Matrix ............................................................................................................................... 57
+Appendix E- Generator Rental Companies ................................................................................................................................. 58
+4The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Focus Areas
+Leaders and Participant Listing
+Focus Area/ Leader Company Name Participants Company Name
+Site Selection and
+Prioritization for Shared
+Backup Power
+Richard Zinno Sprint
+Jake Jacobson American Tower
+Per Nygren American Tower
+Steve Martin AT&T
+Cliff Abbio Crown Castle
+Pat O’Donnell SBA Site
+Jay Naillon T-Mobile
+Eric Woody Union Wireless
+Regulatory Practices for
+Backup Power Sharing
+Anil Trehan CommScope
+Brian Josef CTIA
+Geoffrey Why State of Massachusetts
+Michael Scott State of Massachusetts
+Lois Burns State of Pennsylvania
+Jim Feeney Verizon Wireless
+Chris Oberg Verizon Wireless
+Technical Requirements for
+Backup Power Sharing
+Steve Martin AT&T
+Dick Scott Battery Corp
+Tom Cooleen Battery Corp
+Kyle Pynn Burns & McDonnell
+Cliff Abbio Crown Castle
+Gayla Haag Crown Castle
+John Kim Enersys
+Ernie Gallo Ericsson
+Jim Feeney Verizon
+Portable Generators and Fuel
+Cell Sharing
+Cindy Perez Cat5 Resources
+Kathy Catalano Cat5 Resources
+Ingrid Caples HHS
+Bob Oenning Earthlink
+John Kim Enersys
+Steve Tibbs Foster Fuels
+Todd Dufur Generac
+5The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+1 SUMMARY
+The communications sector provides the basis for information exchange, including voice, data, video,
+and Internet connectivity, for all other sectors. As such, it is incumbent upon the industry to ensure
+that our Nation maintains a communications network that offers reliable and resilient service in the
+face of significant equipment or system failure, which is sufficiently survivable to provide some
+continuity of service during major emergencies.
+The electricity transmission system in the United States is one of the greatest engineering
+achievements of the 20th century. Unfortunately, there is growing evidence that the U.S.
+transmission system is under stress. Growth in electricity demand and new generation, lack of
+investment in new transmission facilities, and an incomplete transition to fully efficient and
+competitive wholesale markets have led to the emergence of transmission bottlenecks. These
+bottlenecks increase the risks of blackoutsi.
+Cellular Base Stations (aka Cell Sites) are dependent on commercial power to operate, and when
+power fails, the Cell Site will fail without a reliable source of uninterrupted backup power.
+The CSRIC WG9 Backup Power Sub-team has come together to identify the approaches and
+recommendations to share backup power resources to enhance the reliability of the Nation’s critical
+communication infrastructure. The following recommendations will help strengthen the reliability of
+commercial communications systems during major emergencies.
+2 INTRODUCTION AND BACKGROUND
+Disaster preparedness, recovery, and restoration efforts have been a major part of all wireless
+providers’ Business Continuity Plans for decades. Not only is communications network continuity
+important for consumers during natural disasters, but many first responders such as firefighters, law
+enforcement, paramedics, utility workers, and relief workers often look to commercial wireless
+networks as a critical supplement to their public safety and private land, mobile, communications
+systems during these times.
+The CSRIC Working Group 9 Backup Power Sub-team was divided into four focus groups to drill
+down on separate areas, challenges, and recommendations to increase the resiliency and reliability of
+the telecommunications infrastructure.
+These focus areas are: 1) Site Priority and Selection, 2) Regulatory practices to enable shared backup
+power deployment, 3) Technical Requirements for Shared Backup Power Deployment, and 4) Sharing
+of Portable Generators and Fuel resources.
+It should also be noted that the National Institute of Standards and Technology (NIST) is currently
+engaged in the research and development of a disaster resilience framework document that outlines
+the shortcomings that must be addressed in order to heighten community resiliency. In chapter 8 of
+6The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+that document, NIST outlines recommendations relating to telecommunications infrastructure and
+backup power.
+Working Group 9 recommends that the FCC share the following output and recommendations,
+including research, findings, and considerations, outlined throughout this document with NIST and
+other working groups engaged in similar work.
+2.1 POWER BACKUP REQUIREMENTS
+The power requirements based on kilowatts (kW) for telecommunications sites and supporting
+facilities can be categorized as follows:
+ Single Operator Site (outdoor cabinets) – 5kW to 10kW
+ Single Operator Site (shelter site) – 30kW to 50kW
+ Multiple Operator Site – 5kW to 50kW per operator
+2.2 TYPES OF BACKUP POWER
+A variety of backup power devices are used on telecommunications sites. The type and size of
+systems depend upon the facility power demand, the designed backup time, and the critical nature of
+the site. Each operator has their own specific requirements and is best suited to determine their
+potential liabilities. The operator will be responsible for ensuring that the configured backup
+system(s) meets their specific policies and regulations. These requirements may include
+environmental systems related to equipment operating parameters.
+2.3 BATTERIES
+There are several types of batteries available for power backup. Examples of common batteries used
+at sites include ventilated lead acid (VLA), valve regulated lead acid (VRLA) or non-spill, and Nickel
+Cadmium (Ni-Cd). Batteries provide a direct current (DC) power source for the site equipment and
+are generally sized for two to eight hours of back-up. In some instances, the batteries are sized for 15
+minutes of back up only to provide enough run time for a standby generator to restore power.
+Battery backup generally will not provide power to heating, ventilation and air conditioning (HVAC)
+systems. Without proper cooling, sites can overheat before the battery has depleted. Therefore, a
+means to provide a temporary alternating current (AC) power source, whether a permanent fixture
+or portable fixture, should be available.
+2.4 STANDBY STATIONARY GENERATORS
+Standby Generators are utilized for long duration outages and are sized to support the entire facility
+for the site equipment, battery recharge, and HVAC operation. Standby generators are deployed in
+addition to battery backup systems.
+There are multiple generator types and fuel sources, as outlined below. All need to be properly sized
+for the site requirements which include site operation as well as power inrush due to equipment start
+up. Proper sizing is also critical when deploying for multiple operators.
+7The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Run time duration for fuel source sizing should be based on peak load. See section 5.6.3 in this
+document for recommended fuel tank sizing guidelines. This should be adjusted based on site access,
+remoteness of site, and available resources. For example, sites with generators that are located on
+remote mountains should have fuel to support longer durations, whereas sites located close to fueling
+centers can have less fuel.
+2.4.1 PORTABLE GENERATORS
+When stationary generators are not available, portable generators can be deployed to sites.
+Operators typically have a means for temporary connection through the use of Cam-LokTM connectors,
+generator plugs, or other quick connection devices. When planning for use of portable generators as a
+shared source, pre-planning for deployment must occur before actual emergencies. Considerations
+must be made for sizing, management, fueling, installation, and security. Portable generators are
+highly prone to theft during an emergency situation. Likewise, consideration should be given to
+securing the fuel for both fixed and portable generators. For some sites with considerable battery
+backup, portable generators may be moved from site-to-site to recharge the batteries.
+2.4.2 FUEL CELLS
+Fuel cells convert the chemical energy in a fuel directly to electrical energy. They can be more
+efficient and reliable than generators and have no, or a very small emissions footprint. Like
+generators, fuel cells are used for providing extended duration backup.
+2.4.3 TYPES OF FUEL
+The following is a list of backup power sources and their fuel types:
+Standby Internal Combustion Generator:
+ Diesel
+ Propane
+ Natural Gas
+Fuel Cell:
+ Hydrogen
+ Methanol
+ Natural Gas
+2.5 RESEARCH
+In an effort to better understand present generator deployments and distributions the working group
+gathered a random sample of site and generator information from 600 random sites across the
+Eastern U.S. The sample shows that currently, there is an average of 2.5 carriers collocated at each
+site. Based upon this sampling there is a possibility that two or more carriers could potentially come
+together at these shared locations to create an immediate efficiency regarding shared resources.
+Total Sites Total Generators Total Carriers
+600 894 1558
+Avg. Carriers Per Site Avg. Generators Per Site
+8The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+2.5 1.5
+3 SITE SELECTION AND PRIORITIZATION FOR SHARED BACKUP POWER
+3.1 OVERVIEW
+When all carriers at multi-tenant sites can tie into a landlord provisioned or shared third party fixed
+backup power generator, it becomes an effective and environmentally friendly way to back up the
+telecommunications infrastructure. Rather than each carrier providing their own extended backup
+power source, a multi-tenant unit can provide a fixed generation asset that carriers could potentially
+access if at a reasonable costs. And, instead of each carrier needing its own space–space issues
+becoming increasingly more difficult for each sequentially arriving carrier–a multi-tenant generator
+model provides efficiencies. Additionally, a single generator, rather than multiple generators, lowers
+capital and operating expenditures and avoids escalating environmental, noise, space, and other
+similar issues. Regarding the supply chain, there would be fewer organizations vying for an often
+constrained diesel fuel supply while providing for a reduced risk of diesel spills.
+When multiple requirements for backup power exist at a single cell site, options for a shared source
+could be explored. A single multi-tenant generator asset can be owned, operated, and maintained by
+the Tower Aggregators, Network Operators, or another Third Party Provider.
+3.2 CHALLENGES
+Wireless networks are power hardened to different degrees from a backup power perspective based
+on the carrier’s needs (some carriers already have standby emergency generators at a majority of
+their sites). Rooftop sites will always be very difficult to power harden due to the logistics of
+generator placement. Even if the carrier is attempting to run a cable to a ground level generator, in
+urban environments there is often no ground level space that the landlord can or will make available.
+Additionally, power hardening a rooftop site after the fact is much more difficult because of the need
+to secure cranes, permits, as well as weight, space, and vibration restrictions at these locations. The
+only truly feasible method to power harden a rooftop site is to tie into the landlord generator or
+install a natural gas generator which requires the building owner to run natural gas to the roof. Some
+9The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+building owners do not like the idea of a spark ignited generator on their roof. Building owners may
+be more amenable to generator installation when the unit supports carrier relevant facility critical
+functions such as security systems.
+Additionally, at tower sites, installing a fixed backup power source after a tower is commissioned is
+much more difficult than installing it as part of the initial build. This is primarily because the space set
+aside for a fixed generator is limited in many compounds where there are multiple carriers present.
+3.3 COVERAGE VS CAPACITY
+For a single carrier, basic wireless service coverage can typically be restored more quickly and at a
+less prohibitive cost than fully restoring previously existing network capacity. For example, high sites
+that cover a larger area would be restored first when possible. This would bring coverage to a large
+area, but might compromise the reliability of service inside buildings because the average signal
+strength at the location will be lower. There might be many more dropped calls when many cells are
+out of service, because the amount of cell "overlap" might not be sufficient for reliable handoffs. In
+general, not all carriers will necessarily have the same needs from each site, nor do carriers
+necessarily provide the same coverage footprint with the same sites. This is due to the differences in
+technology, numbers of antennas and antenna height on the tower, frequency band, capacity, and
+individual carrier deployment priorities.
+Providing a basic coverage area may be possible with a fraction of the cell sites within an area. Those
+higher coverage sites selected to be protected could, by themselves efficiently provide a basic
+coverage footprint to be used by other critical services. This is in line with existing priority
+communications program objectives that would allow critical users access to a congested network via
+Wireless Priority Service (WPS) and/or Government Emergency Telecommunications System (GETS).
+As wireless networks transition to all Internet Protocol (IP) based infrastructure, telecom providers
+will have greater capability to manage traffic flow, provided they are not prohibited from doing so.
+After a disaster, if networks are damaged and heavily loaded, voice traffic could be prioritized above
+data services. Low priority web traffic demands could have their access to the network limited, while
+voice and higher priority data traffic is accommodated1.
+3.3.1 CRITICAL SERVICES
+While coverage sites are a good starting point to identify and prioritize opportunities for shared
+backup power, each carrier will likely have a selection of sites that are considered their highest
+priority. Some examples of these are sites that: generate a significant amount of traffic and/or
+revenue, cover first responder/public safety locations such as Emergency Operation Centers, provide
+service to major commercial airports/ports, important customers, and other critical infrastructures
+(healthcare, energy, transportation systems, banking & finance, etc.).
+1 The introduction of Self Organizing Networks and LTE Direct capabilities will impact carrier decisions on network
+restoration however as future implementations they are not considered in this document.
+10The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+3.4 OTHER CO-LOCATED SITES
+Those sites that are not considered to be a ‘Critical Server’ or a ‘Coverage Site’ still add value and may
+be good candidates for sharing backup power. With the deployment of Long Term Evolution (LTE),
+backhaul requirements from cell sites have increased by orders of magnitude. Increased bandwidth
+requirements have driven a resurgence of short-haul microwave networks. Microwave network
+topology can result in points where the traffic from dozens of sites can converge to a single fiber
+access node. While protected rings are often deployed for redundancy, it is still good engineering
+practice to harden all fiber access nodes.
+3.5 LEVEL OF RISK
+3.5.1 COMMERCIAL POWER FAILURE FREQUENCY AND DURATION
+Risk is a function of probability and impact. Just over half of all commercial power failure outage
+events are less than one hour in duration. This can be a helpful first step in developing a risk
+management strategy. While one may conclude that it’s an acceptable risk to ignore the longer
+duration outages, it would be a mistake to do so. More frequent short-duration events result in a
+comparatively small threat to network operation/reliability. However, less frequent long-duration
+events result in a disproportionately larger threat. In other words, while the frequency of events
+lasting less than one hour is much higher, the events lasting longer than 8 hours can account for a
+much greater impact in terms of service outages if extended backup power is not provided.
+Additionally, shorter duration outages can generally be managed by site battery backup.
+3.5.2 AREA LEVEL RISK
+Power hardening provides a varying degree of greater reliability in different parts of the country.
+With every investment in improved network reliability, there is an increase in capital cost, and
+generally an increase in perpetual operating expense as well. Providers manage these costs along
+with other costs such as the rising costs of deploying faster networks. Hence, the decision to
+undertake any investment is a function of weighing potential consumer benefits relative to the
+costs. Even though a shared backup power resource can make sense, carriers may elect to not seek
+a backup power solution in every part of the country.
+Consideration must also be given by market to the possibility of that market’s most likely causes of
+long-term power outages also causing long-term backhaul outages. If backhaul is likely to be also
+lost, the value of power hardening is greatly reduced.
+Appendix A outlines an analysis of different risk factors to assist in prioritizing geographies for
+Backup Power Hardening.
+3.6 RECOMMENDATIONS FOR SITE PRIORITY AND SELECTION
+The following recommendations regarding site priority and selection are not meant to be classified as
+best practices, but rather, considerations that the FCC should share with NIST and other working
+groups engaged in similar work.
+ In High Risk Markets, carriers could consider jointly sharing a generator.
+11The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+ Carriers could seek opportunities to tie into a landlord generator on rooftop sites if possible.
+ Carriers could identify “Coverage Sites” and “Critical Server” sites as a starting point for those
+sites they wish to have backup power. A prioritization of several broad categories could be a
+useful starting point.
+ Property Managers, aggregating tower resources, or carriers could implement a shared resource
+deployment model that supports backup generator(s) for existing carriers as well as new carriers
+utilizing a tower.
+ Carriers and Tower Companies could discuss options under a non-disclosure agreement to
+discuss shared generator opportunities for locations where they are collocated in the same
+compound. Possible options to consider are the option to join together to provide a multi-tenant
+generator tie-in or seek a third party to provide the shared generator for a monthly fee.
+ Carriers could prioritize backup power hardening in markets/areas with the most risk of natural
+disasters that also have the least reliable/resilient electrical power grid (“High Risk Markets”).
+ The reasonableness of the monthly charge to tie into a landlord owned generator should relate to
+the costs of deployment, as this is a capital intensive venture with high costs to operate.
+ Microwave network topology could result in points where the traffic from dozens of sites can
+converge to a single fiber access node. In such cases, carriers could consider investigating
+opportunities to harden these locations.
+ Jurisdictions could consider aiding operators in routing natural gas connections to urban cell
+sites. Assistance may be found in having fire department or city subject matter experts provide
+advice on the relative safety of gas lines running to carrier generators.
+3.7 CONTACT MATRIX
+See Appendix B for contacts at Tower Companies and Telecom Providers.
+4 REGULATORY PRACTICES FOR BACKUP POWER SHARING
+4.1 OVERVIEW
+The purpose of focusing on the regulatory practices surrounding backup power sharing was to
+establish a list a of existing backup power equipment regulations in order to help expedite approval
+from state and federal regulatory agencies, zoning boards, building codes, fire departments, etc. for
+deployment of such equipment during an emergency situation. While some rules for backup power
+deployments are necessary, Working Group 9 recommends the FCC work with local, state, and federal
+regulators to adjust policies to ease the burden on carriers and Tower Companies in deploying
+permanent and or portable backup power resources that would provide backup power during
+emergencies.
+4.2 FEDERAL, STATE, AND LOCAL REGULATIONS
+Federal Regulations
+Federal, National Electric Code (NEC) and International Building Code (IBC) regulations for standby
+equipment are specified in various National Fire Protection Agency (NFPA) codes. The
+12The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+transportation of fuels is regulated by the US Department of Transportation (DOT). Emission
+regulations governing emergency standby diesel generators primarily rest with the US
+Environmental Protection Agency (EPA).
+The NFPA requires that Optional Standby Power Systems be installed, tested and maintained in
+accordance with NFPA 110, Standard for Emergency and Standby Power Systems.
+Fuel Storage tanks are covered under NFPA-30, Flammable and Combustible Liquids Code.
+Enforceable under Occupational Safety and Health Act (OSHA) and many state and local regulations,
+NFPA 30 provides safeguards to reduce the hazards associated with the storage, handling, and use of
+flammable and combustible liquids.
+State and Local Regulations
+State, regional, and local jurisdictions can dictate their own requirements which govern pollutant
+limits, runtime usage, and reporting requirements, including the California Air Resources Board and
+the South Coast Air Quality Management District. These regulations vary from state-to-state and by
+local jurisdictions. An exhaustive list of such regulations will be substantial and is therefore not
+provided here. The following website will help guide backup resource owners and operators to
+determine the state and local regulations governing the deployment and sharing of backup resources
+during emergency situations (select ADOPTIONS tab):
+http://www.iccsafe.org/cs/PMG/Pages/default.aspx
+4.3 GENERATORS
+4.3.1 DIESEL GENERATOR REGULATIONS
+Diesel is currently the most popular fuel source for standby generators. Diesel is a widely available
+fuel with a well-established distribution network. However, diesel does require great care in its
+handling due to environmental impact from spills as well as having the largest emissions
+considerations.
+Diesel is classified as Class 2 fuel. The EPA issued its final exhaust emission regulations in 2010 for
+emergency Standby Diesel Generator Sets, which took effect on January 1, 2011.
+The EPA began to enforce limitations on exhaust emissions for off-highway diesel engines in 1996,
+and in 2006, for stationary diesel generator sets. These ‘progressive’ regulations (called Tier levels)
+became more stringent in the years since, and have had a major effect in substantially lowering the
+levels of nitrogen oxide (NOx), carbon monoxide (CO), particulate matter (PM) and non-methane
+hydrocarbons (NMHC).
+13The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+By the time Tier 4 Final regulations were introduced in 2013 and 2014, the NOx and PM levels from
+diesel exhaust will have been reduced by 99%. These Tier levels were introduced and ‘staggered’
+over this timeframe, dependent upon the generator diesel engine horsepower (or metric mechanical
+kW equivalent) and not the kW output per the generator nameplate. Diesel engine manufacturers
+were able to achieve compliance by implementing in-engine or internal design changes (e.g.
+combustion chamber, fuel injection pressure, valve timing, cooled exhaust gas recirculation, and
+engine controls) to meet the Tier 2 and Tier 3 regulations and this has resulted in an emission
+reduction improvement of more than 85%.
+Alternative Standards
+The EPA has found that the low exhaust emission rates with Tier 2 and Tier 3 engines will be
+acceptable for Emergency Standby Power (ESP) installations and thus they are exempt from the need
+to use Tier 4 Interim and Tier 4 Final diesel engines. However, the smaller horsepower (HP) sizes
+(below 50HP) are already required to comply with Tier 4 Interim (since 2008). In addition, ESPs have
+historically only been shown to run for less than 200 hours per year, and thus, have a very small
+impact on the local air quality. There is no limit to the duration of run-time hours in true emergency
+occasions such as utility outages or equipment malfunctions. This means that such generators will be
+14The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+in compliance with EPA through 2015 and beyond where they are used strictly for emergency duties.
+Currently, they will be allowed to run for up to 100 hours per year for testing and maintenance
+purposes, including discretionary and not-for-profit non-emergency usage.
+Definition of “Optional Standby Systems”
+The 2014 Edition of the National Electric Code (NEC) defines “Emergency Systems” in Article 700,
+“Legally Required Standby Systems” in Article 701, and “Optional Standby Systems” in Article 702. All
+cell site generators are classified as optional standby systems and are governed as such by NEC
+Article 702 and NFPA 110. Use of the NEC defined term “emergency” creates unnecessary confusion
+with Authorities Having Jurisdiction (AHJ) and should be avoided.
+Optional standby systems are generator installations that only operate (i.e. limited operation) upon
+the loss of a normal power source such as the utility or mains grid. In this instance, when the normal
+power source is lost, the generator starts to supply the electrical loads. Once the normal power
+source is reestablished and the generator shuts down, these electrical loads are once again supplied
+from the normal source. All operation of the generator must be recorded by the user and referenced
+to a non-resettable hour recorder fitted to the generator. Any new diesel engines that are built after
+the effected introduction date of the Tier 4 regulation must also be fitted with a permanent label
+stating that they are only for emergency use.
+Exemptions and Challenges
+State and local authorities may dictate stricter regulated emissions limits. The following are examples
+of these exemptions:
+ The State of California will not exempt emergency diesel generators with these applicable
+EPA rules from 2011 and will enforce even stricter regulations for non-emergency stationary
+engines. This will result in the large majority of generator sets sold into California to use
+exhaust after-treatment devices, beginning in 2011.
+ Certain regions and locations in the US may also enforce more stringent stationary emission
+regulations than the EPA diesel engine Tier levels. These include non-attainment areas -
+normally large population centers - where high local emissions, local weather conditions, or
+ozone concentrations exceed the EPA air quality standard recommendations. For example,
+we can refer to such as areas of Southern California, areas of many New England states,
+Atlanta, GA, Puerto Rico, and Houston, TX. This means that a stationary diesel-fueled
+emergency generator set – even if certified to the appropriate EPA Tier level, may not meet
+the local requirements.
+As the EPA lowers National Ambient Air Quality Standards (NAAQS) levels across the nation, more
+areas are likely to fall into non-attainment status and therefore further engine emission regulations
+are likely to be implemented. Although the newer EPA National Emission Standards for Hazardous
+Air Pollutants (NESHAP) rules allow for unlimited running of generators during emergencies, very
+few states have adopted this approach and still limit the use of generators during emergency
+situations.
+15The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Additional Notes
+EPA Diesel Off Road Emissions Compliance
+ Technology of engines must be compliant based on when the unit was purchased. If it was
+purchased in 2007, the 2007 rulings apply to that unit.
+ Spill Containment – Liquid containment based on the amount of fuel in the unit. Must have
+measures in place to ensure there are no spills when the unit is deployed.
+ Noise regulations are set locally.
+4.3.1.1 Fuel Transportation Regulations
+The US Department of Transportation (USDOT) issues most of the “Transportation” regulations in
+Title 49 – Transportation, Code of Federal Regulations (49 CFR). The Hazardous Materials
+Regulations (HMR) are in the volume containing Parts 100-185 and govern the transportation of
+hazardous materials in all modes of transportation – air, highway, rail, and water.
+Transport of No. 2 Diesel Fuel
+ A Department of Transportation (DOT) 406 tank is not required but is suitable for the
+transport of Diesel Fuel under the United Nations Hazardous Material Code 1202 and North
+American Hazardous Material Code 1993 (UN1202/NA1993) on public roadways per federal
+transportation requirements.
+ A DOT 406 tank is also suitable for the transport of No. 2 Diesel Fuel (UN1202/NA1993), but
+is not required per Special Provision B1 found in 49 CFR 172.102, p. 325 noted in the
+Hazardous Materials Table found in 49 CFR §172.101. Special Provision B1 specifies that
+materials with flash-points above 38°C (100°F) and lower than 93°C (200°F) are subject to 49
+CFR §173.241(Bulk packaging for certain low hazard liquid and solid materials).
+ 49 CFR §173.241 specifies that non-DOT specification cargo tank motor vehicles are suitable
+for the transport of such fuels. No. 2 Diesel Fuel (UN1202/NA1993) has a flash-point greater
+than 58°C (125°F).
+Additional Information Regarding Fuel Transport:
+ A double-wall tank is not required per federal transportation requirements for the transport
+of diesel or gasoline in bulk containers, but may be required by local or other jurisdictional
+regulations.
+ Underwriters Laboratories (UL) standards 142 and 2085 do not apply to mobile fuel storage
+containers, only to stationary above ground storage tanks as specified in the scope of the UL
+142 standard, part 1.7.
+The following quality standards are typically required:
+ UN 31A Group Y Intermediate Bulk Container (IBC): Such IBCs are suitable for the transport
+of Gasoline (UN1203) on public roadways per federal transportation requirements codified at
+49 CFR §173.242 sub-part d. Group Y IBCs are authorized to transport UN Packaging Group
+(PG) II materials, which includes Gasoline (UN1203) and No. 2 Diesel Fuel
+(UN1202/NA1993). See 49 CFR §178.703(Marking of IBCs).
+16The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+ UL 142 as an aboveground storage tank. See above.
+4.3.2 PROPANE GENERATOR REGULATIONS
+NFPA 58, Liquefied Petroleum (LP) Gas Code, is the industry benchmark for safe LP Gas storage,
+handling, transportation, and use. This code mitigates risks and ensures safe installations to prevent
+failures, leaks, and tampering that could lead to fires and explosions.
+4.3.2.1 Transportation of Propane
+General requirements for the transportation of LP gas in cylinders are found in 49 CFR § 173.301.
+(1) Paragraph (c) requires that, "A container for which prescribed periodic retest has become due
+must not be charged and shipped until such retest has been properly made."
+(2) Paragraph (g) requires that containers charged with flammable gases must have their valves
+protected by one of the following methods:
+(a) By equipping the containers with securely attached metal caps of sufficient strength to
+protect the valves from injury during transit.
+(b) By boxing or crating the containers so as to give proper protection to the valves.
+(c) By so constructing the containers that the valve is recessed into the container or
+otherwise protected so that it will not be subjected to a blow when the container is dropped
+on a flat surface.
+(d) By loading the containers compactly in an upright position and securely bracing in cars or
+motor vehicles, when loaded by the consignor and to be unloaded by the consignee.
+Methods (a), (c), and (d) apply to portable and stationary LP gas cylinders transported by propane
+marketing companies. Method (b) is used for small non-refillable cylinders.
+(3) In addition to these specific requirements, the other regulations regarding container labeling,
+vehicle placarding, shipping papers, and emergency information covered in other guides in this
+reference apply as well.
+4.3.3 NATURAL GAS GENERATOR REGULATIONS
+NFPA 54, National Fuel Gas Code (NFGC) covers the installation and operation of fuel gas piping
+systems, appliances, equipment, and related accessories, with rules for piping system materials and
+components, piping system testing and purging, combustion and ventilation air supply, and venting of
+gas-fired appliances and equipment.
+Natural gas generators are almost always deployed at sites that have piped natural gas. The increased
+availability of natural gas in the US has made natural gas generators more attractive for use at sites.
+However, it should be noted that in the event of an emergency situation or disaster, the natural gas
+suppliers may elect to suspend the supply of natural gas if there is a possibility of a gas line break.
+This was evident during the Super Storm Sandy event of 2012. Some natural gas generators are
+17The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+capable of utilizing other fuels, which may be transported to the site. Otherwise, such sites should
+plan to accommodate a portable backup resource for emergency situations.
+It should also be noted that on-site power generators are used mostly during power outages created
+by natural disasters. The preferred method is to provide self-contained on-site power backup
+equipment with a fuel source, which provides ample run-time and can be continually replenished.
+4.4 FUEL CELLS
+Fuel cells provide a clean and reliable source for power backup. This is a new technology and so far,
+they have been deployed at thousands of wireless cell sites in the US. Fuel cells provide DC power
+output and are therefore more suited for outdoor cabinet sites, which require DC power only. In some
+cases, inverters are used to provide backup for AC powered equipment.
+NFPA 853, Standard for the Installation of Stationary Fuel Cell Power System applies to the design,
+construction, and installation of stationary fuel cell power systems. The scope of this document
+includes the following: (1) A singular prepackaged, self-contained power system unit (2) Any
+combination of prepackaged, self-contained power system units (3) Power system units comprised of
+two or more factory-matched modular components intended to be assembled in the field (4)
+Engineered and field-constructed power systems that employ fuel cells.
+4.4.1 HYDROGEN FUEL CELL REGULATIONS
+NFPA 2, Hydrogen Technologies Code, provides fundamental safeguards for the generation,
+installation, storage, piping, use, and handling of hydrogen in compressed gas (GH2) form or
+cryogenic liquid (LH2) form. This code is derived from NFPA 55 specifically for hydrogen gas.
+General requirements for the transportation of hydrogen cylinders are found in 49 CFR § 173.302.
+4.4.2 METHANOL FUEL CELL REGULATIONS
+Methanol (CAS: 67-56-1, NIOSH: PC-1400000, DOT: 1230, UN-1230, NA-1230) is classified by the
+International Code Council (ICC) and the NFPA under the Uniform Fire Code (UFC) as an, “IB
+Flammable Liquid,” and by the UN as a, “1993 Class 3 Flammable Liquid.” The NFPA and DOT rank
+flammability as a 3 primary hazard, and toxicity as a 6.1 ranked secondary hazard. Guidelines for
+handling IB flammable liquids are provided by codes and standards published by ICC, NFPA, and the
+IFC.
+Guidance for safe storage of methanol is provided by ICC, NFPA, and IFC, and is available in:
+ NFPA 1, Uniform Fire Code
+ NFPA 30, Flammable and Combustible Liquids Code
+4.5 RECOMMENDATIONS FOR REGULATORY PRACTICES FOR BACKUP POWER SHARING
+Although the local, state, and federal regulations mentioned in the above sections have proven
+successful at lowering pollutants, they also serve to potentially inhibit the efficient deployment of
+18The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+generators and/or other backup power solutions to cell sites and other communications facilities
+during emergencies.
+Our recommendation is for the FCC to work with local, state and federal regulators to explore
+alternatives to lighten these regulations as they apply to wireless infrastructure in an effort to
+streamline the deployment of permanent and or temporary backup power resources enabling those
+facilities to operate during times of emergency.
+5 TECHNICAL REQUIREMENTS FOR BACKUP POWER SHARING
+5.1 SCOPE
+Develop a framework for how stationary and portable shared standby power resources can be
+accomplished from an engineering, installation, and maintenance practice perspective. This section is
+designed as a job aid to assist tower owners, carriers, and third parties in areas such as engineering
+design considerations, sizing, and how to evaluate standby power options per site conditions.
+Generic block diagrams describe the various stationary and portable shared generator configurations.
+5.2 OVERVIEW
+Carriers have deployed a variety of standby power alternatives at cell sites, including a combination
+of batteries, stationary standby generators, fuel cells, and portable generators. The type and size of
+systems depend upon the facility power demand, the designed backup time, and the critical nature of
+the site. Each operator has their own specific requirements and is best suited to determine their risk
+management strategies. The operator will be responsible for ensuring that the configured backup
+system(s) meets their specific policies and regulations.
+Deploying stationary standby generators or fuel cells for every carrier at every site can be costly and
+in many cases, such as urban rooftop sites, technically challenging. During a widespread disaster
+recovery effort, portable generator resources and fuel availability are strained. Sharing standby
+power resources may provide carriers a method in which to improve resiliency at a reduced cost, or
+to stretch limited resources. However, it is important to note that all shared standby generator
+scenarios are inherently less resilient than each carrier having their own stationary standby
+generator. If a single shared generator fails, the entire site is out of service. If each carrier has its own
+dedicated generator and it fails, then only that carrier is out of service.
+During a disaster, if every carrier deploys a portable generator, it can create logistics problems with
+parking and fuel delivery access. At the site in Figure #5-1 (below), one carrier owns the site and has
+a stationary standby generator that serves its facilities. Other carriers lease space at the tower.
+During this disaster recovery, the tenant carriers each deployed portable generators. The first two
+portable generators consumed the available space inside the fence, forcing the third carrier to park
+his portable genset outside. This exposes the portable genset to a greater chance of theft or
+vandalism. The two portable generators inside the fence block access to the host carrier’s fuel tank,
+restricting the ability to refuel.
+19The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+If the stationary standby generator has the capacity to serve the total power requirements for the
+site, then this site is an example of where shared standby power resources can be a win-win for all.
+The generator owner benefits via revenue from increased lease rates and the ability to access and
+refuel his standby generator. The tenant carriers benefit by not having to deploy limited portable
+resources at this site, not having to schedule multiple refuel visits, and by not being the “odd man out”
+who has to park on the street.
+Figure #5-1 – Multiple Portable Genset Deployment – Possible Shared Standby Power Opportunity.
+5.3 TYPICAL CELL SITE CONFIGURATION
+To understand the shared stationary and portable standby power options, we need to understand
+how carriers currently deploy dedicated stationary and portable standby power.
+A typical shelter configuration that includes a dedicated stationary standby generator is shown in
+Figure #5-2 (below). Major power related components include:
+ AC electrical infrastructure,
+ DC power plant, and
+ Standby AC Generator
+The AC electrical infrastructure consists of the commercial AC service, automatic transfer switch
+(ATS), and AC distribution panel board. DC power plant consists of rectifiers, batteries, and DC
+distribution. The stationary standby generator is typically located outside the shelter, in an enclosure,
+as shown in Figure #5-3 (below).
+20The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Figure #5-2 – Example Cell Site Configuration – Shelter with a Stationary Standby Generator.
+Figure #5-3 – Typical Stationary Standby Generator in an Enclosure
+A typical cabinet based configuration that includes a stationary standby generator is shown in figure
+#5-4 (below). The fundamental difference between shelters that utilize HVAC versus a cabinet based
+configuration that relies on convection cooling is the equipment is more environmentally hardened in
+a cabinet and does not require air conditioning. The absence of air conditioning reduces site power
+requirements, typically by nearly half. More importantly, it eliminates the inrush current from a
+compressor, which allows for smaller standby generator sizing. Given the predominant shelter design
+21The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+includes 2N redundant HVAC units, eliminating the inrush current is significant. Generator sizing will
+be discussed in greater detail in section 5.6.
+Figure #5-4 – Typical Cell Site – Cabinet on a Pad with a Stationary Standby Generator
+5.4 STATIONARY SHARED STANDBY POWER SYSTEMS
+5.4.1 AC VS DC POWER IN A SHARED GENERATOR SCENARIO
+AC standby generators are the logical choice for shared standby power applications. Code regulations
+and wiring methods for AC distribution to multiple tenants are well defined and understood, while
+code regulations and wiring methods for DC distribution to multiple tenants are either non-existent
+or poorly understood. This effectively eliminates DC generators and fuel cells that produce a DC
+output from shared standby power application consideration. DC generators and fuel cells are viable
+solutions when dedicated to a single carrier.
+While it is true that inverters can be added to convert the DC output of a DC generator or fuel cell to
+AC, thus overcoming the code regulations and wiring methods concern, the addition of an inverter
+raises its own concerns:
+ Diminished resiliency, as it introduces a single point of failure. N+1 or 2N architectures are
+required to overcome single point of failure, which increases cost and complexity.
+ Diminished energy efficiency. When combined with N+1 or 2N designs, which has an inherently
+lower utilization, energy efficiency is reduced even more.
+22The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+ An AC generator is a more logical design than a DC generator plus an inverter.
+Finally, DC generators or fuel cells that do not use an inverter require the use of DC powered cooling.
+While an individual carrier may choose to deploy DC cooling at a site, the odds that every carrier at a
+site has deployed or is willing to deploy DC cooling, is virtually zero. This document will focus on
+shared standby AC design options.
+5.4.2 STATIONARY SHARED STANDBY AC DESIGN OPTIONS
+It is recommended that one of the two following designs should be considered when deciding which
+standby AC system to employ. There are two basic choices in stationary shared AC standby power
+system design:
+ Recommended Design – Shared stationary standby generator equipped with an individual
+ATS for each tenant, as shown in Figure #5-5 (below). This design is the most favored design
+among carriers and tower owners at existing shared stationary standby generator sites.
+ Alternate Design – Shared stationary standby generator equipped with a single ATS, as shown
+in Figure #5-6 (below). This alternate design is more logical if the site is new with no existing
+electrical infrastructure. The ATS connects to a Main Distribution Panel (MDP), with breakers
+for each tenant. A remote controlled relay to turn off power to each tenant may be required,
+particularly to sequence adding each tenant to the genset load, to limit inrush current.
+Figure #5-5 – Recommended Design: Shared Stationary Standby Generator equipped with an
+Individual ATS per Carrier
+23The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Advantages Disadvantages
+ Most practical and economical stationary  More expensive from an equipment
+genset solution for existing sites. At perspective, as compared to a single ATS.
+existing sites, carriers already have
+ Consumes more real estate.
+individual commercial service and
+transfer switches installed. Thus, this  Greater installation complexity at a new
+design is simpler for existing installations. installation.
+ Each tenant retains his own commercial  Carrier relies on 3rd party for fuel supply
+AC power feed. and maintenance.
+ No need for the generator owner to
+meter grid power usage.
+ Restores entire site automatically.
+ Supports a larger fuel reserve as
+compared to portable options.
+Figure #5-6 – Alternate Design - Shared Stationary Standby Generator equipped with Single ATS
+24The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Advantages Disadvantages
+ At a new installation, single ATS design is  Not practical for existing sites.
+simpler and saves the cost of multiple
+ Need equipment to monitor individual
+ATS.
+tenant power consumption, and
+ Restores entire site automatically. administration to regularly bill tenants for
+their share of power.
+ Supports a larger fuel reserve as
+compared to portable options.  Carrier relies on 3rd party for fuel supply
+and maintenance.
+5.5 PORTABLE SHARED STANDBY POWER SYSTEMS
+5.5.1 PROPOSED RECOMMENDATIONS
+The following recommendations regarding portable shared standby power systems are not meant to
+be classified as best practices, but rather, considerations that the FCC should share with NIST and
+other working groups engaged in similar work.
+The recommendation would be for carriers, network operators, and carrier aggregators who are
+considering deploying a generator as a shared resource, to consider the following:
+ Multiple plug and cord interfaces (e.g., Cam-LokTM, Appleton, Hubbell; reference Table #1).
+It is important to document what genset plug is present at each site by carrier. A pre-
+defined set of cords and plug adapters that mate will be required, including agreement on
+where they will be stored. Failure to plan ahead may necessitate hiring an electrician during
+the event to perform final connections.
+ Service sizes versus actual load. Many service sizes will be 240V 200A (48 kVA) per carrier,
+but actual load may be much less (perhaps 10-20%). A fleet of shared portable generators
+sized at 200 kW to serve multiple carriers may be oversized, if the actual cumulative load is
+in the 20-40 kW range.
+ Fuel Reserve. Most portable generators have a limited fuel tank capacity, which is typically
+much less than what a stationary standby generator would be engineered for. Limited fuel
+reserve capacity places additional strain on resources to refuel more frequently. If a shared
+portable generator solution has to be refueled every 8-12 hours, it may not be a practical
+solution during an extended natural disaster.
+ Site Access. Road closures and police checkpoints are common during a widespread natural
+disaster. A fleet of portable generators and other service vehicles can be rendered idle, as
+seen in Figure #5-7 (below) after Hurricane Ike. Credentials to provide access should be
+arranged when possible as part of the planning process. For sites located in or on secured
+25The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+facilities with electronic controls the carrier should assess the capability to attain access
+during power outages.
+Figure #5-7 – Fleet of Utility Vehicles Halted at a Police Checkpoint. Courtesy: Alexis Kwasinski
+ Where feasible, portable generator owner should consider limiting the weight of a portable
+trailer to 3700 lbs. to enable the unit to be towed by most ½ ton pickup trucks.
+ The portable generator owner should consider installing Global Positioning System (GPS) or
+General Packet Radio System (GPRS) tracking devices as a theft deterrent.
+ Shared portable generator agreements should consider staging of the generator in advance
+of a pending threat or disaster event.
+Applications for a shared portable generator solution include space constrained sites, where there is
+no physical space for multiple portable generators (reference Figure #5-2 above), and cabinet sites
+due to smaller loads at cabinet sites. Cabinet sites are also more likely to be served by existing fleets
+of smaller portable generators that carriers already own.
+One method of addressing the existing variety of generator plugs is the use of a distribution box, as
+shown in Figure #5-8.
+26
+Figure #5-8 – Portable Shared Generator with an external Distribution BoxThe Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Advantages Disadvantages
+ Good fit for existing sites.  Theft.
+ Restores entire site.  More frequent refueling, exacerbated
+by larger generator and load size.
+ Best Plug and Cord flexibility.
+ Access to deploy and refuel may be
+restricted.
+A very similar shared portable generator solution is shown in Figure #5-9. In this case, the cord and
+plug compatibility is fixed, based on what is installed via the on board generator distribution box.
+However, with plug adapters, there is still flexibility to serve multiple carriers with variable plugs.
+Figure #5-9 - Portable Shared Generator with Distribution Box Onboard
+27The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Advantages Disadvantages
+ Good fit for existing sites.  Theft.
+ Restores entire site.  More frequent refueling, exacerbated
+by larger generator and load size.
+ Plug and Cord mating is fixed, but still
+has flexibility with use of plug adapters.  Access to deploy and refuel may be
+Eliminates possible weather and restricted.
+logistics issues associated with an
+ Not as flexible as an external
+external distribution box.
+distribution box.
+The third shared portable configuration is shown in Figure #5-10. It is only viable at new sites and
+has a number of drawbacks that will probably limit its practical use.
+Figure #5-10 - Portable Shared Generator with a Single Transfer Switch
+28The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Advantages Disadvantages
+ For new sites, this is a low cost option.  Theft.
+Particularly at a cabinet sized site,
+ More frequent refueling, exacerbated
+where an existing fleet of portable may
+by larger generator and load size.
+be able to serve the site.
+ Access to deploy and refuel may be
+restricted.
+ Not practical for existing sites.
+ Need equipment to monitor individual
+tenant power consumption, and
+administration to regularly bill tenants
+for their share of power.
+Table #1 - Common Gen Plug Types and Adapters
+Manufacturer/
+Plug Configuration
+Description
+EATON Cooper
+Crouse-Hinds
+Cam-LokTM
+Appleton
+Hubbell
+Adapters
+29The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Cable Kits
+In Field Pin Kits
+Distribution Boxes
+5.5.2 PORTABLE GENERATOR PLUG
+A generator plug is a generic term that indicates a type of connector used to connect a generator to
+the equipment it needs to support. The term can be generically applied to both the corded plug and
+receptacles at the equipment (aka, tap box) and portable generator.
+There are different types, but all perform the same basic function.
+Most carriers will keep a database of what type of service and connection is at each site, in addition to
+cable length needed and suitable locations for a portable generator to be placed. This helps
+streamline communication during an outage, allowing the carrier to ensure the generator is
+dispatched of the proper service type with the correct Gen Plug on board.
+Most generator teams carry an assortment of adapters and/or connectors to be able to fabricate a
+cable in the field. This is also common as the distances to the connection point can vary, depending on
+suitable location, and/or available space at the time of deployment.
+Proper planning and a maintained, current database is the key to quick, trouble free deployments.
+Not only is it important to know the connection specifics at the site, the plan should be
+comprehensive to include generator providers, maintenance teams, refueling vendors, and
+landscaping/access clearing crews.
+5.6 GENERATOR SIZING
+5.6.1 GENERAL CONSIDERATIONS
+Most carrier commercial AC service at a wireless facility is at 240V / 200A for a maximum power
+requirement of 48kVA. Many carriers deploy 35-50 kW generators, which at a typical 80% load
+equals 28-40kW maximum expected continuous load. When a generator is oversized, the drawbacks
+are primarily economic, as long as the load is large enough to prevent wet stacking and the fuel can be
+30The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+consumed in a reasonable amount of time. When a generator is undersized, it cannot function
+properly. Mitigating actions may include load sequencing or load shedding. Ultimately, the generator
+must be replaced, as loads grow. Thus, the natural tendency is to oversize the generator.
+Right sizing a generator increases risk of requiring a generator upgrade in the future (i.e., as tenant
+demand grows or new tenant enters site). Replacing a generator with a larger one will adversely
+impact the economics of the original agreements. Zoning, permitting, and regulatory requirements
+increase costs and can impede the future ability to replace a generator.
+In the shared portable generator scenario, where manual transfer switches are utilized, generator
+owners and carriers need a defined procedure to bring each carrier on-line. In some cases, it may be
+necessary to consider sequencing loads within each carrier, such as delaying HVAC start for some
+minor time period, to mitigate inrush current. These details should be negotiated as part of the
+shared generator agreement.
+5.6.2 DISADVANTAGES TO OVERSIZING A GENERATOR
+In a shared stationary standby generator scenario where multiple carriers will be served,
+conservative power estimates for each carrier compound to oversize the generator are needed. A
+good understanding of the actual load per carrier is required to ensure the shared generator is not
+grossly oversized, while sized to adequately handle inrush current, particularly from multiple HVAC
+compressors starting at the same time.
+Generators are expensive to buy, install, and maintain. The primary disadvantages of oversizing a
+generator are economic and environmental (i.e. increased invested capital, wasted fuel, fuel
+degradation, wet stacking, maintenance costs, etc.).
+Example: Consider a shared generator owner who sizes the generator assuming four (4) carriers will
+be ultimately served by the generator. If each carrier is assumed to have a 40 kW continuous load,
+then a 200 kW generator is selected (200 kW * 80% max load = 160 kW). To provide 72 hours
+reserve, the calculated fuel tank size is ~1,150 gallons. Given the standard product sizing for many
+fuel tank manufacturers jumps from ~1,000 gallon to the ~2,000 gallon size, it is likely the 2,000
+gallon size will be selected. Now assume that only 1 or 2 carriers sign up to the shared generator
+agreement, and each only has a 20 kW load, for a total load of 40 kW. It may take 500 hours at 40 kW
+load to consume 2,000 gallons of fuel. Under normal routine maintenance engine runs, this may
+equate to 5-10 years to consume the fuel (assuming there are no commercial AC outages during this
+time).
+The American Society for Testing and Materials rates diesel fuel stability at one year. If an extreme
+event occurs in year 3, it is likely the fuel filter will become clogged and the generator will stall within
+the first 24 hours of operation. Fuel stabilizing additives are commercially available that will extend
+the storage life of diesel to some extent, but it is likely that in this example the generator owner will
+be forced to periodically replace degraded fuel.
+Shared generator owners may have to disregard the typical fuel tank sizing rule of thumb to “round
+up to the next standard tank size.” Another method to mitigate fuel degradation is not to fill the tank
+31The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+completely if the tank is oversized for the realized load, although water accumulation resulting from
+condensation is a concern with partially filled above ground tanks.
+5.6.3 FUEL TANK SIZING
+ 48-72 hours at full capacity is desirable at wireless sites to support critical activities for
+stationary standby genset installations. Larger fuel tanks may trigger environmental and
+hazardous material storage and permitting requirements.
+ As discussed in the previous section, the typical rule of thumb is to round up to the next
+standard size tank. In the case of a shared generator, where the generator owner is unsure
+how many carriers will eventually sign up for the service and thus what load may be
+realized, consideration should be given to right size the fuel tank, or not to completely fill
+the tank under normal conditions.
+ Portable fuel tanks have a practical limit to fuel reserve capacity. This limit presents a
+challenge for a fleet of large shared portable gensets – if the fuel reserve is limited to 24
+hours or less, can the generator owner logistically refuel a large number of sites
+continuously during an extended event?
+5.6.4 MANAGING CARRIER LOAD GROWTH
+Generator owners and carriers must determine how to manage the reporting of growth of each
+carrier’s load. Agreements may need to specify that carriers are required to report back growth in
+power demand to the shared generator owner. One possible scenario may be to establish a kW limit
+allocation for each carrier and have the carrier report when they will exceed their limit.
+5.7 SITE CRITERIA
+Site conditions are a key component in determining the best design for a given site. General
+considerations include:
+ Matching fuel supply, refueling capability, and standby power source to site conditions.
+ Understand permit requirements and any generator exercise time limits (e.g. in an EPA
+Clean Air Act non-attainment area).
+Match standby power source and size to the most likely type(s) of disaster events for the region.
+5.7.1 EXAMPLES OF SITE CONDITIONS THAT MAY DICTATE STANDBY GENERATOR DESIGN
+The following examples are included to demonstrate why site conditions must be considered when
+designing a standby generator solution.
+32The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Figure #5-11 reflects a site that has been engineered to be resilient to the anticipated disaster that
+may affect the site. This wireline site is located in the New Orleans “bowl” area, which is below sea
+level. A flood event is the most likely disaster, as evidenced after Hurricane Katrina. Thus, placing
+the equipment and standby generator on an elevated platform above the anticipated flood plain is a
+prudent design. In addition, local codes prohibit above ground diesel fuel tanks. Given that it is very
+difficult to refuel an underground diesel fuel tank during a flood event, a natural gas fueled generator
+is a viable option. While not a perfect solution (site is subject to flood hazards such as floating debris
+slamming into the ground level meter, uplift of buried piping), this site did survive Hurricane Katrina.
+Figure #5-11 - New Orleans Wireline Site – Example of Site Conditions Dictating Design.
+Courtesy: Alexis Kwasinski
+Figure #5-12 is an example of a gulf coast cell site that did not survive, due to poor fuel system design.
+The standby generator and wireless equipment were placed on a platform above the anticipated
+storm surge and survived. However, the aboveground propane fuel tank was torn from its pad,
+rupturing its piping and rendering the standby generator useless.
+Figure #5-12 - Gulf Coast Wireless Site – Example of Poor Fuel System Design. 33
+Courtesy: Alexis KwasinskiThe Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+5.7.2 FUEL ALTERNATIVES
+ Diesel Fueled Generator: Diesel will be the most universally available fuel source. Major
+generator manufacturers have regional distributors who stock parts and employ certified
+technicians and mechanics. Thus, the diesel generator is the logical first choice for shared
+standby power. Disadvantages include: air permitting, spill containment, diesel fuel tank
+leak detection, property setback, and noise abatement requirements. Environmentally
+sensitive sites, such as wetlands, National parks, State parks, golf courses, or urban rooftops
+may be poor candidates for diesel fueled standby generators.
+ Biodiesel: Pure biodiesel (designated B100) should never be considered for use in a
+carrier standby generator. However, blended biodiesel up to 5% (designated B1 – B5) may
+be considered, and can improve diesel fuel performance. In order to comply with EPA ultra-
+low sulfur diesel (ULSD) requirements, many refineries or distributors are adding up to a
+2% biodiesel blend (designated B2). 2% Biodiesel also improves lubricity and is harmless
+to a standby generator (although some major generator manufacturers may not agree).
+Many times, the refineries or distributors are adding the 2% blend without notifying their
+customers. Blends higher than B5, however, should generally be avoided. There are
+concerns regarding long term storage, cold weather performance (higher cloud point
+temperature), algae growth, and warranty voidance. For further information, see U.S. DOE
+NREL "Biodiesel: Handling and Use Guidelines," Fourth Edition, January 2009.
+ Gasoline Fueled Generator: Gasoline is highly flammable, more prone to theft, and more
+toxic to the environment if there is a spill. For these reasons, gasoline fueled generators are
+typically rejected for telecommunications standby applications.
+ Natural Gas Fueled Generator: The most obvious advantage to natural gas (NG) fueled
+generators is the elimination of refueling. However, NG is rarely available at remote cell
+sites, which eliminates it from consideration at most rural sites. In addition, NG mains may
+be turned off by fire officials immediately after a seismic event, wildfire, tornado, or any
+other event deemed necessary. NG disruptions are typically local in nature, as opposed to
+regional. In those urban and suburban non-seismic areas where NG is available, it can be a
+viable choice.
+ Propane Fueled Generator: Propane can be a viable alternative where it is available.
+When a propane fueled generator is selected, consideration should be given to a buried
+propane tank with a cathodic protection system. Benefits of a buried propane tank include
+elimination of most forms of vandalism and protection from storm surge (assuming the
+flooding recedes before refueling is necessary). Note that many standby generators can be
+fueled by either NG or propane, making propane an alternate back-up fuel source for NG
+fueled generators. Disadvantages of propane include: code setback and clearance
+requirements, vandalism (aboveground tanks), and refuel capability of local distributors -
+particularly after an extreme event.
+ Hydrogen Fuel Cell: Obvious advantages for hydrogen fuel cells are zero-emissions and
+nearly silent operation. Fuel cells are an alternative to traditional diesel, NG, or propane
+generators. Air-quality permits required for combustion generators in California are not
+required. The noise emissions from the fuel cell are minimal, typically less than a Base
+Transceiver Station (BTS) cabinet. Additionally, environmental permitting, maintenance,
+34The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+and inspection costs associated with diesel generators and diesel fuel tanks are avoided.
+Primary disadvantages include high cost, limited reserve capacity, and hydrogen as the least
+available fuel source. Sites with a stationary fuel cell have still required portable diesel
+generator deployments during extended natural disasters, as shown in Figure #5-13. Fuel
+cell systems are best suited for sites in areas with strict regulatory requirements or are
+environmentally sensitive. However, due to the DC output of a fuel cell, the focus team does
+not see an opportunity for using fuel cells as a shared source of standby power.
+Figure #5-13 – Portable Diesel Genset Required at a Site equipped with a Standby Fuel Cell.
+Courtesy: Alexis Kwasinski
+5.8 MAINTENANCE
+Any standby power system is undermined if maintenance is ignored. Generators must be exercised if
+the operator is to expect them to perform when needed. Like any internal combustion engine,
+periodic replacement of fluids, filters, belts, and hoses are essential to reliability. Areas of particular
+concern include:
+ Start Battery: The primary cause for standby generator failure is a dead start battery.
+Routine generator exercise runs will identify the vast majority of start battery issues.
+Proper selection of a start battery and battery charger is also critical. Money spent on a
+reliable, properly sized start battery and charger from a reputable manufacturer is money
+well spent. Some start batteries can self-discharge when left on open circuit (uncharged) or
+in storage. Be sure to follow manufacturer’s recommended freshening charge interval. If
+not followed, the batteries can suffer permanent loss of capacity.
+ Fuel System: The #2 cause for standby generator failure is lack of fuel. Root causes include
+a clogged fuel filter, fuel pump failure, water in the fuel tank, and a fuel piping valve left in
+the closed position. A common root cause for clogged fuel filter is diesel fuel degradation
+35The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+caused by failure to consume the fuel in a timely manner. Properly sized fuel tanks (not too
+small, not too large) are an important consideration. Again, routine generator exercise will
+identify the vast majority of these issues, and ensure fuel will be consumed and not degrade.
+Annual filtering of fuel, typically using a tighter micron filter, can be beneficial, particularly
+in high humidity areas.
+ ATS: A common flaw during routine engine runs is failure to operate the generator under
+load and thus test the transfer of power to the standby source (i.e., failure to test the
+function of the ATS). A routine engine run without placing the engine under load 1) is
+harmful to the diesel engine, leading to a condition called “wet stacking”, 2) fails to verify
+that the ATS is performing correctly, 3) fails to verify alternator function, and 4) fails to
+verify if the generator is still capable of supporting the connected load. Testing the ATS is
+more complicated in a shared standby power arrangement that utilizes multiple ATS (one
+per carrier). ATS systems should be set to perform “loaded exercise” cycles.
+While critical to maintaining the reliability of the standby power system, these issues are common with any
+standby power system, shared or dedicated. The Focus Team has reviewed the existing standby AC
+maintenance Best Practices and found them to be adequate.
+5.8.1 MANAGING CARRIER MAINTENANCE AND AC ELECTRICAL WORK
+When a carrier sends an electrician to the shared generator site to perform work that may affect the
+generator or other carriers, the generator owner needs to be informed. Changes to the electrical
+infrastructure must be communicated and approved to ensure it does not impact other carriers or the
+shared generator. Conversely, if the generator owner is performing maintenance on the generator or
+changes to the electrical infrastructure, then the affected carriers must be informed. A Method of
+Procedure (MOP) to inform the other parties of any maintenance or electrical infrastructure changes
+must be part of a shared generator agreement.
+6 PORTABLE GENERATORS AND FUEL SHARING
+6.1 SCOPE
+This portion of the report will address the Shared Resources Subcommittee’s findings in regards to
+the implementation and utilization of a shared resource model including, but not limited, to:
+1. How wireless carriers can approach the sharing of resources such as portable generators,
+fuel, and other assets.
+2. Networks and resources (FEMA, the military, U.S. Government) carriers could utilize to fulfill
+their primary purposes of asset and resource coordination.
+3. What can be learned from the Electric Power Industry’s Mutual Assistance Network and how
+carriers can utilize their methods and processes within the wireless industry.
+4. How a shared resources network would assist carriers in gaining priority access to fuel
+terminals and other resources.
+36The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+5. Current and new best practices in regards to small cells, portable generators, bulk fuel efforts,
+etc.
+6. The draft of an internal and external resource communications matrix to be utilized in the
+collecting of mutual interests and resources prior to and during a major disaster event.
+6.2 OVERVIEW
+Historically, carriers have each responded independently during disaster recovery and restoration
+efforts. In recent years, disasters have proven to be a challenge due to a greater reliance upon
+cellular communications. Carriers have used company owned assets or have outsourced portable
+generator fleets, fueling, and other resources during these times. More recently, carriers have
+explored various methods of sharing generator assets but have yet to find a solution that is cost
+effective and reliable.
+The resource focus group has examined the current means of sharing resources and recommend a set
+of best practices that providers could use to more efficiently apply asset and resource sharing
+methods to sustain networks in future events. The purpose was to identify best practices for sharing
+portable resources around asset transportation, access to fuel (priority at terminals), sharing
+refueling drivers, common staging locations for generators, and shared driver, truck, and trailer pools
+for technicians and equipment delivery to sites. These practices do not, of course, replace the need for
+individual carriers to adequately invest in the resiliency of their own networks and their service
+restoration practices and capabilities.
+6.3 APPROACH
+Beginning with the desired end result in mind, we start with ways to create greater efficiencies at the
+sites concerning the following:
+ Stationary and portable shared generators
+ One fuel type utilized at each site if shared generators are not an option.
+ Utilization of one fuel delivery driver regardless of how many carriers are at the site.
+ Shared portable generator fleets.
+ Shared staging facilities.
+Having a shared generator with one fuel source will create an opportunity to streamline restoration
+services and create a more cost effective approach to recovery efforts.
+ The supply and delivery of one fuel type as opposed to several fuel types, eliminates the need
+for multiple suppliers. Example: 2 diesel generators, 1 unleaded gasoline and 1 propane
+equals 4 suppliers, 3 fuel types
+ More cost effective and safer, and eliminates some of the environmental concerns created by
+multiple suppliers responding to each site.
+ One fuel delivery driver is more cost effective and creates efficiency.
+o Four carriers at a site requiring four fuel deliveries by four different suppliers, results
+in increased expense and inefficiency.
+ One generator with a significantly larger fuel supply to extend run time.
+o To eliminate some of the environmental concerns with having a larger quantity of fuel
+onsite. Utilization of multiple diesel tanks to create a larger supply as opposed to one
+larger tank will greatly reduce the impact should a spill occur. For example: three, 200
+37The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+gallon tanks with a gravity or pressure feed instead of one, 600 gallon tank reduces
+the exposure should the tank be damaged causing a leak. If a leak does occur it will
+only release what is in the individual tank. NFPA codes can be met with a fire proof
+plate being placed between each tank onsite. Fuel should not be stored inside the
+shelter.
+ Sharing a portable solution would save on the transportation, deployment, maintenance,
+staging facility, and fuel delivery cost for all involved.
+6.4 SHARED RESOURCES
+6.4.1 SHARING OF REFUELING RESOURCES
+During a large disaster, hundreds-if not thousands of portable and stationary generators are
+providing power to cell sites. Each of these generators needs to be fueled approximately every 48
+hours. Typically, each carrier is utilizing their own set of refueling resources. These are dedicated
+refueling trucks delivering fuel into the carrier’s own generators. This is inefficient, ineffective, and
+much more expensive for the carriers than sharing refueling trucks and drivers. The refueling
+vendors are dedicated to each carrier and charge them a per hour fee for each resource deployed.
+This cost quickly adds up as refueling drivers are standing by waiting for dispatch or sitting in traffic.
+Additionally, travel costs are absorbed by each carrier for every resource deployed.
+During Super Storm Sandy the most significant damage and lingering outages were within a 50-mile
+radius of New York City. Nearly 18 million people live inside that same 50-mile circle. By
+comparison, About 18.5 million people live in the entire state of Florida. Consider the
+conditions that would occur if you were to put every person who lives in Florida, and their entire
+wireless infrastructure, inside a 50-mile circle. Then turn off all traffic control devices, pile debris on
+the roads from wind and storm surge, and leave most of the people and their vehicles in place as
+opposed to mass evacuation. This was the environment the carriers and their fuel service providers
+were operating in following Super Storm Sandy. There were urban market challenges with refueling
+given inoperable traffic lights and mass congestion on the roads. By each carrier having dozens of
+dedicated refueling trucks and drivers, it only added to the frustration, congestion, and bottlenecks at
+the cell sites.
+If carriers were to pool refueling resources together and ‘pay by the refuel’ it would be much more
+effective and efficient. Not only would there be fewer vehicles on the road, there would also be less
+congestion at the cell sites as well. If a refueling vendor showed up to a cell site, they could top off
+two to three generators vs. refueling just one and leaving. This approach would also ease the
+operating expense burden put on the carriers during a disaster refueling.
+This does present challenges however, because the fueling vehicles typically carrying <1,000 gallons
+of fuel. This means that they would only be able to hit one site before having to re-supply their vehicle
+to make another refuel run.
+6.4.2 STAGING FACILITIES
+Historically, carriers have utilized internal resources and locations for staging of portable generators
+or fuel. Depending on the magnitude of the disaster it is not always logistically feasible to find these
+38The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+locations. In other cases it may be due to space constraints or damage to the carrier’s facility. The
+following matrix is being provided in order to streamline the process of procuring a location in the
+midst of recovery efforts already underway.
+Staging Yard Contacts – Appendix C
+The list being provided consists of transportation and logistics companies. These companies are
+capable of providing an all-in-one solution. The all-in-one-solution includes, but is not limited, to:
+ Indoor Warehousing
+ Outdoor Warehousing
+ Secure Paved Yards
+ Forklifts
+ Labor
+ Cranes or Boom Trucks
+ Temporary Office Facilities
+ Loading and Unloading Labor (Crane)
+ Dock Access (Warehouse)
+ Generator Deployment
+ Diesel Mechanics (Portable Generator Repair and Maintenance)
+ Inventory Management
+ Spill Containment
+6.4.3 BULK FUEL RESOURCES
+It is recommended that Bulk Fuel be kept in transports in order to maintain mobility. This allows the
+sharing of fuel should one carrier have the availability of releasing unused gallons and another carrier
+have the need.
+Maintaining the mobility will allow employees accessibility during recovery efforts due to lack of fuel
+resources. Mobile fueling stations can be shared by the carriers and should be considered for future
+storms. Mobile fueling stations provide carrier employees access to fuel at strategic locations that
+enable continued recovery efforts.
+Carriers who use off road or dyed diesel should consider removing this requirement for off road
+diesel (dyed) during disaster recovery efforts. This will alleviate procurement constraints when
+trying to locate fuel resources. It will also allow for the fuel to be used by company vehicles along
+with generators. The use of off road diesel is not a requirement for standby generators.
+Bulk Fuel Racks
+Bulk fuel racks can be identified here: http://www.opisnet.com/resources/rackcode.aspx.
+See Appendix D for Fuel Supplier Contact list.
+39The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+6.4.4 WIRELESS MUTUAL ASSISTANCE NETWORKS
+The sharing of resources and assets between providers is a seemingly new concept within the
+wireless industry. However, it has proven to be an effective solution for restoration efforts within the
+Electric Power and Energy industry for years. The Mutual Assistance Network is a voluntary
+partnership of electric utilities across the country. These partnerships, managed by smaller groups
+divided into regions (Regional Mutual Assistance Groups or RMAGS), are committed to helping
+restore power whenever and wherever assistance is needed. Created decades ago, the Mutual
+Assistance Network provides a formal yet flexible process for utilities to request support from other
+utilities in parts of the country that have not been affected by the major weather event. Partnerships
+in the mutual assistance network are based upon voluntary agreements between electric utilities
+within the region. When a utility determines that it needs restoration assistance, it initiates a request
+through an RMAG. Once a request has been made, the RMAG facilitates the process of identifying
+available crews and resources and helps utilities coordinate the logistics and personnel involved in
+restoration efforts.
+It is proposed that the wireless industry could potentially initiate a program and process similar to
+that of the Electric and Power Industry’s Mutual Assistance Network, or alternatively to approach
+them with an opportunity to merge effort to strengthen and utilize their current voluntary network.
+By that same token, the procedures and protocols developed in any such program should ensure that
+individual carriers’ incentives to invest in their own service restoration and network resiliency
+resources are not undermined. Alternatively, the carriers could take advantage of an existing entity
+such as the US Department of Homeland Security’s (DHS) National Coordinating Center for
+Communications (NCC), to which most of the major carriers already belong.
+The benefits of a Mutual Aid Network established in the wireless industry would most likely mirror
+that of the Electric Power industry. This includes a quicker network restoration time, a “strength in
+numbers” effect that could enable requesting parties to obtain benefits such as priority access to fuel
+terminals, more options for staging areas, good public relations, and an overall positive affect on the
+recovery of multiple networks instead of a staggering recovery of several separate networks.
+6.4.5 EMERGENCY POWER FACILITY ASSESSMENT TOOL (EPFAT)
+Following a Presidential Disaster Declaration, the U.S. Army Corps of Engineers (USACE) is often
+called upon by FEMA to assist in providing temporary emergency power at critical public facilities
+identified by state officials. If the power to critical communications facilities is disrupted, FEMA
+assistance in restoring power to these facilities may be requested by the State as a part of a
+coordinated restoration strategy developed in conjunction with telecommunications providers. In
+order to facilitate this restoration, facility emergency power assessment data is required before a
+generator can be sourced and installed.
+EPFAT is a secure web-based tool that can be used by critical public facility owners/operators or
+emergency response agencies, to input, store, update, and/or view temporary emergency power
+assessment data. Having pre-installation assessment data in advance will expedite USACE’s abilities
+to provide temporary power.
+40The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+Background:
+ EPFAT was developed by USACE and FEMA to expedite the installation of generators following
+major disasters.
+ Following a disaster, it can take the USACE many hours, and possibly days, to deploy
+assessment teams to all of the impacted critical public facilities so that the right generators can
+be properly installed.
+ By adding information to EPFAT prior to a disaster, USACE will have the assessment data and
+generator size requirements needed to expedite the installation process.
+ The database also provides the facility manager and the local/state/federal Emergency
+Management staff a permanent off-site repository for this information which is password
+protected and under controlled access.
+Points of Contact: For additional information, please contact one of the following EPFAT Subject
+Matter Experts (SMEs):
+ David Bishop, Emergency Power SME (724) 459-4709
+David.A.Bishop@usace.army.mil (Primary)
+ Peter Navesky, ESF #3 Permanent Cadre (918) 669-7327 Peter.Navesky@usace.army.mil
+(Alternate)
+Key Web Links:
+ An EPFAT Tutorial Video: http://youtu.be/kq2CaSSRYV8
+ The URL for EPFAT is: https://epfat.swf.usace.army.mil/Welcome.aspx
+ Overview of the Temporary Power mission: http://youtu.be/vHCe7_4Nw5Y
+6.5 RECOMMENDATIONS FOR SHARING RESOURCES
+The following recommendations regarding sharing resources are not meant to be classified as best
+practices, but rather, considerations that the FCC should share with NIST and other working groups
+engaged in similar work.
+ Network Operators and Service Providers could determine the status of existing generator(s) in
+use by others and examine the potential for resource sharing before committing to a generator
+installation.
+ Property Managers at multi-carrier sites could manage generator installations at the site
+including timing of installations and power sharing.
+ Network Operators, Service Providers, and Property Managers could pursue backup power plans
+that add value to the overall business plan of the companies.
+ Network Operators and Service Providers could collaborate in identifying opportunities and risks
+in choosing shared backup power sites and select locations that will provide the most value.
+41The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+ Network Operators and Service Providers could, on a national and regional basis, hold meetings
+to discuss shared backup power opportunities on annual or more frequent basis.
+ Network Operators, Service Providers, and Property Managers could ensure that backup power
+resource providers utilize a fleet of generators that are sized to handle the power needs of
+multiple carriers.
+ Network Operators, Service Providers, and Property Managers could mutually plan beforehand
+with refueling companies to share refueling resources including post disaster coordination to
+share refueling resources and costs.
+ Network Operators, Service Providers, and Property Managers could collaborate in establishing
+liaisons with emergency management recovery operations as part of the recovery process.
+ Network Operators, Service Providers, and Property Managers could liaison with government
+emergency management in developing and exercising disaster recovery plans to include power
+resources.
+7 ADDITIONAL CONSIDERATIONS
+The following recommendations regarding sharing resources are not meant to be classified as best
+practices, but rather, considerations that the FCC should share with NIST and other working groups
+engaged in similar work.
+During an emergency situation, a stationary or portable backup resource may be shared by the
+operators on a telecommunications site. Several aspects of this shared resource must be addressed
+prior to its implementation. Please note that these items are intended to guide and streamline the
+sharing process:
+A. Ownership – Who owns the equipment? This is true for both stationary and portable
+installations. Ownership drives the responsibility for costs and adherence to codes and
+regulations, maintenance, and overall communications planning.
+B. Location of Equipment – If it is temporary equipment, what is the proper location? Locations
+must be coordinated prior to the emergency. It should consider trailer access, re-fueling
+requirements, Spill Prevention, Control and Countermeasure (SPCC), power connection
+requirements, and ensure exhaust is not directed towards facility outside air (economizer)
+intakes.
+C. Who will install the equipment, turn up and connect to the various operators’ equipment?
+Development of a deployment plan is vital to an efficient operation for power restoration.
+D. Who will be responsible for the operation and maintenance of the equipment? This is a
+contractual issue which may include designated maintenance schedules, fuel polishing,
+system exercising, re-fueling during emergencies, air quality requirement adherence, SPCCs,
+and likely performance requirements.
+E. Who will be responsible for meeting the regulatory requirement for the equipment? This
+would include monitoring hours of operation, any fuel spillage issues, and associated cleanup.
+42The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+F. Who will be responsible for refueling the equipment? Ensure this is designated upfront
+before an emergency arises. It may include contracts with fueling vendors. Monitoring of fuel
+levels is a key as runtime can vary greatly dependent on load. This can be a region wide
+outage which means multiple sites will be affected and a designated plan should include all
+sites.
+G. How will the total cost of the backup resource be shared between the operators?
+H. If it a temporary equipment, who will be responsible for its removal after use in the
+emergency situation?
+I. Develop a communications plan. Dealing with a single site is fairly straight forward but a
+wide spread outage will be a challenge if a clear line of communication is not created. Include
+contacts along with secondary contacts. Keep the list to a minimum in order to keep it
+efficient. The communication plan should consider pre-event planning (for hurricane type
+events), during event planning, and post-event planning. The communications plan must be
+reevaluated on a revolving basis to ensure that the contacts are current.2
+8 SUMMARY
+To recapitulate, the CSRIC Working Group 9 Backup Power Subcommittee was divided into four focus
+groups with the end goal of providing recommendations to increase the resiliency and reliability of
+the telecommunications infrastructure.
+This document, the output of Working Group 9 Backup Power Subcommittee, was developed through
+the combined effort of a multi-stakeholder community involving industry as well as public sector
+representatives and agencies. The collaboration and efforts of this multi-stakeholder community has
+provided substantive material for consideration. It is the recommendation of this working group that
+the FCC share the output of this document with NIST and other similar working groups who are
+working towards the common goal of infrastructure resiliency.
+2 Information and Communications Technology (ICT) Performance During Extreme Events, Alexis
+Kwasinski, PhD, University of Texas at Austin, 2013 INTELEC / IEEE Workshop: Preparing
+Information and Communication Technologies Systems for an Extreme Event
+43The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX A- MARKET LEVEL DISASTER AND COMMERCIAL RELIABILITY POWER ANALYSIS3
+State Disaster Risk Commercial Power Avg Rank Wtd Avg Rank
+Unreliability
+New York 2 2 1.33 2.2
+Virginia 1 3 1.33 2.3
+Maryland 11 4 5.00 7.9
+Pennsylvania 12 6 6.00 9.6
+Ohio 4 13 5.67 9.8
+New Jersey 7 11 6.00 10.1
+Connecticut 10 10 6.67 11
+Maine 8 14 7.33 12.4
+Arkansas 19 5 8.00 12.5
+Tennessee 3 19 7.33 12.9
+Wisconsin 13 12 8.33 13.7
+California 29 1 10.00 15.1
+Florida 15 15 10.00 16.5
+Oregon 6 23 9.67 16.8
+Michigan 26 9 11.67 18.4
+Colorado 30 7 12.33 19.2
+Texas 32 8 13.33 20.8
+Missouri 14 29 14.33 24.4
+Illinois 25 20 15.00 24.5
+South Carolina 31 16 15.67 25.1
+New Mexico 5 41 15.33 27.1
+3 National Transmission Grid Study- U.S. Department of Energy
+44The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX A- MARKET LEVEL DISASTER AND COMMERCIAL RELIABILITY POWER ANALYSIS, CONT’D
+State Disaster Risk Commercial Avg Wtd Avg Rank
+Power Rank
+Unreliability
+Arizona 21 30 17.00 28.5
+North Carolina 36 18 18.00 28.8
+Iowa 18 33 17.00 28.8
+Washington DC 16 35 17.00 29
+Indiana 23 31 18.00 30.1
+Nebraska 9 45 18.00 31.5
+Nevada 34 25 19.67 32
+Alabama 38 22 20.00 32.2
+Mississippi 28 32 20.00 33.2
+Washington 47 17 21.33 33.7
+Kansas 27 38 21.67 36.3
+Utah 42 26 22.67 36.6
+Idaho 22 43 21.67 36.8
+Louisiana 49 21 23.33 37.1
+Georgia 48 24 24.00 38.4
+North Dakota 17 50 22.33 38.5
+Oklahoma 45 27 24.00 38.7
+Minnesota 39 34 24.33 39.9
+Kentucky 37 36 24.33 40.1
+South Dakota 24 49 24.33 41.4
+Hawaii 35 40 25.00 41.5
+Rhode Island 41 37 26.00 42.7
+Wyoming 33 44 25.67 42.9
+45The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX A- MARKET LEVEL DISASTER AND COMMERCIAL RELIABILITY POWER ANALYSIS, CONT’D
+State Disaster Risk Commercial Avg Wtd Avg Rank
+Power Rank
+Unreliability
+West Virginia 40 42 27.33 45.2
+Delaware 44 39 27.67 45.4
+Vermont 43 47 30.00 49.7
+Massachusetts 46 46 30.67 50.6
+Weight Value 50% 60%
+APPENDIX B- CONTACT MATRIX
+Name Organization Email Phone
+Christian, American
+Mark Tower Mark.Christian@AmericanTower.com
+American Betsy.Carlton-
+Gysan, Betsy Tower Gysan@AmericanTower.com
+Jacobsen, American (206) 276-
+Tower Jacob Tower Jacob.Jacobsen@AmericanTower.com 1862
+Aggregator American
+Sims, Michael Tower Michael.Sims@AmericanTower.com
+Crown (724) 416-
+Abbio, Cliff Castle cliff.abbio@crowncastle.com 2220
+(561) 322-
+O'Donnel, Pat SBA PODonnell@sbasite.com 7866
+(770) 237-
+Martin, Steve ATT sm9105@att.com 8399
+(425) 396-
+Naillon, Jay T-Mobile jay.naillon@t-mobile.com 3485
+Chris Oberg Verizon chris.oberg@verizonwireless.com
+Carriers
+Brownawell, (703) 592-
+/Network
+Chuck Sprint Carl.l.brownawell@sprint.com 4787
+Operators
+Zinno, (704) 921-
+Richard Sprint richard.zinno@sprint.com 7374
+Daneshkhah, (623) 806-
+Shahin Sprint Shahin.daneshkhah@sprint.com 8596
+46The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX
+AGENT NAME CITY ST PHONE
+1st Choice Moving & Storage Kelowna BC 250-765-6699
+1st Leading Cargo Romeoville IL 630-633-6266
+1st Leading Cargo Romeoville IL 630-694-0360
+A Santini NY LC Monroe Township NJ 609-409-5921
+A. Santini Mvg. & Stg. Roseland NJ 973-228-7211
+A-1 Freeman Dallas LC Dallas TX 972-556-1777
+A-1 Freeman Mvg. & Stg., Inc. Oklahoma City OK 405-751-7561
+A-1 Freeman Mvg. & Stg., Inc. Oklahoma City OK 405-751-7333
+A-1 Freeman Mvg. & Stg., Inc. Round Rock TX 512-246-3706
+A-1 Freeman Mvg. Group, Inc. Atlanta GA 404-732-9006
+A-1 Freeman North American Broken Arrow OK 918-251-2220
+A-1 Freeman North American Dallas/Fort Worth TX 972-556-1777
+A-1 Freeman Relocation El Paso TX 915-771-0265
+A-1 Freeman Relocation Services, Inc. San Antonio TX 210-661-1404
+A-1 Freeman Relocation Systems, Inc. Dallas TX 817-336-8100
+A-1 Freeman Relocation, Inc. Houston TX 281-550-1110
+A-1 Freeman-Atlanta LC Atlanta GA 404-732-9000
+A-1 Logistics Evanston IL 847-757-9538
+A-1 Mvg. & Stg. Co. Appleton WI 920-734-6052
+Aadvantage Mvg. & Stg. Killeen TX 254-628-1583
+Aadvantage Mvg. & Stg., Inc. San Antonio TX 210-655-2719
+Aadvantage North American Panama City FL 850-769-6683
+Aadvantage North American Pensacola FL 850-457-6683
+Aadvantage North American Tallahassee FL 850-575-6683
+Abbotsford Moving & Storage Ltd Ottawa ON 613-836-3493
+ABC Mvg. & Stg., Inc. Greenville NC 252-752-4500
+ABL X-Press Ltd Edmonton AB 780-448-3673
+ABL X-Press Ltd Calgary AB 403-250-9203
+Able Metro Mvg. & Stg., Inc. Edison NJ 732-287-0909
+Abrams Mvg. & Stg. LLC Redford MI 313-531-0000
+Absolute Transportation Services Mississauga ON 905-858-0066
+Ace Mvg. & Stg. Co., Inc. Gulfport MS 228-863-5212
+Acme Tfr. & Stg., Inc. Vallejo CA 707-643-2323
+Adams Tfr. & Stg. Co. Conroe TX 936-756-0025
+Adirondack Mvg. & Stg., Inc. Plattsburgh NY 518-563-0791
+Advance Mvg. Systems, Inc. Dayton OH 937-298-0065
+Advance Relocation & Stg. Systems, Inc. Savannah GA 912-233-1313
+Affiliated Movers of Okla. City, Inc. Oklahoma City OK 405-677-7400
+Air Van northAmerican Anchorage AK 907-272-0536
+Air Van northAmerican Boise ID 208-341-1080
+Air Van northAmerican Tualatin OR 503-885-2353
+Air Van northAmerican Tacoma WA 253-272-9811
+Air Van northAmerican Everett WA 425-348-4113
+Air Van northAmerican Kirkland WA 425-629-4101
+Alabama Truck Lines Huntsville AL 256-851-8480
+Alero Relocation Edmonton AB 780-450-6797
+47The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Alero Relocation Calgary AB 403-243-0448
+Alero Relocation Winnipeg MB 204-779-0714
+Alex Mvg. & Stg. Oxnard CA 805-483-1125
+Alex Mvg. & Stg. Santa Ana CA 714-549-8696
+Alexander's Van & Stg., Inc. Santa Rosa CA 707-542-7765
+All America Relocation Inc (was Leaders
+Mvg) Strongsville OH 440-846-0722
+All City Mvg. & Stg. Alameda CA 510-749-8300
+All Points Kansas City MO 816-763-6300
+All Seasons Moving & Storage Regina SK 306-525-2022
+Allen & Coles Moving Systems, LLC Clinton MA 978-368-7008
+Allen & Coles Mvg. Systems, LLC Portland ME 207-775-6683
+Allen & Coles Mvg. Systems, LLC Hudson NH 603-382-9362
+Always Moving & Storage Medicine Hat AB 403-504-4500
+American Van Service Glens Falls NY 518-793-6622
+Anderson Tfr. & Stg. of Conway, Inc. Conway SC 843-347-4289
+Anderson Tfr., Inc. Sumter SC 803-773-8886
+Andy's Tfr. & Stg. Glendale CA 818-249-2017
+A-OK Mvg. & Stg. Beaumont TX 409-842-9038
+Apollo Mvg. & Stg., Inc. Somerset NJ 732-805-9700
+Approved Moving & Storage, Inc. Brooklyn NY 718-452-3000
+Arctic Express Iqaluit NT 867-979-6302
+Arkansas Best Delivery N Little Rock AR 501-801-5890
+Arnoff Mvg. & Stg. of Albany, Inc. Albany NY 518-463-5712
+Arnoff Mvg. & Stg. of Florida, Inc. Fort Pierce FL 772-461-0046
+Arnoff Mvg. & Stg., Inc. Poughkeepsie NY 845-471-1504
+Arnoff Storage, Inc. Lakeville CT 860-435-0297
+Arnoff/Stewart Liner Transportation Corp. Poughkeepsie NY 845-564-0240
+Arnoff/Stewart Liner Transportation Corp. Liberty NY 845-564-0240
+ASI Transportation Green Bay WI 920-337-6226
+A-Turner Mvg. & Stg. Gainesville FL 352-372-0406
+AVN Inc dba Champagne Logistics Morrisville NC 919-991-0516
+Ayer Mvg. & Stg. Co., Inc. Ayer MA 978-772-2558
+B & J Mvg. & Stg., Inc. Kalamazoo MI 269-385-3686
+B & J Mvg. & Stg., Inc. Battle Creek MI 269-968-3540
+B & J Mvg. & Stg., Inc. Lansing MI 517-484-0923
+B.F. Fields Mvg. & Stg. Erie PA 814-454-2481
+Bagnell Mvg. & Stg., Inc. Osage Beach MO 573-348-5518
+Bajet Van Lines, Inc. Wausau WI 715-842-4691
+Beltmann Group, Inc. Phoenix AZ 602-484-7665
+Beltmann Group, Inc. Santa Fe Springs CA 562-293-4500
+Beltmann Group, Inc. Pompano Beach FL 954-977-4552
+Beltmann Group, Inc. Orlando FL 407-295-0636
+Beltmann Group, Inc. Atlanta GA 678-328-2520
+Beltmann Group, Inc. Addison IL 630-576-5090
+Beltmann Group, Inc. Addison IL 630-576-5090
+Beltmann Group, Inc. Lenexa KS 913-888-9105
+48The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Beltmann Group, Inc. Roseville MN 651-639-2800
+Beltmann Group, Inc. Roseville MN 651-639-2800
+Beltmann Group, Inc. Roseville MN 651-639-2800
+Beltmann Group, Inc. Morrisville NC 919-481-4505
+Beltmann Group, Inc. S Plainfield NJ 908-222-1125
+Beltmann Group, Inc. Parma OH 216-267-5237
+Beltmann Group, Inc. Waukesha WI 262-650-2865
+Beltmann Integrated Logistics Walled Lake MI 248-926-2400
+Beltmann LA DC Santa Fe Springs CA 562-623-4662
+Bestway Mvg. & Stg., Inc. Springfield MO 417-866-6542
+Bob Wootan Mvg. & Stg. Co., Inc. Jackson MS 601-922-1241
+Border Moving & Storage Grande Prairie AB 780-538-1444
+Boyer-Rosene Moving and Storage Arlington Heights IL 847-385-0274
+Brisson Moving Laval QC 450-681-5115
+Brown Logistics Solutions Inc Columbus OH 614-866-9111
+Bruckman's Mvg. & Trucking Serv. Owosso MI 989-723-1800
+Buckeye Moving Systems Salem OH 330-222-1511
+Burgess Mvg. & Stg. Riverside CA 951-682-4300
+Burgess northAmerican Palm Springs CA 760-327-4405
+Burgess northAmerican Banning CA 951-849-4751
+Calaway Tfr. & Stg., Inc. Muskogee OK 918-682-6082
+Capitol Logistics Schaumburg IL 847-330-6363
+Capitol North American Las Vegas NV 702-457-5353
+Carey Moving & Storage of Charlotte, Inc. Rock Hill SC 803-324-3178
+Carroll The Mover, Inc. Quincy MA 617-472-8040
+CCSL Hoyt Limited Dartmouth NS 902-481-8264
+Central Maine Stg. Co. Bangor ME 207-947-4114
+Champagne Logistics Franklin MA 508-520-8557
+Champagne Logistics Franklin MA 508-520-1046
+Champagne Logistics Houston TX 713-466-5349
+Champagne Logistics Austin TX 480-756-5478
+Champagne North American Tempe AZ 480-736-8987
+Champion Moving & Storage Brockport NY 585-235-3500
+Champion Moving & Storage Brockport NY 585-235-3500
+Chicago Temp DC Chicago IL 260-438-9595
+Chilo Transport Nanaimo BC 250-753-2477
+City Express Yellowknife NT 867-920-7918
+City Express Northern Whitehorse YK 867-667-2314
+City North American Moscow ID 208-882-2213
+Classic Mvg. & Stg., Inc. Eau Claire WI 715-835-3002
+Clemmer Moving & Storage Telford PA 215-723-5515
+Coastal Tfr. & Stg., Inc. Georgetown SC 843-546-4563
+Coleman American Moving Services Midland City AL 800-239-4099
+Columbus Logistics Center Columbus OH 614-295-3901
+Columbus Logistics Center #2 Columbus OH 614-491-6874
+Comox Moving & Storage Lazo BC 250-339-2281
+Comprehensive Transportation Services, Inc. Linden NJ 908-862-0016
+49The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Cord Moving – Memphis Memphis TN 901-370-6400
+Cord North American Belleville IL 618-235-5561
+Cord North American Earth City MO 314-291-7440
+Cor-O-Van Mvg. & Stg. Co. San Jose CA 408-428-1100
+Cor-O-Van Mvg. & Stg. Co. Poway CA 858-748-1100
+Cor-O-Van Mvg. & Stg. Co. Dublin CA 408-678-3200
+Cor-O-Van Mvg. & Stg. Co. San Francisco CA 415-821-1119
+Cor-O-Van San Diego LC Poway CA 858-762-8100
+Country Wide Mvg & Stg Saskatoon SK 306-934-3335
+Crown Tfr. & Stg., Inc. Bogart GA 706-543-4719
+Cumberland-North American Cumberland MD 301-724-3900
+Customized Transportation Solutions, Inc. Taunton MA 508-824-2222
+Dalton Logistics, Inc. Earth City MO 314-770-0072
+Dan's Mvg. & Stg., Inc. Dunkirk NY 716-366-7642
+Dan's Mvg. & Stg., Inc. Jamestown NY 716-763-6683
+David Mvg. Co., Inc. Baton Rouge LA 225-753-3240
+De Haven's Tfr. & Stg., Inc. Durham NC 919-220-5441
+Defiance Truck & Tfr. Co. Inc. Defiance OH 419-782-1941
+DeHaven's Tfr. & Stg. of Greensboro, Inc. Greensboro NC 336-273-8648
+DeHaven's Transfer & Storage of Charlotte
+Inc Charlotte NC 704-597-6201
+DeHaven's Transfer & Storage of Wilmington
+Inc Wilmington NC 910-762-6661
+Deluxe Mvg & Stg North Bay ON 705-472-7030
+Demenagement Chicoutimi Chicoutimi QC 418-696-5022
+Demenagement Deslauriers, Inc Granby QC 450-372-0066
+Demenagements Rimouski Rimouski QC 418-723-7272
+Demenagment & Transport Dolbec Inc Quebec City QC 418-687-3830
+Dimon & Bacorn Co. of Binghamton Vestal NY 607-798-0099
+Dimon & Bacorn, Inc. Elmira NY 607-734-2937
+Dinsdale Cartage & Storage Brandon MB 204-728-3307
+Direct Intergrated Trans Calgary AA 403-296-0290
+Direct Intergrated Trans Winnipeg MB 204-694-0090
+Direct Intergrated Trans Regina SK 306-352-2433
+DJ Mvg. Services, Inc. Dothan AL 334-793-2324
+Don Hemsted's Van & Stg. Redding CA 530-241-3456
+Doss Mvg. & Stg., Inc. Little Rock AR 501-588-2835
+Dube's Tfr. & Stg. Williston ND 701-572-6165
+Duncan Mvg. & Stg., Inc. Rolla MO 573-364-1690
+DunMar Moving Systems Richmond VA 804-271-0500
+E. D. Fee Tfr., Inc. New Castle PA 724-658-2575
+East Coast Moving & Warehousing Moncton NB 506-387-7730
+Eckert's Van & Stg. San Marcos CA 760-727-2600
+EE Ward Moving & Storage Co LLC Columbus OH 614-298-8414
+Eldred Van & Stg., Inc. Terre Haute IN 812-466-4242
+Electronic Transport Inc. Beavercreek OH 937-429-9928
+Ellis Moving & Storage LLC Old Hickory TN 615-262-9090
+Empire Warehouse Co. El Paso TX 915-592-5222
+50The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Evans Tfr. & Movers, Inc. Clarksburg WV 304-592-2765
+Evans Van & Storage, LLC Poca WV 304-755-9855
+Excel Moving & Storage Inc Raleigh NC 919-532-1971
+Executive Mvg. Systems, Inc. Anaheim CA 714-688-4800
+Exhibit Express Wilmington MA 978-988-9100
+Exhibition Logistics Inc Orlando FL 407-855-4088
+Family Movers Orillia ON 705-325-3763
+Family Movers Barrie ON 705-722-6740
+Federal Warehouse Company East Peoria IL 309-694-4500
+Ferguson Tfr. Co., Inc. Coos Bay OR 541-888-5578
+Ferree Movers & Stg., Inc. Crown Point IN 219-662-2700
+Ferree Movers, Inc. Highland IN 219-924-9600
+Fettes Transportation Systems Fargo ND 701-277-3631
+Fidelity Mvg. & Stg. Co., Inc. Fayetteville NC 910-485-2186
+Fidelity Mvg. & Stg. Co., Inc. Jacksonville NC 910-353-1919
+Fidelity Mvg. & Stg. Co., Inc. New Bern NC 252-638-2980
+Findlay Moving & Storage Mount Vernon NY 914-699-1100
+First Class Moving Systems Tampa FL 813-889-0308
+Fisher North American Hamburg NY 716-649-2352
+Florida Mvg. Systems, Inc. Melbourne FL 321-259-4330
+Flowers Tfr. Corp. Broussard LA 337-837-2802
+Fontaine's Moving & Mini Storage Fort St. John BC 250-785-1166
+Francis Rush Transfer Charlottetown PE 902-894-4566
+Fridrich northAmerican Cleveland OH 216-676-0500
+Frost The Mover Belleville ON 613-962-5340
+Frost The Mover Kingston ON 613-549-9901
+G. Fournier Van & Storage Bathurst NB 506-546-5634
+Galbraith Van & Stg. Co., Inc. Bakersfield CA 661-327-5151
+Gale Tfr., Inc. Yuma AZ 928-782-1877
+Garrison Trucking LLC Hardinsburg IN 812-472-3220
+Geo. W. Weaver & Son, Inc. New Cumberland PA 717-774-7835
+Georges O. Dubois, Inc. Sherbrooke QC 819-864-6864
+Global Mvg. Systems, Inc. San Diego CA 858-824-1903
+Golden Isles Mvg. & Stg. Brunswick GA 912-264-2230
+Gossard Mvg. Serv., Inc. Lima OH 419-225-4818
+Government Logistic Services East Berlin PA 717-292-2191
+Graham's Moving & Storage Prince George BC 250-564-5855
+Granite City Mvg. & Stg., Inc. Sartell MN 320-252-1311
+Great Plains Denver LC Denver CO 303-373-1332
+Great Plains Moving & Storage Denver CO 303-373-1332
+Great Plains Moving & Storage Colorado Springs CO 719-597-8850
+Greater Bay Area-North American Corona CA 951-284-2940
+Greater Syracuse Mvg. & Stg. Co., Inc. N Syracuse NY 315-458-9080
+Greaves Moving & Storage Victoria BC 250-388-7808
+Green's Mvg. & Stg., Inc. Rapid City SD 605-342-7060
+Groupe T.A.P. Inc Amos QC 819-732-3741
+Guardian Transfer & Storage Dartmouth NS 902-435-2824
+51The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Guardian Transfer & Storage Middleton NS 902-825-6485
+H & S Warehouse, Inc. Fairbanks AK 907-452-1286
+Hanover Tfr. & Stg. Hanover NH 603-643-3103
+Harrisburg Stg. Co. New Cumberland PA 717-774-7835
+Hawkeye Moving Services Inc Iowa City IA 319-668-5440
+Hazen Transport, Inc. Taylor MI 313-291-4520
+HHM Transportation Solutions Moncton NB 506-383-4698
+HHM Transportation Solutions Dartmouth NS 902-468-9808
+HHM Transportation Solutions LTD O/A M&D
+Express Mount Pearl NF 709-747-4291
+Highland Van & Stg Delta BC 604-929-2384
+Hollister Mvg. & Stg. Hollister CA 831-637-6250
+Homestead Tfr. & Stg. Co. Homestead FL 305-247-5012
+Hoover the Mover Fort Wayne IN 260-459-6926
+Household Movers and Shippers Fredericton NB 506-451-9520
+Household Movers and Shippers Goose Bay NF 709-896-5534
+Household Movers and Shippers Corner Brook NF 709-634-2434
+Household Movers and Shippers Mount Pearl NF 709-747-4222
+Household Movers and Shippers Gander NF 709-651-2050
+Hudson northAmerican New York NY 212-678-4862
+Hug-Condon Mvg. & Stg. Co., Inc. Hanrahan LA 504-733-1483
+ICAT Transport Inc. York PA 717-840-0200
+J & J Mvg. & Stg. Co., Inc. Newnan GA 770-253-5854
+J.A. Haralson Mvg. & Stg., Inc. Tyler TX 903-593-2525
+J.A. Haralson Mvg. & Stg., Inc. Longview TX 903-757-3244
+J.J. Murphy, Inc. Chicago IL 312-225-3323
+Jack's Moving Regina SK 306-522-4040
+Jackson Mvg. & Stg. Co., Inc. Goldsboro NC 919-735-2953
+Jackson's Tfr. & Stg. Aiken SC 803-648-4217
+Jacobson's Mvg. & Stg, LLC La Crosse WI 608-784-8957
+John E. George, Inc. Freedom PA 412-961-0297
+John E. George, Inc. Freedom PA 724-371-3130
+Keller Mvg. & Stg., Inc. Allentown PA 610-797-4886
+Kettering Mvg. & Stg., Inc. Dayton OH 937-298-6325
+King Logistics LLC Tampa FL 813-881-1799
+King Logistics LLC Orlando FL 407-516-9678
+King Logistics LLC Miami FL 305-433-1919
+King's North American Wichita KS 316-524-9191
+King's North American Junction City KS 785-238-7341
+King's North American Kansas City MO 816-483-9500
+Koldon Mvg. & Stg., Inc. Lake Zurich IL 847-438-3300
+L & J Transportation Companies Inc Temple PA 610-921-2063
+Lambert Tfr. & Stg., Inc. Opelika AL 334-745-5706
+Las Cruces Mvg. & Stg., Inc. Las Cruces NM 575-382-9040
+Lawton Mvg. & Stg., Inc. Lawton OK 580-353-0754
+Lentz Tfr. & Stg. Co. Clemmons NC 336-766-7331
+Lile Logistics Services Tualatin OR 503-691-0530
+52The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Lile Logistics Services Salem OR 503-393-0110
+Lile Logistics Services Eugene OR 541-689-6683
+Lile Logistics Services Kent WA 253-872-2220
+Lile Logistics Services Spokane WA 509-534-1554
+Lile Logistics Services Longview WA 360-423-2260
+Lile Logistics Services Vancouver WA 360-892-1454
+Lile Logistics Services Lakewood WA 253-584-2222
+Lile Logistics Services Kent WA 253-872-2222
+Lile Logistics Services Bremerton WA 360-377-3863
+Lile Logistics Services-Corporate Offices Tigard OR 503-726-4800
+Livingston Mvg. & Stg. Watertown NY 315-782-1090
+Lloyd The Mover (Pembroke) Ltd Pembroke ON 613-732-9101
+Logitrans Salt Lake City UT 801-886-2520
+Lowry & Hogan, Inc. Bloomingdale IL 630-351-1800
+M.S.A. Moving & Storage Abbotsford BC 604-859-5066
+MacDougall's Transfer & Storage Sydney NS 902-562-1135
+Mackie Alberta, Inc. Edmonton AB 587-881-0400
+Mackie Alberta, Inc. Calgary AB
+Mackie Moving Systems Oshawa ON 905-728- 2400
+Mackie Moving Systems Montreal QC 514-856-9666
+Maher Brothers Transfer & Storage Iowa City IA 319-337-9696
+Marion Relocation Services Marion IN 765-664-0830
+Maritime Mvg & Stg St John NK 506-633-9180
+Maritime Mvg & Stg Dartmouth NS 902-468-6868
+Matheson Tfr. Co. Scranton PA 570-344-0958
+Matheson Tfr. Co. Stroudsburg PA 570-714-7719
+Matheson Tfr. Co. Forty Fort PA 570-288-5469
+Matheson Tfr. Co. Humboldt PA 570-459-0758
+Mayberry's Van & Stg., Inc. Dayton OH 937-298-8800
+McComb Relocation Services Corpus Christi TX 361-888-5907
+McLean Moving Lethbridge AB 403-327-3146
+McMurray Relocation Services Fort McMurray AB 780-790-1388
+McWhite's North American Prescott Valley AZ 928-772-9854
+McWilliams Moving & Storage Peterborough ON 416-749-6760
+McWilliams Moving & Storage Waterloo ON 519-725-3060
+McWilliams Moving & Storage Peterborough ON 705-743-4597
+Meadows Van & Stg., Inc. Frederick MD 301-663-3155
+Meadows Van & Stg., Inc. Hagerstown MD 301-739-3800
+Medford Mvg. & Stg., Inc. Central Point OR 541-831-0064
+Midlands Relocation Services Omaha NE 402-597-3185
+Milne's Moving & Storage Regina SK 306-525-3508
+Milton's Movers Kamloops BC 250-372-2747
+Mohawk Moving & Storage Brantford ON 519-753-4171
+Montana Tfr. Co. Missoula MT 406-728-8080
+Mont-Bruno St Bruno ON 514-336-1212
+Montreal Express Lachine QC 514-639-6888
+Morales Moving & Storage Opa Locka FL 305-576-7000
+53The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Morgan Mvg. & Stg., Ltd. Pottstown PA 610-327-3100
+Mother Lode Van & Storage Inc Rancho Cordova CA 916-631-4285
+Motorcycleshipping.biz Stockton CA 209-323-5200
+Moving Solutions, Inc. Mentor OH 440-946-9300
+NA Logistics Rocklin CA 916-645-6177
+National Power Sports Pembroke NH 603-410-4120 x3
+National Storage Co Kalamazoo MI 269-345-6111
+Nationwide Mvg. & Stg. Co. Bloomfield CT 860-243-9555
+Nationwide Mvg. & Stg. Co., Inc. Bloomfield CT 800-243-4334
+Nationwide Transfer Inc Sioux Falls SD 605-333-0620
+Nelson North American Lake Forest CA 949-582-0380
+Nevil Transportation Group San Jose CA 408-275-1500
+Nevil Transportation Group San Jose CA 408-275-1500
+New Sudbury Storage Sudbury ON 705-560-5252
+Niagara Moving & Storage Niagara Falls ON 905-354-3183
+North American Mvg. & Stg. Davenport IA 563-324-6667
+North American Transystems Great Falls MT 406-455-8686
+North American Van Lines Canada Edmonton AB 780-451-9119
+North Bay North American San Rafael CA 415-479-5515
+Northam Systems Don Mills ON 416-510-2447
+O'Brien's-Gray's Mvg. & Stg. Bloomsburg PA 570-387-0470
+Ocean Moving Limited Middleton NS 902-825-3334
+O'Mara Mvg. & Stg., Inc. Freeport IL 815-232-2512
+O'Mara Mvg. Systems, Inc. Madison WI 608-268-0322
+Ottawa Logistics Ltd Ottawa ON 613-248-3553
+P.R.O. Transfer, Inc Nashville TN 615-832-8331
+Palmer Mvg. & Stg. Co. Warren MI 586-834-3400
+Park Tfr. & Stg. Co., Inc. Tuscaloosa AL 205-345-0311
+Park Tsf & Stg Co Inc Birmingham AL 205-390-0148
+Pavone Transportation Naples FL 239-325-9222
+PDQ Van & Stg. Inc. Marysville CA 530-742-5117
+Penfold Cartage Sault Ste. Marie ON 705-759-6055
+Peroulas Mvg. & Stg., LLC Knoxville TN 865-777-9555
+Pickens-Kane Moving & Storage Co Inc Chicago IL 312-942-0330
+806-376-5331
+Plains North American Amarillo TX 806-372-1113
+Portage Cartage & Storage Winnipeg MB 204-633-8059
+Prager Logistics LLC Naperville IL 888-323-3726
+Precision Transportation, Inc. Chicago Heights IL 708-756-1919
+Precision Transportation, Inc. Chicago Heights IL 708-756-1919
+Precision Transportation, Inc. Chicago Heights IL 708-756-1919
+Precor Woodinville WA 801-487-4669
+Premier Moving & Storage, Inc. Columbia MO 573-474-6158
+Primex Global Services Ltd Ottawa ON 613-736-7878
+Primex Relocation Ottawa ON 613-614-1999
+ProRelo, Inc. Albuquerque NM 505-888-1007
+Puckett Mvg. & Stg. Co. Galesburg IL 309-342-9513
+54The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+QHP Moving & Storage Ltd. Edmonton AB 780-413-6446
+Quality Tfr. & Stg. Co., Inc. Lexington Park MD 301-862-2331
+Quincy Storage & Transfer Co Quincy IL 217-222-1144
+Rainbow Mvrs., Inc. Franklin MA 508-528-4111
+Ralph's Tfr., Inc. Tucson AZ 520-622-6461
+Ramsay Freight Carrier Ltd Ottawa ON 613-733-9333
+Rapp's Mvg. & Stg., Inc. Wisconsin Rapids WI 715-421-4600
+Ray The Mover of Naples, Inc. Naples FL 239-693-6681
+RD Transport Chicoutimi QC 418-609-2917
+Redman Logistics Ctr Billings MT 406-252-5612
+Redman Van & Stg. Co. Lindon UT 801-785-0851
+Redman Van & Stg. Co. Clearfield UT 801-776-2645
+Redman Van & Stg. Co. Salt Lake City UT 801-972-4420
+Redman Van & Storage/St George Washington UT 435-628-8314
+Reebie Storage & Moving Company Inc Franklin Park IL 630-281-8105
+Reliable Tfr. Corp. Juneau AK 907-789-1490
+Relocation Systems, LLC Sterling VA 703-925-9556
+Republic Moving (Lovejoy's Family Mvg) Chula Vista CA 619-591-0070
+Richmond North American Richmond IN 765-962-3578
+Rocky Ford Mvg. Vans, Inc. Midland TX 432-683-6341
+Roger Ward North American Phoenix AZ 602-233-0146
+Roger Ward North American Minot ND 701-852-3614
+Roger Ward North American Garland TX 972-272-4622
+Roger Ward North American San Antonio TX 210-655-8623
+Roger Ward North American Killeen TX 254-628-0452
+Roger Ward North American Austin TX 512-834-9733
+Roger Ward North American Houston TX
+Roseville Van & Storage, Inc. Sacramento CA 916-349- 1119
+S & D Tfr., Inc. Lynbrook NY 516-561-4278
+S&D Transfer Logistics Inc Cranbury NJ 609-655-5011
+S&D Transfer West, Inc. Arlington TX
+San Angelo Tfr. Co. San Angelo TX 325-655- 6100
+Sandercock Tfr. Co., Inc. San Luis Obispo CA 805-922-4567
+Sandercock Tfr. Co., Inc. San Luis Obispo CA 805-543-6163
+Santini NY NJ DC Roseland NJ 201-228-7211
+Saunier Moving & Storage, Inc. Louisville KY 502-499-9996
+Saunier North American Winchester KY 859-233-2383
+Scarr Mvg. & Stg., Inc. Salinas CA 831-424-2784
+Schuck Mvg. Systems Corp. Valley Cottage NY 845-358-3410
+Schuman B-Line Mvg. & Stg., Inc. Norwich NY 607-336-1060
+Schuman B-Line Mvg. & Stg., Inc. Oneonta NY 607-432-3800
+Scott's Moving and Cartage Stratford ON 519-660-4598
+Scott's Moving And Cartage Stratford ON 519-273-1432
+Security Stg. & Mvg. Service of Albany, Inc. Albany GA 229-432-9119
+Showmat Transport Co St Charles IL 630-444-1400
+Sims & Huber Tfr. & Stg., Inc. Bellefontaine OH 937-592-6987
+Siracusa Moving & Storage New Britain CT 860-225-9144
+55The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Sloan's Mvg. & Stg. Co. Earth City MO 314-291-8833
+South Coast Logistics Garden Grove CA 714-894-4744
+Spec Trans Agent Group-Canada Oshawa ON 416-213-7287
+Specialty Movers Ltd Vernon BC 250-542-3351
+Speedwell Transportation, Inc. Lancaster CA 661-942-1161
+Stacey's (1994) Moving & Storage St. Catharines ON 905-685-6591
+Sterling Corp BDC Lowell MA 978-322-2551
+Sterling Corporation Boston MA 978-934-8600
+Sterling Maryland DC Jessup MD 301-490-2978
+Sterling Mvg. & Stg., Inc. Bozrah CT 860-892-6072
+Sterling Mvg. & Stg., Inc. Laurel MD 301-498-7776
+Sterling Mvg. & Stg., Inc. Cranston RI 401-943-3200
+Sterling Trucking Cranston RI 401-943-3200
+Stillwater Tfr. & Stg., Inc. Stillwater OK 405-372-0577
+Tanner Van Lines, Inc. Richmond VA 804-377-1700
+Technical Transportation Etobicoke ON 416-237-0558
+The Moving Connection, Inc. Linthicum MD 443-524-1202
+The Moving Mann Augusta GA 706-722-0478
+The Ray Hamilton Co Cincinnati OH 513-641-5400
+Three Way SPT Fremont CA 408-748-3921
+Tippet Richardson North Bay ON 705-472-5109
+TMV LOGISTIQUE INC. Laterriere QC 418-693-5338
+Tobin's North American Mitchell SD 605-996-3498
+Total Relocation Moving Systems Mississauga ON 905-607-7990
+TR Westcan Inc Burnaby BC 604-879-6861
+Traditional Moving & Storage Thunder Bay ON 807-623-3535
+Trail Cartage and Storage Trail BC 250-368-3933
+Transact LTD Avon MA 508-586-6500
+Transpo Services, Inc. Sheboygan WI 920-457-1155
+Triple A Relocation Systems Riverview FL 813-672-1000
+Triple Crown Maffucci Storage Corp Hauppauge NY 631-348-4994
+Tyler Mvg. & Stg. Systems, Inc. New Philadelphia OH 330-339-1800
+Universal Relocation Systems, Inc. Loves Park IL 815-633-6600
+Universal Relocation Systems, Inc. Rockford IL 815-756-3517
+University Mvg. & Stg. Co. Indianapolis IN 317-870-7737
+University Mvg. & Stg. Co. Farmington Hills MI 248-615-7000
+University Mvg. & Stg. Co. Grand Rapids MI 616-245-9284
+University Mvg. & Stg. Co. Ann Arbor MI 248-615-7000
+University Mvg. & Stg. Co. West Chester OH 513-860-6700
+Valley - Yellow Trans Concord CA 925-682-3740
+Valley Relocation & Stg. W Sacramento CA 916-375-0001
+Valley Relocation & Stg. Concord CA 925-682-3740
+Valley Relocation & Stg. San Jose CA 510-490-2994
+Valley Relocation & Stg. S San Francisco CA 650-615-7990
+Valley Relocation & Stg. San Jose CA 408-258-0700
+Valley Relocation & Stg. San Jose CA 408-938-3600
+Valley Relocation & Stg. Concord CA 925-682-3740
+56The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX C- STAGING YARD CONTACT MATRIX, CONT’D
+Valley Relocation & Stg. Jessup MD 301-833-0003
+Vernon Moving & Storage Vernon BC 250-545-2185
+Viti Bros. Movers, Inc. E Providence RI 401-434-2929
+Volusia Van & Stg. Ormond Beach FL 386-673-1005
+VTS Transportation Inc Tempe AZ 480-736-8987
+Warner-Schuitema Mvg. & Stg. Co. Muskegon MI 231-722-2292
+Westmount Moving & Warehousing Lasalle QC 514-631-8884
+Whalen's, Inc. Grand Forks ND 701-775-5557
+Williams Transportation & Stg., Inc. Leesville LA 337-239-2210
+Wood Sunproducts Inc Crystal River FL 352-746-6683
+Wyo-Braska Mvg. & Stg. Co. Scottsbluff NE 308-632-7715
+APPENDIX D – FUEL SUPPLIER CONTACT MATRIX
+Company
+Emergency Hotline (24 Hours) Website Services
+806-930-5225/407-947-2208 www.accessats.com Full Service
+Emergency
+Atlantic Tower Services
+Management &
+Disaster Recovery
+Atlas Oil 800-878-2000 www.atlasoil.com Bulk Fuel
+Full Service
+Emergency
+Cat5 Resources 1-855-550-2285/409-460-3069 www.cat5resources.com
+Management &
+Disaster Recovery
+800-344-6457/800-344-6457 Emergency & Bulk
+Foster Fuels www.fosterfuels.com
+Fuel
+855-263-0521 www.macrooil.com Emergency & Bulk
+Macro Oil
+Fuel
+858-764-1972 www.netlogix.com Generator and
+Netlogix Battery Backup
+Systems
+877-657-6527 www.peakpowerservices.com Generator
+Maintenance and
+Peak Power Deployment,
+Project
+Management
+888-970-0007 www.powerplus.com Generator and
+Power Plus Battery Backup
+Systems
+800-437-4474 www.powerprotech.com Generator and
+Power Pro Tech Battery Backup
+Systems
+Specialized Transportation
+732-522-1212 www.sdtransfer.com Transportation
+Inc.
+Sun Coast Resources 800-677-3835 ext *783 www.suncoastresources.com Bulk Fuel
+Valrico Ventures 1-888-305-1750 www.valricoventures.com Disaster Recovery
+57The Communications, Security, Reliability and Interoperability Council IV Working Group IX
+Power Sub-Committee November 7, 2014
+APPENDIX E- GENERATOR RENTAL COMPANIES
+Company Website
+Aggreko North America www.aggreko.com
+Ahern Rentals www.ahernrentals.com
+Amquip Crane Corp www.amquip.com
+Art's Rental Equipment www.artsrental.com
+Blanchard Machinery www.blanchardmachinery.com
+Briggs Equipment www.briggsequipment.com
+Butler Machinery www.bulter-machinery.com
+Cleveland Brothers www.clevelandbrothers.com
+Clifford Power www.cliffordpower.com
+Empire Rental www.empirecat.com
+Equipment Depot www.eqdepot.com
+Essex Crane Rental www.essexcrane.com
+Fabick Rents www.fabickcat.com
+Foley Equipment www.foleyeq.com
+H & E Equipment www.he-equipment.com
+Hertz Equipment www.hertzequip.com
+Holt Cat www.holtcat.com
+Kirby-Smith Machinery www.kirby-smith.com
+Louisiana Rents www.louisianamachinery.com
+MacAllister Machinery www.macallister.com
+Maxim Crane Rental www.maximcrane.com
+Milton Cat www.miltoncat.com
+Mustang Cat www.mustangcat.com
+Neff Rental www.neffcorp.com
+NES Rentals www.nesrentals.com
+Ohio Cat www.ohiocat.com
+Peterson Tractor www.petersoncat.com
+Puckett Rents www.puckettrents.com
+Ring Power www.ringpower.com
+Safway Services www.safway.com
+Scott Construction www.scottcompanies.com
+Sims Crane www.simscrane.com
+Star Rentals www.starrentals.com
+Sunbelt Rentals www.sunbeltrentals.com
+Sunstate Equipment www.sunstateequiip.c-om
+Titan Machinery www.titanmachinery.com
+TNT Crane & Rigging www.tntcrane.com
+United Rentals www.ur.com
+Wagner Rents www.wagnerequipment.com
+Worldwide Machinery www.worldwidemachinery.com
+Yancey Brothers www.yanceybros.com
+58

@@ -1,0 +1,678 @@
+PDF Content from https://transition.fcc.gov/pshs/advisory/csric4/CSRIC%20IV%20WG1%20TG2%20Report.pdf:
+September 2014 WORKING GROUP 1
+Next Generation 9-1-1
+Task 2
+Final Report – Location Accuracy and Testing for
+Voice-over-LTE NetworksThe Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+Table of Contents
+1 Results in Brief ......................................................................................................................... 3
+1.1 Executive Summary ............................................................................................................ 3
+2 Introduction ............................................................................................................................... 4
+2.1 CSRIC Structure ................................................................................................................. 4
+2.2 Working Group 1 Task 2 Team Members ......................................................................... 4
+3 Objective, Scope, and Methodology ......................................................................................... 5
+3.1 Objective ............................................................................................................................. 5
+4 Location Accuracy in VoLTE Networks .................................................................................. 7
+4.1 What impact will VoLTE implementation have on carriers’ ability to comply with
+existing E9-1-1 location accuracy requirements? ....................................................................... 7
+4.1.1 How will the technologies used for generation and delivery of E9-1-1 location
+information differ for VoLTE from those used for generations and delivery of E9-1-1
+location information in legacy 2G/3G networks? .................................................................... 7
+4.2 Can VoLTE provide location accuracy that meets the Commission’s current rules and
+benchmarks for E9-1-1 location accuracy? ................................................................................. 9
+4.2.1 Can VoLTE networks and the location technologies that will be used in such
+networks achieve increases in location accuracy and yield and decreases in latency
+compared to 2G and 3G networks? .......................................................................................... 9
+4.2.1.1 A-GPS/A-GNSS .................................................................................................... 9
+4.2.1.2 OTDOA................................................................................................................ 10
+4.2.1.3 Small Cell............................................................................................................. 11
+4.2.1.4 Overall impact and validation of LTE-related location enhancements ............... 11
+4.2.2 Are all VoLTE deployments the same in terms of their ability to support E9-1-1
+location determination? Can the Commission expect the same level of location accuracy
+performance across networks deploying VoLTE or will carrier performance differ? ........... 11
+4.2.3 Location Technologies that could potentially be deployed for VoLTE ..................... 12
+4.2.3.1 UTDOA................................................................................................................ 13
+4.2.3.2 Wi-Fi .................................................................................................................... 13
+4.2.3.3 Terrestrial Beacon System (TBS) ........................................................................ 13
+4.2.3.4 Hybrid positioning systems.................................................................................. 14
+5 Transition from 2G/3G to VoLTE .......................................................................................... 15
+5.1 How will carriers transitioning from 2G/3G networks to VoLTE networks generate and
+deliver location information to PSAPs during the period when they are operating both legacy
+and VoLTE networks? What impact, if any, will simultaneous operation of both networks
+during the transition have on carriers’ overall location accuracy performance? ....................... 15
+5.1.1 Does the transition to VoLTE require any modifications to current carrier testing
+procedures for determining compliance to the Commission’s location accuracy requirements
+under Section 20.18? .............................................................................................................. 16
+5.1.2 Should prior CSRIC recommendations regarding location testing (e.g., CSRIC III
+WG3 recommendations regarding testing by network-based carriers every two years) apply
+to carriers reconfiguring to VoLTE platforms?...................................................................... 16
+6 Conclusions ............................................................................................................................. 17
+7 Appendix 1 – Acronym and Symbol Definitions Table ......................................................... 18
+Page 2 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+1 Results in Brief
+1.1 Executive Summary
+Current FCC location accuracy requirements under the Commission’s rules Section 20.18(h)
+allow Commercial Mobile Radio Service (“CMRS”) providers using a network-based E9-1-1
+location method to begin “blending” their GPS handset-based location data with their network-
+based data at the different benchmarks between January 2012 and January 2019. Based on
+recommendations made in the CSRIC III WG3 March 2012 Report concerning certain key
+performance indicators (KPIs) and the different types of empirical testing, CSRIC IV Working
+Group 1 was charged to examine whether those recommendations still apply for network-based
+carriers reconfiguring to Voice over LTE (“VoLTE”) platforms. WG1 examined current testing
+recommendations as they apply to wireless carriers transitioning to Long Term Evolution
+(“LTE”) with respect to meeting current location accuracy parameters in 20.18.
+This report documents the examination by CSRIC IV Working Group 1 Subgroup 2 with respect
+to the following:
+1. The impact VoLTE implementation will have on carriers’ ability to comply with existing
+wireless E9-1-1 location accuracy levels.
+2. Carriers transitioning from second generation (“2G”)/third generation (“3G”) networks
+to VoLTE networks generating and delivering location information to Public Safety
+Answering Points (“PSAPs”) during the period when they are operating both legacy and
+VoLTE networks. Additionally, the impact, if any, that simultaneous operation of both
+networks during the transition will have on carriers’ overall wireless location accuracy
+performance.
+The conclusions drawn from this report are:
+1. The FCC should expect, over time, location performance with VoLTE to be slightly
+better than or equivalent to 2G and 3G performance.
+2. It is not anticipated that modifications to existing carrier testing methods or procedures
+would be required due to the introduction of VoLTE. The FCC should continue to
+support the recommendations of CSRIC III WG3. In summary, those are:
+• Key performance indicators (KPIs) should be routinely monitored to help identify
+instances where system performance has degraded (relative to baseline compliance
+tests) and further testing and system improvements are needed at the local level.
+• Enhancements to location technology should be validated in representative
+environments, to ensure equivalent or improved performance. An example of this
+would be the introduction of OTDOA for VoLTE.
+• Spot-checking using empirical field-testing should be conducted on an as needed
+basis, for example, as determined by KPI monitoring or legitimate performance
+concerns from a PSAP.
+• Empirical data for maintenance testing may be collected incrementally over time.
+• Any significant deviations from expected prior performance levels should result in
+careful investigation and re-testing of the applicable test area.
+Page 3 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+• These alternative maintenance testing methods replace the need for full compliance
+testing every two years.
+• All legitimate performance inquiries from a County/PSAP or other public safety
+entity shall be properly investigated with full cooperation from the wireless service
+provider, and any issues resolved in a timely manner.
+2 Introduction
+The Commission directed CSRIC IV WG 1 to examine the impact of the migration to enabled
+4G VoLTE networks on the ability of carriers to meet with the Commission’s accuracy levels
+for wireless Enhanced 9-1-1 (“E9-1-1”) Phase II location information for CMRS providers. The
+record in the FCC’s E9-1-1 Location Accuracy proceeding and the CSRIC III WG 3 2012 and
+2013 Reports indicate that location technology vendors are making enhancements to the location
+technologies that will be used by carriers in 4G VoLTE networks.
+2.1 CSRIC Structure
+Communications Security, Reliability, and Interoperability Council (CSRIC) IV
+CSRIC Steering Committee
+Chair or Chair or Chair or Chair or Co- Chair or Chair or Co- Chair or Chair or Chair or Co- Chair or
+Co-Chairs: Co-Chairs: Co- Chairs: Co- Chairs: Co- Co-Chairs: Chairs: Co-
+Working Working Chairs: Working Chairs: Working Chairs: Working Working Chairs:
+Group 1 Group 2 Working Group 4 Working Group 6 Working Group 8 Group 9 Working
+Group 3 Group 5 Group 7 Group 10
+Working Working Working Working Working Working Working Working Working Working
+Group 1: Group 2: Group 3: Group 4: Group 5: Group 6: Group 7: Group 8: Group 9: Group
+Next Wireless EAS Cybersecurity Server- Long-Term Legacy Submarine Infrastructure 10: CPE
+Generation Emergency Best Practices Based Core Internet Best Cable Sharing Powering
+911 Alerts Working DDoS Protocol Practice Landing During
+Attacks Improvements Updates Sites Emergencies
+Table 1 - Working Group Structure
+2.2 Working Group 1 Task 2 Team Members
+Working Group 1 Task 2 consists of the members listed below.
+Name Company
+Jenny Hansen, Chair NICE
+Wayne Ballantyne Motorola Mobility, LLC
+Terri Brooks TruePosition
+Kimberly Burdick Chouteau County MT - Sheriff’s Office
+Brent Burpee Verizon Wireless
+Kirk Burroughs Qualcomm
+David Conner US Cellular
+Bruce Cox NextNav
+Kimberly Culp Larimer County
+Khaled Dessouky TechnoCom
+Robert Ehrlich CIHVA
+Page 4 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+Matthew Gerst CTIA-The Wireless Association®
+Jim Goerke Texas 9-1-1 Alliance
+Jeanna M Green Sprint Corporation
+Eric Hagerson T-Mobile
+Sherri Griffith Powell L.R. Kimball
+Roger Hixson NENA
+Wink Infinger Florida State 9-1-1 Coordinator
+Gerald Jaskulski DHS (Department of Homeland Security)
+Ryan Jensen T-Mobile
+Steve Leese APCO
+Sandra Lott CenturyLink
+Mike Loushine ACS (Applied Communications Sciences)
+Russ Markhovsky Invisitrack
+Roger Marshall TeleCommunication Systems, Inc. (TCS)
+Kathy McMahon MCP
+Christian Militeau Intrado
+Martin Moody Metropolitan Emergency Services Board
+Jerry Panagrossi Invisitrack, Inc.
+Ganesh Pattabiraman NextNav
+Gustavo Pavon TruePosition
+Raghavendhra Rao AT&T
+Glenn Roach Winbourne Consulting
+Roderic Robinson TeleCommunication Systems, Inc. (TCS)
+Cherie Lynn Rockwell Butte County, CA
+Chuck Ronshagen Cassidian Communications
+Ed Roth LETA 9-1-1
+Susan Sherwood Verizon Wireless
+Greg Schumacher Sprint Corporation
+Dorothy Spears-Dean Virginia Information Technologies Agency
+Kara Thielen Viaero
+David Tucker Vermont Enhanced 9-1-1 Board
+Greg Turetzky Intel Corporation
+Kathy Whitbeck Nsight
+Bruce Wilson Qualcomm
+Table 2 - List of Working Group Members
+3 Objective, Scope, and Methodology
+3.1 Objective
+Previous CSRIC groups have explored accuracy and testing of the Global System for Mobile
+Communication (“GSM” or 2G), Universal Mobile Telecommunications System (“UMTS” or
+3G), and 3rd Generation Code Division Multiple Access (“CDMA”) or IS-2000 deployments
+(also included in the term 3G in this document) in relation to requirements for wireless E9-1-1.
+The LTE or fourth generation “4G” technology has now reached the point in the specification
+Page 5 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+development process to allow for an evaluation by CSRIC. That said, The FCC provided
+several tasks to Working Group 1. The membership for Task 2 is charged with questions
+concerning several aspects of location estimation for VoLTE”, including accuracy, latency and
+testing. The focus of this report is not FCC rule compliance per se but VoLTE’s potential E9-1-
+1 location accuracy performance and the usefulness of applying existing location accuracy
+testing policies and procedures to 9-1-1 calls from 4G VoLTE networks.
+The task team members have formed responses to the specific questions posed by the FCC in the
+clarified task description as follows:
+1. What impact will VoLTE implementation have on carriers’ ability to comply with
+existing wireless E9-1-1 location accuracy requirements?
+a. How will the technologies used for generation and delivery of wireless E9-1-1
+location information differ for VoLTE from those used for generation and delivery of
+wireless E9-1-1 location information in legacy 2G/3G networks?
+b. Can VoLTE provide location accuracy that meets the Commission’s current rules
+and benchmarks for wireless E9-1-1 location accuracy?
+i. Can VoLTE networks and the location technologies that will be used in
+such networks achieve increases in location accuracy and yield and decreases in
+latency compared to 2G and 3G networks?
+ii. Are all VoLTE deployments the same in terms of their ability to support
+wireless E9-1-1 location determination? Can the Commission expect the same
+level of location accuracy performance across networks deploying VoLTE or will
+carrier performance differ?
+2. How will carriers transitioning from 2G/3G networks to VoLTE networks generate and
+deliver location information to PSAPs during the period when they are operating both legacy
+and VoLTE networks? What impact, if any, will simultaneous operation of both networks
+during the transition have on carriers’ overall location accuracy performance?
+a. Does the transition to VoLTE require any modifications to current carrier testing
+procedures for determining compliance with the Commission’s location accuracy
+requirements under Section 20.18?
+b. Should prior CSRIC recommendations regarding location testing (e.g., CSRIC III
+WG 3 recommendations regarding testing by network-based carriers every two years)
+apply to carriers reconfiguring to VoLTE platforms?
+The format of the document directly follows those questions.
+Page 6 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+4 Location Accuracy in VoLTE Networks
+4.1 What impact will VoLTE implementation have on carriers’ ability to
+comply with existing E9-1-1 location accuracy requirements?
+While the network elements and protocols used in VoLTE may differ from 2G and 3G location
+architectures, the equivalent location capabilities are provided. Thus, the high level conclusion
+is that VoLTE will have no deleterious impact on the ability of operators to meet the E9-1-1
+location accuracy levels that currently apply to CMRS.
+4.1.1 How will the technologies used for generation and delivery of E9-1-1 location
+information differ for VoLTE from those used for generations and delivery of E9-1-
+1 location information in legacy 2G/3G networks?
+Generation of the location information uses very similar components and technologies in both
+2G/3G and 4G networks. The two diagrams in Figure 1 and Figure 2 below show the major
+components of a 2G/3G system and a 4G system.
+The same location technologies can be supported in all generations (2G/3G/4G). Assisted
+Global Positioning System (“A-GPS”) in 3G has been extended to Assisted Global Navigation
+Satellite System (“A-GNSS”) with the addition of new constellations, such as Global Navigation
+Satellite System (“GLONASS”) in 4G LTE systems. Handset-measured ranging signals are
+employed in Advanced Forward Link Trilateration (“AFLT”) in 3G CDMA systems and
+Observed Time Difference of Arrival (“OTDOA”) systems in 4G LTE systems. Network-
+measured ranging signals are used in Uplink Time Difference of Arrival (“UTDOA”) in both
+2G/3G and 4G systems.
+The content of the Phase II location estimate delivered to the PSAP out of a VoLTE 4G network
+includes the same position, confidence, and uncertainty parameters used in 2G/3G networks for
+technologies that directly generate geographic (i.e., XY) location. These will be formatted
+appropriately for legacy PSAPs as well as NG9-1-1PSAPs.
+Delivery of the Phase I cell site civic address will continue to be delivered in the same textual
+format as in 2G/3G systems. Small cells deployed indoors will provide better Phase I location
+accuracy than outdoor macro cells. The deployment of small cells is not limited to VoLTE, but
+is a general trend to provide geographical re-use of limited spectrum.
+Page 7 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+Figure 1: GSM MAP Network1
+LLSS RRDDFF
+R0
+SLs
+EE--SSMMLLCC Le (for PSAP-query for UE position) ii33 EESSIInneett PPSi Si3 A3 A P P
+UUEE eeNNBB S1 MMMMEE SLg GGMMLLCC L0 LLRRFF
+L0 Le (for PSAP-query for UE position)
+EE--SSLLPP LLeeggaaccyy EESS LLeeggaaccyy
+MMGGCCFF
+CS NNeettwwoorrkk PPSSAAPP
+Mj
+Ml
+(for BBGGCCFF
+routing
+ES call)
+Mg Mi
+SSeerrvviinngg PPDDNN Gm Mw
+GGaatteewwaayy GGaatteewwaayy PP--CCSSCCFF EE--CCSSCCFF Mx IIBBCCFF ici
+Mw
+Mw
+User Plane (SUPL) LCS
+SS--CCSSCCFF
+Control Plane LCS
+IMS Network
+Legacy ES Network
+i3 ESInet
+Figure 2: Exemplary VoLTE location architecture with NENA i3 ESInet and Legacy ES network
+1 Figure 1 was reproduced from Figure 3.3 of ATIS-0500001, High Level Requirements for
+Accuracy Testing Methodologies (November 2011), with permission from the Alliance for
+Telecommunications Industry Solutions (ATIS).
+Page 8 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+In both 2G/3G and 4G systems, the voice portion of the call is handled separately from the
+location determination function.
+In Figure 2 above, the voice is routed to the PSAP through a gateway. The position calculation
+process consists of a sequence of data packets between the handset or user equipment (UE) and
+the network position calculation function. The data packets can be carried over the control
+channel or the user data channel. The modules involved in the two different paths are listed
+below.
+The voice path for an E9-1-1 VoLTE call goes from
+UEeNBS/PGWsCSCFsMGCFE9-1-1->ES Network->Legacy PSAP for the call to
+connect.
+Phase II Location via control channel is:
+E9-1-1 LBS Control Plane goes from PSAPLRFGMLCMMEE-SMLCUE then back
+to PSAP through the ES Network
+Phase II Location via the user data channel is:
+E9-1-1 LBS User Plane goes from PSAPLRFGMLCESLPUE then back to PSAP via
+the ES Network
+4.2 Can VoLTE provide location accuracy that meets the Commission’s
+current rules and benchmarks for E9-1-1 location accuracy?
+As discussed below, LTE-based location methods provide more flexibility, and in some cases
+better accuracy is expected relative to current 2G/3G-based methods. Since 2G/3G-based
+technologies are now compliant with the current FCC Phase II mandates for CMRS providers,
+VoLTE-based location is expected to meet the accuracy levels of the current CMRS outdoor
+location Phase II requirements for E9-1-1.
+4.2.1 Can VoLTE networks and the location technologies that will be used in such
+networks achieve increases in location accuracy and yield and decreases in latency
+compared to 2G and 3G networks?
+The statements below are based on an architectural analysis and system simulations of LTE
+location capabilities, as compared to 2G and 3G. The actual performance improvements will
+ultimately be characterized in carrier outdoor testing and future indoor test beds recommended
+by CSRIC.
+The following statements can be made about VoLTE-based location performance using each of
+the location technologies below, which are already committed for VoLTE deployments:
+4.2.1.1 A-GPS/A-GNSS
+LTE is not expected to significantly improve Time to First Fix (“TTFF”) as compared to 2G/3G.
+This is because the TTFF will be dominated by GNSS location determination time. Observed
+Page 9 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+location determination fix-type ratios based on carrier-provided E9-1-1 data logs are
+predominantly A-GPS, though a minority will fall back to a network-based location technology.
+The A-GPS TTFF is in the 8 to 24 second range, and this will not be appreciably shortened by
+the faster networks for message delivery. Fallback methods typically have shorter TTFF, but are
+typically less accurate than A-GPS.
+A-GPS yield, accuracy and TTFF may modestly improve in synchronous LTE networks2 as
+compared to asynchronous GSM/UMTS networks, since the finer time accuracy (1.5 – 5 uSec)3
+speeds the acquisition of the GPS signals. This effect will be most pronounced in weak signal
+environments such as indoors.4 LTE time synchronization is comparable to CDMA, so little
+improvement is expected compared to CDMA. Some UMTS networks have been synchronized
+as part of network upgrades and would exhibit similarly small A-GPS improvements.
+A-GNSS (e.g., GPS & GLONASS) is expected to roll out concomitantly with LTE, which will
+allow more satellite vehicles to be used in the location calculations. Published articles 5 show
+that this will lead to somewhat higher accuracy, lower TTFF, and increased yield, especially in
+dense urban scenarios. GSM and CDMA did not support GLONASS; while UMTS had modest
+support for GLONASS, LTE handsets are expected to widely support GLONASS and eventually
+other satellite constellations such as BeiDou6 and Galileo7 may be supported, as well.
+4.2.1.2 OTDOA
+LTE OTDOA is expected to give improved performance (accuracy and yield) compared to
+CDMA AFLT for multiple reasons:
+1) Wider signal bandwidths allow more precise estimate of Time of Arrival.
+2) The OTDOA positioning reference signal is isolated in the code, time and frequency
+domain,
+3) The protocol has finer time/distance reporting precision for distances less than 40km.
+2 In a Synchronous LTE or UMTS Network, GPS is used to align the signals coming from the
+base stations (e.g., eNBs) with timing derived from the GPS system. In an asynchronous LTE,
+UMTS, or other type of network, the timing of the base station signals is unrelated to GPS
+resulting in a slower GPS TTFF, as discussed further in footnote 4.
+3 http://www.gps.gov/cgsic/meetings/2012/weiss1.pdf
+Telecom Requirements for Time and Frequency Synchronization
+Marc Weiss, Ph.D. Time and Frequency Division, NIST
+4 While the exact details of how network time synchronization improves GPS acquisition are
+beyond the scope of this report, the topic is well-discussed in Understanding GPS Principles and
+Applications, 2nd edition ISBN-13: 978-1-58053-894-7, especially pp. 535-543. Basically,
+precise network time availability reduces the GPS acquisition code phase “search space”. In a
+weak signal environment, the time to analyze each “code phase/frequency” search bin is
+increased due to the need for longer non-coherent integration time. As a result, the benefit of
+precise network time availability has the most acquisition time benefit in a weak signal
+environment, and can make the difference between obtaining a GPS fix in 30 seconds or not.”
+5 GPS World, Dec. 2011, “Consumer GPS/GLONASS: Accuracy and Availability Trials of a
+One-Chip Receiver in Obstructed Environments” http://gpsworld.com/gnss-systemreceiver-
+designconsumer-gpsglonass-12359/”
+6 http://en.beidou.gov.cn/
+7 http://www.gsa.europa.eu/galileo-0
+Page 10 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+See Table 3 for the parametric comparison of CDMA vs. LTE.
+CDMA LTE
+Bandwidth 1.23 MHz 1.4 MHz to 20 MHz
+Time Resolution 1/16 chip (~ 51ns) 1T (~33ns) for RSTD ≤ 4096T (~40km) and
+s s
+5T (~163ns) for RSTD > 4096T (~40km)
+s s
+(1T = ~10m)
+s
+Standard 3GPP2 CDMA-2000 3GPP TS36.355
+Table 3 - CDMA/LTE Time Resolution/Bandwidth Parameters
+Accuracy may be improved because LTE supports more flexible hybrid positioning methods
+than 2G/3G. The E-SMLC can initiate multiple location methods at once, such as an OTDOA
+location performed in the network, and UE-based A-GNSS calculated in the UE.8
+4.2.1.3 Small Cell
+Small cell deployments are more likely to happen in LTE, due to spectrum allocations in the 3.5
+GHz band and rapid increases in wireless data consumption. This could lead to a more accurate
+Phase I location for small cells with small coverage areas, which in some cases may be accurate
+enough for first responder dispatching. In these cases, a more accurate Phase I location may also
+improve A-GNSS acquisition for weak signal scenarios.
+4.2.1.4 Overall impact and validation of LTE-related location enhancements
+Carrier outdoor testing and future indoor test beds recommended by CSRIC will ultimately
+determine the benefit of all of these changes, and produce real data to validate the expectations
+stated above.
+4.2.2 Are all VoLTE deployments the same in terms of their ability to support E9-1-1
+location determination? Can the Commission expect the same level of location
+accuracy performance across networks deploying VoLTE or will carrier
+performance differ?
+Given that all carriers are converging on the same radio access network technology, namely
+LTE, and that carriers have announced plans to implement the same location technologies to
+locate VoLTE calls to 9-1-1, location performance for VoLTE in comparable topologies is
+generally expected to be quite similar across different carrier networks.
+While there are implementation details that can affect location performance from carrier to
+carrier, it is expected that carriers will follow similar paths to optimize LTE location
+functionality.
+8 3GPP TS 36.305 sec 4.3 “Standard UE positioning methods; Network assisted GNSS methods,
+downlink positioning methods, enhanced cell ID method, hybrid positioning using multiple
+methods from above. In 2G/3G, the SMLC can only initiate multiple location methods
+sequentially.
+Page 11 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+Different wireless carriers will utilize a variety of vendors to supply needed location
+functionality in both networks and handsets. Since any deployed location technology will be
+standardized, different vendor implementations are not expected to result in significant
+differences in location performance, assuming similar field conditions and deployment
+parameters.
+These expectations for similar performance across various carrier/vendor implementations have
+been demonstrated through practical experience with A-GPS – where different carriers have
+obtained similar yield and accuracy figures – even with different network and handset
+implementation parameters.
+Specific location technologies currently planned and announced for use for VoLTE E9-1-1
+include:
+• A-GPS
+• A-GLONASS
+• OTDOA
+A-GPS and A-GLONASS (collectively A-GNSS) are expected to perform similarly across
+different carrier and vendor VoLTE implementations, just as A-GPS has for previously deployed
+radio access networks.
+OTDOA, while fully standardized, allows various options that can affect location performance.
+For example, Positioning Reference Signals (“PRS”) can be transmitted on the downlink at
+different duty cycles and durations. PRS muting increases “hearability” between adjacent
+towers, by only one tower transmitting at a specific time in a given area. PRS muting patterns
+can be optimized to specific geographies (e.g., urban canyons versus rural). Actual field data
+collected over many months, with different traffic volumes and tower spacing in rural versus
+dense urban cores will go into the continuous improvement process by the carriers. In dense cell
+spacing, increasing the number of towers heard will increase the number of directions from
+which data is collected. This is expected to improve accuracy. TTFF should not change
+significantly.
+It is reasonable to expect that carriers and their vendors will work carefully to ensure these
+location technologies are optimized and implemented properly relative to E9-1-1 location
+performance. Furthermore, these implementation options can be adjusted and adapted, as
+needed over time, to address any specific performance gaps for a given carrier.
+Given these considerations, it is reasonable for the Commission to generally expect the same
+level of location performance across various carrier networks deploying VoLTE.
+4.2.3 Location Technologies that could potentially be deployed for VoLTE
+The discussion in the following sections covers location technologies that could potentially
+augment location performance, but are not currently committed for VoLTE implementations in
+the US. These technologies have either (a) already been deployed in 2G or 3G networks, or (b)
+used for cLBS applications, or (c) are in an advanced state of prototyping and validation.
+Page 12 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+Additionally, other technologies discussed in the CSRIC III report, “Leveraging LBS and
+Emerging Location Technologies for Indoor Wireless E9-1-1 (Mar. 14, 2013)”9, may eventually
+be considered for enhancement of VoLTE location.
+4.2.3.1 UTDOA
+Location accuracy of UTDOA deployed on LTE networks should comparable to, or better than,
+the accuracy achieved by UTDOA deployed on 3G or 2G networks, and location latency for
+UTDOA deployed on 4G (LTE) networks should be similar to that achieved for UTDOA
+deployed on 2G (GSM) networks, depending on the assigned periodicity and bandwidth of the
+Sounding Reference Signal (“SRS”) configuration10.
+4.2.3.2 Wi-Fi
+In addition to the committed LTE location methods discussed above, other location methods
+such as Wi-Fi for VoLTE have been standardized. Wi-Fi for position calculation has been
+standardized in Secure User Plane (“SUPL”) 2.0 and is available for deployment on GSM,
+UMTS, CDMA and LTE. SUPL Multiple Location IDs support reporting of Medium Access
+Control (“MAC”) Address for unique user identification latitude and longitude lookup, signal
+strength for Received Signal Strength Indicator (“RSSI”) position calculation and round trip
+delay for RTT position calculation. These are only available in UE-Assisted user plane call
+flows where the position is calculated by the E-SMLC in the network.11
+Wi-Fi support for control plane UE-Assisted call flows is standardized only for LTE in the LPPe
+protocol12. LTE control plane LPP protocol can be extended with the External Protocol Data
+Unit (“EPDU”), to support LPPe protocol to transmit the same Wi-Fi parameters available in
+SUPL Multiple Location IDs (Mac Address, signal strength, round trip delay).13
+Wi-Fi measurements could be reported along with OTDOA and A-GNSS measurements. The
+combination of multiple sources of information can be used to cross-validate the other systems.
+4.2.3.3 Terrestrial Beacon System (TBS)
+Terrestrial Beacon Systems are one of the newer positioning techniques that are under
+consideration to augment the existing positioning methods. Similar to GPS, the system is air
+interface agnostic. The performance of NextNav’s Rev 1 implementation of TBS was
+benchmarked during CSRIC III, and the Rev 2 implementation was tested under similar
+conditions (not under CSRIC oversight) 14. This technology is currently in the process of being
+9http://transition.fcc.gov/bureaus/pshs/advisory/csric3/CSRIC_III_WG3_Report_March_%2020
+13_LeveragingLBS.pdf
+10 SRS is the Sounding Reference Signal specified in LTE and used to test reception quality for
+uplink channel-dependent scheduling.
+11 OMA-TS-ULP v2.0
+12 OMA-TS-LPPe
+13 3GPP TS 36.355 Evolved Universal Terrestrial Radio Access (E-UTRA) LTE Positioning
+Protocol (LPP)
+14 Differences between Rev 1 and Rev 2 technology are documented in TechnoCom Report:
+NextNav Technology Rev-2 Indoor Test Report
+Page 13 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+standardized in 3GPP, OMA and other standards bodies. In 3GPP it is part of the study item on
+‘Indoor Positioning’.
+4.2.3.4 Hybrid positioning systems
+Each positioning system can operate in isolation or in combination with other systems. A-GNSS
+is one example of hybrid combining of measurements from two different positioning systems
+(e.g., GPS + GLONASS, or GPS+BEIDOU). This is an example of a tightly coupled hybrid
+combination in the measurement space. A second kind of hybrid combination is a loosely
+coupled, cross checking of results between cell tower computed positions, e.g. via OTDOA and
+Wi-Fi computed positions.
+Multiple combinations of different technologies can be combined together to produce a more
+reliable and accurate position estimate than any one system alone. GPS works well in outdoor
+environments, but has limitations in some indoor environments. Other location methods can fill
+in the gaps, each with different strengths and weaknesses.
+(http://apps.fcc.gov/ecfs/document/view?id=7520937523) and included improved beacon timing
+synchronization, assisted modes of operation, waveform modifications etc.
+Page 14 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+5 Transition from 2G/3G to VoLTE
+5.1 How will carriers transitioning from 2G/3G networks to VoLTE
+networks generate and deliver location information to PSAPs during the
+period when they are operating both legacy and VoLTE networks?
+What impact, if any, will simultaneous operation of both networks
+during the transition have on carriers’ overall location accuracy
+performance?
+The scope of these questions is specifically referring to carrier-deployed VoLTE for an LTE
+Radio Access Network (“RAN”), using an IMS Core Network (“CN”) for the transport of
+VoLTE calls across the network. Note that, Multimedia Messaging Emergency Services
+(“MMES”) and Rich Communications Services (“RCS”) are out of scope.
+The expectation is that initial location accuracy will be as good, if not better, compared to legacy
+2G/3G networks. Performance improvements over time are expected as the location
+technologies in 4G are optimized.
+Carriers will do what makes the most sense to support customer expectations regarding
+emergency support and the availability of wireless E9-1-1 Phase II location accuracy on the 4G
+network. It is likely that carriers will leverage the underlying 2G/3G networks for E9-1-1
+support wherever possible until 4G networks and associated location technologies are fully
+deployed and optimized and 2G/3G networks are decommissioned. It is expected that in the
+early stages of 4G network deployments, carriers will be deploying E9-1-1 location technologies
+that are similar to current solutions available on their 2G/3G networks; namely, A-GPS
+supplemented by a network-based location technology for areas where GPS is challenged.
+Without knowing each specific carrier’s network implementation and transition plans, it is
+unlikely that the operations of one network (2G/3G) will impact the operations of the other
+network (4G) as they are separate network architectures. However, some of the E9-1-1 Phase II
+location technologies being deployed on 4G networks (e.g. OTDOA) are new and are only now
+in their initial deployment by some carriers being implemented on completely new network
+infrastructures. As with E9-1-1 Phase II on 2G/3G networks, it will take some time to optimize
+the key attributes of the location technologies for 4G. Some examples of network tuning during
+this transitional period are:
+1. Cell Tower location provisioning
+2. RF parameters for mutual cell hearability to maximize the number of towers measured
+by the UE
+3. Degree of synchronization.
+Page 15 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+5.1.1 Does the transition to VoLTE require any modifications to current carrier testing
+procedures for determining compliance to the Commission’s location accuracy
+requirements under Section 20.18?
+The transition to VoLTE should not require any modifications to current carrier testing
+procedures. It is the evolution of the E9-1-1 location determination platform that would affect
+outdoor carrier-testing procedures as new location technologies are incorporated into 4G
+networks. Where the same location technologies are used, current carrier testing procedures
+should not change, but new location technologies may require different testing methods.
+With the proliferation of indoor small cells and other indoor-specific technologies, testing in a
+set of representative environments (e.g., a common indoor test bed), should be sufficient.
+Before location accuracy testing occurs, the 4G networks with their associated location
+technology should be allowed to fully deploy across the network and allow for the carriers to
+monitor the technology and its day-to-day performance on a fully operational commercial
+network.
+5.1.2 Should prior CSRIC recommendations regarding location testing (e.g., CSRIC III
+WG3 recommendations regarding testing by network-based carriers every two
+years) apply to carriers reconfiguring to VoLTE platforms?
+CSRIC III WG3 produced reports on both outdoor and indoor wireless location performance and
+testing. Those recommendations continue to be applicable as carriers reconfigure to VoLTE.
+Where the underlying location technology is the same as previously used for compliance testing
+(e.g., A-GPS) and no significant changes to field conditions or deployment options have
+occurred, there is no need to repeat county-level compliance testing for a change in radio access
+network (e.g., the introduction of VoLTE). As suggested by CSRIC III WG3, once outdoor
+county-level compliance has been certified to meet accuracy requirements, a systematic method
+of ‘spot-checking’ representative areas that have previously been tested and shown compliant
+can be employed to verify that changes (such as a different radio access network) have not
+resulted in any significant deviations from expected performance levels.
+CSRIC III WG3 “Final Report – Outdoor Location Accuracy” (14 March 2012) section 5.4.2
+“Proposed Maintenance Approach” remains the recommended approach, including for carriers
+reconfiguring to VoLTE platforms. Note that this CSRIC III recommendation does not include
+automatic re-testing by network-based carriers every two years.
+Page 16 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+6 Conclusions
+It is not anticipated that modifications to existing outdoor carrier testing methods or procedures
+would be required due to the introduction of VoLTE. If specific indoor requirements are
+adopted in the future, we anticipate that different testing methodologies would be required, such
+as testing in representative indoor environments. It is premature to speculate on specifics of
+indoor test procedures in advance of specific indoor requirements.
+As discussed in Section 4, the FCC should expect, over time, location performance with VoLTE
+to be slightly better than or equivalent to 2G and 3G performance. These expectations should be
+validated via the maintenance testing methodology, including representative testing or “spot-
+checking” as described below.
+The FCC should continue to support the recommendations of CSRIC III WG3. As summarized
+below from the CSRIC III WG3 “Final Report – Outdoor Location Accuracy” (March 14, 2012)
+section 5.4.2 “Proposed Maintenance Approach”, the goal of maintenance testing is to identify a
+method that verifies continued optimal performance of E9-1-1 location systems at the local
+level. This CSRIC report recommends the following maintenance testing approaches in lieu of
+repeated county-level compliance testing:
+• Key performance indicators (KPIs) should be routinely monitored to help identify
+instances where system performance has degraded (relative to baseline compliance
+tests) and further testing and system improvements are needed at the local level.
+• Enhancements to location technology should be validated in representative
+environments, to ensure equivalent or improved performance. An example of this
+would be the introduction of OTDOA for VoLTE.
+• Spot-checking using empirical field-testing should be conducted on an as needed
+basis, for example, as determined by KPI monitoring or legitimate performance
+concerns from a PSAP.
+• Empirical data for maintenance testing may be collected incrementally over time.
+• Any significant deviations from expected prior performance levels should result in
+careful investigation and re-testing of the applicable test area.
+• These alternative maintenance testing methods replace the need for full compliance
+testing every two years.
+• All legitimate performance inquiries from a County/PSAP or other public safety
+entity shall be properly investigated with full cooperation from the wireless service
+provider, and any issues resolved in a timely manner.
+Page 17 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+7 Appendix 1 – Acronym and Symbol Definitions Table
+Acronym Definition
+2G 2nd Generation or GSM
+3G 3rd Generation or UMTS or CDMA
+3GPP 3rd Generation Partnership Project
+AFLT Advanced Forward Link Trilateration
+A-GNSS Assisted Global Navigation Satellite System
+A-GPS Assisted-Global Positioning System
+ALI Automatic Location Identification
+BGCF Border Gateway Control Function
+CDMA Code Division Multiple Access
+cLBS Commercial Location Based Services
+chip Pulse of a direct-sequence spread spectrum (DSSS) code
+CN Core Network
+eNB Evolved NodeB
+EPDU External Protocol Data Unit
+E-CSCF Emergency Call Session Control Function
+E-SLP Emergency SUPL Location Platform
+E-SMLC Evolved Serving Mobile Location Center
+ES Emergency Services
+IBCF Interconnection Border Control Function
+GLONASS Russian Global Navigation Satellite System
+GMLC Gateway Mobile Location Center
+GSM Global System for Mobile Communications
+GNSS Global Navigation Satellite Systems
+GPS American Global Positioning System
+IMS IP Multimedia Core Network Subsystem
+KPI Key Performance Indicator
+LBS Location Based Services
+LPP LTE Positioning Protocol
+LPPe LTE Positioning Protocol extension
+LS Location Server
+LRF Location Retrieval Function
+LTE Long Term Evolution
+MAC Medium Access Control
+MGCF Media Gateway Control Function
+MME Mobility Management Entity
+MMES Multimedia Messaging Emergency Services
+MSC Mobile Switching Center
+ns Nanosecond
+Page 18 of 19The Communications Security, Reliability and Interoperability Council IV Working Group 1
+Final Report September, 2014
+Acronym Definition
+OMA Open Mobile Alliance
+OTDOA Observed Time Difference of Arrival
+PDN Packet Data Network
+PGW Packet Data Network Gateway
+PSAP Public Safety Answering Point
+P-CSCF Proxy Call Session Control Function
+PRS Positioning Reference Signal
+RAN Radio Access Network
+RCS Rich Communications Services
+RDF Routing Determination Function
+RF Radio Frequency
+RSSI Received Signal Strength Indicator
+RSTD Reference Signal Time Difference
+RTT Round Trip Time
+S-CSCF Serving Call Session Control Function
+SMLC Serving Mobile Location Center
+SR Scheduling Request
+SRS Sounding Reference Signal
+SUPL Secure User Plane
+TBS Terrestrial Beacon System
+T Basic unit of time in an LTE system
+s
+TTFF Time to First Fix
+UE User Equipment
+UMTS Universal Mobile Telecommunications Systems
+UTDOA Uplink Time Difference of Arrival
+VoLTE Voice over LTE
+Page 19 of 19

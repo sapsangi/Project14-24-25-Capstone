@@ -1,0 +1,5792 @@
+PDF Content from https://transition.fcc.gov/bureaus/pshs/advisory/csric3/CSRICIII_6-6-12_WG8-Final-Report.pdf:
+June 2012 WORKING GROUP - 8
+E9-1-1 Best Practices
+Final Report – Part 1
+Page 1 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Table of Contents
+1 Results in Brief.........................................................................................................................3
+1.1 Executive Summary.........................................................................................................3
+2 Introduction..............................................................................................................................4
+2.1 CSRIC Structure...............................................................................................................5
+2.2 Working Group 8 Team Members...................................................................................5
+3 Objective, Scope, and Methodology........................................................................................6
+3.1 Objective..........................................................................................................................6
+3.2 Scope................................................................................................................................6
+3.3 Methodology....................................................................................................................7
+3.3.1 Approach to E9-1-1 Disaster Recovery....................................................................7
+3.3.1.1 High Level Model – Legacy E9-1-1.....................................................................7
+3.3.1.2 High Level Model - Multimedia...........................................................................8
+3.3.1.3 Elements for Best Practice Study..........................................................................9
+4 Analysis, Findings and Recommendations............................................................................10
+4.1 Analysis..........................................................................................................................10
+4.2 Findings..........................................................................................................................11
+4.3 Recommendations..........................................................................................................13
+5 Conclusions............................................................................................................................19
+6 Appendix 1 – CSRIC III Council Considerations..................................................................19
+7 Appendix 2 – E911 Best Practice Disaster Preparedness Checklist......................................22
+Page 2 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+1 Results in Brief
+1.1 Executive Summary1
+During the aftermath of a severe storm, earthquake, terrorist attack, or other natural or man-
+made disaster, the rapid restoration of the E9-1-1 infrastructure may make the difference
+between life and death for the public at large. Public safety personnel and emergency
+responders need the ability to prioritize their rescue efforts, perform triage to help the most in
+need first, and to generally be able to assess the impact to life and property.
+The risk of damage or significant impairment to the E9-1-1 network following one of these “all
+hazards” conditions should be considered jointly by Service Providers, Network Operators, and
+Public Safety through a well-developed and routinely exercised business continuity plan. On the
+other hand, when impairment does occur despite best efforts, the ability to rapidly restore the
+infrastructure, and thus connectivity to emergency services, must also be planned well in
+advance of any impact.
+One critical consideration when reacting to a crisis situation is the prioritization of service
+restoral. Many Service Providers maintain business continuity plans that address the order in
+which communications are restored that usually include emergency services, government
+services, internal services, and customer services.
+Communications Security, Reliability and Interoperability Council (CSRIC) III Working Group
+8 was established to modify and/or develop new Best Practices that will support communication
+providers in preparing for natural or man-made disasters. These Best Practices will ensure that
+communication providers are able to plan ahead and restore service quickly in the aftermath of a
+disaster as well as initiate procedures that could help reduce the effects that a disaster may have
+on the network. This includes how E9-1-1 traffic might be prioritized in such situations from an
+infrastructure point of view.
+This Final Report - Part 1 is the first part of a larger review of industry Best Practices intended
+to modernize those that relate specifically to E9-1-1 and more importantly to consider the need
+for Best Practices for Next Generation E9-1-1 services that may be useful in preparing for
+natural or man-made disasters.
+For Part 1 of the Final Report, the CSRIC III is being asked to accept this document and the
+recommended Best Practices contained within, and to recommend resolution for any gaps found
+by this Working Group that were determined to be out of scope during this initiative.
+1 What is an Executive Summary?; Source:
+http://www.2myprofessor.com/Common/executive_summary.htm
+Page 3 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+2
+2 Introduction
+CSRIC was established as a federal advisory committee designed to provide recommendations
+to the Commission regarding Best Practices and actions the Commission may take to ensure
+optimal operability, security, reliability, and resiliency of communications systems, including
+telecommunications, media, and public safety communications systems.
+Due to the large scope of the CSRIC mandate, the committee then divided into a set of Working
+Groups, each of which was designed to address individual issue areas. In total, 10 different
+Working Groups were created, including Working Group 8 on E9-1-1 Best Practices.
+This Final Report – Part 1 documents the efforts undertaken by CSRIC Working Group 8 – E9-
+1-1 Best Practices with respect to the long term network requirements to ensure that
+communication providers are able to restore service quickly in the aftermath of a disaster. The
+team considered how these Best Practices would apply to originating providers such as legacy
+wireline, wireless, cable Voice over Internet Protocol (VoIP), internet based VoIP, E9-1-1 and
+NG9-1-1 network and functional software providers, and database providers.
+Working Group 8 officially started its work on November 17, 2011, and was given until June
+2012 to produce this Final Report – Part 1 and December 2012 to produce a Final Report – Part
+2 on overall Best Practice recommendations. The focus for Working Group 8 is to review the
+existing set of 1,022 voluntary industry Best Practices developed over the years by the various
+Network Reliability and Interoperability Council (NRIC) and the previous CSRIC Council.
+With the introduction of Next Generation E9-1-1 services and the overall changes in technology
+over the past decade an in-depth review of Best Practices that relate to Cyber security, Physical
+security, Disaster Recovery and Mutual Aid, Network Reliability and Interoperability, and
+Public Safety were found to be in scope for this team. This working group is made up of experts
+from public safety and industry which provided an end to end E9-1-1 network view.
+The team began analysis of the entire Best Practice data set and worked to identify those items
+that would have a direct impact on the Working Group’s task of supporting communication
+providers in preparing for natural or man-made disasters. Once the unrelated Best Practices were
+removed, those that remained could be further analyzed and applied to the framework that was
+developed in this report.
+The team also addressed gaps that have not been historically addressed through the Best Practice
+process and that, if implemented by industry, would further protect the E9-1-1 network and
+improve the resiliency to survive a crisis event or at the least, assist in the rapid restoration in the
+aftermath.
+2 Writing@CSU; Source: http://writing.colostate.edu/guides/processes/science/pop2a3.cfm
+Page 4 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+2.1 CSRIC Structure
+2.2 Working Group 8 Team Members
+Working Group 8 – E9-1-1 Best Practices consists of the members listed below.
+Name Company
+Robin Howard – Chair WG 8 & WG8-1 Verizon
+Angel Arocho Comcast
+Donna Bethea-Murphy Iridium
+Mary Boyd – Chair WG8-2 Intrado
+Lien Dao AT&T
+Thomas Dombrowsky Wiley Rein LLP
+Jeff Hall T-Mobile
+Roger Hixon National Emergency Number Association
+Jeff Hubbard CenturyLink
+Elise Kim 9-1-1 FOR KIDS: Public Education
+Cathy Kurnas Cassidian Communications
+Gail Linnell Applied Communication Sciences
+Kathryn Martin Access Partnership
+Jacqueline Randall Washington State Military Department E911
+Program Office
+Alisa Simmons Tarrant County 9-1-1 District
+Steve Souder Fairfax County, VA Department. of 9-1-1 Public
+Safety Communications
+Dorothy Spears-Dean Virginia Information Technologies Agency
+Paul Stoffels – Chair WG8-3 Alliance for Telecommunications Industry Solutions
+(AT&T)
+Jackie Voss Alliance for Telecommunications Industry Solutions
+Steve Zweifach Sprint
+Table 1 - List of Working Group Members
+Page 5 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+3 Objective, Scope, and Methodology
+3.1 Objective
+For Final Report - Part 1, the objective was to modify and/or develop new voluntary industry
+Best Practices that will support communication providers, e.g. originating providers such as
+legacy wireline, wireless, cable VoIP, internet based VoIP, E9-1-1 and NG9-1-1 network and
+functional software providers, and database providers, in preparing for natural or man-made
+disasters.
+A framework would be developed that efficiently identifies the Best Practices that are within
+scope and could be used by any Service Provider, Network Operator, or Public Safety agency to
+improve reliability and resiliency when developing or enhancing disaster plans or business
+continuity planning.
+The final objective for Working Group 8-1 “E9-1-1 Disaster Best Practices” was to focus
+specifically on the prevention and restoration of the Next Generation E9-1-1 and Legacy E9-1-1
+network infrastructures.
+3.2 Scope3
+The scope of the team was to identify current Best Practices that could apply to disaster recovery
+processes or identify those that could be enhanced with minor modifications. Given this scope,
+the group found it essential to place an initial focus on the 1,022 Best Practices developed over
+the years by previous NRIC Focus Groups and CSRIC Working Groups. The Working Group is
+also tasked with the modification of the Best Practices potentially associated with E9-1-1
+infrastructure and will continue its work following submission of this Final Report - Part 1. The
+Final Report - Part 2, due in December 2012, will address these remaining modifications4.
+The full Best Practice data set does not apply to disaster recovery processes; therefore it was in
+scope for this team to review and reject those Best Practices that would not directly relate to the
+prevention and restoration of the E9-1-1 network infrastructure and facilities. Within scope was
+also the identification of Best Practices, and to identify gaps, that will assist in prioritizing E9-1-
+1 service restoration in the aftermath of an all hazards event.
+It should be noted that industry Best Practices are voluntary in nature and may not apply to all
+Service Providers due to scope, cost, feasibility, or resource limitations. Best Practices should
+be used by experts who have the overall experience to interpret the Best Practice in the manner
+in which it was intended.
+3 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+4 It should be noted that Best Practices identified in this Final Report - Part 1 may be altered by
+the final Working Group 8 team in December of 2012, however, the identified current Best
+Practices are in force at the time of this report and are appropriate for use by industry to
+implement these recommendations.
+Page 6 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+3.3 Methodology5
+Due to the scope of the work required Working Group 8 was separated into three sub-teams to
+address specific areas of the Best Practice work. Sub-team 8-1 “E9-1-1 Disaster Best Practices”
+was tasked with modifying and/or developing new Best Practices that will support
+communication providers in preparing for natural or man-made disasters. This sub-team
+developed Final Report - Part 1 which focuses on the Best Practices that will ensure that
+communication providers are able to restore service quickly in the aftermath of a disaster. This
+includes how E9-1-1 traffic might be prioritized in such situations. This report was due June
+2012.
+Sub-group 8-2 “Current E9-1-1 Best Practices” is tasked with reviewing the existing
+CSRIC/NRIC E9-1-1 best practices and recommend ways to improve them, accounting for the
+passage of time, technology changes, operational factors, and any identified gaps. Their
+deliverable is due December 2012.
+Sub-group 8-3 “PSAP and Consumer Best Practices” has the challenge of creating two new best
+practice data sets to address and capture the experiences of Public Safety organizations and to
+provide consumers a standard set of recommendations on how to properly use 9-1-1 during
+critical times. Their deliverable is also due December 2012.
+3.3.1 Approach to E9-1-1 Disaster Recovery
+3.3.1.1 High Level Model – Legacy E9-1-1
+The more traditional, or historical, means of transmitting E9-1-1 calls from Service Providers
+and network operators involves passing voice, Automatic Number Identification (ANI), and
+Automatic Location Identification (ALI) using the Time Division Multiplexing (TDM) Public
+Switched Telephone Network (PSTN).
+This model includes E9-1-1 call delivery methods involving legacy E9-1-1 networks6 where call
+delivery is based on central office and wireless Mobile Switching Center (MSC) dedicated E9-1-
+1 trunk groups to a selective router(s) and then dedicated trunk groups to the PSAP. Voice over
+Internet Protocol (VoIP) E9-1-1 calls are transitioned onto the PSTN network through media
+gateways and, along with wireless E9-1-1 calls, utilize a Pseudo ANI to provide needed
+information at the PSAP. Traditionally, the Legacy E9-1-1 Network will route calls to a backup
+location or alternate route in the event the primary PSAP becomes unavailable.
+Legacy E9-1-1 infrastructure reliability and resiliency are dependent on factors such as:
+- Diversity of facility routes in the originating Service Providers and the legacy E9-1-1
+providers interoffice transport systems.
+- Mated selective routers and/or tandems to handle failover and excessive call delivery.
+5 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+6 Legacy network in this Final Report - Part 1 is a term used to define the telecommunication
+Time Division Multiplexing (TDM) Public Switched Telephone Network (PSTN) network
+architecture pre-internet protocol and pre-Next Generation platform.
+Page 7 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+- Signaling System – 7 architecture for call setup on dedicated trunk groups.
+- Robust E9-1-1 call flow over multi-frequency (MF) Centralized Automatic Message
+Accounting (CAMA) trunks from selective routers to PSAP.
+- Sufficient trunk capacity to process E9-1-1 calls at all points in the legacy network.
+Figure 1: Legacy E9-1-1 Model
+3.3.1.2 High Level Model - Multimedia
+The Next Generation of transmitting E9-1-1 calls from Service Providers and Network
+Operators involves passing voice, data, and video simultaneously over internet based facilities.
+These new platforms are mostly independent of the traditional legacy network and are designed
+in a mesh arrangement that provides for a robust and resilient network.
+This multimedia model includes E9-1-1 call delivery methods involving internet and cloud-
+based services. Call delivery could also still be based on traditional legacy network up to the
+point in the network where it is transitioned onto the IP network through media gateways. VoIP
+and next generation wireless network E9-1-1 calls will route entirely over the IP network
+maximizing the inherent reliability of the internet to deliver E9-1-1 information. The
+multimedia model includes routers, gateways, IP protocols, etc. that allow dynamic routing of
+E9-1-1 calls to PSAPs in either a traditional primary/secondary setup or through a more robust
+distributed “one to many” application.
+Multimedia E9-1-1 infrastructure reliability and resiliency are dependent on factors such as:
+- Diversity within Internet based networks in a mesh or distributed fashion.
+- Ability to recover from cyber based events.
+- Protection from cyber security threats.
+- Media gateway availability.
+- Robust databases that support E9-1-1 call delivery.
+Page 8 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Figure 2: Multimedia Model
+3.3.1.3 Elements for Best Practice Study
+In both the Legacy E9-1-1 and Multimedia models there are specific elements that the Working
+Group identified where Best Practices would be applicable for prevention and recovery efforts
+related to disaster recovery and business continuity planning.
+Legacy Providers:
+Best Practices for this element include those that address the traditional E9-1-1 network as
+previously described. This element also addresses the transition points between the legacy TDM
+network and the IP network when considering VoIP.
+Internet Based:
+Best Practices for this element include those that address not only the physical assets associated
+with prevention and restoration but also the cyber issues that have been brought into play by the
+introduction of the Next Generation platform.
+Databases:
+Best Practices for this element include those that consider preventative and restoration of critical
+databases that are needed for proper E9-1-1 call completion. Examples of critical databases
+include the data used to perform real time routing of an emergency call, and/or to deliver the
+ALI to the PSAP. These databases are typically provisioned in redundant architecture methods
+with offsite backup copies of the data created regularly.
+Pre-Call and Call Time Software Functions:
+Best Practices for this element include those that address the underlying software needs that are
+critical to the ability of both the Legacy E9-1-1 and multimedia models to properly perform call
+setup and timing functions. Examples of Pre-call and Call Time software functions include pre-
+Page 9 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+populating E9-1-1 routing tables when service is installed rather than obtaining customer
+location information for routing purposes at the time of the call.
+Public Switch Telephone Network (PSTN) based:
+Best Practices for this element include those that address prevention and restoration of the
+traditional network elements and facilities that are needed to process voice E9-1-1 based calls
+through the legacy network. Examples of PSTN related items are E9-1-1 trunk groups, route
+diversity, and selective routers/tandems and associated diverse network elements, etc.
+Emergency Services IP Network (ESInet):
+Best Practices for this element include those that address prevention and restoration of the next
+generation network elements and facilities that are needed to process IP voice, data, and video
+based calls through the NG9-1-1 network. Examples of ESInet related items are routers,
+gateways, Border Control Functions (BCFs) and a dedicated, managed IP network infrastructure
+used to transmit the voice, text, and video. In many cases, Best Practices for ESINets include
+the use of multiple IP network infrastructures as a collective to increase redundancy and
+resiliency.
+Public Safety Answering Points (PSAPs):
+Best Practices for this element include those that apply to the reliable accessibility to the E9-1-1
+network by the public and those that address the rapid restoration of the network in the aftermath
+of a crisis.
+Other Entities:
+Best Practices for this element include those that apply to third party providers of Next
+Generation IP or cloud-based services required to process E9-1-1 calls through any Next
+Generation network. Examples include Network Operators that provide ALI/ANI/PANI lookup
+services, call routing through non Service Provider networks, etc.
+4 Analysis, Findings and Recommendations
+4.1 Analysis7
+Working Group 8-1 analysis encompassed the review of 1,022 current Best Practices whose
+implementation would enhance the security, reliability, operability and resiliency of
+infrastructure for communications industry segments.
+Prior to beginning work, a preview of the entire Best Practice set was done by the full Working
+Group to quickly ascertain which Best Practices had a potential E9-1-1 implication with an eye
+toward Next Generation technology, which of those appeared to related to a disaster recovery or
+7 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+Page 10 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+business continuity issue, and those that could be used with some modification by PSAPs and
+Public Safety, or to enhance public education on the use of E9-1-1.
+Once these individual lists were created, Working Group 8-1 was provided the 548 Best
+Practices that had the potential to fall in scope of the team’s work. The next step was to develop
+a definition that would provide the team a roadmap for further refining the Best Practice list
+down to those that would qualify as an E9-1-1 Best Practice used in preparing for natural or
+man-made disasters. The definition follows:
+“A Best Practice is a suggestion that through its implementation will have a direct impact on
+preparing for a natural or man-made disaster or through implementation will have a direct
+impact on the prioritization and restoration of the E9-1-1 infrastructure following an event. A
+second criterion of a Best Practice is that the suggestion is currently in use by one or more
+participants in the industry.”
+Next, the team looked for a way to present their findings in a manner that could be quickly
+applied by the industry or be blended into their existing business continuity plans. The answer
+to this came from work done previously on a Hurricane Checklist developed by industry experts
+in disaster recovery and business continuity8 by the Alliance for Telecommunications Industry
+Solutions (ATIS) Network Reliability Steering Committee (NRSC). The concept of developing
+a checklist using the appropriate Best Practices and identifying the elements that they would
+apply to would give industry a quick guide to use in their internal preparations.
+Finally, a gap analysis process needed to be included in the Final Report - Part 1. As the team
+reviewed each Best Practice they were asked to record any gaps they found that were not
+addressed from their expert point of view. These gaps and recommendations are included in the
+Recommendations section of this Final Report - Part 1.
+Each of the 548 Best Practices provided to this Working Group 8-1 was compared to the
+definition discussed above. Through careful analysis, the original list was reduced from 548 to
+262 that the team determined would qualify as an E91-1 Best Practice for use in preparing for a
+natural or man-made disaster.
+4.2 Findings
+The E9-1-1 Best Practice Disaster Preparedness Checklist provides a list of current Best
+Practices that apply to the “Legacy E9-1-1” and “Multimedia” models developed by Working
+Group 8-1. Each Best Practice applies to one or more elements with a check (X) in each of the
+columns that the team identified as applicable. The figure below illustrates the format the team
+adopted for the checklist.
+8 ATIS NRSC Hurricane Checklist http: http://www.atis.org/docstore/product.aspx?id=25649
+Page 11 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Figure 3: E911 Best Practice Disaster Preparedness Checklist
+The team found that many existing Best Practices were equally relevant to the E9-1-1 network
+due to the commonalities between the technologies. This was most prevalent in the Next
+Generation E9-1-1 platform, which being based on internet concepts found Best Practices that
+applied over several categories.
+Best Practices identified for the checklist were found in nearly every category of Best Practices
+available. Included in the checklist is a column that identifies the category the Best Practice
+applies to and the Status of “All”, “Critical”, “Highly Important”, or “Important” that applies to
+each Best Practice9. The categories are determined by the Best Practice Number assigned by
+the Federal Communications Commission (FCC) following approval by the Council. Best
+Practice numbering format is described below:
+Description of Best Practice Numbering
+For existing NRIC/CSRIC Best Practices10: Each Best Practice has a unique number that
+follows the numbering format: X - Y - Z # # #
+X = the current, or most recent, NRIC/CSRIC Council (e.g., 8 in 2009-2010)
+Y = the Council in which the Best Practice was last edited
+Z = 0-4 for Network Reliability and Interoperability
+= 1 for Disaster Recovery and Mutual Aid
+= 3 for Public Safety
+= 5 for Physical Security
+= 8 for Cyber Security
+# # # = any digits, where every Best Practice has a unique Z # # #
+Due to the work being done by the larger Working Group 8 in modifying and modernizing E9-1-
+1 related Best Practices, it was decided that this team would not recommend modifications to the
+existing Best Practices unless there were only slight modifications needed to clarify the Best
+Practice for this specific project. Any significant modifications would be done by the Working
+Group and presented during the Final Report – Part 2 due in December 2012. It should be noted
+that the 262 Best Practices chosen for this checklist met the definition defined by the team
+without any modifications necessary.
+9 CSRIC II Working Group 6: Best Practice Implementation Final Report – January 2011.
+10 ATIS NRSC Best Practice Tutorial, November 2011 Presented to Working Group 8 on
+December 14, 2011.
+Page 12 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+4.3 Recommendations
+Communications organizations should evaluate and implement those Best Practices which they
+deem appropriate. These organizations should institutionalize the review of Best Practices as
+part of their planning processes and assess on a periodic basis how implementing selected Best
+Practices might improve the proficiency and reliability of their operations11.
+During the creation of the E9-1-1 Best Practice Disaster Preparedness Checklist there were a
+total of 24 gaps documented. Where noted, the team has recommended a new Best Practice be
+created and approved by Council for use in furthering the teams work. In recommending a new
+Best Practice, this Working Group complied with the Best Practice Guidelines recommended by
+the ATIS NRSC tutorial:
+Best Practices Guidelines
+1. Proven through actual implementation – more than “just a good idea”
+2. Address classes of problems (rather than one time issues)
+3. A single concept should be captured in each practice (one thought, one practice)
+4. Should not endorse specific commercial documents, products or services
+5. Developed through rigorous deliberation and expert consensus
+6. Confirmed by a broad set of stakeholders
+7. Should not be assumed to be applicable in all situations or to all industry types
+8. Does not imply mandatory implementation
+Gap Analysis:
+Listed here are 24 gaps that were identified during the analysis phase. Where possible,
+following the gap identified WG8-1 has proposed a Best Practice to eliminate the gap.
+1. Service providers, network operators, first responders, and other public safety personnel
+should monitor weather services such as NOAA and/or subscribe to automated storm
+alerts or RSS feeds on known storm related events such as Hurricanes to stay informed
+and prepared. This could be the trigger for early communications and coordination
+efforts.
+Recommended New Best Practice:
+Weather Awareness: Service Providers, Network Operators, Property Managers, and
+Government should subscribe to weather monitoring services (e.g. NOAA, RSS storm
+feeds) on known storm related events and used as a decision point for implementing
+early communications and coordination efforts between entities.
+2. A one source official emergency internal and external contact online database that can be
+accessed by appropriate personnel that is maintained regularly and updated frequently
+could be addressed and/or adopted by Service Providers, Network Operators to provide a
+11 ATIS Best Practice website, Tutorial Page, http://www.atis.org/bestpractices/Tutorial.aspx
+Page 13 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+reliable and common database to use for disaster events.
+Recommended New Best Practice:
+Emergency Contact Database: Service Providers and Network Operators should
+consider establishing a single database (one source) that is maintained regularly and
+updated frequently with internal and external contact information that can be accessed by
+appropriate personnel.
+3. No Best Practice could be found addressing a method to mass alert external contacts and
+critical customers that the Service Provider or Network Operator has entered a disaster
+recovery posture in preparation for a known event such as hurricane, flooding, fires, etc.
+Recommended New Best Practice:
+Disaster Event Mass Alerting: Service Providers and/or public safety systems should
+utilize various communications services (i.e. outbound calling services) as necessary to
+alert specific groups, or the public as a whole based on pre-arranged criteria, or those
+within a particular geographic area deemed to be susceptible to an event or disaster.
+4. As part of business continuity planning, alternate logistics delivery locations should be
+preplanned and communicated to appropriate personnel.
+Recommended New Best Practice:
+Alternate Logistics Delivery: Service Providers and Network Operators, as part of their
+business continuity planning should identify alternate logistics delivery locations,
+document them during pre-planning activities, and communicate to appropriate
+personnel.
+5. Effective communications prior to and following an event should set expectations early,
+address problem solving, prioritization of services, and timeframes for restoration.
+Recommended New Best Practice:
+Effective Event Communications: Service Providers, Network Operators, Property
+Managers, and Government should include in their business continuity plans clear
+guidance for setting and communicating expectations, problem solving, and prioritization
+of services (e.g. E9-1-1) including timeframes for restoration following a natural or man-
+made disaster.
+6. Spare batteries or quick chargers (e.g. power sticks) should be considered for remote
+devices such as smart phones, blackberries, tablets, etc. Expect battery life to be
+diminished if low or no cell signal is available.
+Recommended New Best Practice:
+Remote Device Spare Batteries: Service Providers, Network Operators, Property
+Managers, and Government when planning for a disaster should address spare batteries
+Page 14 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+or quick chargers (e.g. power sticks) as well as other critical components being available
+due to the potential of not being able to re-charge the devices in the normal method.
+7. Consider cell phones from alternate providers to maximize the potential for accessing the
+wireless network.
+Recommended New Best Practice:
+Alternate Cell Providers: Service Providers, Network Operators, and Government
+should consider acquiring cell phones and services from alternate providers to maximize
+the potential for accessing the wireless network in the aftermath of a significant event.
+8. Consider participation in the Alerting and Coordination Network (ACN) and Shared
+Resources High Frequency Radio Program (SHARES) through the National
+Coordinating Center (NCC) for Telecommunications.
+Recommended New Best Practice:
+Emergency Communication Plans: Service Providers and Network Operators should
+consider participating in emergency communications programs offered through the
+National Coordinating Center (NCC) such as Alerting and Coordination Network (ACN)
+and Shared Resources High Frequency Radio Program (SHARES).
+9. Service Providers and Network operators should quickly establish communications with
+Public Safety Answering Points (PSAP) and other public safety contacts and pass status
+on network issues to help mitigate issues related to call processing of E9-1-1 calls.
+Recommended New Best Practice:
+Public Safety Communications: Service Providers and Network Operators should as
+part of their business continuity planning quickly establish communications with Public
+Safety Answering Points (PSAP) and other public safety contacts and pass status on
+network issues following a disaster to help mitigate issues related to call processing of
+E9-1-1 calls.
+10. Service Providers, Network Operators, and Public Safety should develop a switch
+replacement philosophy in the event of unrecoverable damage to critical infrastructure
+used to process E9-1-1 calls.
+Recommended New Best Practice:
+Switch Replacement Philosophy: Service Providers and Equipment Suppliers as part
+of their business continuity planning should develop a switch replacement philosophy in
+the event of unrecoverable damage to critical infrastructure used to process E9-1-1 calls.
+11. Service Providers, Network Operators, and Public Safety should develop a re-entry
+strategy for the impacted area.
+Recommended New Best Practice:
+Page 15 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Re-entry Strategy: Service Providers, Network Operators, and Government should as
+part of their business continuity planning develop a re-entry strategy for the impacted
+area following a disaster to reduce restoration timeframes for critical services (e.g. E9-1-
+1).
+12. Consider establishing a joint E9-1-1 strike team dedicated to the assessment and
+restoration of the E9-1-1 network following an event. The team would consist of
+members of communication providers, public safety, and first responders.
+Recommendation:
+The team could not determine if any Service Provider or Network Operator has
+implemented such a system or process. Based on this, we cannot recommend creation of
+a Best Practice; however, the team does recommend that future consideration be given to
+this identified gap which would provide dedicated resources to the rapid restoration and
+prioritization of E9-1-1 services in the aftermath of a natural or man-made disaster.
+13. Service Providers and Network Operators should ensure their communications process
+efficiently advises employees on how to obtain ongoing instructions during the aftermath
+of an event.
+Recommended New Best Practice:
+Efficient Event Instructions: Service Providers and Network Operators should as part
+of their business continuity planning processes ensure their communications processes
+efficiently advises employees on how to obtain ongoing instructions during the aftermath
+of an disaster.
+14. Service Providers, Network Operators, and Public Safety should coordinate with officials
+(e.g. Police, Military) to provide protection and safety of workers restoring the E9-1-1
+infrastructure.
+Recommended New Best Practice:
+Disaster Worker Safety: Service Providers, Network Operators, and Government
+should coordinate with officials (e.g. Police, Military) to provide protection and safety of
+workers restoring the E9-1-1 infrastructure in the aftermath of a natural or man-made
+disaster event.
+15. Service Providers, Network Operators and Equipment Vendors should coordinate
+agreements for the immediate shipping of product following an event.
+Recommended New Best Practice:
+Product Shipping Agreements: Service Providers, Network Operators and Equipment
+Vendors as part of their business continuity planning should coordinate agreements for
+the immediate shipping of product following a natural or man-made disaster event.
+Page 16 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+16. Service Providers and Network Operators should regularly assess the availability of work
+supplies (e.g. pumps, blowers, chain saws, inside and outside wiring, outside network
+interfaces, etc.) in preparation of disaster events.
+Recommended New Best Practice:
+Work Supply Availability: Service Providers and Network Operators as part of their
+business continuity planning processes should regularly assess the availability of work
+supplies (e.g. pumps, blowers, chain saws, inside and outside wiring, outside network
+interfaces, etc.) in preparation of disaster events.
+17. Service Providers, Network Operators, and Public Safety should validate computer
+backups are up to date prior to a known event and located in an offsite or cloud storage
+arrangement. Lack of proven good back up data can delay or make restoration
+impossible.
+Recommended New Best Practice:
+Up to Date Backups: Service Providers, Network Operators, and Government should
+validate computer backups are up to date prior to a known event (e.g. hurricane,
+flooding, and wild fires) and located in an offsite or cloud storage arrangement to prevent
+delaying or making restoration of computer data impossible.
+18. Service Providers and Network Operators should assess transport equipment and their
+protection facilities to ensure operability to prepare for a known event (e.g. hurricane,
+flooding, and fire).
+Recommended New Best Practice:
+Protection Facilities Assessment: Service Providers and Network Operators should
+assess transport equipment and their protection facilities to ensure operability in
+preparation for a known event (e.g. hurricane, flooding, and wild fires).
+19. Service Providers and Network Operators should establish proactive patrolling of critical
+Inter-Office Facility (IOF) routes to identify damages earlier for faster restoration.
+Recommendation:
+The team could not determine if any Service Provider or Network Operator has
+implemented such a process. Based on this, we cannot recommend creation of a Best
+Practice; however, the team does recommend that future consideration be given to this
+identified gap which would provide dedicated resources to the rapid restoration and
+prioritization of E9-1-1 services in the aftermath of a natural or man-made disaster.
+20. Service Providers and Network Operators should consider establish roaming restoration
+teams to quickly reduce troubles.
+Recommendation:
+Page 17 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+The team could not determine if any Service Provider or Network Operator has
+implemented such a process. Based on this, we cannot recommend creation of a Best
+Practice and this gap should be addressed by a future CSRIC.
+21. Service Providers, Network Operators, and Public Safety should establish preplanning
+for the redirection or rerouting of critical circuits and communications in affected areas
+that may impact E9-1-1 call delivery.
+Recommended New Best Practice:
+Redirection and Rerouting of Critical Circuits: Service Providers, Network
+Operators, and Government should establish preplanning for the redirection or rerouting
+of critical circuits and communications in affected areas that may impact E9-1-1 call
+delivery during a natural or man-made disaster event.
+22. Service Providers, Network Operators, and Public Safety should document and provide
+power down and power up procedures for critical equipment. Power down processes can
+extend service and power up process is critical to reduce start up times.
+Recommended Best Practice:
+Power Up and Down Procedures: Service Providers, Network Operators should
+document and provide power down and power up procedures for critical equipment to
+extend service and reduce start up times if critical equipment is powered down.
+23. Text to E9-1-1 implementation.
+Recommendation:
+The implementation of “Text to E9-1-1” by some wireless Service Providers is in
+progress at the time of this Final Report - Part 1. Based on this, we cannot recommend
+creation of a Best Practice and this gap should be addressed by a future CSRIC.
+24. Best Practices do not have a “Public Safety” option.
+Recommendation:
+During review and creation of recommended Best Practices that relate to the E9-1-1
+network the team found that no category existed for the use of “Public Safety” in the
+verbiage of the Best Practices. Traditionally, the available options have been “Service
+Provider, Network Operator, Equipment Supplier, Property Manager, and Government”.
+The importance of Best Practices as related to E9-1-1 apparently omits one of the key
+contributors to the success of any implementation process. This omission resulted in our
+recommendations using “Government” as an implication of “Public Safety”. Working
+Group 8 recommends that an implementer category be recognized for future Best
+Practice development of “Public Safety” to appropriately recognize the importance of
+this key contributor to E9-1-1 reliability and resiliency.
+Page 18 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+5 Conclusions
+Working Group 8 – E9-1-1 Best Practices concludes that providing a set of voluntary industry
+Best Practices that, if implemented, will strengthen the up-front planning processes for Service
+Providers, Network Operators, Property Managers, and Government entities. These Best
+Practices when used in preparing for disaster events that may interrupt E9-1-1 services during
+and in the aftermath of a natural or man-made disaster can minimize and/or mitigate their effect
+on the E9-1-1 network infrastructure.
+6 Appendix 1 – CSRIC III Council Considerations
+The following items are recommended for a CSRIC III Council vote:
+CSRIC WG 8
+Non-Best Practice Recommendations
+Recommendation
+Working Group 8 recommends that an implementer category be recognized
+for future Best Practice development of “Public Safety” to appropriately
+Approve
+recognize the importance of this key contributor to E9-1-1 reliability and
+resiliency.
+Adoption of Working Group 8 - E911 Best Practice Disaster Preparedness
+Approve
+Checklist
+CSRIC WG 8
+Best Practice Recommendations
+Recommendation
+Weather Awareness: Service Providers, Network Operators, Property
+Managers, and Government should subscribe to weather monitoring
+services (e.g. NOAA, RSS storm feeds) on known storm related events and Approve
+used as a decision point for implementing early communications and
+coordination efforts between entities.
+Emergency Contact Database: Service Providers and Network Operators
+should consider establishing a single database (one source) that is
+Approve
+maintained regularly and updated frequently with internal and external
+contact information that can be accessed by appropriate personnel.
+Disaster Event Mass Alerting: Service Providers and/or public safety
+systems should utilize various communications services (i.e. outbound
+calling services) as necessary to alert specific groups, or the public as a Approve
+whole based on pre-arranged criteria, or those within a particular
+geographic area deemed to be susceptible to an event or disaster.
+Alternate Logistics Delivery: Service Providers and Network Operators,
+as part of their business continuity planning should identify alternate
+Approve
+logistics delivery locations, document them during pre-planning activities,
+and communicate to appropriate personnel.
+Page 19 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Effective Event Communications: Service Providers, Network
+Operators, Property Managers, and Government should include in their
+business continuity plans clear guidance for setting and communicating
+Approve
+expectations, problem solving, and prioritization of services (e.g. E9-1-1)
+including timeframes for restoration following a natural or man-made
+disaster.
+Remote Device Spare Batteries: Service Providers, Network Operators,
+Property Managers, and Government when planning for a disaster should
+address spare batteries or quick chargers (e.g. power sticks) as well as other Approve
+critical components being available due to the potential of not being able to
+re-charge the devices in the normal method.
+Alternate Cell Providers: Service Providers, Network Operators, and
+Government should consider acquiring cell phones and services from
+Approve
+alternate providers to maximize the potential for accessing the wireless
+network in the aftermath of a significant event.
+Emergency Communication Plans: Service Providers and Network
+Operators should consider participating in emergency communications
+programs offered through the National Coordinating Center (NCC) such as Approve
+Alerting and Coordination Network (ACN) and Shared Resources High
+Frequency Radio Program (SHARES).
+Public Safety Communications: Service Providers and Network
+Operators should as part of their business continuity planning quickly
+establish communications with Public Safety Answering Points (PSAP)
+Approve
+and other public safety contacts and pass status on network issues
+following a disaster to help mitigate issues related to call processing of E9-
+1-1 calls.
+Switch Replacement Philosophy: Service Providers and Equipment
+Suppliers as part of their business continuity planning should develop a
+Approve
+switch replacement philosophy in the event of unrecoverable damage to
+critical infrastructure used to process E9-1-1 calls.
+Re-entry Strategy: Service Providers, Network Operators, and
+Government should as part of their business continuity planning develop a
+Approve
+re-entry strategy for the impacted area following a disaster to reduce
+restoration timeframes for critical services (e.g. E9-1-1).
+Efficient Event Instructions: Service Providers and Network Operators
+should as part of their business continuity planning processes ensure their
+Approve
+communications processes efficiently advises employees on how to obtain
+ongoing instructions during the aftermath of an disaster.
+Disaster Worker Safety: Service Providers, Network Operators, and
+Government should coordinate with officials (e.g. Police, Military) to
+Approve
+provide protection and safety of workers restoring the E9-1-1 infrastructure
+in the aftermath of a natural or man-made disaster event.
+Product Shipping Agreements: Service Providers, Network Operators
+and Equipment Vendors as part of their business continuity planning
+Approve
+should coordinate agreements for the immediate shipping of product
+following a natural or man-made disaster event.
+Page 20 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Work Supply Availability: Service Providers and Network Operators as
+part of their business continuity planning processes should regularly assess
+the availability of work supplies (e.g. pumps, blowers, chain saws, inside Approve
+and outside wiring, outside network interfaces, etc.) in preparation of
+disaster events.
+Up to Date Backups: Service Providers, Network Operators, and
+Government should validate computer backups are up to date prior to a
+known event (e.g. hurricane, flooding, and wild fires) and located in an Approve
+offsite or cloud storage arrangement to prevent delaying or making
+restoration of computer data impossible.
+Protection Facilities Assessment: Service Providers and Network
+Operators should assess transport equipment and their protection facilities
+Approve
+to ensure operability in preparation for a known event (e.g. hurricane,
+flooding, and wild fires).
+Redirection and Rerouting of Critical Circuits: Service Providers,
+Network Operators, and Government should establish preplanning for the
+redirection or rerouting of critical circuits and communications in affected Approve
+areas that may impact E9-1-1 call delivery during a natural or man-made
+disaster event.
+Power Up and Down Procedures: Service Providers, Network Operators
+should document and provide power down and power up procedures for
+Approve
+critical equipment to extend service and reduce start up times if critical
+equipment is powered down.
+Page 21 of 1127 Appendix 2 – E911 Best Practice Disaster Preparedness Checklist
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Consistent Security Controls for DR Configurations: A
+Service Provider's or Network Operator's disaster recovery or
+8-8-8133 business continuity solutions should adhere to the same Cyber Security All X X X X X X X X X
+Information Security best practices as the solutions used
+under normal operating conditions.
+General Patching: Service providers and network operators Cyber Security
+should establish and implement procedures to ensure that all
+security patches and updates relevant to the device or installed
+applications are promptly applied. The patching process
+8-8-8756 should be automated whenever possible. The system should All X X X X X X X X X X X X X
+be rebooted immediately after patching if required for the
+patch to take effect.
+Page 22 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Scanning Operations, Administration, Management and
+Provisioning (OAM&P) Infrastructure: Network Operators
+and Service Providers should regularly scan infrastructure for
+8-6-8023 vulnerabilities/exploitable conditions. Operators should Cyber Security Critical X X X X X X X X X X X X X
+understand the operating systems and applications deployed
+on their network and keep abreast of vulnerabilities, exploits,
+and patches.
+Distribution of Encryption Keys: When Network Operators,
+Service Providers and Equipment Suppliers use an encryption
+technology in the securing of network equipment and
+8-6-8028 transmission facilities, cryptographic keys must be distributed Cyber Security Critical X X X X X X X X X
+using a secure protocol that: a) Ensures the authenticity of the
+recipient, b) Does not depend upon secure transmission
+facilities, and c) Cannot be emulated by a non-trusted source.
+Sharing Information with Law Enforcement: Network
+Operators, Service Providers and Equipment Suppliers should
+establish a process for releasing information to members of
+8-7-8065 Cyber Security Critical X X X X X X
+the law enforcement and intelligence communities and
+identify a single Point of Contact (POC) for
+coordination/referral activities.
+Page 23 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+IR (Incident Response) Procedures: Service Providers and
+Network Operators should establish a set of standards and
+procedures for dealing with computer security events. These
+procedures can and should be part of the overall business
+8-8-8061 continuity/disaster recovery plan. Where possible, the Cyber Security Critical X X X X X X X X X X
+procedures should be exercised periodically and revised as
+needed. Procedures should cover likely threats to those
+elements of the infrastructure which are critical to service
+delivery/business continuity. See appendix X and Y.
+Incident Response Communications Plan: Service Providers,
+Network Operators, and Equipment Suppliers should develop
+and practice a communications plan as part of the broader
+Incident response plan. The communications plan should
+identify key players and include as many of the following
+items as appropriate for your organization: contact names,
+business telephone numbers, home tel. numbers, pager
+numbers, fax numbers, cell phone numbers, home addresses,
+8-8-8068 Cyber Security Critical X X X X X X X X
+internet addresses, permanent bridge numbers, etc.
+Notification plans should be developed prior to an
+event/incident happening where necessary. The plan should
+also include alternate communications channels such as alpha
+pagers, internet, satellite phones, VOIP, private lines,
+blackberries, etc. The value of any alternate communications
+method needs to be balanced against the security and
+information loss risks introduced.
+Page 24 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Threat Awareness: Service providers and Network Operators
+should subscribe to vendor patch/security notifications and
+8-8-8071 services to remain current with new vulnerabilities, viruses, Cyber Security Critical X X X X X X X X X
+and other security flaws relevant to systems deployed on the
+network.
+Intrusion Detection/Prevention Tools (IDS/IPS) Maintenance:
+Service Provider and Network Operator should maintain and
+8-8-8072 Cyber Security Critical X X X X X
+update IDS/IPS tools regularly to detect current threats,
+exploits, and vulnerabilities.
+Intrusion Detection/Prevention (IDS/IPS) Tools Deployment:
+Service Providers and Network Operators should deploy
+Intrusion Detection/Prevention Tools with an initial policy
+8-8-8073 that reflects the universe of devices and services known to Cyber Security Critical X X X X X
+exist on the monitored network. Due to the ever evolving
+nature of threats, IDS/IPS tools should be tested regularly and
+tuned to deliver optimum performance and reduce 0 positives.
+Page 25 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Denial of Service (DoS) Attack - Target: Where possible,
+Service Provider and Network Operator networks and
+Equipment Supplier equipment should be designed to survive
+significant increases in both packet count and bandwidth
+utilization. Infrastructure supporting mission critical services
+should be designed for significant increases in traffic volume
+and must include network devices capable of filtering and/or
+8-8-8074 rate limiting traffic. Network engineers must understand the Cyber Security Critical X X X X X X X
+capabilities of the devices and how to employ them to
+maximum effect. Wherever practical, mission critical systems
+should be deployed in clustered configuration allowing for
+load balancing of excess traffic and protected by a purpose
+built DoS/DDoS protection device. Operators of critical
+infrastructure should deploy DoS survivable hardware and
+software whenever possible.
+Protect Network/Management Infrastructure from Malware:
+Service Providers and Network Operators should deploy
+8-8-8103 malware protection tools where feasible, establish processes Cyber Security Critical X X X X X X X X X
+to keep signatures current, and establish procedures for
+reacting to an infection.
+Page 26 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Protect Against DNS (Domain Name System) Distributed
+Denial of Service: Service Providers and Network Operators
+should provide DNS DDoS protection by implementing
+protection techniques such as: 1) Rate limiting DNS network
+8-8-8118 connections 2) Provide robust DNS capacity in excess of Cyber Security Critical X X X X
+maximum network connection traffic 3) Have traffic anomaly
+detection and response capability 4) Provide secondary DNS
+for back-up 5) Deploy Intrusion Prevention System in front of
+DNS.
+Recovery from Digital Certificate Key Compromise: In the
+event the key in a digital certificate becomes compromised,
+Service Providers, Network Operators, and Equipment
+Suppliers should immediately revoke the certificate, and issue
+8-8-8500 Cyber Security Critical X X X X X X X X
+a new one to the users and/or devices requiring it. Perform
+Forensics and Post-mortem, as prescribed in NRIC BP 8061,
+to review for additional compromise as soon as business
+processes allow.
+Page 27 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Recovery from Root Key Compromise: In the event the root
+key in a digital certificate becomes compromised, Service
+Providers, Network Operators, and Equipment Providers
+8-8-8501 should secure a new root key, and rebuild the PKI (Public Cyber Security Critical X X X X X X X X
+Key Infrastructure) trust model. Perform Forensics and Post-
+mortem, as prescribed in NRIC BP 8061, to review for
+additional compromise as soon as business processes allow.
+Recovery from Vulnerable or Unnecessary Services: When a
+compromise occurs, or new exploits are discovered, Service
+Providers and Network Operators should perform an audit of
+8-8-8502 available network services to reassess any vulnerability to Cyber Security Critical X X X X X X X X
+attack and re-evaluate the business need to provide that
+service, or explore alternate means of providing the same
+capability.
+Recovery from Encryption Key Compromise or Algorithm
+Failure. When improper use of keys or encryption algorithms
+is discovered, or a breach has occurred, Service Providers and
+Network Operators should conduct a forensic analysis to
+8-8-8503 Cyber Security Critical X X X X X X X X
+assess the possibility of having potentially compromised data
+and identify what may have been compromised and for how
+long it has been in a compromised state; implement new key
+(and revoke old key if applicable), or encryption algorithm,
+Page 28 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+and ensure they are standards-based and implemented in
+accordance with prescribed procedures of that standard, where
+possible. When using wireless systems, ensure vulnerabilities
+are mitigated with proper and current security measures.
+Recovery from Network Element Resource Saturation Attack:
+If the control plane is under attack, Service Providers and
+Network Operators should: 1) Turn on logging where
+8-8-8523 Cyber Security Critical X X X X X X X X X
+appropriate to analyze the logs, 2) Implement the appropriate
+filter and access list to discard the attack traffic 3) Utilize
+DoS/DDoS tracking methods to identify the source of attack.
+Recovery from BGP (Border Gateway Protocol) Poisoning:
+If the routing table is under attack from malicious BGP
+updates, Service Providers and Network Operators should
+apply the same filtering methods used in NRIC BP 8043 more
+aggressively to stop the attack. When under attack, the attack
+8-8-8525 vector is usually known and the performance impacts of the Cyber Security Critical X X X X X X X X X
+filter are less of an issue than when preventing an attack. The
+malicious routes will expire from the table, be replaced by
+legitimate updates, or in emergencies, can be manually
+deleted from the tables. Contact peering partner to coordinate
+response to attack.
+Page 29 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Recover from Compromised DNS (Domain Name System)
+Servers or Name Record Corruption: If the DNS (Domain
+Name System) server has been compromised or the name
+records corrupted, Service Providers and Network Operators
+should first flush the DNS cache and, failing that, implement
+the pre-defined disaster recovery plan. Elements may include
+8-8-8527 but are not limited to: 1) bring-on additional hot or cold spare Cyber Security Critical X X X X X X X X X
+capacity, 2) bring up a known good DNS server from scratch
+on different hardware, 3) Reload and reboot machine to a
+know good DNS server software (from bootable CD or spare
+hard drive), 4) Reload name resolution records from a trusted
+back-up. After the DNS is again working, conduct a post-
+mortem of the attack/response.
+Recover from DNS (Domain Name Server) Denial of Service
+Attack: If the DNS server is under attack, Service Providers
+and Network Operators should consider one or more of the
+following steps 1) Implement reactive filtering to discard
+identified attack traffic, if possible, 2) Rate-limiting traffic to
+8-8-8528 the DNS server complex, 3) Deploy suitable Intrusion Cyber Security Critical X X X X X X X X X
+Prevention System in front of DNS servers, 4) Deploy
+additional DNS server capacity in a round-robin architecture,
+5) Utilize DoS/DDoS tracking methods to identify the
+source(s) of the attack, or 6) Move name resolution service to
+a 3rd party provider.
+Page 30 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Recover from DHCP-based DoS Attack: If a DHCP
+((Dynamic Host Configuration Protocol) attack is underway,
+Service Provider and Network Operators should isolate the
+8-8-8530 Cyber Security Critical X X X X X X X X X
+source to contain the attack. Plan to force all DHCP clients to
+renew leases in a controlled fashion at planned increments.
+Re-evaluate architecture to mitigate similar future incidents.
+Recover from SCP Compromise: No prescribed standard
+procedures exist for Service Providers and Network Operators
+to follow after the compromise of an SCP (Signaling Control
+8-8-8532 Point). It will depend on the situation and the compromise Cyber Security Critical X X X X X X X
+mechanism. However, in a severe case, it may be necessary
+to disconnect it to force a traffic reroute, then revert to known
+good, back-up tape/disk and cold boot.
+Recover from SS7 DoS Attack: If an SS7 Denial of Service
+(DoS) attack is detected, Service Provider and Network
+Operators should more aggressively apply the same
+thresholding and filtering mechanism used to prevent an
+8-8-8533 attack (NRIC BP 8053). The alert/alarm will specify the Cyber Security Critical X X X X X X X
+target of the attack. Isolate, contain and, if possible,
+physically disconnect the attacker. If necessary, isolate the
+targeted network element and disconnect to force a traffic
+reroute.
+Page 31 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Lack of Business Recovery Plan: When a Business Recovery
+Plan (BRP) does not exist, Service Providers and Network
+Operators should bring together an ad-hoc team to address the
+current incident. The team should have technical, operations,
+8-8-8549 legal, and public relations representation. Team should be Cyber Security Critical X X X X X X X X X
+sponsored by senior management and have a direct
+communication path back to management sponsor. If
+situation exceeds internal capabilities consider contracting
+response/recovery options to 3rd party security provider.
+Sharing Information with Industry & Government during
+Recovery: During a security event, Service Providers,
+Network Operators, and Equipment Suppliers should release
+to the National Communications Service National
+Coordination Center (ncs@ncs.gov) or USCERT
+(cert@cert.org) information which may be of value in
+analyzing and responding to the issue, following review, edit
+8-8-8553 Cyber Security Critical X X X X X X X X X
+and approval commensurate with corporate policy.
+Information is released to these forums with an understanding
+redistribution is not permitted. Information which has been
+approved for public release and could benefit the broader
+affected community should be disseminated in the more
+popular security and networking forums such as NANOG and
+the SecurityFocus Mailing Lists.
+Page 32 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Evidence Collection Procedures during Recovery: Insomuch
+as is possible without disrupting operational recovery, Service
+Providers and Network Operators should handle and collect
+information as part of a computer security investigation in
+8-8-8554 Cyber Security Critical X X X X X X X X X
+accordance with a set of generally accepted evidence-handling
+procedures. Example evidence handling processes are
+provided in Appendix X, Section 2f of the NRIC VII, Focus
+Group 2B Report Appendices.
+"Recovery from Lack of an Incident Communications Plan:
+If an incident occurs and a communications plan is not in
+place, Service Providers, Network Operators, and Equipment
+Suppliers should, depending on availability of resources and
+severity of the incident, assemble a team as appropriate:
+· In person
+· Conference Bridge
+8-8-8555 Cyber Security Critical X X X X X X X X X
+· Other (Email, telephonic notification lists)
+Involve appropriate organizational divisions (business and
+technical)
+· Notify Legal and PR for all but the most basic of events
+· PR should be involved in all significant events
+Page 33 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+· Develop corporate message(s) for all significant events
+– disseminate as appropriate
+If not already established, create contact and escalation
+procedures for all significant events."
+Recovery from Lack of IDS/IPS Maintenance: In the event of
+a security threat, Service Providers and Network Operators
+should upload current IDS/IPS signatures from vendors and
+re-verify stored data with the updated signatures. Evaluate
+8-8-8559 Cyber Security Critical X X X X X X X X X
+platform's ability to deliver service in the face of evolving
+threats and consider upgrade/replacement as appropriate.
+Review Incident Response Post-Mortem Checklist (NRIC BP
+8564).
+Page 34 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Recovery Incident Response (IR) Post Mortem Checklist:
+After responding to a security incident or service outage,
+8-8-8564 Service Providers and Network Operators should follow Cyber Security Critical X X X X X X X X X
+processes similar to those outlined in Appendix X to capture
+lessons learned and prevent future events.
+Recover from DoS Attack: Network Operators and Service Cyber Security
+Providers should work together to identify, filter, and isolate
+the originating points of Denial of Service (DoS) attacks
+when detected, and reroute legitimate traffic in order to
+restore normal service.
+8-8-8762 Critical X X X X X X X X X
+Page 35 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Sharing Information with Law Enforcement: Service Cyber Security
+Providers, Network Operators, and Equipment Suppliers
+should establish a process for releasing information to
+members of the law enforcement and intelligence
+8-8-8772 Critical X X X X X X X X X
+communities and identify a single Point of Contact (POC) for
+coordination/referral activities.
+Protect DNS Servers: Cyber Security
+ISPs should protect their DNS servers from DNS spoofing
+attacks and take steps to ensure that
+compromised customer systems cannot emit spoofed traffic
+(and thereby participate in DNS
+amplification attacks). Defensive measures include:
+8-8-8903 Critical X X X X X X X X X
+(a) managing DNS traffic consistent with industry accepted
+procedures;
+(b) where feasible, limiting access to recursive DNS resolvers
+to authorized users;
+(c) blocking spoofed DNS query traffic at the border of their
+Page 36 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+networks, and
+(d) routinely validating the technical configuration of DNS
+servers by, for example,
+utilizing available testing tools that verify proper DNS server
+technical configuration.
+Network Operators and Service Providers should have
+Disaster
+documented plans or processes to assess damage to network
+8-6-1017 Recovery and Critical X X X X X X X X X X X X X
+elements, outside plant, facility infrastructure, etc. for
+Mutual Aid
+implementation immediately following a disaster.
+Network Operators, Service Providers and Equipment
+Disaster
+Suppliers should consider the development of a vital records
+8-6-1022 Recovery and Critical X X X X X X X X X X X X X
+program to protect vital records that may be critical to
+Mutual Aid
+restoration efforts.
+Page 37 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers should formally document their
+business continuity processes in a business continuity plan Disaster
+8-7-1001 covering critical business functions and business partnerships. Recovery and Critical X X X X X X X X X X X X X
+Key areas for consideration include: Plan Scope, Mutual Aid
+Responsibility, Risk Assessment, Business Impact Analysis,
+Plan Testing, Training and Plan Maintenance.
+Network Operators, Service Providers and Equipment
+Disaster
+Suppliers should perform a Business Impact Analysis (BIA)
+8-7-1005 Recovery and Critical X X X X X X X X X X X X X
+to assess the impact of the loss of critical operations, support
+Mutual Aid
+systems and applications.
+Network Operators, Service Providers and Equipment
+Disaster
+Suppliers should designate personnel responsible for
+8-7-1010 Recovery and Critical X X X X X X X
+maintaining Business Continuity and Disaster Recovery
+Mutual Aid
+Plans.
+Page 38 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers Disaster
+8-7-1011 and Public Safety Authorities should establish alternative Recovery and Critical X X X X X X X
+methods of communication for critical personnel. Mutual Aid
+Network Operators, Service Providers and Equipment
+Suppliers should identify essential staff within their Disaster
+8-7-1023 organizations that are critical to disaster recovery efforts. Recovery and Critical X X X X X X X X X X X
+Planning should address the availability of these individuals Mutual Aid
+and provide for backup staff.
+Network Operators, Service Providers and Property Managers
+should engage in preventative maintenance programs for Disaster
+8-7-1028 network site support systems including emergency power Recovery and Critical X X X X X X X X X X X X X
+generators, UPS, DC plant (including batteries), HVAC units, Mutual Aid
+and fire suppression systems.
+Page 39 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators should develop a strategy for deployment
+of emergency mobile assets such as Cell on Wheels (COWs),
+cellular repeaters, Switch on Wheels (SOWs), transportable Disaster
+8-7-1033 satellite terminals, microwave equipment, power generators, Recovery and Critical X X X X
+HVAC units, etc. for emergency use or service augmentation Mutual Aid
+for planned events (e.g., National Special Security Event
+(NSSE)).
+Network Operators should ensure that the emergency mobile
+assets are maintained at a hardware and software level Disaster
+8-7-1034 compatible with the existing network infrastructure so that the Recovery and Critical X X X X X X
+emergency mobile assets will be immediately available for Mutual Aid
+deployment.
+Page 40 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should set Initial
+Address Messages (IAMs) to congestion priority in
+accordance with applicable ANSI standards. This will ensure Disaster
+8-7-1063 government emergency calls (e.g., 911, GETS ) receive Recovery and Critical X X X X
+proper priority during national emergency situations. Mutual Aid
+Implementation in all networks should be in accordance with
+ANSI T1.111.
+Network Surveillance: Network Operators and Service Network
+8-7-0401 Providers should monitor their network to enable quick Reliability and Critical X X X X X X X X
+response to network issues. Interoperability
+Page 41 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Single Point of Failure: Network Operators and Service Network
+8-7-0402 Providers should, where appropriate, design networks to Reliability and Critical X X X X X X X X X X X X X
+minimize the impact of a single point of failure (SPOF). Interoperability
+Capacity Management: Network Operators should design and Network
+8-7-0417 implement procedures to evaluate failure and emergency Reliability and Critical X X X X
+conditions affecting network capacity. Interoperability
+Network Operators should maintain records of pertinent
+Network
+information related to a cell site for its prioritization in
+8-7-0456 Reliability and Critical X X
+disaster recovery and key coverage areas (e.g., emergency
+Interoperability
+services, government agencies, proximity to hospitals).
+Page 42 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Property Managers should consider
+conducting physical site audits after a major event (e.g., Network
+8-7-0476 weather, earthquake, auto wreck) to ensure the physical Reliability and Critical X X X X X X X X X X X X X
+integrity and orientation of hardware has not been Interoperability
+compromised.
+Network Operators, Service Providers and Equipment
+Suppliers should, where programs exist, coordinate with local, Network
+8-7-0491 state and/or federal emergency management and law Reliability and Critical X X X X X X X X
+enforcement agencies for pre-credentialing to help facilitate Interoperability
+access by technicians to restricted areas during an event.
+Network Operators should provide back-up power (e.g., some
+combination of batteries, generator, fuel cells) at cell sites and Network
+8-7-0492 remote equipment locations, consistent with the site specific Reliability and Critical X X X X X
+constraints, criticality of the site, the expected load and Interoperability
+reliability of primary power.
+Page 43 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network
+Network Operators and Property Managers should consider
+8-7-0493 Reliability and Critical X X
+placing fixed power generators at cell sites, where feasible.
+Interoperability
+Network Operators and Property Managers should consider Network
+8-7-0495 pre-arranging contact information and access to restoral Reliability and Critical X X X X X X X X X X X X X
+information with local power companies. Interoperability
+Network Operators and Service Providers should consider
+Network
+ensuring that the back-haul facility equipment located at the
+8-7-0499 Reliability and Critical X X
+cell site is provided with backup power duration is equal to
+Interoperability
+that provided for the other equipment at the cell site.
+Page 44 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should, by design and practice, manage critical
+Network
+Network Elements (e.g., Domain Name Servers, Signaling
+8-7-0510 Reliability and Critical X X X X X X
+Servers) that are essential for network connectivity and
+Interoperability
+subscriber service as critical systems (e.g., secure, redundant,
+alternative routing).
+Network
+Service Providers should establish agreements with Property
+8-7-0543 Reliability and Critical X X X X X X X X X
+Managers for both regular and emergency power.
+Interoperability
+Network Operators and Service Providers should minimize
+single points of failure (SPOF) in paths linking network Network
+8-7-0546 elements deemed critical to the operations of a network (with Reliability and Critical X X X X X X X X X X X X X
+this design, two or more simultaneous failures or errors need Interoperability
+to occur at the same time to cause a service interruption).
+Page 45 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should consider
+placing and maintaining 911 circuits over diverse interoffice
+Network
+transport facilities (e.g., geographically diverse facility routes,
+8-7-0566 Reliability and Critical X X X X X X X X X X X X X
+automatically invoked standby routing, diverse digital cross-
+Interoperability
+connect system services, self-healing fiber ring topologies, or
+any combination thereof).
+Network Operators and PSAPs should establish a routing plan
+so that in the case of a lost connection from the selective Network
+8-7-0568 router to the PSAP, 911 calls are routed to an alternate Reliability and Critical X X X X X X X X X
+answering point (e.g., alternate PSAP, appropriate telephone Interoperability
+line).
+Network Operators should consider deploying dual active 911
+selective router architectures to enable circuits from the
+caller's serving end office to be split between two selective Network
+8-7-0571 routers in order to eliminate single points of failure (SPOF). Reliability and Critical X X X X X X X X X
+Diversity should also be considered on interoffice transport Interoperability
+facilities connecting each 911 selective router to the PSAP
+serving end office.
+Page 46 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Public Safety
+Agencies responsible for PSAP operations should jointly and Network
+8-7-0577 periodically test and verify that critical components (e.g., Reliability and Critical X X X X X X X X X
+automatic re-routes, PSAP Make Busy keys) included in Interoperability
+contingency plans work as designed.
+Network Operators, Service Providers, and 911
+administrators, and public safety agencies should routinely
+Network
+team to develop, implement, periodically test, evaluate and
+8-7-0579 Reliability and Critical X X X X X X X X X
+update as needed plans for 911 disruption contingencies (e.g.,
+Interoperability
+share information about network and system security and
+reliability where appropriate).
+Network Operators, Service Providers and Property Managers
+should consider providing diversity within power supply and
+distribution systems so that single point failures (SPOF) are
+not catastrophic. For large battery plants in critical offices, Network
+8-7-0651 consider providing dual AC feeds (odd/even power service Reliability and Critical X X X X X X X X X X X X X
+cabinets for rectifiers). Transfer switches should be listed to a Interoperability
+UL standard for Transfer Switch Equipment. When transfer
+breaker systems are used, they must be mechanically and
+electrically interlocked.
+Page 47 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property Managers Network
+8-7-0655 should coordinate hurricane and other disaster restoration Reliability and Critical X X X X X X X X X
+work with electrical and other utilities as appropriate. Interoperability
+Network Operators, Service Providers and Property Managers
+should maintain adequate fuel on-site and have a well-defined
+Network
+re-supply plan. Generator life support systems (e.g., radiator
+8-7-0658 Reliability and Critical X X X X X X X X X
+fan, oil cooler fan, water transfer pumps, fuel pumps, engine
+Interoperability
+start battery chargers) should be on the essential AC bus of
+the generator they serve.
+Network Operators and Service Providers should provide a Network
+8-7-0672 minimum of 3 hours battery reserve for central offices Reliability and Critical X X X X X X X X X X X X X
+equipped with fully automatic standby systems. Interoperability
+Page 48 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should, upon
+Network
+restoration of service in the case of an outage where 911 call
+8-7-0758 Reliability and Critical X X X X X X X X X X X X X
+completion is affected, make multiple test calls to the affected
+Interoperability
+PSAP(s) to ensure proper completion.
+Network Operators and Service Providers should consider
+Network
+including coordination information of Public Safety
+8-7-0780 Reliability and Critical X X X X X X X X X
+Authorities when developing disaster restoration and
+Interoperability
+prioritization plans.
+Network operators and service providers (of any technology
+type) should remotely monitor and manage the 9-1-1 network
+components using network management controls, where
+available, to quickly restore 9-1-1 service and provide priority
+repair during network failure events. When multiple Network
+8-8-0574 interconnecting providers and vendors are involved, they will Reliability and Critical X X X X X X X X X
+need to cooperate to provide end-to-end analysis of complex Interoperability
+call-handling problems.
+In NG9-1-1, the mechanism used to handle call congestion
+and outages is diversion of calls to alternate PSAPs that have
+Page 49 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+the capability to effectively answer and provide assistance.
+PSAPs should create relationships with other PSAPs that have
+the capabilities to serve as a backup so that their calls can be
+answered even under extreme overload or network failure
+scenarios. ESInets must be designed with redundant
+interconnect to OSPs and PSAPs to maintain connectivity in
+the face of extensive disaster damage. The characteristics of
+IP routing are of great assistance in ensuring 9-1-1 calls will
+reach a PSAP if there is any path possible.
+Network operators and service providers (of any technology
+type) should deploy location identification systems used by
+Public Safety in a redundant, geographically diverse manner
+Network
+(i.e., two identical ALI/Mobile Positioning Center (MPC)
+8-8-0575 Reliability and Critical X X X X X X X X X X X X X
+Gateway Mobile Location Center (GMLC)/VPC/LIS database
+Interoperability
+systems with mirrored data located in geographically diverse
+locations). These include, but are not limited to, ALI,
+MPC/GMLC, VPC systems, and LIS.
+Network Operation Center (NOC) Communications Remote
+Access: Network Operators and Service Providers should
+consider secured remote access to critical network Network
+8-8-0785 management systems for network management personnel Reliability and Critical X X X X X X X X X
+working from distributed locations (e.g., back-up facility, Interoperability
+home) in the event of a situation where the NOC cannot be
+staffed (e.g., pandemic).
+Page 50 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should establish and maintain (or contract for) a
+24/7 emergency call center for internal communications.
+Ensure staff at this center has access to all documentation Physical
+8-6-5055 Critical X X X X X X X X X
+pertinent to emergency response and up to date call lists to Security
+notify appropriate personnel. The number to this call center
+should be appropriately published so personnel know where
+to report information.
+Network Operators and Service Providers (e.g., Satellite
+Operators) should maintain access to a back-up or secondary
+'uplink site' to provide tracking, telemetry and control
+(T.T.&C.) support for all operational communications Physical
+8-6-5143 Critical X X
+spacecraft. The back-up or secondary site must be Security
+geographically diverse from the primary uplink facility, active
+and tested on some regular schedule to insure readiness and
+timely response.
+Network Operators, Service Providers and Equipment
+Suppliers should evaluate and manage risks (e.g., alternate Physical
+8-7-5107 Critical X X X X X X X X X X X X X
+routing, rapid response to emergencies) associated with a Security
+concentration of infrastructure components.
+Page 51 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should, at the time of the event, coordinate with the
+appropriate local, state, or federal agencies to facilitate timely Physical
+8-7-5112 Critical X X X X X X X X X
+access by their personnel to establish, restore or maintain Security
+communications, through any governmental security
+perimeters (e.g., civil disorder, crime scene, disaster area).
+Network Operators, Service Providers and Equipment
+Suppliers should plan for contingency staffing to perform Physical
+8-7-5126 Critical X X X X X X X X X
+critical functions in response to crisis situations (e.g., natural Security
+disasters, labor strike, terrorist attack).
+Network Operators, Service Providers, Equipment Suppliers
+and Public Safety Authorities should provide a Government
+Emergency Telecommunications Service (GETS) card to
+essential staff critical to disaster recovery efforts and should
+Physical
+8-7-5127 consider utilizing Wireless Priority Service (WPS) for Critical X X X X X X X X X
+Security
+essential staff. Appropriate training and testing in the use of
+GETS & WPS should occur on a regular basis (i.e. in
+conjunction with testing of the corporate disaster recovery
+plan).
+Page 52 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers
+and Public Safety Authorities should maintain accurate
+Physical
+8-7-5128 records for Government Emergency Telecommunications Critical X X X X X X X X X
+Security
+Service (GETS) cards and Wireless Priority Service (WPS)
+phone assignments as staff changes occur.
+Network Operators, Service Providers, and Property
+Managers should develop, maintain and administer a Physical
+8-7-5203 Critical X X X X X X X X X X X
+comprehensive program to sustain a reliable power Security
+infrastructure.
+Service Providers, Network Operators and Property Managers
+should ensure availability of emergency/backup power (e.g.,
+batteries, generators, fuel cells) to maintain critical
+communications services during times of commercial power Physical
+8-7-5204 Critical X X X X X X X X X X X X X
+failures, including natural and manmade occurrences (e.g., Security
+earthquakes, floods, fires, power brown/black outs, terrorism).
+The emergency/backup power generators should be located
+onsite, when appropriate.
+Page 53 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property Managers
+should maintain sufficient fuel supplies for emergency/backup Physical
+8-7-5206 Critical X X X X X X X
+power generators running at full load to allow for contracted Security
+refueling.
+Network Operators, Service Providers and Property Managers
+should take appropriate precautions to ensure that fuel
+supplies and alternate sources of power are available for
+critical installations in the event of major disruptions in a Physical
+8-7-5207 Critical X X X X X X X
+geographic area (e.g., hurricane, earthquake, pipeline Security
+disruption). Consider contingency contracts in advance with
+clear terms and conditions (e.g., Delivery time commitments,
+T&Cs).
+Network Operators, Service Providers, and Property
+Managers should test fuel reserves used for standby or backup
+Physical
+8-7-5232 power for contamination at least once a year or after any event Critical X X X X X X X
+Security
+(e.g., earth tremor, flood) that could compromise the integrity
+of the tank housing, fill pipe or supply pipe.
+Page 54 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should consider backup power capabilities for
+Command and Control (Crisis Teams) so that Physical
+8-7-5275 Critical X X X X X X X X X X X X X
+communications and access to critical systems can be Security
+maintained in the event of a significant disruption to
+commercial power.
+IR (Incident Response) Team: Network Operators and
+Service Providers should identify and train a Computer
+Security Incident Response (CSIRT) Team. This team should
+have access to the CSO (or functional equivalent) and should
+be empowered by senior management. The team should
+include security, networking, and system administration Highly
+8-7-8062 Cyber Security X X X X X X
+specialists but have the ability to augment itself with expertise Important
+from any division of the organization. Organizations that
+establish part-time CSIRTs should ensure representatives are
+detailed to the team for a suitable period of time bearing in
+mind both the costs and benefits of rotating staff through a
+specialized team.
+Intrusion Detection/Prevention Tools (IDS/IPS): Service
+Providers and Network Operators should install and actively Highly
+8-8-8063 Cyber Security X X X X X
+monitor IDS/IPS tools. Sensor placement should focus on Important
+resources critical to the delivery of service.
+Page 55 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Restrict Use of Dynamic Port Allocation Protocols: Service
+Providers, Network Operators, and Equipment Suppliers
+should restrict dynamic port allocation protocols such as
+Remote Procedure Calls (RPC) and some classes of Voice-
+over-IP protocols (among others) from usage, especially on Highly
+8-8-8090 Cyber Security X X X X X X X X X X X
+mission critical assets, to prevent host vulnerabilities to code Important
+execution. Dynamic port allocation protocols should not be
+exposed to the internet. If used, such protocols should be
+protected via a dynamic port knowledgeable filtering firewall
+or other similar network protection methodology.
+Users Should Employ Protective Measures: Service
+Providers and Network Operators should educate service
+customers on the importance of, and the methods for, Highly
+8-8-8096 Cyber Security X X X X X X X X
+installing and using a suite of protective measures (e.g., strong Important
+passwords, anti-virus software, firewalls, IDS, encryption)
+and update as available.
+Staff Trained on Incident Reporting: Service Providers,
+Network Operators, and Equipment Suppliers should provide Highly
+8-8-8130 Cyber Security X X X X X X X X
+procedures and training to staff on the reporting of security Important
+incidents, weaknesses, and suspicious events.
+Page 56 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Roll-out of Secure Service Configuration, or Vulnerability
+Recovery Configurations: When new default settings
+introduce vulnerabilities or the default configuration is found
+Highly
+8-8-8505 to be vulnerable, Service Providers and Network Operators Cyber Security X X X X X X X X
+Important
+should work with the Equipment Supplier to resolve the
+inadequacies of the solution, using a pre-deployment, staging
+area, where hardened configurations can be tested.
+Document Single Points of Failure During Recovery:
+Following a compromise and reestablishment of lost service,
+Service Providers and Network Operators should re-evaluate
+Highly
+8-8-8506 the architecture for single points of failure. Review the Cyber Security X X X X X X X X X
+Important
+process of evaluating and documenting single points of failure
+and provide spares for redundancy in the architecture to
+ensure adequacy of the security architecture.
+Network Operators, Service Providers and Equipment
+Suppliers should consider establishing a designated
+Disaster
+Emergency Operations Center. This center should contain Highly
+8-6-1006 Recovery and X X X X X X X X X
+tools for coordination of service restoral including UPS, Important
+Mutual Aid
+alternate means of communications, maps, and documented
+procedures to manage business interruptions and/or disasters.
+Page 57 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment Disaster
+Highly
+8-6-1007 Suppliers should consider establishing a geographically Recovery and X X X X X X X X X
+Important
+diverse back-up Emergency Operations Center. Mutual Aid
+Network Operators, Service Providers and Equipment
+Suppliers should consider during times of disaster,
+communicating the disaster response status frequently and Disaster
+Highly
+8-6-1038 consistently to all appropriate employees - so that they all Recovery and X X X X X X X X X
+Important
+understand what processes have been put in place to support Mutual Aid
+customers and what priorities have been established in the
+response.
+Equipment Suppliers should consider providing a "Disaster
+Information Checklist" to all of the Service Providers they
+Disaster
+support. The checklist should provide a set of questions which Highly
+8-6-1041 Recovery and X X X X X X X X X
+the Service Provider would address immediately after a Important
+Mutual Aid
+disaster and then promptly inform the Equipment Supplier to
+facilitate equipment delivery.
+Page 58 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers should review their Business Disaster
+Highly
+8-7-1004 Continuity Plan(s) on an annual basis to ensure that plans are Recovery and X X X X X X X X X X X X X
+Important
+up-to-date, relevant to current objectives of the business and Mutual Aid
+can be executed as written.
+Network Operators, Service Providers and Equipment
+Suppliers should regularly conduct exercises that test their Disaster
+Highly
+8-7-1009 Disaster Recovery Plans. Exercise scenarios should include Recovery and X X X X X X X X X X X X X
+Important
+natural and man-made disasters (e.g., hurricane, flood, Mutual Aid
+nuclear, biological, and chemical).
+Network Operators, Service Providers and Equipment Disaster
+Highly
+8-7-1018 Suppliers should emphasize employee and public safety Recovery and X X X X X X X X X X X
+Important
+during a disaster and all phases of disaster recovery. Mutual Aid
+Page 59 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should assess the need for Chemical, Biological,
+Disaster
+Radiological and Nuclear (CBRN) response program to safely Highly
+8-7-1020 Recovery and X X X X X X X X X X X
+restore or maintain service in the aftermath of fuel/chemical Important
+Mutual Aid
+contamination or a Weapons of Mass Destruction (WMD)
+attack.
+Network Operators and Service Providers should consider Disaster
+Highly
+8-7-1025 using a team to quickly determine appropriate actions both Recovery and X X X X X X X X X
+Important
+pro-active or re-active to address potential or real threats. Mutual Aid
+Network Operators and Service Providers should consider
+entering into Mutual Aid agreements with partners best able
+Disaster
+to assist them in a disaster situation using the templates Highly
+8-7-1031 Recovery and X X X X X X
+provided on the NRIC and NCS websites. These efforts could Important
+Mutual Aid
+include provisions to share spectrum, fiber facilities,
+switching, and/or technician resources.
+Network Operators and Service Providers should document
+their critical equipment suppliers, vendors, contractors and Disaster
+Highly
+8-7-1032 business partners in their Business Continuity Plans along Recovery and X X X X X X X X X X X X X
+Important
+with an assessment of the services, support, and capabilities Mutual Aid
+available in the event of a disaster.
+Page 60 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers
+Disaster
+and Public Safety Authorities should use a disaster recovery Highly
+8-7-1037 Recovery and X X X X X X X X X
+support model that provides a clear escalation path to Important
+Mutual Aid
+executive levels, both internally and to business partners.
+Equipment Suppliers should develop support processes that
+include interfaces with those internal organizations (e.g., Disaster
+Highly
+8-7-1039 sales, logistics, manufacturing) that have a potential role in Recovery and X X X X X X X X X X X X X
+Important
+assisting Network Operators and Service Providers in disaster Mutual Aid
+response efforts.
+Network Operators and Service Providers should consider
+supplementing media backup storage with full system restoral Disaster
+Highly
+8-7-1048 media and documented restoration procedures that can be Recovery and X X X X X X X X X X X X X
+Important
+utilized at an alternate "hot site", in case of total failure of the Mutual Aid
+primary service site.
+Page 61 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should periodically Disaster
+Highly
+8-7-1052 assess the functionality of business critical systems during a Recovery and X X X X X X X X X X X X X
+Important
+disaster exercise. Mutual Aid
+Network Operators, Service Providers and Equipment
+Suppliers should work collectively with local, state, and Disaster
+Highly
+8-7-1058 federal governments to develop relationships fostering Recovery and X X X X X X X X X X X X X
+Important
+efficient communications, coordination and support for Mutual Aid
+emergency response and restoration.
+Network Operators, Service Providers and Property Managers
+should consider, in preparation for predicted natural events, Disaster
+Highly
+8-7-1067 placing standby generators on line and verifying proper Recovery and X X X X X X
+Important
+operation of all subsystems (e.g., ice, snow, flood, Mutual Aid
+hurricanes).
+Page 62 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should operate a
+route database. That database should provide the routing
+advertisement source from the Network Operator’s
+perspective. The database should be accessible by peers,
+Network
+customers and other users. The access can be via a web Highly
+8-5-0524 Reliability and X X X
+interface similar to the looking glass server’s or just telnet Important
+Interoperability
+access. The database is informational only and can not be
+used to effect or impact the actual routing table. The need to
+provide security and isolation to such a database is high.
+As appropriate, Network Operators and Service Providers
+should deploy security and reliability related software updates
+(e.g., patches, maintenance releases, dot releases) when
+available between major software releases. Prior to Network
+Highly
+8-5-0536 deployment, appropriate testing should be conducted to Reliability and X X X X X X X X X X X X X
+Important
+ensure that such software updates are ready for deployment in Interoperability
+live networks. Equipment Suppliers should include such
+software updates in the next generic release and relevant
+previous generic releases.
+Page 63 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators should engineer networks supporting
+VoIP applications to provide redundant and highly available
+application layer services. Examples of such services include
+Network
+DNS and other directory services, SIP, H.323, and other Highly
+8-6-0762 Reliability and X X
+application-level gateways. To ensure interoperability, all Important
+Interoperability
+implementations of such IP-based application protocols
+should conform to the applicable IETF standards for those
+protocols.
+Service Providers implementing a SIP-signaled VoIP network
+should consider using media gateway controllers according to
+Network
+IETF RFC 3372 BCP 63, "Session Initiation Protocol for Highly
+8-6-0767 Reliability and X
+Telephones (SIP-T): Context and Architectures," in order to Important
+Interoperability
+achieve interoperability with SS7/ISUP-signaled TDM voice
+networks.
+Network Performance: Network Operators and Service
+Network
+Providers should periodically examine and review their Highly
+8-7-0405 Reliability and X X X X
+networks to ensure that it meets the current design Important
+Interoperability
+specifications.
+Page 64 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+NOC Communications: Network Operators and Service
+Providers should establish processes for NOC-to-NOC Network
+Highly
+8-7-0407 (Network Operations Center) peer communications for critical Reliability and X X X X
+Important
+network activities (e.g., scheduled maintenance, upgrades and Interoperability
+outages).
+Data Back-up Verification: Network Operators and Service
+Providers should test the restoral process associated with Network
+Highly
+8-7-0415 critical data back-up, as appropriate. The goal is to Reliability and X X
+Important
+demonstrate that data restoration is complete and works as Interoperability
+expected.
+Fast Failover of Redundancies: Equipment Suppliers should Network
+Highly
+8-7-0421 design network elements intended for critical hardware and Reliability and X X X X X X X X X X
+Important
+software recovery mechanisms to minimize restoration times. Interoperability
+Page 65 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Software Management: Network Operators and Service Network
+Highly
+8-7-0425 Providers should maintain software version deployment Reliability and X X X X X X X X X X X X X
+Important
+records, as appropriate. Interoperability
+Software & Hardware Vulnerability Tracking: Service
+Providers should monitor software and hardware vulnerability
+reports and take the recommended action(s) to address Network
+Highly
+8-7-0428 problems, where appropriate. These reports and Reliability and X X X X X X X
+Important
+recommendations are typically provided by equipment Interoperability
+suppliers and CERTs (Computer Emergency Response
+Teams).
+Software Configurations: Equipment Suppliers should be Network
+Highly
+8-7-0430 able to recreate supported software from source and, where Reliability and X X
+Important
+feasible, software obtained from third parties. Interoperability
+Page 66 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property Managers
+should post emergency contact number(s) and unique site
+identification in an externally visible location at unmanned Network
+Highly
+8-7-0452 communication facilities (e.g., towers, cell sites, Controlled Reliability and X X X X X X X X X X X X X
+Important
+Environment Vault (CEV), satellite earth stations). This Interoperability
+signage should not reveal additional information about the
+facility, except when necessary.
+Network Operators and Service Providers should consider
+Network
+establishing technical and managerial escalation policies and Highly
+8-7-0454 Reliability and X X X X X X X X X X X X X
+procedures based on the service impact, restoration progress Important
+Interoperability
+and duration of the issue.
+Equipment Suppliers should design outdoor equipment (e.g., Network
+Highly
+8-7-0459 base station) to operate in expected environmental conditions Reliability and X X X
+Important
+(e.g., weather, earthquakes). Interoperability
+Page 67 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network
+Equipment Suppliers should provide the capability to test Highly
+8-7-0461 Reliability and X X X X X X X X X X X X X
+failover routines of redundant network elements. Important
+Interoperability
+Network Operators and Property Managers should consider Network
+Highly
+8-7-0496 storing their portable generators at critical sites that are not Reliability and X X X X X X X X X
+Important
+otherwise equipped with stationary generators. Interoperability
+Network Operators and Property Managers should consider
+Network
+connecting the power load to portable generators where they Highly
+8-7-0497 Reliability and X X X X X X X X X
+are stored, and configuring them for auto-engage in the event Important
+Interoperability
+of a failover.
+Page 68 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Property Managers should consider
+Network
+alternative measures for cooling network equipment facilities Highly
+8-7-0498 Reliability and X X X X X X X X X X X X X
+(e.g., powering HVAC on generator, deploying mobile Important
+Interoperability
+HVAC units) in the event of a power outage.
+Network Operators and Service Providers, in order to
+facilitate asset management and increase the likelihood of
+having usable spares in emergency restorations, should Network
+Highly
+8-7-0504 consider maintaining "hot spares" (circuit packs electronically Reliability and X X X X X X X X X X X
+Important
+plugged in and interfacing with any element management Interoperability
+system, as opposed to being stored in a cabinet) for mission
+critical elements.
+Network Operators and Service Providers should maintain a
+"24 hours by 7 days" contact list of other providers and Network
+Highly
+8-7-0513 operators for service restoration of inter-connected networks. Reliability and X X X X X X X X X
+Important
+Where appropriate, this information should be shared with Interoperability
+Public Safety Service and Support providers.
+Page 69 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Network
+Suppliers should participate in interoperability testing Highly
+8-7-0530 Reliability and X X X X X X X X X X X X X
+(including services), as appropriate, to maintain reliability Important
+Interoperability
+across connected networks.
+Diversity Audit: Network Operators should periodically Network
+Highly
+8-7-0532 audit the physical and logical diversity called for by network Reliability and X X X X X X X X X
+Important
+design and take appropriate measures as needed. Interoperability
+Network Operators, Service Providers and Equipment Network
+Highly
+8-7-0541 Suppliers should store multiple software versions for critical Reliability and X X X X X X X X X X X X X
+Important
+network elements and be able to fallback to an earlier version. Interoperability
+Page 70 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should place critical
+network databases (e.g., directory server, feature server,
+Network
+Service Control Point (SCP)) in a secure environment across Highly
+8-7-0547 Reliability and X X X X X X X
+distributed locations to provide service assurance (e.g., Important
+Interoperability
+maintainability, connectivity, security, reliability) consistent
+with other critical network elements.
+Network Operators and Service Providers should move Network
+Highly
+8-7-0576 network access for pre-planned high volume call events away Reliability and X X X X X X X X X
+Important
+from the 911 selective router. Interoperability
+Network Operators, Service Providers, Property Managers
+Network
+and Public Safety Providers should coordinate with fire Highly
+8-7-0619 Reliability and X X X X X X X X X X X X X
+agencies in emergency response preplanning efforts for Important
+Interoperability
+communications equipment locations.
+Network Operators, Service Providers and Property Managers Network
+Highly
+8-7-0653 should retain complete authority about when to transfer from Reliability and X X X X X X X X X
+Important
+the electric utility and operate standby generators. Interoperability
+Page 71 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property Managers
+Network
+should have a plan that is periodically verified for providing Highly
+8-7-0660 Reliability and X X X X X X X X X
+portable generators to offices with and without stationary Important
+Interoperability
+engines.
+Network Operators, Service Providers, and Property Network
+Highly
+8-7-0669 Managers should develop and/or provide appropriate Reliability and X X X X X X X X X
+Important
+emergency procedures for AC transfer. Interoperability
+Network Operators, Service Providers and Equipment
+Suppliers should provide diverse power feeds for all Network
+Highly
+8-7-0679 redundant links (e.g., SS7, BITS clocks) and any components Reliability and X X X X
+Important
+identified as "critical" single points of failure (SPOF) in Interoperability
+transport and operations of the network.
+Page 72 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property Managers
+should develop and test plans to address situations where Network
+Highly
+8-7-0695 normal power backup does not work (e.g., commercial AC Reliability and X X X X X X X X X X X X X
+Important
+power fails, the standby generator fails to start, automatic Interoperability
+transfer switch fails).
+Network Operators, Service Providers, Equipment Suppliers Network
+Highly
+8-7-0699 and Property Managers should design standby systems (e.g., Reliability and X X X X X X X X X X X X X
+Important
+power) to withstand harsh environmental conditions. Interoperability
+Network Operators, Service Providers and Equipment Network
+Highly
+8-7-0776 Suppliers should conduct and periodically re-validate physical Reliability and X X X X X X X X X
+Important
+security assessments on critical network facilities. Interoperability
+Page 73 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Crisis event simulation: Network Operators and Service
+Providers should conduct exercises periodically to test a
+network's operational readiness for various types of events
+Network
+(e.g., hurricane, flood, nuclear, biological, and chemical), Highly
+8-8-0599 Reliability and X X X X X X X X X
+through planned, simulated exercises. The exercise should be Important
+Interoperability
+as authentic as practical. Scripts should be prepared in
+advance and team members should play their roles as
+realistically as possible.
+Network Operators, Service Providers and Equipment
+Physical Highly
+8-6-5073 Suppliers should perform risk assessment on significant X X X X X X X X X X X X X
+Security Important
+network changes (e.g., technology upgrades).
+Network Operators should provide appropriate security for
+emergency mobile trailers (both pre- and post-deployment) in Physical Highly
+8-6-5131 X X X X X X X X X
+order to protect against a coordinated terrorist attack on Security Important
+emergency communications capabilities.
+Page 74 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators should protect the identity of locations Physical Highly
+8-6-5133 X X X X X X X X X
+where emergency mobile trailers and equipment are stored. Security Important
+Network Operators and Service Providers should develop and
+manage recovery plans to ensure the timely restoration of Physical Highly
+8-6-5146 X X
+services in the event of transponder loss, satellite payload Security Important
+failure, and satellite failure.
+Equipment Suppliers should design electronic hardware to Physical Highly
+8-6-5194 X X X X X X X X X X X X X
+minimize susceptibility to electrostatic discharge. Security Important
+Page 75 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers should develop documentation for the
+restoration of power for areas of critical infrastructure
+Physical Highly
+8-6-5231 including such things as contact information, escalation X X X X X X X X X X X
+Security Important
+procedures, restoration steps and alternate means of
+communication. This documentation should be maintained
+both on-site and at centralized control centers.
+Network Operators, Service Providers and Equipment
+Suppliers should perform risk assessment on significant Physical Highly
+8-6-5248 X X X X X X X X X X X X X
+network changes, both temporary and permanent, resulting Security Important
+from restoration efforts.
+Network Operators should consider geographic separation of
+Physical Highly
+8-6-5249 network redundancy during restoration, and address losses of X X X X X X X X X X X X X
+Security Important
+redundancy and geographic separation following restoration.
+Page 76 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators should consider intra-office diversity of
+Physical Highly
+8-6-5250 all critical resources during restoration, and address losses of X X X X X X X X X X X
+Security Important
+diversity following restoration.
+Network Operators, Service Providers and Equipment
+Suppliers should use lessons learned from restoration efforts Physical Highly
+8-6-5253 X X
+to update recovery plans for transponder loss, satellite Security Important
+payload failure and satellite failure.
+Satellite Operators should maintain an alternate recovery
+facility that would duplicate operations and Tracking,
+Telemetry, Control and Monitoring (TTC&M). The alternate Physical Highly
+8-6-5264 X X
+recovery facility should be geographically diverse from the Security Important
+primary facility, maintained and tested on a regular schedule
+to ensure readiness and timely response.
+Page 77 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators should maintain and control access to
+accurate location information of critical network facilities in Physical Highly
+8-7-5123 X X X X X X X X X X X
+order to identify physical locations hosting critical Security Important
+infrastructure assets.
+Network Operators should plan for the possibility that
+impacted network nodes cannot be accessed by company Physical Highly
+8-7-5138 X X X X X X X X X
+personnel for an extended period of time and define the Security Important
+corporate response for restoration of service.
+Network Operators, Service Providers and Equipment
+Suppliers should consider establishing procedures for Physical Highly
+8-7-5139 X X X X X X X
+managing personnel who perform functions at disaster area Security Important
+sites.
+Page 78 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers
+Physical Highly
+8-7-5160 and Property Managers should account for the possible X X X X X X X
+Security Important
+absence of critical personnel in their business continuity plan.
+Network Operators, Service Providers and Property Managers
+should consider placing generator sets and fuel supplies for
+Physical Highly
+8-7-5212 critical sites within a secured area to prevent unauthorized X X X X X X X
+Security Important
+access, reduce the likelihood of damage and/or theft, and to
+provide protection from explosions and weather.
+Network Operators, Service Providers and Property Managers
+should consider placing all power and network equipment in a
+location to increase reliability in case of disaster (e.g., floods, Physical Highly
+8-7-5214 X X X X X X X
+broken water mains, fuel spillage). In storm surge areas, Security Important
+consider placing all power related equipment above the
+highest predicted or recorded storm surge levels.
+Page 79 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should consider providing trouble call centers with
+Physical Highly
+8-7-5222 a physically diverse back-up capability that can quickly be X X X X X X X
+Security Important
+configured to receive the incoming traffic and take
+appropriate action.
+Network Operators, Service Providers and Equipment
+Suppliers should establish a plan for providing technical Physical Highly
+8-7-5223 X X X X X X X
+support that prevents the loss of one facility or location from Security Important
+disabling their ability to provide support.
+Network Operators, Service Providers and Property Managers
+should maintain liaison with local law enforcement, fire
+Physical Highly
+8-7-5226 department, other utilities and other security and emergency X X X X X X X
+Security Important
+agencies to ensure effective coordination for emergency
+response and restoration.
+Network Operators, Service Providers and Property Managers
+should have controlled access to comprehensive facility
+cabling documentation (e.g., equipment installation plans, Physical Highly
+8-7-5229 X X X X X X X X X X X X X
+network connections, power, grounding and bonding) and Security Important
+keep a backup copy of this documentation at a secured off-site
+location.
+Page 80 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should verify the integrity of system spares and Physical Highly
+8-7-5237 X X X X X X X X X X X
+replenish utilized spares, as appropriate, as part of a disaster Security Important
+response at a facility.
+Network Operators, Service Providers and Equipment
+Suppliers should reassess the criticality of associated facilities Physical Highly
+8-7-5242 X X X X X X X X X X X X X
+following a catastrophic incident (i.e. loss of one facility may Security Important
+make others more critical).
+Network Operators should evaluate the priority on re-
+establishing diversity of facility entry points (e.g., copper or Physical Highly
+8-7-5252 X X X X X X X
+fiber conduit, network interfaces for entrance facilities) during Security Important
+the restoration process.
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers should establish and enforce access
+control and identification procedures for all individuals
+Physical Highly
+8-7-5259 (including temporary contractors, and mutual aid workers) at X X X X X X X X X X X X X
+Security Important
+restoration sites for which they have responsibility. Provide
+for issuing and proper displaying of ID badges, and the sign-
+in and escorting procedures, where appropriate.
+Page 81 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property
+Physical Highly
+8-7-5261 Managers should identify carrier interconnection points and X X X X X X X X
+Security Important
+coordinate restoral plans, as appropriate.
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers should ensure that operating
+Physical Highly
+8-7-5267 procedures are clearly defined, and followed by personnel X X X X X X X X X X X X X
+Security Important
+during emergency situations in order to avoid degradation of
+cyber and physical security due to a diversion.
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers personnel should be aware that
+terrorists or malicious groups may use 0 information to cause
+heightened public or employee awareness to divert attention Physical Highly
+8-7-5270 X X X X X X X X
+and resources to other areas away from their intended physical Security Important
+or cyber target. Where feasible, information (e.g., news
+sources, e-mail) should be authenticated and cross-verified to
+ensure accuracy of information.
+Page 82 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Physical Highly
+8-7-5272 Suppliers should include security considerations in disaster X X X X X X X X X X X X X
+Security Important
+recovery plans for critical infrastructure sites.
+Network Operators, Service Providers and Equipment
+Suppliers should consider site specific (e.g., location, region, Physical Highly
+8-7-5279 X X X X X X X X X X X X X
+country) threat information during security program Security Important
+development.
+Network Operators, Service Providers and Property Managers
+with buildings serviced by more than one emergency
+generator, should design, install and maintain each generator Physical Highly
+8-7-5281 X X X X X X X
+as a stand alone unit that is not dependent on the operation of Security Important
+another generator for proper functioning, including fuel
+supply path.
+In E9-1-1, the PSTN may be used as a backup to dedicated
+trunks. Two implementation options exist: Physical Highly
+8-8-0569 X X X X X X X
+Security Important
+Option 1: PSTN as a Backup for Normal 9-1-1
+Page 83 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Connectivity—An alternative for handling E9-1-1 calls during
+periods of failure in the connectivity between an originating
+network and the emergency services network is to use the
+PSTN as a backup (i.e., fallback) connection mechanism
+between the caller’s originating network and the PSAP. Such
+connectivity may route calls to the appropriate PSAP without
+the associated information that would normally be present.
+If the primary path to the emergency services network is
+interrupted by a ""failure"" (not when all trunks are simply
+busy), the call may be forwarded over the PSTN to a number
+specified by the PSAP that is answered at the PSAP on a 24/7
+basis. It is desirable for that specified number to be a type that
+can provide the original CallerID/Automatic Number
+Identification (ANI). This best practice does not propose that
+any 9-1-1 call delivery stakeholder bypass acceptable
+congestion control techniques commonly applied within the
+industry for 9-1-1 calls.
+Option 2: Wireless Public or Private Networks as Backup for
+9-1-1 Dedicated Trunks—Similar to Option 1 above (PSTN
+backup) for completing 9-1-1 calls when the primary transport
+facility is interrupted by a ""failure"" (not when all trunks are
+simply busy), wireless public or private networks, or satellite-
+based services may be used to provide an additional alternate
+path to the PSTN, providing IP multimedia connectivity for
+Page 84 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+next generation networks or used solely as an alternate call
+delivery path for the voice component of 9-1-1 calls.
+Service Providers should work with Public Safety Service and
+Support providers to educate the public on the proper use of
+N11 Access codes (211, 311 and 511 services) such that it
+enables the 911 network and personnel to be exclusively Highly
+8-6-3204 Public Safety X X X X X X X X
+focused on emergencies. Proper use of all N11 codes, Important
+including 911, prevents exhaustion of resources of emergency
+personnel on non-emergency situations. (Reference NRIC BP
+0578)
+Service Providers and Public Safety organizations should
+jointly develop a response plan to notify the public, through Highly
+8-7-3201 Public Safety X X X X X X X X
+the broadcast media, of alternate means of contacting Important
+emergency services during a 911 outage.
+Network Operators and Service Providers should develop and
+maintain operations plans that address network reliability
+Highly
+8-7-3211 issues. Network Operators and Service Providers should Public Safety X X X X X X X X
+Important
+proactively include Public Safety authorities when developing
+network reliability plans in support of 911 services.
+Page 85 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+E9-1-1 Service Provider Contact Information: Network
+Operators and Service Providers should provide and maintain
+Highly
+8-7-3217 current 24/7/365 contact information accessible to Public Public Safety X X X X X X X
+Important
+Safety Answering Points (PSAPs) so that PSAPs may obtain
+additional subscriber information as appropriate.
+VSPs should conduct extensive 9-1-1 call-through testing for
+environments that have a high user capacity (e.g., university
+campuses, large commercial enterprise campuses, and densely
+populated multi-tenant buildings/complexes). This testing
+immediately reduces the risk of misrouting a block of callers
+Network
+at a particular facility and in turn reduces the liability for Highly
+8-8-0901 Reliability and X X X X X X
+those same entities. Because the "originating end user" Important
+Interoperability
+customers are also stakeholders in the success of a 9-1-1 call,
+they should also participate in testing with the VSP. This best
+practice is also applicable to legacy private branch exchange
+(PBX) environments; the PBX service provider should
+perform the extensive call-through testing steps.
+Page 86 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+When service providers or carriers reconfigure their network,
+for example, make changes to VPC/MPC/GMLC/Emergency
+Services Gateway (ESGW) providers, they must assess the
+impact on the routing of 9-1-1 calls. Service providers and/or
+Network
+carriers should coordinate and perform necessary testing of all Highly
+8-8-0902 Reliability and X X X X X X X
+new call paths between their network and the emergency Important
+Interoperability
+services network (e.g., SRs, or the ESInet). This testing
+should include a test call using all routing elements (e.g.,
+pANI, Emergency Route Tuple [ERT], and Emergency
+Services Gateway Route Identifier [ESGWRI]).
+System Inventory Maintenance: Network Operators and
+Service Providers should maintain a complete inventory of
+8-6-8037 elements to ensure that patches/fixes can be properly applied Cyber Security Important X X X X X X X X X
+across the organization. This inventory should be updated
+each time a patch/fix is identified and action is taken.
+Incident Response (IR) Procedures: When a service outage or
+8-7-8548 security incident occurs, Network Operators and Service Cyber Security Important
+Providers should follow processes similar to Appendix X.
+Page 87 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Operational Voice over IP (VoIP) Server Hardening:
+Network Operators should ensure that network servers have
+authentication, integrity, and authorization controls in place in
+8-8-8056 Cyber Security Important X X X X X X
+order to prevent inappropriate use of the servers. Enable
+logging to detect inappropriate use.
+Protect Against Cellular Network Denial of Service: Service
+Providers & Network Operators should ensure strong
+separation of data traffic from management/signaling/control
+traffic, via firewalls. Network operators should ensure strong
+cellular network backbone security by employing operator
+8-8-8060 Cyber Security Important X X
+authentication, encrypted network management traffic and
+logging of security events. Network operators should also
+ensure operating system hardening and up-to-date security
+patches are applied for all network elements, element
+management system and management systems.
+Sharing Information with Industry & Government: Service
+Providers, Network Operators, and Equipment Suppliers
+should participate in regional and national information
+sharing groups such as the National Coordinating Center for
+8-8-8066 Telecommunications (NCC), Telecom-ISAC, and the ISP- Cyber Security Important X X X X X X X X
+ISAC (when chartered). Formal membership and
+participation will enhance the receipt of timely threat
+information and will provide a forum for response and
+coordination. Membership will also afford access to
+Page 88 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+proprietary threat and vulnerability information (under NDA)
+that may precede public release of similar data.
+Identity Administration: Network Operators and Service
+Providers should have procedures for verifying identity of
+8-8-8075 users to IT department and IT personnel to users (secret PINs, Cyber Security Important X X X X X X X X
+callback procedures, etc.).
+Training for Security Staff: Service Providers, Network
+Operators, and Equipment Suppliers should establish security
+8-8-8100 training programs and requirements for ensuring security staff Cyber Security Important X X X X X X
+knowledge and compliance. This training could include
+professional certifications in cyber security.
+Document and Verify All Security Operational Procedures:
+Service Providers and Network Operators should ensure that
+all security operational procedures, system processes, and
+security controls are documented, and that documentation is
+up to date and accessible by appropriate staff. Perform gap
+8-8-8101 Cyber Security Important X X X X X X X X X X
+analysis/audit of security operational procedures as often as
+security policy requires relative to the asset being protected.
+Using results of analysis or audit, determine which
+procedures, processes, or controls need to be updated and
+documented.
+Page 89 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+DNS Servers Disaster Recovery Plan: Service Providers and
+8-8-8117 Network Operators should prepare a disaster recovery plan to Cyber Security Important X X X X
+implement upon DNS server compromise.
+Conduct Organization Wide Security Awareness Training:
+Service Providers, Network Operators, and Equipment
+Suppliers should ensure staff is given awareness training on
+security policies, standards, procedures, and general best
+practices. Awareness training should also cover the threats to
+8-8-8124 Cyber Security Important X X X X X X X X
+the confidentiality, integrity, and availability of data including
+social engineering. Training as part of new employee
+orientation should be supplemented with regular "refreshers"
+to all staff.
+Leverage Business Impact Analysis for Incident Response
+Planning: Service Providers and Network Operators should
+leverage the BCP/DR Business Impact Assessment (BIA)
+8-8-8132 Cyber Security Important X X X X X X X X
+efforts as input to prioritizing and planning Information
+Security Incident Response efforts.
+Page 90 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Security of Devices Beyond Scope of Control: Service
+Providers should carefully consider possible impacts on their
+networks from changes in the configuration or authentication
+information on devices beyond the service demarcation point,
+8-8-8134 Cyber Security Important X X X X X X X X X X
+and thus beyond their physical or logical scope of control.
+Service Providers should consider network filters or network
+authentication to protect against malicious traffic or theft of
+service caused by such insecure devices.
+Protect Network/Management Infrastructure from Unexpected
+File System Changes: Service Providers and Network
+Operators should deploy tools to detect unexpected changes to
+8-8-8136 file systems on Network Elements and Management Cyber Security Important X X X X X X X X X X X
+Infrastructure systems where feasible and establish procedures
+for reacting to changes. Use techniques such as cryptographic
+hashes.
+Post-Mortem Review of Security Architecture after Recovery:
+Immediately following incident recovery, Service Providers
+and Network Operators should re-evaluate the adequacy of
+existing security architecture and implement revisions as
+8-8-8508 Cyber Security Important X X X X X X X X X
+needed. Ensure any changes are adequately documented to
+reflect the current configuration. Review existing processes
+for establishing and maintaining security architectures update
+as necessary to maintain currency.
+Page 91 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Recover from Anonymous SS7 Use: If logs or alarms
+determine an SS7 table has been modified without proper
+authorization, Service Provider and Network Operators
+8-8-8534 Cyber Security Important X X X X X X X
+should remove invalid records, or in the event of a
+modification, rollback to last valid version of record.
+Investigate the attack to identify required security changes.
+Threat Management: Network Operators, Service Providers
+and Equipment Suppliers should keep their programs flexible.
+What is considered a security best practice today might be
+8-8-8694 obsolete tomorrow. Changing factors include new Cyber Security Important X X X X X X X X X
+technologies, changing business models, emerging threats and
+growth of the network and the user base.
+Media Gateway Availability: Network Operators and Service Cyber Security
+Providers should engineer networks to provide redundant and
+highly available application layer services. (e.g., DNS and
+8-8-8711 other directory services, SIP, H.323). Important X X X X X X X
+Page 92 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Media Gateway Interoperability: Network Operators and Cyber Security
+Service Providers should implement applicable industry
+standards governing protocol (e.g., IP Protocols from the
+8-8-8712 IETF) and established policies and procedures to maintain Important X X X X X X X X X
+currency within these publications to ensure interoperability.
+Media Gateway Interoperability With Legacy Networks: Cyber Security
+Network Operators and Service Providers implementing a
+signaling gateway should consider using media gateway
+8-8-8713 controllers that map gateway responses to SS7 in an Important X X X X X
+anticipated and predictable fashion (e.g., RFC 3398 for SIP-
+to-SS7 mapping).
+Maintaining Physical Link Diversity: Network Operators and Cyber Security
+Service Providers should implement industry guidelines for
+validating physical diversity, and consider performing
+8-8-8727 signaling link diversification validation on a scheduled basis Important X X X X X
+(e.g., twice a year). Processes and procedures should exist for
+tracking discrepancies and maintaining a historical record.
+Page 93 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Maintaining Logical Link Diversity: Network Operators who Cyber Security
+deploy next generation signaling networks should consider
+industry guidelines for logical diversity (e.g. multi-homing),
+8-8-8728 and perform network diversification validation on a scheduled Important X X X X X X X
+basis (e.g., twice a year). Processes and procedures should
+exist for tracking discrepancies and maintaining a historical
+record.
+Public Key Infrastructure (PKI): For environments where Cyber Security
+traditional PKI infrastructures are problematic, service
+providers should use an alternate approach such as a "web of
+8-8-8746 trust" for public key validation / authenticaton. Important X X X X X
+Risk Assessment Process: Service providers and network Cyber Security
+operators should have documented processes in place for
+reviewing new vulnerabilities as they are announced.
+8-8-8749 Important X X X X X X X X X X
+Page 94 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Incident Response Preventative Measures: Service providers Cyber Security
+and network operations should set policy within each
+corporation or agency to provide guidance when there is a
+8-8-8757 security breach. Important X X X X X X X X X X X
+Post DoS Practice: Network Operators and Service Providers Cyber Security
+should establish policies, and procedures to support early
+recognition and isolation of potential bad actors to minimize
+8-8-8758 impact to the network. Important X X X X X X X X X
+Media Gateways Signaling: Service Providers and Network Cyber Security
+Operators implementing a control-signaled (i.e. SIP) network
+should consider using media gateway controllers according to
+8-8-8771 appropriate industry standards (i.e. Internet Engineering Task Important X X X X X X X
+Force (IETF)) in order to achieve interoperability between the
+IP Multimedia (IM) Core Network (CN) subsystem and
+Circuit Switched (CS) networks.
+Page 95 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Equipment Suppliers should consider, during their response to Disaster
+8-6-1043 major disasters, editing the support "hotline" calling tree by Recovery and Important X X X X X X X X X X X
+adding a specific entry for disaster events. Mutual Aid
+Equipment Suppliers should consider providing a "Disaster
+Recovery Services Checklist" to all of the Service Providers Disaster
+8-6-1044 they support. The checklist would provide a listing of the Recovery and Important X X X X X X X X X X X
+Equipment Supplier's professional services which the Service Mutual Aid
+Provider may require during an event.
+Network Operators and Service Providers should work with
+Equipment Suppliers and Government entities to identify
+Disaster
+criteria and procedures for handling network elements
+8-6-1051 Recovery and Important X X X X X X X X X X X X X
+affected by nuclear attack or nuclear accidents (e.g., shock
+Mutual Aid
+wave, Electro-magnetic Pulse (EMP), Thermal, Fallout, fiber
+darkening of phosphorous based fiber cable).
+Page 96 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, and Equipment
+Disaster
+Suppliers should use the Incident Command System Standard
+8-7-1008 Recovery and Important X X X X X X X
+for incident coordination and control in the emergency
+Mutual Aid
+operations center and at the incident site.
+Network Operators and Service Providers should make Disaster
+8-7-1015 available to the disaster recovery team "as-built" drawings of Recovery and Important X X X X X X X X X
+network sites. Mutual Aid
+Network Operators, Service Providers and Equipment Disaster
+8-7-1024 Suppliers should plan for the possibility of a disaster Recovery and Important X X X X X X X X X X X
+occurring during a work stoppage. Mutual Aid
+Network Operators and Service Providers should consider
+Disaster
+creating a corporate policy statement that defines a remote
+8-7-1026 Recovery and Important X X X X X X X X X X X X X
+system access strategy, which may include a special process
+Mutual Aid
+for disaster recovery.
+Page 97 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should periodically Disaster
+8-7-1029 review their portable power generator needs to address Recovery and Important X X X X X X X X X X X X X
+changes to the business. Mutual Aid
+Network Operators and Service Providers should include trial Disaster
+8-7-1035 deployment of emergency mobile assets in disaster response Recovery and Important X X X X X X
+exercises to evaluate level of personnel readiness. Mutual Aid
+Network Operators should determine in advance if they will
+use line of sight systems (microwave radio, free space optics,
+and satellite communications systems) to re-establish Disaster
+8-7-1036 communications. If these technologies are to be deployed it is Recovery and Important X X X X X X
+recommended that path designs be developed for each critical Mutual Aid
+area in advance with personnel trained to install and optimize
+the systems.
+Page 98 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Disaster
+Suppliers should consider using lab, demonstration or training
+8-7-1040 Recovery and Important X X X X X X X X X X X X X
+equipment if replacement equipment is unavailable in disaster
+Mutual Aid
+situations.
+Equipment Suppliers should share countermeasures resulting Network
+8-5-0540 from analysis of an outage with Network Operators using the Reliability and Important X X X X
+same equipment. Interoperability
+Intraoffice 911 Termination to Mobile PSAP - Commonly,
+the transport facility between the PSAP and the serving end
+office may not have facility route diversity. To accommodate
+instances where these facilities are interrupted or it becomes
+necessary to evacuate the PSAP location, some PSAPs have
+established mobile PSAP systems that may be connected to Network
+8-5-0570 phone jacks at the serving end office. The phone jacks, Reliability and Important X X X X X
+although usually installed inside the end office for security Interoperability
+purposes, are typically installed in an accessible location for
+ease in locating them during an emergency. Some PSAPs
+have prearranged with the serving LEC to permit a
+jurisdictional employee having an emergency vehicle (e.g.,
+police car) equipped with radio capability to retain a key to
+Page 99 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+the LECs’ end office and to connect to an RJ-11 jack for 911
+call interception. Another type of receptacle may be pre-
+installed in the end office for connection to a mobile PSAP.
+Network Operators, Service Providers and Equipment
+Suppliers are encouraged to continue to participate in the Network
+8-6-0803 development and expansion of industry standards for traffic Reliability and Important X X X X X X X X X X X X
+management that promote interoperability and assist in Interoperability
+meeting end user quality of service needs.
+Network Operators and Service Providers should ensure that
+Network
+critical wireless circuits (e.g., high priority cells, SS7 circuits,
+8-7-0488 Reliability and Important X X X
+911 circuits) are registered with Telecom Service Priority
+Interoperability
+(TSP).
+Page 100 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Network
+Suppliers should consider provisions in labor contracts to
+8-7-0489 Reliability and Important X X X X X X X X X X X X X
+provide for cooperation between union and non-union
+Interoperability
+personnel during disaster recovery situations.
+Network Operators and Service Providers should consult
+National Fire Prevention Association Standards (e.g., NFPA
+Network
+75 and 76) for guidance in the design of fire suppression
+8-7-0490 Reliability and Important X X X X X X X X X X X X X
+systems. When zoning regulations require sprinkler systems,
+Interoperability
+an exemption should be sought for the use of non-destructive
+systems.
+Government, Network Operators and Service Providers of
+critical services to National Security and Emergency Network
+8-7-0587 Preparedness (NS/EP) users should avail themselves of the Reliability and Important X X X X X X
+Telecommunications Service Priority (TSP) program and Interoperability
+support / promote as applicable.
+Page 101 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should minimize Network
+8-7-0702 dependence on equipment requiring AC power feeds in favor Reliability and Important X X X X X X X X X X X X X
+of DC-powered components. Interoperability
+Network Operators, Service Providers and Equipment
+Network
+Suppliers should establish a means to allow for coordination
+8-7-0779 Reliability and Important X X X X X X X X X X X X X
+between cyber and physical security teams supporting
+Interoperability
+preparedness, response, investigation and analysis.
+Back-Up Power Fuel Supply: Network Operators, Service
+Network
+Providers, and Property Managers should consider the use of
+8-8-0787 Reliability and Important X X X X X X X X X X X X X
+fixed alternate fuel generators (e.g., natural gas) connected to
+Interoperability
+public utility supplies to reduce the strain on refueling.
+Page 102 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Virtual Collaboration: Network Operators, Service Providers,
+and Equipment Suppliers should plan for elevated utilization Network
+8-8-0795 of virtual collaboration and remote meetings during Reliability and Important X X X X X X X X X
+pandemics or other crisis situations. Interoperability
+Deferral of Operations Activities: Network Operators,
+Service Providers, and Equipment Suppliers should consider
+Network
+developing guidelines for the deferral of specific maintenance
+8-8-0796 Reliability and Important X X X X X X X X X
+or provisioning activities during certain situations (e.g.,
+Interoperability
+pandemic, holiday, National Special Security Event).
+Workforce Augmentation: Network Operators, Service
+Network
+Providers, and Equipment Suppliers should consider creating
+8-8-0797 Reliability and Important X X X X X X X X X
+a workforce augmentation plan prior to a pandemic or other
+Interoperability
+crisis situation.
+Page 103 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators and Service Providers should conduct Network
+8-6-0761 periodic verification of the office synchronization plan and Reliability and Important X X X X X X X X X
+the diversity of timing links, power feeds and alarms. Interoperability
+When guard services are utilized by Network Operators,
+Service Providers, Equipment Suppliers or Property
+Managers, a process should be developed to quickly Physical
+8-6-5054 Important X X X X X X X X X
+disseminate information to all guard posts. This process Security
+should be documented and should clearly establish specific
+roles and responsibilities.
+Network Operators, Service Providers and Equipment
+Suppliers should ensure that all network infrastructure Physical
+8-6-5098 Important X X X X X X X X X X X X X
+equipment meets the minimum requirements of ANSI T1.319 Security
+(fire resistance).
+Equipment Suppliers should consider participating in and
+complying with an industry organization that develops Physical
+8-6-5106 Important X X X X X X X
+standards in their security, logistics and transportation Security
+practices.
+Page 104 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators should identify primary and alternate
+Physical
+8-6-5132 transportation (e.g., air, rail, highway, boat) for emergency Important X X X X X X X X X
+Security
+mobile trailers and other equipment and personnel.
+Network Operators, Service Providers and Property Managers
+should discourage use of Emergency Power Off (EPO)
+Physical
+8-6-5210 switches between the primary battery supplies and the main Important X X X X X X X X X X X X X
+Security
+power distribution board. EPO switches are not
+recommended for use in traditional -48V DC battery plants.
+Network Operators, Service Providers and Equipment
+Suppliers should consider including cross-subsidiary resource Physical
+8-6-5228 Important X X X X X X X X X X X
+sharing and communications in business continuity plans to Security
+support emergency response and restoration.
+Property Managers for multi-tenant facility should maintain a Physical
+8-6-5239 Important X X X X X X X X X
+crisis management plan for restoration following an incident. Security
+Page 105 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Physical
+8-6-5243 Suppliers should restrict visits and tours at the affected areas Important X X X X X X X X X X X
+Security
+during the restoration period following a major incident.
+Network Operators, Service Providers and Equipment
+Suppliers should make all employees, contractors, and others
+Physical
+8-6-5244 with access to critical infrastructure during restoration aware Important X X X X X X X X X
+Security
+of changes to security posture resulting from the incident, and
+increased vigilance should be encouraged.
+During restoration efforts, Network Operators and Service
+Providers should not permit unsecured wireless access points Physical
+8-6-5254 Important X X X X X X X X X X X X X
+for the distribution of critical data or operating system Security
+upgrades.
+Network Operators, Service Providers and Equipment
+Suppliers should ensure that temporary wireless networks
+Physical
+8-6-5255 (e.g., terrestrial microwave, free-space optical, satellite, point- Important X X X X X X X X X
+Security
+to-point, multi-point, mesh) used during an incident are
+subsequently disabled or secured.
+Page 106 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property Managers
+located in the same facility should coordinate security matters Physical
+8-7-5151 Important X X X X X X X
+and include all tenants in the overall security and safety Security
+notification procedures, as appropriate.
+Network Operators, Service Providers that are tenants within
+telecom hotels should plan accordingly to protect their own
+Physical
+8-7-5191 facilities from potential risks within the building complex Important X X X X X
+Security
+(e.g., fire suppression system, plumbing, hazardous
+materials).
+Network Operators and Service Providers tenants of a telecom
+hotel should provide a current list of all persons authorized for
+Physical
+8-7-5192 access to the Property Manager, provide periodic updates to Important X X X X X
+Security
+this list, and provide instructions for exceptions (e.g.,
+emergency restoration personnel).
+Page 107 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Property Managers
+should consider providing secure pre-constructed exterior Physical
+8-7-5216 Important X X X X X X X
+wall pathways for mobile generator connections or tap box Security
+connections.
+Network Operators, Service Providers, Equipment Suppliers
+Physical
+8-7-5225 and Property Managers should ensure that Business Important X X X X X X X
+Security
+Continuity Plan(s) are restricted to those with a need-to-know.
+Network Operators, Service Providers and Property Managers
+should provide or arrange for security to protect temporary Physical
+8-7-5234 Important X X X X X X X
+equipment placements and staging areas for critical Security
+infrastructure equipment in a disaster area.
+Network Operators, Service Providers who are tenants in
+Physical
+8-7-5238 multi-tenant facilities (e.g., telecom hotels) should coordinate Important X X X X X X X
+Security
+security and restoration efforts with the Property Manager.
+Page 108 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers and Equipment
+Suppliers should document the use of non-standard equipment Physical
+8-7-5245 Important X X X X X X X X X X X X X
+during restoration to review and/or replace those devices as Security
+appropriate.
+Network Operators, Service Providers and Equipment
+Suppliers should monitor temporary connections of network Physical
+8-7-5256 Important X X X X X X X X X X X X X
+test equipment that are established for restoration to prevent Security
+access by unauthorized personnel.
+Network Operators, Service Providers and Equipment
+Suppliers should define and assign responsibility for retrieval
+of all corporate assets (e.g., access cards, equipment) and Physical
+8-7-5258 Important X X X X X X X X X
+ensure temporary physical and logical access is removed after Security
+completion of a restoration effort for all temporary personnel
+associated with the restoration.
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers should brief affected personnel Physical
+8-7-5260 Important X X X X X X X X X X X X X
+involved in a restoration on any significant changes to access Security
+control procedures.
+Page 109 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+Network Operators, Service Providers, Equipment Suppliers
+and Property Managers should incorporate various types of Physical
+8-7-5269 Important X X X X X X X X X X X
+diversionary tactics into exercises to assess the security Security
+response.
+Network Operators and Service Providers should consider
+Physical
+8-7-5271 physical and cyber security issues in Mutual Aid Agreements Important X X X X X X X X X
+Security
+(e.g., authorization, access control, badging).
+Network Operators, Service Providers and Equipment
+Suppliers should instruct security personnel to confirm the Physical
+8-7-5280 Important X X X X X X X X X X
+authenticity of directions to supersede existing security Security
+processes or procedures.
+Service Providers should consider developing options that
+allow for call delivery from Emergency Notification Services
+8-6-3203 to subscribers with call blocking/screening services in order to Public Safety Important X X X X X X X X
+assist in the effectiveness of Emergency Notification Systems
+(Public Safety Mass Calling) and return calls from PSAPs.
+Page 110 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+Best
+Practice
+Number
+tenISE sPASP sPASP
+Original Best Practice Category Status
+The Service Provider and the Public Safety Agency or its
+agent that utilize Public Safety mass calling systems for
+8-7-3202 emergency notification should have a pre-established Public Safety Important X X X X X X X X X
+procedure to notify all impacted network operators, prior to
+launching an alert event.
+Network Operators, Service Providers and Public Safety
+organizations should consider participating in standards
+8-7-3205 Public Safety Important X X X X X X X X X
+bodies and other forums contributing to Emergency
+Telecommunications Services (ETS).
+CATV Service Providers, shall where practical, receive
+signals from local broadcasters via fiber as the primary source
+8-7-3209 with automatic fail over to the off-air signal as the secondary Public Safety Important X X X X X X X X X
+source, to support public notification in disasters or
+emergencies.
+Emergency Operations Centers and PSAPs should consider
+obtaining connections to provide video (for viewing local
+8-7-3210 weather and news information and monitoring distribution of Public Safety Important X X
+information over EAS), and utilize that connection to provide
+diverse access to the Internet and telecommunications.
+Page 111 of 112The Communications Security, Reliability and Interoperability Council III Working Group 8
+Final Report - Part 1 - June 2012
+Multimedia NG9-1-1 Legacy E9-1-1
+Best
+Practice Original Best Practice Category Status
+Number
+Page 112 of 112
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+tenISE sPASP
+seititnE
+rehtO
+sredivorP
+ycageL
+desaB
+tenretnI
+sesaB
+ataD
+emiT
+llaC
+dna
+llaC-erP
+snoitcnuF
+erawtfoS
+desaB
+NTSP
+sPASP
+Network Operators and Service Providers should consider
+8-7-3212 including notification of Public Safety Authorities, as Public Safety Important X X X X X X X X
+appropriate, in their trouble notification plans.

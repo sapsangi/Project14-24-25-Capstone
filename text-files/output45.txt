@@ -1,0 +1,622 @@
+PDF Content from https://transition.fcc.gov/pshs/advisory/csric4/CSRIC%20WG10%20CPE%20Powering%20Best%20Practices%20Final%20Draft%20v2%20082014.pdf:
+September, 2014 WORKING GROUP 10B
+CPE Powering – Best Practices
+Final Report – CPE PoweringThe Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+Table of Contents
+1 Results in Brief ......................................................................................................................... 3
+1.1 Executive Summary ......................................................................................................... 3
+2 Introduction .............................................................................................................................. 3
+2.1 CSRIC Structure ............................................................................................................... 4
+2.2 Working Group [#] Team Members ................................................................................ 4
+3 Objective, Scope, and Methodology ........................................................................................ 5
+3.1 Objective .......................................................................................................................... 5
+3.2 Scope ................................................................................................................................ 5
+3.2.1 Problem Statement .................................................................................................... 5
+3.2.2 Working Group Description ..................................................................................... 5
+3.2.3 Deliverables .............................................................................................................. 5
+3.3 Methodology .................................................................................................................... 6
+3.3.1 Methodology Overview ............................................................................................ 6
+3.3.2 Sub-Team Organization ............................................................................................ 6
+3.3.3 Sub-Team Approach ................................................................................................. 6
+4 Background .............................................................................................................................. 6
+5 Decsription of Common Use Cases ......................................................................................... 8
+6 Conclusion………………………………………………………………………………………………………………………………… 19
+7. Appendix –Best Practices ...................................................................................................... 20
+Page 2 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+1 Results in Brief
+1.1 Executive Summary
+Working Group 10 of the Communications, Security, Reliability, and Interoperability Council
+(CSRIC) is focused on addressing Customer Premise Equipment (CPE) Powering.
+“With the rapid proliferation of VoIP technologies as substitutes for legacy telecommunications
+services, end-users are now utilizing a service that lacks the lifeline they were once accustomed
+to. Instead of being powered from the resilient backup power infrastructure in the serving
+central office, the user’s home device is powered by a local battery when line power is lost, as
+often happens during emergencies. Different communications providers have different policies
+as it relates to powering these devices. This Working Group will recommend best practices for
+providing backup power to VoIP customer premises equipment, including best practices for
+consumer notification.”
+CSRIC Working Group 10 structured itself into two sub-groups to address CPE powering best
+practices and consumer notification. This report reviews best practices for nine use cases of
+VoIP service configurations commonly deployed in the United States. The appendix contains a
+compilation of all the best practices recommended by Working Group 10.
+2 Introduction
+The CSRIC was established as a Federal Advisory Committee designed to provide
+recommendations to the Federal Communications Commission (FCC) regarding best practices
+and actions the Commission can take to ensure optimal security, reliability, and interoperability
+of communications systems, including telecommunications, media and public safety
+communications systems. CSRIC created ten working groups, each with its own area of
+responsibility. Working Group 10 was charged with examining CPE powering best practices
+and consumer notification.
+Working Group 10 identified nine use cases that encompass VoIP deployments in the United
+States today. These use cases range from those that are typically deployed with battery backup
+today to those that are never or rarely deployed with battery backup. Increasingly, battery
+backup is being offered as an optional accessory to the consumer, which they can control and
+manage themselves. Use cases that currently have no battery backup options will be challenged
+to offer battery backup as an option to consumers, but working with their vendors we believe
+every use case is capable of supporting a higher reliability than today with battery backup.
+In addition to examining the best practices for the nine use cases, this report also looks at battery
+technology options being utilized in the industry today. Due to the confluence of battery
+technology and a wide variety of DC power options, some level of standardization is needed of
+DC power systems and interfaces, if VoIP services are to meet the reliability that consumers
+expect in the United States.
+Page 3 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+2.1 CSRIC Structure
+Communications Security, Reliability, and Interoperability Council (CSRIC) IV
+CSRIC Steering Committee
+Chair or Chair or Chair or Chair or Co- Chair or Chair or Co- Chair or Chair or Chair or Co- Chair or
+Co-Chairs: Co-Chairs: Co- Chairs: Co- Chairs: Co- Co-Chairs: Chairs: Co-
+Working Working Chairs: Working Chairs: Working Chairs: Working Working Chairs:
+Group 1 Group 2 Working Group 4 Working Group 6 Working Group 8 Group 9 Working
+Group 3 Group 5 Group 7 Group 10
+Working Working Working Working Working Working Working Working Working Working
+Group 1: Group 2: Group 3: Group 4: Group 5: Group 6: Group 7: Group 8: Group 9: Group
+Next Wireless EAS Cybersecurity Server- Long-Term Legacy Submarine Infrastructure 10: CPE
+Generation Emergency Best Practices Based Core Internet Best Cable Sharing Powering
+911 Alerts Working DDoS Protocol Practice Landing During
+Attacks Improvements Updates Sites Emergencies
+Table 1 - Working Group Structure
+2.2 Working Group 10 Team Members
+Working Group 10 consists of the members listed below.
+Name Company
+Lois Burns State of Pennsylvania
+John Healy FCC Representative
+Marte Kinder Time Warner Cable
+Brian Allen Time Warner Cable
+Tim Walden CenturyLink
+David Russell Calix
+Eric Dreas Comcast
+Haifeng Bi AT&T
+Mark Adams Cox
+Mike Nawrocki Verizon
+Thomas Schwengler CenturyLink
+Barry Umansky Ball State University
+Steve Pociask American Consumer Institute
+Table 2 - List of Working Group Members
+Page 4 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+3 Objective, Scope, and Methodology
+3.1 Objective
+Working Group 10’s objective is to compile a set of best practices related to the powering of
+consumer’s CPE devices for VoIP services. Because VoIP services are deployed in a variety of
+configurations the Working Group identified nine different use cases commonly used in the
+United States today. Most best practices are common across all use cases, but some use cases
+have more specific best practices.
+3.2 Scope
+3.2.1 Problem Statement
+With the transition of legacy telecommunications services to VoIP technology there have been a
+variety of consumer deployment models implemented by service providers. This transition has
+been accompanied by a shift from network power to local power of the network access device
+placed by service providers at the customer premises.
+This has placed increased importance on the best approaches to provide backup power for
+consumers during outages and how best to inform consumers regarding the differences with
+legacy telephone service. For the service provider, one of the greatest challenges is how to
+provide a reliable service given the wide range of technologies and the lack of any standards for
+DC power backup systems and interfaces. As an analogy, imagine trying to service the needs of
+all consumers in United States for AC powered devices if there was no standardized AC wall
+plug. It would lead to chaos.
+Even if a VoIP service has a good battery up system, the ability to provide power during outages
+is usually limited to a few hours. Best practices are needed to offer solutions that can last
+multiple days or even weeks, in case catastrophic damage, such as a major storm.
+3.2.2 Working Group Description
+Working Group 10 was tasked with defining best practices for the different types of VoIP
+deployments, each identified as a use case. Each use case is described and key differences in
+terms of the best practices are highlighted.
+3.2.3 Deliverables
+Each use case is described and an approach for providing battery backup is outlined,
+Best practices associated with the nine different VoIP deployment models are documented.
+Page 5 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+3.3 Methodology
+3.3.1 Methodology Overview
+Working Group 10 was made up primarily of service providers and other key industry
+stakeholders. The team met bi-weekly, but between meetings consulted with subject matter
+experts within the service providers and the vendor community.
+3.3.2 Sub-Team Organization
+Working Group 10 had two sub teams. The first sub-team focused on education and outreach.
+The second sub-team focused on defining the use cases commonly used in the United States
+today and best practices for and best practice aimed at ensuring reliable service during power
+outages.
+3.3.3 Sub-Team Approach
+The Best Practices Sub-Team Group began meeting in January, 2014 to discuss the scope of the
+sub-Team and to determine the subjects to be addressed. The Sub-Team performed an analysis
+of the methods and procedures commonly being offered by VoIP service providers in the United
+States today The team identified several deployment models that had gaps that could impact the
+reliability during electrical outages and recommended best practices to address these
+circumstances.
+4 Background
+The deployment of a VoIP service requires that analog voice signals are converted to IP utilizing
+a voice codec. These codecs support a variety of standards developed to support voice, fax and
+other legacy TDM services over IP. The codec function is referred to as the Analog Telephone
+Adapter (ATA) in this document.
+The ATA function is typically deployed in devices owned by the network operator, however, in
+several of the use cases the ATA function is being placed in consumer owned devices. This
+creates more challenges for battery backup of the VoIP service.
+One clear trend across all VoIP use cases is that battery backup is increasingly being offered as
+an option to the consumer, with the cost and maintenance of the UPS and batteries being the
+consumer’s responsibility. As a result, the Working Group approached each use case from the
+perspective of what was needed to provide battery backup and the challenges associated with
+that use case. This was particularly a challenge in those use cases that currently do not have a
+battery backup option.
+Page 6 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+A second trend was the desire for longer periods of battery backup. Due to recent catastrophic
+weather events and fears of future major power disruptions, the need for approaches that provide
+more flexibility and approaches that can last longer than a few hours of battery backup was a
+major focus of the sub-team.
+There are three types of battery technology commonly used with ATAs. They vary in their
+ability to address longer power outages, cost and ease of maintaining or replacing them.
+1. Lead Acid Batteries-These are the most common form of batteries used in
+communications systems, including UPS devices deployed in consumers’ homes. Lead
+acid provides the highest performance at the lowest cost of any of the technologies. The
+batteries tend to be large and somewhat bulky. They are available through battery
+retailers, some mass market retailers or through service providers. Lead acid batteries can
+be recharged and last many years.
+2. D Cell Alkaline Batteries-These are the most widely available batteries. Because they
+are sold my most retailers, D-cells are easy for consumers to purchase and maintain. As
+a primary battery type, these batteries are generally discharged once and then replaced.
+Products are coming to market that enable D Cells to support VoIP services over time
+periods comparable or longer than lead acid, and they must be replaced once discharged.
+During long catastrophic power outages D cells can easily be replaced with new batteries
+purchased at any retailer.
+3. Lithium Batteries-Noted for their small size and high performance, Lithium batteries are
+increasingly being used in PCs and other consumer devices. They are higher cost than
+the other battery technologies, but are expected to decrease in cost over time. Lithium
+batteries can be recharged, but may show aging effects. The versions used for network
+applications are not available through retailers today, but must be purchased through
+service providers or from the vendor of the CPE device.
+5 Description of Common Use Cases
+Nine use cases were identified that encompassed the deployment of VoIP services to consumers’
+Page 7 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+in the United States. After each use case is a recommended approach for battery backup. Best
+practices are described in the Appendix and the use cases that apply to them are identified.
+Use Case 1 ATA Function in Network Device Inside the Home
+Deployment Description
+The most commonly deployed model for VoIP services in the United States is to locate the ATA
+function in a network device, installed inside the living unit. Commonly used in hybrid fiber
+coax cable networks that use embedded multimedia terminal adapters (eMTA), twisted pair
+telephone (DSL) networks and increasingly Fiber-to-the-Home (FTTH) Optical Network Units
+(ONUs), also called ONTs.
+The network device provides at least one RJ-11 jack (phone line interface) to connect to
+traditional telephone handsets. Low voltage power is provided to the telephone handsets via the
+RJ-11 jack in the network device. Many ATAs can connect more than one phone line via
+additional jacks and also have other interfaces, such as RJ-45 Ethernet and USB ports.
+Battery Backup
+The network device, with the embedded ATA function, is powered directly by AC or through a
+UPS that converts AC to DC power. Network devices that are directly AC fed may have small
+Page 8 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+battery packs that consumers can install in their devices. These may be Alkaline or Lithium
+technology. UPS powered units typically use lead acid batteries. These battery backup
+approaches achieve 4-8 hours of backup time for voice services. New approaches are coming to
+market that use “D” cell batteries in conjunction with a power adapter or power strip. These
+devices achieve significantly greater backup power times and have an on-off switch so that
+consumers can make batteries last even longer during extended power outages.
+The Best Practices associated with this Use Case are identified by the number 1 in the Appendix.
+Use Case 2 ATA in Network Device Inside the Home-RF-Over-Glass (RFoG)
+Deployment Description
+Radio Frequency over Glass (RFoG) is a fiber deep hybrid fiber coax (HFC) architecture used
+by cable operators, in which the coax portion of the network is replaced by a single fiber passive
+optical network (PON). RFoG provides the same set of services as traditional cable networks,
+but with improved noise performance and reliability. An RFoG micro node (R-ONU) terminates
+the fiber connection at the premise. The R-ONU does not terminate VoIP traffic, but passes this
+traffic to an eMTA device with an embedded ATA. Therefore, this use case is the same as Use
+Case #1, except that the R-ONU sits at the edge of the house and does optical to electrical
+conversion...
+Battery Backup
+Both the R-ONU and the eMTA must have battery backup for the VoIP service to remain
+available during power outages. R-ONU deployments often utilize a UPS with a lead acid
+Page 9 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+battery. This UPS may be the same UPS that backs up the eMTA, or the eMTA may have its
+own embedded battery backup or UPS with battery backup. Current deployments of eMTAs
+support backup times of up to 8 hours of standby and 5 hours of talk time. Some R-ONUs and
+eMTAs support embedded internal batteries.
+Subscribers must be made aware that both the R-ONU and standalone eMTA require power in
+order for the VoIP service to operate. The subscriber must also be aware that during an AC
+power outage backup power is provided by either UPS battery or by internal batteries in the R-
+ONU and eMTA. Subscribers will need to check and maintain batteries in both devices to
+ensure continuing VoIP service during commercial AC power outages.
+The Best Practices associated with this Use Case are identified by the number 2 in the Appendix.
+Use Case 3 ATA Function in Network Device Outside the Home
+Deployment Description
+This use case is typically represented by a Fiber-to-the-Home (FTTH) system that incorporates
+an outdoor-mounted device known as an optical network unit or terminal (ONU/ONT). These
+deployments use a UPS or a wall transformer, but the outdoor deployment model typically uses
+the UPS. Having the network device mounted outdoors makes it easy connect to the various
+service cables entering the home.
+Battery Backup
+In most installations, a UPS containing lead acid batteries is mounted inside the home or garage
+Page 10 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+to provide battery backup in the event of a commercial power outage. These UPS devices with
+battery backup are also available in outdoor rated devices. Although the ONT may support
+multiple services, the backup capability is usually associated only with voice services or as a
+provisioned option with Ethernet based services. The length of backup time varies, but a
+common goal for the customer is to obtain 8 hours of standby battery backup.
+This use case provides similar opportunities for new approaches for backup battery design (such
+as “D” cell batteries) as described in Use Case 1.
+The Best Practices associated with this Use Case are identified by the number 3 in the Appendix.
+Use Case 4 ATA Function in Residential Gateway
+Deployment Description
+In this use case, the VoIP ATA function is embedded in a residential gateway (or RG) separate
+from the network access device. The network can be hybrid fiber coax, twisted pair, or FTTH.
+The network device may be located indoor or outdoor. The residential gateway (or RG) may
+also include a router, Wi-Fi and other functions, NAT, firewall, etc... A standard analog phone
+is connected to the RG via RJ-11. This deployment model is rare in the United States, since RGs
+do not typically have battery backup, so service providers usually prefer that the ATA function
+be placed in the network device. But a variety of RG vendors do include ATA functionality in
+their devices, so this use case could increase in the future.
+Page 11 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+Battery Backup
+In this use case, both the RG and the network device require battery backup, in order for the
+VoIP service to continue to operate during a power outage. Consumers should be made aware
+that the battery backup for the RG and the network device should not be used in an
+interchangeable manner nor should their batteries. If both the RG and the network device are
+not provided by the same service provider, the VoIP service provider should assume
+responsibility for providing the customer with clear information that without both devices being
+battery backed up, the VoIP service will not continue during a power outage.
+If properly sized, it is also possible for both devices to utilize the same UPS with battery backup.
+One approach would be to back up the RG with the ATA function, and then utilize Power-over-
+Ethernet (POE) to power the network device off the RG. An alternative is to power the RG with
+POE, using the network device with battery backup, as the power source.
+The Best Practices associated with this Use Case are identified by the number 4 in the Appendix.
+Use Case 5 Standalone ATA Device
+Deployment Description
+In this use case, the ATA function is provided in a separate standalone device.
+Page 12 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+These are most often used by VoIP application providers that provide a standalone ATA unit
+which connects to the network device via Ethernet. These standalone ATA devices are typically
+small boxes with Internet connectivity and one or more analog phone lines (RJ-11). Some also
+include speaker phones and higher value features.
+These devices are available from major electronics retailers or VoIP application providers.
+Today, these devices rarely have battery backup.
+Battery Backup
+It is important that VoIP service providers educate consumers about the implications of not
+having battery backup during a power outage, going forward battery backup solutions are an
+option for these VoIP services and service providers can educate the consumer on backup
+solutions about this option. Because these ATA devices are owned by and managed by the
+consumer, the “D” cell battery backup approach may make the most sense since the consumer
+then can easily purchase and maintain the battery backup unit.
+The Best Practices associated with this Use Case are identified by the number 5 in the Appendix.
+Use Case 6 ATA in Telephone
+Page 13 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+Deployment Description
+With the widespread adoption of VoIP services there is an expanding use of telephone handsets
+that have the ATA function embedded directly in the handset. These are primarily used in
+commercial settings, such as enterprises and hotels, in conjunction with VoIP PBX systems.
+But these systems are also being used in communal residential settings, such as master planned
+communities, continuous care communities with independent living units, “man camps”
+operated by mining and oil companies, and resort communities.
+Instead of the traditional analog phone connected to a network powered POTS line, the VoIP
+handset has embedded ATA functionality which connects via Ethernet to the network. The
+phone itself is stationary, as opposed to a mobile device. Power to the phone is provided either
+through an AC transformer that powers the phone or via Power-over-Ethernet (POE) where
+power is delivered via the Ethernet cable itself.
+Battery Backup
+VoIP phones that use simple AC-DC transformers do not have battery backup during
+commercial power failures. One solution is to power the phone using Power-Over-Ethernet
+(POE). Power is then provided via the Ethernet cable from the network device, which would
+utilize a UPS with battery backup. The network device could be an FTTH ONU, DSL modem
+or cable modem. Most of these units deployed today do not have POE capability, but a POE
+device could be provided when the consumer chooses to have battery back-up. Consumers will
+need to be educated by the VoIP service provider about POE and the option to maintain the
+battery backup to the source network device. Providing POE will reduce the battery backup
+time available to the network device due to the higher load.
+One key requirement for battery backup in this use case is that the Ethernet port, on the network
+device, must be provisioned by the service provider to stay in service during power outages.
+The Best Practices associated with this Use Case are identified by the number 6 in the Appendix.
+Page 14 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+Use Case 7 ATA in DECT Handset
+Deployment Description
+DECT is a global standard-Digital Enhanced Cordless Telecommunications. DECT is the basis
+for most retail cordless telephones sold in the United States.
+Since their introduction DECT cordless phones have connected to the network via a standard
+analog POTS interface in the DECT base station. These base stations are powered by an AC-
+DC transformer with no battery backup. Even though DECT cordless phones have small,
+batteries for in-home mobility, during power outages consumers are not able to make calls from
+DECT cordless phones, since the base station is powered by AC.
+DECT phones are now becoming available where the base station connects to the network over
+Ethernet. VoIP service can then be offered through an ATA embedded in the DECT handset.
+In the future, DECT base station technology may be integrated in other devices, including set
+top boxes or into network devices, such as cable or DSL modems, which may have battery
+backup capabilities.
+Page 15 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+Battery Backup
+DECT phones in use today use AC-to-DC transformers and have no mechanism for battery
+backup capability during power outages.
+Future network devices may integrate DECT base stations and enable battery backup of the
+DECT base station during commercial power outages. Alternatively, DECT base stations could
+be designed with battery backup units. If the base station was backed up, the batteries in the
+DECT handsets could be used to provide service during power outages. Most DECT handsets
+today use “AA” Alkaline batteries that are readily available from retailers.
+When service providers provide an embedded or standalone DECT base station, with battery
+backup, they will need to educate consumers that the backup includes the base station and that
+their cordless phones will be usable during the power outage.
+The Best Practices associated with this Use Case are identified by the number 7 in the Appendix.
+Use Case 8 Cellular Handset via Femtocell Base Station
+Page 16 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+Deployment Description
+This use case uses a regular cellular phone in a home with poor cellular network coverage.
+Cellular voice is transmitted as IP over the homes broadband access network connection via a
+Femtocell. This use case is expected to increase dramatically as consumers shift to using mobile
+phones as their primary phone at home. The Femtocell base station connects to the network
+device via Ethernet. Today the Femtocell is typically not backed up with batteries. Mobile
+phones can connect to the outside cellular network during power failure, assuming sufficient
+outdoor coverage.
+Battery Backup
+In this use case, both the Femtocell and the network device require battery backup in order for
+the cellular phone service to continue to work in the home during a power outage. If the
+Femtocell and the network device are not provided by the same service provider, the Femtocell
+service provider can provide the customer with clear information that without both devices being
+battery backed up, the service will not continue during a power outage. Service providers
+offering Femtocells will need to work with their Femtocell vendors can make battery backup
+available as an option to consumers.
+The Best Practices associated with this Use Case are identified by the number 8 in the Appendix.
+Page 17 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+Use Case 9 – Wireless Home Phone Devices
+Deployment Description
+This use case covers a range of wireless home phone devices containing a cellular radio, an
+ATA function, an antenna, RJ-11 POTS interface and integrated battery backup. The device is
+mounted conveniently in the home and relies on standard AC powering. These devices have
+become more prevalent in markets with good wireless coverage and in cases where the
+consumer is discontinuing their landline phone service. Consumers can then utilize standard
+cordless phones or standard POTS-type telephone devices in the home.
+Battery Backup
+Consumers who choose this service can be educated that the wireless access device will need
+proper battery maintenance to assure operation during commercial power outages. This is
+especially important because consumers using POTS-type telephone devices, in connection with
+this configuration in the home, may not be aware that their service is not powered by the service
+provider. Battery backup options for these fixed wireless units utilize either lead acid or
+commonly available retail batteries for backup operation.
+Consumers should maintain a traditional POTS-type telephone device in the home to use in
+conjunction with the backup operation of the wireless network access device during a power
+outage.
+Page 18 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+6 Conclusions
+The transition from traditional telephone service to VoIP presents challenges for maintaining the
+quality and reliability that some consumers may expect from their home voice service. Some
+consumers value the ability to maintain voice communications during power outages., The
+ability to communicate during outages due to catastrophic storms or other unpredictable events
+is not just about the consumers’ interest. Public safety officers, first responders and other public
+officials have a need to communicate with citizens through whatever means possible and
+emergency telephone can play an important role in this communication.
+While battery backup is not commonly used in all of the use cases outlined in this document, we
+determined there is a path to battery backup in each case. Service providers will need to be
+proactive in engaging with their equipment providers to ensure viable backup options are
+brought to market. This is particularly true for use cases that today do not generally offer a
+battery backup option. Feedback from consumers, however, illustrates that the need for back-up
+power is evolving, as consumers increasingly rely on their cell phones and other portable
+devices for emergency communications during a commercial power outage.
+We identified three areas where we recommend a more proactive approach by the FCC and
+industry to better address the challenges for reliable service across the various VoIP use cases:
+1. The choice of the type of battery and the technology available for managing and monitoring
+battery capacity offers the opportunity to greatly extend the reliability of the service during
+long power outages. “D” cell batteries are an example of how longer outages can be addressed
+through existing supply chains, at little cost to the consumer. Improvements in battery
+technology are also allowing “D” cells to approach the backup times of lead acid batteries on
+single charge discharges. The beauty of “D” cells is that they are easy for consumers to replace
+and are readily available in mass quantities through retailers.
+2. Power-over-Ethernet and other technologies offer the ability to power devices that might not
+be backed up today. POE is an established standard commonly used in hotels and other
+commercial applications. It could provide an easy to implement approach for backing up
+consumer ATAs that are connected to network devices with battery backup. Another example,
+deployed in a limited number of applications, solar powered network devices that rely on a
+renewable energy source, not dependent on the electrical grid. We encourage the FCC to
+further study the ability of these technologies to make a more sustainable power supply for CPE
+devices, such as VoIP ATAs.
+Page 19 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+3. The lack of any commonality or standards in DC power supplies negatively impacts the ability to
+back up VoIP systems. Every vendor of a DC powered CPE devices makes their own decisions on
+power adapters and interface connectors. As an example familiar to all consumers: Every
+time a consumer buys a new cordless or mobile phone, it comes with a different adapter and a
+different connector, even when they are from the same vendor. If the DC supply and interface
+connectors could be standardized, such as we have for AC, it would enhance vendors’ ability to
+design better battery backup systems that can be used across different use cases and different
+vendors’ equipment. Without these standards, the variety of approaches to premises powering
+is likely to get worse with the proliferation of different technologies and VoIP use cases.
+7 Appendix: Best Practices
+New Best Use Description
+Practice Cases
+Number
+New 01 1,2,3,4, Service providers should provide consumers an affordable
+5,6,7,8, option for battery backup of the CPE device that contains the
+9 ATA function. Service providers need to inform consumers
+of the implications for their voice service during power
+interruptions, if they choose not to have battery backup.
+New 02 1,2,3,4, Service providers should educate consumers of the need to be
+5,6,7,8, informed about the specific impact on their chosen VoIP use
+9 case, if not backed up with batteries during a power outage.
+New 03 1,3 Service providers should embed the ATA function in network
+devices that are easily backed up with batteries. Use cases
+that require multiple devices to be backed up with batteries
+should be discouraged by service providers as less reliable.
+New 04 2,4,5,6, Service providers should work with their network device and
+7,8,9 CPE vendors to develop approaches for battery backup for
+use cases where little or no backup is offered today.
+New 05 4,5,6,7, Service providers should work with their network device
+8,9 vendors to develop alternative powering technologies, such as
+Power-Over-Ethernet, so that network devices can act as
+sources to power cordless base stations and phones with
+embedded ATAs.
+New 06 1,2,3,4, Service providers should work with their vendors to provide
+5,6,7,8, consumers a mechanism for extending the time period of
+9 available battery power by including an on/off switch on the
+battery unit for use by consumers. This allows battery power
+to be saved for when calls need to be made
+Page 20 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+New 07 1,2,3,4, Local public safety officials should create disaster response
+5,6,7, plans that include plans for backup battery supplies in the
+8,9 same way they have a plans for food, water, and fuel during
+power outages.
+New 08 1,2,3,4, Service providers should work with their vendors to
+5,6,7,8, standardize on DC power supplies and connector interfaces
+9 for network devices and CPE so that a common battery
+backup unit can be used in the home, with multiple devices.
+New 09 1,2,3,4 Battery backup power is a finite resource, CPE equipment
+should by default turnoff all communication services, except
+voice when on battery. Voice line will be in standby mode.
+The difference between talk time and standby time as it
+relates to the depletion of backup battery is significant. Talk
+time (using the phone) will deplete the battery faster than
+when the phone is in standby mode (not being used).
+New 10 4,5,6,7, In those cases where VoIP service utilizes an Ethernet port on
+8 the network device, the Service Provider should ensure that
+the Ethernet port is powered during the commercial power
+outage.
+New 11 1,2,3,4, Service providers should have mechanisms in place to ensure
+5,6,7,8, adequate network capacity for emergency calls during
+9 commercial power outages.
+New 12 1,2,3,4, Service providers should offer consumers who choose battery
+5,6,7,8, backup spare batteries, at reasonable cost, for use during
+9 times of extended duration power outages or to replace
+batteries.
+New 13 1,2,3,4, To prolong battery and device reliability, the network or CPE
+5,6,7,8, device with the ATA function should be placed in a location
+9 that provides adequate ventilation (e.g. ensuring proper
+airflow exists around the device and vents are not blocked or
+restricted). Also ensure the ATA device is not placed in an
+unusually hot, cold or damp location.
+New 14 1,2,3,4, Service providers should work with their vendors to provide a
+5,6,7,8, mechanism to monitor battery status and determine whether
+9 the battery is degraded. This can be through remote
+monitoring of batteries as part of the service offered to
+consumers or through LEDS visible to consumers.
+New 15 1,2,3, The UPS or network device with ATA and embedded batteries
+4,5, can have LEDs for visual battery status monitoring. The LEDs
+6,7,8,9 for status of embedded batteries should include battery missing,
+battery charging, replace battery, and battery full.
+New 16 1,2,3,4, Indoor network devices must be grounded in compliance with
+5,6,7,8, applicable National Electric code standards and other
+9 applicable state and local ordinances
+New 17 3 Network devices with an embedded ATA function mounted
+outside must be properly grounded. A typical outdoor
+installation will include a ground plate on the enclosure that
+must be directly bonded to the building's AC utilities earth
+ground electrode using a #6 AWG copper conductor
+(stranded or solid).Service providers should follow Article
+250 of the NEC for appropriate grounding procedures.
+New 18 1,2,3,4, Service providers, as part of consumer education efforts,
+Page 21 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+5,6,7,8, should provide a full explanation of emergency use
+9 capabilities, battery backup units and how to access detailed
+information about battery backup as part of the service
+providers’ explanation of the service at the customer premise.
+New 19 1,2,3,5, Service providers should proactively notify consumers prior
+6,7, 8,9 to an anticipated extreme weather event. The service provider
+should include detailed information about emergency use
+capabilities, battery backup units, or how to access detailed
+information about battery backup units. This consumer
+outreach can be achieved through specifically designated
+storm preparation information, through routinely listed
+information on the provider’s website, or other means to
+ensure reaching all consumers.
+New 20 1,2,3,5, If service providers rely on any hardware to be placed at
+6,7,9 customer premise by the customer, they should provide a full
+explanation of operations during power outage, including
+detailed information about battery backup units, in their
+installation manual and on their website.
+New 21 1,2,3 Service providers that offer remote battery monitoring through
+status reporting telemetry should offer a battery replacement
+service for an additional fee to the consumer.
+New 22 2,4,5,6, Service providers should educate consumers that DC power
+7,8 supplies and batteries for network devices and other customer
+premises equipment are not interchangeable.
+New 23 1,2,3,4, Service providers with no battery monitoring capability should
+5,6,7,8, offer a voluntary program to notify consumers, who choose to be
+9 reminded, to check battery status based on the installation date,
+or the battery’s manufacturing date, and the theoretical average
+life expectancy of the battery.
+New 24 1,2,3,4, Service providers should provide information about where
+5,6,7,8, consumers can purchase replacement batteries, model numbers,
+9 and price on their website.
+New 25 1,2,3,4, Service providers should provide clear instructions to consumers
+5,6,7,8, as to the proper disposal/recycling options for their used
+9 batteries. The battery purchase or replacement process in the
+service provider agreement must instruct the subscriber on
+proper battery recycling or disposal. Batteries for recycling are
+accepted at no charge at various locations identified at
+www.call2recycle.org or 800-8BATTERY. It should be noted
+that that many localities and states have regulations regarding
+battery recycling.
+New 26 1,2,4,5, Service providers should offer consumers a battery recycling kit
+6,7,8 part of the battery backup service. The recycling kit is then sent
+to the customer along with the replacement battery. Upon
+receipt, the customer is to install the replacement battery, put the
+used battery in the recycling bag, affix the pre-paid shipping
+label to the bag, and ship the used battery to a pre-designated
+recycling center.
+New 27 1,2,3,4, Service providers should offer, as an option to consumers,
+5,6,7,8, the additional purchase of whole home power protection
+9 device placed at the main electrical panel to prevent damage
+Page 22 of 23The Communications Security, Reliability and Interoperability Council IV Working Group 10
+September, 2014
+Final Report
+to CPE devices, including the device with the ATA function
+during extreme weather conditions
+New 28 8 Service providers should ensure that users understand that both
+the network device and the Femtocell base station must work
+together to provide connectivity to the cellular phone. Assuming
+the in-home cellular coverage is poor, in order for a cellular
+phone to continue to work during a power outage through a
+Femtocell, both the network device and the Femtocell base
+station need to have battery backup.
+New 29 1,2,3,4, Service providers should offer detailed instructions along with
+5,6,7,8, step by step photos or drawings of the battery replacement
+9 procedure.
+Page 23 of 23

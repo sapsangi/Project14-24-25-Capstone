@@ -1,0 +1,821 @@
+PDF Content from https://www.fcc.gov/pshs/docs/advisory/csric/WG-4A-Final-Report.pdf:
+March 2010 WORKING GROUP 4A
+Best Practices for Reliable 9‐1‐1 and E9‐1‐1
+Final Report
+Final Report, submitted on 6/15/10CSRIC Working Group 4A – Best Practices for Reliable 9-1-1 and E9-1-1
+Final Report Outline
+1. Results in Brief
+1.1 Executive Summary
+2. Introduction
+2.1 Structure of CSRIC
+2.2 Working Group 4A Members
+3. Objectives, Scope and Methodology
+3.1 Objective
+3.2 Scope
+3.3 Methodology
+4. Background
+5. Analysis, Findings, and Recommendations
+5.1 Defining Geographic Coverage Areas for Public Safety Answering Points
+5.1.1 Standards
+5.1.2 Best Practices
+5.1.3 Related Documentation
+5.1.4 Gaps
+5.1.5 Recommendations
+5.2 Defining Network Diversity Requirements for Delivery of IP-enabled 9-1-1 and
+Enhanced 9-1-1 Calls
+5.2.1 Standards
+5.2.2 Best Practices
+5.2.3 Related Documentation
+5.2.4 Gaps
+5.2.5 Recommendations
+5.3 Call-handling in the Event of Call Overflow or Network Outages
+5.3.1 Standards
+5.3.2 Best Practices
+5.3.3 Related Documentation
+5.3.4 Gaps
+5.3.5 Recommendations
+5.4 Public Safety Answering Point Certification and Testing Requirements
+5.4.1 Standards
+5.4.2 Best Practices
+5.4.3 Related Documentation
+5.4.4 Gaps
+25.4.5 Recommendations
+5.5 Validation Procedures for Inputting and Updating Location Information in
+Relevant Databases
+5.5.1 Standards
+5.5.2 Best Practices
+5.5.3 Related Documentation
+5.5.4 Gaps
+5.5.5 Recommendations
+5.6 Format for Delivering Address Information to Public Safety Answering Points
+5.6.1 Standards
+5.6.2 Best Practices
+5.6.3 Related Documentation
+5.6.4 Gaps
+5.6.5 Recommendations
+6. Conclusions
+7. Appendix
+8. Acronym Descriptions
+-----------------------------------------
+1. Results in Brief
+1.1 Executive Summary
+The successful implementation of 9-1-1 and enhanced 9-1-1 (E9-1-1) for voice over IP (VoIP)
+services depends on the availability of, and adherence to, industry standards and best practices.
+In 2005, the FCC issued regulations requiring VoIP Service Providers (VSPs) to ensure that
+consumers of interconnected VoIP service have access to 9-1-1 and E9-1-11. This capability is
+now available in nearly all parts of the country2 (for fixed3 and nomadic4 interconnected VoIP
+service) due in large part to the availability of industry standards and best practices. However, a
+list of all currently applicable standards and best practices is not available in a single location.
+1 In the Matter of IP-Enabled Services; E9-1-1 Requirements for IP-Enabled Service Providers, WC Docket Nos.
+04-36 and 05-196, First Report and Order and Notice of Proposed Rulemaking, at ¶¶ 36-51, Rel. Jun. 3, 2005.
+2 The following is California specific availability data, to be seen as an example only;
+a) For 2009, 95% of all California’s Local Primary PSAPs are deployed with at least one VoIP Positioning Center
+(VPC) (373 of 393).
+b) For 2009, less than 1% of calls in CA are VoIP (145K are VoIP of the total 24.8M E911 calls).
+3 In this context the term “fixed” refers to an IP end-point that cannot move, is always in same location and always
+accesses a network from the same point (extracted from NENA Master Glossary of E9-1-1 Terms).
+4 A user is said to be nomadic if they are constrained within an access network such that their location can be
+represented as a definitive civic address for that network attachment. The user may move from one network
+attachment to another but cannot maintain a session during that move (extracted from NENA Master Glossary of
+E9-1-1 Terms).
+3This report is a compilation of existing industry standards and best practices concerning the
+implementation of 9-1-1 and E9-1-1 for interconnected VoIP services. It also identifies gaps that
+need to be addressed and identifies the appropriate groups to address the gaps. The areas
+covered in the report were originally identified in Section 101 of the New and Emerging
+Technologies 911 Improvement Act of 2008 (codified at 47 U.S.C. § 615a-1(h)) which required
+the FCC to develop several best practices related to the implementation of 9-1-1 and E9-1-1
+service for VoIP Service Providers. This report provides a list of best practices consistent with
+the requirements of the New and Emerging Technologies 911 Improvement Act.
+2. Introduction
+Section 101 of the New and Emerging Technologies 911 Improvement Act (codified at 47
+U.S.C. § 615a-1(h)) requires the FCC to develop several best practices related to the
+implementation of 9-1-1 service for IP-enabled voice service providers, commonly known as
+VoIP Service Providers. While the FCC was tasked with developing several best practices, a
+significant amount of this information has already been developed. Therefore, Working Group
+4A investigated and evaluated currently available 9-1-1 related VoIP standards and best practices
+related to E9-1-1 for completeness and identified gaps, including challenges related to
+implementation of such standards by interconnected VoIP Service Providers within the E9-1-1
+system. This report presents the results of an evaluation of currently available standards and best
+practices and recommends to CSRIC how to resolve any incomplete work and gaps and
+identifies and recommends what groups should perform that work.
+2.1 Structure of CSRIC
+42.2 Working Group 4A Members
+Working Group 4A consists of the following 25 members:
+• Anand Akundi, Telcordia
+• Steve Barclay, Alliance for Telecommunications Industry Solutions (ATIS)
+• Tom Breen, AT&T
+• James Byrd, Washington, DC Office of Unified Communications
+• Ann Marie Cederberg, Qwest
+• Craig Donaldson, Intrado
+• Brian Fontes, National Emergency Number Association (NENA) (Working Group 4A
+Co-Chair)
+• John Garner, AT&T
+• Roger Hixson, National Emergency Number Association (NENA)
+• Tim Hogle, Sprint Nextel
+• Randy Hughes, Bureau of Indian Affairs, Office of the CIO
+• Doug Jones, Verizon
+• Rick Kemper, CTIA
+• Rick Krock, Alcatel-Lucent
+• Danny Lovett, Charlotte-Mecklenberg Police Department
+• John Merklinger, City of Rochester, NY
+• Christian Militeau, Intrado
+• Bob Moseley, Grand Lodge of the Fraternal Order of Police (FOP)
+• Peter Musgrove, Alliance for Telecommunications Industry Solutions (ATIS) (Working
+Group 4A Co-Chair)
+• Steve O’Conor, West Palm Beach Police Department
+• Donna Pena, State of California, 9-1-1 Office
+• Greg Riddle, Association of Public-Safety Communications Officials (APCO),
+International
+• Greg Schumacher, Sprint
+• Norbert Snobeck, U.S. Department of Agriculture
+• Jerry Theuns, Motorola
+3. Objectives, Scope and Methodology
+3.1 Objective
+The objective of Working Group 4A was to investigate and identify currently available standards
+and best practices concerning the implementation of 9-1-1 and E9-1-1 for interconnected VoIP
+services. Where no current standards or best practices are available, the objective of the report is
+to identify gaps that need to be addressed and the appropriate groups to address the gaps.
+53.2 Scope
+The scope of this report is limited to standards and best practices related to the implementation of
+9-1-1 and E9-1-1 service for fixed and nomadic VoIP Services. The report does not address any
+issues related to implementation of 9-1-1 and E9-1-1 for mobile VoIP services and applications.5
+The Working Group recognizes that mobile VoIP services and applications are becoming
+increasingly available and 9-1-1 capabilities for such services must be considered. However, the
+Working Group determined that mobile VoIP services were beyond the scope of this report
+because currently there are no FCC 9-1-1/E9-1-1 requirements concerning mobile VoIP services
+(which are beyond the reach of the FCC’s current rules applicable to interconnected VoIP
+Service Providers). The Working Group also determined that any standards or best practices
+related to the internal functions of 9-1-1 System Service Providers (SSPs) responsible for
+completing 9-1-1 calls originated by a VoIP provider are beyond the scope of this report.
+3.3 Methodology
+To develop the contents of this report, Working Group 4A first determined the meaning and
+scope of the six subjects identified in the New and Emerging Technologies 911 Improvement
+Act for which the FCC was directed to develop best practices. Once there was agreement upon
+the meaning and scope of each subject, Working Group members researched existing 9-1-1
+standards and best practices from any sources that may have applicability to the identified areas.
+A list of current standards developed by the National Emergency Number Association (NENA),
+the Alliance for Telecommunications Industry Solutions (ATIS), the Internet Engineering Task
+Force (IETF) and through the FCC’s Network Reliability and Interoperability Council (NRIC)
+was created. Working group members discussed each of the identified standards to determine
+their applicability to the areas identified in the New and Emerging Technologies 911
+Improvement Act. Those current standards and best practices that were deemed applicable are
+identified in this report. Standards or best practices that were beyond the Working Group’s
+scope were omitted. Finally, based on this research and review, the Working Group was able to
+determine where gaps exist and to recommend who should address the gaps.
+4. Background
+As described above, the catalyst for the work done by Working Group 4A was language included
+in federal legislation directing the FCC to develop several best practices related to the
+implementation of 9-1-1 and E9-1-1 service for VoIP Service Providers. Specifically, Section
+101 of the New and Emerging Technologies 911 Improvement Act (codified at 47 U.S.C. §
+615a-1(h)) requires the FCC to develop several best practices related to the implementation of
+IP-enabled voice service providers.6 The statute states as follows:
+5 In the context of location information to support IP based emergency services: A user is said to be mobile if they
+are able to change access points while preserving all existing sessions and services regardless of who is providing
+the access network, and their location may be definitively represented by a geographic co-ordinates but only
+indicatively represented by a civic address (extracted from NENA Master Glossary of E9-1-1 Terms).
+6 As used in this document, the term IP-enabled voice service provider and Voice over-IP service provider are
+synonymous.
+6‘‘(h) DEVELOPMENT OF STANDARDS.—The Commission shall work cooperatively
+with public safety organizations, industry participants, and the E–911 Implementation
+Coordination Office to develop best practices that promote consistency, where appropriate,
+including procedures for—
+‘‘(1) defining geographic coverage areas for public safety answering points;
+‘‘(2) defining network diversity requirements for delivery of IP-enabled 9–1–1 and
+enhanced 9-1-1 calls;
+‘‘(3) call-handling in the event of call overflow or network outages;
+‘‘(4) public safety answering point certification and testing requirements;
+‘‘(5) validation procedures for inputting and updating location information in relevant
+databases; and
+‘‘(6) the format for delivering address information to public safety answering points.”
+5. Analysis, Findings, and Recommendations
+5.1 Defining Geographic Coverage Areas for Public Safety Answering Points
+For the E9-1-1 system to properly function, every PSAP must have a jurisdictional service
+boundary in order for originating service providers (wireline, wireless, VoIP) to determine where
+to route calls. For nomadic VoIP7, which currently uses an interface method similar to CMRS
+E9-1-1 service, boundaries are contained in GIS shape files that are utilized for 9-1-1 call
+routing. However, some PSAPs that are not yet wireless E9-1-1 Phase II capable8 or lack a GIS
+system may not have shape files. The process to develop and access shape files was a significant
+problem with the initial deployment of VoIP E9-1-1 service.
+5.1.1 Standards
+The following standards already developed apply to this issue and should be implemented by
+VoIP service providers:
+02-010 NENA Standard Data Formats for ALI Data Exchange & GIS Mapping (see
+sections on MSAG and GIS Model data)
+-http://www.nena.org/standards/technical/data-formats-ALI-MSAG-GIS
+This document sets forth NENA standard formats for data exchange between Service Providers
+and Data Base Management System Providers, a GIS data model, a Data Dictionary, and formats
+for data exchange between the ALI Database and PSAP Controller equipment.
+02-014 NENA GIS Data Collection and Maintenance Standards
+-http://www.nena.org/standards/technical/data/gis-data-collection-maintenance
+7 Cable based VoIP uses civic addresses and interfaces to E9-1-1 similarly to wireline service, requiring only the
+normal MSAG based routing control. Shape files are not needed for this form of VoIP.
+8 As of March 2, 2010, 88.3% of 3,135 counties, covering 96.5% of the population, have PSAPs capable of
+receiving Phase II wireless 9-1-1 calls. 94% of primary PSAPs are Phase II capable. (Source: NENA)
+7This document is the NENA recommended standard for GIS data collection and GIS data
+maintenance. The document is meant to provide PSAP management, vendors, and other
+interested parties necessary guidelines for collecting and maintaining GIS data.
+5.1.2 Best Practices
+No current best practices were identified that apply to this issue.
+5.1.3 Related Documentation
+56-504 NENA VoIP Deployment and Operational Guidelines (see section 3.7)
+-http://www.nena.org/operations/standards/voip-deployment-operational-guidelines
+This document has been developed as a best practice for the deployment of VoIP E9-1-1 service.
+As such, its primary goal is to set expectations and improve communications among the parties
+involved in the deployment process. The intent of this document is to offer guidance to VoIP
+Service Providers, 9-1-1 Governing Authorities and PSAP Managers/Administrators prior to and
+during the process of VoIP E9-1-1 deployment. This document specifically addresses VoIP E9-
+1-1 deployments using dynamic ALI. It does not cover static VoIP using traditional wireline
+ALI.
+57-001B “PSAPs Guide to GIS – NENA White Paper (addressing wireless E9-1-1
+implementation issues)
+-http://www.nena.org/standards/operations/psap-guide-gis
+This paper includes information on how to best process wireless information coming into the
+PSAP. Any PSAP that is now, or will be, receiving wireless calls will find this paper useful. This
+focus of this paper is how to best utilize GIS for wireless calls in the PSAP.
+NOTE: 57-001B is applicable herein, with the understanding that only the shape file generation
+content is applicable to VoIP calls (the rest is wireless-specific).
+5.1.4 Gaps
+5.1.4.1 CSRIC WG 4A was unable to identify any existing Best Practices that apply
+specifically to this item. This is seen as a gap that should be filled.
+5.1.4.2 VoIP Geocoded Address Inaccuracies – Issue/Gap:
+When a traditional 9-1-1 call handled by a VSP is received at the PSAP, sometimes the
+latitude/longitude (lat/lon) does not correlate exactly to the actual address. Some
+PSAPs may be receiving the VPC geocoded lat/lon with the VoIP calls from the
+registered address of fixed and nomadic customers, but this has proved inaccurate in the
+PSAP mapping equipment. At the PSAP, the CAD or GIS plots the lat/lon but
+sometimes it does not align with the address provided.
+WG 4A recognizes a need to update or create applicable documents to promote best
+practices to avoid this situation.
+The BP could be based on this example:
+For VoIP class of service calls, the lat/lon geocoded from the subscriber address should
+8not be sent to the PSAP, until a completely accurate and synchronized street layer is
+commonly used between the PSAP and the VPC. This reduces confusion for the call
+taker and only presents the most accurate and reliable information for dispatching.
+5.1.4.3 Common Baseline Imagery for Routing and Mapping – Issue/Gap: VoIP routing is
+based upon GIS and mapped jurisdictions which are not always accurately based upon
+a common set of imagery. Currently 9-1-1 Authorities need to use self-obtained
+imagery to align GIS maps with actual accurate data to align streets and jurisdictional
+boundaries. This is costly and requires updates depending on the cultural development.
+In addition, this common imagery can be used at the PSAP’s mapping equipment to
+help with emergency response. Working in a win-win environment, National
+Geospatial-Intelligence Agency could provide timely and accurate imagery and in
+return can obtain the accurate PSAP jurisdictional boundaries for their Homeland
+Security Infrastructure Protection (HSIP) Program.
+The BP could be based on this example:
+Allow public safety authorities access to DHS – NGA (Dept. of Homeland Security –
+National Geospatial-Intelligence Agency) data that can be provided on a monthly basis
+or as needed. Promote that 9-1-1 is of importance for public safety and to National
+Intelligence.
+5.1.5 Recommendations
+CSRIC WG 4B should use the input provided by WG 4A (above and herein as applicable) to
+update existing NRIC BPs to make it clear that the appropriate stakeholder(s) should consider
+adopting them. Also WG 4B should create new BPs where WG 4A has identified there are no
+existing BPs to cover specific subject matter applicable to reliable delivery of 9-1-1 calls in a
+VoIP environment.
+5.2 Defining Network Diversity Requirements for Delivery of IP-enabled 9-1-1 and
+Enhanced 9-1-1 Calls
+There are numerous NENA and NRIC standards and best practices that address network
+diversity. There are no known diversity requirements unique to VoIP service from the service
+provider to the Selective Routing switch. Therefore current standards, though not written
+specifically for VoIP, apply equally to VoIP. However, some NRIC best practices may need to
+be updated to specifically refer to VoIP as type of originating service. From the Selective Router
+to the PSAP, there is no need for VoIP only trunks since VoIP 9-1-1 calls route over current
+trunk types. Therefore, standards and best practices for wireless or wireline 9-1-1 diversification
+apply to VoIP as well.
+5.2.1 Standards
+The following existing standards apply to this issue and should be implemented by VoIP service
+providers:
+903-006 NENA Standards for E9-1-1 Call Congestion Management: NENA E9-1-1 Technical
+Standard that defines network diversity requirements (see section 2.3)
+-http://www.nena.org/standards/technical/network/e911-call-congestion-management
+This document provides a framework for consideration of the various factors impacting the
+management of call congestion and traffic engineering for E9-1-1 networks. A network reference
+model is provided for use in referring to generic E9-1-1 network entities. This is followed by a
+section that outlines generally accepted industry practices for traffic engineering for E9-1-1
+networks. This document is intended to provide greater parity among all any type of E9-1-1 call,
+regardless of the source of its origination (wireless, traditional landline, VoIP, PBX/MLTS, etc.).
+57-001 Wireless E9-1-1 Overflow, Default and Diverse Routing Operational Standard
+-http://www.nena.org/standards/operations/wireless-call-routing
+This document was developed to provide guidance in the routing development associated with
+wireless Phase I and Phase II deployment efforts. This document provides recommended
+terminology definitions, describes each call routing scenario, and associated routing
+recommendations.
+NOTE: 57-001 is applicable for item 5.2 with the caveat that only the diverse routing content is
+applicable to VoIP calls (the rest is wireless-specific).
+03-008 NENA Standard for E9-1-1 Default Assignment and Call Routing Functions
+-http://www.nena.org/standards/technical/network/e911-default-assignment-call-routing-
+functions
+This document provides an overview of various database and network specifications and
+requirements related to Default Routing of 9-1-1 calls. It is intended to help local authority;
+database and/or network administrators select a model for the development of standard default
+routing arrangements. It identifies and defines methods used to assign defaults and route 9-1-1
+calls when circumstances prevent normal selective routing.
+08-001 NENA Interim VoIP Architecture for Enhanced 9-1-1 Services (i2) (see section 2.8)
+-http://www.nena.org/standards/technical/voip/interim-voip-architecture-i2
+This document is the NENA recommended standard for the i2 architecture to support the
+interconnection of VoIP domains with the existing Emergency Services Network infrastructure
+in support of the migration toward end-to-end emergency calling over VoIP networks between
+callers and PSAPs.
+5.2.2 Best Practices
+The following existing best practices apply to this issue and VoIP Service Providers should
+consider adopting them (although some may need modification to specifically include VoIP or
+VSPs):
+BP 7-7-0566
+Network Operators and Service Providers should consider placing and maintaining 9-1-1 circuits
+over diverse interoffice transport facilities (e.g., geographically diverse facility routes,
+automatically invoked standby routing, diverse digital cross-connect system services, self-
+1 0healing fiber ring topologies, or any combination thereof).
+[Also see Gap statement 5.2.4 below.]
+BP 7-7-0567
+Network Operators and Service Providers should spread 9-1-1 circuits over similar pieces of
+equipment to avoid single points of failure (SPOF). They should also mark each plug-in level
+component and frame termination with a red tag to notify maintenance personnel that the
+equipment is used for critical, essential services and is to be treated with a high level of care.
+[Also see Gap statement 5.2.4 below.]
+BP 7-7-0575
+Network Operators and Service Providers should deploy Diverse Automatic Location
+Identification systems used in Public Safety (e.g., Automatic Location Identification and Mobile
+Positioning Center systems) in a redundant, geographically diverse fashion (i.e. two identical
+ALI/MPC data base systems with mirrored data located in geographically diverse locations).
+[Also see Gap statement 5.2.4 below.]
+BP 7-7-3224
+E9-1-1 Dedicated Trunking: Network Operators and Service Providers should use dedicated
+Signaling System 7 (SS7) or Multi Frequency (MF) controlled trunk groups for the normal
+routing of E9-1-1 calls from originating switching entities to E9-1-1 Selective Routers rather
+than using shared Public Switched Telephone Network trunking.
+5.2.3 Related Documentation
+03-501 NENA Network Quality Assurance
+-http://www.nena.org/standards/technical/network/network-quality-assurance
+This Technical Information Document (TID) details NENA’s recommendations on how to
+design and deploy fault tolerant networks that eliminate, to the greatest extent possible, single
+points of failure that will prevent the successful routing of 9-1-1 calls. (See especially section 3)
+03-508 NENA Impacts of Using a Common Trunk Group to Carry Calls of Multiple
+Service Types Into a Legacy Selective Router
+The purpose of this document is to discuss the impacts upon the E9-1-1 system when multiple
+service types of E9-1-1 calls are delivered over one common E9-1-1 trunk group. PSAP and E9-
+1-1 operations may be impacted if calls from multiple service types (i.e. wire-line, wireless,
+WiFi, cable, etc) are combined on a single trunk group from a carrier’s or aggregator’s network
+to the E9-1-1 service provider’s selective router or E9-1-1 tandem.
+5.2.4 Gaps
+The following gaps exist for this issue and should be addressed:
+5.2.4.1 CSRIC WG 4A believes BP 7-7-0566, 7-7-0567 (and others) need to be reviewed and
+investigated to determine applicability to VoIP, and then updated as needed to
+specifically address VoIP and VSPs.
+1 15.2.4.2 CSRIC WG 4A believes BP 7-7-0575 needs to be modified to clarify its applicability to
+VoIP by stipulating that VoIP Positioning Center systems (VPC) should also be
+considered as covered elements, along with ALI and MPC.
+5.2.4.3 See section 5.4.4, ESGW Testing gap, which may also apply here.
+5.2.5 Recommendations
+CSRIC WG 4B should use the input provided by WG 4A (above and herein as applicable) to
+update existing NRIC BPs to make it clear that the appropriate stakeholder(s) should consider
+adopting them. Also WG 4B should create new BPs where WG 4A has identified there are no
+existing BPs to cover specific subject matter applicable to reliable delivery of 9-1-1 calls in a
+VoIP environment.
+5.3 Call-handling in the Event of Call Overflow or Network Outages
+At a minimum VoIP service should be handled in the same manner and with the same quality of
+service as other classes of service, including call overflow and network outage conditions.
+5.3.1 Standards
+The following existing standards apply to this issue and should be implemented by VoIP service
+providers and their related ESGW network providers:
+03-006 NENA Standard for E9-1-1 Call Congestion Management:
+NENA E9-1-1 Technical Standard that defines network diversity requirements (see section 2.3)
+-http://www.nena.org/standards/technical/network/e911-call-congestion-management
+This document provides a framework for consideration of the various factors impacting the
+management of call congestion and traffic engineering for E9-1-1 networks. A network reference
+model is provided for use in referring to generic E9-1-1 network entities. This is followed by a
+section that outlines generally accepted industry practices for traffic engineering for E9-1-1
+networks.http://www.nena.org/media/File/NENAopsWirelessRoutingStandardfinal111804.pdf
+03-008 NENA Standard for E9-1-1 Default Assignment and Call Routing Functions
+-http://www.nena.org/standards/technical/network/e911-default-assignment-call-routing-
+functions
+This document provides an overview of various database and network specifications and
+requirements related to Default Routing of 9-1-1 calls. It is intended to help local authority;
+database and/or network administrators select a model in the development of standard default
+routing arrangements. It identifies and defines methods used to assign defaults and route 9-1-1
+calls when circumstances prevent normal selective routing.
+57-001 Wireless E9-1-1 Overflow, Default and Diverse Routing Operational Standard
+-http://www.nena.org/standards/operations/wireless-call-routing
+This document was developed to provide guidance in the routing development associated with
+wireless Phase I and Phase II deployment efforts. This document provides recommended
+1 2terminology definitions, describes each call routing scenario, and associated routing
+recommendations.
+NOTE:57-001 is applicable for item 5.3 with the caveat that only the diverse routing content is
+applicable to VoIP calls (the rest is wireless-specific).
+5.3.2 Best Practices
+The following best practices already developed apply to this issue and VoIP service providers
+should consider adopting them (although some may need modification to specifically include
+VoIP or VSPs):
+BP 7-7-0574
+Network Operators and Service Providers should remotely monitor and manage the 9-1-1
+network components using network management controls, where available, to quickly restore 9-
+1-1 service and provide priority repair during network failure events.
+[Also see Gap statement 5.3.4 below.]
+BP 7-7-0758
+Network Operators and Service Providers should, upon restoration of service in the case of an
+outage where 9-1-1 call completion is affected, make multiple test calls to the affected PSAP(s)
+to ensure proper completion.
+5.3.3 Related Documentation
+03-501 NENA Network Quality Assurance
+-http://www.nena.org/standards/technical/network/network-quality-assurance
+This TID details NENA’s recommendations on how to design and deploy fault tolerant networks
+that eliminate, as much as possible, single points of failure that will prevent the successful
+routing of 9-1-1 calls. (See especially section 3)
+56-504 NENA VoIP Deployment and Operational Guidelines: minimum requirements for
+VoIP E9-1-1 Implementation Guidelines – defines minimum testing, training and technical
+maintenance issues required for providers to interconnect to the E9-1-1 system (see especially
+section3.7.3)
+-http://www.nena.org/operations/standards/voip-deployment-operational-guidelines
+This document has been developed as a best practice for the deployment of VoIP E9-1-1 service.
+As such, its primary goal is to set expectations and improve communications among the parties
+involved in the deployment process. The intent of this document is to offer guidance to VoIP
+Service Providers, 9-1-1 Governing Authorities and PSAP Managers/Administrators prior to and
+during the process of VoIP E9-1-1 deployment. This document specifically addresses VoIP E9-
+1-1 deployments using dynamic ALI. It does not cover static VoIP using traditional wireline
+ALI.
+1 35.3.4 Gaps
+The following gaps exist for this issue that should be addressed:
+5.3.4.1 Upon CSRIC WG 4A‘s first look into NRIC BP 7-5-0569 it appeared that it may apply
+to item 5.3 (Call-handling in the Event of Call Overflow or Network Outages).
+However, further analysis determined this BP should not be applicable to any 9-1-1 call
+delivery stakeholders “as written”. CSRIC WG 4A does not want any 9-1-1 call
+delivery stakeholders, VSP or otherwise, bypassing acceptable congestion control
+techniques. Therefore, this is a gap in the NRIC BPs, because it is not worded correctly
+and needs to be updated.
+5.3.4.2 CSRIC WG 4A believes BP 7-7-0574 (and others) need to be reviewed and
+investigated to determine applicability to VoIP, and then updated as needed to
+specifically address VoIP and VSPs
+5.3.5 Recommendations
+CSRIC WG 4B should use the input provided by WG 4A (above and herein as applicable) to
+update existing NRIC BPs to make it clear that the appropriate stakeholder(s) should consider
+adopting them. Also WG 4B should create new BPs where WG 4A has identified there are no
+existing BPs to cover specific subject matter applicable to reliable delivery of 9-1-1 calls in a
+VoIP environment.
+5.4 Public Safety Answering Point Certification and Testing Requirements
+Minimum requirements and testing requirements are usually determined by local 9-1-1
+governing authorities working in connection the 9-1-1 System Service Provider (SSP).
+Generally, minimum requirements are established over an entire service area by the SSP, but
+there may be additional requirements established by the 9-1-1 Governing Authority.
+5.4.1 Standards
+No existing standards were identified that apply to this issue.
+5.4.2 Best Practices
+The following best practices already developed apply to this issue and VoIP service providers
+should consider adopting them (although some may need modification to specifically include
+VoIP or VSPs):
+BP 7-7-0577
+Network Operators, Service Providers and Public Safety Agencies responsible for PSAP
+operations should jointly and periodically test and verify that critical components (e.g., automatic
+re-routes, PSAP Make Busy keys) included in contingency plans work as designed.
+1 4NOTE: BP 7-7-0579, 7-7-0599, 7-7-3211 are also applicable, but highly redundant to 7-7-0577.
+They all address disaster planning and testing of such plans on a routine basis. Perhaps those four
+BPs should be reevaluated to see if they could be combined into one comprehensive BP covering
+this subject. CSRIC WG 4A stops short of describing this as a “gap”, but does feel it deserves
+consideration as other BP related gaps might be addressed in the future.
+BP 7-7-0655
+Network Operators, Service Providers and Property Managers should coordinate hurricane and
+other disaster restoration work with electrical and other utilities as appropriate.
+BP 7-7-0780
+Network Operators and Service Providers should consider including coordination information of
+Public Safety Authorities when developing disaster restoration and prioritization plans.
+NOTE: BP 7-7-0655 and 7-7-0780 don’t exactly fit item 5.4, but it appears to be the most
+appropriate section.
+5.4.3 Related Documentation
+56-504 NENA VoIP Deployment and Operational Guidelines: minimum requirements for
+VoIP E9-1-1 Implementation Guidelines – defines minimum testing, training and technical
+maintenance issues required for providers to interconnect to the E9-1-1 system. (see sections 3.5
+and 5.1)
+-http://www.nena.org/operations/standards/voip-deployment-operational-guidelines
+This document has been developed as a best practice for the deployment of VoIP E9-1-1 service.
+As such, its primary goal is to set expectations and improve communications among the parties
+involved in the deployment process. The intent of this document is to offer guidance to VoIP
+Service Providers, 9-1-1 Governing Authorities and PSAP Managers/Administrators prior to and
+during the process of VoIP E9-1-1 deployment. This document specifically addresses VoIP E9-
+1-1 deployments using dynamic ALI. It does not cover static VoIP using traditional wireline
+ALI.
+ATIS-0500009: High Level Requirements for End-to-End Functional Testing (ESIF
+Technical Report)
+- http://www.atis.org/docstore/product.aspx?id=22695
+This document concerns wireless (cellular) E9-1-1 testing, but does have information on testing
+that relates to all elements of the emergency services network and the PSAP CPE/ALI network,
+so some parts may be applicable to those common system elements also used by VoIP E9-1-1
+service.
+5.4.4 Gaps
+The following gaps exist for this issue that should be addressed:
+1 55.4.4.1 BP 7-7-0488 is not directly applicable to VoIP, but the concepts as written for wireless
+can be applicable to VSPs. Therefore, this NRIC BP, like others really constitutes a gap
+in the NRIC BPs because as written it is wireless specific. CSRIC WG 4A believes this
+BP (and others) need to be reviewed and investigated to determine applicability to VoIP
+and then updated as needed to specifically address VoIP and VSPs.
+5.4.4.2 WG 4A recognizes a need for a new CSRIC sanctioned BP supporting the notion that
+VSPs should consider following the NENA recommendation to test all ESQKs before
+use. Such a BP should also address the gap surrounding the need for an up to date
+provisioned ESQK list to allow the VPC operators to know which ESQKs to test.
+5.4.4.3 VSP Campus Testing – Issue/Gap:
+When campus or enterprise systems convert to VoIP, the customer address provisioning
+performed by installers can be inaccurate and result in misrouted E9-1-1 calls. As such,
+WG 4A recognizes a need to update or create applicable documents to promote best
+practices for VoIP that are similarly used for legacy PBX environments, and encourage
+VoIP service and equipment providers to perform additional testing for large or higher
+risk environments. We recommend that VPCs include additional testing. The BP
+should recognize that the Campus end user customer is an important stakeholder in this
+effort, and should encourage them to participate in testing with the VSP and equipment
+providers.
+The BP could be based on this example:
+VPCs can require additional testing for environments that have a high user capacity.
+This immediately reduces the risk of misrouting a block of callers at a particular facility
+and in turn reduces the liability for entities.
+5.4.4.4 ESGW Testing – Issue/Gap:
+When a VPC changes an ESGW provider, end-to-end testing is not always performed,
+which creates a risk of not delivering E9-1-1 calls.
+WG 4A recognizes a need to update or create applicable documents to promote best
+practices to avoid this situation
+The BP could be based on this example:
+VPC shall coordinate and perform necessary testing of all new paths with ESRNs to
+make sure E9-1-1 calls are being delivered.
+5.4.4.5 VSP Voice call compression – Issue/Gap:
+VoIP calls do not come through as clearly as traditional analog or digital calls for E9-1-
+1. VSPs compress calls to maximize capacity within their networks, in which 9-1-1
+calls are not given any priority or special treatment to ensure that all possible voice
+quality and background sounds are accurately heard by the PSAP call taker.
+WG 4A recognizes a need to update or create applicable documents to promote reliable
+1 6and higher quality E9-1-1 Voice over IP for the PSAP. Specific considerations will
+need to be made based upon the available IP connection bandwidth in a fixed or
+nomadic environment.
+The BP could be based on this example:
+For 9-1-1 calls, the VSP shall prioritize the voice data and use the highest quality
+compression CODEC available. Since this only pertains to a small percentage of actual
+call volume, the VSP should be able to accommodate providing reliable and quality
+service.
+ALTERNATE APPROACH TO VSP VOICE CALL COMPRESSION:
+VSP UAC’s must set priority on emergency calls (SIP resource priority – RFC 4412).
+They should also apply a toll quality CODEC (G.711 or better) and to the extent
+possible, apply prioritization of elements in their control (proxies, etc.) over call control
+aspects.
+Additionally, the VSP should adhere to the recommendations in the IETF phonebcp for
+UAC design. Although it is still in draft, it is presumed to become an IETF RFC soon.
+Here is a link: http://tools.ietf.org/html/draft-ietf-ecrit-phonebcp-14
+5.4.5 Recommendations
+CSRIC WG 4B should use the input provided by WG 4A (above and herein as applicable) to
+update existing NRIC BPs to make it clear that the appropriate stakeholder(s) should consider
+adopting them. Also WG 4B should create new BPs where WG 4A has identified there are no
+existing BPs to cover specific subject matter applicable to reliable delivery of 9-1-1 calls in a
+VoIP environment.
+5.5 Validation Procedures for Inputting and Updating Location Information in
+Relevant Databases
+The exact intent of Congress is unclear in the language “validation procedures for inputting and
+updating location information in relevant databases.” The location validation procedure for
+VoIP using a registered address would either occur when data is entered into the database of a
+VoIP provider or in a VPC database. The likely issue here is acquiring MSAG information and
+getting it to either the VoIP or VPC provider. In large part, the issue may be concerned with the
+process of obtaining MSAG data from the controller of the MSAG data, either a 9-1-1 System
+Service Provider or the 9-1-1 Governing Authority. This may be more of a business or process
+issue than a standards or best practices issue. Best practices/processes are being defined for
+location data in publishable databases maintained by public safety, accessible by authorized
+service providers, for NG9-1-1.
+1 75.5.1 Standards
+The following existing standards apply to this issue and should be implemented by VoIP service
+providers:
+04-005 v1 NENA ALI Query Service (AQS) Standard
+http://www.nena.org/standards/technical/cpe/ali-query-service
+This document defines the NENA XML ALI Query Service (AQS) that specifies new
+protocols between the PSAP and the Next Generation Emergency Services Network
+(NGESN). It provides the rationale behind the AQS and how it relates to the current ALI
+protocol. It also provides an overview of implementation alternatives (bindings) described in
+detail within the document.
+NENA Addressing Systems (physical book)
+A TRAINING GUIDE FOR 9-1-1
+www.nena.org/store (at the above web page, select “Books”, then scroll to find this item)
+The goal of any addressing system is to create an efficient system that is geared toward public
+safety, is usable and understandable, is easy to maintain, and can be used by everyone, even a
+child. This sounds easy, but as those who are involved with addressing will bear witness, it is not
+straightforward or a simple task to accomplish. It requires planning, organization, coordination,
+cooperation, and an eye for detail.
+Most areas use a combination of addressing systems covered in this book. Some addressing
+schemes work better in urban areas, some work better in rural areas, and many are a hybrid of
+two or more addressing schemes. The factors that determine the approach to use for addressing
+always come down to a few basics. The addressing system used must be easy to follow, easy to
+understand, easy to update, and easy to maintain.
+5.5.2 Best Practices
+No existing best practices were identified for this issue.
+5.5.3 Related Documentation
+56-504 NENA VoIP Deployment and Operational Guidelines: minimum requirements for
+VoIP E9-1-1 Implementation Guidelines – defines minimum testing, training and technical
+maintenance issues required for providers to interconnect to the E9-1-1 system. See section 3.7
+regarding validation.
+-http://www.nena.org/media/File/NENAVoIPDeploymentOIDfinal060606a.pdf
+This document has been developed as a best practice for the deployment of VoIP E9-1-1 service.
+As such, its primary goal is to set expectations and improve communications among the parties
+involved in the deployment process. The intent of this document is to offer guidance to VoIP
+Service Providers, 9-1-1 Governing Authorities and PSAP Managers/Administrators prior to and
+during the process of VoIP E9-1-1 deployment. This document specifically addresses VoIP E9-
+1 81-1 deployments using dynamic ALI. It does not cover static VoIP using traditional wireline
+ALI.
+5.5.4 Gaps
+5.5.4.1 CSRIC WG 4A was unable to identify any existing Best Practices that apply
+specifically to this item. This is seen as a gap that should be filled.
+5.5.4.2 VSP (CLEC) old/prior ALISA data – Issue/Gap:
+Some PSAP CPE permits the calltaker to use a manual query, and when it is used on a
+VoIP call the old/prior address location presents on the ALI screen.
+WG 4A recognizes a need to solve this problem at the source, and have ILEC/CLECs
+remove old data from legacy databases when VSPs transfer customers to a VPC from
+an ILEC. Eliminating the potential of PSAPs retrieving the wrong location data will
+improve the reliability to always use the correct address information.
+The BP could be based on this example;
+When CLECs migrate from legacy to dynamic ALI routing using a VPC, the old
+customer data in the legacy databases shall be removed. When old data records are
+removed, the database costs are reduced for the 9-1-1 Authority. PSAP training also
+helps to make sure call takers do not depend on a manual query for any call delivered
+with an ESQK (VoIP pANI) via a VPC. It is also possible to include parameters in
+CPE that do not allow manual queries when an ESQK is present.
+5.5.4.3 Harassing VoIP Callers – Issue/Gap:
+VSP – Traditional users who provide a “registered address” can intentionally provision
+the wrong address and spam E9-1-1 calls to the PSAP.
+WG 4A recognizes a need to mitigate this problem to the extent possible through
+standards that provide aggressive methods to block these calls in the network today, as
+well as prepare for the future of controlling congestion in the emergency Services IP
+Network (ESInet) before getting to the PSAP.
+The BP could be based on this example, but this decision should be made after a
+thorough review by the appropriate industry experts;
+Proposed Practice 1: Upon contacting the VPC, the call should be blocked at the
+source being the VSP immediately. The VSP shall control the port and the IP of the
+caller and provide any and all exigent information about the location of the caller to the
+PSAP for enforcement purposes. If the VSP is outside the country, the VPC shall be
+permitted to notify and block all calls from the VSP until resolved.
+1 9Proposed Practice 2: Some VSPs that are in fixed locations are able to validate the
+address location along with GPS from the device (like a femtocell) and prohibit
+inaccurate address provisioning.
+5.5.5 Recommendations
+CSRIC WG 4B should use the input provided by WG 4A (above and herein as applicable) to
+update existing NRIC BPs to make it clear that the appropriate stakeholder(s) should consider
+adopting them. Also, WG 4B should create new BPs where WG 4A has identified there are no
+existing BPs to cover specific subject matter applicable to reliable delivery of 9-1-1 calls in a
+VoIP environment.
+5.6 Format for Delivering Address Information to Public Safety Answering Points
+For Internet-based VoIP service, which is a wireline-equivalent service, this issue primarily
+relates to the storage format in the ALI servers (often erroneously assumed to be the transmission
+format sent to the PSAP), which can vary among various E9-1-1 systems and SSPs. Optimally,
+VPC providers must match their dynamic update data field content to the established ALI storage
+process and structure, so that both the VoIP and wireline data field content in the ALI servers are
+the same. This may mean differences from one SSP to another. In addition, differences in data
+field content may be driven by scenarios based on whether the target PSAP has PSAP controller
+equipment that can or cannot reformat the data flow transmitted from the E9-1-1 system ALI
+servers. For PSAPs where the equipment cannot reformat the ALI server data transmission for
+screen display, PSAPs may have specific requirements for how the individual VoIP data items
+are to be displayed to the calltaker, which may then require that the VPC dynamic data field
+content differ between PSAPs. VoIP and VPC providers may view these differences as
+complicating and undesirable. From a standards perspective, the solution to these complications
+is to move to XML tagged data throughout the 9-1-1 system, rather than revise the current
+system structure and assignments in the short term. XML tagged data has been and is being
+addressed by the NENA Data Committee and Data Development WG.
+5.6.1 Standards
+The following existing standards apply to this issue and should be implemented by VoIP service
+providers:
+02-010 NENA Standard Data Formats for ALI Data Exchange & GIS Mapping
+-http://www.nena.org/standards/technical/data-formats-ALI-MSAG-GIS
+This document sets forth NENA standard formats for data exchange between Service Providers
+and Data Base Management System Providers, a GIS data model, and a Data Dictionary. The
+standard concerns exchange between originating service providers and system service providers
+(SSPs) and proposes a (future) XML format for transmission to the PSAP. See especially
+Exhibits 5 – 15.
+RFC 4119 IETF: A Presence-based GEOPRIV Location Object Format
+2 0-http://tools.ietf.org/html/rfc4119
+This document does not invent any format for location information itself. Numerous existing
+formats based on civic location, geographic coordinates, and the like, have been developed in
+other standards fora. Instead, this document defines an object that is suitable both for identifying
+and encapsulating preexisting location information formats, and for providing adequate security
+and policy controls to regulate the distribution of location information over the Internet.
+NOTE: RFC 4119 IETF is applicable herein, with the understanding that XML-tagged data is
+more relevant within NG9-1-1 systems than current E9-1-1 systems. Inclusion of it here as an
+applicable Standard should not be seen as advocating support for XML tagging within E9-1-1
+systems.
+5.6.2 Best Practices
+No existing best practices were identified for this issue.
+5.6.3 Related Documentation
+02-501 NENA Wireless (Pre-XML) Static and Dynamic ALI Data Content Technical
+Information Document
+-http://www.nena.org/standards/technical/data/wireless-ali-data-content
+This TID identifies wireless ALI data content for dynamic and static ALI data field content
+definitions and recommendations. Concepts are generally applicable to both cellular and Internet
+VoIP.
+http://www.nena.org/media/File/02‐503_20070223_2.pdf02-503 NENA Technical Information
+Document on XML Namespaces
+-http://www.nena.org/standards/technical/data/xml-namespaces
+This document is dedicated to namespaces as used in XML technologies. It is intended to
+provide a non technical introduction to the concept of namespace and a relatively complete
+overview of the specific characteristics of XML namespaces
+NOTE: 02-503 is applicable herein, with the understanding that XML-tagged data is more
+relevant within NG9-1-1 systems than current E9-1-1 systems. Inclusion of it here as an
+applicable standard should not be seen as advocating support for XML tagging within E9-1-1
+systems.
+ATIS-0500012: Location Acquisition for Internet Access in Support of Emergency Services
+-http://www.atis.org/docstore/product.aspx?id=22766
+This ATIS Technical Report is not intended to be seen as an American National Standard (ANS).
+Rather it is intended to be used as input to further decision-making processes leading to any
+necessary policy and/or American National Standard formulation. It will be used as a vehicle for
+communicating location acquisition concepts in liaisons with other relevant Standards. This
+document describes the specific areas of location acquisition in Internet Protocol (IP) access
+networks. It concerns itself with both the architectures and protocols for supporting these
+functions. In brief, this is about the manner in which IP devices such as VoIP clients obtain
+2 1location information from an access network – location acquisition. For emergency services to
+work as envisioned by the NENA defined i2 architecture for VoIP, location must be available to
+route the call to a PSAP and to provide the call taker with the caller's location. This information
+is required in the NENA i2 architecture and will continue to be required in the NENA i3
+architecture. This document starts by describing the mechanisms by which a client might obtain
+location or by which a network might provide location to or on behalf of a client. There are a
+number of location acquisition protocols which might be used, including DHCP, LLDP-MED,
+LREP-SIP, HELD, RELO, and LCP. This document provides a targeted analysis of each, but it
+does not presume that any single protocol will be used universally.
+5.6.4 Gaps
+5.6.4.1 CSRIC WG 4A was unable to identify any existing Best Practices that apply
+specifically to this item. This is seen as a gap that should be filled.
+5.6.4.2 VSP (IP/VRS) ALI Data – Issue/Gap:
+For VSP (IP/VRS) calls, the ALI shall include an indication that a relay call is
+incoming to the PSAP. During the initial translation delays of a relay call, the call taker
+may hear silence and hang up on the caller resulting in the caller to call back.
+WG 4A recognizes a need to update or create applicable documents to promote best
+practices and educate VSPs (IP/VRS).
+The BP could be based on this example;
+In the existing ALI subscriber name field, the IP/VRS company along with “Relay
+Caller” can be used to alert the PSAP call taker to initiate the appropriate SOP for
+handling relay calls along with expecting translation delays. This improves the reliably
+of handling the call by not mistaking it for an abandoned call. Also, the IP/VRS
+interpreter can incorporate additional operating procedures when relaying a 9-1-1 call
+and initiate an introduction immediately after the PSAP greeting, before interpreting
+back to the 9-1-1 caller.
+5.6.5 Recommendations
+CSRIC WG 4B should use the input provided by WG 4A (above and herein as applicable) to
+update existing NRIC BPs to make it clear that the appropriate stakeholder(s) should consider
+adopting them. Also WG 4B should create new BPs where WG 4A has identified there are no
+existing BPs to cover specific subject matter applicable to reliable delivery of 9-1-1 calls in a
+VoIP environment.
+6. Conclusions
+As shown in the gaps listed in this Report (above & below in Appendix A), CSRIC WG 4A
+recognizes a need to update or create applicable documentation to promote CSRIC sanctioned
+Best Practices, but those specific decisions should only be made after a thorough review by the
+appropriate industry experts. WG 4A believes that anchoring this responsibility within CSRIC
+2 2WG 4B will expose these gaps to a wide audience of appropriate industry experts. WG 4A also
+believes that it is in the best interests of Public Safety to grant WG 4B latitude to reach out to
+other subject matter experts as needed, such as (but not limited to) experts participating in other
+CSRIC Working Groups.
+2 37. Appendix A
+Gaps unrelated to the six items enumerated in section 101 of the New and Emerging
+Technologies 911 Improvement Act of 2008
+CSRIC WG 4A wishes to draw attention to the following topics that may need to be
+reviewed by the appropriate industry experts to determine if there is a need for specific
+CSRIC sanctioned Best Practices to help ensure the reliability 9-1-1 calls initiated using
+VoIP services.
+Routing and Network Reliability Areas Needing Attention
+1) ESQK Provisioned List
+• Issue/Gap: ESQKs requested by VPCs are not accurately provisioned in the ILEC
+network and E9-1-1 calls are either routed to the wrong PSAP or not routed at all.
+2) 10-digit PSAP Backup Numbers
+• Issue/Gap: The VPCs do not have an accurate list of 10-digit numbers on which the
+PSAP would like to receive their VoIP calls when E9-1-1 routing is not available. This
+10-digit number may be extremely unique to the PSAP depending upon how they set up
+their PSTN lines and is not necessarily their published emergency or non-emergency
+number.
+3) ESGW Provisioning
+• Issue/Gap: ESGWs that are a critical link between the VPC and the S/R entity run the
+risk of having congestion of VoIP service block legacy call if both technologies are
+combined on the same paths.
+4) VSP Mobile Application providers routing on x-y
+• Issue/Gap: Various VoIP mobile applications do not provide location data (lat/lon) to
+automatically route the 9-1-1 calls and instead go to call centers which send the call to the
+PSAP on PSTN or in the worst case the mobile application will do nothing.
+5) VSP Nomadic backup routing –
+• Issue/Gap: A VSP providing nomadic capability that chooses to provide backup routing
+via a wireless network when a subscriber does not provision an address is not accurately
+routing E9-1-1 calls. This type of routing also does not provide a call back number, or
+even an accurate estimate of the caller’s address. None of these conditions provide nor
+promote reliable VoIP E9-1-1.
+2 4Data and Service Reliability Areas In Need of Attention
+6) VSP (IP/VRS) caller data
+• Issue/Gap: For VSP (IP/VRS) there should be basic standards for PSAPs to retrieve 9-1-
+1 caller data from relay service. The existing privacy interpreter FCC regulations do not
+address the fact that a caller gives up some privacy rights when calling 9-1-1.
+8. Acronym Descriptions
+ALI Automatic Location Information
+ATIS Alliance for Telecommunications Industry Solutions
+BP Best Practice
+CAD Computer Aided Dispatch
+CLEC Competitive Local Exchange Carrier
+ESGW Emergency Service Gateway
+ESQK Emergency Services Query Key
+ESRN Emergency Services Routing Number
+GIS Geographic Information System
+IETF Internet Engineering Task Force
+ILEC Incumbent Local Exchange Carrier
+IP/VRS IP or Video Relay Service
+MPC Mobile Positioning Center
+MSAG Master Street Address Guide
+NENA National Emergency Number Association
+NRIC Network Reliability and Interoperability Council
+PSAP Public Safety Answering Point
+RFC IETF Requests for Comments
+SSP (9-1-1) System Service Provider
+2 5TID Technical Information Document
+VI Video Interpreter
+VoIP Voice over Internet Protocol
+VPC VoIP Positioning Center
+VSP VoIP Service Provider
+XML Extensible Markup Language
+2 6

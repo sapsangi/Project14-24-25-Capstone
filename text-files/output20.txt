@@ -1,0 +1,80 @@
+PDF Content from https://www.cisa.gov/sites/default/files/publications/Communications%2520SRMA%2520Fact%2520Sheet_508.pdf:
+INTRODUCTION TO THE
+COMMUNICATIONS SECTOR
+RISK MANAGEMENT AGENCY
+The Communications Sector is an integral component of the U.S. economy, underlying the operations of all
+businesses, public safety organizations, and government. Presidential Policy Directive 21 identifies the
+Communications Sector as critical because it provides an “enabling function” across all critical infrastructure sectors.
+Over the last 25 years, the Sector has evolved from being predominantly a provider of voice services into a diverse,
+competitive, and interconnected industry using terrestrial, satellite, and wireless transmission systems. The
+transmission of these services has become interconnected; satellite, wireless, and wireline providers depend on each
+other to carry and terminate their traffic, and companies routinely share facilities and technology to ensure
+interoperability.
+COMMUNICATIONS SECTOR COLLABORATION, RESOURCES, AND TRAINING
+The Cybersecurity and Infrastructure Security Agency (CISA) offers many resources to help owners and operators
+manage risks, improve security, and aid the implementation and execution of protective and response measures
+across the Communications Sector. This fact sheet lists a sampling of sector collaboration mechanisms, resources,
+and training materials. Unless otherwise noted, additional information can be found on the CISA website at
+cisa.gov/communications-sector.
+Sector Coordinating Council (SCC) and Cybersecurity Framework is used to Cyber Stormis the Department of
+Working Groups convene regularly to share improve cyber resilience. CISA connects Homeland Security’s (DHS) flagship,
+information and develop tools, guidelines, organizations with public and private biennial exercise series, which provides an
+and products to address risks, sector resources that align to the opportunity for the Federal Government,
+vulnerabilities, and emerging issues to the Framework’s five function areas: state, local, tribal, and territorial (SLTT)
+Communications Sector. For information identify, protect, detect, respond, and organizations, and the private sector to
+regarding the Communications SCC, visit recover. Learn more at address cyber incident response as a
+comms-scc.org/. nist.gov/cyberframework. community. Now on its sixth iteration, each
+exercise in the series has simulated the
+Government Coordinating Council (GCC) Cyber Resource Hub is used to help discovery of, and response to, a
+and Working Groups composed of various agencies make data-informed risk coordinated C/I cyberattack.
+federal departments, the GCC coordinates decisions. CISA may conduct analysis of
+with the Cybersecurity and Infrastructure assessment data providing this Cyber Planning Support includes subject
+Security Agency (CISA) to identify and information to partners. The Hub can matter expert-run Cyber Planning
+address shared priorities and initiatives help the broader cybersecurity Workshops, which are available to assist
+that impact the Communications Sector. community gain visibility with stakeholders with developing and revising
+For information regarding the GCC, visit vulnerability trends, adversarial integrated cyber plans.
+cisa.gov/communications-sector-council- activities, and effective mitigations to
+charters-and-membership. implement for better protection of their Cyber Supply Chain Risk Management is
+networks. Learn more at cisa.gov/cyber- a course created to educate the learner
+National Security Telecommunications resource-hub. about cyber supply chain risk management
+Advisory Committee (NSTAC) helps the (C-SCRM) and the role it plays within our
+industry inform government decisions Cybersecurity and Physical Security society today. More specifically, the course
+about National Security/Emergency Convergence is guidance on converging teaches learners how to securely provision,
+Preparedness (NS/EP) communications. cybersecurity and physical security analyze, oversee and govern, protect, and
+NSTAC provides the president with functions to better position defend a supply chain.
+recommendations intended to ensure vital organizations to mitigate cyber-physical
+Critical Infrastructure Training information
+telecommunication connections are threats. To learn more, visit
+can be found at cisa.gov/critical-
+operational during times of crisis and to cisa.gov/publication/cybersecurity-and-
+infrastructure-training. For more
+help the Federal Government maintain a physical-security-convergence.
+information on cyber exercises, contact
+reliable, secure, and resilient national
+ncciccustomerservice@hq.dhs.gov.
+communications posture. Visit
+cisa.gov/nstac.INTRODUCTION TO THE COMMUNICATIONS
+SECTOR RISK MANAGEMENT AGENCY
+SECTOR PROFILE
+The Communications Sector is both diverse and resilient with a strong, well-refined focus on risk management, long-
+established processes and procedures for network security, and rapid response and recovery under all hazards to
+assure the continued operation of vital communications. The infrastructure includes broadcasting, cable, satellite,
+wireless, and wireline capabilities, as well as the transport networks that support the Internet and other key
+information systems.
+CRITICAL INFRASTRUCTURE SECURITY CONSIDERATIONS
+As more devices connect to public communication networks, service firms can provide more types of device-
+specific services over those networks. The Communications Sector architecture model in the figure below serves
+as a representation of the collective infrastructure, which illustrates at least five major ways to access the
+numerous voice, video, and data services on the core network: broadcasting, cable, satellite, wireless, and
+wireline networks.
+While the Communications Sector has few significant dependencies, other critical infrastructure sectors are
+dependent on the Communications Sector. As such, the Communications Sector is one of the few sectors that can
+affect all other sectors. At a minimum, each sector depends on services from the Communications Sector to
+support its operations and associated day-to-day communication needs for corporate and organizational networks
+and services (e.g., internet connectivity, voice services, and video teleconferencing capabilities). Some sectors
+have even more significant dependencies on the Communications Sector beyond these routine operations.
+FOR MORE INFORMATION ON THE COMMUNICATIONS SECTOR
+Contact the Communications Sector Management Team at CommunicationsSector@cisa.dhs.gov or learn more at
+cisa.gov/sector-specific-agencies. For additional information about the Communications Sector, view the
+Communications Sector-Specific Plan at cisa.gov/sites/default/files/publications/nipp-ssp-communications-
+2015-508.pdf.

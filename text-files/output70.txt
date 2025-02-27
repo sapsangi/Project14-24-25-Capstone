@@ -1,0 +1,685 @@
+PDF Content from https://transition.fcc.gov/bureaus/pshs/advisory/csric3/CSRIC-III-WG9-Final-Report.pdf:
+March, 2012 WORKING GROUP 9
+CAP Implementation
+Final Report – Part 1The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+Table of Contents
+1 Results in Brief 3
+1.1 Executive Summary 3
+2 Introduction 5
+2.1 CSRIC Structure 5
+2.2 Working Group 9 Team Members 6
+3 Objective, Scope, and Methodology 7
+3.1 Objective 7
+3.2 Scope 7
+3.3 Methodology 7
+3.3.1 Sub-Group Structure 8
+3.3.2 Collaboration via Portal 8
+4 Background 9
+4.1 Emergency Alert System (EAS) 9
+5 Analysis, Findings and Recommendations 11
+5.1 Analysis 11
+5.2 Findings 11
+7 Appendix – References 22
+Page 2The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+1 Results in Brief
+1.1 Executive Summary1
+The Emergency Alert System is the primary warning system that provides the President with the
+means to address the nation during a national crisis. Over the years it has gone through several
+transformations but until recently can best be described as an analog delivery system.
+On May 31, 2007, the FCC adopted a Second Report & Order to strengthen the development of
+next generation technology for the Emergency Alert System (EAS).2 This R&O requires EAS
+participants to accept messages using Common Alerting Protocol (CAP) digital delivery.
+Subsequently, on November 18, 2010 the FCC adopted the Fourth Report & Order to establish
+the deadline for EAS participants to start receiving CAP messages no later than June 30, 2012.3
+On January 10, 2012 the FCC released the Fifth Report and Order which further clarified the
+process to receive and transmit CAP messages for the EAS and to streamline the Part 11 rules.4
+CSRIC Working Group 9 was established to provide recommendations and best practice for the
+deployment of CAP and to provide an overall progress report on the first months of CAP
+implementation.
+WG9’s initial discussions, and by extension the focus of this particular report, are on two
+fundamental issues emerging from the Report and Order:
+1. Prohibition on the use of text to speech technology on CAP EAS devices by EAS
+Participants.
+2. Creation of a “streamlined” certification regime for CAP EAS equipment, which
+includes three distinct classes of CAP EAS equipment, with slightly varying certification
+1 What is an Executive Summary?; Source:
+http://www.2myprofessor.com/Common/executive_summary.htm
+2 FCC Second Report and Order, in the Matter of the Review of the Emergency Alert System,
+EB Docket No. 04-296, Adopted: May 31, 2007
+3 FCC Fourth Report and Order, in the Matter of the Review of the Emergency Alert System, EB
+Docket No. 04-296, Adopted: September 15, 2011
+4 FCC Fifth Report and Order, in the Matter of the Review of the Emergency Alert System, EB
+Docket No. 04-296, Adopted: January 9, 2012
+Page 3The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+requirements, based on the nature of that equipment.
+Page 4The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+5
+2 Introduction
+CSRIC was established as a federal advisory committee designed to provide recommendations
+to the Commission regarding best practices and actions the Commission may take to ensure
+optimal operability, security, reliability, and resiliency of communications systems, including
+telecommunications, media, and public safety communications systems.
+Due to the large scope of the CSRIC mandate, the committee then divided into a set of Working
+Groups, each of which was designed to address individual issue areas. In total, 10 different
+Working Groups were created, including Working Group 9 on EAS CAP Implementation.
+Working Group 9 officially started its work in December 2011 and was given until March 2012
+to produce this First Report. The focus for Working Group 9 is to review the Fifth R&O
+(released January 10, 2012) on CAP deployment, provide FCC recommendations for best
+practices to facilitate CAP implementation on a national level, state and local level and identify
+technological challenges. The second report due in December 2012 will review the progress of
+CAP implementation by EAS Participants for both national and state level.
+2.1 CSRIC Structure
+5 Writing@CSU; Source: http://writing.colostate.edu/guides/processes/science/pop2a3.cfm
+Page 5The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+2.2 Working Group 9 Team Members
+Working Group 9 consists of the members listed below.
+Name Company
+Al Kenyon Federal Emergency Management Agency (FEMA)
+Andy Scott NCTA
+Bill Marriott Comlabs
+Bill Robertson Digital Alert Systems (Monroe Electronics, Inc.)
+Bob Sherry Intrado
+Chris Homer (Chair) DIRECTV
+Clay Freinwald Washington SECC
+Daryl Parker TFT
+Donald Walker GRM
+Edward Czarnecki (Co-Chair) Monroe Electronics, Inc.
+Gary Timm Wisconsin SECC
+Harold Price SAGE Alerting Systems
+Jeb Benedict CenturyLink
+Jeff Staigh Univision
+Jim Gorman Gorman-Redlich
+Kelly Williams National Association of Broadcasters
+Larry Estlack Michigan Association of Broadcasters
+Matthew Straeb GSS
+Michael Hooker T Mobile
+Mike Nawrocki Verizon
+Ron Boyer Boyer Broadband
+Tim Dunn T-Mobile
+Eric Ehrenreich FCC Liaison
+Doug Semon Time Warner Cable
+Table 1 - List of Working Group Members
+Page 6The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+3 Objective, Scope, and Methodology
+3.1 Objective
+In its January 2012 EAS Fifth Report and Order (EB Docket No. 04-296), the Commission
+sought to continue the process to transform the Emergency Alert System (EAS) into a more
+technologically advanced alerting system by revising Part 11 Emergency Alert System (rules) to
+specify the manner in which EAS Participants must be able to receive alert messages formatted
+in the Common Alerting Protocol (CAP) and streamlining Part 11 rules to enhance their
+effectiveness and provide clarity.
+The Fifth Report & Order is the second of two orders that implement Part 11 rule changes
+stemming from the Third Further Notice of Proposed Rule Making (FNPRM). The previous
+order, Fourth Report & Order, addresses the single issue of establishing a new deadline of June
+30, 2012 for meeting the various CAP-related requirements that the Fifth R&O codifies. The
+Working Group was asked to review the new order to provide insight, implementation
+recommendations and status. In this Fifth R&O Report, the Working Group shall also
+recommend actions the FCC could take to improve EAS as it incorporates the new CAP
+protocol.
+3.2 Scope6
+Per the Working Group 9 charter, the group found it essential to begin with an initial focus on
+the FCC Part 11 Rules governing the EAS as it involves best practices to facilitate CAP
+implementation leading up to and beyond the June 30, 2012 deadline. The committee will be
+working with real-time data and events as they unfold during the roll out. Based on results of
+these events the group will gain valuable insight and metrics that will be used for future
+planning and rulemaking.
+3.3 Methodology7
+The Working Group 9 uses a collaborative, inclusive approach to its work. Given the vast array
+of expertise the WG-9 members brought to bear on this effort, it is critical to provide a multitude
+of forums and mediums through which participants could express their opinions and help shape
+this Final Report. The following section details the methodology through which WG-9 achieved
+6 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+7 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+Page 7The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+this objective.
+3.3.1 Sub-Group Structure
+After its initial set of meetings, the Chair and Co-Chair of Working Group 9 decided to the
+review the structure of the Working Group and develop a plan that would allow for WG-9 to
+proceed with its study in an organized fashion which leveraged the diverse backgrounds of the
+Group’s membership.
+As such, WG-9 broke into three Sub-Groups; WG-9-1 is focusing on National implementation
+and best practices of CAP, WG 9-2 focusing on the progress of CAP implementation and best
+practices at the state & local level and WG 9-3 focusing on implementation of CAP (post June
+30, 2012). The first two Sub-Groups have moved forward with independent conference calls
+that focused almost exclusively on the portions of the CAP implementation most applicable to
+their expertise.
+Each Sub-Group had a Lead who developed an agenda and framed conversation and discussion
+amongst the participants. On some of the more divisive issues the Lead worked to bring
+members closer to consensus and encouraged open dialogue designed to find common ground.
+3.3.2 Collaboration via Portal
+In addition to the regular conference calls, an online collaboration portal was designed and
+implemented for use by the WG-9 participants. The portal is accessible to all Working Group
+members throughout the duration of their work on behalf the CSRIC. The table below details
+some of the most prominent capabilities featured on the Portal and how they were used by the
+members of the Working Group 9.
+Document Collaboration space where members posted, reviewed, and
+Repository edited documents
+Forum Open space where issues were discussed amongst members
+Calendar Central location where all relevant meetings and events were
+documented
+From its inception, the portal became a useful tool for the Working Group as they shared ideas,
+resources, and collaborated on common documents, including this Final Report. Given the
+disparate locations from which the WG-9 members originated, having an online collaboration
+tool was instrumental to the successful completion of the Working Group’s final product.
+Page 8The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+4 Background
+From the onset of WG-9’s work, close attention was paid to the researching relevant topics,
+including the EAS, the Integrated Public Alerts and Warning System (IPAWS), the CAP, and
+the Commercial Mobile Alert System (CMAS) and other alerting methodologies. Several
+members of the 9 Working Group brought specialized expertise in one or more of these areas
+and are also members of WG-2 that is focused on future developments in EAS systems.
+4.1 Emergency Alert System (EAS)
+EAS is the primary national warning system that provides the President with the means to
+address the nation during a national crisis. State and local officials also use EAS to originate
+warning messages about imminent or ongoing hazards in specific regions. Three Federal
+agencies share responsibility for for EAS at the national level: the FCC, FEMA, National
+Oceanic and Atmospheric Administration’s (NOAA) National Weather Service (NWS).
+Functionally, EAS is a hierarchical alert message distribution system. Initiating an EAS
+message, whether at the national, state, or local level, requires the message originator (e.g.
+FEMA, which initiates EAS alerts at the national level on behalf of the President) to deliver
+specially-encoded messages to a broadcast station-based transmission network that, in turn,
+delivers the messages to individual broadcasters, cable operators, and other EAS Participants.
+EAS Participants maintain special encoding and decoding equipment that can receive the
+message for retransmission to other EAS Participants and to end users (broadcast listeners and
+cable and other service subscribers).
+On May 31, 2007 the FCC adopted a Second Report and Order and Further Notice of Proposed
+Rulemaking (EB Docket 04-296, FCC-07-109A1) (Erratum, DA-07-4002A1) to strengthen the
+EAS and to promote the development of fully digital next generation technologies and delivery
+systems for EAS. The Second Report and Order requires EAS participants to accept messages
+formatted using CAP, the groundwork for next generation EAS delivery systems, no later than
+180 days after FEMA announces its adoption of standards in each case. CAP is intended to
+ensure the efficient and rapid transmission of EAS alerts to the public in a variety of formats
+(e.g. text, audio and video) and via different channels (e.g. broadcast, cable, satellite, and other
+networks).
+On May 25, 2011, the FCC adopted the Third FNPRM, in which they sought comment on a
+wide range of tentative conclusions and proposed revisions to the Part 11 rules that would more
+fully delineate and integrate into the Part 11 rules the CAP-related mandates adopted in the
+Second Report and Order. The Commission received 30 comments and 12 reply comments in
+response to the Third FNPRM.
+Page 9The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+Subsequently, on November 18, 2010, the FCC adopted the Fourth Report and Order in this
+docket, in which they amended section §11.56 of the EAS rules to require EAS Participants to
+be able to receive CAP formatted EAS alerts no later than June 30, 2012.
+Finally, in the January 2012 FCC Fifth Report and Order on EAS (EB Docket No. 04-296), the
+Commission sought to continue the process to transform the Emergency Alert System (EAS)
+into a more technologically advanced alerting system by revising Part 11 Emergency Alert
+System (rules) to specify the manner in which EAS Participants must be able to receive alert
+messages formatted in the Common Alerting Protocol (CAP) and to streamline Part 11 rules to
+enhance their effectiveness and to provide clarity.
+Page 10The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+5 Analysis, Findings and Recommendations
+5.1 Analysis8
+CSRIC WG9 is examining a broad range of questions relating to the usage of CAP for next-
+generation EAS;
+CAP Distribution
+1. What CAP-EAS Distribution Network architectures exist at the federal, state and
+local level?
+2. What are the physical and data components of these systems?
+3. What are the interface requirements?
+EAS Network Requirements
+1. What is sufficient capacity to relay messages?
+2. What availability is required to maintain service?
+3. How does authentication work?
+4. How is data security maintained? Data accuracy?
+A specific initial area of investigation by WG9 pertains to the impact of the FCC’s Fifth Report
+and Order on EAS (released 10 January 2012) on CAP EAS migration. WG9’s initial
+discussions, and by extension of focus of this particular report, are on two fundamental issues
+emerging from the Report and Order:
+1. Prohibition on the use of text to speech technology on CAP EAS devices by EAS
+Participants
+2. Creation of a “streamlined” certification regime for CAP EAS equipment, which
+includes three distinct classes of CAP EAS equipment, with slightly varying certification
+requirements, based on the nature of that equipment.
+5.2 Findings
+1) Text to Speech Prohibition – The FCC Fifth Report and Order disallows the use of text-to-
+8 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+Page 11The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+speech conversion technology on and CAP EAS device, though it concedes the potential use
+of such technology by CAP originators themselves.
+a) We observe that several key CAP-based EAS origination and relay system, including
+FEMA IPAWS, appear to rely on the use of Text to Speech technology.
+i) At this time, WG-9 will not incorporate a specific FEMA response/feedback on the
+text-to-speech issue.
+ii) However, the working group’s understanding is that the FEMA IPAWS system is - in
+large part - predicated and reliant upon usage of text-to-speech conversion
+technology at the remote EAS CAP device level.
+b) It is also noted that the National Weather Service is preparing to feed CAP to IPAWS by
+April 2012. However, the NWS will not support audio in this CAP feed. As such, it is
+the Working Group’s understanding that the NWS CAP feed would similarly be
+predicated on use of text to speech conversion technology at the EAS-device level.
+c) We observe, based on feedback from several state authorities, that prohibiting usage of
+text to speech in CAP EAS devices would create very significant complications for both
+existing deployed and planned CAP state agency systems
+i) It is was noted that at least one deployed and operational CAP relay system (in the
+State of Washington) is similarly predicated on the use of text to speech by EAS
+devices. There are at least two other state systems that appear to be in advanced
+states of deployment which would be likewise impacted by a prohibition of text to
+speech by EAS devices.
+ii) We also noted the strong opposition to the prohibition by text to speech by
+emergency management authorities and the state broadcast association in the State of
+Michigan, which views that prohibition as dangerously removing an essential backup
+capability for the audio portion of EAS messages in their state system.
+iii) These two state-level examples – with very different IP-based alert architectures –
+demonstrate the impact of a prohibition of text to speech conversion by EAS devices.
+In the case of Washington, which is disseminating XML CAP messaging via Internet
+with no audio file, the prohibition would prevent the formation of the aural portion of
+the message at EAS Participant sites. In the case of Michigan, which is
+disseminating messaging with audio via a satellite network, the prohibition is viewed
+as disabling a key reserve capability of remotely compiling the aural portion of the
+message in case the intended audio file is missing, corrupted or otherwise unusable.
+d) We observe, from input from the various manufacturers, that it appears that there would
+be a minimal impact on EAS Devices themselves. All EAS Participants will need to take
+some form of action, either changing their existing settings, or downloading a a software
+update to provide users with the option to disable the text to speech feature.
+e) Conversely, we note that the text to speech prohibition will have a number of significant
+impact on CAP delivery;
+i) A major potential unintended consequence relates to the usability of a CAP EAS
+Page 12The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+message in the event there is a problem with the audio file created by the CAP
+Originator. If an audio file is not present, is corrupted, or otherwise unusable, the
+text to speech prohibition effectively leaves no fallback for the creation of the voice
+component of the message.
+ii) The working group examined the utility of using text-to-speech, in lieu of no audio at
+all.
+(1) For video programmers (broadcast television, CATV, DBS), if no audio file is
+present, the textual component of the message could still be displayed, per Part
+11 requirements. There would be no aural component, aside from the EAS
+header and attention tones. Further examination may be required in terms of the
+potential impact on those with visual disabilities, if the aural portion of the
+message is unavailable.
+(2) A further challenge in the case of low power television (LPTV) stations, is that
+they are not required to issue the EAS Frequency Shift Key (FSK) tones or the
+Attention Signal, therefore, with no aural component, LPTV stations would
+apparently not emit any audio alert.
+(3) For audio programmers (broadcast radio, Satellite Digital Audio Radio Service
+[SDARS]), if no audio file is present, there would be no aural component, aside
+from the EAS header and attention tones. This would, of course, have a severe
+impact on the usefulness of the alert message for the listening population.
+(4) We also noted that §11.51(b) of the current EAS rules indicate that the attention
+tones are not to be used if there is no audio.
+(5) We further note that the EAS-CAP Industry Group (ECIG) Implementation
+Guidelines itself cautioned that should there be no audio file, and text to speech
+conversion is also not present, then the audio output of the device would only
+consist of the EAS header tones followed by the End of Message tones.
+iii) Providers of CAP dissemination systems (including those currently in use by a
+number of states) which currently rely on Text to speech may need to provide
+significant changes to systems to support the text to speech prohibition.
+(1) We note, however, that there is no requirement or mandate for any such software
+or system developer to do so.
+(2) We further note that there is no requirement, mandate, or specified source of
+funding for any state, county, local, territorial or tribal jurisdiction to acquire
+new, or acquire modified capabilities to generate an audio MPEG 1Layer 3
+(MP3) file for consumption by remote EAS CAP devices.9
+iv) Both Originators and Consumers of CAP – and the relay systems connecting the two
+- will see significantly greater bandwidth requirements, by virtue of polling both the
+9 MP3 is an audio-specific digital encoding format designed by the Moving Picture Experts
+Group (MPEG) as part of the MPEG-1 standard, and later extended in MPEG-2 standard.
+Page 13The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+Extensible Markup Language10 (XML) CAP message and downloading an MP3 file.
+(1) At the IPAWS format of 64kbps MP3 compression rate, a two minute audio
+message requires 960k bytes of data. For a state with a 400 EAS Participant sites
+(for example) total bytes that would be transferred by a state server to all EAS
+Participants is about 375 M/Byte. To send the audio file to all EAS Participants
+in 60 seconds, an average speed of 50 Mbit/sec would be required.
+(2) Conversely, a CAP message without audio requires a significantly smaller
+amount of data, approximately 4k to 6k bytes. For a the same state example of
+400 EAS Participants, total bytes that would be transferred by a state server to all
+Participants is about 2MByte.
+2) Observations on file based audio (if used in lieu of text to speech technology)
+a) While the IPAWS digital signature validates the textual content of the XML file (i.e.
+verifies that a provided Uniform Resource Identifier ( URI) string is the original authored
+string), this does not in and of itself does not provide any guarantee that the remote
+referenced file has the intended content.
+b) We note that the current IPAWS CAP Profile v1.0 does not provide mandatory guidance
+usage of digital signatures.
+c) Finally, there is the likelihood that the need to secure the remote audio file content could
+significantly slows down the entire system. The burden of digital signature validation
+could impact the overall system performance.
+3) EAS Device Certification
+a) The working group examined the revised CAP EAS device certification process in depth.
+Three classes of CAP equipment were created by the Commission:
+i) Integrated CAP EAS encoder/decoders;
+ii) Universal intermediary devices; and
+iii) Component intermediary devices
+b) FCC findings on intermediary devices are not explicitly incorporated into its intended
+Part 11 revisions, contained in the Fifth Report and Order.
+i) In Section 4 “Discussion”, the FCC signals its intention that all intermediary devices
+should be certified and submit a Suppliers’ Declaration of Conformity (SDOC),
+provided via the IPAWS Conformity Assessment Program. Further, in paragraph the
+FCC signals it intention for integrated devices to have both a Part 11 certification and
+to file an SDOC.
+ii) We note however that the Part 11 changes detailed in Appendix A of the Fifth Report
+and Order do not explicitly incorporate these intended changes.
+10 The Extensible Markup Language (XML) defines a set of rules for encoding documents in a
+format that is both human-readable and machine-readable.
+Page 14The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+c) Implications of “Streamlined” Process for Integrated CAP EAS devices
+i) Subcommittee consensus that the report and order indicates that integrated CAP EAS
+devices are required to submit a class II permissive change filing, plus a copy of an
+SDOC.
+ii) For devices currently holding a Part 11 certification and valid SDOC, the consensus
+was that such devices could readily complete the streamline certification process well
+before the 30 June 2012 CAP deadline.
+d) Implications for Universal Intermediary Devices
+i) Consensus that the process consists of submission of the universal intermediary
+device for Part 11 testing and CAP conformance testing (or submit SDoC, if
+available).
+ii) An unresolved question emerged as to whether Intermediary Devices are to be
+subject to complete Part 11 sections, or only selected portions? Consensus among
+subcommittee members was that the Report and Order infers Intermediary Devices
+be subject to complete Part 11 certifications for EAS encoders.
+iii) The consensus among subcommittee members was that universal intermediary
+devices holding a valid SDOC had a reasonable possibility of meeting the Part 11
+certification requirements by 30 June 2012, provided that the Part 11 testing regime
+was “on line” at the earliest possible time.
+iv) The consensus among subcommittee members was that universal intermediary
+devices that hold neither a valid SDOC nor Part 11 certification, may face challenges
+in meeting the certification requirements by 30 June 2012, given the remaining
+timeline. However, it was noted that – currently there are no known universal
+intermediary devices that do not hold an SDOC.
+e) Implications for Component Intermediary CAP EAS devices
+i) Subcommittee consensus that the report and order indicates that the combination of
+devices (both intermediary device plus legacy EAS device) must be resubmitted for
+Part 11 certification and CAP conformance testing (if SDoC not available for device
+combination, as tested).
+ii) The subcommittee noted the need to test the specific combination of software and
+hardware as submitted in the original IPAWS conformity assessment under which the
+SDOC was filed.
+iii) The consensus among subcommittee members was that component intermediary
+devices holding a valid SDOC had a reasonable possibility of meeting the revised
+Part 11 certification requirements by 30 June 2012, provided that the Part 11 testing
+regime was “on line” at the earliest possible time.
+iv) The consensus among subcommittee members was that a component intermediary
+devices that does not hold an SDOC relating to the specific hardware and software
+configuration (as tested), may face challenges in meeting the certification
+requirements by 30 June 2012, given the remaining timeline.
+Page 15The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+f) Potential issues of combining IPAWS Conformity Assessment with FCC Part 11
+Equipment Certification
+i) The subcommittee discussed potential challenge of combining FCC Part 11 type
+certification with IPAWS Conformity Assessment for specific products and product
+configurations. An observation was made that the Part 11 process relates to type
+approval, while the IPAWS Conformity Assessment in effect relates to a product and
+configuration specific approval.
+ii) It was noted that the FEMA CAP conformity test guidance will be a public
+document, which will be posted on the National Incident Management System
+Supporting Technology Evaluation Program (NIMS STEP) website. FEMA will also
+investigate whether it can provide a copy to CSRIC WG 9-1 for review. There was
+agreement that FEMA should be urged issue the CAP conformity test guidance as
+quickly as possible, so that prospective laboratories may begin review and design of
+their test support programs.
+iii) There was consensus that completion of Part 11 testing of products with an existing
+valid SDOC/Test Report is feasible by June 30, 2012 (based on existence of a known
+Part 11 test processes).
+iv) Again, there was consensus that completion of both Part 11 testing and CAP
+conformance testing may be problematic by June 30, 2012 for products without a
+SDOC/Test Report.
+There was broad consensus that this situation does not warrant any extension to the 30 June
+2012 CAP compliance deadline. Sufficient time exists to both allow manufacturers to take
+necessary steps to meet the streamlined certification guidelines, as well as to allow EAS
+participants to evaluate and make their best judgments such equipment.
+We evaluated the use of Personal Identification Number (PIN) access codes to the IPAWS
+aggregator (used for EAS CAP equipment).FEMA currently provides PIN access codes
+generically to vendors who have products that have received an SDOC. That is, these IPAWS
+PIN codes are not necessarily (or explicitly) tied to the specific equipment/software that received
+the SDoC.
+g) There was broad agreement that the FEMA IPAWS OPEN API specification and PIN
+code schema do not fall under FCC jurisdiction or Part 11 regulations.
+h) We therefore will not be making any recommendations or offering best practices at this
+time.
+5.3 Recommendations;
+1 Recommendations Regarding Usage of Text to Speech
+a. WG-9 recommends “Text to Speech” Prohibition be removed for the following
+reasons;
+i. Text to speech would seem to provide an essential back-up or redundancy
+capability to ensure that the aural portion of a CAP EAS message is
+Page 16The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+delivered, even if the Originator’s audio file is unavailable or damaged.
+ii. Without such a back-up capability, CAP EAS messaging may be of
+limited utility for audio based media, as well as those individuals
+primarily relying on aural messaging (such as the visually impaired).
+iii. Our perception, based on informal discussions with of active state and
+county Originators, is that use of test to speech within CAP EAS devices
+would increase the overall success of CAP rollout for participants. Usage
+of CAP by these Originators is based on the assumption that Text to
+Speech capability would have been available at the CAP/EAS device, and
+therefore they would not need to provide audio files.
+iv. Use of text to speech in CAP EAS devices would allow a more diverse
+group of providers to participate. Removing the necessity of producing
+quality audio at the Origination point allows for a wider number of
+origination points, each at lower cost, complexity, and staffing
+requirements. Allowing Text to Speech permits originators to grow from
+entry level systems to more fully configured systems based on their
+budget and use of the CAP system.
+v. Conversely, a prohibition of Text to Speech on CAP EAS devices may
+very well dissuade potential Originators from adopting either adopting
+CAP, or from making more effective use of EAS.
+vi. Usage of Text to Speech capability would also reduce operational costs
+for alert originators, in terms of total bandwidth required by CAP
+Originators, CAP disseminators, and EAS Participants
+vii. Prohibiting Text to Speech capability on CAP EAS devices would
+translate into additional requirements and costs for Originators to either
+acquire or alter existing systems to originate high quality audio.
+b. WG-9 further recommends that the FCC incorporate the ECIG guidelines on
+“Text to Speech,” which provide for the ability to process an audio file for EAS
+voice, and also provide for text to speech conversion in the event, for whatever
+reason, that audio file is unavailable or unusable.11
+2 Recommendations Regarding CAP EAS Device Certification
+a. WG-9 recommends that contents of paragraphs 170 and 171 in the Fifth Report
+and Order be incorporated into the amendments of Part 11, which otherwise
+would have appeared in Appendix A of the Fifth Report and Order.
+11 See EAS CAP Industry Group (ECIG) Recommendations for a CAP EAS Implementation
+Guide (Version 1.0) at Section 3.5.1 “Using or constructing EAS Audio during a CAP-to-EAS
+alert activation” and Section 3.5.4 “Constructing Text-to-Speech from the CAP V1.2 IPAWS
+v1.0 Profile”
+Page 17The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+b. WG-9 recommends that the FCC require submission of BOTH a vendor supplied
+SDOC and third party IPAWS CAP Conformance Test Report (this would apply
+to integrated, universal intermediary and component intermediary devices).
+i. This was felt to be important for a number of reasons, including the
+incorporation of the specific findings in the Test Report in the
+“streamlined” Part 11 process.
+ii. There was broad agreement that the Test Report represents an
+independent and impartial document, which enables the test lab to
+validate that the product filed under an SDoC is the same as was
+specifically tested under the Test Report.
+c. WG-9 recommends that all testing under the “streamlined” certification process
+be conducted under in accordance with §11.34, and Certified in accordance with
+the procedures in part 2, Subpart J (47 CFR 2), under the auspices of a FCC
+approved third party facility (i.e. a Telecommunications Certification Body), with
+the exception of equipment which may be consider as falling under §11.34(e)
+relating to equipment constructed by an EAS participant but not offered for sale.
+d. WG-9 further recommends that it disallow any other self-certification of
+equipment, as begin inconsistent with the procedures set forth in part 2, Subpart
+J.
+e. WG-9 recommends that the FCC testing ensure certifications relate to the specific
+product combination (hardware model + software version) as actually tested by a
+third party facility, and as should be detailed in the respective Test Report and
+SDOC.
+f. WG-9 recommends that that FEMA issue its CAP conformity test guidance as
+quickly as possible, so that prospective laboratories may begin review and design
+of their test support programs.
+g. WG-9 recommends the following additions to 47 CFR 11.34
+Page 18The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+(h) Intermediary devices that output EAS protocol in accordance with §11.31 must be certified as
+EAS Encoder (§11.32), and must additionally conform to specified requirements for EAS
+Decoders (§11.33) as follows:
+(i) Intermediary devices must meet all of the rules of EAS Encoders, as specified in §11.34, but
+they may omit the requirements of the following sections:
+§11.32(a)(2) (A data input is necessary; an audio input would seem to not be necessary),
+§11.32(a)(3) (Only an audio output or a data output is necessary.),
+§11.32(a)(4)
+§11.32(a)(7)
+§11.32(a)(9)(iii) (A tone level of +8dBm is not needed; the output must be sufficient to
+be decoded by legacy EAS decoders.
+§11.32(a)(9)(vi)
+(ii) Intermediary Devices must additionally meet at least the following requirements of EAS
+decoders:
+§11.33(a)(4) (The Intermediary Device must provide logs of input and output messages
+sufficient to meet the requirements of §11.35(a) but not the display requirements of this
+section.)
+§11.33(a)(11) EAN received via CAP must override all other output messages
+§11.33(b)
+Page 19The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+(j) An Intermediary device, in addition to the visual message requirements of §11.51 for analog
+and digital television, must make visual messages available to its operator derived from CAP-
+formatted EAS messages, which shall contain the Originator, Event, Location and the valid time
+period of the message and shall be constructed in accordance with §3.6 of the EAS-CAP Industry
+Group’s (ECIG) Recommendations for a CAP EAS Implementation Guide, Version 1.0 (May 17,
+2010).
+(k) An Intermediary Device must be Certified in accordance with the procedures in Part 2,
+Subpart J, of this chapter. The data and information submitted must show the capability of the
+equipment to meet the requirements of this part as well as the requirements contained in Part 15
+of this chapter for digital devices
+(l) All devices certified under Part 11 that receive CAP messages must also demonstrate CAP
+compliance:
+(i) For devices that already have Part 11 certification, the grantee must submit a Class II
+Permissive Change filingthat includes: (i) a cover letter explaining that the purpose of
+the filing is to apprise the Commission that the device has been tested for compliance
+with the CAP 1.2, the IPAWS Profile Version 1,0, and the ECIG Implementation Guide
+and that the filing is being made to update the device’s existing certification file; (ii) a
+statement signed by the grantee of the device’s underlying FCC equipment authorization
+confirming compliance with section §11.56 of the Commission’s rules; and (iii) a copy
+of either (a) the IPAWS CA program SDoC, if tested under FEMA’s program; (b) the
+NIMS SDoC, if tested under the NIMS CAP testing program; or (c) for devices tested
+outside these programs, a copy of the test report showing that the device passed the test
+elements. If the has already been marketed, the Class II Permissive Change filing must
+be submitted by June 30, 2012, the effective deadline for overall CAP compliance.
+(ii) For devices that do not already have FCC certification, the grantee must include with
+the FCC certification application materials: (i) a cover letter explaining that the device
+has been tested for compliance with the ECIG Implementation Guide pursuant to the
+procedures adopted in this order; (ii) a statement signed by the grantee confirming
+compliance with section §11.56 of the Commission’s rules; and (iii) a copy of either (a)
+the IPAWS CA SDoC, if tested under FEMA’s IPAWS Conformity Assessment
+program, (b) the NIMS SDoC, if tested under the forthcoming NIMS CAP testing
+program, or (c) for devices tested outside these programs but in accordance with Part 2,
+Subpart J, a copy of the test report showing that the device passed the test elements.
+h. WG-9 recommends that FEMA be encouraged to issue PIN access codes to
+specific products holding the appropriate combination of Part 11 and CAP
+conformance certifications (rather than to vendors generally).
+i. WG-9 recommends that the FCC make additionally clear, for the protection of
+both EAS participants and manufacturers, that, as of the effective date of the 5th
+Report & Order (i.e. 30 days after the date of publication in the Federal Register),
+vendors may not market intermediary equipment until such time they complete
+the streamlined certification process. Similarly, vendors may market integrated
+equipment until June 30th, they may do so only if they have completed their
+streamlined certification requirements on or before that date.
+j. WG-9 recommends that the 30 June 2012 CAP compliance deadline remain in
+Page 20The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+place. The Working Group did not see any issues arising from the CAP EAS
+Certification Process that would appear to warrant any extension to that target
+date.
+5.4 Best practices;
+1. Text to Speech
+a. If the “Text to Speech” prohibition remains in effect:
+i. EAS Participant: EAS participants should confirm with their
+respective equipment vendors to ensure system firmware/software
+versions are up to date and the text to speech option is disabled.
+ii. Equipment Manufacturers: EAS CAP equipment manufacturers
+should provide guidance to EAS Participants, as soon as practical, as
+to how the text to speech option can be disabled on each respective
+version of equipment.
+iii. Federal Government: Federal agencies (FCC and FEMA) should
+develop additional specific best practices and guidance for by (a) CAP
+EAS alert origination systems (b) users of such equipment (state,
+county, local, tribal and territorial) on making audio files (mp3)
+available locally.
+iv. Local Government and CAP system developers: If audio files on
+remote servers are to be relied on as the source for EAS audio, then
+developers should consider how that audio can reside in a trusted
+environment where the content would not be compromised before,
+during or after an alert event. This may include authentication of the
+multimedia.
+b. If the “Text to Speech” prohibition is rescinded:
+i. EAS Participant: EAS participants should work with their respective
+manufacturers to identify and wherever possible remediate any
+significant inconsistencies or errors in pronunciation, etc.
+ii. Equipment Manufacturers: EAS CAP equipment manufacturers
+should voluntarily and proactively respond to any significant
+inconsistencies, errors in pronunciation, or local lexicon.
+iii. Local Government and CAP system developers: Should follow best
+practices, for example as contained in FEMA training course IS-247,
+to ensure as much as possible that the CAP text message being
+delivered should not contain jargon, acronyms, and letter/number
+combinations which typically challenge text-to-speech engines. CAP
+origination system developers should, confer with manufacturers of
+CAP EAS equipment, to further define operational guidance and
+industry best practices for use of text-to-speech in these systems.
+Page 21The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+2. EAS Equipment Certification
+a. EAS Participants: Should coordinate with their respective equipment
+manufacturers on the process under which their equipment will meet the
+required streamlined certification process.
+b. Equipment Manufacturers: Should take early steps to prepare themselves for
+their various requirements under the streamlined certification process, so that
+they provide themselves and their customers with the least level of risk.
+i. Manufacturers of integrated devices should file their Class II
+permissive change forms, along with a copy of their SDoC (and
+preferably Test Report, in addition) as soon as possible.
+ii. Manufacturers of both component and universal intermediary devices
+should be prepared to discontinue marketing their devices, in
+compliance with 47 CFR 2.803 within 30 days after the date of
+publication of the 5th Report and Order in the Federal Register), until
+such time as they have completed the streamlined certification
+process.
+c. Federal Agencies:
+i. The FCC should ensure that equipment certifications relate to the
+specific product combination (hardware model + software version)
+that was actually tested. This would maintain the integrity of both the
+Part 11 and IPAWS conformity assessment components of the
+streamlined certification process.
+ii. The FCC and FEMA should coordinate closely on the preparation of
+facilities supporting the streamlined certification process. FEMA
+should issue the CAP conformity test guidance as quickly as possible,
+so that prospective laboratories may begin review and design of their
+test support programs.
+iii. The FCC should continue the use of certified third-party test facilities
+to conduct both the Part 11 and CAP conformance portions of the
+streamlined certification process, as currently stipulated under §11.34,
+referencing 47 CFR Part 2, Subpart J “Equipment Authorization”.
+iv. The FCC should not permit self-certification, or accept statements of
+self-certification, as meeting any of the criteria of the streamlined
+certification process.
+Page 22The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+6
+Appendix – References
+ FCC EAS Rules (CFR 47 Part 11). Web:
+http://ecfr.gpoaccess.gov/cgi/t/text/textidx?c=ecfr&rgn=div5&view=text&node=47:1.0.1
+.1.11&idno=47
+ FCC Second Report and Order, in the Matter of the Review of the Emergency Alert
+System, EB Docket No. 04-296, Adopted: May 31, 2007
+ FCC Fourth Report and Order, in the Matter of the Review of the Emergency Alert
+System, EB Docket No. 04-296, Adopted: September 15, 2011
+ FCC Fifth Report and Order, in the Matter of the Review of the Emergency Alert
+System, EB Docket No. 04-296, Adopted: January 9, 2012
+ CAP v1.2 USA IPAWS Profile v1.0 Committee Specification OASIS Emergency
+Management Technical Committee, October 2009.
+ EAS CAP Industry Group (ECIG) Recommendations for a CAP EAS Implementation
+Guide, Version 1.0. Web: http://eas-cap.org/ECIG-CAP-to-
+EAS_Implementation_Guide-V1-0.pdf
+Page 23
