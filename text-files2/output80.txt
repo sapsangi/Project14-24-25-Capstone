@@ -1,0 +1,366 @@
+PDF Content from https://transition.fcc.gov/bureaus/pshs/advisory/csric3/CSRIC-III-WG9-Final-Report-Pt2.pdf:
+June, 2012 WORKING GROUP 9
+CAP Implementation
+Final Report – Part 2The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+Table of Contents
+1 Results in Brief 3
+1.1 Executive Summary 3
+2 Introduction 4
+2.1 CSRIC Structure 4
+2.2 Working Group 9 Team Members 5
+3 Objective, Scope, and Methodology 6
+3.1 Objective 6
+3.2 Scope 6
+3.3 Methodology 6
+3.3.1 Sub-Group Structure 7
+3.3.2 Collaboration via Portal 7
+4 Background 8
+4.1 Emergency Alert System (EAS) 8
+5 Analysis, Findings and Recommendations 10
+5.1 Analysis 10
+5.2 Findings 11
+7 References 14
+Page 2The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+1 Results in Brief
+1.1 Executive Summary1
+The Emergency Alert System is the primary warning system that provides the President with the
+means to address the nation during a national crisis. Over the years it has gone through several
+transformations but until recently can best be described as an analog delivery system.
+On May 31, 2007, the FCC adopted a Second Report & Order to strengthen the development of
+next generation technology for the Emergency Alert System (EAS).2 This R&O requires EAS
+participants to accept messages using OASIS Standard, Common Alerting Protocol Version 1.2 digital
+delivery (any further reference to CAP implies this version of the standard). Subsequently, on
+November 18, 2010 the FCC adopted the Fourth Report & Order to establish the deadline for
+EAS participants to start receiving CAP messages no later than June 30, 2012.3 On January 10,
+2012 the FCC released the Fifth Report and Order which further clarified the process to receive
+and transmit CAP messages for the EAS and to streamline the Part 11 rules.4
+CSRIC Working Group 9 was established to provide recommendations and best practice for the
+deployment of CAP and to provide an overall progress report on the first months of CAP
+implementation.
+WG9’s findings include two important issues:
+1. OASIS Standard, Common Alerting Protocol Version 1.2 provides an optional means of
+securing resource elements (audio, graphics, documents or other multimedia), but its use
+is not currently required by the IPAWS profile.
+2. After ECIG issued its version 1.0 Implementation Guide, FEMA instructed ECIG in a
+1 What is an Executive Summary?; Source:
+http://www.2myprofessor.com/Common/executive_summary.htm
+2 FCC Second Report and Order, in the Matter of the Review of the Emergency Alert System,
+EB Docket No. 04-296, Adopted: May 31, 2007
+3 FCC Fourth Report and Order, in the Matter of the Review of the Emergency Alert System, EB
+Docket No. 04-296, Adopted: September 15, 2011
+4 FCC Fifth Report and Order, in the Matter of the Review of the Emergency Alert System, EB
+Docket No. 04-296, Adopted: January 9, 2012
+Page 3The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+memorandum to limit audio to MP3 only. ECIG concurred with this and noted it on their
+web site, but has not yet issued an update to their 1.0 Implementation Guide.
+5
+2 Introduction
+CSRIC was established as a federal advisory committee designed to provide recommendations
+to the Commission regarding best practices and actions the Commission may take to ensure
+optimal operability, security, reliability, and resiliency of communications systems, including
+telecommunications, media, and public safety communications systems.
+Due to the large scope of the CSRIC mandate, the committee then divided into a set of Working
+Groups, each of which was designed to address individual issue areas. In total, 10 different
+Working Groups were created, including Working Group 9 on EAS CAP Implementation.
+Working Group 9 officially started its work in December 2011 and was given until March 2012
+to produce their First Report. The focus for Working Group 9 is to review the Fifth R&O
+(released January 10, 2012) on CAP deployment, provide FCC recommendations for best
+practices to facilitate CAP implementation on a national level, state and local level and identify
+technological challenges. The second report due in June 2012 will review the progress of CAP
+implementation by EAS Participants for both national and state level.
+2.1 CSRIC Structure
+Communications Security, Reliability, and Interoperability Council (CSRIC) III
+CSRIC Steering Committee
+Co-Chairs Co-Chairs Co-Chairs Co-Chairs Chair Co-Chairs Chair Chair Co-Chairs Co-Chairs
+Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group
+1 2 3 4 5 6 7 8 9 10
+Working Group 5:
+Working Group 1: Working Group 2: Working Group 3: Working Group 4: Working Group 6: Working Group 7: Working Group 9:
+DNSSEC Working Group 8:
+Next Generation Next Generation E911 Location Network Security Secure BGP Botnet Legacy Broadcast Working Group 10:
+Implementation E911 Best
+911 Alerting Accuracy Best Practices Deployment Remediation Alerting Issues 911 Prioritization
+Practices for ISPs Practices
+5 Writing@CSU; Source: http://writing.colostate.edu/guides/processes/science/pop2a3.cfm
+Page 4The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+2.2 Working Group 9 Team Members
+Working Group 9 consists of the members listed below.
+Name Company
+Al Kenyon Federal Emergency Management Agency (FEMA)
+Andy Scott NCTA
+Bill Marriott Comlabs
+Bill Robertson Digital Alert Systems (Monroe Electronics, Inc.)
+Bob Sherry Intrado
+Chris Homer (Chair) DIRECTV
+Clay Freinwald Washington SECC
+Daryl Parker TFT
+Donald Walker GRM
+Edward Czarnecki (Co-Chair) Monroe Electronics, Inc.
+Gary Timm Wisconsin SECC
+Harold Price SAGE Alerting Systems
+Jeb Benedict CenturyLink
+Jeff Staigh Univision
+Jim Gorman Gorman-Redlich
+Kelly Williams National Association of Broadcasters
+Larry Estlack Michigan Association of Broadcasters
+Matthew Straeb GSS
+Michael Hooker T Mobile
+Mike Nawrocki Verizon
+Ron Boyer Boyer Broadband
+Tim Dunn T-Mobile
+Eric Ehrenreich FCC Liaison
+Doug Semon Time Warner Cable
+Table 1 - List of Working Group Members
+Page 5The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+3 Objective, Scope, and Methodology
+3.1 Objective
+In its January 2012 EAS Fifth Report and Order (EB Docket No. 04-296), the Commission
+sought to continue the process to transform the Emergency Alert System (EAS) into a more
+technologically advanced alerting system by revising Part 11 Emergency Alert System (rules) to
+specify the manner in which EAS Participants must be able to receive alert messages formatted
+in the Common Alerting Protocol (CAP) and streamlining Part 11 rules to enhance their
+effectiveness and provide clarity.
+The Fifth Report & Order is the second of two orders that implement Part 11 rule changes
+stemming from the Third Further Notice of Proposed Rule Making (FNPRM). The previous
+order, Fourth Report & Order, addresses the single issue of establishing a new deadline of June
+30, 2012 for meeting the various CAP-related requirements that the Fifth R&O codifies. The
+Working Group was asked to review the new order to provide insight, implementation
+recommendations and status. In this Fifth R&O Report, the Working Group shall also
+recommend actions the FCC could take to improve EAS as it incorporates the new CAP
+protocol.
+3.2 Scope6
+Per the Working Group 9 charter, the group found it essential to begin with an initial focus on
+the FCC Part 11 Rules governing the EAS as it involves best practices to facilitate CAP
+implementation leading up to and beyond the June 30, 2012 deadline. The committee will be
+working with real-time data and events as they unfold during the roll out. Based on results of
+these events the group will gain valuable insight and metrics that will be used for future
+planning and rulemaking.
+3.3 Methodology7
+The Working Group 9 uses a collaborative, inclusive approach to its work. Given the vast array
+of expertise the WG-9 members brought to bear on this effort, it is critical to provide a multitude
+of forums and mediums through which participants could express their opinions and help shape
+6 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+7 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+Page 6The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+this Final Report. The following section details the methodology through which WG-9 achieved
+this objective.
+3.3.1 Sub-Group Structure
+After its initial set of meetings, the Chair and Co-Chair of Working Group 9 decided to review
+the structure of the Working Group and develop a plan that would allow for WG-9 to proceed
+with its study in an organized fashion which leveraged the diverse backgrounds of the Group’s
+membership.
+As such, WG-9 broke into two Sub-Groups; WG-9-1 is focusing on National implementation
+and best practices of CAP, WG 9-2 focusing on the progress of CAP implementation and best
+practices at the state & local level. The two Sub-Groups have moved forward with independent
+conference calls that focused almost exclusively on the portions of the CAP implementation
+most applicable to their expertise.
+Each Sub-Group has a Lead who developes an agenda and framed conversation and discussion
+amongst the participants. On some of the more divisive issues the Lead worked to bring
+members closer to consensus and encouraged open dialogue designed to find common ground.
+3.3.2 Collaboration via Portal
+In addition to the regular conference calls, an online collaboration portal was designed and
+implemented for use by the WG-9 participants. The portal is accessible to all Working Group
+members throughout the duration of their work on behalf the CSRIC. The table below details
+some of the most prominent capabilities featured on the Portal and how they were used by the
+members of the Working Group 9.
+Document Collaboration space where members posted, reviewed, and
+Repository edited documents
+Forum Open space where issues were discussed amongst members
+Calendar Central location where all relevant meetings and events were
+documented
+From its inception, the portal became a useful tool for the Working Group as they shared ideas,
+resources, and collaborated on common documents, including this Final Report. Given the
+disparate locations from which the WG-9 members originated, having an online collaboration
+tool was instrumental to the successful completion of the Working Group’s final product.
+Page 7The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+4 Background
+From the onset of WG-9’s work, close attention was paid to the researching relevant topics,
+including the EAS, the Integrated Public Alerts and Warning System (IPAWS), the CAP, and
+the Commercial Mobile Alert System (CMAS) and other alerting methodologies. Several
+members of the 9 Working Group brought specialized expertise in one or more of these areas
+and are also members of WG-2 that is focused on future developments in EAS systems.
+4.1 Emergency Alert System (EAS)
+EAS is the primary national warning system that provides the President with the means to
+address the nation during a national crisis. State and local officials also use EAS to originate
+warning messages about imminent or ongoing hazards in specific regions. Three Federal
+agencies share responsibility for EAS at the national level: the FCC, FEMA, National Oceanic
+and Atmospheric Administration’s (NOAA) National Weather Service (NWS).
+Functionally, EAS is a hierarchical alert message distribution system. Initiating an EAS
+message, whether at the national, state, or local level, requires the message originator (e.g.
+FEMA, which initiates EAS alerts at the national level on behalf of the President) to deliver
+specially-encoded messages to a broadcast station-based transmission network that, in turn,
+delivers the messages to individual broadcasters, cable operators, and other EAS Participants.
+EAS Participants maintain special encoding and decoding equipment that can receive the
+message for retransmission to other EAS Participants and to end users (broadcast listeners and
+cable and other service subscribers).
+On May 31, 2007 the FCC adopted a Second Report and Order and Further Notice of Proposed
+Rulemaking (EB Docket 04-296, FCC-07-109A1) (Erratum, DA-07-4002A1) to strengthen the
+EAS and to promote the development of fully digital next generation technologies and delivery
+systems for EAS. The Second Report and Order requires EAS participants to accept messages
+formatted using CAP, the groundwork for next generation EAS delivery systems, no later than
+180 days after FEMA announces its adoption of standards in each case. CAP is intended to
+ensure the efficient and rapid transmission of EAS alerts to the public in a variety of formats
+(e.g. text, audio and video) and via different channels (e.g. broadcast, cable, satellite, and other
+networks).
+On May 25, 2011, the FCC adopted the Third FNPRM, in which they sought comment on a
+wide range of tentative conclusions and proposed revisions to the Part 11 rules that would more
+fully delineate and integrate into the Part 11 rules the CAP-related mandates adopted in the
+Second Report and Order. The Commission received 30 comments and 12 reply comments in
+response to the Third FNPRM.
+Page 8The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+Subsequently, on November 18, 2010, the FCC adopted the Fourth Report and Order in this
+docket, in which they amended section §11.56 of the EAS rules to require EAS Participants to
+be able to receive CAP formatted EAS alerts no later than June 30, 2012.
+Finally, in the January 2012 FCC Fifth Report and Order on EAS (EB Docket No. 04-296), the
+Commission sought to continue the process to transform the Emergency Alert System (EAS)
+into a more technologically advanced alerting system by revising Part 11 Emergency Alert
+System (rules) to specify the manner in which EAS Participants must be able to receive alert
+messages formatted in the Common Alerting Protocol (CAP) and to streamline Part 11 rules to
+enhance their effectiveness and to provide clarity.
+Page 9The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+5 Analysis, Findings and Recommendations
+5.1 Analysis8
+CSRIC WG9 is examining a broad range of questions relating to the usage of CAP for next-
+generation EAS;
+CAP Distribution
+1. What CAP-EAS Distribution Network architectures exist at the federal, state and
+local level?
+2. What are the physical and data components of these systems?
+3. What are the interface requirements?
+EAS Network Requirements
+1. What is sufficient capacity to relay messages?
+2. What availability is required to maintain service?
+3. How does authentication work?
+4. How is data security maintained? Data accuracy?
+A specific initial area of investigation by WG9 pertains to the impact of the FCC’s Fifth Report
+and Order on EAS (released 10 January 2012) on CAP EAS migration. WG9’s initial
+discussions, and by extension of focus of this particular report, are on two fundamental issues
+emerging from the Report and Order:
+1. Prohibition on the use of text to speech technology on CAP EAS devices by EAS
+Participants
+2. Creation of a “streamlined” certification regime for CAP EAS equipment, which
+includes three distinct classes of CAP EAS equipment, with slightly varying certification
+requirements, based on the nature of that equipment.
+8 Elements of a Research Proposal and Report; Source: http://www.statpac.com/research-
+papers/research-proposal.htm
+Page 10The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+5.2 Findings
+5.2.1 Authentication Audio Resources in CAP EAS Messaging
+The Working Group took note of the fact that while there is optional protection for data
+referenced by CAP resources, for example, audio in a "uri", this protection is not mandatory.
+This raises the potential of the resource being modified outside the protection of the digital
+signature on the CAP message itself.
+5.2.2 Audio file types (codecs) for CAP EAS messaging
+The Working Group observed an apparent discrepancy between the standards/specifications
+incorporated by the FCC’s revised rules on EAS, and additional guidance provided by FEMA
+IPAWS to the EAS-CAP Industry Group.9 Specifically, after ECIG issued its 1.0 version of the
+implementation guide, FEMA instructed ECIG in a memorandum that
+“IPAWS agrees that the audio encoding should be constrained to allow MP3 ONLY
+audio formats encoded as described in § 3.5.2 (1): “mono, 64 kbit/s data, preferably
+sampled at 22.05 kHz or otherwise at 44.1 kHz.” IPAWS agrees that the <mimeType>
+element should be appended with the file type name (as in “audio/x-ipaws-audio-mp3”)
+to eliminate the need for file type determination by inspection. These constraints will
+only apply to messages transmitted through IPAWS and intended for EAS distribution.
+EAS devices retrieving messages from other sources are not so constrained. This memo
+(to be published on the ECIG website) in addition to the Implementation Guide should
+suffice as guidance documentation, and no revision to the CAP standard or Profile are
+required.” [emphasis in the original].
+However, the ECIG Implementation Guide v1.0 – as incorporated by the FCC – allows for both
+the mp3 and wav audio file formats. The original IPAWS profile v1.0 does not restrict audio
+file formats.
+The Working Group observed that all known manufacturers of CAP EAS receiving equipment
+(integrated encoder/decoders and intermediary devices) currently support the mp3 file format, so
+there should little to no impact on manufacturers and EAS participants. The Working Group
+observed that there may be an impact on alert origination systems/technologies, if they do not
+currently support the ability to generate an MP3 file formatted audio resource.
+9 “MEMORANDUM to the EAS-CAP Industry Group (ECIG) from the Integrated Public Alert
+and Warning System (IPAWS) Program Management Office regarding the ECIG IG
+Concurrence Memorandum of August 9, 2010 (dated December 2, 2010) http://eas-
+cap.org/ECIG_IG_Concurrence_Memorandum%20v21.pdf
+Page 11The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+5.3 Recommendations & Best Practices
+5.3.1 Recommendation Authentication Audio Resources in CAP EAS Messaging
+The Working Group’s recommendation is that any CAP messages intended for dissemination
+via the IPAWS aggregator should include a digest element, as referenced in the CAP 1.2
+standard. The digest element is “optional” in the CAP 1.2 standard. According to the OASIS
+standard, the code representing the digital digest (“hash”) computed from the resource file
+(OPTIONAL) is calculated using the Secure Hash Algorithm (SHA-1) per [FIPS 180-2].10 The
+Working Group suggests that this approach would provide for authentication of resource
+elements. The Working Group concurred that the message origination systems/technologies
+would need to handle the action of attaching the message digest, not the CAP EAS receiving
+equipment.
+The Working Group recommended that use of the “digest element” should be required when a
+resource element is referenced in a CAP message, when intended for CAP EAS.
+To this end, the working group further recommended that ECIG should consider revising its
+Implementation Guide to include a requirement to use the digest element for authentication of
+resource elements.
+The Working Group further recommends that state and local alert system originators that do not
+transit CAP messaging through the IPAWS aggregator should likewise implement improved
+mechanisms for authentication of resource elements, including usage of the CAP digest element.
+5.3.2 Recommendation Audio file types for CAP EAS messaging
+In light of the FEMA concurrence memo to ECIG of 10 December 2010, specifying mp3 usage
+only, the Working Group agreed on a recommendation for ECIG to update their implementation
+guide to specify file/MIME types to MP3 audio only.
+We further agreed on a recommendation that, if amending the standards incorporated by
+reference represents a substantive change to a rule section in 47 CFR Part 11, then the FCC
+should only act if a change to a rule section would be substantive, undertake its public comment
+process to amend this reference in Part 11 (e.g., from ECIG 1.0 to a updated version of the
+Implementation Guide, and/or adding reference to the FEMA concurrence memorandum). The
+Working Group acknowledged its understanding that this would require a notice and comment
+rulemaking proceeding prior to implementing the change.
+Short of an additional rule change, the FCC should clarify whether the FEMA concurrence
+10 OASIS Common Alerting Protocol Version 1.2, 01 July 2010
+Page 12The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+memorandum suffices as guidance documentation, without further specification the revised EAS
+rules.
+5.3.3 Best Practice
+The Working Group observed that – on this issue - the CAP standard or existing IPAWS profile
+1.0 may not provide sufficiently specific guidance for CAP message originators (developers).
+We observe that FEMA may be well served by evaluating two options:
+1. The FEMA aggregator could actively have to inspect for “illegal” file types, and/or
+2. Developers should be strongly encouraged (if not required) to subject their systems
+to the existing FEMA conformity assessment for originators, to ensure proper
+conformance to the audio file specification. It was our understanding that the
+original IPAWS conformity process (completed by some 5 systems) had their support
+of mp3 origination evaluated. This recommendation would dovetail the draft section
+on conformity under consideration by WG9-2.
+3. We observed that the second option (conformity assessment) could be the least-
+resource intensive method for FEMA to achieve several common objectives, since
+their conformity standards are already developed, and the resource requirements
+(including costs) would be borne by the developer by using NIMS P-TAC as the
+evaluator.
+Page 13The Communications Security, Reliability and Interoperability Council III Working Group 9
+Final Report March, 2012
+6 References
+
+ EAS CAP Industry Group, EAS-CAP Implementation Guide Subcommittee, CAP EAS
+Implementation Guide, Version 1.0, 17 May 2010, http://www.eas-cap.org/.
+ Federal Communications Commission (FCC) Code of Federal Regulations (CFR), Title
+47, Part 11, http://ecfr.gpoaccess.gov/cgi/t/text/text-
+idx?c=ecfr&rgn=div5&view=text&node=47:1.0.1.1.11&idno=47.
+ MEMORANDUM to the EAS-CAP Industry Group (ECIG) from the Integrated Public
+Alert and Warning System (IPAWS) Program Management Office regarding the ECIG
+IG Concurrence Memorandum of August 9, 2010 (dated December 2, 2010) http://eas-
+cap.org/ECIG_IG_Concurrence_Memorandum%20v21.pdf
+ FEMA IPAWS, http://www.fema.gov/emergency/ipaws/.
+ OASIS Common Alerting Protocol Version 1.2, OASIS Standard, 01 July 2010,
+http://docs.oasis-open.org/emergency/cap/v1.2/CAP-v1.2.pdf.
+ OASIS Common Alerting Protocol (CAP) v1.2 USA Integrated Public Alert and
+Warning System Profile Version 1.0 – Committee Specification 01, 13 October 2009,
+http://docs.oasis-open.org/emergency/cap/v1.2/ipaws-profile/v1.0/cs01/.
+ Specific Area Message Encoding (SAME), http://www.weather.gov/nwr/nwrsame.htm.
+Page 14

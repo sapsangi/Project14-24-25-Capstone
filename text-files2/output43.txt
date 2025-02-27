@@ -1,0 +1,1638 @@
+PDF Content from https://transition.fcc.gov/bureaus/pshs/advisory/csric5/WG3_Report_Operating-Handbook_062216.pdf:
+June 2016 WORKING GROUP 3
+EMERGENCY ALERT SYSTEM
+Final Report – Updating the EAS Operating HandbookCSRIC V Working Group 3
+Final Report June 2016
+Table of Contents
+1 Results in Brief ......................................................................................................................... 3
+1.1 Executive Summary ......................................................................................................... 3
+2 Introduction .............................................................................................................................. 5
+2.1 CSRIC Structure ............................................................................................................... 6
+2.2 Working Group #3 Team Members ................................................................................. 6
+3 Objective, Scope, and Methodology ........................................................................................ 7
+3.1 Objective .......................................................................................................................... 7
+3.2 Scope ................................................................................................................................ 7
+3.3 Methodology .................................................................................................................... 8
+4 Background .............................................................................................................................. 8
+5 Recommendations .................................................................................................................... 9
+6 Conclusions ............................................................................................................................ 11
+A. Appendix A: CSRIC Recommendation for updated EAS Operating Handbook ........ A-0
+B. Appendix B: Instructions for Completing Customizable Sections in new Handbook . B-0
+C. Appendix C: Suggested Content of an EAS Participant Guide ................................... C-0
+D. Appendix D: EAS Rules Identified as Needing Update ............................................. D-0
+[2]CSRIC V Working Group 3
+Final Report June 2016
+1 Results in Brief
+1.1 Executive Summary
+The Federal Communications Commission (Commission or FCC) established the
+Communications Security, Reliability and Interoperability Council (CSRIC) “…to provide
+recommendations to the FCC regarding ways it can strive for security, reliability and
+interoperability of communications systems… including… emergency alerting." To achieve
+that goal, CSRIC V established and chartered various "Working Groups" to examine the
+various issues of concern in these areas.
+Working Group 3 (WG3) was formed to make recommendations for the CSRIC’s consideration
+in three major areas related to the continued improvement and development of the Emergency
+Alert System (EAS) as a secure, effective alerting tool for the American public:
+1. EAS Security;
+2. the provision of EAS in languages other than English; and
+3. the update of an operational handbook for individual broadcasters, cable service
+providers and other EAS Participants
+This Final Report was prepared by the CSRIC V WG3 Project Team on Updating the EAS
+Operating Handbook. In this report, the WG3 makes recommendations concerning an updated
+EAS Operating Handbook, and related documentation.
+According to 47 CFR Part 11, §11.15 of the Commission’s rules, all EAS Participants must have
+a copy of the EAS Operating Handbook located at normal duty positions or EAS equipment
+locations when an operator is required to be on duty, and be immediately available to staff
+responsible for initiating actions associated with the EAS process. Published by the FCC, the
+EAS Operating Handbook states in summary form the actions to be taken by personnel at EAS
+Participant facilities upon receipt of an EAN, tests, or State and Local Area alerts. The current
+handbook is obsolete and contains inaccurate instructions.
+Working Group 3 was tasked to “analyze the manner in which the EAS should operate for each
+type of EAS Participant (e.g., broadcaster and cable service provider facilities) and shall make
+recommendations for textual and visual elements of a handbook suitable for each category of
+EAS Participant, with particular attention to be given to rural, smaller and less resourced EAS
+Participants.”
+The Project Team developed four deliverables:
+(1) An Updated EAS Operating Handbook
+(2) Instructions for completing the customizable sections in the new Handbook
+(3) An outline for the suggested content of an EAS Participant Guide
+(4) A list of EAS rules identified as needing update, which concern Handbook topics
+An Updated EAS Operating Handbook: This was our Project Team’s primary mission. We
+determined that most of the material in the current Handbooks needed to be updated, so the
+decision was made to start clean with a new, simpler document. After careful analysis, we felt
+we would be able to replace the current set of five separate EAS Operating Handbooks (one for
+[3]CSRIC V Working Group 3
+Final Report June 2016
+each EAS Participant category – Radio, TV, Cable TV, Satellite and Wireline), with just a
+single version for use by all EAS Participants. We accomplished this goal by employing the use
+of checkboxes and fill-in-the-blank operational steps for each EAS Participant facility to
+customize the Handbook to describe its particular implementation of EAS alerting. Examples
+demonstrating the flexibility of this strategy include the ability to describe:
+ Attended vs. Unattended operation
+ Automatic vs. Manual mode operation
+ Mixed use of Automatic mode part of the time and Manual mode at other times
+ Operation as a decoder-only broadcast station
+ The differences between typical facilities in the various EAS Participant groups
+ Variations in EAS equipment operation
+ Variations in the desired recovery procedures at each EAS Participant facility when
+problems with alerts are encountered
+As an additional requirement to facilitate the use of a single version of the updated EAS
+Operating Handbook by all EAS Participants, we identified the need for a generic description
+of the person responsible for EAS applicable at any EAS Participant facility. At broadcast
+stations, the FCC rules establish the Chief Operator as responsible for EAS operations, but
+there is no such position established in the FCC rules for other EAS Participants. Thus we
+created the term “designated individual responsible for EAS operations and compliance at each
+EAS Participant facility” in order to keep the EAS Operating Handbook generic for use by all
+EAS Participants.
+As a final criterion, we concluded that the EAS Operating Handbook should be written to the
+operator on duty to give that person the information needed to handle the FCC-required EAS
+alerts. To maintain this focus, we eliminated any superfluous details that are not needed by the
+operator on duty to relay or originate the alerts required in the EAS rules. This resulted in a
+very clean and straightforward updated Handbook. We strongly recommend that no other
+content be added to the Handbook. To address the more general EAS details not needed by the
+operator on duty in the EAS Operating Handbook, we suggest below that the Commission
+consider developing a separate EAS Participant Guide based on the topic list we provide.
+Instructions for EAS Operating Handbook: Our recommended, updated EAS Operating
+Handbook contains a combination of checkboxes and fill-in-the-blank operational steps to
+allow each EAS Participant facility to customize the Handbook to describe its particular
+implementation of EAS alerting. It is our intent that these blank sections be completed by the
+designated individual responsible for EAS operations and compliance at each EAS Participant
+facility. In order to assist that individual in understanding the intent of each blank section, our
+Project Team drafted a set of instructions. These instructions should be posted on the FCC
+website, along with the EAS Operating Handbook.
+Suggested Content of an EAS Participant Guide: Acknowledging that the EAS Operating
+Handbook is specifically written to the operator on duty to determine the steps necessary to
+relay or originate the alerts required in the EAS rules, our Project Team felt that an additional
+document aimed at the designated individual responsible for EAS operations and compliance at
+each EAS Participant facility may be of benefit for the Commission to highlight EAS details
+needed by this EAS responsible individual but not needed by the operator on duty in the EAS
+Operating Handbook. We suggest the title EAS Participant Guide, and in this report present in
+[4]CSRIC V Working Group 3
+Final Report June 2016
+outline form a list of the proposed topics for this Guide.
+EAS Rules Identified as Needing Update: Our final deliverable is a list of issues in the EAS
+rules discovered while drafting the updated EAS Operating Handbook. We recommend that the
+FCC consider updating those rules to remove obsolete concepts and clear up ambiguities.
+In addition to the four deliverables, the Project Team adopted the following recommendation:
+Support from Manufacturers: Our Project Team recommends that the FCC encourage each EAS
+equipment manufacturer to define for its users how to implement the various choices discussed
+in the Handbook and its associated Instructions. The guidance should clearly reference each
+task in the Handbook, and provide help and understanding about how to accomplish each task
+with that manufacturer’s equipment, either by reference to existing documentation or with new
+documentation, using the particular manufacturer’s terms and technologies.
+2 Introduction
+CSRIC V Working Group 3 was established to make recommendations for the CSRIC’s
+consideration in three major areas related to the continued improvement and development of
+the Emergency Alert System (EAS) as a secure, effective alerting tool for the American public:
+(1) EAS Security; (2) the provision of EAS in languages other than English; and (3) the update
+of an operational handbook for individual broadcasters, cable service providers and other EAS
+Participants.
+In order to address the relevant issues, a diverse team of subject matter experts was recruited to
+participate. The following areas of expertise are represented within the group.
+ Message Originators: FEMA; NWS; State & Local Emergency Managers; State EAS
+Networks
+ EAS Participants: Radio; TV; Cable TV; Satellite TV; Satellite Radio; Wireline
+Video/IPTV
+ EAS Equipment Manufacturers
+ State Emergency Communications Committee Chairs and Members
+ EAS Experts and Consultants
+CSRIC Working Group 3 is divided into three sub-groups:
+ EAS Security – Recommend steps for assessing any barriers to the adoption of the
+CSRIC IV best practices, make recommendations on incentives, both regulatory and
+non-regulatory for affected stakeholders to adopt the best practices, and recommend
+methods by which other EAS stakeholders may gain assurance that the best practices are
+being implemented.
+ Multilingual EAS – The Working Group will recommend best practices for the
+delivery of multilingual EAS and emergency information.
+ Updating the EAS Operating Handbook – Update and modernize the EAS
+Handbook, which states in summary form the actions to be taken by personnel at EAS
+Participant facilities upon receipt of an EAN, tests, or State and Local Area alerts.
+[5]CSRIC V Working Group 3
+Final Report June 2016
+In the description of Working Group 3, the Commission expresses concern that the current EAS
+Operating Handbook “is obsolete and contains inaccurate instructions”. This is of particular
+importance, as the Handbook describes the steps necessary at EAS Participant facilities to relay
+a message from the President.
+In this report, WG3 discusses recommendations for an updated and modernized EAS Operating
+Handbook suitable for use by all EAS Participant facilities.
+2.1 CSRIC Structure
+Communications Security, Reliability, and Interoperability Council (CSRIC) V
+CSRIC Steering Committee
+Chair(s): Chair(s): WG Chair(s): Chair(s): Chair(s): Chair(s): Chair(s): Chair(s):
+WG # 1 # 2 WG # 3 WG # 4 WG # 5 WG # 6 WG # 7 WG # 8
+Susan Francisco Steven Kent Bressie Rod Rasmussen Brian Bill Boni William
+Sherwod Sanchez Johnson Scarpelli Reidway
+Catherine Creese Christopher Drew Morin
+Jeff Cohen Farrokh Kelly Boyer Joel Thomas
+Khatibi Williams Jennifer Manner Molinoff Anderson
+Brian Allen
+WG # 1: WG # 2: WG # 3: WG # 4: WG # 5: WG # 6: WG # 7: WG # 8:
+Evolving Emergency Emergency Communications Cybersecurity Secure Cybersecurity Priority
+911 Alerting Alert System Infrastructure Information Hardware & Workforce Services
+Services Platforms Resiliency Sharing Software
+Table 1 - Working Group Structure
+2.2 Working Group #3 Team Members
+Working Group #3 consists of the members listed below.
+* Indicates member, EAS Operating Handbook Update Project Team
+Name Company or Organization
+Chair WG3 - Kelly Williams* National Association of Broadcasters
+Chair WG3 – Steven Johnson* Johnson Telecom
+Chair WG3 EAS Operating Handbook Update Wisconsin EAS Broadcast Chair, WI SECC
+Project Team – Gary Timm*
+Adrienne Abbott-Gutierrez* Nevada EAS Chair, NV SECC
+Mark Annas Riverside (CA) Fire Department
+John Archer* SiriusXM
+John E. Benedict* CenturyLink
+Benjamin Brinitzer* iHeart Media and Society of Broadcast Engineers
+Robert Bunge NOAA NWS
+Kay Chiodo Def Link Inc.
+Greg Cooke* FCC
+Edward Czarnecki* Monroe Electronics
+Jim Du Bois* Minnesota Broadcasters Association
+Clay Freinwald* Washington State University, WA SECC
+Daniel Geist* Cox Communications, Inc.
+Suzanne Goucher* Maine Association of Broadcasters, Maine SECC
+Neil Graves SNR Systems
+Ricardo Guerrero* AT&T
+[6]CSRIC V Working Group 3
+Final Report June 2016
+Ryan Hedgpeth* DHS OEC
+Craig Hoden NOAA NWS
+Al Kenyon* DHS FEMA
+Jim Klas Wisconsin Educational Communications Board
+Wayne Luplow LGE/Zenith Electronics
+Lillian McDonald Twin Cities Public Television & Emergency,
+Community, Health and Outreach
+Brian Murray Houston Urban Area Security Initiative’s
+Emergency Public Information Work Group
+Dan O’Callaghan* Verizon
+Brian Oliger Hubbard Radio
+Jerry Parkins* Comcast
+Harold Price* Sage Alerting Systems, Inc.
+Austin Randazzo FCC
+Richard Rudman* Broadcast Warning Working Group, CA SECC
+Francisco Sanchez Harris County Office of Homeland Security &
+Emergency Management
+Bill Schully DIRECTV
+Andy Scott* National Cable & Telecommunications Association
+Gary Smith* Cherry Creek Radio
+Matthew Straeb GSS Net
+Mike Talbert* Verizon
+Leo Velazquez AT&T
+Larry Walke National Association of Broadcasters
+Herb White* NOAA NWS (contract support)
+Table 2 - List of Working Group Members
+3 Objective, Scope, and Methodology
+3.1 Objective
+The working group has been tasked to “analyze the manner in which the EAS should operate
+for each type of EAS Participant (e.g., broadcaster and cable service provider facilities) and
+shall make recommendations for textual and visual elements of a handbook suitable for each
+category of EAS Participant, with particular attention to be given to rural, smaller and less
+resourced EAS Participants.”
+3.2 Scope
+This document addresses the deliverables outlined in the CSRIC V charter for Working Group
+#3. The working group endeavored to develop an updated EAS Operating Handbook suitable for
+use by all categories of EAS Participants, as well as craft the instructions for completing the
+customizable blank portions of the Handbook.
+The Project Team took the following EAS Participant categories into consideration regarding
+the development of the updated EAS Operating Handbook:
+ Radio Broadcasters
+ TV Broadcasters
+[7]CSRIC V Working Group 3
+Final Report June 2016
+ Cable TV Providers
+ Satellite Radio Providers
+ Satellite TV Providers
+ Wireline/IPTV Providers
+The Project Team took the following logistical/technical factors into consideration regarding
+the development of the updated EAS Operating Handbook:
+ Attended vs. Unattended operation
+ Automatic vs. Manual mode operation
+ Mixed use of Automatic mode part of the time and Manual mode at other times
+ Operation as a decoder-only broadcast station
+ Corporate vs. local facility oversight
+ Variations in EAS equipment operation
+ The differences between typical facilities in the various EAS Participant groups
+The Project Team devoted particular attention to the needs of rural, smaller and less resourced
+EAS Participants, resulting in the following considerations:
+ Assessing the effect of all the factors above on these less resourced EAS Participants
+ Designing a straight-forward and simple updated EAS Operating Handbook
+ Including background information in the Instructions document
+ Recommending that the FCC develop an EAS Participant Guide based on our
+suggested content in Appendix C, a resource that could be of great benefit to these
+facilities
+ Highlighting that the FCC needs to adopt a new rule to instruct decoder-only stations
+on the action they are to take when receiving an EAN or NPT
+ Recommending that the Commission encourage EAS equipment manufacturers to
+provide guidance to their users on implementing the various choices discussed in the
+Handbook and its associated Instructions, another resource that could be of great
+benefit to these facilities
+Finally, although not specifically in the Working Group 3 description, the Project Team
+endeavored to address any issues that were a logical extension of our work in updating the EAS
+Operating Handbook. This analysis led to recommendations for an EAS Participant Guide, and
+a list of EAS rules identified as needing update.
+3.3 Methodology
+The Project Team used a collaborative, inclusive approach. Given the expertise of various team
+members, it was important to provide an open forum through which participants could express
+their opinions and help shape this report. These discussions largely took place during a series of
+weekly conference calls moderated by the Project Team chair, Gary Timm, Broadcast Chair of
+the Wisconsin State Emergency Communications Committee.
+4 Background
+The current FCC EAS Operating Handbooks have not been updated since 2007. In the Working
+Group 3 description, the Commission notes “the current Handbook is obsolete and contains
+inaccurate instructions”.
+[8]CSRIC V Working Group 3
+Final Report June 2016
+An important focus of the EAS Operating Handbook is to provide guidance for EAS
+Participants to relay the Presidential Emergency Action Notification (EAN) message. In 2012,
+the EAS Fifth Report and Order1 fundamentally changed the way the Presidential message is
+transmitted. First, the Emergency Action Termination (EAT) alert was eliminated. Secondly,
+the FCC implemented what it calls “message-by-message processing” where the Presidential
+message follows the same sequence as all other EAS alerts; an initial EAS code, in this case
+EAN, followed by the audio message and terminated by an End-of-Message (EOM) code. Any
+further broadcasts would repeat this sequence. The Commission notes in this Order, “We
+conclude that revising the rules governing EAN processing is necessary because they were
+designed to accommodate the EAN Network, which was phased out in 1995, and purely
+manual operation.” The FCC thus revised section §11.54 of the EAS rules. These changes
+made the instructions in the current Handbooks obsolete.
+5 Recommendations
+WG3 makes the following recommendations to the Commission, detailed in this section and
+summarized in the Conclusions section.
+The Project Team developed four deliverables, presented as appendices to this report:
+Appendix A: CSRIC Recommendation for updated EAS Operating Handbook
+Appendix B: Instructions for Completing Customizable Sections in new Handbook
+Appendix C: Suggested Content of an EAS Participant Guide
+Appendix D: EAS Rules Identified as Needing Update
+CSRIC Recommendation for updated EAS Operating Handbook: This was our Project Team’s
+primary mission. We determined that most of the material in the current Handbooks needed to
+be updated, so the decision was made to start clean with a new, simpler document. After careful
+analysis, we felt we would be able to replace the current set of five separate EAS Operating
+Handbooks (one for each EAS Participant category – Radio, TV, Cable TV, Satellite and
+Wireline), with just a single version for use by all EAS Participants. We accomplished this goal
+by employing the use of checkboxes and fill-in-the-blank operational steps for each EAS
+Participant facility to customize the Handbook to describe its particular implementation of EAS
+alerting. Examples demonstrating the flexibility of this strategy include the ability to describe:
+ Attended vs. Unattended operation
+ Automatic vs. Manual mode operation
+ Mixed use of Automatic mode part of the time and Manual mode at other times
+ Operation as a decoder-only broadcast station
+ The differences between typical facilities in the various EAS Participant groups
+ Variations in EAS equipment operation
+ Variations in the desired recovery procedures at each EAS Participant facility when
+problems with alerts are encountered
+As an additional requirement to facilitate the use of a single version of the updated EAS
+1 Emergency Alert System Fifth Report and Order, FCC 12-7, EB Docket 04-296 (Jan. 10, 2012)
+See Paragraphs 201-206.
+[9]CSRIC V Working Group 3
+Final Report June 2016
+Operating Handbook by all EAS Participants, we identified the need for a generic description
+of the person responsible for EAS applicable at any EAS Participant facility. At broadcast
+stations, the FCC rules establish the Chief Operator as responsible for EAS operations, but
+there is no such position established in the FCC rules for other EAS Participants. Thus we
+created the term “designated individual responsible for EAS operations and compliance at each
+EAS Participant facility” in order to keep the EAS Operating Handbook generic for use by all
+EAS Participants.
+As a final criterion, we concluded that the EAS Operating Handbook should be written to the
+operator on duty to give that person the information needed to handle the FCC-required EAS
+alerts. To maintain this focus, we eliminated any superfluous details that are not needed by the
+operator on duty to relay or originate the alerts required in the EAS rules. This resulted in a
+very clean and straightforward updated Handbook. We strongly recommend that no other
+content be added to the Handbook. To address the more general EAS details not needed by the
+operator on duty in the EAS Operating Handbook, we suggest below that the Commission
+consider developing a separate EAS Participant Guide based on the topic list we provide.
+Instructions for Completing Customizable Sections in new EAS Operating Handbook: Our
+recommended, updated EAS Operating Handbook contains a combination of checkboxes and
+fill-in-the-blank operational steps to allow each EAS Participant facility to customize the
+Handbook to describe its particular implementation of EAS alerting. It is our intent that these
+blank sections be completed by the designated individual responsible for EAS operations and
+compliance at each EAS Participant facility. In order to assist that individual in understanding
+the intent of each blank section, our Project Team drafted a set of instructions. These
+instructions should be posted on the FCC website, along with the EAS Operating Handbook.
+Suggested Content of an EAS Participant Guide: Acknowledging that the EAS Operating
+Handbook is specifically written to the operator on duty to determine the steps necessary to
+relay or originate the alerts required in the EAS rules, our Project Team felt that an additional
+document aimed at the designated individual responsible for EAS operations and compliance at
+each EAS Participant facility may be of benefit for the Commission to highlight EAS details
+needed by this EAS responsible individual but not needed by the operator on duty in the EAS
+Operating Handbook. We suggest the title EAS Participant Guide, and in this report present in
+outline form a list of the proposed topics for this Guide.
+EAS Rules Identified as Needing Update: Our final deliverable is a list of issues in the EAS
+rules discovered while drafting the updated EAS Operating Handbook. We recommend that the
+FCC consider updating those rules to remove obsolete concepts and clear up ambiguities.
+In addition to the four deliverables, the Project Team adopted the following recommendation:
+Support from Manufacturers: Our Project Team recommends that the FCC encourage each EAS
+equipment manufacturer to define for its users how to implement the various choices discussed
+in the Handbook and its associated Instructions. The guidance should clearly reference each
+task in the Handbook, and provide help and understanding about how to accomplish each task
+with that manufacturer’s equipment, either by reference to existing documentation or with new
+documentation, using the particular manufacturer’s terms and technologies.
+[10]CSRIC V Working Group 3
+Final Report June 2016
+6 Conclusions
+The EAS Operating Handbook Project Team succeeded in developing an updated EAS
+Operating Handbook and Instructions, following the Project Team’s preference for a single
+version for use by all EAS Participants. As a matter of course in drafting the updated Handbook,
+the Project Team research revealed that two additional limited-scope deliverables would be of
+value to the Commission. Thus we developed in outline form a list of topics for a recommended
+EAS Participant Guide, as well as collected a list of EAS rules identified as needing update in
+connection with the topics addressed in the updated Handbook. Finally, we concluded that EAS
+Participants would benefit from guidance provided by their EAS equipment manufacturers.
+To summarize, WG3 recommends that the FCC should:
+(1) Adopt the updated EAS Operating Handbook presented in this report as Appendix A.
+(2) Adopt the Instructions for completing the customizable sections in the new Handbook,
+presented in this report as Appendix B.
+(3) Develop an EAS Participant Guide, following the suggested content outlined in this
+report as Appendix C.
+(4) Consider amending the EAS rules identified as needing update in Appendix D of this
+report.
+(5) Encourage EAS equipment manufacturers to define for their users how to implement the
+various choices discussed in the Handbook and its associated Instructions.
+[11]CSRIC V Working Group 3
+Final Report June 2016
+A. Appendix A: CSRIC Recommendation for updated EAS
+Operating Handbook
+The document presented here in Appendix A is the recommendation of WG3 as the updated EAS
+Operating Handbook. It is intended as a single version of the Handbook, written to enable use by all
+EAS Participant categories. In order to accommodate the different types of EAS Participants and the
+operational variations within each EAS Participant group, the Handbook contains customizable blank
+sections to be filled in by the designated individual responsible for EAS operations and compliance at
+each EAS Participant facility. Appendix B of this report contains the Instructions drafted by WG3 to
+aid in the completion of the blank sections of the Handbook.
+The Project Team concluded that the EAS Operating Handbook should be written to the operator on
+duty to give that person the information needed to handle the FCC-required EAS alerts. To maintain
+this focus, we eliminated any superfluous details that are not needed by the operator on duty to relay
+or originate the alerts required in the EAS rules. This resulted in a very clean and straightforward
+updated Handbook. We strongly recommend that no other content be added to the Handbook.
+To address the more general EAS details not needed by the operator on duty in the EAS Operating
+Handbook, we suggest that the Commission consider developing a separate EAS Participant Guide
+based on the topic list we provide in Appendix C.
+Notes:
+ It is our intent to merely furnish the text of the Handbook and leave the formatting up to the
+Commission. However, we have the following thoughts:
+o WG3 recommends this Handbook be created in the Portrait layout, as opposed to Landscape
+layout, in order to easily differentiate the new, updated Handbook from the old Handbooks.
+o It occurs to us that an appropriate format may be a “fillable PDF” similar to the IRS Form
+1040, where the user can complete checkboxes and blank lines and then save the PDF for
+future changes.
+o PDFs also typically have a feature allowing pop-up balloons to be assigned to the blank lines,
+which could display the instructions for completing that line when the user moves the
+computer mouse pointer over that particular blank line. This method could eliminate the need
+for a separate Instructions document altogether.
+ On the second page of this Handbook quoting rule §11.15, we eliminated the words “the EAT”
+and we dropped the second half of the last sentence from the current rule. In Appendix D of this
+report, we recommend that the Commission drop these two phrases from the current §11.15 rule.
+ The FCC may need to revise this Handbook if any other changes are made to the EAS rules as a
+result of the issues we raise in our Appendix D, such as but not limited to, how decoder-only
+stations are to handle received EANs and NPTs (in §11.54), and if the required RWT can be
+relayed or must be originated (in §11.61).
+ Although the Handbook we created contains only three steps for each manual procedure list, we
+anticipate some facilities may require more than three steps. By listing only three steps, we did
+not intend to imply that we feel only three steps are needed in any given facility. Rather, we leave
+it to the Commission to determine the number of blank steps it wishes to offer in each manual
+procedure. If the Commission could find a mechanism for the user to dynamically add steps as
+needed, this would provide the optimal flexibility for all facilities.
+[A-0]CSRIC V Working Group 3
+Final Report June 2016
+2016 EAS Operating Handbook
+IMPORTANT EDITING INSTRUCTIONS: Prior to posting, the
+individual responsible for EAS operations at this facility must
+complete the blank sections of this Handbook. Consult the
+companion EAS Operating Handbook Instructions, as well as
+information from the manufacturer of your EAS device, and
+your State or Local EAS Plan, for guidance in completing the
+blank sections of this Handbook.
+Operators with EAS questions or issues should contact the following
+individual responsible for EAS operations at this facility:
+Name: ________________________________________
+Contact Information: ____________________________
+Post at All EAS Operator Locations
+[A-1]CSRIC V Working Group 3
+Final Report June 2016
+[Inside front cover note]
+The EAS Operating Handbook states in summary form the actions to be taken by
+personnel at EAS Participant facilities upon receipt of an EAN, tests, or State and
+Local Area alerts. It is issued by the FCC and contains instructions for the above
+situations. A copy of the Handbook must be located at normal duty positions or EAS
+equipment locations.
+47 CFR Part 11, §11.15 EAS Operating Handbook.
+[A-2]CSRIC V Working Group 3
+Final Report June 2016
+INTRODUCTION
+This Handbook is a guide for use by operations personnel
+who are on duty when EAS alerts are originated,
+received, and possibly relayed.
+Guidance in this Handbook
+This Handbook provides guidance on:
+ National-level EAS Alert
+ This alert uses the Emergency Action
+Notification (EAN) event code.
+ National EAS Test
+ This test uses the National Periodic Test
+(NPT) event code.
+ Monthly EAS Test
+ This test uses the Required Monthly Test
+(RMT) event code.
+ Weekly EAS Test
+ This test uses the Required Weekly Test
+(RWT) event code.
+ State and Local EAS Alerts
+ These alerts use all other event codes.
+[A-3]CSRIC V Working Group 3
+Final Report June 2016
+NATIONAL-LEVEL EAS ALERT
+EAS Event Code: Emergency Action Notification (EAN)
+All facilities are required to immediately relay the
+Emergency Action Notification (EAN).
+The EAN is received by our EAS unit from sources outside
+our facility. It is generated by Federal officials.
+What do I need to do if I am the operator on duty?
+□
+At this facility, EANs are relayed automatically, with no
+operator intervention.
+- OR -
+□
+At this facility, the operator on duty is required to
+perform the following steps to relay an EAN:
+ Step 1: _______________.
+ Step 2: _______________.
+ Step 3: _______________.
+ Alert will finish by itself.
+What does the EAN sound like?
+The EAN begins with three long EAS data bursts, followed
+by the 8-second attention signal, then the President or
+[A-4]CSRIC V Working Group 3
+Final Report June 2016
+other authorized Federal official will speak for as long as
+necessary. There is no time limit to the EAN alert. The
+EAN will end with three short EAS data bursts.
+There may be silence, or a repeating “please stand by”
+message during the EAN before the President or other
+authorized Federal official begins speaking.
+ What if I am the operator on duty and have a
+problem?
+Note in detail what happened and immediately report
+the issue to the individual responsible for EAS operations
+at this facility.
+For guidance on resolving problems, see the section on
+Recovery Procedures at the back of this Handbook.
+[A-5]CSRIC V Working Group 3
+Final Report June 2016
+NATIONAL EAS TEST
+EAS Event Code: National Periodic Test (NPT)
+All facilities are required to immediately relay the
+National Periodic Test (NPT).
+The National EAS Test is received by our EAS unit from
+sources outside our facility. It is generated by Federal
+officials.
+What do I need to do if I am the operator on duty?
+□
+At this facility, NPTs are relayed automatically, with no
+operator intervention.
+- OR -
+□
+At this facility, the operator on duty is required to
+perform the following steps to relay an NPT:
+ Step 1: _______________.
+ Step 2: _______________.
+ Step 3: _______________.
+ Test will finish by itself.
+What does the NPT sound like?
+[A-6]CSRIC V Working Group 3
+Final Report June 2016
+The NPT consists of three long EAS data bursts, the 8-
+second attention signal, an audio message, and three
+short EAS data bursts. It has a built-in two minute time
+limit.
+ What if I am the operator on duty and have a
+problem?
+If the NPT test does not run, NEVER try to originate one
+yourself. Instead, note in detail what happened and
+report the issue to the individual responsible for EAS
+operations at this facility.
+For guidance on resolving problems, see the section on
+Recovery Procedures at the back of this Handbook.
+[A-7]CSRIC V Working Group 3
+Final Report June 2016
+MONTHLY EAS TEST
+EAS Event Code: Required Monthly Test (RMT)
+SENDING THE RMT: Not all facilities originate RMTs.
+□
+This facility sometimes originates RMTs. See
+instructions at: __________________________.
+- OR -
+□
+At this facility, operators should NEVER originate an
+RMT.
+RECEIVING THE RMT: When the Monthly EAS Test is
+received by our EAS unit from sources outside our
+facility, the operator shall follow the guidance below.
+What do I need to do if I am the operator on duty?
+□
+At this facility, received RMT tests are relayed
+automatically, with no operator intervention.
+- OR -
+□
+At this facility, the operator on duty is required to
+perform the following steps to relay a received RMT:
+ Step 1: _______________.
+[A-8]CSRIC V Working Group 3
+Final Report June 2016
+ Step 2: _______________.
+ Step 3: _______________.
+ Test will finish by itself.
+At this facility, the Required Monthly Test shall be run
+within __ minutes of being received by the EAS
+equipment.
+What does the RMT sound like?
+The RMT includes three long EAS data bursts, an 8-
+second attention signal, an audio message, and three
+short EAS data bursts. It has a built-in two minute time
+limit.
+What if I am the operator on duty and have a
+problem?
+If the RMT test does not run, do not try to originate one
+yourself. Instead, note in detail what happened and
+report the issue to the individual responsible for EAS
+operations at this facility.
+For guidance on resolving problems, see the section on
+Recovery Procedures at the back of this Handbook.
+[A-9]CSRIC V Working Group 3
+Final Report June 2016
+WEEKLY EAS TEST
+EAS Event Code: Required Weekly Test (RWT)
+□
+If this box is checked, our facility is exempt from
+originating the Required Weekly Test and all information
+below can be disregarded by the operator.
+If the box above is not checked, all information below
+applies to our facility…
+The EAS Required Weekly Test is originated by the EAS
+unit at our facility. RWT tests received from outside our
+facility are never relayed.
+What do I need to do if I am the operator on duty?
+□
+At this facility, RWT tests are originated automatically,
+with no operator intervention.
+- OR -
+□
+At this facility, the operator on duty is required to
+perform the following steps to originate an RWT:
+ Step 1: _______________.
+ Step 2: _______________.
+[A-10]CSRIC V Working Group 3
+Final Report June 2016
+ Step 3: _______________.
+ Test will finish by itself.
+What does the RWT sound like?
+The RWT includes three long EAS data bursts, a pause,
+and three short EAS data bursts. There is NO audio
+message within the RWT.
+ What if I am the operator on duty and have a
+problem?
+If the RWT test does not run, note in detail what
+happened and immediately report the issue to the
+individual responsible for EAS operations at this facility
+so the test can be rescheduled.
+For guidance on resolving problems, see the section on
+Recovery Procedures at the back of this Handbook.
+[A-11]CSRIC V Working Group 3
+Final Report June 2016
+STATE AND LOCAL EAS ALERTS
+EAS Event Code: These alerts use all event codes
+other than those on the preceding pages.
+Refer to your facility’s State and Local alerting guidance.
+Facility Notes:
+______________________________________________
+______________________________________________
+[A-12]CSRIC V Working Group 3
+Final Report June 2016
+RECOVERY PROCEDURES
+To resolve problems with any EAS event covered in this
+Handbook, consult the Recovery Procedures below.
+At the conclusion of any EAS test or alert, if normal
+programming does not return or if you hear
+programming from another source, follow these
+steps:________________________.
+For issues other than the one described above, follow
+this procedure in the order listed:
+ Step 1: _______________.
+ Step 2: _______________.
+ Step 3: _______________.
+ Step 4: _______________.
+ Step 5: _______________.
+ Step 6: _______________.
+Note in detail what happened and immediately report
+the issue to the individual responsible for EAS operations
+at this facility.
+[A-13]CSRIC V Working Group 3
+Final Report June 2016
+B. Appendix B: Instructions for Completing Customizable
+Sections in new Handbook
+The recommended, updated EAS Operating Handbook contains a combination of checkboxes
+and fill-in-the-blank operational steps to allow each EAS Participant facility to customize the
+Handbook to describe its particular implementation of EAS alerting. It is the intent of WG3 that
+these blank sections be completed by the designated individual responsible for EAS operations
+and compliance at each EAS Participant facility. In order to assist that individual in
+understanding the intent of each blank section, WG3 offers the following set of instructions.
+These instructions should be posted on the FCC website, along with the EAS Operating
+Handbook.
+Notes:
+ The arrows and highlighting in the layout of this document are merely intended for WG3 to
+communicate to the FCC the instructions we intend to go with each blank checkbox and
+blank line. The layout WG3 used is not necessarily our recommendation for a format. We
+leave it to the Commission to determine whether our arrows, highlighting and side columns
+of text are an appropriate layout for this document.
+ While it is our intent to merely furnish the text of these Handbook Instructions and leave the
+text formatting up to the Commission, it occurs to us that if a format such as a “fillable PDF”
+were used for the Handbook, it may be possible to assign PDF pop-up balloons to the blank
+lines, which could display the instructions for completing that line when the user moves the
+computer mouse pointer over that particular blank line. This method may then eliminate the
+need for a separate Instructions document altogether.
+ WG3 suggests these Instructions be an online document, with the cited EAS rules as
+clickable links.
+ The FCC may need to revise these Handbook Instructions if any changes are made to the
+EAS rules as a result of the issues we raise in our Appendix D, such as but not limited to,
+how decoder-only stations are to handle received EANs and NPTs (in §11.54), and if the
+required RWT can be relayed or must be originated (in §11.61).
+[B-0]CSRIC V Working Group 3
+Final Report June 2016
+INSTRUCTIONS FOR
+2016 EAS Operating Handbook
+IMPORTANT: These Instructions are for use by the designated
+individual responsible for EAS operations and compliance at
+your facility. Check with your manager or supervisor if you are
+uncertain regarding your authority to use these Instructions to
+complete the FCC-required EAS Operating Handbook
+information.
+[B-1]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for Completing Blank Sections in
+the FCC EAS Operating Handbook by the
+Designated Individual Responsible for EAS
+Operations and Compliance at this Facility
+Follow these instructions for completing the checkboxes
+and fill-in-the-blank fields in your EAS Operating
+Handbook before it is posted. Reminder: FCC rules
+require posting of your facility’s Handbook at all EAS
+operating positions.
+You may need to consult information from the
+manufacturer of your EAS device, and your State or Local
+EAS Plan, for guidance in completing the blank sections
+of this Handbook.
+On the following pages, the checkboxes are utilized to
+indicate if your facility handles each alert-type in the
+Automatic mode or in the Manual mode. Manual mode
+means the operator on duty needs to perform steps to
+relay or originate the alert. Thus, the checkboxes always
+occur in pairs separated by the word “OR”, and you
+should be selecting only one of the two check boxes.
+[B-2]CSRIC V Working Group 3
+Final Report June 2016
+Note regarding the checkboxes above: If your facility
+operates in Automatic part of the time and Manual at
+other times, it is suggested that you checkmark the
+Manual mode box and in Step 1 of the procedure list the
+hours your facility is in Automatic mode when no
+operator intervention is required.
+The fill-in-the-blank fields are intended for you to fill in
+the steps that your operator on duty needs to perform if
+you had check-marked the box on that page indicating
+operator action is needed. If you check-marked the
+Automatic box, then these steps should be left blank.
+The following instructions detail decisions to be made on
+each page of the EAS Operating Handbook.
+[B-3]CSRIC V Working Group 3
+Final Report June 2016
+Decoder-Only Exceptions
+Class D non-commercial educational FM, LPFM, and LPTV
+stations are granted the exception in FCC rules of not
+being required to install an EAS Encoder. However, these
+stations may install an Encoder/Decoder if desired. If
+your facility does operate an Encoder/Decoder, then
+follow the instructions in this document as described. If
+your facility operates as decoder-only, the following
+exceptions can be applied.
+Decoder-Only Required Monthly Test:
+FCC rule 11.61(a)(1)(i) states that, “Analog and digital
+class D non-commercial educational FM, analog and
+digital LPFM stations, and analog and digital LPTV
+stations are required to transmit only the test script.”
+In the following Instructions for RMT, Class D NCE FM,
+LPFM, and LPTV stations should check-mark the box
+indicating “operator on duty is required to perform the
+following steps”, and as Step 1 fill in a statement such as,
+“Read the following script on the air, “This is a Required
+Monthly Test…”, using the appropriate script for your
+area as found in the State EAS Plan.
+[B-4]CSRIC V Working Group 3
+Final Report June 2016
+Decoder-Only Required Weekly Test:
+FCC rule 11.61(a)(2)(ii) states, “DBS providers, analog and
+digital class D non-commercial educational FM stations,
+analog and digital LPFM stations, and analog and digital
+LPTV stations are not required to transmit this test.”
+In the following Instructions for RWT, if your facility
+operates as decoder-only, you should check-mark the
+box at the top of the RWT page indicating your facility is
+exempt from originating the RWT.
+DBS Provider Exception
+Note that the above exception to originating RWTs
+applies to your facility as well. If you choose to exercise
+this option, you should check-mark the box at the top of
+the RWT page indicating your facility is exempt from
+originating the RWT.
+[B-5]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Page 1 -
+Cover
+CHECKBOX FILL-IN-THE-
+CHOICES BLANK
+CHOICES
+(There are
+no checkbox
+choices on
+this page.)
+Fill in the
+name of
+individual
+whom your
+operators
+should
+contact with
+EAS
+questions or
+issues.
+Fill in that
+individual’s
+email or
+phone
+contact
+information.
+[B-6]CSRIC V Working Group 3
+Final Report June 2016
+Information to Consider in Completing the Blanks
+for EAS Operating Handbook – Page 4 - EAN
+ FCC rules require that this alert be relayed
+immediately, whether your EAS unit is in Automatic
+or Manual mode operation.
+ Your EAS unit should be programmed to react to an
+EAN containing the National location code, and
+other location codes as required.
+See instructions on next page for completing the blank
+sections of this page.
+[B-7]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Page 4 - EAN
+CHECKBOX FILL-IN-THE-
+CHOICES BLANK
+CHOICES
+If this facility
+relays the If you check-
+EAN alert in marked the
+Automatic first box on
+mode, then the left
+check-mark indicating
+the first box. Automatic
+mode is
+used, then
+the
+- OR - following
+steps are
+left blank.
+If this facility
+requires the
+operator on
+duty to
+If you check-
+perform
+marked the
+steps to
+second box
+relay the
+on the left
+EAN alert,
+indicating
+then check-
+operator
+mark the
+action is
+second box.
+necessary,
+then fill in
+the required
+steps here.
+[B-8]CSRIC V Working Group 3
+Final Report June 2016
+Information to Consider in Completing the Blanks
+for EAS Operating Handbook – Page 6 - NPT
+ FCC rules require that this test be relayed
+immediately, whether your EAS unit is in Automatic
+or Manual mode operation.
+ Your EAS unit should be programmed to react to an
+NPT containing the National location code, and other
+location codes as required.
+ Provide NPT data collection instructions for the
+operator on duty if necessitated by the Electronic
+Test Reporting System (ETRS) reporting
+requirements.
+See instructions on next page for completing the blank
+sections of this page.
+[B-9]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Page 6 - NPT
+CHECKBOX FILL-IN-THE-
+CHOICES BLANK
+CHOICES
+If this facility If you check-
+relays the marked the
+NPT test in first box on
+Automatic the left
+mode, then indicating
+check-mark Automatic
+the first box. mode is
+used, then
+the
+- OR - following
+steps are
+left blank.
+If this facility
+requires the
+operator on
+duty to
+If you check-
+perform
+marked the
+steps to
+second box
+relay the
+on the left
+NPT test,
+indicating
+then check-
+operator
+mark the
+action is
+second box.
+necessary,
+then fill in
+the required
+steps here.
+[B-10]CSRIC V Working Group 3
+Final Report June 2016
+Information to Consider in Completing the Blanks
+for EAS Operating Handbook – Pages 8 & 9 - RMT
+ FCC rules require that this test be relayed within 60
+minutes, with the following exceptions:
+o See FCC rule 11.61(a) for circumstances when
+the RMT need not be relayed.
+o Class D NCE FM, LPFM, and LPTV stations see
+Page 4 of these Instructions for exceptions.
+ The RMT test may be relayed automatically or
+manually.
+ EAS Local Primary (LP) stations should not wait the
+full 60 minutes, to give downstream stations time to
+relay the RMT.
+ Your EAS unit should be programmed to react to the
+RMT location codes as set forth in applicable State
+EAS Plans.
+ The RMT originator and schedule should be listed in
+the applicable State EAS Plans.
+See instructions on next page for completing the blank
+sections of this page.
+[B-11]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Pages 8&9 -
+RMT
+If this facility FILL-IN-THE-
+originates BLANK
+the RMT CHOICES
+test, then
+check-mark
+the first box.
+- OR -
+If you check-
+If this facility
+marked the
+never
+first box on
+originates
+the left,
+RMTs, then
+then fill in
+check-mark
+location of
+the second
+instructions
+box.
+here.
+If this facility
+If you check-
+relays the
+marked the
+RMT test in
+first box on
+Automatic
+the left
+mode, then
+indicating
+check-mark
+Automatic
+the first box.
+mode is
+- OR -
+used, then
+If this facility
+these steps
+requires the
+are left
+operator on
+blank.
+duty to
+perform
+If you check-
+steps to
+marked the
+relay the
+second box
+RMT test,
+on the left
+then check-
+indicating
+mark the
+operator
+second box.
+action is
+necessary,
+CHECKBOX
+then fill in
+CHOICES
+the required
+steps here.
+[B-12]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Pages 8&9 –
+RMT (continued)
+CHECKBOX Continue
+CHOICES steps from
+previous
+(There are page.
+no checkbox
+choices on Fill in the
+this page.) amount of
+delay that is
+policy of this
+facility, but
+in no case
+more than
+60 minutes.
+FILL-IN-THE-
+BLANK
+CHOICES
+[B-13]CSRIC V Working Group 3
+Final Report June 2016
+Information to Consider in Completing the Blanks
+for EAS Operating Handbook – Page 10 - RWT
+ FCC rule 11.61(a)(2)(i) requires that EAS Participants
+must send an RWT “at least once a week at random
+days and times”, with the following exceptions:
+o See FCC rule 11.61(a) for circumstances when
+the RWT need not be originated.
+o DBS Providers, and Class D NCE FM, LPFM, and
+LPTV stations, see Page 5 of these Instructions
+for exceptions.
+ FCC rule 11.51(m) states, “When transmitting the
+required weekly test, EAS Participants shall use the
+event code RWT. The location codes are the state
+and county for the broadcast station city of license
+or system community or city. Other location codes
+may be included upon approval of station or system
+management.”
+ FCC rule 11.61(a)(2)(iv) states that, “EAS Participants
+are not required to transmit a video message when
+transmitting the required weekly test.”
+ The RWT test may be transmitted automatically or
+manually.
+ The transmitted RWT may have an announcement
+before or after the test, but it is not required.
+[B-14]CSRIC V Working Group 3
+Final Report June 2016
+See instructions on next page for completing the blank
+sections of this page.
+[B-15]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Page 10 -
+RWT
+CHECKBOX FILL-IN-THE-
+CHOICES BLANK
+Decoder- CHOICES
+only facility,
+check this
+box.
+DBS facility
+might check
+this box.
+See Page 5
+of these If you check-
+Instructions. marked the
+first box on
+If this facility the left
+originates indicating
+the RWT in Automatic
+Automatic mode is
+mode, then used, then
+check-mark the
+the first box. following
+- OR - steps are
+left blank.
+If this facility
+requires the
+operator on
+duty to
+If you check-
+perform
+marked the
+steps to
+second box
+originate
+the RWT
+on the left
+indicating
+test, then
+operator
+check-mark
+action is
+the second
+necessary,
+box.
+then fill in
+the required
+steps here.
+[B-16]CSRIC V Working Group 3
+Final Report June 2016
+Information to Consider in Completing the Blanks
+for EAS Operating Handbook – Page 12 – State and
+Local EAS Alerts
+ You may need to consult information found in your
+State or Local EAS Plan for guidance in completing
+the blanks in this section of this Handbook.
+ All State and Local alerts are at the EAS Participant’s
+discretion. See FCC rule 11.52 for details.
+ However, if an EAS Participant chooses to carry
+those alerts then FCC rules state that the procedures
+in the State or Local EAS Plan must be followed. See
+FCC rule 11.55 for details.
+ State or Local EAS alerts can be relayed in the
+Automatic or Manual mode.
+See instructions on next page for completing the blank
+sections of this page.
+[B-17]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Page 12 –
+State and Local EAS Alerts
+CHECKBOX FILL-IN-THE-
+CHOICES BLANK
+CHOICES
+(There are
+no checkbox
+choices on
+this page.)
+Fill in the
+location of
+your
+facility’s
+State and
+Local
+alerting
+guidance, or
+a statement
+on your
+facility
+policy, or
+other
+instructions
+for your
+operator on
+duty.
+[B-18]CSRIC V Working Group 3
+Final Report June 2016
+Information to Consider in Completing the Blanks
+for EAS Operating Handbook – Page 13 – Recovery
+Procedures
+Each of the four alerts and tests covered in this
+Handbook ends with a section entitled “What if I am
+the operator on duty and have a problem?” The last
+response in each of these sections is, “For guidance on
+resolving problems, see the section on Recovery
+Procedures at the back of this Handbook.”
+Thus, the following section is your opportunity to
+provide your operators with the precise steps you
+want them to follow in resolving any issues.
+See instructions on next page for completing the blank
+sections of this page.
+[B-19]CSRIC V Working Group 3
+Final Report June 2016
+Instructions for EAS Operating Handbook – Page 13 –
+Recovery Procedures
+CHECKBOX FILL-IN-THE-
+CHOICES BLANK
+CHOICES
+(There are
+no checkbox Fill in the
+choices on steps you
+this page.) want your
+operators to
+follow if an
+alert or test
+ends
+abnormally.
+Fill in the
+steps you
+want your
+operators to
+follow if the
+above
+guidance
+does not
+resolve the
+situation.
+[B-20]CSRIC V Working Group 3
+Final Report June 2016
+C. Appendix C: Suggested Content of an EAS Participant Guide
+Acknowledging that the EAS Operating Handbook is specifically written to the operator on duty
+to determine the steps necessary to relay or originate the alerts required in the EAS rules, our
+Project Team felt that an additional document aimed at the designated individual responsible for
+EAS operations and compliance at each EAS Participant facility may be of benefit for the
+Commission to highlight EAS details needed by this EAS responsible individual but not needed
+by the operator on duty in the EAS Operating Handbook. We suggest the title EAS Participant
+Guide, and in this Appendix C present in outline form a list of the proposed topics for this Guide.
+Notes:
+ WG3 feels that this Guide is likely to be a “book” when considering the depth of its content.
+As such, we felt that creating an entire book goes beyond our expertise, and should be left to
+a “tech writer” at the FCC. Thus we limited our deliverable to an outline of the topics we see
+as beneficial in this Guide, leaving the actual layout and composition to a professional tech
+writer at the FCC.
+ While we outline a section addressing the required entry of data into the ETRS, further
+details will likely arise as the FCC more fully develops the ETRS entry fields. We trust that
+the Commission will supplement that section with whatever pertinent details come to light as
+ETRS is rolled out.
+ Although we noted the FCC Broadcast Self-Inspection Checklists as a resource in this Guide,
+we note that FCC needs to update these Checklists, as they date from 2008-2010.
+ The FCC may need to revise this Guide if any changes are made to the EAS rules as a result
+of the issues we raise in our Appendix D, such as but not limited to, how decoder-only
+stations are to handle received EANs and NPTs (in §11.54), and if the required RWT can be
+relayed or must be originated (in §11.61).
+ WG3 suggests that this EAS Participant Guide would be useful to Alternative Broadcast
+Inspection Program (ABIP) inspectors.
+[C-0]CSRIC V Working Group 3
+Final Report June 2016
+EAS Participant Guide - Topic List
+A deliverable of the CSRIC V – WG3, EAS Handbook Project Team
+Audience:
+This Guide is aimed at the designated individual responsible for EAS operations and compliance at all
+EAS Participant facilities. (As opposed to the posted EAS Operating Handbook, which is aimed at the
+operator on duty solely to determine the steps necessary to relay or originate the alerts required in the
+EAS rules.)
+Purpose:
+To highlight the more pertinent details of the EAS rules, particularly regarding required actions and
+items associated with the EAN, NPT, RMT, RWT, and State/Local alerting topics only dealt with at the
+operator level in the EAS Operating Handbook.
+Format:
+This Guide is intended as a single version, for use by all EAS Participants.
+Suggested Topic Areas:
+EAS Participant Facility-Specific Details:
+ Blank lines to fill in the EAS Monitoring Assignments required in the State EAS Plan.
+o (blank checkbox) This facility has a waiver to monitor the sources above.
+ Blank lines to fill in Waiver Issue Date, and Waiver Issued By, if applicable.
+ Blank lines to fill in any additional, voluntary EAS sources monitored.
+ Blank lines to fill in facility management decisions on what alerts to carry and relay timing.
+ Blank lines to fill in other Waivers this facility has been granted (i.e., EAS Internet access waiver).
+EAS Responsible Individual:
+ Broadcasters are required by FCC rules to designate a station Chief Operator, whose duties
+include EAS operations and compliance. (See FCC rules §73.1870 and §73.1820)
+ Cable, Satellite, DBS, and Wireline: Although not required in FCC rules, if a “designated
+individual responsible for EAS operations and compliance” hasn’t been identified, best practices
+suggest that each EAS Participant facility appoint one.
+EAS Security Best Practices:
+A checklist of EAS security best practices for EAS Participants was recommended in a May 2014 Report
+by the CSRIC IV - WG3, EAS Security Subcommittee. See the Resources section of this Guide for a URL to
+the full report.
+Electronic Test Reporting System (ETRS)
+ Following an NPT test, all EAS Participants must enter their test results into the FCC Electronic
+Test Reporting System (ETRS). Day of Test information must be entered within 24 hours of the
+test, and Detailed Post-Test Data must be entered within 45 days of the test. (See FCC rule
+§11.61(a)(3)
+ The FCC will need to update this document with the requirements for entering initial ETRS data,
+once those requirements are established by the Commission.
+[C-1]CSRIC V Working Group 3
+Final Report June 2016
+EAS Participant-Specific EAS Rules:
+The following broadcast stations are not required to comply with the Part 11 EAS rules. See FCC EAS rule
+§11.11(b) for specifics:
+ LPTV Translator Stations
+ FM Broadcast Booster Stations
+ FM Translator Stations
+ Satellite or Repeater Broadcast Stations
+The following broadcast stations are exempt from EAS encoding requirements. They must have an EAS
+Decoder, and may have an EAS Encoder, if desired. See FCC EAS rules §11.11(b) and §11.51(e) for
+specifics:
+ Class D non-commercial educational FM Stations
+ LPFM Stations
+ LPTV Stations
+Class D NCE FM Stations, LPFM Stations, and LPTV Stations are exempt from certain EAS test
+procedures:
+ These stations are not required to transmit the Required Weekly Test (RWT). See FCC rule
+§11.61(a)(2)(ii).
+ When receiving a Required Monthly Test (RMT), these stations are only required to rebroadcast
+the script of the RMT. See FCC rule §11.11(a)(1)(i).
+DBS Providers are exempt from the following EAS test procedure:
+ These facilities are not required to transmit the Required Weekly Test (RWT). See FCC rule
+§11.61(a)(2)(ii).
+There are separate FCC Self-Inspection Checklists for some of these EAS Participant categories. See the
+Resources section of this Guide for the URL to these Self-Inspection Checklists.
+Resources:
+ CSRIC IV – WG3, EAS Security Subcommittee, May 2014 Initial Report on EAS Security Best
+Practices (https://transition.fcc.gov/pshs/advisory/csric4/CSRIC_IV_WG3-
+EAS_SECURITY_INITIAL_REPORT_062014.pdf)
+ FCC State EAS Plans and State EAS Chairs webpage (https://www.fcc.gov/public-safety-and-
+homeland-security/policy-and-licensing-division/alerting/general/state-eas-plans)
+ FCC EAS Operating Handbook (found on FCC EAS homepage:
+https://www.fcc.gov/general/emergency-alert-system-eas)
+ FCC Broadcast Self-Inspection Checklist webpage (https://www.fcc.gov/general/broadcast-self-
+inspection-checklists)
+o There are separate booklets for: AM, FM, TV, Class A TV, FM Translator, LPFM, and
+LPTV/TV Translator/TV Booster.
+o NOTE TO FCC: The FCC needs to update these Self-Inspection Checklists…
+ They are old (2008-2010) and do not reference NPT, DTV, etc.
+ They are broadcast-only, and do not address cable TV or other EAS Participants.
+ FEMA EAS Best Practices Guide webpage (http://www.fema.gov/media-library-data/20130726-
+1839-25045-9302/eas_best_practices_guide.pdf)
+[C-2]CSRIC V Working Group 3
+Final Report June 2016
+o Has EAS background, Installation and Configuration Checklist and best practices, sample
+installation and configuration diagrams, Glossary of Terms, and device-specific
+programming. (33 pages)
+Programming EAS Unit:
+ Your EAS unit should be programmed to immediately relay an Emergency Action Notification
+(EAN) containing the National location code (000000), and other location codes as required.
+ Your EAS unit should be programmed to immediately relay a National Periodic Test (NPT)
+containing the National location code (000000), and other location codes as required.
+ Your EAS unit should be programmed to react to the Required Monthly Test (RMT) location
+codes as set forth in applicable State EAS Plans.
+ When programming your EAS unit to transmit the Required Weekly Test (RWT), the location
+codes to include are the state and county for the broadcast station city of license or system
+community or city. Other location codes may be included upon approval of station or system
+management.
+ See guidance on your EAS equipment manufacturer’s website for additional information on
+programming and operating your EAS unit.
+Further Guidance on Alerts Addressed in EAS Operating Handbook:
+EAN:
+ The EAN must be relayed immediately.
+ The EAN can be relayed in either Automatic or Manual mode operation.
+ If a facility does not program its EAS unit for automatic relay of the EAN, those facilities are
+advised to ensure they have a process to relay an EAN without delay.
+ The EAN must be documented in the EAS Participant’s EAS Log or records according to facility
+policy.
+ If an EAN is not received or relayed, EAS Participants must document in the EAS Log or records
+the cause of the failure and any remedies to correct the problem.
+NPT:
+ The NPT must be relayed immediately.
+ The NPT can be relayed in either Automatic or Manual mode operation.
+ If a facility does not program its EAS unit for automatic relay of the NPT, those facilities are
+advised to ensure they have a process to relay an NPT without delay.
+ The NPT must be documented in the EAS Participant’s EAS Log or records according to facility
+policy.
+ If an NPT is not received or relayed, EAS Participants must document in the EAS Log or records
+the cause of the failure and any remedies to correct the problem.
+ Following any NPT, the FCC requires that each EAS Participant’s test results be entered into the
+ETRS. See section above for details on ETRS reporting requirements.
+RMT:
+ The RMT originator and schedule should be listed in the applicable State EAS Plan.
+ The RMT must relayed within 60 minutes of being received by the EAS equipment, with the
+following exceptions:
+[C-3]CSRIC V Working Group 3
+Final Report June 2016
+o FCC rule 11.61(a)(3)(ii) states, “A national test shall replace the required weekly and
+monthly tests for all EAS Participants… in the week and month in which it occurs.”
+o FCC rule 11.61(a)(4) states, “The EAS may be activated for emergencies or special tests
+at the State or Local Area level by an EAS Participant instead of the monthly or weekly
+tests required in this section. To substitute for the monthly test, activation must include
+transmission of the EAS header codes, Attention Signal, emergency message and EOM
+code.”
+o Class D NCE FM Stations, LPFM Stations, and LPTV Stations are only required to
+rebroadcast the script of the RMT. See FCC rule §11.11(a)(1)(i).
+ The RMT can be relayed in either Automatic or Manual mode operation.
+ The EAS equipment can be set to automatically rebroadcast the RMT as soon as it is received,
+rebroadcast it after a delay to allow it to run in a natural break in programming or it can be
+manually rebroadcast by the operator on duty.
+ Local Primary (LP) sources should not wait the full 60 minutes, to give downstream stations time
+to relay the RMT.
+ The RMT must be documented in the EAS Participant’s EAS Log or records according to facility
+policy.
+ If an RMT is not received or relayed, EAS Participants must document in the EAS Log or records
+the cause of the failure and any remedies to correct the problem.
+RWT:
+ FCC rule 11.61(a)(2)(i) requires that EAS Participants must send an RWT “at least once a week at
+random days and times”, with the following exceptions:
+o FCC rule 11.61(a)(2)(iii) states, “The EAS weekly test is not required during the week that
+a monthly test is conducted.”
+o FCC rule 11.61(a)(3)(ii) states, “A national test shall replace the required weekly and
+monthly tests for all EAS Participants… in the week and month in which it occurs.”
+o FCC rule 11.61(a)(4) states, “The EAS may be activated for emergencies or special tests
+at the State or Local Area level by an EAS Participant instead of the monthly or weekly
+tests required in this section. To substitute for the weekly test… activation must include
+transmission of the EAS header and EOM codes.”
+o DBS Providers, and Class D NCE FM, LPFM, and LPTV stations are not required to
+transmit the Required Weekly Test (RWT). See FCC rule §11.61(a)(2)(ii).
+ FCC rule 11.51(m) states, “When transmitting the required weekly test, EAS Participants shall
+use the event code RWT. The location codes are the state and county for the broadcast station
+city of license or system community or city. Other location codes may be included upon
+approval of station or system management.”
+ FCC rule 11.61(a)(2)(iv) states that, “EAS Participants are not required to transmit a video
+message when transmitting the required weekly test.”
+ The RWT can be transmitted automatically or manually.
+ The transmitted RWT may have an announcement before or after the test, but it is not required.
+ EAS Participants must receive an RWT each week from each of their two monitoring
+assignments shown in the State EAS Plan.
+ The received and transmitted RWTs must be documented in the EAS Participant’s EAS Log or
+records according to facility policy.
+ If an RWT is not received or the required RWT is not initiated, EAS Participants must document
+in the EAS Log or records the cause of the failure and any remedies to correct the problem.
+[C-4]CSRIC V Working Group 3
+Final Report June 2016
+ Received RWTs are not relayed, they are only documented in the EAS Log.
+o NOTE TO FCC: WG3 believes the above statement to be true, but is aware that some
+EAS Participants relay a received RWT rather than originate their own RWT each week.
+The FCC needs to clarify in the rules whether it is acceptable for an EAS Participant to
+relay an RWT to fulfill the weekly RWT rule, or if an RWT must be originated by the EAS
+Participant’s own EAS Encoder.
+State and Local EAS Alerts:
+ All State and Local alerts are at the EAS Participant’s discretion. FCC rule 11.52(d)(5) states,
+“The management of EAS Participants shall determine which header codes will automatically
+interrupt their programming for State and Local Area emergency situations affecting their
+audiences.”
+ However, if an EAS Participant chooses to carry those alerts then FCC rules state that the
+procedures in the State or Local EAS Plan must be followed. FCC rule 11.55(d)(1) states, “EAS
+Participants participating in the State or Local Area EAS must follow the procedures for
+processing such messages in the State and Local Area Plans.”
+ State or Local EAS alerts can be relayed in the Automatic or Manual mode.
+ The transmission times of State and Local alerts must be documented in the EAS Participant’s
+EAS Log or records according to facility policy.
+ The individual responsible for EAS operations and compliance, in consultation with facility
+management, should develop guidance for the operator on duty to follow regarding state and
+local alerting. You should consult information found in the applicable State or Local EAS Plans to
+develop this guidance. It should then be displayed prominently at all EAS operator positions, and
+its location noted in the State and Local Alerts section of the EAS Operating Handbook.
+WG3 further recommendations to FCC on this document:
+Terminology:
+ Keep terms generic:
+o Don’t use broadcaster-specific terms such as Chief Engineer or Chief Operator.
+o When referring to EAS Participants, use “facility” rather than “station”.
+o When referring to EAS monitoring, use “source” rather than “station”.
+[C-5]CSRIC V Working Group 3
+Final Report June 2016
+D. Appendix D: EAS Rules Identified as Needing Update
+This appendix is a list of issues in the EAS rules discovered while drafting the updated EAS
+Operating Handbook. We recommend that the FCC consider updating these rules to remove
+obsolete concepts and clear up ambiguities.
+We tried to carefully match our recommendations for the Handbook and Instructions documents
+to the underlying Part 11 rules. While doing so, we encountered some portions of the rules that:
+ Need clarification, for example, to reconcile immediate relay of a nationwide test when a
+local emergency message is already in progress
+ Are missing guidance, such as actions to be taken by decoder-only stations during an
+EAN
+ Contain concepts that are no longer relevant, such as manual message authentication
+ Need minor clean up, such as a remaining reference to the EAT event code
+We have listed all of these items in this document. We recommend the FCC review these items
+and make appropriate changes to Part 11 to remove rules no longer needed and to add clarity
+where needed to other rules.
+Notes:
+ It is WG3’s intent in this section to merely highlight the rules we feel need Commission
+attention and likely revision, but in most cases we did not endeavor to draft proposed
+alternate language. A notes column is included in the table to explain the issue we identified
+with the indicated rule.
+ Any changes made to the EAS rules as a result of the issues we raise in this Appendix D,
+such as but not limited to, how decoder-only stations are to handle received EANs and NPTs
+(in §11.54), and if the required RWT can be relayed or must be originated (in §11.61), will
+likely result in changes needed in the other deliverables of this CSRIC Report.
+[D-0]CSRIC V Working Group 3
+Final Report June 2016
+EAS Rules Identified as Needing Update
+A deliverable of the CSRIC V – WG3, EAS Handbook Project Team
+The following is a list of issues in the EAS rules discovered while drafting the updated EAS Operating
+Handbook. We recommend that the FCC consider updating these rules to remove obsolete concepts
+and clear up some ambiguities.
+This Report does not address the rule amendments or any other issues proposed in the Notice of
+Proposed Rulemaking in PS Docket Nos. 15-94 and 15-91 (released on 1/29/2016). The observations
+below strictly apply to the EAS rules effective as of the Sixth EAS Report & Order, released on 6/3/2015.
+EAS Part The Current Rule: Discussion
+11.15 EAS Operating The current rule is shown in quotes. Drop “an EAT”.
+Handbook WG3’s suggested edits are shown FCC eliminated event code EAT.
+with strikeout text.
+WG3 recommends dropping the
+“The EAS Operating Handbook last half of the last sentence
+states in summary form the actions (see strikeout text at left),
+to be taken by personnel at EAS because EAS Participant
+Participant facilities upon receipt of facilities are often unattended,
+an EAN, an EAT, tests, or State and therefore we recommend
+Local Area alerts. It is issued by the dropping the assumption that
+FCC and contains instructions for there is an operator on duty.
+the above situations. A copy of the
+Handbook must be located at Also, regarding “authenticating
+normal duty positions or EAS messages”…
+equipment locations. when an The line reads “staff responsible
+operator is required to be on duty for authenticating messages”,
+and be immediately available to but staff no longer manually
+staff responsible for authenticating authenticates messages as with
+messages and initiating actions.” the old red envelope.
+11.21 State and Local Area In section (a), the rule refers to the All NPRMs and other references
+Plans and FCC Mapbook “EAS Test Reporting System” use “Electronic Test Reporting
+System” regarding ETRS. Only
+11.61 Tests of EAS In section (a)(3)(iv), the rule refers the actual rules call it EAS Test
+Procedures to the “EAS Test Reporting Reporting System. FCC needs to
+System”. normalize its ETRS definition.
+11.31 EAS Protocol In section (c), the rules state, This section should read
+“transmission of 8 to 25 seconds of “transmission of 8 seconds of
+Attention Signal”. Attention Signal”, as stated in
+11.32 (a)(9)(iv).
+11.31 EAS Protocol In section (f), the table of location “All U.S.” should be listed as
+codes lists “All U.S.” as “00”. “000000”. The FCC agreed in
+Footnote 38 of the EAS Sixth
+R&O, but the change was not
+reflected in the Federal Register
+version so is not in the rules.
+[D-1]CSRIC V Working Group 3
+Final Report June 2016
+EAS Part The Current Rule: Discussion
+11.31 EAS Protocol (there is no current rule) The FCC should provide a new
+section limiting the use of the
+000000 Location Code, such as
+000000 should be used only
+with NPT or EAN, and only in
+conjunction with the PEP
+Originator Code.
+Only a national level originator,
+such as FEMA, is permitted to
+originate alerts with the 000000
+Location Code. Other EAS
+Participants must not originate
+messages with the 000000
+Location Code.
+Only a national level originator,
+such as FEMA, is permitted to
+originate alerts with the EAN or
+NPT Event Codes. Other EAS
+Participants must not originate
+messages with those Event
+Codes.
+11.51 EAS code and In section (m)(2) and in section (n), In all four of these sections,
+Attention Signal the rules state, “or the NPT Event there are two issues:
+Transmission requirements code in the case of a nationwide
+test of the EAS, must be First, an NPT is not always a
+[2 instances] transmitted immediately”. nationwide test. This rule
+11.52 EAS code and In section (e)(2), the rules state, “or should be rewritten to
+Attention Signal Monitoring the NPT Event code in the case of a accommodate regional use.
+requirements nationwide test of the EAS, must be
+transmitted immediately”. Second, FCC needs to clarify if
+11.54 EAS operation during In section (a), the rules state, “immediately” means that an
+a National Level emergency “Immediately upon receipt of an NPT should abort an in-progress
+EAN message, or the NPT Event alert (i.e. a Tornado Warning).
+code in the case of a nationwide
+test of the EAS”.
+[D-2]CSRIC V Working Group 3
+Final Report June 2016
+EAS Part The Current Rule: Discussion
+11.52 EAS code and In section (e), the rules state, “EAS These rules need to clarify and
+Attention Signal Monitoring Participants are required to expand to reflect use of the
+requirements interrupt normal programming National Location Code and NPT
+either automatically or manually Event Code.
+when they receive an EAS message
+in which the header code contains
+the Event codes for EAN, NPT, or
+RMT for their State or State/county
+location.”
+In section (e)(2), the rules state,
+“Decoders must be programmed
+for the EAN Event header code and
+the RMT and RWT Event header
+codes (for required monthly and
+weekly tests), with the appropriate
+accompanying State and
+State/county location codes.”
+11.54 EAS operation during In section (a), the rules state, Nothing in the rules state what
+a National Level emergency “Immediately upon receipt of an decoder-only stations (Class D
+EAN message, or the NPT Event NCE FM, LPFM, & LPTV) are to
+[Also 11.52(m)(2) and (n), code…, EAS Participants must do when receiving an EAN or an
+and 11.52(e)(2), in the comply with the following NPT.
+“immediately” issue above.] requirements”.
+11.54 EAS operation during In section (a)(1), the rules state, EAS Participants can’t transmit
+a National Level emergency “Analog and digital broadcast call letters and location “during
+stations may transmit their call an EAS activation”, as the EAS
+letters and analog cable systems, unit is on the air. This harkens
+digital cable systems and wireless back to manually-relayed alerts.
+cable systems may transmit the
+names of the communities they This rule should be dropped.
+serve during an EAS activation.
+State and Local Area identifications
+must be given as provided in State
+and Local Area EAS Plans.”
+[D-3]CSRIC V Working Group 3
+Final Report June 2016
+EAS Part The Current Rule: Discussion
+11.55 EAS operation during This current rule states, (1), (2), and (3) here refer to the
+a State or Local Area “(c) Immediately upon receipt of a old manual monitoring of
+emergency State or Local Area EAS message upstream stations, which is no
+that has been formatted in the EAS longer the case. Assigned EAS
+Protocol, EAS Participants monitoring is now done 24/7.
+participating in the State or Local In addition, not all states
+Area EAS must do the following: precisely follow the SP-SR-LP-PN
+(1) State Relay (SR) sources monitor model described in this rule.
+the State Relay Network or follow
+the State EAS plan for instructions This rule should be dropped,
+from the State Primary (SP) source. and instead retain only the
+(2) Local Primary (LP) sources statement, “follow the State
+monitor the Local Area SR sources EAS Plan for instructions”.
+or follow the State EAS plan for
+instructions.
+(3) Participating National (PN)
+sources monitor the Local Area LP
+sources for instructions.”
+11.55 EAS operation during In section (c)(5), the rules state, This section refers to the old
+a State or Local Area “Upon completion of the State or method of manually monitoring
+emergency Local Area EAS transmission upstream stations and manually
+procedures, resume normal putting them on the air. All
+programming until receipt of the alerts are now self-contained
+cue from the SR or LP sources in using the “message-by-message
+your Local Area. At that time begin processing” methodology.
+transmitting the common
+emergency message received from This rule should be dropped.
+the above sources.”
+11.55 EAS operation during In section (c)(6) regarding messages This refers to the old manual
+a State or Local Area formatted in the EAS protocol, the interrupt method. The EAS
+emergency rule states, “Resume normal EOM now returns the facility to
+operations upon conclusion of the normal operations.
+message.” This rule should be dropped.
+11.55 EAS operation during In section (d)(3) regarding This refers to the old manual
+a State or Local Area messages formatted in the CAP interrupt method. The EAS
+emergency protocol, the rule states, “Resume EOM now returns the facility to
+normal operations upon conclusion normal operations.
+of the message.” This rule should be dropped.
+[D-4]CSRIC V Working Group 3
+Final Report June 2016
+EAS Part The Current Rule: Discussion
+11.61 Tests of EAS In rule 11.61(a)(2)(i), sections (A), The FCC needs to clarify if the
+Procedures (B), (C), and (D) regarding the RWT must be originated on the
+Required Weekly Test, the rules EAS Participant’s own EAS
+state that EAS Participants “…must encoder, or whether a received
+conduct tests of the EAS header RWT can simply be relayed to
+and EOM codes at least once a comply with this rule.
+week at random days and times.” WG3 is aware that some EAS
+Participants relay rather than
+originate RWTs as their
+interpretation of complying
+with this rule.
+Not an FCC rule, but this EB Broadcast Self-Inspection The FCC needs to update not
+issue was also discovered. Checklists only the EAS section but the
+entire booklets for the EB
+Broadcast Self-Inspection
+Checklists.
+[D-5]

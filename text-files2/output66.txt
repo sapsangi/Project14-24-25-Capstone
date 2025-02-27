@@ -1,0 +1,1123 @@
+PDF Content from https://transition.fcc.gov/bureaus/pshs/advisory/csric3/CSRIC-III-WG3-Final-Report.pdf:
+The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+March 14, 2012 WORKING GROUP 3
+E9-1-1 Location Accuracy
+Final Report – Outdoor Location Accuracy
+1The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+TABLE OF CONTENTS
+1 Results in Brief ................................................................................................................................ 3
+1.1 Executive Summary .................................................................................................................... 3
+1.1.1 CSRIC III Working Group 3 – Wireless E9-1-1 Location Accuracy Charter.................. 6
+1.1.2 Structure of the Working Group 3 Outdoor Location Accuracy Report .......................... 6
+2 Introduction ...................................................................................................................................... 6
+2.1 CSRIC III Structure .................................................................................................................... 6
+2.2 Working Group 3 Outdoor Sub-Group Team Members .......................................................... 7
+3 Objective, Scope, and Methodology .............................................................................................. 9
+3.1 Objective...................................................................................................................................... 9
+3.2 Scope ............................................................................................................................................ 9
+3.3 Methodology ............................................................................................................................. 10
+4 Review of Existing Best Practice Documents ............................................................................. 11
+4.1 Introduction ............................................................................................................................... 11
+4.2 Review & Comments on FCC OET 71 ................................................................................... 11
+4.3 ATIS Technical Report 0500001 – High Level Requirements for Accuracy Testing
+Methodologies ................................................................................................................................. 15
+4.4 ATIS Technical Report 0500009 – High Level Requirements for End-to-End Functional
+Testing.............................................................................................................................................. 16
+4.5 ATIS Technical Report 0500010 – Maintenance Testing ...................................................... 16
+4.6 ATIS Technical Report 0500011 – Define Topologies & Data Collection Methodology. .. 16
+4.7 ATIS Technical Report 0500013 – Approaches To Wireless E9-1-1 Indoor Location
+Performance Testing ....................................................................................................................... 17
+5 Approaches for Outdoor Location Accuracy Testing ................................................................. 17
+5.1 Introduction ............................................................................................................................... 17
+5.2 Empirical Testing Methods ...................................................................................................... 18
+5.2.1 Practical Guidance on Empirical Sample Size and Distribution for Initial or Full
+Compliance Testing ..................................................................................................................... 18
+5.3 Alternative Testing Methods .................................................................................................... 20
+5.3.1 Relevant Alternative Testing Concepts Developed by ESIF........................................... 20
+5.3.2 Additional Alternative Testing & Assessment Methods ................................................. 21
+5.4 Recommendations on Maintenance Testing............................................................................ 24
+5.4.1 Key Background Observations .......................................................................................... 25
+5.4.2 Proposed Maintenance Approach ...................................................................................... 25
+6 Outdoor Location Accuracy Testing Costs and Timeframes...................................................... 26
+7 Location System Performance and Yield Considerations............................................................. 28
+Opinion #1 ....................................................................................................................................... 29
+Opinion #2 ....................................................................................................................................... 30
+Opinion #3 ....................................................................................................................................... 31
+Appendix A ......................................................................................................................................... 32
+Acronyms ......................................................................................................................................... 32
+2The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+1 RESULTS IN BRIEF
+1.1 Executive Summary
+As the communications industry evolves, so does the opportunity to enhance the public’s ability
+to contact emergency services personnel during times of crisis. Public expectation has grown to
+the point that one assumes public safety personnel will be able to dispatch the appropriate
+emergency services to any reported event. This capability is dependent upon public safety
+receiving the best possible location information available to them.
+Working Group 3 (WG3), subgroup on Outdoor Location Accuracy, was charged with:
+• Reviewing existing information on outdoor location accuracy testing criteria, procedures,
+and timeframes and recommending approaches that are realistic, rational and cost-
+effective:
+• Considering alternatives to current FCC Office of Engineering and Technology OET
+Bulletin No. 71 (OET 71)1:
+• The development of recommendations on the feasibility of flexible testing criteria and
+methodologies, and finally:
+• Gathering detailed cost data relating to particular testing methodologies from
+stakeholders to substantiate concerns about potential expense of periodic testing.
+This report documents WG3’s review of the materials described above and details various
+methodologies for Outdoor Location Accuracy Testing.
+It is the consensus of WG3 that OET 71, issued on April 2000, continues to be a valuable high-
+level guideline and framework for evaluating compliance for enhanced 9-1-1 location accuracy
+testing. OET 71 acknowledged within its framework that testing and verification practices
+would evolve over time and indeed that has been the case.
+Since the Bulletin was issued, the Alliance for Telecommunications Industry Solutions (ATIS)2
+Emergency Services Interconnection Forum (ESIF) has produced five (5) standards documents
+and each of these was reviewed by WG3 (Section 4). These ATIS standards have expanded
+upon the initial OET 71 framework with advanced processes and procedures that all 911
+stakeholders can use to validate the performance of 911 location accuracy. As a consequence of
+our review of ATIS materials, we suggest the following ATIS Technical Reports, as augmented
+by recommendations in Section 5, be recognized and used by stakeholders as best practices for
+outdoor location accuracy:
+1
+< http://www.fcc.gov/Bureaus/Engineering_Technology/Documents/bulletins/oet71/oet71.pdf>
+2
+< http://www.atis.org
+3The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+• ATIS Technical Report 0500001 – High Level Requirements for Accuracy Testing
+Methodologies
+• ATIS Technical Report 0500009 – High Level Requirements for End-to-End Functional
+Testing.
+• ATIS Technical Report 0500011 – Define Topologies & Data Collection Methodology.
+• ATIS Technical Report 0500010 – Maintenance Testing
+• ATIS Technical Report 0500013 – Approaches To Wireless Indoor Location
+Performance Testing (referred to in Section 4.7 so as to address concepts that are also
+relevant to outdoor accuracy)
+Our consensus is that ATIS-0500001 generally provides more current and relevant procedures
+and guidelines than are available in OET 71. WG3 has also provided various methodologies for
+location accuracy testing within Section 5 of our WG report that define the various methods and
+provide alternative testing methods. Although there are many valid approaches to location
+accuracy performance, some of them provide a more cost-effective way to achieve and maintain
+location accuracy within the wireless service provider’s (WSP’s) network3.
+Full compliance testing utilizing the empirical testing methodology requires the wireless service
+provider to test within each County/PSAP gathering statistical data to ensure compliance within
+the Wireless E911 Location Accuracy Requirements, PS Docket No. 07-114, Second Report and
+Order, FCC 10-176 (Sept. 23, 2010) (“Second R&O”)4 metric. This type of testing ranges in cost
+from $250 -$1000 per cell site (Section 6). Wireless service providers meet their testing
+obligations in a number of ways including performing this field testing themselves, utilizing
+automated means of testing to a location server, outsourcing the work to a third party vendor, or
+a combination of these. Based on the number of cell sites within the service provider’s network,
+initial testing can be costly.
+The WG concurs that ATIS-050001 provides both:
+• best practices for conducting Empirical accuracy testing, and
+• appropriate guidelines and accepted procedures for use of the predictive testing
+methodology, as well as proper safeguards in utilizing predictive testing
+We recommend that further development and guidance on the various alternative testing
+methodologies, as defined within this WG3 report, be documented within ATIS-0500010.
+3
+WG3 has decided to use the generic terminology of “Wireless Service Provider” (WSP). In the current context of the
+document, WSP refers to CMRS providers as defined by the FCC.
+4http://hraunfoss.fcc.gov/edocs_public/attachmatch/FCC-10-176A1_Rcd.pdf
+4The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+It is also our recommendation for maintenance testing that:
+• Key performance indicators (KPIs) should be routinely monitored and archived network-
+wide, to help determine when system performance has degraded and further testing and
+system improvements are needed at the local level.
+• Enhancements to location technology should be validated in representative environments,
+to ensure equivalent or improved performance.
+• Spot-checking using empirical field-testing should be conducted on an as needed basis,
+for example, as determined by KPI monitoring or legitimate performance concerns from
+a PSAP.
+• Empirical data for maintenance testing may be collected incrementally, but must conform
+to the requirements in ATIS-0500010: Maintenance and Testing; Sections 3.2 Useful Life
+of Data and, Section 3.3. System Under Test.
+• Any significant deviations from expected prior performance levels should result in
+careful investigation and re-testing of the applicable test area.
+• WG3 recommends that the alternative maintenance testing methods, as detailed in
+Section 5 of this WG report, replace the requirement for full compliance testing every
+two years as is implied in ATIS-0500010.
+• We also recommend that wireless service providers provide verification of testing and/or
+test summary results to the FCC upon request and that those records be maintained for a
+period of up to 24 months.
+• Finally, we recommend that as questions relating to location accuracy arise, WSPs work
+directly with the County/PSAP or other public safety entities by properly investigating
+the root cause of potential performance concerns.
+The current FCC rules, established in the 2nd R & O, do not clearly mandate a specific Phase 2
+yield requirement5; rather, current rules establish specific “Phase 2 location accuracy” standards
+spread over four defined benchmarks at the county-level. Although the WG members generally
+worked in concert to provide overall objectivity and worked toward best practice resolutions,
+‘yield’ is a subject that we could not find consensus on, and was a continuous point of
+disagreement . Within the Outdoor Location charter for this WG, yield is not listed as an
+objective that needs to be discussed or defined. It is mentioned within the scope of the Indoor
+Accuracy WG.
+The subject of location system performance and yield means numerous things to different
+stakeholders. In an effort to provide visibility into the debate over yield, we have provided
+highlights from the discussion within Section 7 of this report.
+5 Phase 2 yield may be defined as the ratio of successful Phase 2 locations over the total number
+of valid location requests.
+5The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+No consensus recommendations with regard to yield are contained in this report.
+1.1.1 CSRIC III Working Group 3 – Wireless E9-1-1 Location Accuracy Charter
+Outdoor Location Accuracy
+The Working Group shall develop approaches to outdoor location accuracy testing criteria,
+procedures, and timeframes that are reasonable and cost-effective, considering alternatives to
+OET 71. It shall also develop recommendations concerning the feasibility of flexible testing
+criteria and methodologies, and gather detailed cost data relating to particular testing
+methodologies from stakeholders to substantiate concerns about potential expense of periodic
+testing. Report on Outdoor Location Accuracy: Six Months
+1.1.2 Structure of the Working Group 3 Outdoor Location Accuracy Report
+The document is comprised of 7 sections and 1 appendix as follows:
+Section 1: Results in Brief
+Section 2: Introduction
+Section 3: Objective, Scope, and Methodology
+Section 4: Approaches for Outdoor Location Accuracy Testing
+Section 5: Review of Existing Best Practice Documents
+Section 6: Outdoor Location Accuracy Testing Costs and Timeframes
+Section 7: System Performance and Yield
+Appendix A: Acronyms
+2 INTRODUCTION
+2.1 CSRIC III Structure
+Communications Security, Reliability, and Interoperability Council (CSRIC) III
+CSRIC Steering Committee
+Co-Chairs Co-Chairs Co-Chairs Co-Chairs Chair Co-Chairs Chair Chair Co-Chairs Co-Chairs
+Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group
+1 2 3 4 5 6 7 8 9 10
+Working Group 5:
+Working Group 1: Working Group 2: Working Group 3: Working Group 4: Working Group 6: Working Group 7: Working Group 9:
+DNSSEC Working Group 8:
+Next Generation Next Generation E911 Location Network Security Secure BGP Botnet Legacy Broadcast Working Group 10:
+Implementation E911 Best
+911 Alerting Accuracy Best Practices Deployment Remediation Alerting Issues 911 Prioritization
+Practices for ISPs Practices
+Figure 1: CSRIC III Organization Chart
+6The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+2.2 Working Group 3 Outdoor Sub-Group Team Members
+Working Group 3 Co-Chairs
+Stephen J. Wisely – APCO International
+Richard Craig – Verizon Wireless
+Outdoor Location Accuracy Subgroup Co-Leaders
+Jeanna M Green- Sprint
+Brett Schneider – Bexar Metro 9-1-1 District
+Working Group Document Editors:
+Jeanna Green – Sprint
+Kathy McMahon – APCO International
+WG 3 Outdoor Location Accuracy Subgroup consists of the following members:
+First Name Last Name Organization
+Michael Anderson Ericsson
+Firdaus Aryana Telecommunication Systems, Inc.
+Wayne Ballantyne Motorola Mobility, Inc.
+Andrew Beck CommScope
+Jeb Benedict CenturyLink
+Donna Bethea-Murphy Iridium
+Bill Buchholtz Texas 911 Alliance
+Richard Craig Verizon Wireless
+Marlys Davis King County E9-1-1 Program Office
+Khaled Dessouky TechnoCom Corporation
+Thomas Dombrowsky Wiley Rein LLP
+Chris Fischer NORCOM
+Jeanna Green Sprint
+Roger Hixson NENA
+Ryan Jensen T-Mobile
+Marte Kinder Time Warner Cable
+7The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+First Name Last Name Organization
+Sandra Lott CenturyLink
+Mike Loushine Applied Communication Sciences
+Barry Martin Boeing
+Kathryn Martin Access Partnership
+Kathy McMahon APCO
+Martin Moody Metro Emergency Services Board
+Jim Nixon T-Mobile
+Gary Parsons NextNav LLC
+Ganesh Pattabiranan NextNav LLC
+Gustavo Pavon True Position, Inc.
+Raghavendhra Rao AT&T
+Chuck Ronshagen Cassidian Communications
+Brett Schneider Bexar Metro 9-1-1 Network District
+DeWayne Sennett ATIS
+Norman Shaw Polaris Wireless, Inc.
+Susan Sherwood Verizon Wireless
+John Snapp Intrado, Inc.
+Dorothy Spears-Dean Virginia Information Technologies Agency
+Bill Tortoriello US Cellular
+Greg Turetzky CSR Technology Inc.
+Bruce Wilson Qualcomm Inc.
+Stephen Wisely APCO
+Karen Wong State of California
+Richard Deh-Min Wu Nokia Siemens Networks
+Table 1 - List of Working Group Members
+8The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+Additional Contributors:
+Ajit Kahaduwe – Nokia Siemens Networks
+David Conner – U.S. Cellular
+3 OBJECTIVE, SCOPE, AND METHODOLOGY
+3.1 Objective
+The objective of this report is to present the findings of the CSRIC III Working Group 3 related
+to outdoor location accuracy testing, focusing on areas identified in the FCC’s charter for CSRIC
+III. These are summarized as:
+♦ Develop approaches to Outdoor location accuracy testing criteria that are reasonable and
+cost effective, considering alternatives to OET 71:
+♦ Develop recommendations concerning the feasibility of flexible testing criteria and
+methodologies:
+♦ Gather and present cost data on accuracy testing from stakeholders to substantiate
+concerns over potential expense of periodic testing.
+In the process of tackling the above, explicit objectives also:
+♦ Address the issue of testing timeframes
+♦ Evaluate OET 71 in today’s context, and how it can be augmented and improved upon
+♦ Present alternatives for test processes and procedures for E9-1-1 accuracy suitable for
+use in the current and future time frames
+3.2 Scope
+Considering the timelines set by the FCC for this working group, this report focuses exclusively
+on outdoor accuracy testing. Two subsequent reports will address indoor location accuracy and
+leveraging commercial location based services (LBS), including newer or emerging location
+technologies. The scope of this report closely reflects the objectives related to outdoor accuracy
+testing stated above.
+To present a complete picture of wireless E9-1-1 accuracy testing methodologies, their evolution,
+and to address the questions in the stated objectives related to OET 71, Section 4 presents a
+review of existing best practices documents related to accuracy testing. It starts with a thorough
+review of the Bulletin from today’s perspective. It then adds a concise synopsis of the various
+documents related to accuracy testing that were intended to build on OET 71, and that have been
+developed over the last decade within ESIF. The area and extent of applicability of each
+9The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+document is also identified.
+Section 5 presents approaches to outdoor accuracy location testing. It starts by providing a
+historical context for accuracy testing methodologies. It then presents empirical testing methods
+gleaned from OET 71 and subsequently articulated more fully by ESIF, especially in ATIS-
+050001, including its recent updates. It also presents recommendations on empirical testing
+procedures, e.g., pertaining to test sample size and coverage, that augment the information in
+those sources. Section 5 then presents alternative testing methods intended to be more cost
+efficient and flexible, and available once the E9-1-1 system has been verified through empirical
+testing to operate well and be compliant with FCC requirements. These techniques include
+predictive testing, incremental testing, monitoring of key performance indicators, monitoring
+uncertainty trends, and more selective and targeted empirical testing, e.g., for spot-checking, in
+representative environments, or with reduced sample sizes. Section 5 closes by presenting
+recommendations on accuracy maintenance testing.
+Section 6 presents cost information for various testing methods gathered from working group
+members and their vendors. This data ranges from the cost of complete accuracy testing and
+monitoring systems, to manual testing methods, e.g., through contract labor, with per cell or per
+PSAP price ranges, to some of the costs associated with in-house or hosted data storage solutions
+in support of location performance indicators and trends monitoring.
+Section 7 discusses an area of active debate within Working Group 3 related to the yield of Phase
+II location systems and its relation to accuracy testing. The salient views within the working
+group on this issue are presented for the FCC’s perusal.
+3.3 Methodology
+Working Group 3 sub-group on Outdoor location accuracy met every two weeks via conference
+call(s) to review research and discuss 9-1-1 outdoor location accuracy. The sub-group and ad-hoc
+structure relied upon members volunteering to embrace additional work in conjunction with
+participating in the efforts of the full committee.
+Text contributions, as completed, were reviewed, edited and approved by the full membership of
+Working Group 3.
+The sub-group conducted over 12 conference calls, and two multi-day face-to-face meetings in
+Kansas City, Missouri and Richardson, Texas. This effort was challenging given the
+responsibilities that each member faced in his/her public, private or other profession.
+10The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+4 REVIEW OF EXISTING BEST PRACTICE DOCUMENTS
+4.1 Introduction
+In this section, WG3 analyzed established FCC and ATIS documents that pertain to Outdoor
+Testing methodologies. Specifically, we identify the key recommendations in each one, discuss
+those which are still applicable, and also highlight those recommendations which are now
+superseded by technology advances, changes in usage trends, or updated treatments in newer
+documents.
+4.2 Review & Comments on FCC OET 71
+OET Bulletin No. 71 was issued by the FCC’s Office of Engineering and Technology on April
+12, 2000. Its intent was to offer guidelines and suggestions for evaluating compliance with
+E9-1-1 mandates, rather than establishing mandatory procedures for such evaluation. The
+Bulletin explicitly states at its outset that other methods and procedures may be acceptable if
+based on sound engineering and statistical practice. The Bulletin, however, states that
+compliance with the guidelines in the Bulletin will establish a strong presumption that
+appropriate means have been applied to ensure compliance with the Commission’s rules.
+Whereas much of the thrust and content of the Bulletin remains applicable and vital in setting the
+current guidelines for E9-1-1 wireless location assessment, several of the statements in it reflect
+the state of knowledge of the wireless industry and E9-1-1 in the year 2000 timeframe. Over the
+past decade, since the publication of the Bulletin, much evolution in the use of wireless networks
+and devices has taken place. Significant progress has also been achieved in wireless E9-1-1 and
+its testing methodologies. The efforts to create methods and guidelines for E9-1-1 accuracy
+assessment and on-going maintenance have also evolved and are accepted by the various
+stakeholders in the E9-1-1 arena. This development was promoted by the FCC in OET 71,
+which states that wireless service providers, equipment manufacturers, public safety, and other
+interested parties were encouraged to organize and develop standards that may obviate the need
+for extensive Commission guidelines.
+The following paragraphs summarize some of the key contents of the Bulletin and presents
+comments on them in the context of today’s E9-1-1 performance compliance needs, and in light
+of what has transpired in the E9-1-1 standardization arena.
+Both empirical and predictive methods are discussed in the Bulletin, and it encourages the
+“development of efficient, reliable, simple, cost-effective methods to test and verify” E9-1-1
+location accuracy and reliability. Guidelines for the integrity and reliability of empirical testing
+are provided. This includes basic considerations related to sample test call location selection,
+measurement precision, a test environment reflective of expected handset use, technology
+neutrality and statistical confidence in the test results. Certain of these attributes are highlighted
+here especially where comments are appropriate.
+11The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+OET Bulletin No. 71 emphasizes the importance of statistical confidence in the test results,
+whether empirical or predictive. It explicitly requires that results be obtained with at least a 90%
+statistical confidence level. The Bulletin offers a technology-neutral candidate statistical
+approach to demonstrating such confidence in empirical testing. The approach is described in
+Appendix A of the Bulletin. It uses distribution-free order statistics; i.e., no assumptions are
+made about the underlying distribution of location error, but it is based on the collection of data
+at independent test locations (in order to guarantee independent location fixes). This robust
+statistical approach remains one of those available for use today in testing E9-1-1 accuracy for
+compliance purposes.
+The issue of real world empirical test sample size and its geographical coverage is one that
+frequently arises but has not been discussed explicitly in OET 71. It has not been addressed in
+the ATIS documents developed by ESIF thus far either. Recommendations and guidelines for
+these aspects of empirical test sample size and coverage developed by WG3 are presented in
+Section 4.
+The OET 71 provides general guidance about the selection of random test locations and states a
+preference for using data from areas where 911 calls are likely to be made, if such information is
+available. The concept of weighting was further developed by ATIS/ESIF and is reflected in
+ATIS-0500001 section 9.4. The use of test call weighting to achieve this goal has been adopted
+by some wireless service providers depending on the nature of their networks and the use of
+those networks (for example weighting based on wireless 911 call densities, testing where
+wireless calls are normally located, or possibly using population densities for test call
+weighting). Those methods are consistent with the possible testing and data analysis approaches
+discussed in the Bulletin.
+The Bulletin also recognizes the inherent uncertainty of radio technology used for wireless
+location and that location cannot always be reported accurately and may not even be possible in
+some instances. This fundamental statement holds equally true today, especially as wireless use
+becomes ubiquitous and wireless user expectations may not reflect the realities of the
+challenging physical world.
+The Bulletin states that only completed calls should be included in test statistics. This continues
+to be the accepted, standard approach to treating test calls for E9-1-1 systems.
+The Bulletin also discusses the tradeoff between getting a location estimate quickly to facilitate
+public safety but also accurately, which requires more time. It suggests an acceptable time limit
+for delivering the location estimate of 30 seconds. While this suggestion has not been part of the
+mandate, it is generally accepted as the de facto standard for maximum latency in E9-1-1
+location delivery. OET 71 also suggests that the last location fix in the time window, e.g., within
+the 30 seconds, can be used to compute the accuracy.
+12The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+According to the Bulletin, predictive testing methods are permitted “if [they] can be
+demonstrated to have the necessary robustness and accuracy.” Device type acceptance is also
+mentioned but the Bulletin states that it would be premature (at least at that time) to adopt such
+an approach and that the relevant performance parameters for such an approach were not
+identified.
+The topic of predictive modeling for E9-1-1 accuracy assessment purposes has been discussed at
+length within ATIS’ ESIF, as discussed above in Section 4 of this report, and described in detail
+in Section 8 of ATIS-0500001. The use of such validated predictive models to determine the
+accuracy of E9-1-1 systems in certain benchmarked test areas is consistent with the expressed
+desire in the Bulletin to achieve test methods that are efficient, reliable and cost effective. WG3
+recommends that predictive modeling applied to the testing of E9-1-1 systems follow the
+guidelines articulated in ATIS-0500001 Section 8 and discussed further in Section 4 above.
+For handset type acceptance testing in the current context of E9-1-1, WG3 believes that handset
+type testing has a viable role to play in reducing the amount of needed field testing by mitigating
+the need to test multiple handsets in each environment to be tested. However, the relevant and
+detailed key performance parameters to be met in such tests would need to be identified under
+varied environments based on empirical test data.
+Reflecting its year 2000 time reference, the Bulletin asserts the importance that location systems
+operate effectively in conditions where 911 calls are made, for example, from within vehicles
+moving at highway speeds. It further comments that because of increased complexities of testing
+from moving vehicles, initial testing did not need to include dynamic calls, but such methods
+should be incorporated into verification and testing protocols as they became refined.
+Over the last dozen years, mobile location testing methodologies have evolved to the point that
+they are now accurate and efficient and, in fact, the preferred wide scale testing approach. The
+use of Differential GPS6 is the most common approach to determining ground truth7 for outdoor
+testing, which is consistent with the statements regarding ground truth determination and its
+precision in the Bulletin. OET 71 states that latitude and longitude coordinates should be
+expressed in tenths of arc-seconds (equivalently 5 significant decimal-degree places), distance
+errors from “ground truth” be computed to the nearest meter, and all test reports should include a
+statement of ground truth accuracy.
+ATIS-050001 provides guidelines for the necessary ground truth accuracy in mobile test
+scenarios. WG3 also recommends that in the event that a dispute on absolute ground truth
+accuracy arises, it could be resolved using stationary test methods or enhanced accuracy mobile
+6
+Differential is defined as a technique in which data from a receiver at a known location (base or reference) is used to correct the
+data from an unknown location. DGPS is used to increase the accuracy of the resulting position provided by the GPS receiver.
+7
+Ground Truth is defined as a geographic location specified in latitude and longitude for the actual location of the test call.
+13The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+testing techniques (e.g., with more elaborate instrumentation and/or augmentation methods.)
+Among the basic principles presented in OET 71 is that reports of compliance testing should
+clearly define the subject geographical area. Again, reflecting the year 2000 historical context,
+test areas are described as possibly being as small as a PSAP coverage area or as large as a
+wireless service provider’s entire advertised coverage area (within a metropolitan area or similar
+region). This reference to larger geographical area has now been superseded by more recent
+FCC rules which require compliance at either a county or PSAP level. Test data aggregation
+methods mentioned in the Bulletin by using non-overlapping sub-areas still apply in principle
+but, more importantly, the principle that compliance areas should not be overlapping remains
+fundamental today.
+Reflecting the Commissions’ policy for technical and competitive neutrality, testing and
+validation methods should be applied in the same manner to all location technologies being used,
+except where some variation is clearly necessary and fully explained. One example where
+variations in test methodology may be dependent on the location technology is where the
+location accuracy has some dependency on the deployment configuration of the network, e.g., A-
+GPS vs. U-TDOA. For example, deployment reconfiguration or extensive RF re-planning could
+trigger a need for retest for U-TDOA but not the A-GPS case, or vice-versa.
+The Bulletin strives to articulate guidelines for testing E9-1-1 using methods that “accurately
+represent real world performance.” One area where the progress of technology has resulted in
+significant change in real world experience since the publication of OET 71 in calendar year
+2000 is the handset’s initial condition. The Bulletin states that a reasonable starting condition
+for a handset-based test would be with the handset in its normal off condition for at least 15
+minutes, however, it may also be in a stay-warm, low-current drain state if that feature is
+available. The intended objective is to assure that GPS assistance information or recent history is
+erased when a new test call is placed.
+The most common mode of use for handsets today is the always on, idle condition8. In handsets
+with GPS to support a variety of location based services, the user often turns off the GPS
+capability until needed to achieve better battery conservation. Accordingly, a warm rather than a
+cold (e.g. handset completely powered off for a prolonged period) GPS start represents a more
+realistic test handset initial condition. Note that turning a phone off for 15 minutes may not
+guarantee that a cold start is achieved, since generally time and other related location information
+may be retained in the device’s non-volatile memory. Software or firmware based procedures
+that erase GPS assistance data and device history are acceptable for use in testing when
+available. In any event, the test methodology needs to ensure that prior assistance or position
+data is not used in subsequent test calls.
+8
+ATIS Technical Report 0500001 – High Level Requirements for Accuracy Testing Methodologies
+14The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+This important topic of handset initial condition has been discussed in detail within ESIF and the
+consensus results have been documented in a recent document revision release ATIS-050001. In
+that document three possible test scenarios are described reflecting the cold, warm and hot GPS
+device start. The warm start scenario is adopted as the most representative of common wireless
+device usage today. WG3 recommends that these guidelines be followed and adopted by the
+FCC as an update to the information in OET 71 on this topic.
+Finally, the Bulletin asserts that any empirical testing methodology should include protocols
+sufficient to test and verify that the system will continue to provide the required level of accuracy
+in normal operation. The issue of on-going or maintenance testing within ATIS-0500010
+contains the consensus recommendations in that regard.
+In the context of the E9-1-1 compliance requirements that prevailed around the year 2000, the
+Bulletin mentions that “a biannual validation of accuracy should ordinarily be sufficient”. Much
+debate has since taken place about the meaning of “biannual,” and whether it meant semiannual
+or every two years, with two years becoming the de facto practical limitation. However, in
+today’s context of accuracy compliance at the county or PSAP level, the implied granularity of
+the validation necessitates that the most intelligent means available, when using both empirical
+and alternative test methods, over reasonable time frames, be used to cost effectively achieve on-
+going validation. This topic is addressed in Section 4 of this report.
+There is consensus amongst WG3 members that ATIS-0500001 generally provides more current
+data than is available in OET 71. Therefore, while OET 71 remains a valid reference, this newer
+ATIS document is a more up to date source of information on accuracy testing methodologies.
+4.3 ATIS Technical Report 0500001 – High Level Requirements for Accuracy
+Testing Methodologies
+Technical Report 0500001, High Level Requirements for Accuracy Testing Methodologies
+focuses on providing a set of minimum technical requirements for testing location accuracy of a
+typical network deployment of positioning technologies for wireless E9-1-1 services in order to
+assess FCC compliance.
+CSRIC III Work Group 3 (WG) reviewed the ATIS Technical Report 0500001 and found that
+the level of detail expressed in this document, augmented with the recommended guidelines on
+empirical sample sizes and coverage in Section 4, is sufficient to warrant its use as the baseline
+text for meeting the CSRIC III WG3 Charter that develops approaches to outdoor location
+accuracy testing criteria and procedures.
+15The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+4.4 ATIS Technical Report 0500009 – High Level Requirements for End-to-End
+Functional Testing.
+The ATIS Technical Report 0500009, High Level Requirements for End-to-End Functional
+Testing, is for use in testing 911 voice path and data path delivery to the designated PSAP. This
+testing is appropriate for E9-1-1 Phase 1 and Phase 2 service deployments and for testing to
+ensure that network maintenance activity has not disrupted voice and data path delivery. This
+technical report is not applicable to location accuracy testing.
+4.5 ATIS Technical Report 0500010 – Maintenance Testing
+ATIS’ Technical Report on Maintenance Testing was first released in 2006. This report was the
+result of years of discussions on the issue of periodic maintenance testing subsequent to the
+publishing of OET 71. The report contains the consensus recommendations of the contributing
+members; including the wireless service provider community, public safety, and the associated
+technology vendors.
+The ATIS Maintenance Testing report, “neither recommends nor imposes a specific test
+methodology, but rather provides a common frame of reference that individual stakeholders can
+use to ensure continued accuracy and functionality compliance of Phase 1 or Phase 2 E9-1-1
+integrated networks through the inevitable updates and changes that occur over time, and
+provides a set of minimum requirements for individual test methodologies.” The report is
+broken into two parts, with the first part covering maintenance testing for accuracy and the
+second covering testing of end-to-end functionality. Included in the report are details on the
+logistics of testing, including software and hardware requirements as well as definition of the test
+area. Important issues covered in ATIS-0500010 include:
+ Useful life of collected data
+ Definition of System Under Test
+ Methods to Establish Ground Truth
+ Empirical Test Methods in a maintenance context
+ Sample Size and Distribution in maintenance situations
+ Predictive Testing
+ Weighting of Data
+CSRIC WG3 finds that this report from ESIF provides a useful technical foundation for
+maintenance testing as further discussed in section 5.3.
+4.6 ATIS Technical Report 0500011 – Define Topologies & Data Collection
+Methodology.
+ATIS Technical Report 0500011 was developed in response to a request from NRIC VII
+convened by the FCC in 2004. The consensus compromise arrived at by NRIC VII Focus Group
+1A was that compliance testing would be done at the state level and that the wireless service
+16The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+providers would provide to public safety a one-time report containing representative
+performance data in various environments.
+Four basic wireless use environments are defined in detail in ATIS-0500011 for that purpose:
+ Dense Urban
+ Urban
+ Suburban
+ Rural
+Although the regulatory framework has since changed, these definitions can still be used today to
+describe the environments in which the wireless network and location system operate, and in
+which their location performance is expected to be satisfactory. These definitions can also be
+used in devising test plans for location system performance assessment and evaluation if such is
+desired, or in providing representative location system performance data to interested parties.
+4.7 ATIS Technical Report 0500013 – Approaches To Wireless E9-1-1 Indoor
+Location Performance Testing
+This ESIF Report on Indoor Location Performance Testing will be covered more fully as part of
+this group’s work on Indoor E9-1-1 Testing Recommendations. Although this report is focused
+on indoor location testing, a number of important methodologies pertinent to outdoor location
+testing are included in this report. These include:
+ Device Initialization to assure independence between location fixes at the same test
+location
+ Developing a comprehensive test plan
+ Ground Truth in challenging environments (e.g. stationary points in an urban canyon)
+5 APPROACHES FOR OUTDOOR LOCATION ACCURACY TESTING
+5.1 Introduction
+OET 71 was issued by the FCC in April of 2000 to provide general, high-level guidelines and
+suggestions for evaluating compliance with E9-1-1 rules for Automatic Location Information
+(ALI). It provided a helpful framework and served to initiate the process of developing more
+detailed methodologies for compliance testing. The key provisions of OET 71 are described
+further in Section 4 of this report.
+OET 71 predicted – “It is likely that testing and verification practices will evolve over time”. It
+continues to encourage the “development of efficient, reliable, simple, cost-effective methods to
+test and verify ALI accuracy and reliability”. These efforts to further develop and improve
+location test methods continue to the present.
+One significant evolution of location performance testing methodologies took place within the
+17The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+ATIS Emergency Services Interconnection Forum (ESIF) over the course of 18 months between
+Jan 2003 – June 2004, with broad support of relevant stakeholders, including: public safety
+representatives, wireless service providers, technology and test vendors, and 911 service
+providers. The result of this effort – a technical report entitled “High Level Requirements for
+Accuracy Testing Methodologies (ATIS-0500001) was released in July 2004.
+This document utilized OET 71 as a foundation and went on to further develop a common frame
+of reference that individual stakeholders can use to validate the performance of 911 location
+technologies, including a minimum set of industry-accepted requirements individual test
+methodologies should comply with. This document has been and continues to be widely used by
+wireless service providers, public safety entities, test vendors, and others to guide location
+accuracy testing.
+ESIF recently undertook an effort to review and update ATIS-0500001 to reflect changes in
+handset use cases – specifically regarding the initial conditions and test cases for A-GPS
+equipped handsets. This effort resulted in the release of ATIS-0500001 in Nov 2011.
+CSRIC WG3’s ‘Outdoor Location Accuracy’ Subgroup reviewed ATIS-0500001 as part of its
+charter to “develop approaches to outdoor location accuracy testing criteria, procedures…”. The
+consensus within WG3 is that this ESIF document remains relevant and provides helpful
+direction and proper guidance for conducting location accuracy testing. Specific observations
+and further recommendations on the use of the ESIF document are provided in Section 4.1.1 of
+this report.
+5.2 Empirical Testing Methods
+The most basic and fundamental method to determine the level of performance of a location
+system is to conduct real-world empirical field testing. While this method is ideal in terms of
+being highly reliable, it is not necessarily ideal in terms of being efficient, simple, and cost-
+effective.
+Because of the importance of reliably determining initial compliance with FCC accuracy
+standards, accuracy testing for compliance purposes has typically been restricted to empirical test
+methods. Best practices for conducting proper empirical accuracy testing are provided in section
+7 of ATIS-0500001.
+5.2.1 Practical Guidance on Empirical Sample Size and Distribution for Initial or Full
+Compliance Testing
+This section provides additional practical guidance, beyond that contained in ATIS-0500001, on
+the quantity and distribution of test samples required for initial or full compliance verification
+through empirical field-testing.
+18The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+Whether testing is conducted on network or handset based location networks, an adequate
+number of test locations or test call attempts must be used to provide for a statistically significant
+result. The test methodology used for such accuracy testing shall provide adequate and
+verifiable justification for such test sample and location selections. ATIS 05-00001 states that a
+“90% confidence level shall be used with a meaningful corresponding confidence interval”.
+Many location technology systems produce fixes based on a combination of multiple techniques,
+each having a unique and distinct error distribution. Normal (Gaussian) distributions are
+sometimes invoked in creating simplifying assumptions to derive the required test call sample
+size. Such normal distribution assumptions, however, do not apply to all types of location
+systems and often do not adequately reflect the behavior of a location system in an E9-1-1
+environment. In those real world settings, medium to large location errors occur in higher
+proportions than modeled by a normal (Gaussian) or a Rayleigh distribution.
+To illustrate, in a pure GPS system within a benign outdoor setting, the positioning error
+distribution is a bivariate normal distribution (i.e., normal and independent in latitude and
+longitude), resulting approximately in a Rayleigh distribution for the positioning error.
+Simplifications related to this normal behavior could be applied in such a case. A practical GPS-
+based system used in the context of E9-1-1, however, contains a combination of assisted GPS,
+various ground-based trilateration techniques, and cell sector based techniques. Cell sector-
+based or aided techniques do not follow a normal distribution in their positioning errors and are
+closer to a uniform distribution. Triangulation techniques, inclusive of timing triangulation, may
+or may not follow a normal behavior. When these other techniques follow a normal distribution,
+it is often with significantly higher variances than GPS. Additional location techniques, based on
+signal structure or proximity (e.g., WiFi), may also be or become part of the overall location
+solution.
+In view of this complexity in deployed location systems, and the inability to predict exact system
+behavior before testing in a given area – as well as the desire to have uniform broadly applicable
+methods – robust, distribution free and technology-neutral statistical methods are attractive. This
+is, for example, what has been proffered by the FCC in OET 71 Appendix A, which uses order
+statistics.
+It is recommended that the size of the empirical test sample accommodate the application of a
+robust statistical test regarding the error percentiles applicable to the compliance of the test area
+(e.g., the 67th and 90th percentiles). A consequence of this is that an empirical sample cannot be
+too small (e.g., 100 test calls). The smaller the sample the tighter the order statistics pairs for a
+given confidence level and the less likely the compliance.
+Typical sample sizes appropriate for urban, suburban and some rural counties will normally be
+considerably larger than such a small sample, thereby causing the order statistics pairs to be close
+to the 67th and 90th percentiles. A useful rule of thumb for the overall number of test calls is 10
+times the number of cell sites in the test area, although there is no exact derivation behind this
+common engineering selection. It is recommended as a rule of thumb that the minimum sample
+19The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+size for areas with very few sites be 200 independent test calls to meet the statistical confidence
+requirements. If a specific distribution of positioning error can be clearly demonstrated that
+justifies an alternate and possibly smaller sample, it could be considered but careful justification
+should be provided in that case.
+Concomitant with the number of test calls in an empirical sample is the distribution of the test
+calls to adequately cover the test area. Distance from a serving cell site as well as prevailing cell
+site density impacts the terrestrial elements of the overall location system and have to be
+included in the empirical test sample. Different groups of cell sites may have factors (e.g.,
+configuration parameters) that can impact network performance. Thus, another useful rule of
+thumb is that test calls be initiated on 80% of the cell sectors in the test area. Again, this number
+is based on reasonable engineering practice rather than mathematical derivation. Both the
+overall number of test calls in the sample and their distribution across the test area will ensure
+good statistical representation of prevailing location accuracy.
+It should be noted that the statistical formulas used throughout assume independent and random
+error measurements. Accordingly, test methods that involve repeated static calls with
+dependence between subsequent location fixes (e.g., due to hot start and/or identical propagation
+in a short time period) should be avoided since they do not meet the required independence
+within the test sample.
+5.3 Alternative Testing Methods
+Wireless service providers have an obligation, following initial compliance with the required
+accuracy standards, to maintain proper performance of location systems. Given the on-going
+nature of this obligation and the cost associated with nationwide periodic empirical testing at the
+county or PSAP level, it is highly desirable to identify alternative methods that meet the goal of
+being reliable, efficient, simple, and cost-effective.
+This goal is in harmony with the Subgroup’s charter to “develop approaches to outdoor location
+accuracy testing criteria, procedures, and timeframes that are reasonable and cost-effective,
+considering alternatives to the current FCC OET 71”, and to “develop recommendations
+concerning the feasibility of flexible testing criteria and methodologies”.
+Various alternative testing concepts have previously been developed, including the work done by
+ESIF in ATIS-0500010 “Maintenance Testing”. As suggested by WG3’s charter, further
+development and guidance of alternative testing methods is warranted.
+5.3.1 Relevant Alternative Testing Concepts Developed by ESIF
+This section provides a summary of alternative testing concepts previously developed by ESIF.
+These concepts have been reviewed by WG3 and found to be relevant and helpful in developing
+an alternative testing methodology, following initial or established compliance.
+20The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+5.3.1.1 Predictive Testing
+One alternative concept is ‘predictive testing’ which involves the use of predictive tools and
+models for location accuracy determination to augment empirical methods to reduce the reliance
+on resource-intensive, repetitive field-testing.
+Appropriate guidelines as well as proper safe guards in utilizing predictive testing are provided
+in ATIS-0500001 Section 8. WG3 concurs that this ATIS document provides the industry
+accepted procedures for use of predictive testing.
+5.3.1.2 Incremental Testing
+Methods to automatically collect empirical test data incrementally over time, gradually building
+a set of accuracy test measurements generated from discrete test calls (which include a ground-
+truth reference) have been identified and recommended for use by ESIF (see ATIS-0500010:
+Maintenance Testing Section 7.2). For example, field operations vehicles could be equipped
+with location collecting equipment.
+This method is typically referred to as ‘incremental testing’. It does not rely on any randomly
+uniform test point distribution for data collection. In the event that an area is over-represented in
+the collected dataset, a random sample may be chosen from collected data for analysis purposes.
+Considerations must be given to the age of incremental test data, which must not be older than
+two years, as required by ATIS-0500010: Maintenance Testing Section 3.2 Useful Life of Data,
+and Section 3.3 System Under Test.
+5.3.1.3 Reduced Empirical Data Sample Size
+As observed by ESIF in ATIS-0500010 Section 7.3, “Initial empirical compliance testing is done
+without prior knowledge of whether or not the test area conforms to the mandated accuracy
+requirement”. This may require a sizable sample to establish accuracy performance with the
+desired level of statistical confidence (as established in OET 71). Subsequent testing, including
+maintenance testing, may be able to benefit from the knowledge that the system did previously
+comply, so long as the network and its environment have remained substantially the same since
+the initial testing.
+The result of this observation is that a smaller sample may be possible to achieve the same level
+of statistical confidence (nominally 90%). This is indeed the case if the location system
+continues to perform with specified operating parameters within a substantially unchanged
+environment (relatively the same urban, suburban, or rural environment throughout an existing
+RF coverage area respectively). These conditions are critical to avoid an adverse affect on the
+location system performance. An example approach to selecting a reduced sample size in the
+context of maintenance testing is provided in ATIS-0500010, Section 7.
+5.3.2 Additional Alternative Testing & Assessment Methods
+This section provides additional alternative testing concepts developed and recommended by
+21The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+CSRIC WG3. These methods, together with those previously developed by ESIF and referenced
+above in section 5.3.1, make up a set of alternative testing tools that can be utilized to help meet
+the goals of section 5.3.
+5.3.2.1 Key Performance Indicator Monitoring
+Another alternative concept useful in ensuring proper on-going location system performance is to
+establish a baseline of various key performance indicators (KPI) at the local area during the
+initial compliance field testing phase, and then monitor the KPI on an on-going basis to identify
+any changes in trends that would indicate a potential system problem.
+Useful KPIs include but may not be limited to:
+• Uncertainty Estimate Trends
+• Location System Yield Levels
+• Location Estimate Latency
+• Automated Configuration Database Health Checks
+• Inconsistent Results Between Various Location Methods
+• Equipment Failure Alarms
+As observed by the ESIF Issue 71 “Baseline and Trending of Uncertainty” resolution statement9
+; “Taken together, these KPIs are very useful in helping determine when system performance has
+degraded and further testing and system improvements are needed at the local level”.
+Properly implemented and monitored, KPIs can provide more rapid indication of local system
+performance problems than periodic empirical field testing – which is dependent on the next
+scheduled ‘test cycle’ – while being efficient to implement and maintain operationally.
+5.3.2.1.1 Uncertainty Estimate Trends
+Wireless Service providers are required to provide an uncertainty value associated with each 911
+location estimate, to provide some insight into the quality of the location fix. These uncertainty
+estimates on a call-by-call basis are not a reliable substitute for empirical location accuracy
+testing. Uncertainty estimates, when taken on average over time, however, can indicate a trend
+that may reflect continued proper system operation or system problems.
+CSRIC acknowledges that disparate service providers and technologies report confidence and
+uncertainty values differently. Uncertainty trending is still useful within a single service
+provider and single technology environment.
+The use of uncertainty estimate trending in lieu of on-going empirical testing has been endorsed
+9
+http://www.atis.org/esif/_Com/Docs/Issues/Issue71.doc. A formal letter from ATIS, explaining the resolution statement for
+ESIF Issue 71, is in the process of being drafted for the FCC.
+22The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+by the FCC 2nd R & O – “Once a wireless service provider has established baseline confidence
+and uncertainty levels in a county or PSAP service area, ongoing accuracy shall be monitored
+based on the trending of uncertainty data and additional testing shall not be required”.
+5.3.2.1.2 Location System Yield Levels
+An unanticipated drop in local yield levels for a given location technology is a clear indicator of
+location system problems, and serves as a trigger for investigation and resolution.
+5.3.2.1.3 Location Estimate Latency
+Average local latency values for a given location technology are typically well-behaved and
+don’t normally vary significantly. Increases in average latency can serve as a trigger for
+investigation.
+5.3.2.1.4 Automated Configuration Database Health Checks
+Current location technologies depend upon accurate configuration data provisioned in the
+network. Automated checks of configuration databases are utilized to detect missing, illogical,
+or improper values, and flag issues for rapid resolution. Automated methods to identify
+configuration database errors are an important part of any quality maintenance approach.
+5.3.2.1.5 Inconsistent Results Between Various Location Methods
+Cross checking location estimates from multiple location methods employed on the same 911
+call can detect a pattern of inconsistent or illogical results and serve as a trigger for investigation.
+For example, UTDOA results which are many miles away from the Round Trip Time (RTT)
+location estimates for some 911 calls in a given area, could flag a likely problem.
+5.3.2.1.6 Equipment Failure Alarms
+Physical equipment installed in the network necessary for proper location system functionality is
+typically alarmed for equipment failures. Depending on the location technology and specific
+equipment utilized, these alarms can indicate various failure modes (for example: loss of
+GPS/timing, loss of essential network or RF signaling, internal hardware self-test failure, over-
+temperature condition, power failure, etc). These alarms are typically automatically monitored
+24x7 and failures can be quickly remedied.
+5.3.2.2 Testing in Representative Environments
+Certain location technologies are well suited for collecting and analyzing performance in
+representative environments, as opposed to continued testing in each and every local area, as
+they perform similarly in similar environments.
+A-GPS is one of these technologies. Once a particular A-GPS handset implementation has been
+validated through careful testing in the lab and in the field, the only significant performance
+variation from environment to environment is due to local conditions of sky visibility, signal
+reflections (multipath), and signal attenuation (foliage). Quality of the assistance information is
+23The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+an important factor affecting the location latency, secondary location methods, and yield
+performance. Proper assistance information can be assured through appropriate automated
+configuration database health checks.
+For example, under similar network and environmental conditions, a rural county in Arizona is
+expected to have statistically comparable A-GPS performance characteristics to a rural county in
+Nevada. This type of extrapolation has been validated via extensive empirical testing within
+wireless service provider networks.
+Performance of some location technologies, including some network-based methods, is
+substantially affected by parameters other than sky visibility and signal reflections. These
+parameters may include: visibility, density, and geometry of surrounding cell sites,
+terrain/morphology, signal reflections (multipath), and complexity of RF scattering. The
+representative environments selected must take into account the underlying location technology
+of interest, to ensure an adequate mix of real-world conditions are included.
+CSRIC recommends that ATIS/ESIF further explore defining the representative usage
+environments.
+5.3.2.3 Empirical Spot-Checking
+To maintain some level of periodic empirical field testing as part of on-going maintenance
+assurance, a systematic method of ‘spot-checking’ local areas which have previously been tested
+and shown compliant can be employed. Any significant deviations from expected prior
+performance levels should result in careful investigation and full re-testing.
+5.4 Recommendations on Maintenance Testing
+The goal of maintenance testing is to identify an approach to ensure continued optimal
+performance of E9-1-1 location systems at the local level, following initial compliance
+verification or prescribed self certification. This method should be simple, efficient, reliable, and
+cost-effective – yet based on sound engineering principles.
+In summary, the following alternative testing methods have been identified for consideration in
+keeping on-going maintenance efforts reasonable:
+1. Predictive Testing
+2. Incremental Testing
+3. Reduced Empirical Data Sample Size
+4. Key Performance Indicator Monitoring
+5. Testing in Representative Environments
+6. Empirical Spot-Checking
+24The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+5.4.1 Key Background Observations
+It is important to note that alternative maintenance testing methods only apply where
+County/PSAP compliance has been established via empirical testing. Thus, we approach
+maintenance of these systems with this prior knowledge.
+Empirically collecting statistical significant performance data in each and every county of
+interest requires considerable effort and resources. Some insight into the magnitude of these
+costs is provided in Section 6 of this report. Limited resources are best utilized through a
+systematic method of maintenance which utilizes other available performance indicators and
+simplifying assumptions, in addition to empirical testing.
+5.4.2 Proposed Maintenance Approach
+CSRIC WG3 recommends the following approach to on-going maintenance testing following
+initial County/PSAP-level compliance:
+• Key performance indicators should be routinely monitored and archived network-wide, to
+help determine when system performance has degraded and further testing and system
+improvements are needed at the local level.
+• Enhancements to location technology should be validated in representative environments,
+to ensure equivalent or improved performance.
+• Spot-checking using empirical field-testing should be conducted on an as needed basis,
+for example, as determined by KPI monitoring or legitimate performance concerns from
+a PSAP.
+• Empirical data for maintenance testing may be collected incrementally, but must conform
+to the requirements in ATIS-0500010: Maintenance and Testing; Sections 3.2 Useful Life
+of Data and, Section 3.3. System Under Test.
+• Any significant deviations from expected prior performance levels should result in
+careful investigation and re-testing of the applicable test area.
+• CSRIC WG3 recommends that the alternative maintenance testing methods listed above
+replace the requirement for full compliance testing every two years as would be implied
+in the ATIS-0500010 “Maintenance Testing” Technical Report Section 3.4. Wireless
+Service providers have an obligation to provide verification of testing and/or test
+summary results for up to the previous 24 month period upon FCC request.
+• All legitimate performance inquiries from a County/PSAP or other public safety entity
+shall be properly investigated with full cooperation from the wireless service provider,
+and any issues resolved in a timely manner.
+25The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+6 OUTDOOR LOCATION ACCURACY TESTING COSTS AND TIMEFRAMES
+WG 3 has been charged with developing approaches to outdoor location accuracy testing that are
+reasonable and cost-effective. In this section we review at a high level the cost associated with
+the empirical testing of a wireless service provider’s network for 911compliance, and testing by
+Public Safety for location assurance.
+As indicated in Section 5.2, Empirical testing methods are highly reliable, but not necessarily
+cost effective if applied repeatedly at a PSAP or county level. Deployment of field test resources
+ranges from $250 to $1000 per cell site10 depending on the geography, morphology, and in
+particular prevailing cell site density. The resources required for a Tier I service provider to
+constantly employ field testing methods to gauge the accuracy of their network’s nationwide
+footprint on a PSAP-level is logistically unfeasible. Similarly, testing in Tier II and Tier III
+environments is often in the higher portion of the cost per cell site spectrum due to the sparser
+cell site distribution and increased drive time between cell sites.
+In comparison, as discussed in Section 5.2, a program utilizing a combination of Key
+Performance Indicator (KPI) monitoring, predictive modeling and ongoing network accuracy
+performance testing can provide an adequate means of gauging overall service provider accuracy
+performance on a real time and ongoing basis.
+9-1-1 Outdoor location accuracy testing has been approached in various ways to achieve
+compliance. Some wireless service providers chose to initially invest in a location accuracy
+management performance system, to perform the level of testing required to meet compliance.
+Those initial costs included: hardware, software development, and labor costs. Dependent upon
+the service provider and the network or networks monitored, the initial investment cost for such a
+performance system ranges from $5M to $11M. It may include the ability to monitor location
+performance throughout the network as well as provide a reporting system, to assist in enhancing
+the performance of the location networks that provide E9-1-1 Phase II. Generally, the actual
+performance of the test calls themselves is through handset-equivalent, Location Assurance
+Devices (LADs) that have been installed or carried in vehicles. Those devices are equipped with
+a differential GPS receiver for ground truth determination, as well as programmed to generate
+simulated 9-1-1 calls to the performance system. Such a performance monitoring system allows
+service providers to verify test calls and generate metrics for FCC compliance for E9-1-1 phase-
+II. It also enables on-going monitoring of the location networks including location performance
+10
+The costs referenced within Section 6 were obtained thru direct conversations with the following
+service provider and PSAP stakeholders: AT&T Wireless, Cricket Wireless, Sprint, T-Mobile, US
+Cellular, Verizon Wireless, CommScope, Bexar Metro 9-1-1 Network District, Capital Area Council of
+Governments, TX (CAPCOG), Tarrant County 9-1-1 and APCO International. Drive test costs were
+formulated into a cost by cell site range where applicable.
+26The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+for commercial LBS.
+Monitoring the service provider’s network can be done through ongoing and automated
+scheduled tests. The performance system allows service providers to verify call flow, measure
+end-to-end latency, assess location accuracy, quickly identify and resolve operational system
+performance issues and generate reports and metrics for verification of compliance with FCC
+(Federal Communication Commission) mandates and Commercial LBS performance
+requirements. This also puts into place the ability to monitor of KPIs discussed above. The data
+storage and reporting capabilities may vary between in-house systems and hosted data solution
+and reporting with a vendor. Annual recurring cost to maintain reporting and data storage range
+between $500K and $1.5M.for a large network.
+The other alternative is to engage personnel or contracted services to do the testing within the
+wireless service provider’s network. Based on whether the resources are service provider
+employees or contracted testing services the $250 to $1000 per cell site cost stated above for
+PSAP-level testing applies. Some vendors have also taken the approach of a per PSAP testing
+cost structure that ranges from $50K to $150K per PSAP, regardless of the number of cell sites
+being tested, and varies depending on whether the testing conducted is for service provider
+compliance or PSAP accuracy assurance. As a historical example, in 2003 APCO contracted for
+performance testing in seven diverse PSAP jurisdictions at a cost of $700K to support APCO
+Project LOCATE11. Performance testing included retesting of cell sites in one (1) of the PSAP’s.
+Performance Testing, as done in the APCO Project LOCATE, study was not accuracy testing for
+the purpose of assessing compliance with the current Federal Communications Commission
+(FCC) standards. The purpose of Performance Testing was to assess the delivery of location data
+from a wireless E9-1-1 call via the existing Wireless service Provider’s (WSP) deployed system,
+through to the PSAP, as captured in the Automatic Location Information (ALI) data display at a
+workstation. It further sought to document the variance of the actual, delivered location data by
+measuring the difference between a location data determined by existing baseline map data or
+other typical survey methods or a differential GPS receiver and the location data actually
+presented to the PSAP, both initially and upon rebid. The PSAP Performance Testing Process
+was not intended to confirm or describe accuracy compliance at the PSAP level, but rather
+provide the PSAP with actual data regarding the usefulness of delivered location data for
+dispatch purposes.
+As demonstrated in the documented APCO Project LOCATE report, testing regimes can be
+costly and there are multiple ways to provide performance data to agencies, however, all
+processes must be documented and carefully analyzed.
+Another challenge with PSAP-level testing is that in some cases there is a need to incorporate
+11
+APCO Project LOCATE Final Report, February 2007.
+27The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+both automated testing through a performance system and to send out people to place test calls to
+generate enough calls to obtain a statistically valid sample for the desired county or PSAP-level
+reporting.
+Based on the size of the service provider’s network, the per cell site or per PSAP costs and
+logistical efforts for testing and maintaining compliance, if applied repeatedly, would become
+significant obstacles for the service provider and public safety, depending on who is pursuing the
+testing.
+Many public safety entities, concerned with wireless location accuracy and its impact on their
+ability to locate callers, initiated wireless accuracy assurance programs. These programs range
+from personnel placing test calls from known points of interest or intersections during their
+normal course of business, to extensive programs with dedicated field staff equipped with
+survey-grade GPS equipment. Basic programs are less expensive to implement and provide
+PSAPs with the means to quickly conduct end-to-end testing by validating both wireless
+accuracy and 9-1-1 mapping system functionality. Such programs are also used as a training tool
+to continuously educate PSAP personnel on wireless 9-1-1. Initial start-up expense can be as low
+as $1500 but can reach $45K depending on the program. Higher end figures include the cost of a
+vehicle, computer equipment, staff and GPS equipment. Annual recurring costs to include staff,
+phone subscriptions, differential GPS correction and vehicle fuel and maintenance can easily
+exceed $40K.
+In summary, the expectation should be that once compliance has been achieved, the wireless
+service providers would be able to maintain the appropriate level of accuracy in their networks
+by employing a combination of as needed empirical testing, alternate techniques like monitoring
+of KPIs and trends, and predictive modeling. This approach is discussed in Section 5 of this
+report.
+7 LOCATION SYSTEM PERFORMANCE AND YIELD CONSIDERATIONS
+Phase 2 yield may be defined as the ratio of successful Phase 2 locations over the total number of
+valid location requests.
+Valid location requests are those where the call is made from within a service provider’s
+advertised RF coverage area. The duration of the call must last up to 30 seconds before a
+determination can be made that Phase 2 location has failed. A service provider has up to 30
+seconds to compute the Phase 2 location estimate. The test process or PSAP must initiate a
+properly timed location request to the service provider network to generate a Phase 2 location
+estimate.
+Phase 2 yield can be measured at the service provider network or at the PSAP. There are many
+issues that a PSAP must consider however if they wish to test for Phase 2 yield. As discussed in
+28The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+Section 5 of this report, yield levels are one of the key performance indicators that can be
+monitored on an on-going basis to assess the health of the location system.
+The following opinions submitted to CSRIC WG3 do not represent a consensus of opinion on
+how yield should be considered when assessing outdoor location accuracy. The contributions
+reflect distinct and disparate opinions from the WG3 membership.
+Opinion #1
+The FCC charter statement for WG3 states that, “the working group shall develop approaches to
+outdoor location accuracy testing criteria …” A group of participants in WG3 maintain that
+Phase II yield is a critical test criterion that needs to be addressed and included in any
+meaningful assessment of E9-1-1 accuracy. This position stems from the observation that the
+yield of current E9-1-1 location systems varies widely, yet in common current practice E9-1-1
+testing only considers the location accuracy of Phase II calls. Low Phase II yield that is
+unaccounted for can have a dramatically deleterious impact on the performance of E9-1-1
+accuracy. Accuracy testing that ignores or side-steps this issue can present an inaccurate and
+misleading picture of the accuracy that will actually be delivered to the public safety community.
+The importance of yield is reflected in OET 71 and the Second R&O through the upper level call
+percentage requirements that are cited in those guidelines.
+The magnitude of the Phase II yield issue cannot be properly evaluated and addressed until Phase
+II yield results are included in E9-1-1 accuracy testing and are determined with the Phase II
+accuracy results for any candidate Phase II compliance area. This would either prove the
+assertion of Phase II yield problems unfounded, or illuminate this issue so that a full
+understanding and expectations of the real world capability of E9-1-1 is realized by all
+stakeholders, and appropriate yield targets compatible with the new accuracy requirements in the
+FCC rules can be developed for both outdoor and indoor settings. The concept of measuring PH-
+II E9-1-1 system accuracy must either include accounting for the system yield, or must include
+the reduction in accuracy of test calls that deliver only a PH1 location; to measure E9-1-1
+accuracy in any other way would not provide a complete picture of the accuracy as delivered to
+the PSAP.
+The alternate position, that individual call notations for PH-I or PH-II delivered with E9-1-1 calls
+to PSAPs would adequately capture this behavior, is deficient for several reasons, including the
+extreme fragmentation of this data and the prevalence of indoor live 911 calls that would obscure
+the issue. Furthermore, the notion of a "test bed" to evaluate yield would only delay
+identification of the magnitude of this issue and would in no way improve the value of the data
+over including yield in accuracy testing nation-wide. The concept of a test-bed is usually
+considered in terms of cost and complexity reduction to evaluate new technology. In this case,
+there is no real cost or complexity savings to justify the test-bed approach.
+Thus, this group of WG3 participants recommends that Phase II yield be included in E9-1-1
+29The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+accuracy testing and its result be retained with the computed Phase II accuracy and provided to
+public safety when inquiries into E9-1-1 system performance are made.
+Opinion #2
+The topic of ‘Phase 2 yield’ has arisen during several discussions within the CSRIC III Work
+Group 3 effort. By definition, a Phase 1 result provides “the location of the cell site or base
+station receiving a 911 call”. Phase 1 results are ‘static’ in nature, drawing upon cell site
+configuration data provisioned in the network. A Phase 2 result provides an estimate of the 911
+caller’s location, using network or handset-based methods.
+Phase 2 location estimates are location technology-specific and heavily dependent on the
+environment in which each 911 call is placed. Factors affecting the ability for a specific location
+technology to provide an accurate location include: surrounding terrain, forestation or other
+factors affecting sky or cell site visibility; density and geometry of surrounding cell sites; signal
+reflections (multipath); and complexity of RF scattering. In some instances, a Phase 2 location
+result is not possible, and only a Phase 1 result is provided to the PSAP.
+The current county-level compliance agreement as established in the FCC rules 2nd R & O does
+not mandate a specific Phase 2 yield requirement, but rather establishes specific “Phase 2
+location accuracy” standards spread over four defined benchmarks. Wireless service providers
+are well down the path of testing and analyzing accuracy in every county in which they have
+deployed E9-1-1 Phase 2 services. Adding a new yield requirement at this point in the process
+would threaten the service providers’ ability to comply with currently available location
+technologies in the timeframe required by the rules. In addition, Section 5 of this Report gives
+comprehensive guidance to wireless service providers on how to properly and efficiently manage
+location technology performance at the local level. This methodology includes monitoring of
+key system performance indicators – such as location system yield levels, uncertainty estimate
+trends, location estimate latency, configuration database health checks, equipment failure alarms,
+and inconsistent results between various location methods.
+It is also noted that interested PSAPs already have access to the Phase 1 / Phase 2 result mix for
+their 911 calls. PSAPs looking for increased system performance visibility can collect and
+analyze Phase 2 yield information locally; utilizing the parameters they already receive for each
+call. This process should be kept separate from accuracy compliance. Additionally, the
+represented wireless service providers have all emphasized their willingness to work with
+individual PSAPs regarding local location system performance concerns.
+The CSRIC III WG3 “Outdoor Location Accuracy” Subgroup’s charter does not mention the
+term ‘yield’. In fact, this Subgroup’s charter is to identify ways to simplify outdoor location
+accuracy testing criteria. Yield is mentioned in the “Indoor Location Accuracy” Subgroup
+charter, in the context of evaluating new location technologies that potentially can be used to
+improve location performance in indoor environments. Relevant existing and proposed location
+30The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+technologies will be carefully studied in challenging real-world conditions, through the use of a
+common, neutral test bed. It would be appropriate to consider yield as a criteria for assessing
+these technologies with respect to indoor location performance. It is hoped that this effort will
+help identify opportunities to improve the availability of high-accuracy (Phase 2) location
+estimates in the future – and set the stage for any new recommendations. It is imperative that we
+first go through the test bed process to clearly determine what performance improvements may
+(or may not) be both technically and economically feasible, and the timeframe in which these
+new technologies might be available for actual implementation, prior to any recommendations
+for new rules.
+Opinion #3
+The inability of a wireless service provider to achieve Phase II data in a given area should not be
+arbitrarily dismissed. A low yield adversely impacts the PSAP’s ability to locate individuals in
+distress and could indicate problems with a service provider’s location positioning system. It is
+Public Safety’s consensus that service providers should account for and provide yield results in a
+separate report to the FCC upon request.
+Public safety understands that E9-1-1 location accuracy is measured against Phase II data. It
+would be helpful however for the FCC to clarify their assumptions in the Second R&O as to how
+Phase I results should or should not be taken into consideration during location accuracy
+compliance testing.
+31The Communications Security, Reliability and Interoperability Council III Working Group 3 Outdoor Location Accuracy
+March 14, 2012
+APPENDIX A
+Acronyms
+Acronym Definition
+A-GPS Assisted-Global Positioning System
+ALI Automatic Location Information
+APCO Association of Public Safety Communications Officials
+AT&T American Telephone and Telegraph
+ATIS Alliance for Telecommunications Industry Solutions
+CSRIC Communications Security, Reliability and Interoperability Council
+E9-1-1 Enhanced 9-1-1
+ESIF Emergency Services Interconnection Forum
+FCC Federal Communications Commission
+GPS Global Positioning System
+KPI Key Performance Indicator
+LAD Location Assurance Device
+LBS Location Based Services
+LOCATE Locate Our Citizens At Times of Emergency
+NENA National Emergency Numbering Association
+NRIC Network Reliability and Interoperability Council
+NSN Nokia Siemens Networks
+OET 71 Office of Engineering and Technology Bulletin No. 71
+PSAP Public Safety Answering Point
+RF Radio Frequency
+RTT Round Trip Time
+U-TDOA Uplink Time Difference of Arrival
+WG3 Working Group 3
+WiFi Wireless Fidelity
+WSP/SP Wireless Service Provider/Service Provider
+32

@@ -1,0 +1,127 @@
+PDF Content from https://www.pwc.com/us/en/technology/alliances/microsoft/pwc-microsoft-copilot-for-security.pdf:
+PwC and Microsoft
+Copilot for Security
+Advancing Your Cybersecurity Capabilities
+Empower your organization to address evolving cyber threats with
+industry leading-leading AI assistance.
+Mitigating Key Security Challenges with Copilot for Security
+Resource and Skill Constraints Dynamic Cyber Threats
+Organizations struggle with limited Facing ever-evolving cyber threats,
+resources and a shortage of skilled organizations often find their defenses
+cybersecurity professionals. Copilot outpaced.Copilot for Security
+for Security can help bridge this gap, employs advanced AI to swiftly adapt,
+enhancing operational efficiency and identifying and neutralizing threats
+supplementing teams with generative rapidly, keeping your operations
+AI capabilities at machine speed. secure.
+Benefits of Copilot for Security
+AI-Driven Threat Detection Empowered Response
+Utilize advanced AI to quickly identify Strengthen your SOC team with custom
+and mitigate threats, reducing response plugins, promptbook SOPs and
+times and enhancing your security advanced solutions for a more proactive
+posture. and quicker security response.
+Insightful Analytics
+Operational Efficiency
+Gain deep insights from Copilot for
+Enhance efficiency with automated
+Security's analytics to help drive
+processes, freeing up critical human
+decision-making and improve incident
+resources for strategic tasks.
+handling.
+Unified Security Enhancement Skills Enhancement
+Copilot for Security interfaces with your Elevate your team’s abilities with
+current security setup, enhancing AI-powered support, closing skill gaps
+capabilities and protecting investments. in cybersecurity knowledge.
+This publication has been prepared for general guidance on matters of interest only, and does not constitute professional advice. You should not act upon the information contained in this publication without obtaining
+specific professional advice. NTo hriesp preusbelincatatitoionn h oars w baererann ptyre (peaxrperde sfso ro gr eimneprlaiel dg)u iisd agnivceen oans mtoa tthteer sa cocf uinratecrye sotr ocnolmy, palentde ndeosess onfo tth ceo innsfotitrumtea tpiorno fceosnsitoaninael da dinv itcheis. Ypouub lsichaotiuolnd, naontd a, ctto u tphoen e txhteen int fpoerrmmaitttioend cboyn latawin, ed in this
+PricewaterhouseCoopers LLP,p itusb mliceamtiobne rws,it heomupt looybetaeisn ianngd s paegceinfitcs pdroo fneosts aiocncaelp at dovri caes.s Numo ere apnreys leianbtialittiyo,n r eosrp woanrsriabniltityy (oerx pdruetys so of rc aimrep lfioerd a) nisy gciovnesne aqsu eton cthees aocf cyuorua coyr oarn ycoonmep elelsteen aecstsin ogf, tohre r ienffroarimninagtio tno caocnt,t ainin reedlia inn cteh iosn
+PwC | Copilot for tShee icnfuorrmityation contained in thipsu pbulibcalictiaotnio, na nodr ,f otor athney edxetceinsti opne rbmasitetedd o bny itla.w, PricewaterhouseCoopers LLP, its members, employees and agents do not accept or assume any liability, responsibility or duty of care for an1y
+© 2024 PwC. All rights reservecdo. nPsweqCu reenfecress toof tyhoeu P owr Ca nnyeotwneo rekl saen da/cotirn ogn, eo ro rre mfraoirnei nogf ittos amcet,m inb erer lfiairnmcse, oena cthh eo fin wfohrimcha tisio an sceopnatarianteed l eing athl iesn ptiutyb. liPclaetaiosne osre feo rw awnwy. pdwecci.scioomn /bsatrsuecdtu orne ifto.r further details.How we can help modernize your security operations with Copilot for Security
+PwC's Two-Step Security Empowerment Approach for Copilot for Security
+Rapid Readiness Assessment Implementation and Integration
+Assessing Your Defenses: A Preliminary Check Securing Your Future: Deployment and Integration
+Phase 1: Microsoft Copilot for Security Rapid Readiness Assessment
+Readiness Assessment Approach Microsoft Copilot for Security
+Our readiness assessment offers a holistic
+analysis of your organization’s requirements and Microsoft Security Tailored promptbooks
+potential addressable gaps for the Copilot for Solutions tailored to your operations
+Security implementation.
+Microsoft security trust boundary
+This assessment covers the technical
+requirements for the solution, tailored development
+Modified
+needs, and the SOC adoption timeline and current
+Prompt
+standard operating procedures.
+Microsoft Copilot
+Readiness Assessment Outcomes Skills &
+for Security Large Language
+Our report and recommendations can provide Threat Intel
+Model
+insights regarding your organization’s readiness to
+Grounding
+adopt Copilot for Security, including but not limited
+Post-processing
+to upskilling opportunities, technology and solution
+LLM Response
+integration options and other recommendations to
+help modernize your defenses and provide return
+Custom Plugins for
+on your investment.
+your data and context
+Technical Readiness Requirements and Opportunities Report
+Microsoft Access and Third-Party Custom Plugin SOP/Playbook Logic Apps Rapid
+Security Permission Solution Needs Transformation Integrations Readiness
+Integration Management Integration Identify required Assess current Identify Report
+Evaluate EDR, Review your Evaluate and optional SOPs/playbooks opportunities to Deliver a
+SIEM and access and non-Microsoft plugin and prioritize for integrate Copilot report on your
+CMDB permission security development Copilot for for Security with preparedness
+coverage and management solutions for requirements to Security existing Logic for
+readiness. processes and potential enrich data and promptbook Apps and/or implementing
+delegation integration. processes. transformation. identify Logic Copilot for
+requirements. Apps Security.
+opportunities.
+Core Components of the Rapid Readiness Report
+01 02 03 04
+Rapid Readiness A prioritized list of Implementation Custom plugin, skills and
+Assessment summary actionable roadmap promptbook development
+recommendations requirements
+PwC | Copilot for Security 2Phase 2: Copilot for Security Implementation and Integration
+Transition to advanced cybersecurity through tailored integration of Copilot for Security. Streamline
+SOC operations with sophisticated automation and empower teams with leading training and
+knowledge transfers.
+Technical Training & Knowledge
+SOC Workflow Integration
+Implementation Transfer
+Tailored Security Integration Enhanced SOC Operations Empowered Security Teams
+• Custom setup of Copilot for Security • Alignment of Copilot features with • Holistic training programs tailored
+• Integration of Copilot for Security SOC operational processes for SOC teams
+with existing systems and data • Optimization of incident response • Relevant promptbooks that provide
+sources workflows using Copilot clear guidance for SOC teams
+• Development of custom plugins to • Integration of knowledge bases for • Implement continuous learning
+enhance functionality enriched processes and context pathways
+Copilot for Security Services by PwC
+Tailored Integration Services Tailored Promptbooks Custom Skill Development
+Policy Development &
+Custom Plugins and Logic Apps Incident Response Planning
+Compliance
+Why choose PwC?
+PwC has been recognized by multiple analysts for excellence in cybersecurity services.
+We know Microsoft; we have a substantial and growing alliance with Microsoft to build and
+deliver Microsoft's solutions to help you transform your business right, the first time.
+Related services
+Integrated incident response
+Microsoft Copilot for M365
+solution with Microsoft and PwC
+Your contacts
+Vimal Navis Norbert Vas
+Principal, Cyber Risk & Reg Director, Cyber Risk & Reg
+PwC US PwC US
+M: +1 469 590 8899 M: +1 617 530 5000
+E: vimal.navis@pwc.com E: norbert.vas@pwc.com
+This publication has been prepared for general guidance on matters of interest only, and does not constitute professional advice. You should not act upon the information contained in this
+publication without obtaining specific professional advice. No representation or warranty (express or implied) is given as to the accuracy or completeness of the information contained in this
+publication, and, to the extent permitted by law, PricewaterhouseCoopers LLP, its members, employees and agents do not accept or assume any liability, responsibility or duty of care for any
+consequences of you or anyone else acting, or refraining to act, in reliance on the information contained in this publication or for any decision based on it.
+© 2024 PwC. All rights reserved. PwC refers to the PwC network and/or one or more of its member firms, each of which is a separate legal entity. Please see www.pwc.com/structure for
+further details.

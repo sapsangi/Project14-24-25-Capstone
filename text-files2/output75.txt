@@ -1,0 +1,920 @@
+PDF Content from https://www.fcc.gov/bureaus/pshs/advisory/csric3/CSRIC_III_WG10_Report_March_%202013.pdf:
+February 13, 2013 WORKING GROUP 10
+Final Report
+9-1-1 PrioritizationThe Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Table of Contents
+1 Results in Brief ......................................................................................................................... 4
+1.1 Executive Summary ........................................................................................................ 4
+2 Introduction .............................................................................................................................. 6
+2.1 CSRIC Structure ............................................................................................................. 6
+2.2 Working Group 13 Team Members ................................................................................ 6
+3 Objective, Scope, and Methodology ........................................................................................ 7
+3.1 Objective ......................................................................................................................... 7
+3.2 Scope ............................................................................................................................... 7
+3.3 Operational Procedures ................................................................................................... 8
+4 Background .............................................................................................................................. 8
+4.1 Current Network Architectures ....................................................................................... 8
+4.1.1 Simplified View of 911 Network .............................................................................. 8
+4.1.2 High Level Wireless 911 Architecture ..................................................................... 9
+4.1.2.1 Radio Access Link (Handset to Cell Tower) ........................................................ 9
+4.1.2.1.1 2G and 3G Networks ..................................................................................... 9
+4.1.2.1.2 4G Networks (LTE) .................................................................................... 10
+4.1.2.2 Radio Access to Switch (Cell Tower to Wireless Switching Network) .............. 10
+4.1.2.3 Mobile Switch to Selective Router .................................................................. 10
+4.1.2.4 Mobile Switching Network ................................................................................. 11
+4.1.2.5 Selective Router to PSAP .................................................................................... 11
+5 Emergency/Disaster Scenario Classification ......................................................................... 11
+5.1.1 Widespread/Major Damage/Advanced Warning (Hurricanes) ............................... 12
+5.1.2 Widespread/Major Damage/No Warning (Earthquakes) ........................................ 12
+5.1.3 More Focused Events/Major Damage/No Warning or Minimal Warning
+(Tornados, Derechos, Bridge collapses, Railroad derailment with Hazardous Materials) .... 12
+5.1.4 More Focused Events/ No Warning (Terrorist Attacks, Mass shooting event) ...... 12
+5.1.5 Very Focused Events/ Minor Damage/ No Warning (Automobile Accident,
+Building Fire) ......................................................................................................................... 13
+5.2 Value of Emergency Calling Prioritization................................................................... 13
+6 Public Safety Operational Impacts and Considerations ......................................................... 13
+6.1 PSAPs Today ................................................................................................................ 14
+6.2 PSAPs Tomorrow ......................................................................................................... 15
+6.2.1 Virtual Consolidation .............................................................................................. 15
+6.2.2 Virtual 9-1-1 Call-Takers ........................................................................................ 16
+6.2.3 Automated Pre-Plans .............................................................................................. 16
+6.2.4 Texting to 9-1-1 ...................................................................................................... 16
+6.3 Public Education & Notification Systems - .................................................................. 16
+7 Prioritization Services Currently Available ........................................................................... 17
+7.1 GETS, WPS and NGN-PS ............................................................................................ 17
+7.1.1 Government Emergency Telecommunication Service (GETS) .............................. 18
+7.1.1.1 How GETS Works .............................................................................................. 19
+7.1.2 Wireless Priority Service (WPS) ............................................................................ 19
+7.1.2.1 How WPS Works ................................................................................................ 20
+7.1.3 NS/EP NGN Priority Services ................................................................................ 21
+Page 2 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+7.1.4 Considerations of priority similar to that used for GETS, WPS and NGN-PS....... 21
+7.2 Commercial Mobile Alert Service (CMAS) ................................................................. 22
+8 Analysis, Findings and Recommendations ............................................................................ 23
+8.1 Analysis......................................................................................................................... 23
+8.1.1 How 9-1-1 traffic might be prioritized during emergencies or disasters ................ 23
+8.2 Methods for PSAPs to address operational issues related to overload ......................... 24
+8.3 Methods to reduce overall traffic during emergencies ................................................. 24
+8.4 How 9-1-1 prioritization may interact with other priority calling services .................. 25
+8.5 Conclusions and Recommendations ............................................................................. 26
+Page 3 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+1 Results in Brief
+1.1 Executive Summary
+Over the past decade the telecommunications industry has seen unprecedented growth, and as
+our ability to communicate as a society has evolved, so has the opportunity to enhance the
+public’s ability to contact emergency services personnel during times of crisis.
+According to CTIA- the Wireless Association, the number of wireless subscriber connections
+has increased from 48.7 million in June 1997 to 321.7 million as of June 2012. This equates to
+over 101% of total US and territorial population (Puerto Rico, Guam, and the US Virgin islands)
+based on the number of active wireless units divided by the total population.
+With this growth, the public’s expectation has grown such that the average consumer assumes it
+can reach public safety personnel wherever they are, and that they will be able to dispatch the
+appropriate emergency services on any reported event, and be able to locate them based on the
+technology available today. This capability is dependent upon public safety receiving the 9-1-1
+calls and the best possible location information available to them. Challenges arise during
+emergencies and disasters that may cause congestion to the networks involved in delivering calls
+to 9-1-1.
+Working Group 10 (WG10) was chartered with:
+1. Exploring ways to ensure that 9-1-1 is available when emergencies or disasters cause a
+surge in mobile network use including considerations of how 9-1-1 traffic might be
+prioritized in such situations noting operational issues for providers as well as ways for
+PSAPs to address operational issues.
+Within the scope of the charter WG10 defines unique aspects of emergency/disaster scenarios
+and the impact on both wireless and wire line traffic. In each of the subsections within Section 5
+Emergency/Disaster Scenario Classification, WG10 classify the disaster scenario as widespread
+or focused, the degree of damage, as well was whether or not there is any capability to provide
+advanced notice to the public. Each of these variables is important to consider when evaluating
+the benefits of 9-1-1 prioritization and whether prioritization will benefit the ability for the
+public to reach emergency service personnel during the specific scenario.
+As a background for the WG10 we gathered and reviewed current network architectures to gain
+an understanding of the actual call paths for wireline and wireless call flows, these diagrams and
+discussion highlights are contained within Section 4 on Background.
+Additionally within the scope WG10 provides documented research published by the Public
+Safety and Homeland security Bureau in September 2011 that separate PSAPs into categories
+based on such factors as the number of busy signals and abandoned call ratios are used as
+indicators to help insure that all calls to 9-1-1 are being answered “on average” within the
+standards set by the PSAP. Overall the majority, 80% of PSAPs fall within the ‘small’ PSAP
+category with one to five call taker positions. Some larger urban PSAP’s may have additional
+telephone positions that can be staffed during large-scale emergencies, but they account for the
+Page 4 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+remaining 20%, with only 1 % having 50 or more call taker positions. Again, in a major disaster
+situation, these facilities may be used to handle overflow calls from the 9-1-1 center. But these
+large urban area options are the exceptions rather than the rule for the majority of the PSAPs
+around the country. Even where additional call takers can be quickly added, there is still no
+guarantee that all calls to 9-1-1 can or will be answered. While the anticipated large scale event
+will provide the PSAP with the opportunity to maximize staffing, rarely will staffing alone be
+sufficient to meet demands for service.
+There has and continues to be discussions about the need and value of “Call Prioritization” to 9-
+1-1 facilities when networks are overloaded and congested. Most people would agree that
+emergency calls to 9-1-1 should have priority over non-emergency calls, but the question that
+remains; will the PSAP have the staff to answer the calls?
+It is important to recognize that in today’s technological environment the PSAP has a finite
+number of 9-1-1 call taker positions, and depending on the scale and magnitude of the event
+some calls may simply not be answered.
+2. Consider ways to reduce traffic load during emergencies, such as encouragement of use
+of 9-1-1 texts as a lower throughput alternative to 9-1-1 voice.
+WG10 researched and reviewed multiple scenarios which could provide an offload or reduced
+traffic to the 9-1-1 systems during emergency or disaster events, although not all scenarios may
+have implemented solutions nationally. WG10 reviews with Section 6; Public Safety
+Operational Impacts and Considerations, the PSAP environments today, and includes highlights
+from discussion surrounding the use of PSAP virtual consolidations, virtual call takers,
+automated pre-plans, texting to 9-1-1, use of social media.
+3. In consideration of arrangements that may give 9-1-1 calls higher priority than most
+consumer wireless calls, the WG may consider how to coordinate 9-1-1 priority with
+other priority calling arrangements, including Wireless Priority Service (WPS), and
+other arrangements that may provide priority for calls for emergency and first
+responders.
+WG10 provides overviews of existing priority services such as GETS, WPS, NGN-PS, and
+CMAS with Section 7: Prioritization Services Currently Available.
+4. Address implementations in 4G and earlier generation wireless networks; and will
+consider both E9-1-1 and NG9-1-1 implementations.
+Considerations for 4G Networks (LTE) and Next Generation 9-1-1 (NG9-1-1) implementations
+may accommodate increased ability to prioritize 9-1-1 calls into the networks; these
+technologies are still in their early stages of development and implementations and have been
+reviewed within several sections for future considerations.
+WG10 final analysis, conclusions and recommendations are found within Section 8.
+Page 5 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+2 Introduction
+This final report documents the efforts undertaken by the Communications, Security, Reliability,
+and Interoperability Council (CSRIC) III Working Group 10 with respect to prioritization.
+During times of crisis, it is critically important that the public should be able to contact
+emergency services personnel with a high degree of certainty. In many recent weather related
+emergencies as well as natural disasters such as earthquakes there was a significant surge in
+mobile and land line network use. In these extreme events, the surge of network usage can make
+it difficult to reach emergency personnel.
+Working Group 10 (WG10) was chartered with:
+1. Exploring ways to ensure that 9-1-1 is available when emergencies or disasters cause a
+surge in mobile network use including considerations of how 9-1-1 traffic might be
+prioritized in such situations noting operational issues for providers as well as ways for
+PSAPs to address operational issues.
+2. Consider ways to reduce traffic load during emergencies, such as encouragement of use
+of 911 text as a lower throughput alternative to 911 voice.
+3. In consideration of arrangements that may give 911 calls higher priority than most
+consumer wireless calls, the WG may consider how to coordinate 911 priority with other
+priority calling arrangements, including Wireless Priority Service (WPS), and other
+arrangements that may provide priority for calls for emergency and first responders.
+4. Address implementations in 4G and earlier generation wireless networks; and will
+consider both E911 and NG911 implementations.
+2.1 CSRIC Structure
+Communications Security, Reliability, and Interoperability Council (CSRIC) III
+CSRIC Steering Committee
+Co-Chairs Co-Chairs Co-Chairs Co-Chairs Chair Co-Chairs Chair Chair Co-Chairs Co-Chairs
+Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group Working Group
+1 2 3 4 5 6 7 8 9 10
+Working Group 5:
+Working Group 1: Working Group 2: Working Group 3: Working Group 4: Working Group 6: Working Group 7: Working Group 9:
+DNSSEC Working Group 8:
+Next Generation Next Generation E911 Location Network Security Secure BGP Botnet Legacy Broadcast Working Group 10:
+Implementation E911 Best
+911 Alerting Accuracy Best Practices Deployment Remediation Alerting Issues 911 Prioritization
+Practices for ISPs Practices
+2.2 Working Group 13 Team Members
+Working Group 10 Co-Chairs
+Jeanna M Green – Sprint
+Thera Bradshaw – TKC Consulting
+Page 6 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Working Group consists of the members listed below:
+Name Company
+Jeanna Green Sprint
+Thera Bradshaw TKC Consulting
+Charles Cullen Palo Alto Police Department
+Chris Fisher North East King County Regional Public Safety
+Communication Agency
+William Hinkle Intrado
+Carl Klein CenturyLink
+Joseph Marx AT&T
+Ron Mathis Intrado
+Peter Musgrove ATIS (employed @ AT&T)
+Lawrence Rybar Verizon
+Ray Singh Applied Communication Sciences
+Jim Winegarden CenturyLink
+Kathryn Martin Access Partnership
+Table 1 - List of Working Group Members
+3 Objective, Scope, and Methodology
+3.1 Objective
+This document address the deliverables outlined in the CSRIC III charter for Working Group 10;
+9-1-1 Prioritization.
+The working group shall explore ways to ensure that 9-1-1 is available when emergencies or
+disasters cause a surge in mobile network use. The work will include considerations of how 9-1-
+1 traffic might be prioritized in such situations. It also includes related operational issues,
+including ways for PSAPs to address operational issues.
+The WG may consider ways to reduce traffic load during emergencies, such as encouragement
+of use of 911 texts as a lower throughput alternative to 911 voice calls. If the WG pursues
+arrangements that give 911 calls higher priority than most consumer wireless calls, the WG may
+consider how to coordinate 911 priorities with other priority calling arrangements, including
+Wireless Priority Service (WPS), and other arrangements that may provide priority for calls for
+emergency and first responders. The WG will address implementations in 4G and earlier
+generation wireless networks; and will consider both E911 and NG911 implementations.
+3.2 Scope
+Page 7 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+This document address the deliverable outlined in CSRIC III WG 10:
+1) The Working Group will define/categorize different types of emergency & disaster calls,
+2) Public Safety Operational Impacts and Considerations,
+3) Report what is being utilized with the network architectures for prioritization today,
+4) Reliability & Resiliency within today’s networks and the varying congestion points
+within the call flow.
+5) Technological advancements and impacts of Long Term Evolution (LTE) and Next
+Generation 9-1-1 (NG911)
+6) Consumer education
+3.3 Operational Procedures
+Working Group 10 attempted to meet every other week via conference call(s) to review research
+and discuss 9-1-1 prioritization. The working group relied on its members volunteering to
+provide contributions and participating weekly to determine and define the scope,
+recommendations, and draft the final report. This effort was challenging given the size of the
+working group, and responsibilities that each member faced in his/her public, private and
+professional endeavors.
+4 Background
+4.1 Current Network Architectures
+This section looks at the various points in the wireless network that would have to be modified
+to support prioritization for ‘9-1-1’ traffic during congestion events (hurricanes, earthquakes,
+tornados, etc.).
+4.1.1 Simplified View of 911 Network
+Figure 1 below provides a simplified view of the interconnection between wireless and wireline
+networks and the PSAP that show the natural chokepoint that exists in the current ‘911’
+networks. For any individual PSAP, there are normally a number of wireless providers, wire line
+providers, and VoIP providers that will have traffic destined for the PSAP. Since PSAPs staffing
+is normally engineered based on average call volume, they limit the incoming trunks at the
+PSAP to match the staffing levels. In the simple example, there are 2 incoming trunks to the
+PSAP and each of the wireless and wire line carriers have 2 incoming trunks to the selective
+router. It is easy to see that during most extreme congestion events, the trunks to the PSAP will
+fill up very quickly and therefore all new calls delivered over idle trunks from any of the mobile
+or landline switches would result in some form treatment (e.g., fast busy) to the caller, or
+alternate routing to another PSAP. The inability of the originating traffic to reach the PSAP will
+not improve by prioritizing traffic if there is not enough capacity in the PSAP.
+Page 8 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Figure 1: Simplified Network View
+4.1.2 High Level Wireless 911 Architecture
+Figure 2 depicts a high level architecture view of the wireless 911 architecture including the
+various interfaces to deliver a 911 call to the PSAP. In the following sections, changes required
+support prioritization of 911 calls for each of these interfaces will be discussed.
+Figure 2: High Level Wireless 911 Architecture
+4.1.2.1 Radio Access Link (Handset to Cell Tower)
+4.1.2.1.1 2G and 3G Networks
+The Radio Access link between the handset and the cell tower is the most challenging interface
+in the network to change in order to support prioritization of ‘911’ calls. The most widely used
+Page 9 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+protocols on the radio network do not directly support prioritizations for ‘911’ calls and
+changing this interface would likely impact existing handsets, which would not be feasible.
+Therefore on the most widely used networks, an alternative mechanism would be required to
+signal a priority for ‘911’ calls during congestion.
+One alternative mechanism that has been suggested is the reservation mechanism currently used
+for Wireless Priority Services (WPS), which is currently used by government agencies to obtain
+priority on wireless networks. WPS is currently a limited service available to a limited subset of
+subscribers with appropriate authorization. If ‘911’ calls were given priority, then consideration
+would need to be given as to the relative priority of ‘911’ calls versus WPS calls. Since you are
+also dealing with a virtually unlimited number of people with the ability to dial ‘911’, there
+would be contention between access to the reservation queue. There was a significant training
+effort associated with WPS since you don’t immediately get access to a voice channel so the
+same would be required for ‘911’ calls. The result would likely be confusion for the caller
+during a very stressful event, resulting in many callers attempting to redial ‘911’ further
+compounding the usage on the network with the result being that neither WPS users nor ‘911’
+callers have access to the network.
+Another alternative discussed with prioritization is a reservation system with an associated
+capacity reserve for ‘911’ calls. This makes very little sense in highly loaded networks since
+reserved capacity goes unused and is needed to satisfy current demand.
+Finally, the need to reserve voice channel capacity in the cell site does little to solve the problem
+of reaching a ‘911’ operator during a critical emergency if the PSAP is overloaded.
+4.1.2.1.2 4G Networks (LTE)
+The radio link protocol used for LTE currently provides a mechanism to communicate priority
+for packet access (as LTE is a packet based network). For example in LTE, Access Class
+Barring provides a priority to 911. Also, 911 may be assigned a higher ARP to improve call
+admission. Since the LTE networks are still in an early stage of development, these changes
+could probably be accommodated but as mentioned in the previous section, it would provide
+little to no value to prioritize ‘911’ calls on the radio link if end to end priority isn’t addressed
+(including the staffing at the PSAPs to answer prioritized 911 calls).
+However, it is conceivable that prioritization of 9-1-1 on LTE networks could be achieved to
+communicate the priority initiation. This model is similar to the upgrade to Phase II Wireless
+E9-1-1 that occurred in the early 00s.
+4.1.2.2 Radio Access to Switch (Cell Tower to Wireless Switching Network)
+With the advent of high speed wireless broadband communication, most of the backhaul
+between the cell towers to switches has been upgraded to support this data. Therefore, it is
+unlikely that this would be a bottleneck in the network to delivering priority for ‘911’ calls. In
+sites where existing backhaul is insufficient, then additional capacity would be required to
+support prioritized 911 calls.
+4.1.2.3 Mobile Switch to Selective Router
+In order for Wireless 911 Prioritization to have any value, the natural chokepoints in the network
+Page 10 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+between the originating carriers and selective router would need to be removed. As was
+highlighted in the PSAP Prioritization section – PSAP Staffing is based on average call volume
+and overwhelming majority of PSAPs have 2 to 4 call takers. Therefore, if you remove the
+chokepoint between the originating network and the selective router, then the congestion will
+occur in the trunks going toward the PSAP still resulting in the treatment (fast busy or alternate
+routing).
+NG911 broadband solutions will ultimately eliminate the legacy selective routers and analog
+trunk lines into the PSAP and increase 911 capacity as well as the types of data that can be
+transmitted to the PSAP. These changes will have an operational impact on the PSAPs.
+4.1.2.4 Mobile Switching Network
+In addition to prioritization in the radio network, it is likely development would be needed to
+carry priority through the mobile switch between the origination and selection of the outgoing
+trunk. This would likely be proprietary development from each of the switch vendors to support
+this priority treatment.
+It is unlikely that anything could be developed for legacy switches since the focus of
+manufacturers is clearly on next generation LTE Networks.
+4.1.2.5 Selective Router to PSAP
+Again as depicted in Figure 1, the legacy selective routers have been designed to provide a
+natural chokepoint to protect the PSAPs from overload. If you wanted to add priority into the
+network for Wireless 911 calls, then additional capacity (additional trunks) would be required
+from the wireless switches from all carriers to the selective router. Many of the legacy selective
+routers are shared local exchange offices and adding a significant number of addition trunks may
+push them over the edge from a capacity perspective. One solution would be to purchase bigger
+switches but that would be enormously expensive.
+In addition to the trunk capacity, it is likely that proprietary development would be required to
+prioritize the incoming ‘911’ calls over other traffic through the selective router. This is similar
+to what would need to be done at wireless switches, but given the age of many selective routers
+this may be a very expensive development.
+Finally, if capacity at the PSAP for both staffing and trunking is not expanded to match the
+capacity from all 911 calls during extreme congestion, all the effort would be a waste since you
+would have prioritized ‘911’ calls to be given busy treatment.
+5 Emergency/Disaster Scenario Classification
+In this section, we attempted to classify some of the unique aspects of emergency/disaster
+scenarios and the impact on both wireless and wire line traffic. In each of the subsections below,
+we classify the disaster scenario as widespread or focused, the degree of damage, as well was
+whether or not there is any capability to provide advanced notice to the public. Each of these
+variables is important to consider when evaluating the benefits of 9-1-1 prioritization and
+Page 11 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+whether prioritization will benefit the ability for the public to reach emergency service personnel
+during the specific scenario.
+5.1.1 Widespread/Major Damage/Advanced Warning (Hurricanes)
+These types of emergency scenarios cover large geographic areas and may result in a significant
+increase in the amount of emergency traffic to PSAPs. The emergency call traffic will most
+likely be spread over the entire area as damage is widespread. During the event normal call
+volumes would be expected on wire line unless there is some damage to the infrastructure of
+power grid. There is a recent, somewhat surprising trend with power outages that results in
+increased volumes in wireless calls to report power outages and check the status of repairs on
+smart phones.
+These types of incidents may also allow for advanced planning and emergency personnel have
+an opportunity to direct the public how to react during the incident including non-emergency
+reporting and requiring evacuation for areas expected to be hardest hit.
+5.1.2 Widespread/Major Damage/No Warning (Earthquakes)
+These types of emergency scenarios cover large geographic areas and may result in a significant
+increase in the amount of emergency traffic to PSAPs. The emergency call traffic will most
+likely be spread over the entire area as damage is widespread. In addition, call volumes spike on
+both wireless and wire line networks with significant overload. The overload conditions may last
+for a long time as people attempt to get status on friends and relatives. These types of incidents
+occur without any advanced notice and in the time immediately following the event results in
+mass confusion. This is especially true in areas not experienced with earthquakes (East Coast
+Earthquake of 2011). There may be wide spread calling from the public to confirm what
+happened and what people are expected to do.
+5.1.3 More Focused Events/Major Damage/No Warning or Minimal Warning
+(Tornados, Derechos, Bridge collapses, Railroad derailment with
+Hazardous Materials)
+These types of emergency scenarios usually affect smaller geographic areas although in the case
+of weather events may be fast moving and still cover very large areas over time. The emergency
+call traffic tends to be more focused as reports come in immediately following the incident but
+may continue for some time as more damage is discovered or more people need assistance. As
+with the other weather related incidents, if power is lost then traffic tends to rise precipitously on
+wireless networks to report outages and check the status of repairs. In the case of a hazardous
+material spill, the local law enforcement may request an evacuation of a specific area which
+could lead to additional confusion and more calls to emergency personnel.
+5.1.4 More Focused Events/ No Warning (Terrorist Attacks, Mass shooting
+event)
+This covers a broad category of types of attacks from domestic terrorists (University of VA or
+Page 12 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Fort Bragg shootings) to the September 11 Terrorist Attacks. They may or may not involve
+damage but they share a common characteristic of widespread confusion. There is a significant
+increase in amount of emergency traffic and depending on the size of the event could easily
+cause overloads for normal traffic on both wire line and wireless networks. This increased traffic
+could be the result of checking on the status of friends and family in the affected area.
+5.1.5 Very Focused Events/ Minor Damage/ No Warning (Automobile Accident,
+Building Fire)
+This category is probably the most common and involves a major auto accident or fire with
+injuries in a highly traveled area. The resulting influx of calls can be very high until emergency
+personnel arrive at the scene and have a very visible presence. Although the initial event may be
+fairly short, the amount of emergency traffic can be very large and can overwhelm the PSAP. As
+people begin reporting the same incident, the PSAP can quickly shed traffic through manual or
+automated methods depending on the sophistication of the PSAP equipment.
+5.2 Value of Emergency Calling Prioritization
+In each of these scenarios, emergency call prioritization does very little to improve the likely-
+hood of originating ‘911’ calls reaching the PSAP as the bottleneck in most cases tends to be at
+the PSAP. The perfect scenario for emergency call prioritization to have value is the case where
+normal traffic spikes but emergency traffic remains flat or drops. This would not be the case for
+emergency or disaster scenarios where calls to PSAP increase dramatically.
+6 Public Safety Operational Impacts and Considerations
+This provides a general overview of how 9-1-1 calls are currently managed and prioritized
+when they are delivered to the PSAP during events that create high levels of demand and
+congestion. This paper also offers thoughts and observations about how the next generation of
+9-1-1 technology might provide new opportunities to improve the availability and reliability of
+access to emergency services during a peak demands for service.
+There are 2 categories that might meet this criterion, (a) unanticipated events, such as acts of
+terrorism, and (b) anticipated events where the PSAP has been pre-warned and has time to
+prepare for a large-scale event such as a tornado warning.
+It is important to note that as a general rule, PSAP staffing is based on an average call volume
+formula that determines the number of 9-1-1 telephone positions necessary to meet average or
+normal demands for service in a responsible manner.
+The following are categories defined in a white paper; “A Next Generation 911 Cost Study: A
+Basis for Public Funding Essential to Bringing a Nationwide Next Generation 911 Network to
+America’s Communications Users and First Responders” published by the Public Safety and
+Homeland security Bureau in September 2011.
+Large PSAPs
+• Large PSAPs have 50 or more call taker positions; approximately 1% of all PSAPs fall
+into this category.
+Page 13 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Medium PSAPs
+• Medium PSAPs are characterized as having between 6 and 49 call taker positions;
+approximately 19% of all PSAPs fall into this category.
+Small PSAPs
+• Small PSAPs have between one and five positions; approximately 80% of PSAPs are in
+this category.
+Factors such as the number of busy signals and abandoned call ratios are used as indicators to
+help insure that all calls to 9-1-1 are being answered “on average” within the standards set by the
+PSAP. Some larger urban PSAP’s may have additional telephone positions that can be staffed
+during large-scale emergencies. Some may even have fully functional back-up facilities that can
+be activated and staffed. Some large urban PSAP’s may also utilize 3-1-1 non-emergency call
+centers to reduce loading on the 9-1-1 system. Again, in a major disaster situation, these
+facilities may be used to handle overflow calls from the 9-1-1 center. But these large urban area
+options are the exceptions rather than the rule for the majority of the PSAPs around the country.
+Even where additional call takers can be quickly added, there is still no guarantee that all calls to
+9-1-1 can or will be answered. While the anticipated large scale event will provide the PSAP
+with the opportunity to maximize staffing, rarely will staffing alone be sufficient to meet
+demands for service.
+There has and continues to be discussion about the need and value of “Call Prioritization” to 9-
+1-1 facilities when networks are overloaded and congested. Most people would agree that
+emergency calls to 9-1-1 should have priority over non-emergency calls, but the question that
+remains; will the PSAP have the staff to answer the calls? Generally speaking it would seem
+that large urban PSAPs that have the ability and resources to quickly activate and staff additional
+9-1-1 positions, would benefit the most from 9-1-1 call prioritization. The systems that lack this
+ability may simply experience additional calls that could go unanswered until they can
+implement back-up plans to deal with the larger than normal call volumes. It is important to
+recognize that in today’s technological environment the PSAP has a finite number of 9-1-1 call
+taker positions, and depending on the scale and magnitude of the event some calls may simply
+not be answered. It would seem that given any PSAPs limitations at the onset of a large scale
+disaster, where there is a high potential for a multi-casualty event, it may be necessary for the
+PSAP to prioritize emergencies into life-threatening and non life-threatening categories.
+6.1 PSAPs Today
+In most states, all PSAPs must have a back-up plan to re-route 9-1-1 calls to another PSAP in
+the event of a system failure. Back-up plans of this nature are required to ensure that emergency
+9-1-1 calls are routed to another PSAP in the event of a technology or equipment malfunction.
+Normally these transfers occur automatically when the system detects a disruption or an inability
+to complete a call to the PSAP. The automatic transfer of 9-1-1 calls to another PSAP, under
+these plans, may also occur when the primary PSAP’s system is overloaded.
+Typically, when a PSAP is operating in an emergency overload mode, 9-1-1 call-takers often
+begin to abbreviate the call answering process by simply stating “9-1-1 what is your
+Page 14 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+emergency?” Call-takers will attempt to accelerate the call answering process by rapidly triaging
+calls in order to get to new or real emergencies. Triaging means that calls are quickly answered,
+and duplicate and non-emergency calls are terminated. Other potential actions to help reduce
+call loading on the 9-1-1 system could include issuing a media release requesting that the public
+only call 9-1-1 if they have a life-threatening emergency. They may also direct or transfers calls
+to a 3-1-1 system or establish and publicize non-emergency telephone numbers. For a localized
+disaster, a mobile communications command vehicle may be sent to the scene to help coordinate
+rescue and recovery operations. But, unless the PSAP has been damaged or evacuated, this is
+normally done to reduce and coordinate radio traffic and not calls to 9-1-1.
+6.2 PSAPs Tomorrow
+In the PSAPs of tomorrow, IP based Next Generation 9-1-1 (NG9-1-1) systems will have
+considerably more technical and operational flexibility. PSAPs will have the ability to create
+more comprehensive pre-plans, where call flow and volume can be more effectively managed.
+Potential duplicate calls originating from the same localized area (event) could be automatically
+intercepted and transferred to a recorded message or funneled to designated telephone positions,
+thus freeing up telephone lines for other emergencies in non-affected areas.
+Perhaps the most forward thinking and innovative opportunities for the PSAPs of the tomorrow
+will be the ability to create “virtual” PSAP’s. Whether we are talking about virtual
+consolidation, virtual call handling, or virtual pre-plans for everyday management of 9-1-1 call
+disruption or call overflow, the Next Generation of 9-1-1 technology will support new creative
+opportunities to improve access to emergency communication services.
+6.2.1 Virtual Consolidation
+To realize the full cost savings of traditional PSAP consolidation initiatives, all
+personnel and equipment are physically consolidated in one central communication
+facility. Larger PSAPs may maintain an unstaffed back-up facility, while smaller
+centers will transfer calls to another predetermined backup PSAP. Oftentimes the idea
+of consolidation, eliminating some PSAPs has been politically objectionable, often
+resulting in little or no progress. In the future Virtual Consolidation could provide a
+less radical alternative to physical consolidation. While the need to modernize
+equipment and technology are often times the catalyst for plans to consolidate 9-1-1
+systems, the immediate and long-term savings usually result from reductions in
+human resources through improved efficiency. Typically, government officials are
+more likely to fund the capital cost of equipment, over the forever increasing cost of
+additional personnel. However, in a NG 9-1-1 world, where there is a strong interest
+in preserving local government control over the 9-1-1 call handling process, there will
+be new alternatives. For example, if a county is fully staffing 5 PSAPs and they want
+to improve 9-1-1 call handling service during high demand without increasing
+staffing, they can create a virtual consolidated system by using technology to
+automatically and transparently route emergency 9-1-1 calls to the next available call-
+taker in one of the other PSAP’s.
+There are two important technology layers that must be compatible for this system to
+work properly, the network and application layers. Participating PSAPs would need
+Page 15 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+to be on a shared high-speed network. In addition all of the virtual PSAPs would need
+to use a common Computer Aided Dispatch (CAD) System or exchange data via a
+CAD2CAD interoperability broker. Under this system, the call-taker in PSAP (B)
+receiving the overflow call from PSAP (A) would simply enter the detail/event
+information into the CAD system and the information would appear on the
+appropriate dispatch position back in PSAP (A).
+6.2.2 Virtual 9-1-1 Call-Takers
+To begin to realize a scenario where the concept of using technology to create Virtual
+9-1-1 call-takers, one need only imagine the effects of a deadly pandemic on a
+metropolitan area. In these scenarios first responders and other emergency personnel
+are not immune from exposure. And where “shelter-in-place” orders are issued, how
+many emergency service providers will realistically risk exposing themselves or their
+families to a deadly contaminate by going to the workplace? Consider the possibility
+of using technology to route 9-1-1 calls to a cache of dedicated pre-programmed
+laptop computers that would permit 9-1-1 calls takers to receive and transfer calls to
+other dedicated computers that could dispatch units over portable radios from their
+home or other safe locations.
+6.2.3 Automated Pre-Plans
+A system where calls to 9-1-1 are automatically pre-staged to be routed to another or
+multiple call centers until additional telephone positions can be activated by the
+impacted jurisdiction. These plans may also include mobile communications vehicles
+equipped with call-taker positions, Telecommunication Emergency Reponse Team
+(“TERT”), Cell On Wheels (“COW”), and other supplemental resources and
+technologies that can help insure that emergency calls to 9-1-1 can be answered and
+processed.
+6.2.4 Texting to 9-1-1
+Persons with speech and hearing limitations will continue to rely on texting as their
+primary means to access emergency services. As new text to 9-1-1 solutions evolve to
+improve delivery and accuracy, the general public’s reliance on text will increase
+correspondingly. Text reports to 9-1-1 can be handled by dedicated personnel whose
+responsibilities are limited to entering and prioritizing the reports into a computer-
+aided dispatch (CAD) system.
+6.3 Public Education & Notification Systems -
+The national warning system should always include a statement that people should not call 9-1-1
+with non-threatening emergencies. It is recognized that all of these opportunities will present a
+number of operational, technological, and financial challenges, but so did the idea of calling 9-1-
+1 from a wireless telephone device a relatively short time ago.
+The non-emergency number 3-1-1 is a special N-1-1 telephone number available for the public
+in many communities throughout the United States. 3-1-1 provides quick easy to remember
+Page 16 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+access to non-emergency governmental services. 3-1-1 can be reached through the web site of
+the government entity for self service or by calling 3-1-1 to reach an ambassador in the Citizen
+Service Center. 3-1-1 allows the public to obtain important non-emergency services quickly and
+effectively.
+3-1-1 is intended in part to divert routine inquiries and non-urgent community concerns from the
+emergency 9-1-1 number. During times of natural or manmade disasters 3-1-1 access through
+the web keeps the community informed where there is posting of up to date information keeping
+the community informed and the lines clear for emergency calls. Additionally, calling 3-1-1 is a
+valuable resource for reporting non-emergency situations that are not life or property threatening
+but is information the governmental entity will take action on once the emergency situation
+stabilizes.
+Many cities take 3-1-1 comment through internet or smartphone interfaces. On March 3, 2010,
+US Federal Chief Information Officer announced the creation of a uniform “Open 3-1-1” API
+for these services. Online 3-1-1 services such as, “SeeClickFix.com” are available across the
+United States and can be used to report non-emergency issues (reporting potholes, graffiti and
+other community issues) in specific locations.
+3-1-1 service is generally implemented at a local level. Today 3-1-1 is available in many
+jurisdictions. Harvard University’s web site: www.hks.harvard.edu displays where 3-1-1 is
+available today by following the link and searching ‘311”.
+While the concept and value of 3-1-1 services are being implemented in many large urban areas
+of the country, the majority of PSAPs are still rural and must rely on other methods to help
+educate the public and “offload” non-emergency calls to numbers other than 9-1-1. It is quite
+common for agencies to have a ten digit number for this purpose that is publicized to use for
+calls that are not an emergency or do not need an emergency response. Having one or two
+“administrative” or non-emergency numbers available to the public with voicemail so they can
+be directed to leave a message is quite common and effective. This approach keeps the
+telecommunicators focused on incoming 9-1-1 calls and helps eliminate trunk overload.
+7 Prioritization Services Currently Available
+7.1 GETS, WPS and NGN-PS
+This section provides background information on Government authorized priority services
+Government Emergency Telecommunications Service (GETS) and Wireless Priority Service
+(WPS), including the migration of these services to the Next Generation network (NGN)
+environment. National Security / Emergency Preparedness (NS/EP) Next Generation Network
+Priority Service (NGN-PS) are intended to preserve and extend GETS and WPS, as Service
+Providers transition their networks to IP-based packet-switched networks.
+Page 17 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Emergency Telecommunications Service (ETS) is a national service, providing priority telecommunications
+to the ETS-authorized user in times of disaster and emergency (ITU-T Study Group 2) [E.107].
+(Legacy) GETS is a circuit- Wireless Priority Service NGN Priority Services are the
+switched form of GETS for voice (WPS) is a circuit-switched form evolution of Legacy GETS and
+(and voiceband data) using of GETS for voice (and WPS, through technology
+Personal Identification Number voiceband data) using insertion, to achieve service
+(PIN) authentication, in which a subscription-based continuity in a packet-switched
+user can invoke the service by authentication, in which a user NGN and leverages the NGN to
+dialing a specific GETS Access can invoke the service by dialing offer new features and priority
+Number or special GETS Number a feature code from a WPS- voice, video, and data services.
+for Translation from most phones subscribed mobile phone served
+served by the Public Switched by a public wireless network.
+Network (PSN). Legacy GETS WPS provides priority treatment
+provides priority treatment across across originating and
+originating, transit, and terminating public wireless
+terminating networks. networks, including priority radio
+resource assignment upon call
+origination and termination.
+Figure 3 - Relationship of Concepts and Terms for Priority Services
+NS/EP NGN Priority Services (NS/EP NGN-PS) is the evolution of GETS and WPS to achieve
+service continuity in the packet-switched NGN and leverages the NGN to offer new features and
+priority multimedia services. NS/EP NGN-PS comprise voice, video, and data services that are
+based on services available from public packet-switched Service Providers and that provide
+priority treatment in support of National Security and Emergency Preparedness (NS/EP)
+communications.
+NS/EP NGN-PS, Legacy GETS, and WPS are all facets of the U.S.A. instantiation of the
+international standard for Emergency Telecommunications Service (ETS) [ITU-T E.107]. The
+relationship of the terms is portrayed in Figure 3.
+7.1.1 Government Emergency Telecommunication Service (GETS)
+The Government Emergency Telecommunications Service (GETS) is an emergency service
+designed for use when national security and emergency preparedness (NS/EP) personnel are
+unable to complete emergency calls through their regular telecommunications means. GETS
+uses a calling card to provide Federal, State, local government, and industry NS/EP users with a
+higher probability of call completion during periods of natural or man-made disasters or
+emergencies that cause congestion or network outages. GETS was implemented in response to
+Executive Order 12472 issued in 1984. Tariffs for GETS have been accepted by the Federal
+Communications Commission (FCC) since 1995.
+Page 18 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+7.1.1.1 How GETS Works
+High Probability of Completion (HPC) Features
+•NS/EP* Call Marking •Trunk Queuing
+•Signaling Priority •Exemption from Network
+•Alternate Carrier Routing Management Controls
+Calling Called
+Party Party
+PIN
+Local Validation
+Switch Local
+Switch
+Input
+Destination
+.. .. Mobile Number
+Switch Mobile .. ..
+Switch
+Calls to the GETS Access Numbers Calls complete via local
+Calls route to one of the
+are identified by local landline or landline or mobile switch
+3 GETS Carriers for:
+mobile switch for HPC Treatment • Origination to destination
+• 710-627-4387 • PIN Validation HPC treatment
+• Toll Free to each carrier (3) • Destination Number • Terminating Radio Channel
+• Priority Telecom Service Center • Routing to Queuing in WPS FOC
+• User Assistance line (7 x 24) destination switch cellular networks
+Figure 4 – General Concept of How GETS Works
+Authorized GETS calls/sessions are provided with priority treatment over public calls in the
+network. The priority treatment is provided by High Probability of Completion (HPC) features
+that include:
+• NS/EP Call Marking (i.e., identifying NS/EP call for priority network treatment
+with applicable protocol identifiers such as SIP Resource Priority Header)
+• Signaling Priority (Providing priority to the signaling and control of NS/EP
+calls/sessions)
+• Alternate Carrier Routing (multiple ways to get to long distance service
+providers) and Enhanced routing alternatives in public networks
+• Exemption from Network Management Controls
+• Queuing for available circuits during access and egress, including queuing for
+circuits to Private Branch Exchanges (PBX) during egress.
+7.1.2 Wireless Priority Service (WPS)
+Wireless Priority Service (WPS) is a priority calling capability that greatly increases the
+probability of call completion during a national security and emergency preparedness (NS/EP)
+event while using their cellular phone. To make a WPS call, the user must first have the WPS
+feature added to their cellular service. Once established, the caller can dial *272 plus the
+destination telephone number to place an emergency wireless call
+.
+Page 19 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+WPS is based upon, and complies with, the FCC Second Report and Order (R&O) 00-242
+(Wireless Telecommunications (WT) Docket No. 96-86) [FCC R&O]. WPS is intended to allow
+qualified and authorized NS/EP users to obtain priority access to radio traffic channels and Core
+Network resources during situations when Commercial Mobile Radio Service (CMRS) network
+congestion is blocking call attempts. The FCC R&O requires that Service Providers adhere to
+uniform, nationwide operating access procedures.
+7.1.2.1 How WPS Works
+Figure 4 – General Concept of How WPS Works
+WPS is an enhancement to basic wireless service that allows your National Security/Emergency
+Preparedness (NS/EP) calls to queue for priority service in order to complete the call. Together
+with GETS, WPS dramatically improves “end-to-end” call completion during emergencies.
+WPS is an add-on feature subscribed on a per-cell phone basis that works with existing cell
+phones in WPS enabled cellular networks; no special phones are required. WPS provides
+priority for emergency calls through a combination of special cellular network features and the
+same “High Probability of Completion” features used by GETS:
+• Originating Radio Channel Priority: WPS addresses congestion in the local radio access
+channel (or cell), which is often the reason that cellular calls cannot be made during
+heavy calling periods or when damage to network infrastructure occurs. WPS
+automatically provides priority access to local radio channels, placing WPS calls in
+queue for the next available channel if a channel is not immediately available.
+Originating Radio Channel Priority requires WPS feature activation on the calling
+Page 20 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+cellular phone. WPS calls do not preempt calls in progress nor will WPS users
+monopolize all available cellular resources.
+• High Probability of Completion Features: When a radio access channel becomes
+available and the call proceeds, WPS calls are assigned a unique “NS/EP” call marking
+by the cellular network switching equipment. This marking triggers industry standard
+High Probability of Completion (HPC) features residing in most U.S.
+telecommunications networks as calls are routed from the originating cell to the called
+cellular or landline phone. These HPC features significantly increase the probability of
+call completion should the call encounter network congestion or blockage beyond the
+originating cell. Thus, WPS calls receive similar “across the network” priority as GETS
+calls without having to dial the GETS access number and PIN.
+• Terminating Radio Channel Priority: Incoming WPS (and GETS) calls to cell phones
+served by WPS enabled cellular networks automatically receive priority access to local
+radio channels, placing incoming GETS and WPS calls in queue for the next available
+channel if a channel is not immediately available. Terminating Radio Channel Priority
+does NOT require the called cellular phone to be subscribed to WPS. Incoming GETS
+and WPS calls do not preempt cellular calls in progress nor will they monopolize all
+available cellular resources.
+7.1.3 NS/EP NGN Priority Services
+NS/EP NGN-PS is the evolution of GETS and WPS to achieve service continuity in the packet-
+switched NGN and leverages the NGN to offer new features and priority multimedia services.
+NS/EP NGN-PS provides priority treatment to increase the probability of a Service User’s
+NS/EP NGN-PS Voice, Video and Data services being successful over a Service Provider’s
+public network infrastructure. Some form of priority treatment is applied to the NS/EP NGN-PS
+service invocation and session establishment, and continues to be applied until the NS/EP NGN-
+PS service is released by the Service User. The priority treatment may be applied before the
+invocation if needed to give a greater probability of success in receiving, recognizing, and
+processing the invocation.
+7.1.4 Considerations of priority similar to that used for GETS, WPS and NGN-
+PS
+Use of a priority mechanism similar to that used for GETS and WPS is not recommended for the
+following reasons:
+1. Relative priority of ‘911’ calls versus GETS and WPS calls will have to be addressed.
+Specifically, contention between “911” and GETS and WPS calls will have to be
+addressed and it will means having to address a number of highly complex technical,
+operational, regulatory and legal issues.
+2. Consideration of a prioritization mechanism like WPS will involve added complexity of
+addressing the authenticity of “911” calls because uncontrolled or open access by such a
+large volume of potential “911” callers could create new security problems. For
+Page 21 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+example, necessary control will be needed to prevent such priority mechanism for ‘911’
+calls from being used to initiate denial of service and flooding attacks on the public
+network infrastructure.
+3. Consideration of a priority mechanism like WPS will require significant training and
+education of the ‘911’ callers which will be a daunting task given the large 911 user base
+(See Section 4.1.2.1.14.1.2.1.1. for detail).
+4. A prioritization mechanism will not address the fundamental problem associated with
+PSAP congestion (See Section 4.1.2.1.14.1.2.1.1. for detail).
+7.2 Commercial Mobile Alert Service (CMAS)
+Wireless Emergency Alerts (WEA), also known as Commercial Mobile Alert Service
+(CMAS), is a part of a national alerting system called IPAWS (Integrated Public Alert and
+Warning System) that enables emergency management officials to rapidly disseminate the
+warnings and safety information via text alerts to wireless phones based on the phones’
+geographic location.
+The Federal Emergency Management Agency or FEMA is responsible for receiving the
+alerting information and forwarding the alerts to participating wireless carriers. Such
+alerts may come from the President of the United States; the National Weather Service,
+state or county public sTahfeet yIP oAffWicSia lvsi.s iTohn iiss styos etnemsu ries tihnatte galrla Atemde irnictoa ntsh ea rsea amblee n toa trieocneaivl e
+aaclecrutriantge saelerrvtsic aensd t hwaatr sneinrgvse, treelgeavridslieosns aonf dw rhaadt icoo mtomdauyn.i cations technologies they use. The
+iFnrcolmus iFoEnM ofA c welelublsairt ea:l e “rts under the IPAWS system reflects the important role that wireless
+technologies play in consumers’ lives today. IPAWS includes a wireless mobile alerting
+capability into the IPAWS network to better warn citizens. Providing critical alert information
+via wireless devices will help the public avoid danger or respond more quickly during crisis, and
+thereby save lives and property.
+Page 22 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+8 Analysis, Findings and Recommendations
+8.1 Analysis
+8.1.1 How 9-1-1 traffic might be prioritized during emergencies or disasters
+The Committee examined the existing 9-1-1 infrastructure for wire line and wireless 9-1-1 calls
+and concluded that adding prioritization to emergency calls on the existing access network
+would be difficult and of limited value as the 9-1-1 call volume is constricted by available trunk
+lines and the number of personnel on duty to answer emergency calls.
+NG911 allows for more opportunities for 9-1-1 call prioritization as it could potentially
+minimize bottlenecks in the emergency network but adding prioritization technology in the
+current access networks and the entire end-to-end call path would be overly complicated.
+Prioritization on 4G wireless networks is a possibility but would require enhancements to both
+the network and handsets. Legacy handsets could not take advantage of the prioritization feature
+on the network. As the call capacity of the network is ultimately limited by the call-taker
+capacity, end-to-end prioritization on 4G networks was not viewed as a good solution.
+GETS and WPS were also considered both in the existing infrastructure and on a NGN.
+Prioritization methods similar to those used to support GETS and WPS could potentially be used
+to provide prioritization for 9-1-1 calls using radio access queuing and network resource queuing
+in the existing infrastructure and in an NGN environment, but there are very substantial issues
+with attempting to use these prioritization methods for 911 calls. GETS and WPS were
+expressly designed for national security and emergency preparedness (NS/EP) personnel.
+Page 23 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Increasing access to these programs would necessitate differentiating between 9-1-1 calls and
+NS/EP calls and providing another level of prioritization without an underlying limit in the
+number of potential users. Even if this problem was resolved call capacity is still limited by
+operations. The GETS and WPS users would notice substantial degradation of their priority
+service if members of the public dialing 911 were allowed access to the same queuing methods
+for radio and network resources in times of emergency. See Section 8.4 for additional details on
+the interaction between GETS/WPS calls and 911 priority calls.
+8.2 Methods for PSAPs to address operational issues related to
+overload
+The committee identified a number of methods and strategies for PSAP to reduce overload and
+call volume. A high number of 9-1-1 calls may be either non-emergency or duplicate reports of
+the same incident. 9-1-1 call-takers must have the ability to redirect the caller to the appropriate
+resource in the case of a non-emergency call or ascertain if the call is a duplicate report in an
+emergency.
+Operating in the current environment, we identified three potential methods to reduce overload;
+implementation of non-emergency numbers (3-1-1), public education, and virtual consolidation.
+3-1-1 provides the public with access to non-emergency government services and resources and
+can substantially reduce the number of non-emergency calls to 9-1-1. However, 3-1-1 is usually
+cost-effective only in large urban areas and is not a viable solution for rural or suburban agencies
+where government resources are already constrained.
+Public education and outreach to the public on the proper use of 9-1-1 and the availability of
+other resources for information and services can also reduce the number calls to 9-1-1. This is
+especially critical during major emergencies or disasters when the emergency networks are
+already strained and the 9-1-1 call-takers need to focus on the extraordinary event.
+Virtual Consolidation is a concept that combines the technology benefits of a physical
+consolidation without the initial capital cost for infrastructure. Utilizing the same public safety
+applications on a common network gives PSAPs the ability to load share. When one or more of
+the PSAPs are experiencing high call volume or a critical incident personnel from the other
+participating PSAP(s) are available to answer 9-1-1 calls that would otherwise be delayed.
+Network configuration and basic policy alignment are critical to the success of virtual
+consolidation.
+In an NG-911 environment call volume may actually increase given the myriad of devices that
+will be able to communicate with 9-1-1 and the variety of data that may be transmitted. Text
+messaging may reduce call volume but those messages will require a response from the PSAP
+and therefore impact staff availability.
+8.3 Methods to reduce overall traffic during emergencies
+The Committee investigated a number of strategies to reduce overall call volume during an
+emergency or catastrophic event. Concepts such as Virtual Call Takers, Automated pre-plans
+and texting to 9-1-1 in addition to the aforementioned Virtual consolidation all could
+conceivably reduce call volume or at least enhance the ability to manage the traffic. Virtual call
+takers would increase capacity at the most critical chokepoint - lack of personnel. Automated
+Page 24 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+preplans show promise but require considerable coordination and advance planning. Automated
+preplans would enable PSAPs to reroute calls to other PSAPs. In an NGN environment, an
+alternate PSAP could be in another region or area unaffected by the disaster. Texting to 9-1-1
+reduces phone traffic and provides an alternate means of contacting 9-1-1 but still impacts
+staffing as personnel must respond to the incoming texts.
+8.4 How 9-1-1 prioritization may interact with other priority calling
+services
+Government Emergency Telecommunications Service (GETS) and Wireless Priority Service
+(WPS) are priority services provided to certain government users who qualify for the service and
+are assigned a priority to allow them to participate. Users of these services are typically assigned
+one of five different priority levels according to their importance in the prioritization hierarchy
+determined by the government. If 911 callers were given priority access to radio and network
+resources (when compared to the general public dialing a non-emergency call), a question arises
+as to what priority would be given to a 911 caller.
+If 911 callers were given any priority, a 911 caller would receive a level of priority to allow their
+call to get higher priority than a member of the public dialing a normal non-emergency call.
+Should the level of priority given to a 911 caller be more than, less than, or equal to, any of the
+priorities provided to GETS/WPS users? Government folks who assisted in the development of
+joint government/industry requirements for NGN GETS/WPS provided the opinion that if 911
+callers were provided any priority at all, such priority should be less than any of the five priority
+levels used for GETS/WPS.
+The theory is that first responders with GETS/WPS must have higher priority than members of
+the public dialing 911, as first responder communications are likely to have a larger impact of
+saving lives/property than an individual caller of 911. Also, it was theorized that in a large-scale
+emergency, there are many duplicate 911 calls, i.e., 911 calls from multiple users reporting the
+same incident to a PSAP. Such multiple reporting of the same incident by 911 callers would
+warrant a lower priority than a first responder using GETS/WPS.
+Let’s assume that if 911 callers were given any priority, they would receive a priority level
+higher than a normal public network (non-emergency) call but less than any of the five priority
+levels used for GETS/WPS.
+On the surface, it may appear that with the assumption in the paragraph immediately above, 911
+callers may not interfere with the GETS/WPS service because GETS/WPS users always have a
+higher priority level. But additional details about how priority queuing works today must be
+understood to recognize the problem with the preceding sentence.
+For radio queuing in WPS today, only a certain percentage of radio resources are allowed to be
+“consumed” by GETS/WPS users when compared with the general public. The idea is that
+government users cannot be allowed to consume all radio resources in an emergency, as paying
+customers of wireless operators must be provided an opportunity to place a phone call in normal
+times and in times of emergency.
+Page 25 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+Similarly, only a certain percentage of radio resources would be allowed to be consumed by 911
+callers and by WPS users in times of a large-scale emergency, as paying customers of wireless
+operators have an expectation of being able to call friends and family during such periods. Radio
+resource queuing limits placed on GETS/WPS users are likely to be impacted by radio resource
+queuing limits on 911 callers to ensure that the general public has a reasonable chance of making
+a phone call.
+Most of the above discussion focuses on the radio resource queuing aspects of priority service.
+Once radio resources are provided to a WPS caller or 911 caller, the call may be marked as a
+priority call as the call traverses the network, and network resource queuing may take place at
+the various network nodes through which the call travels. Any prioritization afforded 911 calls
+via network resource queuing will likely degrade the network resources priority queuing
+provided to GETS/WPS users, as priority mechanisms in the network may rely solely on a single
+indication of “priority call” rather than on the designated priority level of the caller. In addition,
+similar to the radio resource limitations on WPS callers today, network resource prioritization
+limits may be imposed on users of priority service (including 911 callers).
+While the priority schemes theorized above for 911 callers have not been discussed in any great
+detail by industry bodies or government agencies to date, it is clear that “if everybody has
+priority, nobody has priority”. It is also clear that the existing GETS/WPS service is likely to
+encounter degraded conditions during large-scale emergencies if 911 calls are also provided
+priority service (even if the priority of 911 calls is less than any of the GETS/WPS priorities).
+8.5 Conclusions and Recommendations
+Working Group 10 evaluated ways to ensure 9-1-1 is available when emergencies or disasters
+cause a surge in mobile network traffic. As part of our analysis, we considered ways to
+potentially prioritize end to end 9-1-1 traffic in 2G/3G Wireless Networks as well as Long Term
+Evolution (LTE) Networks in combination with Next Generation 9-1-1. As a result of this
+evaluation, WG10 recommends that no additional prioritization occur within the 2G/3G
+networks at this time.
+The primary reason for this recommendation is that WG10 concluded that prioritization does
+very little to ensure the goal of 9-1-1 calls reaching emergency personnel during times of
+disasters due to the lack of PSAP personnel resources in emergencies and disasters.
+WG10 determined that the PSAP actually is the ultimate choke point during these times.. None
+of the existing wireless networks currently provides end to end prioritization for 9-1-1 calls to
+the PSAP. Adding this capability to 2G and 3G networks would be a daunting task as the
+networks they would require major redesigns. LTE Networks does offer some level of
+prioritization; however it still would require significant development to offer end to end
+prioritization. In addition, we considered potentially riding on top of existing priority services of
+GETs/WPS service. We concluded that these services would be significantly degraded if
+consumer 9-1-1 calls were given priority within the context of these existing services. “If
+everyone has priority, then nobody has priority””.
+WG10 also looked at alternatives to reduce 9-1-1 traffic during disasters. WG10 recommends
+the FCC, Public Safety, and carriers provide educational tips to the public about
+Page 26 of 27The Communications Security, Reliability and Interoperability Council III Working Group 10
+Final Report March 2013
+telecommunications services during natural disasters. The public education should stress the
+need to keep non-emergency calling to a minimum during and immediately after a disaster to
+provide those people with true life and property threatening emergencies the ability to reach 9-1-
+1. In addition, the education programs should stress the use of non-emergency services as
+outlined in this document, such as 3-1-1 or other available social media and communications
+services, to report issues that are not as critical or life threatening.
+Page 27 of 27
