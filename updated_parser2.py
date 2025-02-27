@@ -136,6 +136,25 @@ async def scrape_and_parse(urls):
 
 # Example URLs to scrape
 urls_to_scrape = [
+    "https://www.cisa.gov/resources-tools/programs/emergency-communications-policy-and-planning".
+    "https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/communications-sector",
+    "https://www.fcc.gov/CSRICReports",
+    "https://www.cisa.gov/resources-tools/resources/enhanced-visibility-and-hardening-guidance-communications-infrastructure"
+    "https://www.ntia.gov/page/information-quality-guidelines"
+    "https://www.federalregister.gov/documents/2024/09/10/2024-19028/implications-of-artificial-intelligence-technologies-on-protecting-consumers-from-unwanted-robocalls", 
+    "https://www.fcc.gov/wireless-telecommunications", 
+    "https://www.fcc.gov/communications-business-opportunities/cybersecurity-advisories"
+    "https://www.fcc.gov/cybersecurity-and-communications-reliability-division-public-safety-and-homeland-security-bureau"
+    "https://www.fcc.gov/media/customer-service-standards",
+    "https://www.cisa.gov/cybersecurity-performance-goals-cpgs",
+    "https://www.cisa.gov/topics/critical-infrastructure-security-and-resilience/critical-infrastructure-sectors/communications-sector",
+    "https://www.pwc.com/us/en/technology/alliances/microsoft/cybersecurity.html?WT.mc_id=CT3-PL300-DM1-TR1-LS2-SC_XS-BM-CN_OTHER-AlliancesSearch&gclid=Cj0KCQjwgrO4BhC2ARIsAKQ7zUkrMGYHLRyttHS2uuYhTWVOk8GpyL-QmVP-feTuFL9L2JB_L1iK5MQaAhNoEALw_wcB&gclsrc=aw.ds",
+    "https://cra.exein.io/?gad_source=1&gclid=Cj0KCQjwgrO4BhC2ARIsAKQ7zUkKKo83YImjM2w1wN_2jXG1E9vS55qFS9OS6FkEArdJixN1wpFk98MaAi4SEALw_wcB",
+    "https://resources.nvidia.com/en-us-ai-in-telco/telco-report-state-o",
+    "https://www.nist.gov/cyberframework",
+    "https://www.legalitysimplified.com/new-rules-on-telecom-cybersecurity-what-you-need-to-know/",
+    "https://www.gao.gov/topics/telecommunications",
+    "https://guides.loc.gov/telecommunications-industry/laws-regulations" 
  
 ]
 
