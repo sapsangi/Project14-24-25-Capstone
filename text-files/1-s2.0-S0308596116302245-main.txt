@@ -1,0 +1,1013 @@
+The evolution of the telecommunications policy agenda: Forty
+years of articles in Telecommunications Policy
+Jos/C19e Luis G /C19omez-Barrosoa,*, Claudio Feij /C19oob, Manuel Quiles-Casasc, Erik Bohlind
+aDpto. Economía Aplicada e Historia Econ /C19omica –UNED (Universidad Nacional de Educaci /C19on a Distancia), P/C14Senda del Rey, 11, 28040 Madrid,
+Spain
+bUniversidad Polit /C19ecnica de Madrid, Spain –Tongji University, China
+cM/C19aster en Investigaci /C19on en Economía –UNED (Universidad Nacional de Educaci /C19on a Distancia), Spain
+dChalmers University of Technology, Sweden
+ARTICLE INFO
+Keywords:
+Telecommunications policyText miningCluster analysisBibliometric information
+Policy agendaABSTRACT
+This paper investigates the evolution of the telecommunications policy agenda by means of text
+mining forty years –from 1976 to 2016 –of papers in the journal Telecommunications Policy . Text
+mining techniques help identify the key topics, the dominant combinations of concepts and themain areas of research within this multidisciplinary –technical, economic, social, policy –dis-
+cipline. In addition they depict an evolution of the policy agenda more nuanced than the con-
+ventional public service, pre-competition and post-liberalisation stages typical oftelecommunications. Also, in combination with bibliometric information, the results display the
+relationships between areas of research and methodologies, countries and authors ’background, all
+together providing a deeper understanding of the past, present and future avenues for research intelecommunications policy.
+1. Introduction
+Unlike most academic journals, Telecommunications Policy has two salient features: (1) it was founded with a clear and de ﬁnite aim
+that has not changed over the years, and (2) its title accurately re ﬂects this aim. Lawrence H. Day, ﬁrstGeneral Editor ofTele-
+communications Policy , wrote on the ﬁrst Editorial comment published on December 1976 ( Day, 1976 ), that the journal will present a
+continuing discussion on telecommunications futures and policy options […]in a manner that is most useful to decision makers and policy analysts
+in government and industry , whilst acknowledging that a considerable amount of the material published in the journal is expected to come from
+academic and national and international policy-research organisations .
+The way in which the sought dialogue between academia and stakeholders has developed is twofold. First, decision makers from
+here and there have undoubtedly taken advantage of the progresses and ideas published in the journal. Unhappily, the extent and
+manner in which this has happened is impossible to elucidate in the framework of this paper. Conversely, policy agendas have oriented,
+or even constrained, research agendas and, consequently, the subjects covered in the articles published in the journal.
+This on-going link between hot policy and regulatory issues on the one hand, and publications on the other, serves a speci ﬁc purpose.
+When reached a certain level of maturity, every discipline looks back to analyse what has been its own evolution. Usually, this requires a
+considerable effort of gathering and organising facts and documents, often scattered among a wide array of sources. In the case of
+* Corresponding author.
+E-mail addresses: jlgomez@cee.uned.es (J.L. G /C19omez-Barroso), claudio.feijoo@upm.es (C. Feij /C19oo), erik.bohlin@chalmers.se (E. Bohlin).
+Contents lists available at ScienceDirect
+Telecommunications Policy
+journal homepage: www.elsevier.com/locate/telpol
+https://doi.org/10.1016/j.telpol.2016.11.005
+Received 20 November 2016; Accepted 21 November 2016Available online 20 April 20170308-5961/ ©2016 Elsevier Ltd. All rights reserved.Telecommunications Policy 41 (2017) 853 –877telecommunications policy –as a discipline –, the existence of the privileged outlet that is Telecommunications Policy –as a journal –brings
+a substantial simpli ﬁcation of this task. Without obviously denying that many interesting works can be found elsewhere, Tele-
+communications Policy has held –and holds –the lead position as the reference in the sector. What has happened in telecom-related
+markets has had a re ﬂection on the pages of the journal; what has been discussed in the articles that have deserved publication has
+frequently arrived to the of ﬁces of regulatory authorities and decision makers.
+With this in mind, this article intends to make a review of the evolution of the agenda of the telecommunications sector –this is,
+which are the most relevant items in this agenda and how they have evolved over time –, looking at it through the glasses of the articles
+published in Telecommunications Policy . For that, a number of techniques from multivariate (big) data analysis speci ﬁcally aimed at text
+mining have been employed. The aim when making use of these methods is twofold: these are the most adequate tools to identify
+prominent items in a set of text documents such as journal papers, while, from the perspective of authors, their usage provides an
+illustration on the possibilities of textual analysis in the domain of ICT research, an increasingly popular methodology across many
+industries and research ﬁelds but seldom applied in the ICT domain. In addition to the text mining analysis, but always departing from it,
+bibliometric information has been added to explore the links between main dimensions of research –main topics in the policy agenda –
+and other variables such as methodological approach or geographical distribution.
+The article is structured as follows: after this introduction, the next section brie ﬂy discusses the links between academic publications
+and policy-making to put in context the ﬁndings of this paper. Next, the section on methodology explains the collection of data, the pre-
+processing, the text mining techniques and the software employed. The ensuing section presents and discusses the results with a par-
+ticular focus on cluster analysis. Last, the conclusions section closes the article.
+2. The role of academic journals outside the academic world
+The usefulness of scholarly journals is always measured in academic terms. Journal rankings and ratings serve as criteria for
+evaluating journals performance. Without denying the importance of those indicators, they do not re ﬂect the wider impact that they may
+have. Scienti ﬁc research has no sense by itself but understood as an effort to help society progress.
+How to assess an impact that transcends academic journals ’foremost playing ﬁeldis a pending challenge –an extraordinarily
+daunting challenge, indeed. For those journals in the technological ﬁelds, their signi ﬁcance could be measured by tracing the transfer of
+knowledge derived from academic articles to marketable products. For instance, a ranking system that considers the number of citations
+in patents as a proxy for measuring the technological value of journals has been proposed ( Liaw, Chan, Fan, &Chiang, 2014 ). For other
+kinds of journals, and particularly for policy journals, it is hardly to be expected that such a similar ranking would be available.
+However, this does not mean that there is no re ﬂection on how to best use –in real-world conditions –the knowledge enclosed in
+scholarly works with policy implications. Almost as old as Telecommunications Policy are two contributions that even today continue to
+underpin any further work. The “two-communities theory ”(Caplan, 1979 ), which has largely dominated the ensuing debate, claims that
+the problem of under/non-utilization of research in the policy process lies on the fact that policy makers and academics form two
+separate and poorly connected communities that operate under different rules, speak different languages, and are motivated by different
+rewards systems. With a more positive approach, the “enlightenment function of social research ”(Weiss, 1977 ) states that decision
+makers tend to use research indirectly, as “a source of ideas, information, and orientation to the world ( …) although the process is not
+easily discernible, over time it may have profound effects on policy ”.
+Over the last 40 years, further contributions have ﬁne-tuned but not replaced these theories. There is a number of sensible middle
+way approaches that have nuanced the more extreme positions. As a summary, it can be stated that there is not a simple dichotomy
+between use and non-use of research by decision makers; rather, the relationship occurs along a spectrum of interaction, with some
+public servants engaging more closely with academic research than others ( Newman, Cherney, &Head, 2016 ).
+In spite of all the endeavours towards gaining a deeper understanding of how this interaction takes place, the overall evidence is
+somehow discouraging: “apart from some biographical accounts and case studies, surprisingly little is known at a more general level
+about how policy-makers do actually engage with academic research and expertise ”(Talbot &Talbot, 2015 ). The conclusion, therefore,
+is that, in the particular case of Telecommunications Policy , it has in ﬂuenced, no doubt, telecommunications policy, though in ways that it
+is impossible to determine or measure.
+But equally evident is that telecommunications policy has in ﬂuenced Telecommunications Policy . This reverse link between policy
+activity and academic research has never been explored before. Although may not always be as appealing as the direct relationship is, it
+is instrumental in raising some other issues, the most outstanding of these being the analysis of the historical evolution of a particular
+ﬁeld.
+This is the case for this journal and this area of knowledge. The ﬁling in 1974 by the United States Department of Justice of an
+antitrust lawsuit against AT &T can be considered the milestone that marks the start of the modern era of telecommunications policy.
+Telecommunications Policy witnessed the settlement of this long process, as well as any other landmark event that had happened since
+then. In its pages, current affairs at the time have been dissected, analysed, discussed and challenged; issues that were going to play a key
+role even in the long term have been foreseen before reaching the market; authors have drawn up proposals and offered recom-
+mendations. Academic or practitioner, anyone who had had anything to say has sent his/her work in the ﬁrst place to Tele-
+communications Policy . To untangle the lines of the past of Telecommunications Policy is to understand the history and agenda of
+telecommunications policy.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+8543. Methodology
+An active area of research for more than two decades now, text mining –or text analytics –is a broad umbrella term describing a range
+of technologies for analysing and processing semi-structured and unstructured text data. In a manner analogous to data mining, text
+mining seeks to extract useful information from data sources through the identi ﬁcation and exploration of interesting regularities,
+patterns, trends or associations. In the case of text mining, however, the data sources are natural language document collections, and
+interesting patterns are found not among formalized database records but in the unstructured textual data in the documents in these
+collections ( Feldman &Sanger, 2007 ). Inspired by data mining, text mining relies on pre-processing routines, pattern-discovery algo-
+rithms, pattern classi ﬁcation and presentation-layer elements such as visualization tools ( Weiss, Indurkhya, Zhang, &Damerau, 2005 ).
+Text mining can comprise a number of interrelated objectives: search and information retrieval, document clustering, document
+classi ﬁcation, information extraction, natural language processing and concept extraction. Among them, this article focuses on clus-
+tering –ﬁnding papers related to each other –, classi ﬁcation –which are the basis for arranging similar papers in a speci ﬁc category –, and
+concept extraction –the telecom agenda.
+3.1. Text gathering
+This paper analyses the information published in the journal Telecommunications Policy since its initial number published in
+December 1976 until the last available issue at the time of drafting the present work (June 2016). There are 272 issues in the lot,
+comprising a total number of 2,216 papers. From these only 2,121 have been examined, leaving out 76 editorials and 19 notes that have
+not enough information for data analysis. This is, using text mining terminology, the “corpus ”of documents for analysis.
+The average page length of papers is 11.8 (median 12 and mode 11) with a standard deviation of 5.95. Exhibit 1 shows the annual
+distribution of papers where four main periods can be distinguished: (i) a relatively ﬂat number of papers from 1976 to 1991; (ii) an
+increase in the count of papers from 1992 to 1998; (iii) again a relatively ﬂat and reduced ﬁgure from 1999 to 2007; (iv) an increasing
+trend in the number of papers from 2008 to 2016 with an absolute peak in 2014.
+For each paper, title, abstract, keywords, background af ﬁliation and country of authors, and number of citations were collected. Full
+text was not considered for two main reasons: it is assumed that the abstract is a good representation of the main contents of the paper,
+and full text examination would have taken too much time and resources not providing a different illustration on how these data analysis
+techniques can be used in the ICT research domain.
+3.2. Text pre-processing
+Before conducting the analysis, the paper followed the usual work ﬂow for text mining. First, all the words are converted to lower
+case; then, non-letter characters as well as common English stop-words are deleted. After this initial stage, the corpus of text is ready to
+be tokenized and passed on to the next stage, which is called stemming. The basic stemming process consists of reducing and/or
+grouping words (such as the plural form of nouns) usually by deleting characters until a common root is found. These tasks have been
+made with the Porter stemmer in its newest version (Snowball).
+Next step in the pre-processing is merging the three different text ﬁelds: title, abstract and keywords. Although there are authors who
+prefer to avoid keywords ( Delen&Crossland, 2008 ), or even titles ( Miner et al., 2012 ), with the argument of the possibility of intro-
+ducing bias because they may be the terms the authors would like to associate their document to and not the real descriptors of the
+article, this article has preferred to equally weight and combine the three text ﬁelds assuming that most authors –with the help of a high-
+quality review process such as Telecommunications Policy ’s–will describe correctly the article in both their title and keywords, and that
+this combination will be a better weighting of key terms that other possible approaches.1
+Exhibit 1. Distribution of Telecommunications Policy papers per year. Note: Only one issue published in 1976; data from 2016 until June issue .
+Source: own calculations from Elsevier data.
+1According to Ramampiaro and Li (2011) , boosting title, abstract or speci ﬁc sentences or terms can improve the quality of text mining results. In particular, they
+suggest weighting the title ﬁeld twice as much as the abstract. There are more sophisticated approaches that weight sentences by the number of keywords, and title
+words they contain, or even the position of the paragraph containing the sentence in a segment, and the position of the sentence in the containing parag raph ( Tseng,
+2007 ).J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+855The overall result is 6,348 root terms, reduced to 4,333 after pruning out verbs, adjectives and adverbs.
+3.3. Data analysis
+Theﬁrst step in the text mining work ﬂow is building the term frequency-inverse document frequency (tf-idf). This is a statistic to
+measure the relevance of a word in a document from a corpus. It increases with the frequency of apparition of a word in the document
+but it is corrected by the frequency of the word in the whole corpus, thus allowing for the fact that some words are more frequent in
+general but not necessarily so signi ﬁcant.
+Next, the paper has opted for an exploratory factor analysis with the objective of ﬁnding underlying patterns and relationships
+between concepts in the text, and as a ﬁrst attempt to condense the information available in the corpus of papers in a smaller set of key
+factors. The result of this part of the analysis is a set of words highly interrelated, known as factors, components or dimensions, which are
+assumed to represent conceptual relationships. In the case of text mining, singular value decomposition (SVD) is the recommended
+practical technique to extract these conceptual relationships due to the sparse nature of the matrix of documents vs. terms ( Miner et al.,
+2012 ). SVD is commonly used in statistical natural language processing to identify “latent dimensions of meaning ”that organize the
+documents in the corpus. The information grouped this way contains all the original information but in less variables. Thus, it is a form
+of feature extraction, eliminating the usual redundancies in a text. Technically SVD transforms a high-dimensional matrix ( “space ”)o f
+documents by terms into a much lower dimensional space of dimensions de ﬁned as linear combinations of row or column values, which
+extract the most important information from the original matrix.
+SVD is a usual ﬁrst step in the direction of identifying clusters of terms, that is, words that usually go together, which is precisely the
+next stage in the text mining process followed in this article. Through cluster analysis, terms are grouped into sets or categories so that
+words belonging to the same cluster are more similar/related to one another than they are to terms in other clusters ( Hair, Black, Babin,
+&Anderson, 2010 ). Cluster analysis is used with two main objectives: the formation of a taxonomy of papers –an empirical based
+classi ﬁcation of terms –, and the discovery of relationships between the terms that are not possible at individual word level. It is
+important to note that while SVD shares the second objective, the ﬁrst is speci ﬁc of cluster analysis, thus allowing to include each paper
+in one particular thematic cluster.
+Measuring term similarity is the fundamental element of cluster analysis within text mining. Although it is widely acknowledged that
+the cosine distance performs better than the Euclidean distance for text data ( Pons-Porrata, Berlanga-Llavori, &Ruiz-Shulcloper, 2007 ),
+the latter was selected as measure of similarity since both are equivalent for text vectors of normalized length –which is the case as only
+title, abstract and keywords are used. Once the measure of similarity is speci ﬁed, the next step is the classi ﬁcation of the corpus into
+different categories. There are several clustering algorithms that provide this function. The paper has used k-means as clustering
+algorithm since the size of the data set avoids the use of hierarchical methods. This algorithm works by portioning the data into a user-
+speciﬁed number of clusters and then iteratively reassigning terms to cluster until the distance between terms within a cluster is
+minimized and distance between clusters is maximized ( Hair et al., 2010 ). To compensate for the aprioristic user-speci ﬁcation of the
+number of clusters a full range of them has been explored together with some measures on the optimum number of clusters, in particular
+the x-means algorithm ( Pelleg&Moore, 2000 ) and the Davies-Bouldin index ( Kov/C19acs, Leg /C19any,&Babos, 2005 ). The x-means algorithm is
+an extension of the classic k-means algorithm that ﬁnds automatically the optimal number of clusters; it proceeds recursively by running
+k-means for a given k and deciding whether to split or not each of the k clusters according to Bayesian information criterion. The Davies-
+Bouldin index measures the average of similarity between each possible cluster and its most similar one. As the clusters have to becompact and separated, the lower Davies –Bouldin index means better cluster con ﬁguration.
+Exhibit 2. 50 most frequent words 1976 –2016.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+856Exhibit 3. Scatterplots of SVD components for corpus 1976 –2016.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+8573.4. Complementary techniques
+To complete the pure text mining procedure explained above, the paper conducts a number of additional analyses.
+Theﬁrst of them consists of studying the research methodology used in the paper. For this we have downloaded the full text2of 300
+papers –about 14% of the total number of papers for analysis –and manually classify them as qualitative or quantitative. We have used this
+to train a support vector machine (SVM) learner algorithm ( Chih-Chung &Chih-Jen, 2011 ) that was able to correctly assign 77% of papers.
+The second complementary analysis uses bibliometric techniques after compiling the af ﬁliation information of authors. Unlike
+typical bibliometric studies, which are based in simple statistical analysis of bibliometric parameters, –viz., number of publications,
+citations, types of article, authors af ﬁliation, etc; for a review in Information Science, see Nagarkar and Kumbhar (2015) –, bibliometric
+information is added to the results of the text mining analysis in order to give these results a wider scope.
+3.5. Software
+Rapidminer was chosen as the software to carry out most of the analysis because of its ease of use yet powerful and modular
+approach. Rapidminer is written in Java and uses XML con ﬁguration ﬁles that are easy to exchange and parse. It has a very intuitive
+graphical interface and its learning curve allows someone not used to programming languages to extract valuable information almost
+immediately. Besides, it can be extended and connected to more advanced languages or platforms like R or Python. It is also free
+software in its “community ”edition. Rapidminer was complemented with other statistical, scienti ﬁc and visualization software, such as
+Gephi, Octave, PAWS and Statistica.Table 1
+Interpretation of relevant SVD dimensions in each ﬁve-year period.
+Period 1st Component 2nd Component 3rd Component 4th Component1976 –1980 telecom vs. computing local/country-speci ﬁc vs. international information (then) new services vs. traditional services
+1981 –1985 television satellite cable conference
+1986 –1990 deregulation satellite conference local vs. international
+1991 –1995 competition / regulation cable / television universal service /
+telephonyEU vs. Asia
+1996 –2000 competition / regulation /
+marketinternet / telephony vs. television universal international
+2001 –2005 mobile spectrum rural access regulated vs. non-regulated services
+2006 –2010 regulation / competition /
+accessbroadband vs. mobile supply vs. demand standardization
+2011 –2016 mobile standardization spectrum broadband
+Source: own interpretation from SVD analysis.
+Table 2
+20 more relevant words for eleven-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11
+Satellite Regulation
+CompetitionFixed
+telephonyTelevision Asia Standards Mobile Info society
+DevelopmentBroadband Spectrum International
+ITU
+1 satellit invest telephon televis china standard mobil inform broadband spectrum intern
+2 intelsat regul univers cabl reform china telephon polici internet auction itu3 dbs access price broadcast liber patent cellular technolog access alloc confer4 orbit network servic digit japan technolog ﬁx develop network licenc trade
+5 broadcast nga competit regul privat td network telecommun rural radio plenipotentiari6 system infrastructur cost market industri mobil diffus ict area manag annual
+7 intern competit local pay competit scdma market internet diffus frequenc pacif
+8 warc unbundl rate video regul catch consum servic infrastructur valu develop9 inmarsat europ carrier polici institut intern servic regul polici fee assist10 spectrum generat regul competit polici innov oper social competit wireless institut11 mobil cost interconnect content ntt global custom europ deploy ef ﬁci telecommun
+12 rural ﬁbr network uk telecommun 3g competit network develop mobil data
+13 direct separ account satellit govern process internet industri servic band europ
+14 develop incent market network market wireless wireless econom invest secondari cooper
+15 space price charg channel develop technic data govern econom market comput16 global market traf ﬁc system compani set handset comput speed india hungari
+17 station deploy internet industri econom develop subscrib region penetr right union18 telecommun oper exchang integr polit industri system market data cost tdf19 radio entri polici europ europ system technolog product technolog space servic20 link local distanc programm servic ict substitut system provid mhz regul
+Source: own calculations
+2The information in the title, abstract and keywords was not enough to distinguish between the two types of research methodologies within the papers.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+8584. Results and discussion
+4.1. Preliminary analysis
+The most basic analysis is word relative frequency. Filtering out verbs and other non-relevant terms and consolidating similar terms
+with the help of the stemmer, Exhibit 2 shows which are the most frequent words in article titles, abstracts and keywords. As expected,
+“telecommunications ”is the most frequent word appearing in more than half of the papers and “policy ”ranks number 3, with “services ”
+placed in between. The ranking of other relevant topics is “development ”at no. 4, “regulation ”at no. 5, “market ”at no. 9, and
+“competition ”at no. 10. They are followed by “access ”at no. 19, “govern ”at no. 22, “social ”at no. 28, and “universal ”at no. 44. On the
+technology side, “telephony ”is placed at no. 12 proving the weight of historical relevance, “mobile ”at no. 15, “internet ”at no. 18,
+“broadband ”at no. 23, “spectrum ”at no. 30, “standards ”at no. 31, “satellite ”at no. 32, “television ”at no. 33, and “cable ”at no. 42.
+From a regional perspective, “Europe ”appears at no. 24, “USA”at no. 43 and China at no. 51.
+The same analysis has been conducted in periods of ﬁve years, see Exhibit 11 in the Annex . The most interesting differences with the
+overall picture are highlighted in the following:
+In 1976 –1980, “computer ”was no. 7 while “social ”was no. 10.
+In 1981 –1985 “social ”is yet down at no. 24, but “development ”was no. 2, and legacy technologies acquired a bigger role from the
+previous period: “satellite ”at no. 8, “telephony ”at no. 9, “television ”at no. 11, “computer ”at no. 14, and “cable ”at no. 18.
+The evolution of the domain is fast and in 1986 –1990 these technologies were losing some positions –but still in the top 20 –with
+“telephony ”at no. 14 and “satellite ”at no. 15. Interestingly in this period there is also “competition ”at no. 16, “Europe ”at no. 17, “UK”
+at no. 18 and “USA”at no. 20 signalling the shake-up of markets about to come.
+In 1991 –1995 this change is more mature and “competition ”is at no. 4, “regulation ”at no. 7 and “market ”at no. 8, whileTable 3
+20 more relevant words for three-subcluster analysis of the category “info society / development ”in the 1976 –2016 corpus.
+Order C8-1 C8-2 C8-3
+Information / Internet Policy / Regulation / Development Regional / Rural
+1 inform telecommun ict
+2 internet polici region3 technolog regul rural4 comput develop inform5 media europ develop6 social industri technolog
+7 polici competit product
+8 privaci deregul econom9 network servic digit10 develop market plan11 servic privat structur12 electron govern communiti13 societi network europ14 data usa infrastructur
+15 system econom economi
+16 user ef ﬁci knowledg
+17 govern uk societi18 digit product remot19 econom isdn area20 innov intern africa
+Source: own calculations.
+Exhibit 4. Distribution of papers for the eleven-cluster taxonomy for corpus 1976 –2016.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+859“telephony ”is still at no. 9.
+In 1996 –2000 this is even more pronounced with “regulation ”at no. 4, “competition ”at no. 5 and “market ”at no. 6, while at the
+same time “telephony ”is again no. 9; “internet ”appears for the ﬁrst time at no. 15.
+In 2001 –2005 “regulation ”and“competition ”are in the top-10, “internet ”has gone up to no. 9, “mobile ”appears for the ﬁrst time in
+the top 10 at no. 6 as well as “spectrum ”at no. 14, while “telephony ”is still no. 12 and “development ”is no. 15; also “access ”appears for
+theﬁrst time at no. 16.
+In 2006 –2010 “mobile ”is no. 3 and “broadband ”enters at no. 10.
+Finally in 2011 –2016 we still have “mobile ”at no. 3, “broadband ”at no. 9 and “spectrum ”at no. 20, also “market ”,“regulation ”and
+“internet ”make for the top 10, and last but not least “China ”turns up at no. 21.
+4.2. Exploratory factor analysis
+Applying the SVD technique to the corpus, the ﬁrst practical question is how many dimensions –linear combination of terms –to
+retain. A visual criterion called the scree test ﬁnds the dimension from where the smooth decrease of singular values appears to level off
+to the right of the plot. According to this criterion the paper retains eight dimensions for analysis, in line with practical recommendations
+for text mining to keep between ﬁve and 20 dimensions ( Miner et al., 2012 ).
+In order to interpret the dimensions and assign some meaning to them, the authors have followed a process consisting of reviewing
+the scatterplot of terms against the dimensions, as seen in Exhibit 3 . This is a mostly subjective procedure and as such subject to some
+discussion but still useful and frequently employed ( Miner et al., 2012 ). Using this method, ﬁrst dimension varies from what can be
+called “market ”–as terms such as service, competition and regulation stand out –to“social ”–where there is rural, government, local and
+universal. The second component looks mostly as different “technologies ”from mobile through telephony and broadband –closer to
+market –to cable and television. The third component varies from broadband and internet through radio and mobile to spectrum,
+therefore could be interpreted as “ﬁxed to mobile ”. The fourth is somewhat more dif ﬁcult to interpret but in authors ’view can be
+assumed as issues related –and unrelated –with “standardization ”–where China is particularly relevant. Following a similar logic,
+dimension no. 5 can be associated with “spectrum ”issues and dimension no. 6 linked to items where “television / media ”is (un)rel-
+evant. Finally, the 7th dimension confronts “universal / rural / telephony / service ”to the rest of concepts, with China and stand-
+ardization again relevant, and dimension no. 8 displays “internet ”vs.“satellite ”and related concepts.
+These scatterplots provide also useful insights into terms that usually go together. They are a blueprint of clusters of words that are
+located close together in the space de ﬁned by the SVD-derived latent dimensions of meaning. Thus, clusters of terms in relatively close
+proximity may suggest that the respective terms are associated with similar meaning and underlying dimensions. Main examples of
+interest are: “mobile –broadband ”,“internet –price –access ”,“service –network ”,“competition –market –country ”,“tele-
+communication –policy –development –regulation ”, “ict–china –standard ”, “investment –local –infrastructure ”, and
+“allocation –licence –radio –spectrum –auction ”.
+Next the paper examined SVD in each period of ﬁve years. This was just conducted for the ﬁrst four components for simplicity and
+only the most interesting results in the view of authors are highlighted. The results are summarized in Table 1 . Looking at the ﬁrst–and
+main in terms of explanatory power –dimension, the themes have moved from a pre-convergent dichotomy between telecoms and
+computing, initially to television and then to (de)regulation introducing at sequential stages competition, market and access, with two
+separate times –2001 to 2005 and 2011 to 2016 –where mobile has been dominant. Interestingly the second dimension has been mostly
+related with technology, subsequently advancing from satellite to cable, then to internet and ﬁnally into broadband. The third com-
+ponent has also brought topics with a relevant evolution over time: universal service, rural access, and spectrum. Shared between the
+third and the fourth dimension, the role of international conferences is underlined in 1981 –1985 and 1986 –1990. Finally the fourth
+dimension insists at key periods in the differences between different types of services –1976 to 1980 and 2001 to 2005 –and different
+geographic areas –1986 to 1990, 1991 to 1995 –, lately highlighting standardization and broadband.
+Exhibit 5. Evolution of the relative weight of the number of papers in 13-clusters taxonomy in 5-years periods for corpus 1976 –2016.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+8604.3. Cluster analysis
+The next step in the analysis is classifying the corpus into different categories or clusters. Since k-means requires knowing the
+number of clusters in advance, and as explained in the methodology section, the paper has followed an ordered approach to elucidate the
+appropriate number of clusters. First the x-means algorithm with cosine distance provides a recommended number of four clusters. The
+Davies-Bouldin index with Euclidean distance has several minimums at four, seven, eleven, thirteen and eighteen clusters. Using these
+ﬁgures on the number of clusters as a departing point, the paper examines the results of the cluster analysis from ﬁve to twelve number of
+clusters to select –from authors ’perspective –the most meaningful combinations as explained in the following. This supervised approach
+is rather usual in non-hierarchical cluster analysis.3
+When the number of clusters selected is ﬁve, authors ’summary interpretation of the themes of the clusters is: “telephony (both ﬁxed
+and mobile) ”,“broadband, television, rural, access ”,“standards ”,“spectrum ”and“regulation / competition ”. Moving on to six clusters
+adds a new theme on “international telecom ”and separates “broadband, investment, access ”from “television, development ”that now
+go together with “standards ”. Here “universal, rural ”belongs to the cluster on “regulation / competition ”. Advancing to seven clusters
+brings themes on “development / information society ”and pinpoints “rural ”. In this clustering “regulation ”blends with “television ”.
+Eight clusters analysis separates “television ”from “regulation / competition ”and joins “internet ”and “information society ”. Nine
+clusters raise a speci ﬁc theme for papers on “European regulation ”and complements “international ”with “development, itu, confer-
+ences ”. Ten clusters analysis brings up particular themes on “Asia - China market ”and“satellite ”and a rather general area on “tele-
+communications, internet, services ”. Eleven clusters is precisely a combination of all of the themes above, with the addition of separating
+“ﬁxed telephony ”from “mobile ”for the ﬁrst time. Finally, twelve clusters analysis extends to a theme on “liberalisation, global trade ”
+but at the expense of reintroducing the rather general area on “telecommunications, internet, services ”.
+Considering all the above, the eleven-cluster looks as a pertinent summary of the cluster analysis, and therefore, this is the chosen
+number of clusters. Table 2 gives a descriptive title to every cluster, and shows the 20 more relevant words in every box. Tables 6 –12in
+theAnnex do the same for the other options ( ﬁve to twelve clusters).
+The themes that de ﬁne the eleven clusters are all strong candidates for a taxonomy of Telecommunications Policy papers. Exhibit 4
+shows the distribution of the Telecommunications Policy papers across this eleven-cluster taxonomy.
+Exhibit 6. Evolution of qualitative vs. quantitative papers (1976 –2016).
+Exhibit 7. Qualitative vs. quantitative papers for 13-cluster analysis (1976 –2016).
+3According to Hair et al. (2010) , cluster solutions ultimately require external validation. It is also suggested that the researcher uses several optimization rules for the
+number of clusters and look for a consensus cluster solution. It is recommended, for the ﬁnal analysis, to compute a number of different cluster solutions and decide
+among them using practical judgement.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+861Table 4
+Ranking of countries contributing to Telecommunications Policy 1976 –2016.
+Country No. papers No. citations Share papers (%) Share citations (%) Average citations per paperUSA 755 7606 34.47% 38.62% 10.07
+UK 295 2351 13.47% 11.94% 7.97Germany 116 1057 5.30% 5.37% 9.11China 109 992 4.98% 5.04% 9.10Canada 77 408 3.52% 2.07% 5.30Australia 75 615 3.42% 3.12% 8.20
+South Korea 75 1045 3.42% 5.31% 13.93
+Italy 58 535 2.65% 2.72% 9.22Netherlands 57 689 2.60% 3.50% 12.09France 55 258 2.51% 1.31% 4.69Japan 54 440 2.47% 2.23% 8.15Spain 51 435 2.33% 2.21% 8.53Belgium 38 257 1.74% 1.31% 6.76
+Greece 31 223 1.42% 1.13% 7.19
+Finland 26 419 1.19% 2.13% 16.12Sweden 23 93 1.05% 0.47% 4.04India 21 191 0.96% 0.97% 9.10Denmark 20 175 0.91% 0.89% 8.75Portugal 19 122 0.87% 0.62% 6.42Ireland 16 87 0.73% 0.44% 5.44Singapore 16 143 0.73% 0.73% 8.94
+South Africa 16 122 0.73% 0.62% 7.63
+Switzerland 16 144 0.73% 0.73% 9.00Austria 15 75 0.68% 0.38% 5.00Turkey 14 70 0.64% 0.36% 5.00Israel 12 127 0.55% 0.64% 10.58New Zealand 12 85 0.55% 0.43% 7.08Norway 10 80 0.46% 0.41% 8.00Mexico 9 250 0.41% 1.27% 27.78
+Argentina 8 54 0.37% 0.27% 6.75
+Thailand 8 37 0.37% 0.19% 4.63Chile 7 18 0.32% 0.09% 2.57Iran 7 90 0.32% 0.46% 12.86Peru 6 41 0.27% 0.21% 6.83Brazil 5 17 0.23% 0.09% 3.40Luxembourg 5 52 0.23% 0.26% 10.40
+Bolivia 4 9 0.18% 0.05% 2.25
+Hungary 4 12 0.18% 0.06% 3.00Indonesia 4 25 0.18% 0.13% 6.25Colombia 3 27 0.14% 0.14% 9.00Fiji 3 4 0.14% 0.02% 1.33Macedonia 3 23 0.14% 0.12% 7.67Malaysia 3 8 0.14% 0.04% 2.67Poland 3 7 0.14% 0.04% 2.33
+Slovenia 3 31 0.14% 0.16% 10.33
+Czech Rep. 2 13 0.09% 0.07% 6.50Ghana 2 28 0.09% 0.14% 14.00Philippines 2 5 0.09% 0.03% 2.50Russia 2 3 0.09% 0.02% 1.50Saudi Arabia 2 24 0.09% 0.12% 12.00Uganda 2 15 0.09% 0.08% 7.50Bhutan 1 3 0.05% 0.02% 3.00
+UAE 1 19 0.05% 0.10% 19.00
+Guatemala 1 15 0.05% 0.08% 15.00Kenya 1 6 0.05% 0.03% 6.00Lithuania 1 1 0.05% 0.01% 1.00Nigeria 1 1 0.05% 0.01% 1.00Pakistan 1 1 0.05% 0.01% 1.00Paraguay 1 6 0.05% 0.03% 6.00
+Romania 1 0 0.05% 0.00% 0.00
+Serbia 1 3 0.05% 0.02% 3.00Ukraine 1 0 0.05% 0.00% 0.00
+Source: own estimations. Data for citations from Scopus database.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+862As seen in Exhibit 4 , the category related with “information, policy, technology, development, telecom ”(C8 in Table 2 )h a st h e
+highest number of papers, well above the rest. Therefore, a speci ﬁc (sub)cluster analysis on it was carried out. Table 3 presents the
+results of the cluster analysis for “info society / development ”. The Davies-Bouldin index suggest three (sub)clusters for this cat-
+egory. The ﬁrst subcluster refers to “information, internet, media, social ”(321 papers), the second can be labelled more appro-
+priately as “policy, regulation, development ”(528 papers) and the third relates mostly with “regional / rural development ”(76
+papers).
+Next stage in the analysis is the evolution of the total 13 clusters (10 clusters þ3 subclusters) during the 40-year life span of Tele-
+communications Policy .Exhibit 5 displays this evolution, grouped in 5-years periods for simplicity. The graph exposes that some of the
+clusters have had a remarkable change along the 1976 –2016 period, in particular: “ﬁxed telephony ”had a maximum in the period
+around the liberalisation of telecoms in 1996 –2000; the cluster on “information, internet ”slowly gains weight across the total period
+while the contrary happens with the relationship between “policy, regulation, development ”; interestingly “regional / rural develop-
+ment ”although more relevant in the ﬁrst period of ﬁve years 1976 –1980, since then has maintained a similar relative relevance in the
+total number of papers; the cluster on “standards ”had an early signi ﬁcance during 1981 –1985, in the period where industry was looking
+to initial standards such as GSM and then has regained importance in the last three periods since 2001; “spectrum ”is an interesting case
+as it comes and goes with peaks in 2001 –2005 and 2011 –2016 in concordance with very active periods for auctions; “satellite ”and
+Exhibit 8. Network of collaborations for Telecommunications Policy 1976 –2016.
+Source: own elaboration.
+Exhibit 9. Regions of papers for 13-cluster analysis (1976 –2016).J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+863“conferences / itu ”were key components of Telecommunications Policy papers in the early periods, specially during 1981 –1985, but since
+about 2000 they have almost disappeared; “mobile ”appeared in the early 1990s gaining momentum since then with a very high share of
+papers in the period 2006 –2010; issues around the triangle “investment, regulation, competition ”have been increasingly central since
+the start of the liberalisation stage in the early 1990s; “Asia”as a cluster on particular regulatory schemes has been approximately
+constant across the period with a maximum in 1996 –2000; ﬁnally “television ”and“broadband ”have followed opposite paths with the
+former decreasing from 2000, precisely when the latter arrived with relevance.
+4.4. Complementary analysis
+In connection with the previous analysis, the paper carries out a number of complementary investigations. The ﬁrst of them refers to
+the type of research methodology used in each of the papers. Two very simple types have been chosen: qualitative vs. quantitative.
+Exhibit 6 displays the yearly evolution of both methodologies in the 1976 –2016 period. It is evident the evolution from an ample
+majority of qualitative papers in the ﬁrst half of the period, through a phase of slight predominance of quantitative papers to a recent and
+approximate balance between the two types.
+Next it is the relationship between methodologies and clusters. Exhibit 7 portrays the two methodologies with regard to the 13-
+cluster analysis for the whole period 1976 –2016. There are strong relationships between this taxonomy of papers and methodologies
+with three main groups: those where qualitative is dominant ( “television ”,“Asia”,“conferences / itu ”,“satellite ”,“standards ”,
+“information, internet ”and “policy, regulation, development ”); those where quantitative methodologies lead ( “broadband ”and
+“mobile ”); and those where there is a relative balance ( “investment, regulation, competition ”,“spectrum ”,“regional / rural develop-
+ment ”and“ﬁxed telephony ”). The paper hypothesizes that there are speci ﬁc connections between methodologies and clusters, but that
+Exhibit 10. Citations of papers for 13-cluster analysis (1976 –2016): a) absolute ﬁgures; b) relative to the number of papers in the cluster.
+Exhibit 11. Citations of papers per decade for 13-cluster analysis (1976 –2016): a) weight of clusters in decades; b) weight of decades in clusters.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+864Table 5
+Main themes in telecommunications policy 1976 –2016.
+Theme Keywords Dimensions Relevant periods Dominant
+methodologyInﬂuential
+geographical areaImpact from
+citationsProactive vs.
+reactive
+Broadband broadband –internet
+–access –networkmarket vs. social
+technologycompetition –
+regulation2001 –2005
+2006 –2010 (max.)
+2011 –2016Quantitative Europe &USA /
+Canada (main)Medium Reactive
+Asia China –reform –
+liberalisation –JapanEU vs. Asia
+standardization1991 –1995
+1996 –2000 (max.)Qualitative Asia (main) Medium Proactive
+Fixed telephony telephone –universal
+–price –serviceﬁxed vs. mobile new
+vs. traditional serv.1991 –1995
+1996 –2000 (max.)
+2001 –2005Qualitative &
+QuantitativeUSA / Canada
+(main)Medium Reactive
+Information /
+Internetinformation –
+internet –technology
+–computerInformation telecom
+vs. computing1976 –1980 (max.)
+1981 –1985
+1996
+–2000
+2011 –2016Qualitative USA / Canada
+(main)High Proactive
+International
+conferences / ITUinternational –ITU–
+conference –tradelocal vs. international
+technology
+standardization1981 –1985 (max.)
+1986 –1990Qualitative Europe &USA /
+Canada (main)Low Neutral
+Mobile mobile –telephone –
+cellular –ﬁxedﬁxed vs. mobile
+technology2001 –2005
+2006 –2010 (max.)
+2011 –2016Quantitative Europe (main) &
+AsiaHigh Reactive
+Policy / regulation
+/ developmenttelecommunications
+–policy –regulation
+–developmentcompetition –
+regulation market vs.social1976 –1980 (max.)
+1981 –1985
+1986 –1990
+1991 –1995Qualitative Europe &USA /
+Canada (main)High Proactive
+Regional / rural
+developmentICT–rural –regional
+–information –
+developmentuniversal service
+market vs. social2011 –2016 (max.) Qualitative
+&
+QuantitativeEurope (main) &
+AsiaMedium Reactive
+Regulation /
+competition /investmentinvestment –
+regulation –access –
+networkmarket vs. social
+supply vs. demand2006 –2010 (max.)
+2011 –2016Qualitative &
+QuantitativeEurope (main) Medium Reactive
+Satellite satellite –Intelsat –
+DBS –orbitinternet vs. satellite
+technology1981 –1985 (max.)
+1986 –1990Qualitative USA / Canada
+(main)Low Neutral
+Spectrum spectrum –auction –
+allocation –licencespectrum ﬁxed vs.
+mobile2001 –2005 (max.)
+2011 –2016Qualitative &
+QuantitativeEurope &USA /
+Canada (main)Low Proactive
+Standards standard –China –
+patent –technologystandardization
+technology2001 –2005
+2006 –2010
+2011 –2016 (max.)Qualitative Europe &USA /
+Canada &Asia
+(main)Medium Neutral
+Television television
+–cable –
+broadcast –digitalmedia technology 1981 –1985 (max)
+1991 –1995
+1996 –2000Qualitative Europe &USA /
+Canada &Asia
+(main)Low Proactive
+Source: own ﬁndings.
+Table 6
+20 more relevant words for ﬁve-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C51 mobil broadband standard spectrum regul
+2 telephon televis china auction polici3 servic cabl patent radio competit4 cellular ict technolog alloc telecommun
+5 price rural td licenc inform
+6 network digit mobil manag servic7 ﬁx internet scdma frequenc intern
+8 wireless technolog catch orbit develop9 market access intern valu network10 consum network global mobil europ11 diffus develop technic right industri
+12 competit infrastructur process wireless market
+13 internet econom 3g fee technolog14 custom inform consortia ef ﬁci invest
+15 cost polici wireless satellit econom16 system area set market govern17 oper broadcast develop band privat18 rate servic system cr univers19 data competit innov space cost
+20 univers dividend ict interfer computJ.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+865there is also a considerable in ﬂuence of time in the sense of those clusters with an earlier relevance are more prone to use qualitative
+techniques while, on the contrary, quantitative methodologies are strongly linked to more “modern ”clusters.
+The second complementary analysis looks into the relationship with geographical areas. Authors ’afﬁliation4was used to know the
+major countries contributing to Telecommunications Policy research. Table 4 displays the results in terms of published articles and
+received citations. As for calculating the number of citations, Scopus database has been used.5Table 4 shows that the USA ranks ﬁrst and
+has contributed almost 35 per cent (i.e. 755) of the total 2,190 publications for which af ﬁliation is disclosed; similarly, almost 39 per
+cent (7,606) of the total (19,692) citations are received by papers published from USA. In terms of regions, Europe leads with 42 per cent
+(i.e. 926 of the total) but with also almost 39 per cent (7,585) of the total citations. It is as well interesting to ﬁnd that in the top ten
+countries producing Telecommunications Policy papers, there are two countries from Asia (China and South Korea) with Japan at no. 11.Table 7
+20 more relevant words for six-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C5 C61 intern spectrum broadband regul mobil inform
+2 telecommun auction invest competit telephon ict3 polici radio access telephon ﬁx china
+4 servic alloc network univers market technolog5 develop licenc internet servic cellular televis6 regul manag infrastructur price network develop7 europ frequenc ﬁbr local diffus polici
+8 privat orbit nga network servic standard
+9 internet valu deploy market consum rural
+10 itu mobil regul liber oper digit11 confer right generat cost competit satellit12 market wireless competit europ wireless internet13 industri fee cost polici custom econom14 competit ef ﬁci price industri price media
+15 trade satellit area reform internet comput
+16 uk market rural telecommun handset broadcast
+17 data band polici interconnect system social18 deregul cr unbundl cabl industri govern19 govern space diffus infrastructur standard cabl20 network interfer econom law technolog industri
+Table 820 more relevant words for seven-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C5 C6 C71 mobil broadband standard rural inform regul spectrum
+2 telephon internet china area develop competit auction3 servic access patent remot technolog televis radio4 price network td communiti intern europ alloc
+5 network infrastructur mobil internet ict market licenc
+6 rate diffus technolog servic polici network manag7 cellular invest scdma access telecommun cabl frequenc8 ﬁx competit catch urban internet polici orbit
+9 internet polici intern develop comput servic valu10 market area global telephon econom industri mobil11 wireless deploy 3g broadband satellit invest right12 consum develop process dividend servic telecommun wireless
+13 diffus econom wireless institut social liber fee
+14 cost speed technic project product local ef ﬁci
+15 custom servic set digit region access satellit16 competit technolog develop inform data univers market17 oper cabl innov cost system privat band18 system penetr system center govern price cr19 data ﬁx ict satellit media reform space
+20 penetr municip nmt ict confer cost interfer
+4Just the af ﬁliation of ﬁrst (main) author was used for this particular analysis.
+5Scopus information “CitedBy ”has been used. It should be noted that ﬁgures previous to 1996 are inaccurate. Citations have been gradually incorporated to
+databases, though it is yet an un ﬁnished business. See https://blog.scopus.com/posts/scopus-has-added-5-million-pre-1996-articles-and-over-93-million-references-
+and-we-re-not-even [half-way] (November 2015)J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+866Together, Asian countries have contributed 14.5 per cent of the total literature (318 papers) and they have received about 16 per cent of
+the total citations (3,093).
+Papers published from USA have received an average of 10.07 citations per paper. Analysis of citations received by papers published
+in the top ten countries shows that papers from USA, Korea and Netherlands have received an average of ten or more citations per paper,
+although it is the nine papers from Mexico those that receive more citations (27.78 in average).
+In a second step, collaborations among countries were checked. Exhibit 8 shows the international collaborations in the Tele-
+communications Policy papers.6Darker internal circles indicate collaboration leaders and width of line the strength of collaboration. USA
+has the highest collaborations with other countries at 82, followed by the UK at 66, Germany and China at 37, Netherlands at 25, Italy at
+24 and then, in the external circle, Spain, Canada, Japan and France at 15 collaborations.
+In a third step the relationship between regions and clusters is examined. Exhibit 9 shows papers ’region –Europe, USA/Canada,
+LatAm, Asia, Africa, Paci ﬁc–with regard to the 13-cluster analysis for the whole period 1976 –2016. The region USA/Canada isTable 9
+20 more relevant words for eight-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C5 C6 C7 C81 spectrum mobil broadband regul televis internet standard intern
+2 auction telephon invest competit cabl inform china telecommun3 alloc ﬁx access telephon broadcast ict institut polici
+4 radio market network univers digit technolog 3g develop5 licenc network infrastructur servic satellit rural patent satellit6 manag servic ﬁbr price regul develop technolog europ
+7 frequenc oper nga local pay product industri privat8 orbit competit deploy cost video comput develop govern
+9 valu diffus regul market market econom mobil confer
+10 right cellular competit network dbs servic td itu11 wireless consum generat polici polici network scdma servic12 mobil custom internet carrier uk digit domest japan13 fee price cost europ competit polici foreign deregul14 ef ﬁci handset price rate content social reform plan
+15 satellit industri area interconnect system infrastructur intern usa
+16 band internet rural liber channel societi global regul
+17 market wireless unbundl industri industri diffus process system18 cr substitut polici telecommun network innov internet inform19 cognit subscrib econom reform integr data catch competit20 secondari termin diffus intern europ user telecommun industri
+Table 1020 more relevant words for nine-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C5 C6 C7 C8 C91 spectrum mobil broadband regul televis europ internet standard intern
+2 auction telephon invest telephon cabl regul ict china develop3 alloc ﬁx access competit broadcast germani inform institut telecommun
+4 radio network network univers digit competit technolog 3g polici
+5 licenc market infrastructur servic regul isdn rural patent satellit
+6 manag servic regul price satellit liber develop technolog privat7 orbit oper ﬁbr cost pay market product industri inform
+8 frequenc diffus nga local video union digit develop govern9 valu custom competit carrier market commiss econom mobil comput10 right cellular deploy network polici region diffus td servic11 wireless competit generat rate competit telecommun servic scdma technolog12 mobil consum internet market uk polici polici domest confer
+13 fee handset price interconnect content network network intern itu
+14 ef ﬁci wireless cost polici channel infrastructur infrastructur foreign social
+15 satellit substitut polici industri system communiti access reform system16 band internet unbundl telecommun network framework innov process deregul17 market data area account industri servic dividend telecommun plan18 secondari subscrib econom charg integr west comput global japan19 space system rural intern europ green industri internet data
+20 interfer industri europ reform programm reform societi catch media
+6Countries with no collaborations are not included in the graph.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+867dominant in connection with “ﬁxed telephony ”,“information, internet ”, and most notoriously in the “satellite ”cluster. Europe leads in
+“mobile ”,“regional / rural ”and notably in “regulation, competition, investment ”. There is an approximate balance between these two
+geographical areas in the clusters related with “broadband ”,“international / itu ”,“policy, regulation, development ”,“spectrum ”,
+“standards ”and“television ”. Asia has a remarkable position in –obviously –the“Asia”cluster, but also in “mobile ”,“regional / rural ”,
+“spectrum ”,“standards ”and“television ”. Paciﬁc region is noteworthy in “broadband ”,“ﬁxed telephony ”,“regional / rural ”,“regulation
+/ competition ”,“spectrum ”and “television ”. In the case of LatAm important clusters are “spectrum ”and “mobile ”followed by
+“broadband ”,“ﬁxed telephony ”and“regional / rural ”. Finally, Africa focus lies in “regional / rural ”.
+The last of the complementary analysis uses citations to look into how the knowledge enclosed in Telecommunications Policy has been
+used –at least within the academic world –and how the relevance of the different clusters in terms of their –at least academic –inﬂuence
+has changed over time. To introduce the status of citations, Table 13 in the Annex displays the most cited papers in Telecommunications
+Policy in each decade within the period 1976 –2016.
+Theﬁrst decade, up to 1985 is dominated by papers discussing the diffusion and relevance of (then) new technologies and services
+such as teleconferencing and teletext, together with papers on development and social implications. There is also an early study into
+competition in telecommunications.
+The second decade, 1986 –95, has been in ﬂuential mostly through papers on the relationship between telecommunications and
+economic growth, although there are also relevant papers on the use of information, spectrum auctions and universal service.
+The third decade, 1996 –2005, exhibits the maximum absolute value on citations and shifts from supply into demand with
+authoritative works on customer satisfaction, mobile phone usage, and Internet connectivity. It is also the decade where mobile and data
+–Internet –comes into the forefront along with examinations of an increasingly complex industry that moves from simple value chains
+into value networks.
+The last decade, 2006 –2016, is probably early to be scrutinized globally in terms of citations but hints at papers in 2006 –2010
+dealing with the triangle investment –regulation –competition, as well as mobile services –and applications –, and broadband –and
+mobile –rural development.
+Ensuing this brief analysis of the status of Telecommunications Policy citations, Exhibit 10 shows the number of citations per cluster in
+absolute value and relative to the number of papers in the cluster. “Mobile ”cluster leads both classi ﬁcation, followed by “information,
+internet ”and“policy, regulation, development ”in absolute ﬁgures, but by “broadband ”and“standards ”in relative terms.
+Next, the evolution of these citations in each of the four decades in the 1976 –2016 period appears in Exhibit 11 . In terms of decades,
+works on “policy, regulation, development ”lead the ﬁrst and second decade. Third and fourth decades are commanded by “mobile ”,
+with emerging “broadband ”in the latter. From clusters ’perspective, outmoded themes seems to be “satellite ”(which concentrates its
+citations in the ﬁrst two decades), “international / itu ”(mainly cited in the second decade), or “television ”. The third and fourth decades
+sees a blooming of citations in all themes. The clusters whose impact is most recent, i.e., those who have received the higher share of
+citations during the last ten years, are “regulation / competition ”,“regional / rural ”and notoriously “broadband ”.“Standards ”and
+“mobile ”have a similar number of citations in the third and fourth decade.
+Always classi ﬁed by decades, Table 13 , in the Annex , shows the Telecommunications Policy articles that have received more citations
+along the years. Conversely, Table 14 , also in the Annex , shows the documents (articles, books, book chapters, even policy documents)
+Table 11
+20 more relevant words for ten-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C5 C6 C7 C8 C9 C101 spectrum inform china standard mobil telecommun broadband regul satellit intern
+2 auction ict institut china telephon polici access competit dbs itu3 alloc technolog industri patent cellular internet internet price intelsat confer4 licenc comput reform technolog servic privat network network televis trade5 radio media internet mobil ﬁx develop rural invest broadcast account
+6 manag social develop catch consum servic infrastructur univers orbit rate7 frequenc develop 3g intern wireless industri area cabl system settlement
+8 valu polici polici td network govern diffus local intern plenipotentiari
+9 fee societi regul scdma market regul competit cost inmarsat develop10 ef ﬁci econom market global diffus market polici servic direct pacif
+11 mobil electron foreign europ oper europ cabl access mobil telecommun12 wireless system govern technic custom econom invest europ rural telephon13 market servic competit process price competit develop market develop annual14 secondari rural mobil consortia competit network deploy interconnect warc servic15 band product telecommun wireless system deregul servic infrastructur spectrum regul
+16 india of ﬁc cabl develop subscrib liber econom polici global assist
+17 space digit televis set data telephon speed telephon telecommun data18 right impact domest 3g internet plan ﬁx televis station arrang
+19 assign converg inform televis cost televis penetr entri polici call20 interfer region converg system handset usa technolog telecommun link traf ﬁcJ.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+868Table 12
+20 more relevant words for twelve-cluster analysis in the 1976 –2016 corpus.
+Order C1 C2 C3 C4 C5 C6 C7 C8 C9 C10 C11 C121 satellit inform televis china standard liber telecommun broadband invest spectrum mobil price
+2 orbit ict cabl institut china intern polici access regul auction telephon telephon3 intelsat technolog broadcast industri patent trade regul internet competit licenc cellular rate4 dbs comput digit internet technolog germani develop network univers alloc ﬁx cost
+5 broadcast develop regul reform td europ internet rural network radio network servic6 spectrum social pay converg mobil agreement privat infrastructur access manag diffus charg7 warc media video foreign scdma competit servic area local frequenc servic account
+8 intern rural market develop catch wto intern diffus europ valu oper call
+9 system polici competit polici intern servic industri competit servic fee market intern10 inmarsat societi polici inform technic regul govern polici infrastructur ef ﬁci consum settlement
+11 geostationari internet industri market global telecommun confer invest cost wireless custom regul12 rural econom uk govern process reform network develop market mobil competit traf ﬁc
+13 develop privaci content 3g 3g market itu deploy interconnect secondari wireless competit14 direct servic channel manufactur consortia polici uk servic polici band internet market15 mobil digit network telecommun set privat competit econom nga market subscrib internet
+16 space product system regul wireless industri market speed entri india technolog network
+17 televis data integr mobil develop govern deregul penetr separ right system consum18 global system broadband cloud system west europ ﬁx generat properti data carrier
+19 radio region europ technolog innov develop institut technolog loop assign handset cap20 resourc impact programm comput ict econom japan data telecommun regul satisfact systemJ.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+869Table 13
+Ten most cited Telecommunications Policy papers per decade within the 1976 –2016 period.
+No. citations Year Authors Title1976 –1985
+24 1977 Pye, R. &Williams, E. Teleconferencing: Is video valuable or is audio adequate?
+20 1985 Carey, J. &Moss, M.L. The diffusion of new telecommunication technologies
+19 1983 Kling, R. Value con ﬂicts in computing developments. Developed and developing
+countries
+18 1982 Kraemer, K.L. Telecommunications / transportation substitution and energy conservation.
+Part 1
+17 1976 Parker, E. Social implications of computer/telecoms systems
+14 1984 Wellenius, B. On the role of telecommunications in development
+13 1979 Tyler, M. Videotex, prestel and teletext. The economics and politics of some electronic
+publishing media
+13 1981 Kraemer, K.L. &King, J.L. Computing policies and problems. A stage theory approach
+12 1982 Langdale, J. Competition in telecommunications12 1977 Johansen, R. Social evaluations of teleconferencing
+1986 –1995
+98 1991 Cronin, F.J.; Parker, E.;
+Colleran, E.K. &Gold, M.Telecommunications infrastructure and economic growth. An analysis of
+causality
+69 1988 Allen, D. New telecommunications services. Network externalities and critical mass61 1993 Cronin, F.J.; Colleran, E.K.;
+Herbert, P.L. &Lewitzky, S.Telecommunications and growth. The contribution of telecommunications
+infrastructure investment to aggregate and sectoral productivity
+57 1989 Braman, S. De ﬁning information. An approach for policymakers
+52 1995 McMillan, J. Why auction the spectrum?51 1993 Cronin, F.J.; Parker, E.;
+Colleran, E.K. &Gold, M.Telecommunications infrastructure investment and economic development
+43 1993 Mueller, M. Universal service in telephone history. A reconstruction
+38 1988 Waterman, D. World television trade. The economic effects of privatization and new
+technology
+36 1992 Noll, A.M. Anatomy of a failure: picture phone revisited
+1996 –2005
+298 2004 Kim, M.-K.; Park,
+M.C.&Jeong, D.-H.The effects of customer satisfaction and switching barrier on customer loyalty
+in Korean mobile telecommunication services
+252 2003 Rice, R.E. &Katz, J.E. Comparing internet and mobile phone usage: Digital divides of usage,
+adoption, and dropouts
+202 2001 Gerpott, T.J.; Rams,
+W.&Schindler, A.Customer retention, loyalty, and satisfaction in the German mobile cellular
+telecommunications market
+179 1999 Hargittai, E. Weaving the Western Web: Explaining differences in Internet connectivity
+among OECD countries
+159 2002 Li, F. &Whalley, J. Deconstruction of the telecommunications industry: From value chains to
+value networks
+129 1999 Mahler, A. &Rogers, E.M. The diffusion of interactive communication innovations and the critical mass:
+The adoption of telecommunications services by German banks
+128 2004 Kim, H.-S. &Yoon, C.-H. Determinants of subscriber churn and customer loyalty in the Korean mobile
+telephony market
+122 2003 Lehr, W. &McKnight, L.W. Wireless Internet access: 3 G vs. WiFi?
+98 2004 Ishii, K. Internet use via mobile phone in Japan92 2002 Maitland, C.F.; Bauer,
+J.M.&Westerveld, R.The European market for mobile data: Evolving value chains and industry
+structures
+2006 –2016
+106 2006 Turel, O. &Serenko, A. Satisfaction with mobile services in Canada: An empirical investigation
+105 2010 West, J. &Mace, M. Browsing as the killer app: Explaining the rapid success of Apple ’s iPhone
+99 2009 Koutroumpis, P. The economic impact of broadband on growth: A simultaneous approach98 2009 Cambini, C. &Jiang, Y. Broadband investment and regulation: A literature review
+98 2006 Cave, M. Encouraging infrastructure competition via the ladder of investment88 2006 Rouvinen, P. Diffusion of digital mobile telephony: Are developing countries different?82 2007 LaRose, R.; Gregg, J.L.; Strover, S.;
+Straubhaar, J. &Carpenter, S.Closing the rural broadband gap: Promoting adoption of the Internet in rural
+America
+81 2006 Ahn, J.-H.; Han, S.-P. &Lee, Y.-S. Customer churn analysis: Churn determinants and mediation effects of partial
+defection in the Korean mobile telecommunications service industry
+72 2007 Jaeger, P.T.; Shneiderman, B.;
+Fleischmann, K.R.; Preece, J.;Qu, Y. &Fei Wu, P.Community response grids: E-government, social networks, and effective
+emergency management
+66 2007 Warren, M. The digital vicious cycle: Links between social disadvantage and digital
+exclusion in rural areas
+Source: own calculations from Scopus data.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+870Table 14
+Ten most cited references by Telecommunications Policy articles in a particular decade within the 1976 –2016 period.
+No. citations Year Authors Title Source1976 –1985
+8 1977 Pye, R. &Williams, E. Teleconferencing: Is video valuable or is
+audio adequate?Telecommunications Policy
+6 1976 Short, J.; Williams, E. &Christie,
+W.The social psychology of
+telecommunicationsBook
+6 1977 Gehrig, J. Geostationary orbit-technology and law Conference paper –In Proceedings of the
+Nineteenth Colloquium on the Law of OuterSpace
+5 1971 Jacobson International institutions for
+telecommunications: the ITU ’s roleBook chapter –In E. McWhinney (ed.), The
+International Law of Communications
+5 1975 Rockoff, M.L. An overview of some technological/health-
+care system implications of sevenexploratory broadband communicationexperimentsIEEE Transactions on Communications
+5 1979 Johansen, R.; Vall /C19ee, J.&
+Spangler, K.Electronic meetings: Technical alternatives
+and social choicesBook
+5 1980 FCC Regulatory policies concerning resale and
+shared use of common services andfacilitiesPolicy document
+4 1973 Bell, D. The coming of the post-industrial society Book
+4 1973 Colino, R.R. The Intelsat de ﬁnitive arrangements:
+Ushering in a new era in satellitecommunicationsBook
+4 1973 Noll, R.G.; Peck, M.J. &McGowan,
+J.J.Economic aspects of television regulation Book
+4 1975 US Congress Interim report and recommended courses
+of action resulting from the hearings ontelecommunications research and policydevelopmentPolicy document
+4 1977 UK Government Report of the Post Of ﬁce Review
+Committee (Carter Report): Analysis and
+development of policyPolicy document
+4 1983 Brock, W.A. &Evans, D.S. Predation: a critique of the government ’s
+case in U.S. vs. AT &TBook chapter –In D.S. Evans (ed.), Breaking
+up Bell: Essays on industrial organization andregulation
+4 1983 N €aslund, R. ITU Conference in Nairobi: Confrontation
+or mutual understanding?Telecommunications Policy
+4 1984 Lovell,.R. &Fordyce, S.W. A ﬁgure of merit for competing
+communications satellite designsSpace Communication and Broadcasting
+1986 –1995
+10 1982 Codding, G.A. &Rutkowski, A.M. The International Telecommunication
+Union in a changing world
+Book
+9 1981 Brock, G.W. The telecommunications industry: The
+dynamics of market structureBook
+8 1981 Wihlborg, C.G. &Wijkman, P.M. Outer space resources in ef ﬁcient and
+equitable use new frontiers from oldprinciplesThe Journal of Law and Economics
+7 1983 MacAvoy, P.W. &Robinson, K. Winning by losing: the AT &T settlement
+and its impact on telecommunicationsYale Journal on Regulation
+7 1983 Saunders, R.; Warford, J.J. &
+Wellenius, B.Telecommunications and economic
+developmentBook
+6 1974 Rohlfs, J. A theory of interdependent demand for a
+communications serviceBell Journal of Economics and Management
+Science
+6 1980 Hardy, A The role of the telephone in economic
+developmentTelecommunications Policy
+6 1982 Baumol, W.J.; Panzar, J. &Willig,
+R.Contestable markets and the theory of
+industry structureBook
+6 1983 Evans, D.S. &Heckman, J.J. Multiproduct cost functions estimates and
+the natural monopoly tests for the BellsystemBook chapter - In D.S. Evans (ed). Breaking up
+Bell: Essays on industrial organization andregulation
+6 1985 Katz, M.L. &Shapiro, C. Network externalities, competition, and
+compatibilityAmerican Economic Review
+6 1987 Kahn, A.E. &Shew, W.B. Current issues in telecommunications
+regulation pricingYale Journal on Regulation
+6 1987 Noam, E.M. The public telecommunications network a
+concept in transitionJournal of Communication
+6 1989 Parker, E.B; Hudson, H.E.;
+Dillman, D.A. &Roscoe, A.D.Rural America in the Information Age Book
+(continued on next page )J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+871that have received more citations by Telecommunications Policy articles in every decade. Table 15 establishes a global rank in the
+documents cited by Telecommunications Policy .
+5. Conclusions
+This paper presents a straightforward approach to text mining in the context of telecommunications policy with the twofold objective
+of illustrating its possible application in similar settings and contributing to identify the main elements of the telecommunications policyTable 14 (continued )
+No. citations Year Authors Title Source
+1996 –2005
+9 1994 Armstrong, M., Cowan, S. &
+Vickers, J.Regulatory reform: British experience and
+economic analysisBook
+8 1994 Levy, B. &Spiller, P.T. The institutional foundations of regulatory
+commitment: A comparative analysis oftelecommunications regulationJournal of Law, Economics
+and Organization
+7 1996 Levy, B. &Spiller, P.T. Regulations, institutions, and commitment:
+Comparative studies oftelecommunicationsBook
+6 1993 Mueller, M. Universal service in telephone history: A
+reconstructionTelecommunications Policy
+6 1995 McMillan, J. Why auction the spectrum? Telecommunications Policy
+6 1996 Noam, E.M. Beyond liberalisation III: Reforming
+universal serviceTelecommunications Policy
+6 1997 European Comission Green paper on the convergence of the
+telecommunications, media and
+information technology sectors, and the
+implications for regulationPolicy document
+6 1997 Mueller, M. Universal service: Competition,
+interconnection and monopoly in themaking of the American telephone systemBook
+6 1998 Mansell, R. &Wehn, U. Knowledge societies: Information
+technology for sustainable developmentBook
+6 2000 Parker, E.B. Closing the digital divide in rural America Telecommunications Policy
+6 2002 Armstrong, M. The theory of access pricing and
+interconnectionBook
+2006 –2016
+36 2009 Cambini, C. &Jiang, Y. Broadband investment and regulation: A
+literature reviewTelecommunications Policy
+24 2011 Xia, J. The third-generation-mobile (3 G) policy
+and deployment in China –Current status,
+challenges, and prospectsTelecommunications Policy
+23 2011 Kshetri, N.; Palvia, P. &Dai, H. Chinese institutions and standardization:
+The case of government support to
+domestic third generation cellular standardTelecommunications Policy
+21 2001 R €oller, L. &Waverman, L. Telecommunications infrastructure and
+economic development: A simultaneousapproachAmerican Economic Review
+21 2003 Cave, M. &Vogelsang, I How access pricing and entry interact Telecommunications Policy
+20 1985 Katz, M.L. &Shapiro, C Network externalities, competition, and
+compatibilityAmerican Economic Review
+20 2001 Gruber, H. Competition and innovation. The diffusion
+of mobile telecommunications in Centraland Eastern EuropeInformation Economics and Policy
+20 2001 Gruber, H. &Verboven, F. The diffusion of mobile
+telecommunications services in theEuropean UnionEuropean Economic Review
+20 2006 Cave, M. Encouraging infrastructure competition via
+the ladder of investmentTelecommunications Policy
+19 1962
+aRogers, E.M., Diffusion of innovations Book
+19 2006 Distaso, W.; Lupi, P. &Manenti,
+F.M.Platform competition and broadband
+uptake: Theory and empirical evidencefrom the European UnionInformation Economics and Policy
+19 2009 Koutroumpis, P. The economic impact of broadband on
+growth: A simultaneous approachTelecommunications Policy
+aSeveral editions from 1962 to 2003 ( ﬁfth edition).
+Source: own calculations from the analysis of the References section of Telecommunications Policy articles. Inaccuracies can occur due to incomple te or poorly-cited
+references.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+872agenda from 1976 to 2016 and their evolution in this period as summarized below.
+In addition, the results tell about the Telecommunications Policy journal. In fact, from this simple analysis, it is ascertained that
+Telecommunications Policy is a well-con ﬁgured journal with regard to its foundational aims, able to combine economy –markets –, law
+–regulation –, social theories –policy –and technology in a unique multidisciplinary approach. No keyword from any of these areas seems
+to preside over the others and most of them are subordinated to telecommunications. Looking speci ﬁcally into dimensions it seems there
+is a broad picture with a basic separation of market and social approaches to distinguish between papers and then technology is merged
+to complete each Telecommunications Policy paper investigation into a particular issue.
+Regarding the telecommunications policy agenda, and according to the ﬁndings in the paper, it has been dominated by a shortlist of
+about ten to ﬁfteen themes that shape overlapping but meaningful subdomains within the extensive area of telecommunications. The
+ﬁrst column in Table 5 enumerates the thirteen themes selected in this paper for analysis while the second and third columns compile
+keywords and dimensions respectively. The fourth column highlights the most relevant periods for the particular theme, indicating alsoTable 15
+Twenty most cited references by Telecommunications Policy articles within the 1976 –2016 period. Global rank.
+No. citations Year Authors Title Source36 2009 Cambini, C. &Jiang, Y. Broadband investment and regulation: A
+literature reviewTelecommunications Policy
+31 1985 Katz, M.L. &Shapiro, C. Network externalities, competition, and
+compatibilityAmerican Economic Review
+24 2001 Gruber, H. &Verboven, F. The diffusion of mobile
+telecommunications services in theEuropean UnionEuropean Economic Review,
+24 2001 Gruber, H. Competition and innovation. The diffusion
+of mobile telecommunications in Central
+and Eastern EuropeInformation Economics and Policy
+24 2011 Xia, J. The third-generation-mobile (3G) policy
+and deployment in China: Current status,challenges, and prospectsTelecommunications Policy
+23 2002 Armstrong, M. The theory of access pricing and
+interconnectionBook
+23 2011 Kshetri, N.; Palvia, P. &Dai, H. Chinese institutions and standardization:
+The case of government support todomestic third generation cellular standardTelecommunications Policy
+22 1980 Hardy, A. The role of the telephone in economic
+developmentTelecommunications Policy
+21 1999 Ahn, H. &Lee, M. An econometric analysis of the demand for
+access to mobile telephone networksInformation Economics and Policy
+21 2001 R €oller, L. &Waverman, L. Telecommunications infrastructure and
+economic development: A simultaneous
+approachAmerican Economic Review
+21 2003 Cave, M. &Vogelsang, I How access pricing and entry interact Telecommunications Policy
+20 2006 Cave, M. Encouraging infrastructure competition via
+the ladder of investmentTelecommunications Policy
+19 1962
+aRogers, E.M., Diffusion of innovations Book
+19 2006 Distaso, W.; Lupi, P. &Manenti,
+F.M.Platform competition and broadband
+uptake: Theory and empirical evidence
+from the European UnionInformation Economics and Policy
+19 2009 Koutroumpis, P. The economic impact of broadband on
+growth: A simultaneous approachTelecommunications Policy
+18 1991 Cronin, F.J.; Parker, E.B.; Colleran,
+E.K.&Gold, M.A.Telecommunications infrastructure and
+economic growth: An analysis of causalityTelecommunications Policy
+18 1994 Katz, M. &Shapiro, C. Systems competition and network effects Journal of Economic Perspectives
+18 1998 Laffont, J.J.; Rey, P. &Tirole, J. Network competition II. Price
+discriminationRAND Journal of Economics
+18 2012 Xia, J. Competition and regulation in China ’s 3G/
+4G mobile communications industry -Institutions, governance, and telecom SOEsTelecommunications Policy
+17 2003 Rodini, M.; Ward, M.R. &Woroch,
+G.A.Going mobile Substitutability between
+ﬁxed and mobile accessTelecommunications Policy
+17 2004 Kim, M.K.; Park, M.C. &Jeong,
+D.H.The effects of customer satisfaction and
+switching barrier on customer loyalty in
+Korean mobile telecommunication servicesTelecommunications Policy
+17 2005 Hausman, J. &Sidak, G. Did mandatory unbundling achieve its
+purpose? Empirical evidence from ﬁve
+countriesJournal of Competition
+Law and Economics
+aSeveral editions from 1962 to 2003 ( ﬁfth edition).
+Source: own calculations from the analysis of the References section of Telecommunications Policy articles. Inaccuracies can occur due to incomple te or poorly-cited
+references.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+873when there was a maximum. The ﬁfth column shows the dominant methodology for the theme, while the sixth displays the most
+inﬂuential geographical area. The seventh column classi ﬁes the themes has high, medium and low number of citations. The eight and
+last column uses the Table 16 in the Annex with a compilation of milestones in telecommunications policy to establish whether the
+theme was anticipating the policy decision –proactive –or rather discussing its effects and implications –reactive.7
+As explained in Section 2 , this compilation of themes helps to explore the reverse link between policy activity and academic research,
+and it is instrumental in the analysis of the historical evolution of telecommunications policy.
+Conventionally, see G/C19omez-Barroso and Feij /C19oo (2010) for a detailed account from a public-private perspective, there have been three
+main stages for telecommunications policy:Table 16
+Milestones in telecommunications policy 1974 –2015.
+Year Event Geography
+1974 AT &T antitrust lawsuit USA
+1980 FCC Second Computer Inquiry ﬁnal decision USA
+1982 Commission decision condemning BT ’s abuse of dominant position in the telex market EU
+1984 Breakup of AT &T (Baby Bells) USA
+1984 UK: Privatization of BT / Creation of a duopoly EU
+1985 Japan: Privatization of NTT and creation of new common carriers Asia / Paci ﬁc
+1987 Green Paper on the development of the common market for telecommunications services and equipment EU1989 Japan ’s KDD lost monopoly on international communication activities Asia / Paci ﬁc
+1989 Television without frontiers Directive EU
+1991 Gore report: National Information Infrastructure USA
+1992 Cable Act USA
+1992 1992 Review of the situation in the telecommunications services sector EU1993 Delors ’White paper (White paper on growth, competitiveness and employment) EU
+1994 Bangemann report on EU and the Information Society EU
+1994 Start of spectrum auctions USA
+1994 China: First private operator (Unicom) Asia / Paci ﬁc
+1995 Remaining FCC prices control over AT &T basic residential services are eliminated USA
+1996 Telecommunications Act USA
+1996 Japan: Major package of deregulation announced and ﬁnal agreement of restructuring NTT Asia / Paci ﬁc
+1997 Green book on convergence between telecoms, information technologies and audiovisual EU1998 Complete liberalisation on January 1st ( “1998 package ”)E U
+1998 WTO agreement on basic telecommunications services Global
+1999 FCC adopted rules for gradual deregulation of incumbents ’provision of local service for interstate communications USA
+1999 Price regulation of Cable Act expired USA
+1999 Launch of i-mode Asia / Paci ﬁc
+1999 1999 Communications Review EU
+1999 Launch of ‘eEurope An Information Society for all ’ EU
+2000 1st generation Information Society plans: eEurope 2002 EU
+2000 Biggest 3G spectrum auctions (UK and others) EU
+2000 Dot-com bubble collapse Global
+2001 3G Launch Asia / Paci ﬁc
+2001 Japan: e-Japan strategy Asia / Paci ﬁc
+2001 China: China enters WTO Asia / Paci ﬁc
+2002 2002 Telecoms package review EU
+2002 China: China Telecom is split geographically Asia / Paci ﬁc
+2002 Launch of eEurope 2005 EU
+2004 Korea: BcN (Broadband convergence network) Asia / Paci ﬁc
+2005 Second phase of the World Summit on Information Society (Tunisia) Global
+2005 Launch of i2010 EU
+2008 4G standardization Global
+2008 China Antimonopoly law Asia / Paci ﬁc
+2009 2009 Telecoms package review EU
+2009 Australia: National Broadband Network Asia / Paci ﬁc
+2009 Japan: i-Japan strategy 2015 Asia / Paci ﬁc
+2010 Digital Agenda for Europe EU
+2010 Connecting America: National Broadband Plan USA
+2012 Regulation on roaming EU
+2012 Korea: Giga Korea project Asia / Paci ﬁc
+2015 Open Internet Order (net neutrality) USA
+2015 Digital Single Market strategy EU
+Source: own elaboration.
+7Readers are invited to modify and complete this table of milestones on telecommunications policy.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+874Exhibit 12. Most frequent words by period of ﬁve years.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+875i) The “monopolistic stage ”, from the beginning of network deployment up to the various crises of the seventies, where tele-
+communications were basically a “public matter ”.
+ii) The “liberalisation stage ”, from the early 1980s up to the turn of the century, where telecommunications became a matter for
+private operators, led by a long-running and “guided ”re-regulation process.
+iii) The “information society stage ”, from the early 2000s until now, characterized by mostly open markets, speeding-up of the
+technological advances, transnational companies and institutions, economic and geopolitical instability and, especially, a change
+of economic paradigm: from an industrial age to an information age.
+The analysis in this paper, in authors ’view, allows proposing a more nuanced evolution of the stages for telecommunications policy,
+adding characteristic and notes that complete the above agenda. Precisely, the paper suggests the following (sub)stages8:
+i.b)9“Late monopolistic stage ”, up to about 1980, where the academic community is concerned with two types of issues that the
+conventional approach can not address properly: the social changes that the use of new informational and communication services
+and computers could bring, and the limitations of existing policy and regulation for development and underserved areas.
+ii.a) “Early liberalisation stage ”, up to about 1985, where it was considered that international conferences, such as ITU, were
+appropriate fora to discuss the telecommunications policy agenda and where technologies such as satellite served as instances of
+early liberalisation and the fall of pre-existing barriers in the telecommunications ﬁeld. At the same time television in connection
+with new services, but also with conferences, satellite and new services was an initial example of convergence and the mutual
+inﬂuence between media and telecommunications.
+ii.b) “Mid liberalisation stage ”, up to about 1995, where both the topics from previous stages were considered still relevant, but also
+emerged new topics around the effects of liberalisation on traditional services such as telephony; the difference across world regions
+started to gain weight in the agenda.
+ii.c) “Late liberalisation stage ”, up to about 2000, where regional differences in the approach to liberalisation and the effects of
+liberalisation on conventional services such as telephony take central stage accompanied by a renewed interest in –now digital –
+television and the implications of Internet deployment and usage.
+iii.a) “Early information society stage ”, up to about 2005, where expectations were laid in spectrum auctions, the promises of new
+generations of mobile communications, conventional broadband and the effects of standardization in the industry, all with a major
+supply-side perspective.
+iii.b) “Mid information society stage ”, up to about 2010, where the very dominant themes are the triangle regulation –investment –
+competition, mobile and broadband.
+iii.c) “Late information society stage ”, up to present, where the focus is on regional / rural development and standardization, in
+combination with –supported from –mobile, broadband, spectrum, regulation –investment –competition and Internet themes, and
+where the themes on demand, usage and consumers are increasingly central.
+All in all, the analysis presented in this paper is an evident simpli ﬁcation of the complex reality portrayed in 40 years of papers of
+Telecommunications Policy . However unpretentious, it sheds some light on both the main themes in the last 40 years of tele-
+communications policy and how they have evolved from 1976 to the present. And, maybe more relevant, the analysis draws a vibrant
+ﬁeld for research, multidisciplinary and encompassing by nature, able to adapt –and even anticipate –the changing policy priorities and
+hopefully in ﬂuence them for more informed and better decisions, still the valid foundational aim of the area.
+Annex10
+SeeTables 6 –16andExhibit 12 .
+References
+Caplan, N. (1979). The two-communities theory and knowledge utilization. American Behavioral Scientist, 22 (3), 459 –470.
+Chih-Chung, C., & Chih-Jen, L. (2011). LIBSVM: A library for support vector machines. ACM Transactions on Intelligent Systems and Technology, 2 (3) (art. no. 27) .
+Day, L. H. (1976). Telecommunications policy: Teamwork. Telecommunications Policy, 1 (1), 2 .
+Delen, D., & Crossland, M. (2008). Seeding the survey and analysis of research literature with text mining. Expert Systems Applications, 34 (3), 1707 –1720 .
+Feldman, R., & Sanger, J. (2007). The text mining handbook: Advanced approaches in analyzing unstructured data . Cambridge: Cambridge University Press .
+G/C19omez-Barroso, J. L., & Feij /C19oo, C. (2010). A conceptual framework for public-private interplay in the telecommunications sector. Telecommunications Policy, 34 (9),
+487–495.
+Hair, J., Black, W., Babin, B., & Anderson, R. (2010). Multivariate data analysis . Upper Saddle River: Prentice Hall .
+Kov/C19acs, F., Leg /C19any, C., &Babos, A. (2005). Cluster validity measurement techniques. In Proceedings of the 6th International symposium of Hungarian researchers on
+computational intelligence , pp. 540 –550. Budapest: Budapest Tech.
+Liaw, Y. C., Chan, T. Y., Fan, C. Y., & Chiang, C. H. (2014). Can the technological impact of academic journals be evaluated? The practice of non-patent r eference (NPR)
+analysis. Scientometrics, 101 (1), 17 –37.
+8The paper just highlights the additional notes. It takes for granted the basic features of the three main stages and does not discuss them.
+9There would be previous stages within the monopolistic phase, but they happen before the launch of Telecommunications Policy in 1976.
+10In order to avoid confusion, tables and exhibits numbers are a continuation of those from the main text tables/exhibits.J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+876Miner, G., Elder, J., Fast, A., Hill, T., Nisbet, R., & Delen, D. (2012). Practical text mining and statistical analysis for non-structured text data applications . Oxford: Academic
+Press .
+Nagarkar, S. P., & Kumbhar, R. (2015). Text mining –An analysis of research published under the subject category ‘Information Science Library Science ’in Web of
+Science Database during 1999 –2013. Library Review, 64 (3), 248 –262.
+Newman, J., Cherney, A., & Head, B. W. (2016). Do policy makers use academic research? Reexamining the “two communities ”theory of research utilization. Public
+Administration Review, 76 (1), 24 –32.
+Pelleg, D., & Moore, A. (2000). X-means: Extending K-means with ef ﬁcient estimation of the number of clusters. Proceedings of the Seventeenth International Conference on
+Machine Learning (pp. 727 –734). San Francisco: Morgan Kaufmann .
+Pons-Porrata, A., Berlanga-Llavori, R., & Ruiz-Shulcloper, J. (2007). Topic discovery based on text mining techniques. Information Processing &Management, 43 (3),
+752–768.
+Ramampiaro, H., & Li, C. (2011). Supporting biomedical information retrieval: The bioTracer approach. In A. Hameurlain, J. Küng, R. Wagner, C. B €ohm, J. Eder, &
+C. Plant (Eds.), Transactions on Large-Scale Data- and Knowledge-Centered Systems IV (pp. 73 –94). Berlin Heidelberg: Springer-Verlag .
+Talbot, C., & Talbot, C. (2015). Bridging the academic –policy-making gap: practice and policy issues. Public Money &Management, 35 (3), 187 –194.
+Tseng, Y.-H. (2007). Text mining techniques for patent analysis. Journal Information Processing and Management, 43 , 1216 –1247 .
+Weiss, C. H. (1977). Research for policy ’s sake: The enlightenment function of social science research. Policy Analysis, 3 (4), 531 –545.
+Weiss, S. M., Indurkhya, N., Zhang, T., & Damerau, F. J. (2005). Text mining –Predictive methods for analyzing unstructured information . New York: Springer .J.L. G /C19omez-Barroso et al. Telecommunications Policy 41 (2017) 853 –877
+877

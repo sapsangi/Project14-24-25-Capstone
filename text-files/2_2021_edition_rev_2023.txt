@@ -1,0 +1,444 @@
+January 2021 Edition  (Rev. 1/ 2023) 2-1 2.1 Chapter 2 
+Telecommunication Policy  
+ OBJECTIVES FOR THE USE OF THE RADIO SPECTRUM APPLYING TO 
+AGENCIES AND ESTABLISHMENTS OF THE FEDERAL GOVERNMENT  
+The United States (U.S.) is vitally dependent upon the use of the radio spectrum to carry out national policies 
+and achieve national goals. Use of the spectrum is vital to the security and welfare of the Nation and to the conduct 
+of its foreign affairs. This use exerts a powerful influence upon our everyday lives, in countless ways, annually 
+contri buting significantly to the Nation's growth and economy.  
+The radio spectrum is a limited natural resource which is accessible to all nations. It is imperative that the U.S. 
+develop and administer the use of this resource wisely so as to maintain a free dem ocratic society and to stimulate 
+the healthy growth of the Nation, while ensuring its availability to serve future requirements in the best interest of the Nation.  
+Therefore, consistent with international treaty obligations and with due regard for the rights of other nations, the 
+national objectives for the use of the radio spectrum are to make effective, efficient, and prudent use of the spectrum in the best interest of the Nation, with care to conserve it for uses where other means of communication are no t 
+available or feasible. Specifically, in support of national policies and the achievement of national goals, the primary 
+objectives are:  
+a. to enhance the conduct of foreign affairs;  
+b. to serve the national security and defense;  
+c. to safeguard life and property;  
+d. to support crime prevention and law enforcement;  
+e. to support the national and international transportation systems;  
+f. to foster conservation of natural resources;  
+g. to provide for the national and international dissemination of educational, general, and public interest 
+information and entertainment;  
+h. to make available rapid, efficient, nationwide, and worldwide radiocommunication services;  
+i. to promote scientific research, development, and exploration;  
+j. to stimulate social and economic progress; and  
+k. to improve the well -being of man.  
+ 
+The following areas of interest are associated with the national objectives listed above:  
+• Agriculture  
+• Amateur (emergency preparedness, self -training , and technical investigation)  
+• Commerce  
+• Computers and data processing  
+• Consumer expenditures and savings  
+• Education  
+• Entertainment (Broadcasting)  
+• Health  
+• International (AID, conduct of Foreign Affairs and information exchange)  
+• Natural resources (including pollution abatement)  
+• National Security and defense 
+• Oceanography  
+• Public safety  
+• Research and d evelopment  
+• Outer space 
+• Social welfare 
+• Transportation (other than urban areas)  
+• Urbanization (housing, transportation, and telecommunications)  
+These areas of interest are identified to assist in the frequency management process and are not intended to be 
+all inclusive. Priorities among these areas of interest are normally determined on a case -by-case basis and are 
+dependent upon many factors, including past and foreseen pol itical and administrative decisions.3  
+2.2 2-2 January 2021 Edition  (Rev. 1/202 3) 
+ FORMULATION OF TELECOMMUNICATIONS POLICY  
+1. The formulation and enunciation of national telecommunication policies designed to ensure achievement of 
+the national objectives is an essential element o f the role of the Federal Government. Telecommunication policies 
+are made by the Congress, by the Court, by the President and the Assistant Secretary of Commerce for 
+Communications and Information with respect to the agencies and establishments of the Federal Government, and 
+by the Federal Communications Commission for the public. Policy is made through treaties to which the U .S. adheres 
+with the advice and consent of the Senate, through executive agreements, by executive departments and agencies in 
+the discharge of their telecommunication responsibilities, and by custom and precedent. These policies may be separated into three categories: Nat ional Telecommunication Policy; Telecommunication Policy applying to the 
+agencies and establishments of the Federal Government; and Federal Communications Commission 
+Telecommunication Policy.  
+2. The Congress, in the Communications Act of 1934, provided for the regulation of interstate and foreign 
+commerce in communication by wire and radio "so as to make available, so far as possible, to all the people of the U.S. a rapid, efficient, nationwide, and world -wide wire and radio communication service, with adequate facilities 
+at reasonable charges, for the purpose of the national defense, for the purpose of promoting safety of life and property through the use of wire and radio communication," and created the Federal Communication s Commission  to execute 
+and enforce the provisions of that Act. Sections 301 and 303 of the Act set forth the general powers of the 
+Commission to regulate radio stations and  stipulate that such stations cannot be o perated except under and in 
+accordance with the Act and with a license granted under the provisions of the Act. The Congress, by Section 305 
+of the Act, excluded "Radio stations belonging to and operated by the United States" from the provisions of Sections 
+301 and 303 of the Act. It provided that all such stations use such frequencies as shall be assigned by the President.  
+3. The Congress, in the Communications Satellite Act of 1962, declared: "...it is the policy of the United States 
+to establish, in conjunction and in cooperation with other countries, as expeditiously as practicable a commercial 
+communications satellite system, as part of an improved global communications network, which will be responsive 
+to public needs and national objectives, which will serve the communication needs of the United States and other 
+countries, and which will contribute to world peace and under standing.... United States participation in the global 
+system shall be in the form of a private corporation, subject to appropriate governmental regulation.... It is not the intent of Congress by this Act to preclude the use of the communications satellite system for domestic 
+communication services where consistent with the provisions of this Act nor to preclude the creation of additional  
+communications satellite systems, if required to meet unique governmental needs or if otherwise required in the 
+national  interest." The Congress provided in Section 201 of the Act: "In order to achieve the objectives and to carry 
+out the purposes of this Act -(a) the President shall -... (7) so exercise his authority as to help attain coordinated and 
+efficient use of the electromagnetic spectrum and the technical compatibility of the system with existing 
+communications facilities both in the United States and abroad...."  
+4. The President by Reorganization Plan No. 1 of 1977 and Executive Order 12046 of March 26, 1978, 
+established  the Assistant Secretary of Commerce for Communications and Information and delegated to the 
+Secretary of Commerce the authority to:  
+a. Assign frequencies to Federal radio stations and classes of stations, and amend, revoke or modify such 
+assignments;  
+b. Authori ze a foreign government to construct and operate a radio station at the seat of the U.S. Government;  
+c. Help attain coordinated and efficient use of the electromagnetic spectrum and the technical compatibility 
+of the communications satellite system with exist ing communications facilities both in the U .S. and abroad;  
+d. Develop and set forth, in coordination with the Secretary of State and other interested agencies, plans, 
+policies and programs relating to international telecommunication issues, conferences and negotiations;  
+e. Coordinate preparations for participation by the  U.S. in international telecommunication conferences;  
+f. Coordinate policies and standards for spectrum use and related emergency readiness activities with the 
+Executive Branch;  
+g. Ensure that the Executive Branch ’s views on telecommunication matters are effectively presented to the 
+Federal Communications Commission;  
+h. Establish policies concerning the use of the spectrum by F ederal Government agencies; and  
+i. Develop, in coordination with the Federal Communications Commission , a comprehensive long -range 
+plan for improved management of the spectrum.  
+ 4  
+January 2021 Edition  (Rev. 1/202 3) 2-3 2.3.2 
+ TELECOMMUNICATIONS POLICY APPLYING TO AGENCIES AND 
+ESTABLISH -MENTS OF THE FEDERAL GOVERNMENT  
+The following policies have been established regarding the use of telecommunications by the agencies and 
+establishments of the Federal Government:  
+2.3.1 General  
+Telecommunication Development and Regulation 
+ 
+The Federal Government shall encourage the development and regulate the use of radio and wire 
+communications subject to its control to  meet the needs of national security, safety of life and property, international 
+relations, and the business, social, educational, and political life of the Nation. 
+ 
+International Telecommunication Regulation  
+ 1. The Federal Government considers the International Telecommunication Union  the principal competent and 
+appropriate international organization for the purpose of formulating international regulations on tel ecommunication 
+matters.  
+2. The Federal Government recognizes that other international bodies, such as the International Civil Aviation 
+Organization , International Maritime Organization and the World Meteorological Organization are appropriate 
+international organizations for considering specialized telecommunication matters.  
+3. The U.S. shall be appropriately represented at international conferences dealing with telecommunications 
+when such conferences appear to in volve its national interests.  
+4. The Federal Government shall foster and encourage the participation, for the purpose of coordination and 
+provision of advice and information, of experts from its commercial communication, scientific, and educational 
+communitie s as advisers in the preparation for and participation in international telecommunication conferences, in 
+consonance with national policy and security considerations.  
+ 
+Operating Capability of Industry  
+ 
+The Federal Government regards the operating capabilit y of the privately-owned telecommunication industry as 
+a vital national asset and shall encourage and promote the development of that industry in consonance with other 
+national policy and security considerations.  
+2.3.2 Functions to be Achieved 
+National Defense  
+ 
+1. The U.S. in time of war or national emergency, as proclaimed by the President, shall have available to the 
+Federal Government the total telecommunication resources of the Nation for utilization with due regard to the extent 
+of the war or emergency and to the conti nuing operation of services considered to be essential or desirable for the 
+welfare and interest of the United States during such a time.  
+2. On a continuing and current basis, all common carriers shall be encouraged and assisted in planning and 
+preparing for their immediate readiness to meet emergency or war conditions so that telecommunications responsiveness to National Security Emergency Preparedness requirements can be instantaneous with the occurrence 
+of such conditions.  
+3. In advance of war or a national security emergency, all desirable and possible measures and procedures 
+necessary for use during emergency or war conditions will be develope d and made available as needed so that they 
+can be affected  concurrently with the onset or threatened onset of emergency war conditions.  
+ 
+Safety at Sea  
+ The Federal Government shall aggressively foster the development, investigation, selection, and standar dization 
+of a worldwide system of radio and electronic aids for marine navigation and communication, since the national 3  
+2.3.4  2-4 January 2021 Edition  (Rev. 1/202 3) security, the Nation's sea commerce, and the assurance of adequate safety of life and property at sea for ships of all 
+nations require s uch an efficient, integrated, and standardized system.  
+ 
+Safety in the Air  
+ 
+The Federal Government shall aggressively foster the development, investigation, selection, and standardization 
+of a worldwide system of radio and electronic aids for air navigation  and communication, since the national security, 
+the Nation's air commerce, and the assurance of adequate safety of life and property in flight require such an efficient, integrated, and standardized system.  
+ 
+Protection of Life, Property, and National Reso urces 
+ The Federal Government shall promote the development and use of radio for the protection of the lives and 
+property of its citizens and of other national resources where other means of communication are not appropriate or available.  
+ 
+Research  
+ 
+The Fe deral Government shall foster such research and development activities in the telecommunication field 
+as will permit and encourage the most beneficial use of the radio spectrum in the national interest.  
+ 
+Promotion of Efficiency and Economy of Federal Gover nment Operations  
+ 
+The Federal Government shall promote the development and use of radio to improve the efficiency and economy 
+of Federal Government operations where other means of communication are not appropriate or available.  
+2.3.3 Federal Government Use of Commercial Telecommunication Service  
+1. The Federal Government places heavy reliance on the private sector in providing telecommunication service 
+for its own use. This means that all functions normally associated with providing the service shall be performed by 
+the private sector. These functions include design, engineering, system management and operation, maintenance, 
+and logistical support.  
+2. In order to emphasize the Federal Government's proper role as a user, any proposal designed to provide 
+needed telecomm unication service, which requires the Federal Government to perform any of the "provider" 
+functions, such as those listed above, shall be adopted only if commercial service is:  
+a. not available to the user during the time needed;  
+b. not adequate from either a technical or operational standpoint; or  
+c. significantly more costly. 
+3. A non-commercial service approach is acceptable if such an approach will result in significant savings over 
+an otherwise acceptable commercial service offering. To be considered significant t he savings must exceed 10% of 
+the cost of the commercial service. The cost estimate of the non -commercial approach must include, as a minimum, 
+all of the factors called out by Office of Management and Budget  Circular A-76. If the proposed approach involves  
+heavy investment, rapid obsolescence, or uncertain requirements, the minimum savings threshold should be increased to reflect these factors.  
+4. The Federal Government shall establish separate communication satellite systems only when they are 
+required to mee t unique governmental needs or  are otherwise required in the national interest.  
+2.3.4 Use of Space Radiocommunication Techniques in the Aeronautical Services  
+The Federal Government shall promote the use of space radiocommunication techniques in the aeronautical 
+services when economy of operation, improved service, and the more effective use of the radio spectrum will thereby result. The Federal Government shall promote the use of frequencies in the band 1535- 1660 MHz for the aeronautical 
+mobile (R) s ervice for international civil aviation operations. 4  
+January 2021 Edition  (Rev. 1/202 3) 2-5 2.3.7  2.3.5 Role of Leadership by the Federal Government  
+The Federal Government shall exercise leadership in the application of technological advances of operational 
+procedures that will result in more efficient and effective use of the radio spectrum. Periodically, it shall measure 
+the status of current technical and operational capabilities to determine necessary changes in technical standards, 
+allocations, or assign ments which should be affected . 
+2.3.6 Radio Spectrum Adm inistration  
+1. The Federal Government regards the radio frequency spectrum as a world resource in the public domain; 
+consequently,  it shall adopt policies and measures to ensure that this resource is used in the best interest of this 
+Nation, but with high reg ard to the needs and rights of other nations.  
+The supervision and administration of Federal use of the radio frequency spectrum shall have the objective of 
+assuring that such use is efficient, effective, and prudent.  
+2. The Federal Government considers the radio frequency spectrum to be a vital national resource. Any rights 
+of United States users to operate on any radio frequency are rights held by the United States as a whole. Such rights 
+may be transferred by th e Federal Government from one user to another, as required in the overall national interest.  
+3. The Federal Government considers that the basic guide to follow in the normal assignment of radio 
+frequencies for transmission purposes is the avoidance of harmful interference and the use of fr equencies in a manner 
+which permits and encourages the most beneficial use of the radio frequency spectrum in the national interest.  
+4. Within the jurisdiction of the Federal Government, use of the radio frequency spectrum for radio 
+transmissions for telecomm unications or for other purposes shall be made by Federal Government stations only as 
+authorized by the Assistant Secretary.  
+5. In view of the limitations of the usable radio frequency spectrum, and to e nsure the best possible return from 
+the use thereof, in time of peace,  the Federal Government shall require all users to:  
+a. justify any except an emergency request for radio frequencies prior to the assignment or use of such 
+frequencies;  
+b. confirm periodically the justification of continued use;  
+c. employ up-to -date spectrum -conserving techniques as a matter of normal procedure; and  
+d. ensure the ability to discontinue the electronic functioning of any emission system including satellites 
+when required in the interest of communication efficiency and effectiveness.  
+6. In reco gnition of the congestion of that portion of the radio frequency spectrum,  which is suitable for long-
+distance communication, only in exceptional circumstances shall frequencies below 30 MHz be assigned in the 
+domestic fixed service.  
+7. Normally, radio freque ncies shall be assigned in the following order:  
+a. Frequencies used primarily, predominantly, and directly for national security and defense, for purposes 
+which are vital to the safety of the Nation.  
+b. Frequencies used primarily, predominantly, and directly to safeguard life and property in conditions of 
+distress.  
+c. Frequencies used primarily, predominantly, and directly to safeguard life and property in other than 
+conditions of distress where other means of communication are not available.  
+d. Frequencies used in sci entific research and those used in services that have no adequate means of rapid 
+communication when such use is considered to be necessary or desirable in the national interest.  
+e. Frequencies used for all other purposes, the assignment of which must be judged upon the merits of the 
+intended use.  
+2.3.7 Spurious Emissions  
+1. In principle, spurious emissions from stations of one radio service shall not cause harmful interference to 
+stations of the same or another radio service within the recognized service areas of the latter stations, whether 
+operated in the same or different frequency bands.  
+2. Providing that appropriate spectrum standards in Chapter 5 are met, an existing station is recognized as 
+having priority over a new or modified station. Nevertheless,  engineering solutions to mitigate interference may 
+require the cooperation of all parties involved in the application of reasonable and practicable measures to avoid 
+causing or being susceptible to harmful interference.  3  
+2.3.10  2-6 January 2021 Edition  (Rev. 1/202 3) 2.3.8 Ionosphere So unders  
+1. Ionosphere sounders have demonstrated their value in providing data for:  
+a. increasing scientific knowledge of the Earth's atmosphere;  
+b. real-time evaluation of propagation conditions to increase the reliability of high freque ncy 
+communications;  
+c. real-time monitoring of upper atmosphere phenomena;  
+d. improving utilization of the radio spectrum;  
+e. predicting disturbed ionosphere conditions; and  
+f. enhancing survival communications, particularly in a nuclear environment.  
+2. Since uncontrolle d growth in the number of ionosphere sounder transmitters could result in mutual, harmful 
+interference among them and could be a potential source of harmful interference to established radio services, radio 
+frequency support for ionosphere sounder transmit ters shall be affected  only in accordance with the provisions of 
+Sections 8.2.21 and 8.2.22.  
+2.3.9 Safety Service  
+1. ITU Radio Regulation  1.59 defines a safety service as "any radiocommunication service used permanently 
+or temporarily for the safeguarding of human life and property". The intent of RR 1.59 is that the safety service 
+connotation should be applied to individual uses (assignments) of the radio frequency spectrum, irrespective of the 
+radio service normally applied. This is a very important point since assignments which do entail the providing of a 
+safety -of-life function require an appropriate degree of protection. It does not mean that such assignments have any 
+special status which would in any way alter the normal rules applied with respect to primary, and secondary 
+allocations, noting that pr iority of communications is  otherwise provided in the Radio Regulations (Articles 44 and 
+53). 
+2. From a spectrum management point of view, the domestic and international policies regarding safety service 
+are consistent. Accordingly, the following guidance is applicable:  
+a. The protection and status afforded to the categories of s ervices and allocations and to stations in all 
+services is governed, inter alia, by Art.  5, Sec. II. ITU Radio Regulations (RR).  
+b. Request for assistance in the case of harmful interference (RR 1.169) caused to stations of the 
+radionavigation service in a frequency band where the service is allocated under the Table of Frequency Allocations 
+on a secondary basis would be treated by terms of R R 5.28 through 5.31.  
+c. Request for assistance in the case of harmful interference (RR 1.169) caused to stations of the 
+radionavigation service in a frequency band where the service is allocated under the Table of Frequency Allocations 
+on a coequal primary basis would be treated in accordance with normal practices based upon which operation was 
+first brought into use unless it can be demonstrated that a "safety-of -life function is being served." In other words, 
+any radioc ommunication service, which uses the spectrum for safety purposes may be regarded in that case as a 
+safety service and, in this respect, the appropriate provisions of the Radio Regulations would apply.  
+2.3.10 Use of Spectrum Conserving Methods for Radio Communica tion Systems  
+The Federal Government, in its role of leadership in the application of advanced technology, shall foster the 
+application of spectrum -conserving methods for radio communication systems used by the Federal Government. 
+Spectrum -conserving system s are new or existing systems that make use of innovative designs or unique applications 
+that result in efficient use of frequency, space,  and time. Efficient use is a mission -oriented factor that combines the 
+requirements of the mission with available techniques to provide the most effective solution. Federal agencies are 
+encouraged to use spectrum conserving technologies and methods where they will satisfy agency operational 
+requirements and will enhance service, economy of operation, and the more efficient and effective use of the radio 
+spectrum. However, where spectrum is readily available due to geographic considerations or other factors, or where 
+mission requirements mandate, security, economics, or some technical or system performance criterion may be the 
+determining factor in system selection.  
+2.3.10.1   Land Mobile Systems  
+1. Spectrum conserving methods that should be considered for land mobile operations include trunked systems, 
+narrowband Frequency Modulation ( FM) (NBFM ), and amplitude -compandored single sideband (ACSSB).  4  
+January 2021 Edition  (Rev. 1/202 3) 2-7 2.3.13  a. Trunking is a technique that uses dynamic channel assignment to potentially obtain a higher degree of 
+channel loading and increased spectrum utilization.  
+b. NBFM is conventiona l FM with channel spacing of 12.5 kHz or less. It may be capable of interoperation 
+with conventional FM equipment using 25 kHz channel spacing.  
+c. ACSSB is a single -sideband modulation scheme with a necessary bandwidth of approximately 3.0 kHz, a 
+standardized  pilot carrier for synchronization, and amplitude -compandoring.  
+2. The Federal Government shall foster the development of and standards for trunked land mobile systems 
+used in appropriate bands allocated to the Federal Government.  
+3. The Federal Government shall  foster the development of, and standards for, narrowband land mobile 
+systems used in appropriate band allocated to the Federal Government. Further, to implement the objectives of the 
+"Land Mobile Spectrum Efficiency Plan", submitted to Congress in October  1993 (IRAC Doc. 28497), mandated in 
+the National Telecommunications Authorizations Act of 1992, P.L.102-538) (IRAC Doc. 27964), the Federal 
+Government shall institute plans to narrowband land mobile systems operating in the following bands and in 
+accordan ce with the following schedule:  
+a. After January 1, 1995, all new systems, and after January 1, 2005, all systems in the 162 -174 MHz band 
+must conform to the provision of paragraph 4.3.7A of this manual.  
+b. After January 1, 1995, all new systems and after January 1, 2008, all systems in the 406.1-420 MHz band 
+must conform to the provisions of paragraph 4.3.9 of this manual.  
+c. After January 1, 1997, all new systems and after January 1, 2008,  all systems in the 138 -150.8 MHz band 
+must conform to the technical s tandards contained in paragraph 5.3.5.2 of this manual.  
+2.3.11 Reserved  
+2.3.12 Proof of Compliance with FCC Licensing Requirements  
+Section 104(e) of the National Telecommunications and Information Administration Organization Act, as 
+amended, requires that NTIA have proof of compliance with FCC licensing requirements for non-government 
+operations of a radio station utilizing a government frequency or utilization of a government radio station for non-government purposes. Federal agencies must include the FCC file number of any non-government entity using 
+government facilities or radio frequencies for non-government purposes in the application for an NTIA frequency assignment.
+1 
+2.3.13 Special Conditions for Department of Defense Use of the Spectrum  
+1. As mandated by Title X, Subpart G, Section 1062 of the National Defense Authorization Act  for Fiscal Year 
+2000, the Department of Defense shall not surrender use of any band of frequencies in which the Departme nt of 
+Defense is a primary user for non -federal use, unless the following conditions are met.  
+a. NTIA, in consultation with the FCC, has identified and made available to the Department of Defense for 
+its primary use2, if necessary, an alternative band or bands of frequencies with comparable technical characteristics 
+as a replacement; and,  
+ 
+ 
+1 See IRAC Doc. 28420/1- 2.2.5.  
+2 As used in this Section, a "band of frequencies in which the Department of Defense is a primary user" is a band of frequencie s, 
+or part thereof, listed in the National Table of Frequency Allocations  under the Federal Government column heading allocated 
+on a primary basis to any radiocommunication service in which the Department of Defense operates spectrum -dependent 
+equipme nt, as evidenced by one or more operational frequency assignment authorizations listed in the Government Master File  
+for one or more primary services in that band, and as determined by NTIA , in consultation with the Office of the Secretary of 
+Defense and the Joint Staff, based upon:  
+(1) the number of permanent and temporary authorizations,  
+(2) the number of  current and planned systems,  
+(3) the geographical areas of operation,  
+(4) the amount of bandwidth occupied,  
+(5) the cost of reaccommodating systems, or  
+(6) the nature of the essential national security mission supported in the band.  
+The provisions of Title X, Subpart G, Section 1062 of the National Defense Authorization Act  for Fiscal Year 2000 shall 
+not apply to Federal Government stations ope rating as "end -users" with non -federal systems.  3  
+2.4.1  2-8 January 2021 Edition  (Rev. 1/202 3) b. The Secretary of Commerce, the Secretary of Defense, and the Chairman of the Joint Chiefs of Staff have 
+jointly certified to the Committee on Armed Services and the Committee on Commerce, Science and Transportation 
+of the Senate; and the Committee on Armed Services and the Committee on Commerce of the House of Representatives, that the replacement band or bands of frequencies identified in a. above provides comparable 
+technical characteristics to restore essential military capability that will be lost when the band of frequencies is 
+surrendered.  
+2. Paragraph 1. shall not apply to any band or bands of frequencies identified for reallocation in accordance 
+with Title VI of the Om nibus Budget Reconciliation Act of 1993 (Public Law 103-66; 107 Stat. 379) and Title III of 
+the Balanced Budget Act of 1997 (Public Law 105-33, 111 Stat. 258), other than a band or bands of frequencies 
+reclaimed in accordance with Title X, Subtitle G, Sect ion 1062 of the National Defense Authorization Act  for Fiscal 
+Year 2000 (The 139.0-140.5 MHz, 141.5 -143.0 MHz, and the 1385- 1390 MHz bands identified for reallocation 
+under the Balanced Budget Act of 1997).  
+3. Other than when implementing the provisions of this Section, nothing in Paragraph 1 shall abridge the 
+authority of NTIA to assign fr equencies to radio stations or classes of radio stations belonging to and operated by 
+the U.S., including the authority to amend, modify, or revoke such assignments
+ BASIC COORDINATION ARRANGEMENT BETWEEN NTIA AND THE FCC 
+WITH RESPECT TO DECISIONS REGARDING  THE USE OF THE RADIO SPECTRUM  
+2.4.1 The F ollowing Arrangement W as Agreed Upon by the NT IA and the FCC August 1, 
+2022 
+1. The Chair of the FCC and the Assistant Secretary for Communications and Information will meet at least 
+quarterly to conduct joint spectrum planning with respect to: 
+a.  the extent to which licenses for spectrum use can be issued pursuant to section 309(j) of the 
+Communications Act of 1934;  
+b.  the future spectrum requirements for federal and non -federal uses, including State and local government 
+public safety agencies;  
+c.  the spectrum allocation actions necessary to accommodate those uses;  
+d.  the actions necessary to promote the efficient and effective use of the spectrum, including spectrum 
+management techniques to promote increased reallo cation and/or shared uses of the spectrum that do not cause 
+harmful interference, as a means of increasing commercial and federal access;  
+e.  where possible and appropriate, the identification of spectrum management policies or spectrum 
+allocations to be exam ined in the next 12 months; and  
+f.  other spectrum related matters as appropriate.  
+2. The staffs of the FCC and the NTIA will meet at least monthly to exchange information of mutual interest 
+concerning, but not limited to, the above -referenced issues. To the ext ent possible, such meetings will include the 
+identification of, and tentative schedules for, upcoming proposed actions and activities and may include detailed subject -matter briefings as appropriate, including about current and anticipated future uses of s pectrum.  
+3. The FCC will cooperate with the NTIA and endeavor to give notice of all proposed actions that could 
+potentially cause interference to federal  operations , including operations in adjacent spectrum allocations . Where 
+possible, such notice will be gi ven in time for the NTIA to comment prior to final action and a minimum of 20  
+business days prior to final action. The FCC will endeavor to give NTIA the same notice and opportunity to comment, in instances in which NTIA notifies the FCC that non -federal o perations critical to federal agency 
+missions, including those essential to national security or safety of life, could potentially experience harmful 
+interference from a proposed action.  A different review period may be agreed to by NTIA's Associate Admini strator 
+for Spectrum Management and the FCC's Chief of the Office of Engineering and Technology. Where applicable, 
+FCC staff will endeavor to engage NTIA staff in discussions regarding NTIA's comments on the FCC action.  Final 
+action by the FCC, however, does not require approval of the NTIA.  
+4. The NTIA will cooperate with the FCC and endeavor to give notice of all proposed actions that could 
+potentially cause interference to non -federal  operations. Where possible, such notice will be given in time for the 
+FCC to comment prior to final action and minimum of 20 business days prior to final action. A different review 
+period may be agreed to by NTIA's Associate Administrator for Spectrum Management and the FCC's Chief of 
+Office of Engineering and Technology. Where applicable, NTIA staff will endeavor to engage FCC staff in 
+discussions regarding FCC's comments on the NTIA action.  Final action by the NTIA, however, does not require 4  
+January 2021  Edition  (Rev. 1/202 3) 2-9 2.4.1  approval of the FCC.  
+5. The FCC and the NTIA commit to improved and effective communicati on on matters that relate to the 
+management of the nation's spectrum resource.  
+a.  The staffs of FCC and the NTIA will engage, on an ongoing basis, in engineering collaboration to, for 
+example, identify best practices, develop metrics for effective spectrum analysis, and examine technologies to 
+enhance spectrum use.  
+b.  To facilitate evide nce-based spectrum policy -making, in particular when participating in each other's public 
+proceedings, the FCC and the NTIA will endeavor to do so on a timely basis through contributions supported by relevant technical data and analysis based on sound engineering principles, including available test and receiver performance data, where appropriate. Such information will be of a quality that complies with best engineering practices and any mutually agreed standards or procedures.  
+c.  The FCC and the NTIA will endeavor to provide relevant and appropriate information, including, but not 
+limited to, the nature of federal and nonfederal operations and uses of spectrum in their spectrum coordination communications, ensuring appropriate treatment of any sensitive and classified information. The FCC and the NTIA 
+will also identify, as early in the decision-making processes as possible, any technical issues that have a reasonable likelihood of generating disputes or disagreements, and will act in their capacities as the sole agencies responsible 
+for managing spectrum use in the United States to further assess such issues.  
+6. The FCC and the NTIA will resolve technical, procedural, and policy differences by consensus whenever 
+possible.  
+7. The staffs of the FCC and the NTIA will  cooperate to develop and implement a process through which 
+evidence-based concerns of either agency about harmful interference posed by a proposed final action by the FCC or the NTIA can be escalated. If such concerns cannot be resolved between NTIA's Associate Administrator for 
+Spectrum Management and the FCC's Chief of the Office of Engineering and Technology, the matter may be referred 
+to the Assistant Secretary of Commerce for Communications and Information and the FCC Chair for consideration before fi nal action.  
+8. The FCC and the NTIA will maintain current lists of their authorized frequency assignments and will 
+exchange such information as appropriate to coordinate spectrum use.  
+9. The full Memorandum of Understanding between the FCC and the NTIA can be found here: 
+https://ntia.gov/other-publication/2022/memorandum-understanding- between -fcc-and- ntia. 
+     
+ 
+    
+ 
+     
+ 
+    
+ 
+    3  
+2.4.1  2-10 January 2021 Edition  (Rev. 1/202 3)  
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(Last Page in Chapter 2)  
