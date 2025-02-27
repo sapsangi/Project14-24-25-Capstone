@@ -167,6 +167,6 @@ else:
     os.makedirs("text-files")
 
 # Run the scraper
-if _name_ == "_main_":
+if __name__ == "__main__":
     asyncio.run(scrape_and_parse(urls_to_scrape))
     print("Scraping complete. Check the 'text-files' directory for outputs.")
